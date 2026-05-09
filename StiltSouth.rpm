@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map Width="80" Height="25">
+  <cell X="43" Y="19">
+    <object Name="Arshiranandurah"></object>
+  </cell>
+</Map>

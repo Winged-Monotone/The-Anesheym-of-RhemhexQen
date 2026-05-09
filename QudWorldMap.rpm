@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Map Width="80" Height="25">
+  <cell X="27" Y="1">
+    <object Name="Crystholts"></object>
+  </cell>
+  <cell X="29" Y="1">
+    <object Name="BrimstoneWaste"></object>
+  </cell>
+  <cell X="30" Y="1">
+    <object Name="Crystholts"></object>
+  </cell>
+  <cell X="31" Y="1">
+    <object Name="Crystholts"></object>
+  </cell>
+  <cell X="32" Y="1">
+    <object Name="Crystholts"></object>
+  </cell>
+  <cell X="33" Y="1">
+    <object Name="Crystholts"></object>
+  </cell>
+  <cell X="34" Y="1">
+    <object Name="Crystholts"></object>
+  </cell>
+  <cell X="35" Y="1">
+    <object Name="Crystholts"></object>
+  </cell>
+  <cell X="39" Y="1">
+    <object Name="Crystholts"></object>
+  </cell>
+  <cell X="26" Y="2">
+    <object Name="BrimstoneWaste"></object>
+  </cell>
+  <cell X="27" Y="2">
+    <object Name="BrimstoneWaste"></object>
+  </cell>
+  <cell X="28" Y="2">
+    <object Name="Crystholts"></object>
+  </cell>
+  <cell X="29" Y="2">
+    <object Name="Crystholts"></object>
+  </cell>
+  <cell X="30" Y="2">
+    <object Name="Crystholts"></object>
+  </cell>
+  <cell X="31" Y="2">
+    <object Name="Crystholts"></object>
+  </cell>
+  <cell X="32" Y="2">
+    <object Name="Crystholts"></object>
+  </cell>
+  <cell X="33" Y="2">
+    <object Name="Crystholts"></object>
+  </cell>
+  <cell X="34" Y="2">
+    <object Name="Crystholts"></object>
+  </cell>
+  <cell X="35" Y="2">
+    <object Name="Crystholts"></object>
+  </cell>
+  <cell X="36" Y="2">
+    <object Name="Crystholts"></object>
+  </cell>
+  <cell X="39" Y="2">
+    <object Name="Crystholts"></object>
+  </cell>
+  <cell X="40" Y="2">
+    <object Name="BrimstoneWaste"></object>
+  </cell>
+  <cell X="41" Y="2">
+    <object Name="BrimstoneWaste"></object>
+  </cell>
+  <cell X="26" Y="3">
+    <object Name="BrimstoneWaste"></object>
+  </cell>
+  <cell X="27" Y="3">
+    <object Name="Crystholts"></object>
+  </cell>
+  <cell X="28" Y="3">
+    <object Name="BrimstoneWaste"></object>
+  </cell>
+  <cell X="29" Y="3">
+    <object Name="Crystholts"></object>
+  </cell>
+  <cell X="30" Y="3">
+    <object Name="Crystholts"></object>
+  </cell>
+  <cell X="31" Y="3">
+    <object Name="Crystholts"></object>
+  </cell>
+  <cell X="32" Y="3">
+    <object Name="Crystholts"></object>
+  </cell>
+  <cell X="33" Y="3">
+    <object Name="Buggoville"></object>
+  </cell>
+  <cell X="34" Y="3">
+    <object Name="Crystholts"></object>
+  </cell>
+  <cell X="35" Y="3">
+    <object Name="Crystholts"></object>
+  </cell>
+  <cell X="36" Y="3">
+    <object Name="Crystholts"></object>
+  </cell>
+  <cell X="37" Y="3">
+    <object Name="Crystholts"></object>
+  </cell>
+  <cell X="39" Y="3">
+    <object Name="Crystholts"></object>
+  </cell>
+  <cell X="40" Y="3">
+    <object Name="Crystholts"></object>
+  </cell>
+  <cell X="41" Y="3">
+    <object Name="BrimstoneWaste"></object>
+  </cell>
+  <cell X="42" Y="3">
+    <object Name="BrimstoneWaste"></object>
+  </cell>
+  <cell X="25" Y="4">
+    <object Name="BrimstoneWaste"></object>
+  </cell>
+  <cell X="26" Y="4">
+    <object Name="BrimstoneWaste"></object>
+  </cell>
+  <cell X="27" Y="4">
+    <object Name="BrimstoneWaste"></object>
+  </cell>
+  <cell X="28" Y="4">
+    <object Name="Crystholts"></object>
+  </cell>
+  <cell X="29" Y="4">
+    <object Name="BrimstoneWaste"></object>
+  </cell>
+  <cell X="30" Y="4">
+    <object Name="Crystholts"></object>
+  </cell>
+  <cell X="31" Y="4">
+    <object Name="Crystholts"></object>
+  </cell>
+  <cell X="32" Y="4">
+    <object Name="Crystholts"></object>
+  </cell>
+  <cell X="33" Y="4">
+    <object Name="Crystholts"></object>
+  </cell>
+  <cell X="34" Y="4">
+    <object Name="Crystholts"></object>
+  </cell>
+  <cell X="35" Y="4">
+    <object Name="Crystholts"></object>
+  </cell>
+  <cell X="39" Y="4">
+    <object Name="Crystholts"></object>
+  </cell>
+  <cell X="40" Y="4">
+    <object Name="BrimstoneWaste"></object>
+  </cell>
+  <cell X="41" Y="4">
+    <object Name="BrimstoneWaste"></object>
+  </cell>
+  <cell X="24" Y="5">
+    <object Name="BrimstoneWaste"></object>
+  </cell>
+  <cell X="27" Y="5">
+    <object Name="BrimstoneWaste"></object>
+  </cell>
+  <cell X="28" Y="5">
+    <object Name="BrimstoneWaste"></object>
+  </cell>
+  <cell X="29" Y="5">
+    <object Name="Crystholts"></object>
+  </cell>
+  <cell X="30" Y="5">
+    <object Name="BrimstoneWaste"></object>
+  </cell>
+  <cell X="31" Y="5">
+    <object Name="Crystholts"></object>
+  </cell>
+  <cell X="32" Y="5">
+    <object Name="BrimstoneWaste"></object>
+  </cell>
+  <cell X="33" Y="5">
+    <object Name="Crystholts"></object>
+  </cell>
+  <cell X="34" Y="5">
+    <object Name="Crystholts"></object>
+  </cell>
+  <cell X="35" Y="5">
+    <object Name="Crystholts"></object>
+  </cell>
+  <cell X="37" Y="5">
+    <object Name="Crystholts"></object>
+  </cell>
+  <cell X="38" Y="5">
+    <object Name="Crystholts"></object>
+  </cell>
+  <cell X="39" Y="5">
+    <object Name="BrimstoneWaste"></object>
+  </cell>
+  <cell X="40" Y="5">
+    <object Name="BrimstoneWaste"></object>
+  </cell>
+  <cell X="26" Y="6">
+    <object Name="BrimstoneWaste"></object>
+  </cell>
+  <cell X="27" Y="6">
+    <object Name="BrimstoneWaste"></object>
+  </cell>
+  <cell X="28" Y="6">
+    <object Name="BrimstoneWaste"></object>
+  </cell>
+  <cell X="29" Y="6">
+    <object Name="BrimstoneWaste"></object>
+  </cell>
+  <cell X="30" Y="6">
+    <object Name="BrimstoneWaste"></object>
+  </cell>
+  <cell X="31" Y="6">
+    <object Name="BrimstoneWaste"></object>
+  </cell>
+  <cell X="32" Y="6">
+    <object Name="Crystholts"></object>
+  </cell>
+  <cell X="33" Y="6">
+    <object Name="BrimstoneWaste"></object>
+  </cell>
+  <cell X="34" Y="6">
+    <object Name="Crystholts"></object>
+  </cell>
+  <cell X="35" Y="6">
+    <object Name="BrimstoneWaste"></object>
+  </cell>
+  <cell X="25" Y="7">
+    <object Name="BrimstoneWaste"></object>
+  </cell>
+  <cell X="27" Y="7">
+    <object Name="BrimstoneWaste"></object>
+  </cell>
+  <cell X="28" Y="7">
+    <object Name="BrimstoneWaste"></object>
+  </cell>
+  <cell X="29" Y="7">
+    <object Name="BrimstoneWaste"></object>
+  </cell>
+  <cell X="30" Y="7">
+    <object Name="BrimstoneWaste"></object>
+  </cell>
+  <cell X="31" Y="7">
+    <object Name="BrimstoneWaste"></object>
+  </cell>
+  <cell X="32" Y="7">
+    <object Name="BrimstoneWaste"></object>
+  </cell>
+  <cell X="33" Y="7">
+    <object Name="BrimstoneWaste"></object>
+  </cell>
+  <cell X="34" Y="7">
+    <object Name="BrimstoneWaste"></object>
+  </cell>
+  <cell X="35" Y="7">
+    <object Name="BrimstoneWaste"></object>
+  </cell>
+  <cell X="37" Y="7">
+    <object Name="BrimstoneWaste"></object>
+  </cell>
+  <cell X="26" Y="8">
+    <object Name="BrimstoneWaste"></object>
+  </cell>
+  <cell X="28" Y="8">
+    <object Name="BrimstoneWaste"></object>
+  </cell>
+  <cell X="29" Y="8">
+    <object Name="BrimstoneWaste"></object>
+  </cell>
+  <cell X="30" Y="8">
+    <object Name="BrimstoneWaste"></object>
+  </cell>
+  <cell X="31" Y="8">
+    <object Name="BrimstoneWaste"></object>
+  </cell>
+  <cell X="33" Y="8">
+    <object Name="BrimstoneWaste"></object>
+  </cell>
+  <cell X="28" Y="9">
+    <object Name="BrimstoneWaste"></object>
+  </cell>
+  <cell X="29" Y="9">
+    <object Name="BrimstoneWaste"></object>
+  </cell>
+  <cell X="27" Y="10">
+    <object Name="BrimstoneWaste"></object>
+  </cell>
+</Map>

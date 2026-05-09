@@ -1,0 +1,1986 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objects>
+
+
+    <!-- Search:TERRAIN PARTS -->
+
+
+    <object Name="Buggoville" Inherits="Terrain">
+        <part Name="Render" DisplayName="Rhemhez'Qen" Tile="terrain/Rhemhexqen.png" DetailColor="M" TileColor="&amp;c"
+              RenderString="030" ColorString="&amp;M"></part>
+        <part Name="Description"
+              Short="The chrome-womb, primordial vita spills into these defiled lands from these sacred caverns. Birthed in glass, monstrosities and sentients alike climb from its depths. An eternal catalyst pumping life into this treacherous plateau."></part>
+        <tag Name="NoBiomes" Value="1"></tag>
+        <xtagGrammar Proper="true" massNoun="false"/>
+        <tag Name="RegionTier" Value="8"></tag>
+        <stag Name="Historical"/>
+    </object>
+
+    <object Name="Crystholts" Inherits="Terrain">
+        <part Name="Render" DisplayName="crystholts" Tile="terrain/tile_jungle1.bmp" DetailColor="M" TileColor="&amp;B"
+              RenderString="030" ColorString="&amp;M"></part>
+        <part Name="Description"
+              Short="Bladed leaves of shimmering zircon cast hues across the skies in kalaeidoscopic rays. Such beauty hides the darkening undergrowth from which birch-cryst feeds off the many who wander here with rash abandonment."></part>
+        <xtagGrammar Proper="true"></xtagGrammar>
+        <tag Name="Terrain" Value="Crystholts"/>
+        <tag Name="RegionTier" Value="6"></tag>
+        <part Name="RandomCrystalJungle"/>
+    </object>
+
+
+    <object Name="BrimstoneWaste" Inherits="Terrain">
+        <part Name="Render" DisplayName="brimdire wastelands" Tile="terrain/sulfuricdesert1.png" DetailColor="o"
+              TileColor="&amp;K" RenderString="030" ColorString="&amp;W"></part>
+        <part Name="Description"
+              Short="A land hidden in coarse-clouds of brimstone, the smell eeking of nits whose innards spoiled long ago. Sharp castings of flame erupt into air as vents deep beneath the earth gasp with vile flatulence."></part>
+        <tag Name="NoBiomes" Value="1"></tag>
+        <xtagGrammar Proper="true"></xtagGrammar>
+        <tag Name="Terrain" Value="SulfuricDeserts"/>
+        <tag Name="RegionTier" Value="7"></tag>
+        <part Name="TerrainRandomizerBeviddSulfuricDeserts"></part>
+        <tag Name="NoAutowalk"/>
+        <part Name="TerrainTravel" LostChance="50"/>
+        <intproperty Name="NavigationWeight" Value="5"/>
+    </object>
+
+
+    <object Name="CrystholtVillages" Inherits="Terrain">
+        <part Name="Render" DisplayName="The Crystholts" Tile="terrain/tile_jungle1.bmp" DetailColor="M"
+              TileColor="&amp;B" RenderString="030" ColorString="&amp;M"></part>
+        <part Name="Description"
+              Short="The chrome-womb, primordial vita spills into these defiled lands from these sacred caverns. Birthed in glass, monstrosities and sentients alike climb from its depths. An eternal catalyst pumping life into this treacherous plateau."></part>
+        <tag Name="NoBiomes" Value="1"></tag>
+        <xtagGrammar Proper="true"></xtagGrammar>
+        <tag Name="Terrain" Value="Crystholts"/>
+        <tag Name="RegionTier" Value="8"></tag>
+    </object>
+
+
+    <object Name="FlowerPatches" Inherits="Floor">
+        <part Name="Render" DisplayName="flower patch" RenderString="'" ColorString="&amp;C^k" DetailColor="g"
+              Tile="Terrain/tile_flowers2.bmp"></part>
+        <tag Name="NoSparkingQuest"></tag>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"></tag>
+        <part Name="RandomVillageFlower"></part>
+    </object>
+
+    <object Name="CrystalReal1" Inherits="InorganicObject">
+        <part Name="Render" RenderLayer="10" DisplayName="arachite" Tile="Creatures/sw_crystal1.bmp" RenderIfDark="true"
+              RenderString="231" ColorString="&amp;M" DetailColor="c"></part>
+        <part Name="Description"
+              Short="a chattering clump of crystalline material, it hums softly along with a sudden clamor of static energy."></part>
+        <tag Name="ExcludeFromDynamicEncounters" aValue="*noinherit"></tag>
+        <part Name="RandomCrystalGenerator"></part>
+        <part Name="Physics" Weight="3000" FlameTemperature="99999" VaporTemperature="1500" Takeable="false"
+              Solid="true"/>
+        <stat Name="Hitpoints" Value="900"/>
+    </object>
+
+    <object Name="CrystalReal2" Inherits="InorganicObject">
+        <part Name="Render" DisplayName="arachite" Tile="Creatures/sw_crystal2.bmp" RenderIfDark="true"
+              RenderString="231" ColorString="&amp;M" DetailColor="c"></part>
+        <part Name="Description"
+              Short="a chattering formation of crystalline material, it hums softly along with a sudden clamor of static energy."></part>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"></tag>
+        <part Name="RandomCrystalGenerator"></part>
+        <part Name="Physics" Weight="3000" FlameTemperature="99999" VaporTemperature="1500" Takeable="false"
+              Solid="true"/>
+        <stat Name="Hitpoints" Value="900"/>
+    </object>
+
+    <object Name="CrystalReal3" Inherits="InorganicObject">
+        <part Name="Render" DisplayName="arachite" Tile="Creatures/sw_crystal3.bmp" RenderIfDark="true"
+              RenderString="231" ColorString="&amp;M" DetailColor="c"></part>
+        <part Name="Description"
+              Short="a chattering formation of crystalline material, it hums softly along with a sudden clamor of static energy."></part>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"></tag>
+        <part Name="RandomCrystalGenerator"></part>
+        <part Name="Physics" Weight="3000" FlameTemperature="99999" VaporTemperature="1500" Takeable="false"
+              Solid="true"/>
+        <stat Name="Hitpoints" Value="900"/>
+    </object>
+
+    <object Name="CrystalReal4" Inherits="InorganicObject">
+        <part Name="Render" DisplayName="arachite" Tile="Creatures/sw_crystal4.bmp" RenderIfDark="true"
+              RenderString="231" ColorString="&amp;M" DetailColor="c"></part>
+        <part Name="Description"
+              Short="a chattering clump of crystalline material, it hums softly along with a sudden clamor of static energy."></part>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"></tag>
+        <part Name="RandomCrystalGenerator"></part>
+        <part Name="Physics" Weight="3000" FlameTemperature="99999" VaporTemperature="1500" Takeable="false"
+              Solid="true"/>
+        <stat Name="Hitpoints" Value="900"/>
+    </object>
+
+    <object Name="SulfurMound1" Inherits="InorganicObject">
+        <part Name="Render" DisplayName="sulfite mound" Tile="DirtMound1.png" RenderIfDark="true" RenderString="231"
+              ColorString="&amp;O" DetailColor="o"></part>
+        <part Name="Description" Short="A clump of stinking mud-like sulfite."></part>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"></tag>
+        <part Name="RandomMoundGenerator"></part>
+        <part Name="Physics" Weight="3000" FlameTemperature="99999" VaporTemperature="1500" Takeable="false"
+              Solid="true"/>
+        <stat Name="Hitpoints" Value="900"/>
+    </object>
+
+    <object Name="SulfurMound1" Inherits="InorganicObject">
+        <part Name="Render" DisplayName="sulfite mound" Tile="DirtMound1.png" RenderIfDark="true" RenderString="231"
+              ColorString="&amp;O" DetailColor="o"></part>
+        <part Name="Description" Short="A clump of stinking mud-like sulfite."></part>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"></tag>
+        <part Name="RandomMoundGenerator"></part>
+        <part Name="Physics" Weight="3000" FlameTemperature="99999" VaporTemperature="1500" Takeable="false"
+              Solid="true"/>
+        <stat Name="Hitpoints" Value="900"/>
+    </object>
+
+    <object Name="SulfurMound2" Inherits="InorganicObject">
+        <part Name="Render" DisplayName="sulfite mound" Tile="DirtMound2.png" RenderIfDark="true" RenderString="231"
+              ColorString="&amp;O" DetailColor="o"></part>
+        <part Name="Description" Short="A clump of stinking mud-like sulfite."></part>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"></tag>
+        <part Name="RandomMoundGenerator"></part>
+        <part Name="Physics" Weight="3000" FlameTemperature="99999" VaporTemperature="1500" Takeable="false"
+              Solid="true"/>
+        <stat Name="Hitpoints" Value="900"/>
+    </object>
+
+    <object Name="SulfurMound3" Inherits="InorganicObject">
+        <part Name="Render" DisplayName="sulfite mound" Tile="DirtMound3.png" RenderIfDark="true" RenderString="231"
+              ColorString="&amp;O" DetailColor="o"></part>
+        <part Name="Description" Short="A clump of stinking mud-like sulfite."></part>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"></tag>
+        <part Name="RandomMoundGenerator"></part>
+        <part Name="Physics" Weight="3000" FlameTemperature="99999" VaporTemperature="1500" Takeable="false"
+              Solid="true"/>
+        <stat Name="Hitpoints" Value="900"/>
+    </object>
+
+    <object Name="SulfurMound4" Inherits="InorganicObject">
+        <part Name="Render" DisplayName="sulfite mound" Tile="DirtMound4.png" RenderIfDark="true" RenderString="231"
+              ColorString="&amp;O" DetailColor="o"></part>
+        <part Name="Description" Short="A clump of stinking mud-like sulfite."></part>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"></tag>
+        <part Name="RandomMoundGenerator"></part>
+        <part Name="Physics" Weight="3000" FlameTemperature="99999" VaporTemperature="1500" Takeable="false"
+              Solid="true"/>
+        <stat Name="Hitpoints" Value="900"/>
+    </object>
+
+    <object Name="Aloe Crystna" Inherits="BaseAloe">
+        <part Name="Render" DisplayName="aloe crystna" Tile="Creatures/sw_aloe_solo.bmp" RenderString="."
+              RenderLayer="10" ColorString="&amp;m" DetailColor="B" Occluding="false"/>
+        <part Name="Description"
+              Short="Mottled leaf-chutes are splayed out in a rosette. Dust appears and disappears in swirls."/>
+        <stat Name="Level" Value="8"/>
+        <property Name="Role" Value="Controller"/>
+        <part Name="AloeCrystna"/>
+        <part Name="Brain" Hostile="True" Wanders="false" Mobile="false" Factions="Trees-100"/>
+        <part Name="Engulfing" Pull="true" EnterSaveStat="Strength" EnterSaveTarget="7"/>
+        <part Name="EngulfingSedentary"/>
+        <part Name="EngulfingBleeding" Damage="1-2"/>
+    </object>
+
+    <object Name="crytus" Inherits="Plant">
+        <part Name="Render" DisplayName="beviddian crytus" Tile="creatures/crytus.png" RenderString="."
+              ColorString="&amp;c" DetailColor="C" Occluding="false"/>
+        <part Name="Description"
+              Short="Mottled leaf-chutes are splayed out in a rosette. Dust appears and disappears in swirls."/>
+        <stat Name="Level" Value="8"/>
+    </object>
+
+
+    <!-- Search:Plant life -->
+
+
+    <object Name="BloodCryst Formation" Inherits="Plant">
+        <part Name="Render" DisplayName="bloodcryst formation" RenderString="005" ColorString="&amp;b"
+              Tile="creatures/crystaltrees1.png" TileColor="&amp;r" DetailColor="R" Occluding="true"></part>
+        <part Name="Description"
+              Short="A sickly coil of flesh and gore clings to a humming blood-cryst. As the cryst pulsates with energy, the warmth sends the flesh into a frenzy. The flesh grows, splitting from its roots until it parts, forming a new amalgamation."></part>
+        <part Name="AmalgamSpawnerVitae"/>
+        <tag Name="HangingSupport"/>
+    </object>
+
+
+    <object Name="Crystalbirch Tree" Inherits="Tree">
+        <part Name="Render" DisplayName="crystalbirch tree" RenderString="005" ColorString="&amp;Y"
+              Tile="creatures/crystaltrees1.png" TileColor="&amp;Y" DetailColor="y" Occluding="true"></part>
+        <part Name="Description"
+              Short="A ghostly white birch tree with razor-sharp leaves that shimmer like amethyest before a waking-sun."></part>
+        <tag Name="HangingSupport"/>
+        <part Name="AnimatedMaterialGeneric" AnimationLength="300"
+              TileAnimationFrames="0=ani_crystalbirch/f-1.png, 10=ani_crystalbirch/f-2.png, 20=ani_crystalbirch/f-3.png, 30=ani_crystalbirch/f-4.png, 40=ani_crystalbirch/f-5.png, 50=ani_crystalbirch/f-6.png, 60=ani_crystalbirch/f-7.png, 70=ani_crystalbirch/f-8.png, 80=ani_crystalbirch/f-9.png, 90=ani_crystalbirch/f-10.png, 100=ani_crystalbirch/f-11.png, 110=ani_crystalbirch/f-12.png, 120=ani_crystalbirch/f-13.png, 130=ani_crystalbirch/f-14.png, 140=ani_crystalbirch/f-15.png, 150=ani_crystalbirch/f-16, 160=ani_crystalbirch/f-17, 170=ani_crystalbirch/f-18, 180=ani_crystalbirch/f-19"
+              ColorStringAnimationFrames=""/>
+    </object>
+
+    <object Name="Shardgrove Tree" Inherits="Tree">
+        <part Name="Render" DisplayName="shardgrove tree" RenderString="005" ColorString="&amp;m"
+              Tile="creatures/crystaltrees2.png" TileColor="&amp;C" DetailColor="Y" Occluding="true"></part>
+        <part Name="Description"
+              Short="Roots of crystal-vine twist and dive into mottled soil, moisture pulled through its translucent coils meets the center of this ancient shard-leaf, where it feeds it's cystalline-rines."></part>
+        <tag Name="HangingSupport"/>
+        <part Name="AnimatedMaterialGeneric" AnimationLength="300"
+              TileAnimationFrames="0=ani_crystalbirch2/00.png, 10=ani_crystalbirch2/01.png, 20=ani_crystalbirch2/02.png, 30=ani_crystalbirch2/03.png, 40=ani_crystalbirch2/04.png, 50=ani_crystalbirch2/05.png, 60=ani_crystalbirch2/06.png, 70=ani_crystalbirch2/07.png, 80=ani_crystalbirch2/08.png, 90=ani_crystalbirch2/09.png, 100=ani_crystalbirch2/10.png, 110=ani_crystalbirch2/11.png, 120=ani_crystalbirch2/12.png, 130=ani_crystalbirch2/13.png"
+              ColorStringAnimationFrames=""/>
+
+    </object>
+
+    <object Name="Glimmerwood Tree" Inherits="Tree">
+        <part Name="Render" DisplayName="glimmerwood tree" RenderString="005" ColorString="&amp;K"
+              Tile="creatures/crystaltrees3.png" TileColor="&amp;m" DetailColor="Y" Occluding="true"></part>
+        <part Name="Description"
+              Short="Roots of crystal-vine twist and dive into mottled soil, moisture pulled through its translucent coils meets the center of this ancient shard-leaf, where it feeds it's cystalline-rines."></part>
+        <tag Name="HangingSupport"/>
+        <part Name="AnimatedMaterialGeneric" AnimationLength="300"
+              TileAnimationFrames="0=ani_crystalbirch3/00.png, 10=ani_crystalbirch3/01.png, 20=ani_crystalbirch3/02.png, 30=ani_crystalbirch3/03.png, 40=ani_crystalbirch3/04.png, 50=ani_crystalbirch3/05.png, 60=ani_crystalbirch3/06.png, 70=ani_crystalbirch3/07.png, 80=ani_crystalbirch3/08.png, 90=ani_crystalbirch3/09.png, 100=ani_crystalbirch3/10.png, 110=ani_crystalbirch3/11.png, 120=ani_crystalbirch3/12.png, 130=ani_crystalbirch3/13.png"
+              ColorStringAnimationFrames=""/>
+    </object>
+
+    <object Name="Glowing Crystalbirch Tree" Inherits="Tree">
+        <part Name="Render" DisplayName="{{yellow|luminous}} crystalbirch tree" RenderString="005" ColorString="&amp;b"
+              Tile="creatures/crystaltrees1.png" TileColor="&amp;y" DetailColor="Y" Occluding="true"></part>
+        <part Name="Description"
+              Short="A ghostly white birch tree with razor-sharp leaves that shimmer like amethyest before a waking-sun."></part>
+        <tag Name="HangingSupport"/>
+        <tag Name="Wall"/>
+        <part Name="LightSource" Lit="true" Radius="5"/>
+    </object>
+
+    <object Name="Glowing Shardgrove Tree" Inherits="Tree">
+        <part Name="Render" DisplayName="{{yellow|luminous}} shardgrove tree" RenderString="005" ColorString="&amp;m"
+              Tile="creatures/crystaltrees2.png" TileColor="&amp;y" DetailColor="C" Occluding="true"></part>
+        <tag Name="Wall"/>
+        <part Name="Description"
+              Short="Roots of crystal-vine twist and dive into mottled soil, moisture pulled through their translucent coils meets the center of this ancient shard-leaf where it feeds it's cystalline-rines."></part>
+        <tag Name="HangingSupport"/>
+        <part Name="LightSource" Lit="true" Radius="5"/>
+    </object>
+
+    <object Name="Glowing Glimmerwood Tree" Inherits="Tree">
+        <part Name="Render" DisplayName="{{yellow|luminous}} glimmerwood tree" RenderString="005" ColorString="&amp;K"
+              Tile="creatures/crystaltrees3.png" TileColor="&amp;y" DetailColor="m" Occluding="true"></part>
+        <part Name="Description"
+              Short="Roots of crystal-vine twist and dive into mottled soil, moisture pulled through their translucent coils meets the center of this ancient shard-leaf where it feeds it's cystalline-rines."></part>
+        <part Name="LightSource" Lit="true" Radius="5"/>
+        <tag Name="HangingSupport"/>
+    </object>
+
+    <object Name="vitaenstalk" Inherits="Plant">
+        <part Name="Render" DisplayName="vitaen stalk" RenderString="157" ColorString="&amp;r"
+              Tile="assets_content_textures_tiles_tile-brinestalk.png" DetailColor="k" Occluding="false"/>
+        <part Name="Description"
+              Short="Girthy pilings of fibrous salt-rot stake out these pools of brine. They belong to no one."/>
+        <stag Name="Plank" Value="bundle"/>
+        <stag Name="Fiber" Value="rope"/>
+        <stag Name="FiberMaterial" Value="fibre"/>
+    </object>
+
+    <object Name="shardgrass" Inherits="Plant">
+        <part Name="Render" DisplayName="shardgrass" RenderString="161" ColorString="&amp;c"
+              Tile="creatures/sw_weeds1.bmp" TileColor="&amp;c" DetailColor="B" Occluding="false"/>
+        <part Name="Description" Short="The strands glisten with a frothing film."/>
+        <part Name="LiquidRepellent" Liquids="water,cider,goo,oil,ooze,proteangunk,slime,sludge,wine"/>
+        <xtagGrammar iArticle="some"/>
+        <stag Name="Plank" Value="thatch"/>
+        <stag Name="Fiber" Value="twine"/>
+        <stag Name="FiberMaterial" Value="thatch"/>
+        <part Name="RandomTile" Tiles="Creatures/sw_weeds1.bmp,Creatures/sw_weeds2.bmp"/>
+    </object>
+
+    <object Name="putridshardgrass" Inherits="Plant">
+        <part Name="Render" DisplayName="putrid shardgrass" RenderString="161" ColorString="&amp;r"
+              Tile="creatures/sw_weeds1.bmp" TileColor="&amp;r" DetailColor="B" Occluding="false"/>
+        <part Name="Description" Short="The strands glisten with a frothing film."/>
+        <part Name="LiquidRepellent" Liquids="water,cider,goo,oil,ooze,proteangunk,slime,sludge,wine"/>
+        <xtagGrammar iArticle="some"/>
+        <stag Name="Plank" Value="thatch"/>
+        <stag Name="Fiber" Value="twine"/>
+        <stag Name="FiberMaterial" Value="thatch"/>
+        <part Name="RandomTile" Tiles="Creatures/sw_weeds1.bmp,Creatures/sw_weeds2.bmp"/>
+    </object>
+
+
+    <object Name="CrystalFloor" Inherits="Floor">
+        <part Name="Render" DisplayName="packed crystal floor" RenderString="250" ColorString="&amp;Y" RenderLayer="0"/>
+        <part Name="Physics"/>
+        <tag Name="NoSparkingQuest"/>
+    </object>
+
+
+    <object Name="eggpiles1" Inherits="Plant">
+        <part Name="Render" DisplayName="broodsac cluster" RenderString="005" ColorString="&amp;K"
+              Tile="creatures/buggeggsac1.png" DetailColor="y" Occluding="true"></part>
+        <part Name="RandomEggGenerator"></part>
+        <part Name="Description" Short="A pulsating sack of small insectoid eggs."></part>
+    </object>
+    <object Name="eggpiles2" Inherits="Plant">
+        <part Name="Render" DisplayName="broodsac cluster" RenderString="005" ColorString="&amp;K"
+              Tile="creatures/buggeggsac2.png" DetailColor="y" Occluding="true"></part>
+        <part Name="RandomEggGenerator"></part>
+        <part Name="Description" Short="A pulsating sack of small insectoid eggs."></part>
+    </object>
+    <object Name="eggpiles3" Inherits="Plant">
+        <part Name="Render" DisplayName="broodsac cluster" RenderString="005" ColorString="&amp;K"
+              Tile="creatures/buggeggsac3.png" DetailColor="y" Occluding="true"></part>
+        <part Name="RandomEggGenerator"></part>
+        <part Name="Description" Short="A pulsating sack of small insectoid eggs."></part>
+    </object>
+
+
+    <object Name="crystallizedcorpse" Inherits="Plant">
+        <part Name="Render" DisplayName="crystallized remains" RenderString="005" ColorString="&amp;K"
+              Tile="creatures/sw_crystalcorspe1.png" TileColor="&amp;Y" DetailColor="c" Occluding="true"></part>
+        <part Name="RandomCorpseGenerator"></part>
+        <part Name="Description"
+              Short="A fair warning, that to join the cryst, is to leave not only a corpse but a beautiful memorial as well."></part>
+        <part Name="Physics" Weight="3000" FlameTemperature="99999" VaporTemperature="1500" Takeable="false"
+              Solid="true"/>
+        <stat Name="Hitpoints" Value="900"/>
+    </object>
+
+
+    <object Name="anesheym statue" Inherits="Statue">
+        <part Name="Render" DisplayName="anesheym statue" RenderString="005" ColorString="&amp;K"
+              Tile="creatures/bugstatue1.png" TileColor="&amp;M" DetailColor="y" Occluding="true"></part>
+        <part Name="Description" Short="The visage of an aneshyem warrior, captured in black obsidian."></part>
+        <part Name="Physics" Weight="3000" FlameTemperature="99999" VaporTemperature="1500" Takeable="false"
+              Solid="true"/>
+        <stat Name="Hitpoints" Value="900"/>
+    </object>
+
+    <object Name="anesheym statue2" Inherits="Statue">
+        <part Name="Render" DisplayName="anesheym statue" RenderString="005" ColorString="&amp;K"
+              Tile="creatures/bugstatue2.png" TileColor="&amp;M" DetailColor="y" Occluding="true"></part>
+        <part Name="Description" Short="The visage of an aneshyem warrior, captured in black obsidian."></part>
+        <part Name="Physics" Weight="3000" FlameTemperature="99999" VaporTemperature="1500" Takeable="false"
+              Solid="true"/>
+        <stat Name="Hitpoints" Value="900"/>
+    </object>
+
+
+    <object Name="ArtificialWomb" Inherits="InorganicObject">
+        <part Name="Render" DisplayName="artificial womb" RenderString="005" ColorString="&amp;K"
+              Tile="QenFurniture/artificialwomb_tank.png" TileColor="&amp;Y" DetailColor="R" Occluding="true"></part>
+        <part Name="Description" Short=" "></part>
+        <part Name="Physics" Weight="3000" FlameTemperature="99999" VaporTemperature="1500" Takeable="false"
+              Solid="true"/>
+        <stat Name="Hitpoints" Value="900"/>
+    </object>
+
+    <object Name="ArtificialWombShattered1" Inherits="InorganicObject">
+        <part Name="Render" DisplayName="shattered artificial womb" RenderString="005" ColorString="&amp;K"
+              Tile="QenFurniture/artificialwomb_tank_broken1.png" TileColor="&amp;Y" DetailColor="R"
+              Occluding="true"></part>
+        <part Name="Description" Short=" "></part>
+        <part Name="Physics" Weight="3000" FlameTemperature="99999" VaporTemperature="1500" Takeable="false"
+              Solid="true"/>
+        <stat Name="Hitpoints" Value="900"/>
+    </object>
+
+    <object Name="ArtificialWombShattered2" Inherits="InorganicObject">
+        <part Name="Render" DisplayName="shattered anesheym statue" RenderString="005" ColorString="&amp;K"
+              Tile="QenFurniture/artificialwomb_tank_broken2.png" TileColor="&amp;Y" DetailColor="R"
+              Occluding="true"></part>
+        <part Name="Description" Short=" "></part>
+        <part Name="Physics" Weight="3000" FlameTemperature="99999" VaporTemperature="1500" Takeable="false"
+              Solid="true"/>
+        <stat Name="Hitpoints" Value="900"/>
+    </object>
+
+    <object Name="Birth Gate W" Inherits="Double Door W">
+        <part Name="Render" DisplayName="Western Birth Gate" Tile="QenFurniture/elderwombdoor_w.png"
+              ColorString="&amp;C" TileColor="&amp;y" DetailColor="M" RenderString="234"></part>
+        <part Name="Description"
+              Short="An ancient portal, slabs veneered with chrome creep-vine bar all who would be harmed by the secrets of Rhemhez'Qen."></part>
+        <part Name="Door" Locked="true" ClosedTile="QenFurniture/elderwombdoor_w.png"
+              OpenTile="Tiles2/sw_tombgate_w_open.bmp"></part>
+        <stat Name="Hitpoints" sValue="10000"></stat>
+        <xtagGrammar Proper="true"></xtagGrammar>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"></tag>
+        <part Name="wm_DoorUnlocker"/>
+    </object>
+
+    <object Name="Birth Gate E" Inherits="Double Door E">
+        <part Name="Render" DisplayName="Eastern Birth Gate" Tile="QenFurniture/elderwombdoor_e.png"
+              ColorString="&amp;C" TileColor="&amp;y" DetailColor="M" RenderString="234"></part>
+        <part Name="Description"
+              Short="An ancient portal, slabs veneered with chrome creep-vine bar all who would be harmed by the secrets of Rhemhez'Qen."></part>
+        <part Name="Door" Locked="true" ClosedTile="QenFurniture/elderwombdoor_e.png"
+              OpenTile="Tiles2/sw_tombgate_e_open.bmp"></part>
+        <stat Name="Hitpoints" sValue="10000"></stat>
+        <xtagGrammar Proper="true"></xtagGrammar>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"></tag>
+        <part Name="wm_DoorUnlocker"/>
+    </object>
+
+    <object Name="BirthCryptDoor" Inherits="Door">
+        <part Name="Render" TileColor="&amp;K" DetailColor="y"/>
+        <part Name="wm_DoorUnlocker"/>
+    </object>
+
+
+    <!-- Search:liquids -->
+
+
+    <object Name="Insect Pheromones Phial" Inherits="Phial">
+        <part Name="LiquidVolume" StartVolume="1" InitialLiquid="insectpheromones-1000"/>
+    </object>
+
+    <object Name="AnesheymLovePheromones" Inherits="Water">
+        <part Name="LiquidVolume" Volume="10" StartVolume="10d10" InitialLiquid="insectpheromones-1000"></part>
+    </object>
+
+    <object Name="PutrifiedVitaeDeepPool" Inherits="Water">
+        <part Name="LiquidVolume" Volume="4000" StartVolume="4d1000" InitialLiquid="putrifiedvitae-1000"></part>
+    </object>
+
+    <object Name="LiquidSulferDeepPool" Inherits="Water">
+        <part Name="LiquidVolume" Volume="4000" StartVolume="4d1000" InitialLiquid="liquidsulfur-1000"></part>
+    </object>
+
+    <object Name="LiquidSulferShallowPool" Inherits="Water">
+        <part Name="LiquidVolume" Volume="150" InitialLiquid="liquidsulfur-1000"></part>
+    </object>
+
+    <object Name="SulfurPuddle" Inherits="Water">
+        <part Name="LiquidVolume" MaxVolume="-1" Volume="50" InitialLiquid="liquidsulfur-1000"/>
+    </object>
+
+    <object Name="LiquidCrystniumDeepPool" Inherits="Water">
+        <part Name="LiquidVolume" Volume="400" StartVolume="4d1000" InitialLiquid="crystnium-1000"></part>
+    </object>
+
+    <object Name="OceanicWater" Inherits="Water">
+        <part Name="LiquidVolume" MaxVolume="-1" Volume="4000" InitialLiquid="oceanicwater-1000"/>
+        <part Name="wmOceanicStairs"/>
+    </object>
+
+
+    <!-- Search:Gases -->
+
+
+    <object Name="CrysteningGas" Inherits="Gas">
+        <part Name="Render" DisplayName="{{purple|crystening}} gas"/>
+        <part Name="Gas" Seeping="true" GasType="CrysteningGas" ColorString="&amp;M"/>
+        <part Name="CrystniumGas"/>
+        <part Name="Description"
+              Short="A shimmering cloud of ringing dust, the very air quivers as this strange substance crystallizes every atom it touches."/>
+        <tag Name="GasGenerationName" Value="Crystening Gas Generation"/>
+        <tag Name="LevelEffectDescription" Value="crystalization save difficulty and damage"/>
+        <tag Name="ActivationColorString" Value="&amp;m"/>
+        <part Name="CrystniumSolidification"/>
+    </object>
+
+    <object Name="CrysteningGas500" Inherits="CrysteningGas">
+        <part Name="Gas" Density="500"/>
+    </object>
+
+
+    <object Name="SulfuricGas" Inherits="Gas">
+        <part Name="Render" DisplayName="{{sulfuric|sulfuric}} gas"/>
+        <part Name="Gas" Seeping="true" GasType="SulfuricGas" ColorString="&amp;O"/>
+        <part Name="SulfuricGas"/>
+        <part Name="Description"
+              Short="A shimmering cloud of ringing dust, the very air quivers as this strange substance crystallizes every atom it touches."/>
+        <tag Name="GasGenerationName" Value="Sulfur Dioxide Generation"/>
+        <tag Name="ActivationColorString" Value="&amp;o"/>
+    </object>
+
+    <object Name="SulfuricGas500" Inherits="SulfuricGas">
+        <part Name="Gas" Density="100"/>
+    </object>
+
+    <object Name="SulfuricGas50" Inherits="SulfuricGas">
+        <part Name="Gas" Density="10"/>
+    </object>
+
+
+    <!-- Search:widget -->
+
+
+    <object Name="Crystallands" Inherits="Widget">
+        <part Name="Crystallands"/>
+    </object>
+    <object Name="Sulfuriclands" Inherits="Widget">
+        <part Name="Sulfuriclands"/>
+    </object>
+    <object Name="Oceanlands" Inherits="Widget">
+        <part Name="Oceanlands"/>
+    </object>
+
+
+    <!-- Search:Ammo Types -->
+
+    <object Name="Thermosulfite Missile Launcher" Inherits="BaseMagazineHeavyWeapon">
+        <part Name="Render" DisplayName="missile launcher" ColorString="&amp;c" DetailColor="y"
+              Tile="items/sw_techcannon_2.bmp"/>
+        <part Name="Physics" UsesTwoSlots="true" Weight="25"/>
+        <part Name="MissileWeapon" Skill="HeavyWeapons" NoWildfire="false" MaxRange="80" AnimationDelay="5" AmmoChar="m"
+              ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="10"/>
+        <part Name="Commerce" Value="490"/>
+        <part Name="MagazineAmmoLoader" ProjectileObject="ProjectileThermosulfiteMissile" AmmoPart="AmmoMissile"
+              MaxAmmo="1"/>
+        <part Name="Description"
+              Short="Grease wets the arming handle and streaks down the wide missile chute toward a welded shoulder rest."/>
+        <part Name="Examiner" Unknown="UnknownStrangeTubes" Alternate="UnknownStrangeTubes" Complexity="4"/>
+        <part Name="TinkerItem" Bits="0004" CanDisassemble="true" CanBuild="true"/>
+        <part Name="Metal"/>
+        <tag Name="Tier" Value="4"/>
+        <tag Name="MissileFireSound" Value="Sounds/Missile/Fires/Heavy Weapons/sfx_missile_missileLauncher_fire"/>
+        <tag Name="ReloadSound" Value="Sounds/Missile/Reloads/sfx_missile_missileLauncher_reload"/>
+    </object>
+
+    <object Name="Thermosulfuric Missile" Inherits="Projectile">
+        <part Name="Render" DisplayName="thermosulfite missile" ColorString="&amp;c" DetailColor="C"
+              Tile="items/sw_rocket.bmp"/>
+        <part Name="AmmoMissile" ProjectileObject="ProjectileThermosulfiteMissile"/>
+        <part Name="Physics" Category="Ammo" Weight="2"/>
+        <part Name="Description" Short="A bright gashead tips the end of the steely death chute."/>
+        <part Name="MissileStatusColor" Color="w"/>
+        <part Name="TinkerItem" Bits="BC1" CanBuild="true" CanDisassemble="true" NumberMade="5"/>
+        <part Name="Commerce" Value="20"/>
+        <part Name="Examiner" Complexity="4"/>
+        <part Name="Metal"/>
+        <tag Name="Tier" Value="4"/>
+        <tag Name="AmmoName" Value="missile"/>
+        <tag Name="AlwaysStack" Value="Yes"/>
+        <tag Name="DynamicObjectsTable:Ammo"/>
+    </object>
+    <object Name="ProjectileThermosulfiteMissile" Inherits="BaseRocketProjectile">
+        <part Name="Render" DisplayName="{{sulfuric|thermosulfite}} missile"/>
+        <part Name="Projectile" BasePenetration="2" BaseDamage="1d6" ColorString="&amp;y"/>
+        <part Name="wmGasExplosion"></part>
+        <tag Name="ProjectileVFX" Value="MissileWeaponsEffects/rocket"/>
+        <tag Name="ProjectileVFXConfiguration" Value="duration::0.75;;bodyColor::#b1c9c3;;stripeColor::#d74200"/>
+    </object>
+
+
+    <!-- Search:enemies NPCS -->
+
+
+    <object Name="MechaCrab" Inherits="BaseCrab">
+        <property Name="Role" Value="NPC"></property>
+        <stat Name="Level" Value="40"/>
+        <tag Name="Gender" Value="neuter"/>
+        <part Name="Brain" Hostile="true" Factions="Robots-100" MaxKillRadius="5"/>
+        <part Name="Render" DisplayName="colossal mecha-crab" Tile="WalkerCrab.png" ColorString="&amp;K^y"
+              TileColor="&amp;K" DetailColor="y"/>
+        <part Name="Description"
+              Short="Gargantuan legs of blackened steel support a platform of whirring gizmos and mechanical eyes. Its slow, steady gait sends constant tremors through the dirt, bellowing sulfur from its joints as it drains lakes of brimstone with its mandibles. Its claws glow, making a sharp hiss as thermal energy crackles through lattices of thermite."/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+        <stat Name="HeatResistance" Value="200"/>
+        <part Name="SlowDangerousMovement"/>
+        <part Name="AIWanderingJuggernaut"/>
+        <stat Name="AV" Value="10"/>
+        <stat Name="DV" Value="-10"/>
+        <stat Name="Hitpoints" Value="2500"/>
+        <part Name="Physics" Weight="80000"/>
+        <stat Name="Strength" Boost="4"/>
+        <inventoryobject Blueprint="Great Mecha Crab Claw" Number="2"/>
+        <inventoryobject Blueprint="Thermosulfite Missile Launcher"/>
+        <inventoryobject Blueprint="Thermosulfuric Missile" Number="20"/>
+    </object>
+
+    <object Name="Great Mecha Crab Claw" Inherits="NaturalWeapon">
+        <part Name="Render" DisplayName="{{C|great mechanical claw}}" Tile="Creatures/natural-weapon-pincer.bmp"
+              ColorString="&amp;R"/>
+        <part Name="MeleeWeapon" BaseDamage="3d6" Skill="Cudgel" Stat="Strength" Slot="Hand"/>
+    </object>
+
+
+    <object Name="Amalgam1" Inherits="NPC">
+        <property Name="Role" Value="NPC"></property>
+        <stat Name="Level" Value="15"/>
+        <tag Name="Gender" Value="neuter"/>
+        <part Name="Brain" Hostile="true" Factions="Amalgam-100" MaxKillRadius="10"/>
+        <part Name="Render" DisplayName="amalgamate" Tile="creatures/amalgam1.png" RenderString="z" ColorString="&amp;R"
+              DetailColor="r"/>
+        <part Name="Description"
+              Short="Sickly pink flesh swells and surges against a veiny sinuous husk, its a shambling mess composed of innumerable hairless humanoids, reptiles and mammalians; whose limbs conjoin with tumorous growths at their core. Amongst the clutter of grasping digits and flailing extremities is the countless faces, faces whose eyes bury into your own frantically searching. They twitch with expressions of horror and then euphoria, remembering when their flesh was taken by the vita."/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+    </object>
+
+    <object Name="Amalgam2" Inherits="NPC">
+        <property Name="Role" Value="NPC"></property>
+        <stat Name="Level" Value="17"/>
+        <tag Name="Gender" Value="neuter"/>
+        <part Name="Brain" Hostile="true" Factions="Amalgam-100" MaxKillRadius="10"/>
+        <part Name="Render" DisplayName="amalgamate" Tile="creatures/amalgam2.png" RenderString="z" ColorString="&amp;R"
+              DetailColor="r"/>
+        <part Name="Description"
+              Short="Sickly pink flesh swells and surges against a veiny sinuous husk, its a shambling mess composed of innumerable hairless humanoids, reptiles and mammalians; whose limbs conjoin with tumorous growths at their core. Amongst the clutter of grasping digits and flailing extremities is the countless faces, faces whose eyes bury into your own frantically searching. They twitch with expressions of horror and then euphoria, remembering when their flesh was taken by the vita."/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+    </object>
+
+    <object Name="Amalgam3" Inherits="NPC">
+        <property Name="Role" Value="NPC"></property>
+        <stat Name="Level" Value="20"/>
+        <tag Name="Gender" Value="neuter"/>
+        <part Name="Brain" Hostile="true" Factions="Amalgam-100" MaxKillRadius="10"/>
+        <part Name="Render" DisplayName="amalgamate" Tile="creatures/amalgam3.png" RenderString="z" ColorString="&amp;R"
+              DetailColor="r"/>
+        <part Name="Description"
+              Short="Sickly pink flesh swells and surges against a veiny sinuous husk, its a shambling mess composed of innumerable hairless humanoids, reptiles and mammalians; whose limbs conjoin with tumorous growths at their core. Amongst the clutter of grasping digits and flailing extremities is the countless faces, faces whose eyes bury into your own frantically searching. They twitch with expressions of horror and then euphoria, remembering when their flesh was taken by the vita."/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+    </object>
+
+    <object Name="Amalgam4" Inherits="NPC">
+        <property Name="Role" Value="NPC"></property>
+        <stat Name="Level" Value="22"/>
+        <tag Name="Gender" Value="neuter"/>
+        <part Name="Brain" Hostile="true" Factions="Amalgam-100" MaxKillRadius="10"/>
+        <part Name="Render" DisplayName="amalgamate" Tile="creatures/amalgam4.png" RenderString="z" ColorString="&amp;R"
+              DetailColor="r"/>
+        <part Name="Description"
+              Short="Sickly pink flesh swells and surges against a veiny sinuous husk, its a shambling mess composed of innumerable hairless humanoids, reptiles and mammalians; whose limbs conjoin with tumorous growths at their core. Amongst the clutter of grasping digits and flailing extremities is the countless faces, faces whose eyes bury into your own frantically searching. They twitch with expressions of horror and then euphoria, remembering when their flesh was taken by the vita."/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+    </object>
+
+    <object Name="Amalgam5" Inherits="NPC">
+        <property Name="Role" Value="NPC"></property>
+        <stat Name="Level" Value="25"/>
+        <tag Name="Gender" Value="neuter"/>
+        <part Name="Brain" Hostile="true" Factions="Amalgam-100" MaxKillRadius="10"/>
+        <part Name="Render" DisplayName="amalgamate" Tile="creatures/amalgam5.png" RenderString="z" ColorString="&amp;R"
+              DetailColor="r"/>
+        <part Name="Description"
+              Short="Sickly pink flesh swells and surges against a veiny sinuous husk, its a shambling mess composed of innumerable hairless humanoids, reptiles and mammalians; whose limbs conjoin with tumorous growths at their core. Amongst the clutter of grasping digits and flailing extremities is the countless faces, faces whose eyes bury into your own frantically searching. They twitch with expressions of horror and then euphoria, remembering when their flesh was taken by the vita."/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+    </object>
+
+
+    <object Name="StinkBreather" Inherits="BaseBreather">
+        <part Name="Render" DisplayName="stinkbeard" ColorString="&amp;o"/>
+        <part Name="Description"
+              Short="Rolling scales tessellate =pronouns.possessive= husky, slouching form, and motes of still condensate stipple =pronouns.possessive= swollen chin."/>
+        <part Name="wmSulfuricExplosiveDeath"/>
+        <part Name="Corpse" CorpseBlueprint="stinkBreatherCorpse"/>
+        <part Name="EffectResistance" Values="Poison,PoisonGasPoison"/>
+        <mutation Name="StinkyBreather" Level="1"/>
+        <stat Name="HeatResistance" Value="200"/>
+        <stat Name=""/>
+    </object>
+
+    <object Name="StinkBreatherCorpse" Inherits="BaseBreatherCorpse">
+        <part Name="Render" DisplayName="stinkbeard corpse"/>
+        <!-- <part Name="Butcherable" OnSuccess="StunBreatherGland" /> -->
+    </object>
+
+    <object Name="Orange Jell" Inherits="BaseOoze">
+        <part Name="Corpse" CorpseChance="0"/>
+        <part Name="Render" DisplayName="{{O|orange jell}}" RenderString="j" ColorString="&amp;O"/>
+        <stat Name="Level" Value="33"/>
+        <stat Name="AV" Value="6"/>
+        <stat Name="Hitpoints" Value="140"/>
+        <stat Name="HeatResistance" Value="200"/>
+        <stat Name="ColdResistance" Value="-50"/>
+        <inventoryobject Blueprint="Magmatic Pseudopod" Number="2"/>
+        <part Name="Description"
+              Short="Behind the glass membrane, inside a microcosmic globe, heat gives birth to lobes of molten rock that flow toward their own pyroclastic demise."/>
+        <part Name="wmSulfurBurst"/>
+        <skill Name="Cudgel"/>
+        <skill Name="Cudgel_Bludgeon"/>
+        <tag Name="Role" Value="Brute"/>
+        <part Name="LightSource" Lit="true" Radius="6"/>
+        <tag Name="BleedLiquid" Value="liquidsulfur-1000"/>
+        <tag Name="BleedColor" Value="&amp;O"/>
+        <tag Name="BleedPrefix" Value="{{Sulfuric|sulfuric}}"/>
+    </object>
+
+    <object Name="Grand Mortar Beetle" Inherits="BaseInsect">
+        <part Name="Render" DisplayName="grand mortar beetle" Tile="grandbeetle.png" RenderString="i"
+              ColorString="&amp;K" DetailColor="o"/>
+        <part Name="Corpse" CorpseChance="25" CorpseBlueprint="Grand Mortar Beetle Corpse"/>
+        <part Name="Brain" Hostile="false"/>
+        <stat Name="AV" Value="6"/>
+        <stat Name="DV" Value="2"/>
+        <stat Name="Hitpoints" Value="55"/>
+        <stat Name="Level" Value="10"/>
+        <stat Name="HeatResistance" Value="200"/>
+        <stat Name="ColdResistance" Value="-50"/>
+        <inventoryobject Blueprint="GiantBeetle_Bite" Number="1"/>
+        <part Name="Description" Short="Shining black elytra flitter on the back of a goat-sized bug."/>
+        <skill Name="Cudgel"/>
+        <tag Name="Role" Value="Minion"/>
+        <part Name="Swarmer"/>
+        <tag Name="Species" Value="beetle"/>
+        <tag Name="DynamicObjectsTable:Jungle_Creatures"/>
+        <tag Name="DynamicObjectsTable:Ruins_Creatures"/>
+        <mutation Name="wmSpitSulfur" Level="1"/>
+    </object>
+    <object Name="GiantMortarBeetle_Bite" Inherits="Bite">
+        <part Name="MeleeWeapon" BaseDamage="2d4" Skill="Cudgel" Slot="Head"/>
+    </object>
+    <object Name="Grand Mortar Beetle Corpse" Inherits="Arthropod Corpse">
+        <part Name="Render" DisplayName="grand mortar beetle corpse"/>
+        <part Name="Commerce" Value="1"/>
+        <part Name="Butcherable" OnSuccess="Raw Beetle Meat"/>
+        <tag Name="Tier" Value="1"/>
+    </object>
+
+    <object Name="Crystwyk" Inherits="BaseReptile">
+        <part Name="Render" DisplayName="crystwyk" RenderString="r" DetailColor="C" ColorString="&amp;c"
+              Tile="creatures/crystwyk.png"/>
+        <stat Name="Level" Value="22"/>
+        <stat Name="AV" Value="6"/>
+        <stat Name="DV" Value="6"/>
+        <stat Name="ElectricResistance" Value="15"/>
+        <stat Name="AcidResistance" Value="15"/>
+        <stat Name="ColdResistance" Value="100"/>
+        <stat Name="Hitpoints" Value="100"/>
+        <part Name="Brain" Hostile="true"/>
+        <part Name="Description"
+              Short="Granules of dust frozen for stony eons marble the dewlap of a giant magenta iguana."/>
+        <skill Name="ShortBlades"/>
+        <part Name="AIShootAndScoot" Duration="1d20+5"/>
+        <tag Name="Role" Value="Artillery"/>
+        <mutation Name="LightManipulation" Level="5"/>
+        <inventoryobject Blueprint="Crystwyk_Bite"/>
+        <tag Name="Species" Value="iguana"/>
+    </object>
+    <object Name="Crystwyk_Bite" Inherits="Bite">
+        <part Name="Render" DisplayName="{{C|crystalline jaws}}"/>
+        <part Name="MeleeWeapon" BaseDamage="2d4"/>
+        <tag Name="Gender" Value="plural"/>
+    </object>
+
+    <object Name="GlarewingRaptor" Inherits="BaseReptile">
+        <part Name="Render" DisplayName="glarewing raptor" RenderString="r" Tile="creatures/glarewingraptor.png"
+              DetailColor="y" ColorString="&amp;K"/>
+        <part Name="Body" Anatomy="Snake"/>
+        <part Name="Brain" Hostile="True" Factions="Birds-100,Unshelled Reptiles-100"/>
+        <part Name="Corpse" CorpseChance="50" CorpseBlueprint="Glarewing Raptor Corpse" CorpseRequiresBodyPart="Tail"/>
+        <stat Name="AV" Value="4"/>
+        <stat Name="DV" Value="4"/>
+        <stat Name="Level" Value="15"/>
+        <stat Name="Hitpoints" Value="30"/>
+        <mutation Name="FreezingRay" Level="4" BodyPartType="Face"/>
+        <mutation Name="wmGlareBurst"/>
+        <mutation Name="Wings" Level="10"/>
+        <inventoryobject Blueprint="Dawnglider_Bite" Number="1"/>
+        <stat Name="HeatResistance" Value="0"/>
+        <part Name="Description"
+              Short="Leathery wings bat shimmering dust off =pronouns.possessive= ray-like aura, and =pronouns.possessive= S-shape bod ripples across their waves of air. =pronouns.Possessive= plumage is blinding with the glint of crystalline shear."/>
+        <tag Name="Species" Value="dawnglider"/>
+        <tag Name="SeveredTailBlueprint" Value="Dawnglider Tail"/>
+        <tag Name="Role" Value="Artillery"/>
+        <tag Name="DynamicObjectsTable:Saltdunes_Creatures"/>
+    </object>
+    <object Name="Dawnglider_Bite" Inherits="Bite">
+        <part Name="MeleeWeapon" BaseDamage="1d4"/>
+        <part Name="TemperatureOnHit" Amount="2d20" Max="true" MaxTemp="-200" OnWielderHit="false"/>
+    </object>
+    <object Name="Glarewing Raptor Corpse" Inherits="Scaled Reptile Corpse">
+        <part Name="Render" DisplayName="dawnglider corpse"/>
+        <part Name="Commerce" Value="8"/>
+        <part Name="Description" Short="Broken scales and burnt feathers lay in flat tessellation."/>
+        <part Name="Butcherable" OnSuccess="Dawnglider Tail"/>
+        <tag Name="Tier" Value="3"/>
+    </object>
+
+    <object Name="Scythetoothed Leviathan" Inherits="BaseFish">
+        <part Name="Render" DisplayName="scythe-toothed leviathan" Tile="Scythetooth_Leviathian.png" RenderString="224"
+              ColorString="&amp;M"/>
+        <part Name="Corpse" CorpseChance="100" CorpseBlueprint="Madpole Corpse"/>
+        <stat Name="Hitpoints" Value="150"/>
+        <stat Name="Strength" sValue="66"/>
+        <stat Name="Agility" sValue="32"/>
+        <stat Name="Level" Value="32"/>
+        <part Name="Brain" WandersRandomly="true" Wanders="false" Hostile="True" Aquatic="true"/>
+        <mutation Name="Gills" Level="10"/>
+        <skill Name="Axe_Expertise"/>
+        <skill Name="Axe_Dismember"/>
+        <part Name="LiquidProximityFrenzies" Range="0" Duration="10" BerserkImmediately="true"
+              PreferBleedingTarget="true"/>
+        <part Name="Description"
+              Short="The distended jaw of this leviathian bears many hooked teeth, shaped unlike the vinereavers a farmer might bare."/>
+        <inventoryobject Blueprint="Scythetoothed_Jaws" Number="1"/>
+        <property Name="NoLoot" Value="true"/>
+        <tag Name="Role" Value="Minion"/>
+        <tag Name="Species" Value="fish"/>
+        <tag Name="DynamicObjectsTable:Water_Creatures"/>
+        <tag Name="PlacementHint" Value="Aquatic"/>
+    </object>
+    <object Name="Scythetoothed_Jaws" Inherits="NaturalWeapon">
+        <part Name="Render" DisplayName="gargantuan jaws" Tile="Creatures/natural-weapon-bite.bmp"
+              ColorString="&amp;w"/>
+        <part Name="MeleeWeapon" Slot="Face" MaxStrengthBonus="9999" BaseDamage="4d6" Skill="Axe"/>
+        <part Name="LatchesOn" InitialSaveTarget="15" InitialSaveStat="Agility" InitialSaveDifficultyStat="Agility"
+              MoveSaveTarget="15" MoveSaveStat="Strength" MoveSaveDifficultyStat="Strength" BreakSaveTarget="15"
+              BreakSaveStat="Strength" BreakSaveDifficultyStat="Strength" Duration="3d4" AutoAttackOnMove="false"
+              AutoAttackOnMoveAway="false" AutoAttackPerTurn="true" BloodSpatterOnLatch="true"/>
+        <tag Name="Gender" Value="plural"/>
+    </object>
+
+
+    <object Name="Deathmaw Leviathan" Inherits="BaseFish">
+        <part Name="Render" DisplayName="deathmaw leviathan" Tile="Deathmaw_Leviathian.png" RenderString="224"
+              ColorString="&amp;B"/>
+        <part Name="Corpse" CorpseChance="100" CorpseBlueprint="Madpole Corpse"/>
+        <stat Name="Hitpoints" Value="85"/>
+        <stat Name="Strength" sValue="66"/>
+        <stat Name="Agility" sValue="32"/>
+        <stat Name="Level" Value="32"/>
+        <part Name="Brain" WandersRandomly="true" Wanders="false" Hostile="True" Aquatic="true"/>
+        <mutation Name="Gills" Level="10"/>
+        <skill Name="Axe_Expertise"/>
+        <skill Name="Axe_Dismember"/>
+        <part Name="LiquidProximityFrenzies" Range="0" Duration="10" BerserkImmediately="true"
+              PreferBleedingTarget="true"/>
+        <part Name="Description"
+              Short="Maybe this is what a madpole is to become, a vicious beast of gargantuan size, jaws lined with thousands of teeth shimmering as it hones in on any sign of life around it."/>
+        <inventoryobject Blueprint="Scythetoothed_Jaws" Number="1"/>
+        <property Name="NoLoot" Value="true"/>
+        <tag Name="Role" Value="Minion"/>
+        <tag Name="Species" Value="fish"/>
+        <tag Name="DynamicObjectsTable:Water_Creatures"/>
+        <tag Name="PlacementHint" Value="Aquatic"/>
+    </object>
+    <object Name="Deathmaw_Jaws" Inherits="NaturalWeapon">
+        <part Name="Render" DisplayName="gargantuan jaws" Tile="Creatures/natural-weapon-bite.bmp"
+              ColorString="&amp;w"/>
+        <part Name="MeleeWeapon" Slot="Face" MaxStrengthBonus="9999" BaseDamage="6d6" Skill="Axe"/>
+        <part Name="LatchesOn" InitialSaveTarget="15" InitialSaveStat="Agility" InitialSaveDifficultyStat="Agility"
+              MoveSaveTarget="15" MoveSaveStat="Strength" MoveSaveDifficultyStat="Strength" BreakSaveTarget="15"
+              BreakSaveStat="Strength" BreakSaveDifficultyStat="Strength" Duration="3d4" AutoAttackOnMove="false"
+              AutoAttackOnMoveAway="false" AutoAttackPerTurn="true" BloodSpatterOnLatch="true"/>
+        <tag Name="Gender" Value="plural"/>
+    </object>
+
+    <object Name="Darkwell Leviathan" Inherits="BaseFish">
+        <part Name="Render" DisplayName="darkwell leviathan" Tile="Darkwell_Leviathian.png" RenderString="224"
+              ColorString="&amp;y"/>
+        <part Name="Corpse" CorpseChance="100" CorpseBlueprint="Madpole Corpse"/>
+        <stat Name="Hitpoints" Value="85"/>
+        <stat Name="Strength" sValue="66"/>
+        <stat Name="Agility" sValue="32"/>
+        <stat Name="Level" Value="32"/>
+        <part Name="Brain" WandersRandomly="true" Wanders="false" Hostile="True" Aquatic="true"/>
+        <mutation Name="Gills" Level="10"/>
+        <skill Name="Axe_Expertise"/>
+        <skill Name="Axe_Dismember"/>
+        <part Name="LiquidProximityFrenzies" Range="0" Duration="10" BerserkImmediately="true"
+              PreferBleedingTarget="true"/>
+        <part Name="Description"
+              Short="A dark shadow envelopes this massive serpent, an eerie silence moves with it as you catch its faint appearance here and there, diving between planes of water and void.."/>
+        <inventoryobject Blueprint="Darkwell_Jaws" Number="1"/>
+        <property Name="NoLoot" Value="true"/>
+        <tag Name="Role" Value="Minion"/>
+        <tag Name="Species" Value="fish"/>
+        <tag Name="DynamicObjectsTable:Water_Creatures"/>
+        <tag Name="PlacementHint" Value="Aquatic"/>
+    </object>
+    <object Name="Darkwell_Jaws" Inherits="NaturalWeapon">
+        <part Name="Render" DisplayName="gargantuan jaws" Tile="Creatures/natural-weapon-bite.bmp"
+              ColorString="&amp;w"/>
+        <part Name="MeleeWeapon" Slot="Face" MaxStrengthBonus="9999" BaseDamage="2d6" Skill="Axe"/>
+        <part Name="LatchesOn" InitialSaveTarget="15" InitialSaveStat="Agility" InitialSaveDifficultyStat="Agility"
+              MoveSaveTarget="15" MoveSaveStat="Strength" MoveSaveDifficultyStat="Strength" BreakSaveTarget="15"
+              BreakSaveStat="Strength" BreakSaveDifficultyStat="Strength" Duration="3d4" AutoAttackOnMove="false"
+              AutoAttackOnMoveAway="false" AutoAttackPerTurn="true" BloodSpatterOnLatch="true"/>
+        <tag Name="Gender" Value="plural"/>
+    </object>
+
+    <object Name="Mantra Ray" Inherits="BaseFish">
+        <part Name="Render" DisplayName="mantra ray" RenderString="224" ColorString="&amp;r" Tile="mantrarays.png"/>
+        <part Name="Corpse" CorpseChance="0" CorpseBlueprint="Madpole Corpse"/>
+        <stat Name="Hitpoints" Value="12"/>
+        <stat Name="Strength" sValue="18"/>
+        <stat Name="Agility" sValue="17"/>
+        <stat Name="Level" Value="13"/>
+        <part Name="Brain" WandersRandomly="true" Hostile="false" Wanders="false" Aquatic="true" Calm="true"
+              Factions="Fish-100"/>
+        <mutation Name="Gills" Level="10"/>
+        <mutation Name="LightManipulation" Level="10"/>
+        <mutation Name="ForceWall" Level="10"/>
+        <part Name="Description"
+              Short="Great wings of cartilage flit on the ocean current in slow methodical motions, its edges glow with luminescence."/>
+        <inventoryobject Blueprint="Mantra_Bite" Number="1"/>
+        <property Name="NoLoot" Value="true"/>
+        <tag Name="PlacementHint" Value="Aquatic"/>
+    </object>
+    <object Name="Mantra_Bite" Inherits="Bite">
+        <part Name="MeleeWeapon" MaxStrengthBonus="9999" BaseDamage="4d4" Skill="Axe"/>
+    </object>
+
+    <!-- Leviathans -->
+
+    <object Name="LeviathanHead" Inherits="BaseFish">
+        <part Name="Render" DisplayName="leviathan" RenderString="224" ColorString="&amp;r" Tile="mantrarays.png"/>
+        <part Name="Corpse" CorpseChance="0" CorpseBlueprint="Madpole Corpse"/>
+        <stat Name="Hitpoints" Value="5000"/>
+        <stat Name="Strength" sValue="50"/>
+        <stat Name="Agility" sValue="20"/>
+        <stat Name="Level" Value="50"/>
+        <part Name="Brain" WandersRandomly="true" Hostile="true" Wanders="false" Aquatic="true" Calm="true"
+              Factions="Fish-100"/>
+        <part Name="wmLeviathanHead" />
+        <mutation Name="Gills" Level="10"/>
+        <part Name="Description"
+              Short="Great wings of cartilage flit on the ocean current in slow methodical motions, its edges glow with luminescence."/>
+        <inventoryobject Blueprint="Leviathan_Bite" Number="1"/>
+        <property Name="NoLoot" Value="true"/>
+        <tag Name="PlacementHint" Value="Aquatic"/>
+    </object>
+    <object Name="Leviathan_Bite" Inherits="Bite">
+        <part Name="MeleeWeapon" MaxStrengthBonus="9999" BaseDamage="4d12" Skill="Axe"/>
+    </object>
+
+    <object Name="LeviathanTail" Inherits="BaseFish">
+        <part Name="Render" DisplayName="leviathan" RenderString="224" ColorString="&amp;r" Tile="mantrarays.png"/>
+        <part Name="Corpse" CorpseChance="0" CorpseBlueprint="Madpole Corpse"/>
+        <stat Name="Hitpoints" Value="5000"/>
+        <stat Name="Strength" sValue="50"/>
+        <stat Name="Agility" sValue="20"/>
+        <stat Name="Level" Value="50"/>
+        <part Name="Brain" WandersRandomly="true" Hostile="false" Wanders="false" Aquatic="true" Calm="true"
+              Factions="Fish-100"/>
+        <mutation Name="Gills" Level="10"/>
+        <part Name="Description"
+              Short="Great wings of cartilage flit on the ocean current in slow methodical motions, its edges glow with luminescence."/>
+        <inventoryobject Blueprint="Leviathan_Bite" Number="1"/>
+        <property Name="NoLoot" Value="true"/>
+        <tag Name="PlacementHint" Value="Aquatic"/>
+    </object>
+    <object Name="Leviathan_Bite" Inherits="Bite">
+        <part Name="MeleeWeapon" MaxStrengthBonus="9999" BaseDamage="4d12" Skill="Axe"/>
+    </object>
+
+    <!-- Search:bugvillage/IMPORTANT NPCS -->
+
+    <!-- barathrumites -->
+
+    <object Name="Saile" Inherits="Barathrumite">
+        <part Name="Render" DisplayName="Saile" ColorString="&amp;W" TileColor="&amp;Y" Tile="sailebearperson.png"
+              DetailColor="r"/>
+        <part Name="Brain" Wanders="false"/>
+        <part Name="FactionRank" Ranks="Barathrumites::meyvn"/>
+        <stat Name="Strength" sValue="19"/>
+        <stat Name="Intelligence" sValue="39"/>
+        <stat Name="Willpower" sValue="26"/>
+        <stat Name="Toughness" sValue="16"/>
+        <stat Name="Agility" sValue="31"/>
+        <stat Name="Ego" sValue="26"/>
+        <stat Name="Hitpoints" Value="85"/>
+        <part Name="Description"
+              Short="Quills tipped in red-tint gleam with the lablights, a weary gaze of golden eyes barely visible behind oval lenses. Their face carries scars of burnt flesh from their various technical exploits gone horribly wrong. The uurshib seems content though, as they tinker, performing diagnostics to the most minute detail. Every once in a while, they pull from their pocket a momento to which they hold a cold, solemn gaze to a photo of times long gone."/>
+        <stat Name="Level" Value="28"/>
+        <skill Name="Customs_Tactful"/>
+        <skill Name="Tinkering"/>
+        <skill Name="Tinkering_Disassemble"/>
+        <skill Name="Tinkering_Repair"/>
+        <skill Name="Tinkering_ReverseEngineer"/>
+        <skill Name="Tinkering_Tinker1"/>
+        <skill Name="Tinkering_Tinker2"/>
+        <skill Name="Pistol"/>
+        <skill Name="Pistol_Akimbo"/>
+        <part Name="GivesRep"/>
+        <part Name="AISelfPreservation" Threshold="30"/>
+        <tag Name="staticFaction3" Value=",friend,developing a quantum mechanical model"/>
+        <tag Name="staticFaction2" Value=",dislike,=pronouns.possessive= queer appearance"/>
+        <tag Name="staticFaction1" Value=",hate,questioning the legitimacy of their hierarchies"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+        <tag Name="Gender" Value="plural"/>
+        <tag Name="PronounSet" Value="they/them"/>
+        <xtagGrammar Proper="true"/>
+        <property Name="WontSell" Value="Overloaded Laser Pistol"/>
+        <inventoryobject Blueprint="Ulnar Stimulators" Number="1" CellChance="100" CellFullChance="100"
+                         CellType="Chem Cell"/>
+        <inventoryobject Blueprint="Strength Exo" Number="1" CellChance="100" CellFullChance="100"
+                         CellType="Chem Cell"/>
+        <inventoryobject Blueprint="Plastifer Sneakers" Number="1"/>
+        <inventoryobject Blueprint="Polyhedral Rings" Number="1"/>
+        <inventoryobject Blueprint="Spiral Iron" Number="1"/>
+        <inventoryobject Blueprint="Rough Agate" Number="0-1"/>
+        <inventoryobject Blueprint="Rough Jasper" Number="0-1"/>
+        <inventoryobject Blueprint="Rough Amethyst" Number="0-1"/>
+        <inventoryobject Blueprint="Rough Sapphire" Number="0-1"/>
+        <inventoryobject Blueprint="Rough Emerald" Number="0-1"/>
+        <inventoryobject Blueprint="Overloaded Laser Pistol" Number="2" CellChance="100" CellFullChance="100"
+                         CellType="Chem Cell"/>
+        <inventoryobject Blueprint="CyberneticsCreditWedge_Cheap" Number="1"/>
+        <xtagWaterRitual NoJoin="true" numRecipes="3"/>
+        <part Name="ConversationScript" ConversationID="SaileConversation"/>
+    </object>
+
+
+    <object Name="bugvillager" Inherits="NPC">
+        <property Name="Role" Value="NPC"></property>
+        <stat Name="Level" Value="20"/>
+        <tag Name="Gender" Value="neuter"/>
+        <part Name="Brain" Hostile="False" Factions="Anesheym-100"/>
+        <part Name="Render" DisplayName="anesheym villager" Tile="creatures/bugvillager.png" RenderString="z"
+              ColorString="&amp;Y" DetailColor="c"/>
+        <part Name="Description"
+              Short="An insectoid whose genes were warped with human lineages, they show high levels of intelligence and to some, an unnerving tendency toward compassion and benevolence."/>
+        <part Name="AISelfPreservation" Threshold="80"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+        <mutation Name="Spinnerets" Level="2"/>
+        <mutation Name="MultipleArms" Level="1"/>
+    </object>
+
+    <object Name="bugkid" Inherits="NPC">
+        <property Name="Role" Value="NPC"></property>
+        <stat Name="Level" Value="20"/>
+        <tag Name="Gender" Value="neuter"/>
+        <part Name="Brain" Hostile="False" Factions="Anesheym-100"/>
+        <part Name="Render" DisplayName="anesheym child" Tile="creatures/bugkid.png" RenderString="z"
+              ColorString="&amp;Y" DetailColor="c"/>
+        <part Name="Description"
+              Short="To be ogled by the beady eyes of this small insectoid invokes feelings of wonder: why did the precursors see it fit to blend our kinds?"/>
+        <part Name="AISelfPreservation" Threshold="80"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+    </object>
+
+    <object Name="bugelder" Inherits="NPC">
+        <property Name="Role" Value="NPC"></property>
+        <stat Name="Level" Value="20"/>
+        <tag Name="Gender" Value="neuter"/>
+        <part Name="Brain" Hostile="False" Factions="Anesheym-100"/>
+        <part Name="Render" DisplayName="anesheym elder" Tile="creatures/bugelder.png" RenderString="z"
+              ColorString="&amp;Y" DetailColor="c"/>
+        <part Name="Description"
+              Short="For insectomamilians and our anesheym, old age accompanies starvation, a fate exhibited in this one with its loose hanging shell and stiff movements. Their greatest strength is to grow without limit, yet exemplified here it reveals its greatest weakness--if one cannot acquire the sustenance to sustain such a form, then they will wither away to inanition. To the anesheym, hunger is age."/>
+        <part Name="AISelfPreservation" Threshold="80"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+    </object>
+
+    <object Name="bugnurse" Inherits="NPC">
+        <property Name="Role" Value="NPC"></property>
+        <stat Name="Level" Value="20"/>
+        <tag Name="Gender" Value="neuter"/>
+        <part Name="Brain" Hostile="False" Factions="Anesheym-100"/>
+        <part Name="Render" DisplayName="anesheym brood-nurse" Tile="creatures/bugnurse.png" RenderString="z"
+              ColorString="&amp;Y" DetailColor="c"/>
+        <part Name="Description"
+              Short="This feminine insectoid huddles clutches of eggs and young-brood in its many arms; not one of these are this creature's direct offspring--but instead the young of their progenitor. Nevertheless, they show a maternal care that is surely love towards their grublings."/>
+        <part Name="AISelfPreservation" Threshold="80"/>
+        <part Name="RandomNurseName"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+    </object>
+
+    <object Name="bugsolder" Inherits="NPC">
+        <property Name="Role" Value="NPC"></property>
+        <stat Name="Level" Value="20"/>
+        <tag Name="Gender" Value="neuter"/>
+        <part Name="Brain" Hostile="False" Factions="Anesheym-100"/>
+        <part Name="Render" DisplayName="anesheym guardsfolk" Tile="creatures/bugsolder.png" RenderString="z"
+              ColorString="&amp;Y" DetailColor="c"/>
+        <part Name="Description"
+              Short="The warrior lineage of the aneshym is the result of select genoclinic reproduction and careful combat conditioning. They stand tall, most adorned in armor latticed from nanites and chitin glaze."/>
+        <part Name="AISelfPreservation" Threshold="80"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+    </object>
+
+    <object Name="bugsentinel" Inherits="NPC">
+        <property Name="Role" Value="NPC"></property>
+        <stat Name="Level" Value="20"/>
+        <tag Name="Gender" Value="neuter"/>
+        <part Name="Brain" Hostile="False" Factions="Anesheym-100"/>
+        <part Name="Render" DisplayName="anesheym sentinel" Tile="creatures/bugsentinel.png" RenderString="z"
+              ColorString="&amp;Y" DetailColor="c"/>
+        <part Name="Description"
+              Short="The warrior lineage of the aneshym is the result of select genoclinic reproduction and careful combat conditioning. They stand tall, most adorned in armor latticed from nanites and chitin glaze. Toughened through war-hardened times, the sentinels are the first and foremost to stand before the enemy and the grand progenitor."/>
+        <part Name="AISelfPreservation" Threshold="80"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+    </object>
+
+    <object Name="bugexalted" Inherits="NPC">
+        <property Name="Role" Value="NPC"></property>
+        <stat Name="Level" Value="20"/>
+        <tag Name="Gender" Value="neuter"/>
+        <part Name="Brain" Hostile="true" Factions="Anesheym-100"/>
+        <part Name="Render" DisplayName="corrupt savant" Tile="creatures/bugexalted.png" RenderString="w"
+              ColorString="&amp;W" DetailColor="w"/>
+        <part Name="Description"
+              Short="Once a devout moonseer who stumbled into the dark places of the anima. They succumbed to the sickness, and with eyes blackened and crazed; the insectoid looks altered and feral, their minds severely addled as its logic is infested by their shadow."/>
+        <part Name="AISelfPreservation" Threshold="80"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+    </object>
+
+    <object Name="buganimancernovice" Inherits="NPC">
+        <property Name="Role" Value="NPC"></property>
+        <stat Name="Level" Value="20"/>
+        <tag Name="Gender" Value="neuter"/>
+        <part Name="Brain" Hostile="False" Factions="Anesheym-100"/>
+        <part Name="Render" DisplayName="newlight sage" Tile="creatures/buganimancernovice.png" RenderString="z"
+              ColorString="&amp;M" DetailColor="r"/>
+        <part Name="Description"
+              Short="The Yel-Deya-Yerah are an order who disciplines themselves in mastering and studying the secrets of the anima. Both in dream and through meditation, these monadic individuals derive great knowledge and power through the dream-plane. This in particular is a novice, denoted by their new-moon robe and their grey apparel."/>
+        <part Name="AISelfPreservation" Threshold="80"/>
+        <part Name="RandomNameSavantMonk"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+    </object>
+
+    <object Name="buganimancerhigh" Inherits="NPC">
+        <property Name="Role" Value="NPC"></property>
+        <stat Name="Level" Value="20"/>
+        <tag Name="Gender" Value="neuter"/>
+        <part Name="Brain" Hostile="False" Factions="Anesheym-100"/>
+        <part Name="Render" DisplayName="waining sage" Tile="creatures/buganimancerhigh.png" RenderString="z"
+              ColorString="&amp;M" DetailColor="r"/>
+        <part Name="Description"
+              Short="The Yel-Deya-Yerah are an order who disciplines themselves in mastering and studying the secrets of the anima. Both in dream and through meditation, these monadic individuals derive great knowledge and power through the dream-plane. This individual has reached the status 'waxing,' they have delved into the depths of the unconscious and faced the horrors within mostly unscathed."/>
+        <part Name="AISelfPreservation" Threshold="80"/>
+        <part Name="RandomNameHighMonk"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+    </object>
+
+    <object Name="buganimancersavant" Inherits="NPC">
+        <property Name="Role" Value="NPC"></property>
+        <stat Name="Level" Value="20"/>
+        <tag Name="Gender" Value="neuter"/>
+        <part Name="Brain" Hostile="False" Factions="Anesheym-100"/>
+        <part Name="Render" DisplayName="screeching sage" Tile="creatures/buganimancersavant.png" RenderString="z"
+              ColorString="&amp;M" DetailColor="r"/>
+        <part Name="Description"
+              Short="The Yel-Deya-Yerah are an order who disciplines themselves in mastering and studying the secrets of the anima. Both in dream and through meditation, these monadic individuals derive great knowledge and power through the dream-plane. This savant bears the quartered-moon crest of the 'waning,' they are familiar with the anima and ripened by her eidolithic fruits."/>
+        <part Name="AISelfPreservation" Threshold="80"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+    </object>
+
+
+    <!-- Search:Unique NPC's -->
+
+
+    <object Name="bughonorguard1" Inherits="NPC">
+        <property Name="Role" Value="NPC"></property>
+        <stat Name="Level" Value="20"/>
+        <tag Name="Gender" Value="neuter"/>
+        <part Name="Brain" Hostile="False" Factions="Anesheym-150"/>
+        <part Name="Render" DisplayName="BloodShell Jar'karunox, Sentinel to the Grand Progenitor"
+              Tile="creatures/bughonorguard1.png" ColorString="&amp;R" DetailColor="Y" RenderString="z"/>
+        <part Name="Description"
+              Short="Rippling intramuscular tissue swells against a brutish-frame of shale-scratched exoskeleton, their spinnerets lick the air from the cusp of their cheeks in a star-like pattern as their globus eyes scan the courtroom eagerly."/>
+        <part Name="AISelfPreservation" Threshold="80"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+    </object>
+
+    <object Name="bughonorguard2" Inherits="NPC">
+        <property Name="Role" Value="NPC"></property>
+        <stat Name="Level" Value="20"/>
+        <tag Name="Gender" Value="neuter"/>
+        <part Name="Brain" Hostile="False" Factions="Anesheym-150"/>
+        <part Name="Render" DisplayName="Ikna-kanti the Windstrafer, Sentinel to the Grand Progenitor"
+              Tile="creatures/bughonorguard2.png" ColorString="&amp;B" DetailColor="Y" RenderString="z"/>
+        <part Name="Description"
+              Short="What could almost be mistaken for a child is instead a petite warrior from a lost proto-cline. Their chitin ripples like disturbed water frozen in the moment, a deep-blue as pristine as sapphire hides hints of glittering green beneath its surface, the sheen breaks the slender silhouette of the creature in a way that makes them difficult to parse with your eyes."/>
+        <part Name="AISelfPreservation" Threshold="80"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+    </object>
+
+    <object Name="bugqueenmain" Inherits="NPC">
+        <property Name="Role" Value="NPC"></property>
+        <part Name="Physics" Weight="10000" Takeable="false" Solid="true"/>
+        <stat Name="Level" Value="100"/>
+        <tag Name="Gender" Value="female"/>
+        <part Name="Brain" Hostile="False" Factions="Anesheym-100"/>
+        <part Name="DoubleContainer" Direction="W" Master="true"/>
+        <part Name="Render"
+              DisplayName="{{extradimensional|Grand Progenitor and Wombbearer,}} Shah Zenithera Pandamoriae"
+              Tile="creatures/bugqueenmain.png" ColorString="&amp;O" DetailColor="c" RenderString="z"/>
+        <part Name="Description"
+              Short="Silver sheets of filmy elytra flare out in the matriarch's arrangement, erecting from the spine of a humanoid vast enough to gaze down at those in her court. A tangerine glow bathes you in sharp cascading patterns as the sun-gold shell of this avatar shimmers against the flame in their cane wielded in one of their many arms. Their dozen-or-so glowing lavender eyes gaze with weariness, undermined by a content smile. The growth of flora and rust about her hips and lower extremities hint this being has nestled here decem millenia."/>
+        <part Name="AISelfPreservation" Threshold="80"/>
+        <mutation Name="SunderMind" Level="9999"/>
+        <part Name="GivesRep" repValue="800"></part>
+        <xtagWaterRitual NoJoin="true"/>
+        <tag Name="staticFaction1"
+             Value="Anesheym,friend,offering her genestock to the Broodpusher and upholding their sovereignty"/>
+        <tag Name="staticFaction2" Value="Templar,hate,threatening the cohesion of their orthodoxy"/>
+        <tag Name="staticFaction3" Value="Seekers,dislike,being an enigma and witholding secrets of the anima"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+        <part Name="ConversationScript" ConversationID="PandamoriaeConversation"/>
+        <part Name="PandamoraeConversator"/>
+        <part Name="wmAnchored"/>
+    </object>
+
+    <object Name="bugqueenovi" Inherits="NPC">
+        <property Name="Role" Value="NPC"></property>
+        <part Name="Physics" Weight="10000" Takeable="false" Solid="true"/>
+        <stat Name="Level" Value="100"/>
+        <tag Name="Gender" Value="neuter"/>
+        <part Name="DoubleContainer" Direction="W"/>
+        <part Name="Brain" Hostile="False" Factions="Anesheym-100"/>
+        <part Name="Render" DisplayName="Grand Progenitor's Broodpusher" Tile="creatures/bugqueenovibody.png"
+              ColorString="&amp;O" DetailColor="c" RenderString="z"/>
+        <part Name="Description"
+              Short="A writhing, pulsating mass of insect flesh and sinuous muscle, it fuses into the spine of the great Shah, drawing in their infinite gene-stock to be molded into egglings. Future progeny are to be birthed at every fifth hour. Such biomechanical workings is not but one of nature's most elusive enigmas and one would find it hard not to ogle such an incredible specimen ..."/>
+        <part Name="AISelfPreservation" Threshold="80"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+        <xtagWaterRitual NoJoin="true"/>
+        <part Name="GivesRep" repValue="800"></part>
+        <tag Name="staticFaction1" Value="Anesheym,friend,laying the first egg and birthing the colony"/>
+        <tag Name="staticFaction2" Value="Templar,hate,threatening the cohesion of their orthodoxy"/>
+        <tag Name="staticFaction3" Value="Seekers,dislike,being an enigma, and witholding secrets of the anima"/>
+        <xtagGrammar Proper="true"/>
+        <part Name="wmAnchored"/>
+    </object>
+
+    <object Name="buganimancersage" Inherits="NPC">
+        <property Name="Role" Value="NPC"></property>
+        <stat Name="Level" Value="20"/>
+        <tag Name="Gender" Value="neuter"/>
+        <part Name="Brain" Hostile="False" Factions="Anesheym-100"/>
+        <part Name="Render" DisplayName="Elder-Moonseer, Vanti" Tile="creatures/buganimancersage.png"
+              ColorString="&amp;m" DetailColor="C" RenderString="z"/>
+        <part Name="Description" Short="This is the village crier."/>
+        <part Name="AISelfPreservation" Threshold="80"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+    </object>
+
+    <object Name="nuurimir" Inherits="NPC">
+        <property Name="Role" Value="NPC"></property>
+        <stat Name="Level" Value="20"/>
+        <tag Name="Gender" Value="neuter"/>
+        <part Name="Brain" Hostile="False" Factions="Resheph-100"/>
+        <part Name="Render" DisplayName="Dies-In-Rust, Nuurimir" Tile="creatures/nuurimir.png" ColorString="&amp;K"
+              DetailColor="O" RenderString="z"/>
+        <part Name="Description"
+              Short="An anesheym stands before you, her amber-shell smothered in rust and iron-shavings. She lurches forward almost hungrily, an old predator who slays with unearthly experience, undermined only by her unassuming appearance."/>
+        <part Name="AISelfPreservation" Threshold="80"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+    </object>
+
+    <object Name="bugtinker" Inherits="NPC">
+        <property Name="Role" Value="NPC"></property>
+        <stat Name="Level" Value="20"/>
+        <tag Name="Gender" Value="neuter"/>
+        <part Name="Brain" Hostile="False" Factions="Anesheym-100"/>
+        <part Name="Render" DisplayName="Erdestvel, The Anesheym Scrapamist" Tile="creatures/bugtinker.png"
+              RenderString="z" ColorString="b" DetailColor="B"/>
+        <part Name="Description"
+              Short="This anesheym scrapamist looms above a mechanical workbench, its various arms working carefully between several projects with ease. Thier chitin-skin is speckled with soot and heat-warped from work, yet it continues unhindered. Ceaselessly, with what even seems like a slight grin on their face."/>
+        <part Name="AISelfPreservation" Threshold="80"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+    </object>
+
+    <object Name="DitzyFly" Inherits="NPC">
+        <property Name="Role" Value="NPC"></property>
+        <stat Name="Level" Value="20"/>
+        <tag Name="Gender" Value="neuter"/>
+        <part Name="Brain" Hostile="False" Factions="Anesheym-100"/>
+        <part Name="ConversationScript" ConversationID="DitzyLogueInitial"/>
+        <part Name="DitzyFlyConversator"/>
+        <part Name="Render" DisplayName="Eradae 'Ditzy-Fly' Eracoca" Tile="creatures/ditzyfly.png" RenderString="z"
+              ColorString="&amp;C" DetailColor="G"/>
+        <part Name="Description"
+              Short="Joy could not be contained in this shell, breaking through cerulean as emerald heart-like motifs across their petite form. Bubbling energy radiates through their many eyes as their feather-like antennae search eagerly for souls to assist and brood to nurture."/>
+        <part Name="AISelfPreservation" Threshold="80"/>
+        <part Name="wmDitzySinging"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+        <mutation Name="Spinnerets" Level="1"/>
+        <mutation Name="MultipleArms" Level="1"/>
+    </object>
+
+    <object Name="Chymero" Inherits="NPC">
+        <property Name="Role" Value="NPC"></property>
+        <stat Name="Level" Value="20"/>
+        <tag Name="Gender" Value="male"/>
+        <part Name="Brain" Hostile="False" Factions="Anesheym-100"/>
+        <part Name="ConversationScript" ConversationID="ChymeroLogueInitial"/>
+        <part Name="Render" DisplayName="Chymerodae 'Chymero' Doa" Tile="creatures/Chymero.png" RenderString="z"
+              ColorString="&amp;y" DetailColor="B"/>
+        <part Name="Description"
+              Short="Fire-licked chitin bears a glossy, warped, obsidian-like look and this anesheym wears it proudly. He dons a toque and messy apron, stirring and sorting rations as he works around his kitchen."/>
+        <part Name="AISelfPreservation" Threshold="80"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+        <mutation Name="Spinnerets" Level="1"/>
+        <mutation Name="MultipleArms" Level="1"/>
+        <tag Name="Merchant"/>
+        <tag Name="Unenslavable"/>
+        <part Name="GenericInventoryRestocker" Table="ChymeroWares"/>
+    </object>
+
+
+    <!-- Search:Companion NPC's -->
+
+
+    <object Name="Arshiranandurah" Inherits="NPC">
+        <property Name="Role" Value="NPC"></property>
+        <part Name="Render" DisplayName="{{buggopanion|Arshiranandurah}}" Tile="creatures/ArshiraCompa.png"
+              ColorString="&amp;K" DetailColor="M"></part>
+        <part Name="Description"
+              Short="Partially habilimented in familiar grey-matter robes, an insectoid being stands with thin; stilt-like legs. A five-eyed gaze meets your own on a familiar human-like face; aether glowing strongly within their pupiless gaze. Adorned with silver-hued hair which rolls to their back and the plump, sacral-abdomen which juts from their lower spine; their feminine form remains only somewhat lost under tribal overalls and a shawl-n'cloak of the Seeker lineage."></part>
+        <part Name="ConversationScript" ConversationID="ArshiraLogue"/>
+        <part Name="Brain" Wanders="false" Hostile="false" Factions="Pariahs-100,Barathrumites-25"/>
+        <stat Name="Strength" Value="14"/>
+        <stat Name="Intelligence" Value="10"/>
+        <stat Name="Willpower" Value="12"/>
+        <stat Name="Toughness" Value="10"/>
+        <stat Name="Agility" Value="16"/>
+        <stat Name="Ego" Value="20"/>
+        <stat Name="Level" Value="20"/>
+        <tag Name="Gender" Value="female"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+        <part Name="GivesRep"></part>
+        <xtagWaterRitual NoJoin="true"/>
+        <tag Name="staticFaction2" Value="Templar,hate,defacing their holy relics"/>
+        <tag Name="staticFaction1" Value="Seekers,hate,denying the Elder Cant, and disenvowing Ptoh"/>
+        <xtagGrammar Proper="true"/>
+        <inventoryobject Blueprint="Masterworkvoltaictriarc" Number="1" CellChance="100" CellFullChance="100"
+                         CellType="Antimatter Cell"/>
+        <inventoryobject Blueprint="Elastyne Skin Suit" Number="1"/>
+        <inventoryobject Blueprint="Weeping Moon Mask" Number="1"/>
+        <inventoryobject Blueprint="RemembranceShawl" Number="1"/>
+        <inventoryobject Blueprint="Elastyne Gloves"/>
+        <inventoryobject Blueprint="Elastyne Slippers" Number="1"/>
+        <inventoryobject Blueprint="Elastyne Skull Cap" Number="1"/>
+        <property Name="WontSell" Value="Masterworkvoltaictriarc"/>
+        <skill Name="WM_MMA_PathDawnGlider"/>
+        <skill Name="Tactics_Charge"/>
+        <skill Name="Acrobatics_Jump"/>
+        <skill Name="WM_MMA_MartialStances"/>
+        <skill Name="WM_MMA_MartialConII"/>
+        <skill Name="WM_MMA_MartialConIII"/>
+        <skill Name="WM_MMA_MartialConI"/>
+        <skill Name="WM_MMA_FlurryOfBlows"/>
+        <skill Name="WM_MMA_CombinationStrikesIII"/>
+        <skill Name="WM_MMA_CombinationStrikesII"/>
+        <skill Name="WM_MMA_CombinationStrikesI"/>
+        <mutation Name="SunderMind" Level="1"/>
+        <mutation Name="MentalMirror" Level="1"/>
+        <mutation Name="Spinnerets" Level="2"/>
+        <mutation Name="Hemophilia" Level="1"/>
+        <mutation Name="WillForce" Level="1"/>
+        <mutation Name="MultipleArms" Level="10"/>
+    </object>
+
+
+    <!-- Search: Organic Fauna -->
+
+    <object Name="SmallTubeFish" Inherits="InorganicObject">
+        <part Name="Render" DisplayName="tube fish" RenderString="005" ColorString="&amp;K" Tile="Smalltubefish.png"
+              TileColor="&amp;y" DetailColor="M" Occluding="true"></part>
+        <part Name="Description"
+              Short="Hidden in calcium shafts, a multitude of flesh-like lips protrude catching earthly miamsa in their maw."></part>
+    </object>
+
+    <object Name="GargantuanTubeFish" Inherits="InorganicObject">
+        <part Name="Render" DisplayName="gargantuan tube fish" RenderString="005" ColorString="&amp;K"
+              Tile="tubefish.png" TileColor="&amp;y" DetailColor="M" Occluding="true"></part>
+        <part Name="Description"
+              Short="Hidden in calcium shafts, a massive fleshen tuber protrudes catching earthly miamsa in their maw."></part>
+    </object>
+
+    <object Name="SeaAnemone" Inherits="InorganicObject">
+        <part Name="Render" DisplayName="spiky anemone" RenderString="005" ColorString="&amp;K" Tile="seaanemone.png"
+              TileColor="&amp;K" DetailColor="m" Occluding="true"></part>
+        <part Name="Description"
+              Short="A rose of twirling spikes, congregated around a mouthy mass of roe and cartilage."></part>
+    </object>
+
+    <object Name="GiantConchShell" Inherits="InorganicObject">
+        <part Name="Render" DisplayName="giant conch shell" RenderString="005" ColorString="&amp;K"
+              Tile="GiganticConchShell.png" TileColor="&amp;w" DetailColor="M" Occluding="true"></part>
+        <part Name="Description"
+              Short="A rose of twirling spikes, congregated around a mouthy mass of roe and cartilage."></part>
+    </object>
+
+    <object Name="Oceanic Coral Polyp" Inherits="Coral">
+        <part Name="Render" DisplayName="sea coral" RenderString="231" ColorString="&amp;c"
+              Tile="terrain/sw_reef_organic_even_1.bmp" DetailColor="c" Occluding="false"/>
+        <part Name="Description"
+              Short="Feelers sway in a circlet on a skeletal vase-column. The aboral side is yoked to other polyps, forming a fossilized arcology."/>
+        <tag Name="HangingSupport"/>
+        <part Name="RandomRenderString" Strings="15,42,9,248"/>
+        <builder Name="RandomTile"
+                 Tiles="Terrain/sw_reef_organic_even_1.bmp,Terrain/sw_reef_organic_even_2.bmp,Terrain/sw_reef_organic_even_3.bmp,Terrain/sw_reef_organic_even_4.bmp,Terrain/sw_reef_organic_odd_1.bmp,Terrain/sw_reef_organic_odd_2.bmp,Terrain/sw_reef_organic_odd_3.bmp,Terrain/sw_reef_organic_odd_4.bmp"/>
+        <tag Name="NavigationPolyp"/>
+        <tag Name="TerrainMovementEnergyCostMultiplier" Value="0.5"/>
+        <tag Name="Reef"/>
+        <tag Name="CoralReef"/>
+        <tag Name="NoRuinsRemove"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+        <part Name="RandomColorGenerator"/>
+    </object>
+
+    <object Name="GasVent" Inherits="InorganicObject">
+        <part Name="Render" DisplayName="gas vent" RenderString="005" ColorString="&amp;K" Tile="gasvent/00.png"
+              TileColor="&amp;K" DetailColor="O" Occluding="true"></part>
+        <part Name="Description" Short="With a deep gasp, the earth breathes sulfurous fumes into open air."></part>
+        <tag Name="HangingSupport"/>
+        <part Name="AnimatedMaterialGeneric" AnimationLength="300"
+              TileAnimationFrames="0=gasvent/00.png, 10=gasvent/01.png, 20=gasvent/02.png, 30=gasvent/03.png, 40=gasvent/04.png, 50=gasvent/05.png, 60=gasvent/06.png, 70=gasvent/07.png, 80=gasvent/08.png, 90=gasvent/09.png, 100=gasvent/10.png, 110=gasvent/11.png, 120=gasvent/12.png, 130=gasvent/13.png, 140=gasvent/14.png, 150=gasvent/15.png, 160=gasvent/16.png"
+              ColorStringAnimationFrames=""/>
+        <part Name="GasVentVenting"/>
+    </object>
+
+    <object Name="JacJackTree" Inherits="Tree">
+        <part Name="Render" DisplayName="Jac-jack tree" RenderString="157" ColorString="&amp;w" TileColor="&amp;K"
+              Tile="jackjackfruittree.png" DetailColor="k" Occluding="true"/>
+        <part Name="Harvestable" OnSuccess="Jackfruit" OnSuccessAmount="1" StartRipeChance="1:5" RipeColor="&amp;w"
+              RipeTileColor="&amp;K" RipeDetailColor="o" UnripeColor="&amp;w" UnripeTileColor="&amp;K"
+              UnripeDetailColor="k"/>
+        <part Name="Description"
+              Short="A large jungle mangrove, ample fruits of hexagonal majesty shimmer in the dim light of the brimstone waste."/>
+        <tag Name="HangingSupport"/>
+        <tag Name="PlacementIsSkippable"/>
+        <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_tree"/>
+        <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_tree"/>
+        <stat Name="HeatResistance" Value="200"/>
+    </object>
+    <object Name="Jackfruit" Inherits="Snack">
+        <part Name="Render" DisplayName="jac-jackfruit" RenderString="%" ColorString="&amp;o" DetailColor="W"
+              RenderLayer="5" Tile="Jackfruit.png"/>
+        <part Name="Commerce" Value="50"/>
+        <part Name="Food" Satiation="Snack" Thirst="1500"/>
+        <part Name="Description" Short="This fruit reeks of a old nits, odorous in smell--but succulent in taste."/>
+        <part Name="Physics" Weight="1"/>
+        <part Name="PreservableItem" Result="Jacjackspread" Number="5"/>
+    </object>
+    <object Name="Jacjackspread" Inherits="Preservable">
+        <part Name="Render" DisplayName="{{sulfiric|jac-jack}} spread" RenderString="%" ColorString="&amp;O"
+              TileColor="&amp;y" DetailColor="o" RenderLayer="5" Tile="Items/sw_Jam.bmp"/>
+        <part Name="Commerce" Value="2"/>
+        <part Name="Description"
+              Short="Grinded in mortar, the tender meat is pulped and aged with sugar and salt, it takes on a gooey form spreadable on breads and flesh with a pungent and wild taste."/>
+        <part Name="PreparedCookingIngredient" type="regenLowtier" charges="1"/>
+        <tag Name="Plant"/>
+    </object>
+
+    <object Name="BrimberryTree" Inherits="Tree">
+        <part Name="Render" DisplayName="brimberry birch" RenderString="157" ColorString="&amp;w" TileColor="&amp;K"
+              Tile="brimberrybush.png" DetailColor="k" Occluding="true"/>
+        <part Name="Harvestable" OnSuccess="Brimberry" OnSuccessAmount="1" StartRipeChance="1:5" RipeColor="&amp;w"
+              RipeTileColor="&amp;K" RipeDetailColor="o" UnripeColor="&amp;w" UnripeTileColor="&amp;K"
+              UnripeDetailColor="k"/>
+        <part Name="Description"
+              Short="A tall smouldering tree, its frong-like arms cuddle batches of orange plump marbles."/>
+        <tag Name="HangingSupport"/>
+        <tag Name="PlacementIsSkippable"/>
+        <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_tree"/>
+        <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_tree"/>
+        <stat Name="HeatResistance" Value="200"/>
+    </object>
+    <object Name="Brimberry" Inherits="Snack">
+        <part Name="Render" DisplayName="brimberry" RenderString="%" ColorString="&amp;O" DetailColor="W"
+              RenderLayer="5" Tile="Items/sw_urberry.bmp"/>
+        <part Name="Commerce" Value="20"/>
+        <part Name="Food" Satiation="Snack" Thirst="1500"/>
+        <part Name="Description" Short="This fruit reeks of a old nits, odorous in smell--but succulent in taste."/>
+        <part Name="Physics" Weight="1"/>
+        <part Name="PreservableItem" Result="BrimberryRaisins" Number="5"/>
+    </object>
+    <object Name="BrimberryRaisins" Inherits="Preservable">
+        <part Name="Render" DisplayName="{{sulfiric|brimberry}} raisins" RenderString="%" ColorString="&amp;O"
+              TileColor="&amp;y" DetailColor="O" RenderLayer="5" Tile="Items/sw_seeds.bmp"/>
+        <part Name="Commerce" Value="2"/>
+        <part Name="Description"
+              Short="Dried in the sun over flat rock and preserved with salt, shrivelled pellets of delicious brimstone delight. Savory and smelly."/>
+        <part Name="PreparedCookingIngredient" type="regenLowtier" charges="1"/>
+        <tag Name="Plant"/>
+    </object>
+
+
+    <!-- Search: Walls -->
+
+
+    <object Name="LunarWall" Inherits="Wall">
+        <part Name="Render" ColorString="&amp;M^K" TileColor="&amp;M" DetailColor="K"/>
+        <part Name="Metal"/>
+        <tag Name="BodyType" Value="MetalWall"/>
+        <tag Name="PaintedWall" Value="wall_moon"/>
+        <tag Name="PaintedWallExtension" Value=".png"></tag>
+        <tag Name="PaintedWallAtlas" Value="Textures_Retextures_Walls_"></tag>
+        <tag Name="Mods" Value="TechWallMods"/>
+        <tag Name="BaseObject" Value="*noinherit"/>
+        <tag Name="Tier" Value="4"/>
+        <part Name="Graffitied" ChanceOneIn="300"/>
+        <tag Name="ImpactSound" Value="Sounds/Throw/sfx_throwing_generic_hitMetal"></tag>
+        <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_metal"/>
+        <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_m5etal"/>
+    </object>
+
+    <object Name="WombWall" Inherits="Wall">
+        <part Name="Render" DisplayName="ornately filigreed marble" RenderString="177" TileColor="&amp;k"
+              DetailColor="m" Occluding="true"/>
+        <part Name="Physics" Weight="10000" FlameTemperature="99999" VaporTemperature="1500" Takeable="false"
+              Solid="true"/>
+        <stat Name="AV" Value="25"/>
+        <stat Name="Hitpoints" Value="6000"/>
+        <part Name="Description"
+              Short="Whole worlds are threaded in three-dimensional filigree, simulacra of the motley lives of ash-dreaming Eaters. Palm leaves lift pyramids into the star-ribboned sky, and the water of life pours over the lip of an oinochoe."/>
+        <tag Name="PaintedWall" Value="wall_filigree"/>
+        <tag Name="PaintedWallAtlas" Value="Assets_Content_Textures_Walls_"></tag>
+        <tag Name="PaintedWallExtension" Value=".png"></tag>
+        <tag Name="VaporObject" Value="LavaPuddle"/>
+        <tag Name="ImmutableWhenUnexplored" Value="1"/>
+        <tag Name="Tier" Value="6"/>
+        <part Name="Graffitied" ChanceOneIn="200"></part>
+    </object>
+
+    <object Name="BaseFleshWall" Inherits="BaseWallRock">
+        <part Name="Render" DisplayName="flesh-covered wall" RenderString="177" DetailColor="O" TileColor="&amp;y"
+              Occluding="true"/>
+        <part Name="Physics" Weight="3000" FlameTemperature="99999" VaporTemperature="1500" Takeable="false"
+              Solid="true"/>
+        <stat Name="Hitpoints" Value="900"/>
+        <part Name="Description" Short="Solid, well-packed FLESH."/>
+        <tag Name="BodyType" Value="PlantWall"/>
+        <tag Name="PaintedWall" Value="wall_hex"/>
+        <tag Name="PaintedWallAtlas" Value="Assets_Content_Textures_Walls_"></tag>
+        <tag Name="PaintedWallExtension" Value=".png"/>
+        <tag Name="NoSparkingQuest"/>
+        <tag Name="VaporObject" Value="LavaPuddle"/>
+        <tag Name="ImmutableWhenUnexplored" Value="1"/>
+        <tag Name="Tier" Value="0"/>
+        <tag Name="BaseObject" Value="*noinherit"/>
+    </object>
+
+    <object Name="Obsidian" Inherits="BaseSedimentaryRock">
+        <part Name="Render" DisplayName="obsidian" ColorString="&amp;K^y" TileColor="&amp;K" DetailColor="y"/>
+        <stat Name="AV" Value="10"/>
+        <stat Name="Hitpoints" Value="200"/>
+        <part Name="Description"
+              Short="Shimmering like black-ice, its wavy contours are like frozen ripples captured in a mark that's thousands of years old."/>
+        <part Name="ShaleVines"></part>
+        <tag Name="PaintWith" Value="MarbleWalls"/>
+        <xtagGrammar massNoun="true"/>
+    </object>
+
+    <!-- Search:pipes -->
+
+
+    <!-- <object Name="wmBasePipe" Inherits="InorganicOnject">
+        <part Name="Render" DisplayName="sulfur-flow pipeway" RenderString="176" DetailColor="O" TileColor="&amp;y" Occluding="true" />
+        <stat Name="Hitpoints" Value="1500" />
+        <part Name="Description" Short="[PLACEHOLDER]"></part>
+        <part Name="Physics" Weight="3000" FlameTemperature="99999" VaporTemperature="1500" Takeable="false" Solid="true" />
+        <stat Name="Hitpoints" Value="900" />
+    </object>
+
+    <object Name="wmCurlyPipe1" Inherits="wmBasePipe">
+        <part Name="Render" DisplayName="sulfur-flow pipeway" RenderString="176" DetailColor="O" TileColor="&amp;y" Occluding="true" Tile="Pipes/curlypipes1.png"/>
+    </object>
+
+    <object Name="wmCurlyPipe2" Inherits="wmBasePipe">
+        <part Name="Render" DisplayName="sulfur-flow pipeway" RenderString="176" DetailColor="O" TileColor="&amp;y" Occluding="true" Tile="Pipes/curlypipes2.png"/>
+    </object>
+
+    <object Name="wmCurlyPipe3" Inherits="WwmBasePipell">
+        <part Name="Render" DisplayName="sulfur-flow pipeway" RenderString="176" DetailColor="O" TileColor="&amp;y" Occluding="true" Tile="Pipes/curlypipes3.png"/>
+    </object>
+
+    <object Name="wmCurlyPipe4" Inherits="wmBasePipe">
+        <part Name="Render" DisplayName="sulfur-flow pipeway" RenderString="176" DetailColor="O" TileColor="&amp;y" Occluding="true" Tile="Pipes/curlypipes4.png"/>
+    </object>
+
+    <object Name="wmCurlyPipe5" Inherits="wmBasePipe">
+        <part Name="Render" DisplayName="sulfur-flow pipeway" RenderString="176" DetailColor="O" TileColor="&amp;y" Occluding="true" Tile="Pipes/curlypipes5.png"/>
+    </object> -->
+
+    <object Name="Beviddian Thermosulfidation Turbine" Inherits="SolidHighTechInstallation">
+        <part Name="Render" DisplayName="beviddian {{Y|Sulfithermal}} turbine" ColorString="&amp;o" DetailColor="Y"
+              RenderString="158" Tile="Items/sw_thermoelectric_turbine.png"/>
+        <part Name="Description"
+              Short="Perfect-cut chrome rotors are stacked along a generator shaft, and wide fin blades catch the fluid push and spin electric yarn."/>
+        <part Name="Physics" Weight="6000"/>
+        <part Name="LiquidVolume" MaxVolume="64" StartVolume="64" InitialLiquid="water-1000" Sealed="true"/>
+        <part Name="HydraulicPowerTransmission" ChargeRate="10000" IsConsumer="true"
+              DischargeLiquidWhenBrokenAndPowered="true" MingleLiquidsWhenPowered="true"/>
+        <part Name="ElectricalPowerTransmission" ChargeRate="10000" IsProducer="true"/>
+        <part Name="Commerce" Value="1200"/>
+        <part Name="PowerSwitch" SecurityClearance="2"/>
+        <part Name="Examiner" Complexity="3" Difficulty="1"/>
+        <part Name="TinkerItem" Bits="0BBR34" CanDisassemble="false" CanBuild="false"/>
+        <stat Name="AV" Value="12"/>
+        <stat Name="Hitpoints" Value="2000"/>
+        <tag Name="HeroNameTitleDescriptor" Value="Aqueous,Lavish,Nurturing,Plentiful,Replenisher"/>
+        <tag Name="HeroNameTitleClientele" Value="power grids, pumps"/>
+        <tag Name="NamingTag" Value="Animated"/>
+        <tag Name="BodyType" Value="RailedMechanism"/>
+        <builder Name="Animated" ChanceOneIn="15000"/>
+        <tag Name="Animatable"/>
+        <tag Name="DynamicObjectsTable:AnimatableFurniture"/>
+        <tag Name="Class" Value="infrastructure"/>
+        <tag Name="Mods" Value="CommonMods,ElectronicsMods"/>
+        <tag Name="Tier" Value="4"/>
+        <intproperty Name="ThermalInsulation" Value="900"/>
+        <stag Name="Power"/>
+        <stag Name="DeepPower"/>
+        <stag Name="SurfacePower"/>
+        <stag Name="ElectricalPower"/>
+        <stag Name="HydraulicPower"/>
+        <stag Name="HydraulicPowerConsumer"/>
+        <stag Name="DeepHydraulicPowerConsumer"/>
+        <tag Name="DynamicSemanticTable:HydraulicPowerConsumer:Weight" Value="100"/>
+        <tag Name="DynamicSemanticTable:DeepHydraulicPowerConsumer:Weight" Value="100"/>
+        <part Name="RandomPipeGenerator"/>
+    </object>
+
+    <object Name="BaseHydraulicSulfurPipe" Inherits="MountedFurniture">
+        <part Name="HydraulicPowerTransmission" IsConduit="true" DischargeLiquidWhenBrokenAndPowered="true"
+              DischargeLiquidWhenBrokenAndUnpowered="true" MingleLiquidsWhenPowered="true"
+              MingleLiquidsWhenUnpowered="true" TileEffects="true" TileBaseFromTag="PaintedFence"
+              TileAnimatePoweredFrames="4" TileAnimateDesyncFrame="true"/>
+        <part Name="MergeConduit" ModPart="ModPiping" DestroyIfPart="HydraulicPowerTransmission"/>
+        <part Name="LiquidVolume" MaxVolume="8" StartVolume="8" InitialLiquid="liquidsulfur-1000" Sealed="true"/>
+        <intproperty Name="ThermalInsulation" Value="900"/>
+        <tag Name="PaintedFence" Value="sw_pipe"/>
+        <tag Name="PaintPart" Value="HydraulicPowerTransmission"/>
+        <tag Name="ForceRepaintSolid"/>
+        <tag Name="BaseObject" Value="*noinherit"/>
+        <stag Name="Conduit"/>
+        <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_tubing"/>
+        <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_tubing"/>
+    </object>
+
+    <object Name="GlassHydraulicSulfurPipe" Inherits="BaseHydraulicSulfurPipe">
+        <part Name="Render" DisplayName="glass hydraulic pipe" RenderString="216" ColorString="&amp;y"
+              TileColor="&amp;y" DetailColor="K" Occluding="false"/>
+        <part Name="Physics" Weight="20" FlameTemperature="5000" VaporTemperature="5000"/>
+        <part Name="Description" Short="Glass was blown into a machine artery."/>
+        <part Name="HydraulicPowerTransmission" ChargeRate="40000" TileAppendWhenPowered="_flowing"
+              TileAppendWhenUnpowered="_still" TileAppendWhenBroken="_intact" TileAppendWhenUnbroken="_intact"
+              TileAnimateWhenPowered="true"/>
+        <part Name="LiquidVolume" LiquidVisibleWhenSealed="true"/>
+        <part Name="Examiner" Unknown="UnknownStrangeTubes" Complexity="1"/>
+        <part Name="TinkerItem" Bits="G" CanDisassemble="false" CanBuild="false"/>
+        <stat Name="AV" Value="4"/>
+        <stat Name="Hitpoints" Value="10"/>
+        <tag Name="Transparent"/>
+        <tag Name="DetailColorByLiquid" Value="K"/>
+        <tag Name="ColorStringByLiquid" Value="y"/>
+        <intproperty Name="ThermalInsulation" Value="5000"/>
+        <tag Name="Tier" Value="3"/>
+        <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_glass"/>
+        <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_glass"/>
+    </object>
+
+    <object Name="BrimstoneFungi" Inherits="SolidFungus">
+        <part Name="Render" DisplayName="sulfurous polyporales" Tile="SulfuricMushroom" TileColor="&amp;o"
+              DetailColor="O"/>
+        <part Name="Description"
+              Short="A collective frill of many caps bunched into hardy bundles, they sprout like miniature caplets amongst a nursey of membranous mycelium, releasing a pungent liquid as they curdle the air."/>
+        <stat Name="HeatResistance" Value="200"/>
+    </object>
+
+    <!-- Search: Custom Gear -->
+
+
+    <object Name="Weeping Moon Mask" Inherits="Armor">
+        <part Name="Armor" AV="0" DV="1" Ego="1" WornOn="Face"/>
+        <part Name="Render" DisplayName="{{astral|weeping}} {{blue|moon}} mask" RenderString="]"
+              Tile="items/sw_mask3.bmp" ColorString="&amp;B" DetailColor="W"/>
+        <part Name="Commerce" Value="250"/>
+        <part Name="Description"
+              Short="The sorrowful gaze of this metallic-flaked, silver-mask depicts a moon whose harrowing expression speaks one truth: of all the celestials, the moon glares with misfortune. Forever bound to watch this twisted plane, and all its suffering."/>
+        <part Name="Physics" Weight="1"/>
+        <part Name="Metal"/>
+        <tag Name="Mods" Value="CommonMods,HeadwearMods,EyewearMods,ElectronicsMods"/>
+        <tag Name="Tier" Value="6"/>
+    </object>
+
+    <object Name="RemembranceShawl" Inherits="BaseCloak">
+        <part Name="Armor" AV="0" DV="1" WornOn="Back"></part>
+        <part Name="Render" DisplayName="{{gray|bleached}} {{white|shawl}}" RenderString="]" ColorString="&amp;Y"
+              Tile="items/sw_shawl.bmp" DetailColor="Y"></part>
+        <part Name="Commerce" Value="18"></part>
+        <part Name="Description" Short="A bleached shawl, an echo of a once astute and revenant importance."></part>
+        <part Name="Physics" Weight="1" Category="Clothes"></part>
+        <tag Name="Tier" Value="3"></tag>
+        <intproperty Name="Inorganic" Value="0"/>
+    </object>
+
+
+    <!-- Search: Custom Weapons -->
+
+
+    <object Name="voltaictriarc" Inherits="MissileWeapon">
+        <part Name="Render" DisplayName="{{electrical|voltaic}} {{blue|tri}}arc" ColorString="&amp;B" RenderString=")"
+              Tile="items/sw_techbow.bmp"/>
+        <part Name="Physics" UsesTwoSlots="true"/>
+        <part Name="MissileWeapon" Skill="Rifle" AmmoChar="&amp;W-" ShotsPerAction="3" ShotsPerAnimation="3"
+              RangeIncrement="18"/>
+        <part Name="Commerce" Value="3120"/>
+        <part Name="EnergyAmmoLoader" ChargeUse="75" ProjectileObject="Projectilevoltaictriarc"/>
+        <part Name="EnergyCellSocket" SlotType="EnergyCell"/>
+        <part Name="Examiner" Complexity="6"/>
+        <part Name="AnimatedMaterialElectric"/>
+        <part Name="LightSource" OnlyIfCharged="true" Lit="true" Radius="11"/>
+        <part Name="Description"
+              Short="Three humming curves of metal converge from vertical arcs onto a rail-like accellerator, a sharp beam of light connects the endpoints of the crescent. When fingers are drawn through the beam, a blazing stream of charged energy springs from the weapon in a volley of electric bolts."/>
+        <part Name="TinkerItem" Bits="00244667" CanDisassemble="true" CanBuild="true"/>
+        <part Name="Metal"/>
+        <tag Name="MissileFireSound" Value="Electric"/>
+        <tag Name="Mods" Value="MissileWeaponMods,FirearmMods,CommonMods,ElectronicsMods"/>
+        <tag Name="Tier" Value="7"/>
+        <tag Name="TinkerCategory" Value="rifles"/>
+    </object>
+
+    <object Name="Projectilevoltaictriarc" Inherits="TemporaryProjectile">
+        <part Name="Render" DisplayName="{{blue|energy bolts}}" ColorString="&amp;b"/>
+        <part Name="Projectile" BasePenetration="10" BaseDamage="1d10" ColorString="&amp;W" PassByVerb="streak"/>
+        <part Name="Physics" IsReal="false"/>
+        <part Name="NoDamage"/>
+    </object>
+
+    <object Name="Masterworkvoltaictriarc" Inherits="MissileWeapon">
+        <part Name="Render" DisplayName="{{electrical|voltaic}} {{blue|tri}}arc S.II" ColorString="&amp;B"
+              RenderString=")" Tile="items/sw_techbow.bmp"/>
+        <part Name="Physics" UsesTwoSlots="true"/>
+        <part Name="MissileWeapon" Skill="Rifle" AmmoChar="&amp;W-" ShotsPerAction="3" ShotsPerAnimation="3"
+              RangeIncrement="20"/>
+        <part Name="Commerce" Value="5120"/>
+        <part Name="EnergyAmmoLoader" ChargeUse="75" ProjectileObject="Projectilevoltaictriarc"/>
+        <part Name="EnergyCellSocket" SlotType="EnergyCell"/>
+        <part Name="Examiner" Complexity="7"/>
+        <part Name="AnimatedMaterialElectric"/>
+        <part Name="ModScoped"/>
+        <part Name="ModMasterwork"/>
+        <part Name="LightSource" OnlyIfCharged="true" Lit="true" Radius="12"/>
+        <part Name="Description"
+              Short="Three humming curves of metal converge from vertical arcs onto a rail-like accellerator, a sharp beam of light connects the endpoints of the crescent. When fingers are drawn through the beam, a blazing stream of charged energy springs from the weapon in a volley of electric bolts."/>
+        <part Name="TinkerItem" Bits="00244667" CanDisassemble="true" CanBuild="true"/>
+        <part Name="Metal"/>
+        <tag Name="MissileFireSound" Value="Electric"/>
+        <tag Name="Mods" Value="MissileWeaponMods,FirearmMods,CommonMods,ElectronicsMods"/>
+        <tag Name="Tier" Value="8"/>
+        <tag Name="TinkerCategory" Value="rifles"/>
+    </object>
+
+
+    <!-- Search: Mutation Items -->
+
+
+    <object Name="GamerGirlMolt" Inherits="Item">
+        <part Name="Render" DisplayName="&amp;mchitin&amp;y husk" RenderString="]" ColorString="&amp;y" DetailColor="m"
+              Tile="Items/sw_skinsuit.bmp"></part>
+        <part Name="Commerce" Value="500"></part>
+        <part Name="Physics" Weight="10" Category="Miscellaneous"></part>
+        <part Name="Description"
+              Short="What you might mistaken as a dried, mangled carcass is instead the ominous remains of an insectoid's or mutant's husk, pure chitin held stiff by the shedded membranous cuticle of the creature's ligaments."></part>
+    </object>
+
+    <object Name="PlayerTile" Inherits="Object">
+        <part Name="Render" DisplayName="PlayerTile" Tile="creatures/buggotile.png"></part>
+    </object>
+
+
+    <!-- Search: NPC Edits -->
+
+
+    <object Name="Iseppa" Inherits="Barathrumite" Load="Merge">
+        <part Name="ConversationScript" ConversationID="IseppaArshiraEdit"/>
+    </object>
+
+
+    <!-- Search: FOOD ITEMS -->
+
+    <object Name="Chitin Chips" Inherits="Preservable">
+        <part Name="Render" DisplayName="{{M|chitin chips}}" RenderString="%" ColorString="&amp;M" TileColor="&amp;M"
+              DetailColor="Y" RenderLayer="5" Tile="chitinchips.png"/>
+        <part Name="Commerce" Value="150"/>
+        <part Name="Description"
+              Short="Chitin was shattered over an anvil, heated, mildly salted, and flattened into wonderfully accessible chips."/>
+        <part Name="PreparedCookingIngredient" type="armor"/>
+        <tag Name="DynamicObjectsTable:Saltdunes_Ingredients"/>
+    </object>
+
+    <object Name="CrystTree Sap" Inherits="Preservable">
+        <part Name="Render" DisplayName="{{c|cryst-tree}} sap" RenderString="%" ColorString="&amp;M" TileColor="&amp;C"
+              DetailColor="c" RenderLayer="5" Tile="Items/sw_Jam.bmp"/>
+        <part Name="Commerce" Value="200"/>
+        <part Name="Description"
+              Short="Ghostly pale substance with a metallic tinge and savory undertone, its sticky and oozes timidly from a spoon."/>
+        <part Name="PreparedCookingIngredient" type="HP,reflect"/>
+        <tag Name="DynamicObjectsTable:Saltdunes_Ingredients"/>
+    </object>
+
+    <object Name="Anesheym Honey" Inherits="Preservable">
+        <part Name="Render" DisplayName="{{G|anesheym}} honey" RenderString="%" TileColor="w" DetailColor="O"
+              RenderLayer="5" Tile="Items/sw_Jam.bmp"/>
+        <part Name="Commerce" Value="100"/>
+        <part Name="Description"
+              Short="Also known as 'amrita' to the anesheym, it is a dark golden treacle with a hint of aromatic spice to grace its luscious sweetness."/>
+        <part Name="PreparedCookingIngredient" type="HP,tastyMinor"/>
+        <tag Name="DynamicObjectsTable:Saltdunes_Ingredients"/>
+    </object>
+
+    <object Name="Mad Honey" Inherits="Preservable">
+        <part Name="Render" DisplayName="{{R|mad}} honey" RenderString="%" ColorString="&amp;M" TileColor="&amp;R"
+              DetailColor="o" RenderLayer="5" Tile="Items/sw_Jam.bmp"/>
+        <part Name="Commerce" Value="200"/>
+        <part Name="Description"
+              Short="An amber viscous goop, mildy sweet, its mometics are lined with hallucinogens and psychedelic structures powerful enough to send ones' engram to the stars."/>
+        <part Name="ConfuseOnEat" Strength="1d12" Duration="13-20" Level="30" BuildupTimeout="15"/>
+        <part Name="PreparedCookingIngredient" type="HP,elderConfusionGasBreath" charges="5"/>
+    </object>
+
+    <object Name="Royal Jelly" Inherits="Preservable">
+        <part Name="Render" DisplayName="{{m|royal}} jelly" RenderString="%" ColorString="&amp;m" TileColor="&amp;W"
+              DetailColor="m" RenderLayer="5" Tile="Items/sw_Jam.bmp"/>
+        <part Name="Commerce" Value="500"/>
+        <part Name="Description"
+              Short="A dark amethyst syrup, thickly opaque with orbular bubbles suspended in a glittering abyss."/>
+        <part Name="Food"
+              Message="As you swallow the viscous jelly, your back begins to convulse as elytra violently erupt forth!"/>
+        <part Name="PreparedCookingIngredient" type="flight"/>
+    </object>
+
+    <object Name="Shard-Leaf" Inherits="Preservable">
+        <part Name="Render" DisplayName="{{B|shard}} leaf" RenderString="%" ColorString="&amp;C" TileColor="&amp;C"
+              DetailColor="c" RenderLayer="5" Tile="Items/sw_vinewafer_sheaf.bmp"/>
+        <part Name="Commerce" Value="25"/>
+        <part Name="Description" Short="a cripsy leaf"/>
+        <part Name="PreparedCookingIngredient" type="HP"/>
+    </object>
+
+    <object Name="Decadent Egg" Inherits="Preservable">
+        <part Name="Render" DisplayName="{{K|decadent}} egg" RenderString="%" ColorString="&amp;C" TileColor="&amp;C"
+              DetailColor="c" RenderLayer="5" Tile="creatures/insect_egg_for_inventory.png"/>
+        <part Name="Commerce" Value="25"/>
+        <part Name="Description" Short="A trophic anesheym egg, full of enough yolk to feed several for days."/>
+        <part Name="PreparedCookingIngredient" type="GreaterHP"/>
+    </object>
+
+    <object Name="Shatter Bread" Inherits="Preservable">
+        <part Name="Render" DisplayName="{{C|shatter}}-bread" RenderString="%" ColorString="&amp;C" TileColor="&amp;C"
+              DetailColor="c" RenderLayer="5" Tile="items/sw_pie.bmp"/>
+        <part Name="Commerce" Value="25"/>
+        <part Name="Description"
+              Short="A glittering, deeply blue, and fluffy breading with crystalline crunchy bits throughout. Mildly sweat, with a hint of cardamom."/>
+        <part Name="PreparedCookingIngredient" type="SuperiorRegen"/>
+    </object>
+
+
+    <!-- Search: OVEN -->
+
+
+    <object Name="ChymeroIOven" Inherits="Oven">
+        <part Name="Render" DisplayName="modular oven" ColorString="&amp;K" DetailColor="R" RenderString="234"
+              Tile="Items/sw_oven.bmp" Occluding="false" RenderIfDark="true"/>
+        <part Name="Campfire" PresetMeals="DecadentEggAndAmritaBenedict"/>
+        <tag Name="PresetMealMessage" Value="Try some {{W|Decadent Eggs and Amrita Benedict}}?"/>
+        <tag Name="PointOfInterestKey" Value="ChymeroOven"/>
+        <part Name="Description" Short="Warmth radiates from the inductive panels of the modular oven."/>
+        <tag Name="ExcludeFromDynamicEncounters"/>
+    </object>
+
+
+    <!-- Search: EGGS -->
+
+
+    <object Name="strangeeggt1" Inherits="Item">
+        <part Name="Render" DisplayName="{{yellow|strange egg}}" Tile="creatures/insect_egg_for_inventory.png"
+              DetailColor="k" RenderString="*" ColorString="&amp;Y" RenderLayer="5"/>
+        <part Name="Description" Short="A strange, pulsating egg."/>
+        <part Name="Physics" Category="Trade Goods"/>
+        <tag Name="EggHuntItemT1"/>
+        <part Name="Commerce" Value="25"/>
+        <tag Name="Tier" Value="1"/>
+        <tag Name="DynamicObjectsTable:TradeGoods"/>
+        <tag Name="Role" Value="Common"/>
+        <part Name="NoDamage"/>
+        <tag Name="NoEffects"/>
+        <tag Name="PlayerWontSell"/>
+    </object>
+
+    <object Name="strangeeggt2" Inherits="Item">
+        <part Name="Render" DisplayName="{{M|bizarre egg}}" Tile="creatures/insect_egg_for_inventory.png"
+              DetailColor="k" RenderString="*" ColorString="&amp;M" RenderLayer="5"/>
+        <part Name="Description" Short="A strange, pulsating egg."/>
+        <part Name="Physics" Category="Trade Goods"/>
+        <tag Name="EggHuntItemT2"/>
+        <part Name="Commerce" Value="100"/>
+        <tag Name="Tier" Value="2"/>
+        <tag Name="DynamicObjectsTable:TradeGoods"/>
+        <tag Name="Role" Value="Minion"/>
+        <part Name="NoDamage"/>
+        <tag Name="NoEffects"/>
+        <tag Name="PlayerWontSell"/>
+    </object>
+
+    <object Name="strangeeggt3" Inherits="Item">
+        <part Name="Render" DisplayName="{{red|ruby egg}}" Tile="creatures/insect_egg_for_inventory.png" DetailColor="k"
+              RenderString="*" ColorString="&amp;R" RenderLayer="5"/>
+        <part Name="Description" Short="A strange, pulsating egg."/>
+        <part Name="Physics" Category="Trade Goods"/>
+        <tag Name="EggHuntItemT3"/>
+        <part Name="Commerce" Value="200"/>
+        <tag Name="Tier" Value="3"/>
+        <tag Name="DynamicObjectsTable:TradeGoods"/>
+        <tag Name="Role" Value="Skirmisher"/>
+        <part Name="NoDamage"/>
+        <tag Name="NoEffects"/>
+        <tag Name="PlayerWontSell"/>
+    </object>
+
+    <object Name="strangeeggt4" Inherits="Item">
+        <part Name="Render" DisplayName="{{blue|sapphire egg}}" Tile="creatures/insect_egg_for_inventory.png"
+              DetailColor="k" RenderString="*" ColorString="&amp;B" RenderLayer="5"/>
+        <part Name="Description" Short="A strange, pulsating egg."/>
+        <part Name="Physics" Category="Trade Goods"/>
+        <tag Name="EggHuntItemT4"/>
+        <part Name="Commerce" Value="400"/>
+        <tag Name="Tier" Value="4"/>
+        <tag Name="DynamicObjectsTable:TradeGoods"/>
+        <tag Name="Role" Value="Skirmisher"/>
+        <part Name="NoDamage"/>
+        <tag Name="NoEffects"/>
+        <tag Name="PlayerWontSell"/>
+    </object>
+
+    <object Name="strangeeggt5" Inherits="Item">
+        <part Name="Render" DisplayName="{{jade|jade egg}}" Tile="creatures/insect_egg_for_inventory.png"
+              DetailColor="k" RenderString="*" ColorString="&amp;G" RenderLayer="5"/>
+        <part Name="Description" Short="A strange, pulsating egg."/>
+        <part Name="Physics" Category="Trade Goods"/>
+        <tag Name="EggHuntItemT5"/>
+        <part Name="Commerce" Value="800"/>
+        <tag Name="Tier" Value="5"/>
+        <tag Name="DynamicObjectsTable:TradeGoods"/>
+        <tag Name="Role" Value="Uncommon"/>
+        <part Name="NoDamage"/>
+        <tag Name="NoEffects"/>
+        <tag Name="PlayerWontSell"/>
+    </object>
+
+    <object Name="strangeeggt6" Inherits="Item">
+        <part Name="Render" DisplayName="{{silvery|chrome egg}}" Tile="creatures/insect_egg_for_inventory.png"
+              DetailColor="k" RenderString="*" ColorString="&amp;K" RenderLayer="5"/>
+        <part Name="Description" Short="A strange, pulsating egg."/>
+        <part Name="Physics" Category="Trade Goods"/>
+        <tag Name="EggHuntItemT6"/>
+        <part Name="Commerce" Value="1000"/>
+        <tag Name="Tier" Value="6"/>
+        <tag Name="DynamicObjectsTable:TradeGoods"/>
+        <tag Name="Role" Value="Uncommon"/>
+        <part Name="NoDamage"/>
+        <tag Name="NoEffects"/>
+        <tag Name="PlayerWontSell"/>
+    </object>
+
+    <object Name="strangeeggt7" Inherits="Item">
+        <part Name="Render" DisplayName="{{nectar|eater's egg}}" Tile="creatures/insect_egg_for_inventory.png"
+              DetailColor="k" RenderString="*" ColorString="&amp;W" RenderLayer="5"/>
+        <part Name="Description" Short="A strange, pulsating egg."/>
+        <part Name="Physics" Category="Trade Goods"/>
+        <tag Name="EggHuntItemT7"/>
+        <part Name="Commerce" Value="1500"/>
+        <tag Name="Tier" Value="7"/>
+        <tag Name="DynamicObjectsTable:TradeGoods"/>
+        <tag Name="Role" Value="Tank"/>
+        <part Name="NoDamage"/>
+        <tag Name="NoEffects"/>
+        <tag Name="PlayerWontSell"/>
+    </object>
+
+    <object Name="strangeeggt8" Inherits="Item">
+        <part Name="Render" DisplayName="{{extradimensional|extradimensional egg}}"
+              Tile="creatures/insect_egg_for_inventory.png" DetailColor="k" RenderString="*" ColorString="&amp;O"
+              RenderLayer="5"/>
+        <part Name="Description" Short="A strange, pulsating egg."/>
+        <part Name="Physics" Category="Trade Goods"/>
+        <tag Name="EggHuntItemT8"/>
+        <part Name="Commerce" Value="2000"/>
+        <tag Name="Tier" Value="8"/>
+        <tag Name="DynamicObjectsTable:TradeGoods"/>
+        <tag Name="Role" Value="Rare"/>
+        <part Name="NoDamage"/>
+        <tag Name="NoEffects"/>
+        <tag Name="PlayerWontSell"/>
+    </object>
+</objects>

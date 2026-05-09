@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<colors>
+
+    <shaders>
+        <shader Name="fleshy" Type="sequence" Colors="M-m-y-y"/>
+        <shader Name="poisonous" Type="sequence" Colors="G-g-m-M-g-G-M-m"/>
+        <shader Name="buggopanion" Type="sequence" Colors="g-g-Y-Y-M-M-Y-Y"/>
+        <shader Name="sulfuric" Type="sequence" Colors="W-O-o-w"/>
+    </shaders>
+
+</colors>

@@ -1,0 +1,40 @@
+<zonetemplates>
+    <zonetemplate Name="CrystalForest" RegionSize="200">
+        <global>
+            <population Table="CrystalForestGlobals"></population>
+        </global>
+
+        <eachregion>
+            <group Criteria="Connection">
+                <exit/>
+            </group>
+            <population Table="BeviddCrystalForestEachRegion"></population>
+        </eachregion>
+    </zonetemplate>
+
+    <zonetemplate Name="CrystalForestSubterania" RegionSize="200">
+        <global>
+            <population Table="CrystalForestSubteraniaGlobals"></population>
+        </global>
+
+        <eachregion>
+            <group Criteria="Connection">
+                <exit/>
+            </group>
+            <population Table="BeviddCrystalForestSubteraniaEachRegion"></population>
+        </eachregion>
+    </zonetemplate>
+
+    <zonetemplate Name="SulfuricWastelands" RegionSize="1000">
+        <global>
+            <population Table="SulfuricWastelandsGlobals"></population>
+        </global>
+
+        <eachregion>
+            <group Criteria="Connection">
+                <exit/>
+            </group>
+            <population Table="BeviddSulfuricWastelandsEachRegion"></population>
+        </eachregion>
+    </zonetemplate>
+</zonetemplates>

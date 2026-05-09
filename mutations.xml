@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mutations>
+
+
+    <category Name="Physical">
+        <mutation Code="qwe" BearerDescription="those who breathe foul breath" Exclusions="" Class="StinkyBreather"
+                  MaxSelected="1" Cost="3" Name="Sulfuric Breath" DisplayName="Sulfuric Breath" Hidden="true"
+                  ExludeFromPool="true"></mutation>
+    </category>
+
+
+</mutations>

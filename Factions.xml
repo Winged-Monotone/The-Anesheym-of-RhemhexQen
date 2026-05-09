@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<factions>
+    <faction Name="Anesheym" DisplayName="Anesheym of Rhemhez'Qen" Old="false" FormatWithArticle="true"
+             InitialPlayerReputation="150">
+    </faction>
+
+    <faction Name="Amalgam" DisplayName="Vitaen Amalgamate" Old="false" FormatWithArticle="true"
+             InitialPlayerReputation="-400">
+    </faction>
+</factions>

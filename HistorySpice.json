@@ -1,0 +1,272 @@
+{
+  "spice": {
+    "cooking": {
+      "recipeNames": {
+        "ingredients": {
+          "Chitin Chips": {
+            "adj": [
+              "<^.adj1.!random>",
+              "<^.adj2.!random>"
+            ],
+            "adj1": [
+              "calcified",
+              "fried",
+              "crispy",
+              "chewy"
+            ],
+            "adj2": [
+              "crispy",
+              "crunchy"
+            ],
+            "nounPlural": [
+              "chitin-rolls",
+              "chitin-loafs",
+              "chitin-gelato",
+              "chitin-jellies",
+              "cryst-sap wedges"
+            ],
+            "noun": [
+              "chitin-loaf",
+              "chitin-chips",
+              "gelatin",
+              "chitin-wedge",
+              "chitin"
+            ]
+          },
+          "CrystTree Sap": {
+            "adj": [
+              "<^.adj1.!random>",
+              "<^.adj2.!random>"
+            ],
+            "adj1": [
+              "crystalline",
+              "cryst-sap glazed",
+              "shimmering sticky"
+            ],
+            "adj2": [
+              "crystal-glazed",
+              "cryst-sap covered"
+            ],
+            "nounPlural": [
+              "diplets of cryst-tree sap",
+              "cryst-sap dipples",
+              "cryst-sap syrup",
+              "side of dipping-cryst",
+              "cryst-sap wedge"
+            ],
+            "noun": [
+              "cryst-sap dipples",
+              "cryst-sap syrup",
+              "side of dipping-cryst",
+              "cryst-sap wedge"
+            ]
+          },
+          "Anesheym Honey": {
+            "adj": [
+              "<^.adj1.!random>",
+              "<^.adj2.!random>"
+            ],
+            "adj1": [
+              "amber-smothered",
+              "amrita-glazed",
+              "amrita-dipped",
+              "golden-hued"
+            ],
+            "adj2": [
+              "golden-dipped",
+              "amber"
+            ],
+            "nounPlural": [
+              "amrita cordial",
+              "amrita pudding",
+              "amrita gelatin"
+            ],
+            "noun": [
+              "amrita cordial",
+              "amrita pudding",
+              "amrita gelatin",
+              "side of anesheym honey"
+            ]
+          },
+          "Mad Honey": {
+            "adj": [
+              "<^.adj1.!random>",
+              "<^.adj2.!random>"
+            ],
+            "adj1": [
+              "maddening",
+              "mind-alteringly sweet",
+              "craze-ridden"
+            ],
+            "adj2": [
+              "mad",
+              "enlightening"
+            ],
+            "nounPlural": [
+              "mad molasses",
+              "crazy pudding"
+            ],
+            "noun": [
+              "mad molasses",
+              "crazy pudding",
+              "drizzle of mad honey",
+              "dollop of mad honey",
+              "smear of mad honey"
+            ]
+          },
+          "Royal Jelly": {
+            "adj": [
+              "<^.adj1.!random>",
+              "<^.adj2.!random>"
+            ],
+            "adj1": [
+              "royal",
+              "lavish"
+            ],
+            "adj2": [
+              "luscious"
+            ],
+            "nounPlural": [
+              "royal jelly mounds"
+            ],
+            "noun": [
+              "bowl of royal jelly",
+              "dollop of royal jelly",
+              "royal jelly mound"
+            ]
+          },
+          "Shard-Leaf": {
+            "adj": [
+              "<^.adj1.!random>",
+              "<^.adj2.!random>"
+            ],
+            "adj1": [
+              "lavish"
+            ],
+            "adj2": [
+              "crispy"
+            ],
+            "nounPlural": [
+              "shard-leaf wraps"
+            ],
+            "noun": [
+              "shard-leaf salad",
+              "shard-leaf wrap",
+              "cryst-leaf dulle"
+            ]
+          },
+          "Decadent Egg": {
+            "adj": [
+              "<^.adj1.!random>",
+              "<^.adj2.!random>"
+            ],
+            "adj1": [
+              "runny",
+              "boiled",
+              "poached",
+              "devilled",
+              "pickled",
+              "soft-boiled",
+              "hard-boiled"
+            ],
+            "adj2": [
+              "scrambled",
+              "fried"
+            ],
+            "nounPlural": [
+              "frittatas",
+              "cloud-eggs"
+            ],
+            "noun": [
+              "eggs benedict",
+              "sunny-side up",
+              "omelette",
+              "crepe",
+              "frittatas",
+              "torte",
+              "casserole",
+              "shakshouka",
+              "egg salad",
+              "cloud-eggs"
+            ]
+          },
+          "BrimberryRaisins": {
+            "adj": [
+              "<^.adj1.!random>",
+              "<^.adj2.!random>"
+            ],
+            "adj1": [
+              "raisin-speckled",
+              "raisin-dotted"
+            ],
+            "adj2": [
+              "raisin-speckled",
+              "sauteed",
+              "raisin-dotted"
+            ],
+            "nounPlural": [
+              "raisins",
+              "powdered-raisins"
+            ],
+            "noun": [
+              "raisins",
+              "powdered-raisins",
+              "brimberries"
+            ]
+          },
+          "Jacjackspread": {
+            "adj": [
+              "<^.adj1.!random>",
+              "<^.adj2.!random>"
+            ],
+            "adj1": [
+              "smelly",
+              "aromatic"
+            ],
+            "adj2": [
+              "smelly",
+              "stinky"
+            ],
+            "nounPlural": [
+              "jackfruit",
+              "jack-fruit slices"
+            ],
+            "noun": [
+              "A smear of jackfruit spread.",
+              "jack-fruit slice"
+            ]
+          },
+          "Shatter Bread": {
+            "adj": [
+              "<^.adj1.!random>",
+              "<^.adj2.!random>"
+            ],
+            "adj1": [
+              "crispy",
+              "airy",
+              "crumbly",
+              "cakey"
+            ],
+            "adj2": [
+              "stuffed",
+              "filling-brimmed",
+              "breaded"
+            ],
+            "nounPlural": [
+              "benedict",
+              "loafs",
+              "buns",
+              "patties"
+            ],
+            "noun": [
+              "benedict",
+              "loaf",
+              "bun",
+              "patty"
+            ]
+          }
+        }
+      }
+    }
+  }
+}
