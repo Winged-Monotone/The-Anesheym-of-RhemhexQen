@@ -17,7 +17,7 @@ namespace XRL.World.WorldBuilders
 
         public override void OnAfterBuild(JoppaWorldBuilder Builder)
         {
-            for (int i = 0; i < 100000; i++)
+            for (int i = 0; i < 80000; i++)
             {
                 var randomZoneId = ZoneID.Assemble("JoppaWorld",
                     new Location2D(Rules.Stat.Random(0, 239), Rules.Stat.Random(0, 74)));

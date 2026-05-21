@@ -1,0 +1,1349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<conversations>
+
+
+    <!-- Ditzy'Fly Conversations -->
+
+
+    <conversation ID="DitzyLogueInitial">
+
+        <start ID="NewStartRadiantEggQuest" IfFinishedQuest="The Great Egg-Hunt Begins">
+            <text>
+                Thank yah for everything yah've done for us, softshell. Everytime I see yah I just wanna hug yah! The
+                moods of my people 'ave never been better.
+
+                Got anymore of our lost kin for us today?
+            </text>
+            <choice Target="NewStartRadiantEggQuestLooper">I think I found some eggs to give!</choice>
+        </start>
+
+        <start ID="NewStartRadiantEggQuestLooper" IfFinishedQuest="The Great Egg-Hunt Begins">
+            <text Priority="1">
+                Another of our newfound kin, ready for a good hatchin'! I remember me' first hatchin.' Nursie' had to
+                stop me from chokin' on me own egg-bits. Said she'd never seen a bugger do that--told me I'd be a
+                special one just from that alone. To be honest, think the eggshells mighta jumbled me brain a bit. Did
+                taste good though, yeah!~
+                Ah, another one, hm? Yah' know, I know you've probably had a hankerin' for tryin' one of these eggs.
+                These ones are fertile, yeah? We abstain from eaten them. But amongst the hundreds our progenitor pushes
+                out, she sometimes gets one or two that go dormant--they won't grow; stifled I guess. We often eat those
+                if ye' wanna try it? Speak to Chymero in the midding living-qaurters! He'll sort you out!~
+                Sometimes, I'll sing to the younguns while they are still in their egglums. You can always tell the
+                one's whos really lovin' it--they start twitchin' and squirmin' in their shell. Sometimes even on
+                rhythm! Its something magical I tell yah.~
+                Did I evah tell yah how some domby dropped me while I was still in my egglin'? I went rollin' down into
+                the very pits of Rhemhex's darkest corridors. Was a lucky fool, even before hatchin', one of the
+                arbiters came down and snatched me up despite the dangers lurkin' in there! Sweetheart gave me a chance
+                I woulda never thought of havin'. I've decided to make the best of it.~
+            </text>
+            <choice Target="NewStartRadiantEggQuest" IfHaveItem="strangeeggt1">Here's an egg I found!
+                <part Name="wm_GiveEggT1"/>
+                <part Name="ReceiveItem" Pick="true" Table="wmTier1EggRewards" Identify="All"/>
+                <part Name="Sibs_ModifyReputation" Faction="Anesheym" Value="10" Shown="True"/>
+            </choice>
+            <choice Target="NewStartRadiantEggQuest" IfHaveItem="strangeeggt2">This eggs a lil' bizarre compared to the
+                rest, but I believe its yours!
+                <part Name="wm_GiveEggT2"/>
+                <part Name="ReceiveItem" Pick="true" Table="wmTier2EggRewards" Identify="All"/>
+                <part Name="Sibs_ModifyReputation" Faction="Anesheym" Value="25" Shown="True"/>
+            </choice>
+            <choice Target="NewStartRadiantEggQuest" IfHaveItem="strangeeggt3">I found a vibrant ruby-egg!
+                <part Name="wm_GiveEggT3"/>
+                <part Name="ReceiveItem" Pick="true" Table="wmTier3EggRewards" Identify="All"/>
+                <part Name="Sibs_ModifyReputation" Faction="Anesheym" Value="35" Shown="True"/>
+            </choice>
+            <choice Target="NewStartRadiantEggQuest" IfHaveItem="strangeeggt4">I found a calming sapphire-egg!
+                <part Name="wm_GiveEggT4"/>
+                <part Name="ReceiveItem" Pick="true" Table="wmTier4EggRewards" Identify="All"/>
+                <part Name="Sibs_ModifyReputation" Faction="Anesheym" Value="50" Shown="True"/>
+            </choice>
+            <choice Target="NewStartRadiantEggQuest" IfHaveItem="strangeeggt5">I found a glowing jade-egg!
+                <part Name="wm_GiveEggT5"/>
+                <part Name="ReceiveItem" Pick="true" Table="wmTier5EggRewards" Identify="All"/>
+                <part Name="Sibs_ModifyReputation" Faction="Anesheym" Value="100" Shown="True"/>
+            </choice>
+            <choice Target="NewStartRadiantEggQuest" IfHaveItem="strangeeggt6">This egg is hard, and shines with a
+                wonderful chrome color, here!
+                <part Name="wm_GiveEggT6"/>
+                <part Name="ReceiveItem" Pick="true" Table="wmTier6EggRewards" Identify="All"/>
+                <part Name="Sibs_ModifyReputation" Faction="Anesheym" Value="200" Shown="True"/>
+            </choice>
+            <choice Target="NewStartRadiantEggQuest" IfHaveItem="strangeeggt7">This egg truly beckons the eater's
+                majesty, here!
+                <part Name="wm_GiveEggT7"/>
+                <part Name="ReceiveItem" Pick="true" Table="wmTier7EggRewards" Identify="All"/>
+                <part Name="Sibs_ModifyReputation" Faction="Anesheym" Value="400" Shown="True"/>
+            </choice>
+            <choice Target="NewStartRadiantEggQuest" IfHaveItem="strangeeggt8">This egg has touched other realms, the
+                rarest of its kind!
+                <part Name="wm_GiveEggT8"/>
+                <part Name="ReceiveItem" Pick="true" Table="wmTier8EggRewards" Identify="All"/>
+                <part Name="Sibs_ModifyReputation" Faction="Anesheym" Value="800" Shown="True"/>
+            </choice>
+        </start>
+
+        <start ID="ReturnedWithEggsStart" IfHaveActiveQuest="The Great Egg-Hunt Begins">
+            <text IfReputationAtLeast="Loved" Priority="3">
+                I think yah' did it, the nobles can't keep ye' name out their mouths! They seem receptive and want to
+                meet'cha, are ye' ready to enter the city?
+            </text>
+            <text IfReputationAtLeast="Liked" Priority="2">
+                Ya've done so much for us already, I feel strange saying that the nobles aren't convinced yet-- but keep
+                at it! They've got to warm up to yah if bring some more!
+            </text>
+            <text Priority="1">
+                Oi, whu'tcha got for us, friend?
+            </text>
+            <choice Target="ReturnedWithEggsStartLoop">I think I found some eggs to give!</choice>
+            <choice Target="CompleteQuestStep1" IfReputationAtLeast="Loved">So I can enter?</choice>
+        </start>
+
+        <node ID="ReturnedWithEggsStartLoop" IfHaveActiveQuest="The Great Egg-Hunt Begins">
+            <text>
+                Yeah, show me what you 'ave', you'll be compensated, promise!
+            </text>
+            <choice Target="ReturnedWithEggsStart" IfHaveItem="strangeeggt1">Here's an egg I found!
+                <part Name="wm_GiveEggT1"/>
+                <part Name="ReceiveItem" Pick="true" Table="wmTier1EggRewards" Identify="All"/>
+                <part Name="Sibs_ModifyReputation" Faction="Anesheym" Value="10" Shown="True"/>
+            </choice>
+            <choice Target="ReturnedWithEggsStart" IfHaveItem="strangeeggt2">This eggs a lil' bizarre compared to the
+                rest, but I believe its yours!
+                <part Name="wm_GiveEggT2"/>
+                <part Name="ReceiveItem" Pick="true" Table="wmTier2EggRewards" Identify="All"/>
+                <part Name="Sibs_ModifyReputation" Faction="Anesheym" Value="25" Shown="True"/>
+            </choice>
+            <choice Target="ReturnedWithEggsStart" IfHaveItem="strangeeggt3">I found a vibrant ruby-egg!
+                <part Name="wm_GiveEggT3"/>
+                <part Name="ReceiveItem" Pick="true" Table="wmTier3EggRewards" Identify="All"/>
+                <part Name="Sibs_ModifyReputation" Faction="Anesheym" Value="35" Shown="True"/>
+            </choice>
+            <choice Target="ReturnedWithEggsStart" IfHaveItem="strangeeggt4">I found a calming sapphire-egg!
+                <part Name="wm_GiveEggT4"/>
+                <part Name="ReceiveItem" Pick="true" Table="wmTier4EggRewards" Identify="All"/>
+                <part Name="Sibs_ModifyReputation" Faction="Anesheym" Value="50" Shown="True"/>
+            </choice>
+            <choice Target="ReturnedWithEggsStart" IfHaveItem="strangeeggt5">I found a glowing jade-egg!
+                <part Name="wm_GiveEggT5"/>
+                <part Name="ReceiveItem" Pick="true" Table="wmTier5EggRewards" Identify="All"/>
+                <part Name="Sibs_ModifyReputation" Faction="Anesheym" Value="100" Shown="True"/>
+            </choice>
+            <choice Target="ReturnedWithEggsStart" IfHaveItem="strangeeggt6">This egg is hard, and shines with a
+                wonderful chrome color, here!
+                <part Name="wm_GiveEggT6"/>
+                <part Name="ReceiveItem" Pick="true" Table="wmTier6EggRewards" Identify="All"/>
+                <part Name="Sibs_ModifyReputation" Faction="Anesheym" Value="200" Shown="True"/>
+            </choice>
+            <choice Target="ReturnedWithEggsStart" IfHaveItem="strangeeggt7">This egg truly beckons the eater's majesty,
+                here!
+                <part Name="wm_GiveEggT7"/>
+                <part Name="ReceiveItem" Pick="true" Table="wmTier7EggRewards" Identify="All"/>
+                <part Name="Sibs_ModifyReputation" Faction="Anesheym" Value="400" Shown="True"/>
+            </choice>
+            <choice Target="ReturnedWithEggsStart" IfHaveItem="strangeeggt8">This egg has touched other realms, the
+                rarest of its kind, I give it to you!
+                <part Name="wm_GiveEggT8"/>
+                <part Name="ReceiveItem" Pick="true" Table="wmTier8EggRewards" Identify="All"/>
+                <part Name="Sibs_ModifyReputation" Faction="Anesheym" Value="800" Shown="True"/>
+            </choice>
+        </node>
+
+        <node ID="CompleteQuestStep1">
+            <text>
+                Yep, the grand shah has also showed interest in yah, friend, a rare thing indeed. I think she 'as
+                something for ye--and a request! It's an honor to meet our progenitor. She is very wise, very old. Heh,
+                like *old*, yah? I think you'll love her--sweet ol' mama'vibes. Acceptin' and lovin' in everyway.
+
+                She'll treat ye' like you're her kid, regardless if yah popped out 'er ovipositor or not.
+            </text>
+            <choice Target="DitzyNewStartConversationInitatiorQuestComplete">I'll go to meet her then, live and drink,
+                freind.
+            </choice>
+        </node>
+
+        <node ID="DitzyNewStartConversationInitatiorQuestComplete">
+            <text>
+                Also, there are plenty of our buglin's still out there, yeah? Feel free to keep bringin' 'em to me and
+                I'll reward ye' proper still regardless, mkay? You might find me inside now, standin' out in this stale
+                air will make a bugger's chitin all slicky!
+            </text>
+            <choice Target="End">
+                <part Name="QuestHandler" Action="Complete" QuestID="The Great Egg-Hunt Begins" StepID="EggHuntComplete"
+                      XP="5000"/>
+                I'll keep my eyes open!
+            </choice>
+
+        </node>
+
+        <start ID="ReturnedVisitStart" IfHaveState="GotThroughDitzyInitialConvo">
+            <text>
+                Oh! You're back, wonderluster! Its good to know you're safe, what brings you 'ere?
+            </text>
+            <choice Target="DitzyContinue1">I'm curious what this place is!</choice>
+        </start>
+
+        <start ID="CoxaHumorStart">
+            <text>
+                {{yellow|*They squint in disbelief*}}
+
+                By my shaky chitin-molts, look at this! Me' first gaze at an outsider in over six decades--a wanderer,
+                nay wanderluster, even?
+
+                Say, you've been about--you've must of met a salthoppah or two, yeah?
+
+                Tell me, don't you find their coxa quite ... stimulatin'? I just can't help to gander when I catch one
+                struttin' n thrippin' an' hoppin' about.
+            </text>
+            <choice Target="DitzyPass" SetBooleanState="GotThroughDitzyInitialConvo,true">I'll ... pass.</choice>
+            <choice Target="DitzyAgree">Hm, coxa do look quite stimulating, sure.</choice>
+            <choice Target="DitzyWhat">What is … coxa?</choice>
+            <choice Target="End" SetBooleanState="GotThroughDitzyInitialConvo,true">E-Excuse me? L-Live and Drink.
+            </choice>
+        </start>
+
+        <node ID="DitzyAgree">
+            <text>
+                Hah! Sure are! I knew yah couldn't resist, ya' softshells are just so strange!
+
+                Ya know w'at, 'ere. Next time you see a shell that strokes them 'love-chords', of yours, just spritz a
+                little bit of this on'ye self before ya say hello!
+
+                {{yellow|*Ditzy-Fly gives you several winks with their many eyes. Before handing you a vial of strangely
+                flourescent liquid.*}}
+
+            </text>
+
+            <choice Target="TookItemEnd" GiveItem="Insect Pheromones Phial"
+                    SetBooleanState="GotThroughDitzyInitialConvo,true">Um. Thanks? Live and Drink."
+            </choice>
+            <choice Target="DitzyContinue1" GiveItem="Insect Pheromones Phial"
+                    SetBooleanState="GotThroughDitzyInitialConvo,true">Um. Thanks? What is this place, anyways.
+            </choice>
+        </node>
+
+        <node ID="DitzyPass">
+            <text>
+                Fair enough, softshell . But tell me, why yah' bumblin' about here in the crystholts? Bevidd is a
+                dangerous place, friend. End up a morbid bauble near a pond of pretty-water if ye' ain't careful.
+
+            </text>
+            <choice Target="DitzyContinue2">Wandering, mostly. Can I enter the city for respite?</choice>
+            <choice Target="End">I'll keep that to myself, live and drink well.</choice>
+        </node>
+
+        <node ID="DitzyWhat">
+            <text>
+                Ah, well its that strong, robust--utterly tantalizing segmenta just before their trochanter, wonderfully
+                swollen with muscly tendons and -- ...
+
+                Oi, yah know what. I should stop. I'm just makin' things wierd.
+
+                Anyways, what brings yah'ere, friend? Bevidd isn't exactly a spot for recess.
+            </text>
+            <choice Target="End" SetBooleanState="GotThroughDitzyInitialConvo,true">Yeah, you ARE wierd. Live and
+                drink.
+            </choice>
+            <choice Target="DitzyContinue2" SetBooleanState="GotThroughDitzyInitialConvo,true">Wandering these strange
+                lands. May I enter your city for rest?
+            </choice>
+        </node>
+
+        <node ID="DitzyContinue1">
+            <text>
+                Ah, t'is the wonderful lil' city of Rhemhez'Qen, friend. Why ya' bumblin' about here in the crystholts?
+                Bevidd is a dangerous place, friend. End up a morbid babble near a pond of pretty-water if ye' ain't
+                careful.
+            </text>
+            <choice Target="DitzyContinue2">Venturing, mostly. May I enter your city?</choice>
+        </node>
+
+        <node ID="DitzyContinue2">
+            <text>
+                Aye, I'd love to show ye' our wonderful city. But, unfortunately, there's been a bit of a problem, see.
+                A thief has broken into our egg chambers, the little piss-face. Stole batches of our great shah's
+                progeny and used some kind of ancient tech' to 'ave it all stripped from us in mass.
+
+                We sent out some of our strongest to search for our missin' buglin's, but with them softskinned
+                tin-heads lurking around every corner, we can't empty our reserves. They've been plottin' attacks on the
+                the Grand Shah for ages now.
+            </text>
+            <choice Target="MetalHeadsTemp">Tin-heads? Wait, you mean the Templar?</choice>
+            <choice Target="DitzyContinue3">Maybe I can help? An egg-hunt sounds fun.</choice>
+        </node>
+
+        <node ID="MetalHeadsTemp">
+            <text>
+                Yep, them Templar foolies seem intent on gettin' in. They got bad history with our queen. Assassination
+                attempts, attacks on our people, they aren't the only enemies we 'ave, but we got a sore-spot for 'em
+                that's for sure!
+
+                Give em' a good knockin' for me if yah see them, yeah?
+            </text>
+            <choice Target="DitzyContinue3">Of course, I'll give em worse than that. Do you need help finding your eggs?
+                Maybe I can assist?
+            </choice>
+        </node>
+
+        <node ID="DitzyContinue3">
+            <text>
+                Ye'd do that for us? I mean, I thought it was a hopeless gambit to be honest but--if ye can bring enough
+                of our childre' back, I could convince our most esteemed to let ya' in!
+            </text>
+            <choice Target="DitzyContinue4">Sure, where do I bring them, friend?</choice>
+        </node>
+
+        <node ID="DitzyContinue4">
+            <text>
+                Me! Just bring any of our eggs yah find out there to me and I'll let our nobles know of ye' exploits to
+                help us! They'll of course also have their own lil' ways of payin' yah back--Water, ancient baubles,
+                rare stones--you get the jist, yeah?
+            </text>
+            <choice Target="End" StartQuest="The Great Egg-Hunt Begins">Got it, off to do an egg-hunt, live and drink
+                friend!
+            </choice>
+        </node>
+    </conversation>
+
+
+    <!-- Chymero Conversation -->
+
+    <conversation ID="ChymeroLogueInitial">
+        <node ID="Start">
+            <text>
+                Ahoy! Welcome to' the galley, mate! Me name be Chymero! The chief chef o' dis place.
+
+                I hear ye've done a lot t' help us! I be grateful, The loss o' our kin has saddened us, put a hole in
+                our hearts. We've strived t' show kindness 'n warmth t' others, no matter the look or shape.
+
+                Now look where it got us? Strugglin'.
+
+                But forget all dat, aye? Ye've done much fer us, friend. 'Ere, 'ave a look at our stock if ye ever got a
+                hankerin' fer somethin'.
+            </text>
+            <choice Target="End">I desire nothing. Live and drink.</choice>
+        </node>
+    </conversation>
+
+
+    <!-- Arshira Conversations -->
+
+    <conversation ID="ArshiraLogue">
+        <node ID="Start" TradeNote="show" IfNotFinishedQuest="More Than a Willing Spirit">
+            <text>
+                {{yellow|*Arshiranadurah gives you a thin smile*}}
+
+                Desire something of me, vagrant?
+            </text>
+            <choice GotoID="ArshiraQuestionedWhoIX">I’m =name=, Who are you?</choice>
+            <choice CallScript="XRL.World.Parts.ArshiraCompanionActivator.ArshJoin" GotoID="End">Join me? (For
+                Testing)
+            </choice>
+            <choice GotoID="End">I desire nothing. Live and drink.</choice>
+        </node>
+
+        <node ID="ArshiraQuestionedWhoIX">
+            <text>
+                I am Arshiranandurah, a warrior of the Pariahs, you may call me Arshira.
+            </text>
+            <choice GotoID="ArshiraQuestionedWhoX">Where are you from?</choice>
+            <choice GotoID="End">I ... see. Live and drink.</choice>
+        </node>
+
+        <node ID="ArshiraQuestionedWhoX">
+            <text>
+                Not to be rude, but I prefer to be candid with those I know and trust. Return to me when your reputation
+                proves your worth, =player.formalAddressTerm=. Aid the Barathrumites and I might feel inclined to carry
+                this conversation forward.
+            </text>
+            <choice GotoID="End">I understand. Live and drink.</choice>
+        </node>
+
+
+        <!-- Conversation after completing a Willing Spirit -->
+
+
+        <node ID="Start" TradeNote="show" IfFinishedQuest="More Than a Willing Spirit">
+            <text>
+                Ah, it's you. My barathruumite friends send musings of you, =name=. I owe my debts to anyone who liken
+                to keep the tinker-kin safe and hidden.
+
+
+                Might I be able to help you, =player.formalAddressTerm=?
+            </text>
+            <choice GotoID="ArshiraQuestionedWhoI">Tell me more about yourself.</choice>
+            <choice GotoID="JoinMe1">What are your services?</choice>
+            <choice GotoID="End">I desire nothing. Live and drink.</choice>
+        </node>
+
+
+        <!-- JOIN CONVERSATION -->
+
+
+        <node ID="JoinMe1">
+            <text>
+                I’m a sellsword, assassin, hunter--many things, should one wish it. Are you interested?
+            </text>
+            <choice GotoID="PricePayWayA">What’s your price?</choice>
+            <choice GotoID="End">I desire nothing. Live and drink.</choice>
+        </node>
+
+
+        <node ID="IssepaRouteA">
+            <text>
+                Did she? Such a strange thing to ask a stranger.
+            </text>
+            <choice GotoID="IssepaRouteB">She said it’d be good for you.</choice>
+            <choice GotoID="End">I see. Live and drink.</choice>
+        </node>
+
+
+        <node ID="IssepaRouteB">
+            <text>
+                It would, I get restless at the thought of lacking in purpose. I’m only good for so much, you see.
+            </text>
+            <choice GotoID="IssepaRouteC">Well, I can use the company if you so choose?</choice>
+            <choice GotoID="End">I see. Live and drink.</choice>
+        </node>
+
+
+        <node ID="IssepaRouteC">
+            <text>
+                I do, I welcome you in my presence, =name=. May our journeys together bring us great fortune.
+            </text>
+            <choice CallScript="XRL.World.Parts.ArshiraCompanionActivator.ArshJoin" GotoID="End">As to you,
+                journeyfriend.
+            </choice>
+        </node>
+
+
+        <node ID="IssepaRouteClose">
+            <text>
+                Good, is there anything we need before continuing?
+            </text>
+            <choice GotoID="Occupation3">I have some more questions.</choice>
+        </node>
+
+
+        <node ID="PricePayWayA">
+            <text>
+                If I ask for pay, t’will not be in something … material.
+            </text>
+            <choice GotoID="PricePayWayB">What would you ask for then?</choice>
+        </node>
+        <node ID="PricePayWayB">
+            <text>
+                I have a favor, but … hm. How about this? I’ll travel with you, for now. If you prove to be capable,
+                then I’ll request of you this favor.
+            </text>
+            <choice GotoID="PricePayWayCa">Well, wait. What is it?</choice>
+            <choice GotoID="PricePayWayCb">Okay, if you are fine with that?</choice>
+            <choice GotoID="PricePayWayCc">You can’t expect me to just accept that favor even if you request it of me
+                later, why?
+            </choice>
+        </node>
+        <node ID="PricePayWayCa">
+            <text>
+                I cannot say now, all I can say is that I need someone capable, someone I can trust. Besides, I’ll be
+                sure to take my share of our plunders.
+            </text>
+            <choice CallScript="XRL.World.Parts.ArshiraCompanionActivator.ArshJoin" GotoID="End">Fine, I hope
+                this doesn’t come to mistake.
+            </choice>
+        </node>
+
+
+        <!-- OCCUPATION CONVERSATION -->
+
+
+        <node ID="Occupation1">
+            <text>
+                Avid? I’m not one to gloat, but understand this--I am a hunter, nothing less, nothing more. The prey I
+                hunt requires that I not only contend with the tools of my foe, but the lands of which that hide them
+                and consume more lives everyday.
+            </text>
+            <choice GotoID="Occupation2">Interesting. What do you hunt exactly?</choice>
+            <choice GotoID="End">I see. Live and drink.</choice>
+        </node>
+        <node ID="Occupation2">
+            <text>
+                Why, thoughtstuff, of course. Something curated in only the minds of ripened espers, my prey are seeker
+                ospreys and entities who cross into this plane seeking easy meals.
+            </text>
+            <choice GotoID="Occupation3">Why hunt espers?</choice>
+            <choice GotoID="Occupation5">Thoughtstuff?</choice>
+            <choice GotoID="End">I see. Live and drink.</choice>
+        </node>
+        <node ID="Occupation3">
+            <text>
+                They hunt us, why not?
+            </text>
+            <choice GotoID="Occupation5">Thoughtstuff?</choice>
+            <choice GotoID="End">I see. Live and drink.</choice>
+        </node>
+        <node ID="Occupation5">
+            <text>
+                Yes, friend. I predate on both the flesh and the mind. My powers must be nourished.
+            </text>
+            <choice GotoID="Occupation6">That’s horrible!?</choice>
+            <choice GotoID="End">I see. Live and drink.</choice>
+        </node>
+        <node ID="Occupation6">
+            <text>
+                Tis probably true. If the creatures I hunt weren’t assuredly monsters, I'd probably feel more guilt.
+            </text>
+            <choice GotoID="HubNodeArshira">I have some other questions.</choice>
+            <choice GotoID="End">I see. Live and drink.</choice>
+        </node>
+
+
+        <!-- Hub Node -->
+
+
+        <node ID="HubNodeArshira">
+            <text>
+
+            </text>
+            <choice GotoID="ArshiraQuestionedAppearanceI">Could you tell me about your kind?</choice>
+            <choice GotoID="Occupation1">You said you are a hunter?</choice>
+            <choice GotoID="ArshiraQuestionedWhoI">And is that all, what else?</choice>
+            <choice GotoID="ArshiraQuestionedWhoII">Where are you from again?</choice>
+            <choice GotoID="SeekerPastFamilyI">*You look Arshira up-and-down* Your habits remind me of Seekers’
+                attire?
+            </choice>
+            <choice GotoID="End">Actually, nothing. Live and drink.</choice>
+        </node>
+
+
+        <!-- PAST CONVERSATION -->
+
+
+        <node ID="ArshiraQuestionedWhoI">
+            <text>
+                I'm just a wandering pariah who falls for the occasional flirtings with wanderlust. Good food, strong
+                drink, and the occasional hunt are enough to ease my cravings for excitement. And a bit of dance and
+                song, if the occasion passes by.
+            </text>
+            <choice GotoID="ArshiraQuestionedWhoII">Where are you from?</choice>
+            <choice GotoID="ArshiraQuestionedAppearanceI">I've never seen kind such as yourself, what are you?</choice>
+            <choice GotoID="Occupation1">So would you call yourself an avid wayfarer?</choice>
+            <choice GotoID="End">I see. Live and drink.</choice>
+        </node>
+
+        <node ID="ArshiraQuestionedWhoII">
+            <text>
+                Uncertain. Though I know it is somewhere far from this wild mesa, it eludes me, as does most of my past,
+                heritage, and ancestors.
+            </text>
+            <choice GotoID="ArshiraQuestionedWhoIII">... you seem know so little of yourself.</choice>
+            <choice GotoID="End">I see. Live and drink.</choice>
+        </node>
+
+        <node ID="ArshiraQuestionedWhoIII">
+            <text>
+                {{yellow|*They break their eyes away, gaze only flickering to you for a short moment, Arshira seems
+                almost annoyed*}}
+
+                I know enough to keep me alive. Enough to hone this monsterish body of mine into a weapon worth its
+                edge. The past is a dark, dirt-path leading to places you’ve already looted and seen. There’s nothing to
+                be got, naught but nostalgia.
+
+                I prefer to look forward.
+            </text>
+            <choice GotoID="ArshiraQuestionedAppearanceI">I've never seen kin such as yourself, what are you?</choice>
+            <choice GotoID="End">I ... see. Live and drink.</choice>
+        </node>
+
+
+        <!-- GENETICS CONVERSATION-->
+
+
+        <node ID="ArshiraQuestionedAppearanceI">
+            <text>
+                {{yellow|*They look away seemingly uncomfortable, thinking for a moment as they consider how to
+                answer*}}
+
+                I can’t say, =name=. I have no guesses. There's but a few of my kind running amuck in these
+                tender-lands, and we despise each other--we see our weaknesses in each other. So we choose to stay
+                apart. Usually from the egg.
+            </text>
+            <choice GotoID="ArshiraQuestionedEggI">From … the egg?</choice>
+            <choice GotoID="End">I see, I won’t inquire anymore. Live and drink.</choice>
+        </node>
+
+        <node ID="ArshiraQuestionedEggI">
+            <text>
+                Yes, we rise from eggs as younglings, with bottomless stomachs and immense curiosity. Within a few years
+                of consistently decent nutrition, we reach adulthood and shed our young-skin for the final time, till
+                then we are egglings.
+            </text>
+            <choice GotoID="ArshiraQuestionedAgeI">How much is “a few years?”</choice>
+            <choice GotoID="YoushedI">You … shed?</choice>
+            <choice GotoID="End">I ... see. Live and drink.</choice>
+        </node>
+
+        <node ID="YoushedI">
+            <text>
+                Maybe molt is truer. I renew this shell here and then. Near the end of two-and-a-half months. And before
+                you say anything, no, you cannot watch.
+            </text>
+            <choice GotoID="ArshiraQuestionedWhoII">How much is a few years, regarding your growth?</choice>
+            <choice GotoID="End">I ... see. Live and drink.</choice>
+        </node>
+
+        <node ID="ArshiraQuestionedAgeI">
+            <text>
+                To be honest with you, I have no idea. I only know of what my past-family had told me. Two or three.
+            </text>
+            <choice GotoID="ArshiraQuestionedAgeII">To grow so quickly, did you even experience a childhood?</choice>
+            <choice GotoID="SeekerPastFamilyI">Past-family?</choice>
+            <choice GotoID="End">I see. Live and drink.</choice>
+        </node>
+
+        <node ID="ArshiraQuestionedAgeII">
+            <text>
+                The young die in Qud. There is no room for innocence here, grow and kill.
+            </text>
+            <choice GotoID="SeekerPastFamilyI">You mentioned Past-family?</choice>
+            <choice GotoID="End">I ... see. Live and drink.</choice>
+        </node>
+
+
+        <!-- Arshira questioned about her past fam.. -->
+
+
+        <node ID="SeekerPastFamilyI">
+            <text>
+                Yes. I was once a Disciple of the Sightless Way, a dervish in the grow.
+            </text>
+            <choice GotoID="HubNodeArshira">I see, I have other questions.</choice>
+            <choice GotoID="Dervish">A dervish?</choice>
+            <choice GotoID="SightlessAttitude">My run-ins with the Seekers has been mostly unpleasant, you seem nothing
+                like them.
+            </choice>
+            <choice GotoID="Sightless">You were a follower of the Sightless Way?</choice>
+            <choice GotoID="End">I ... see. Live and drink.</choice>
+        </node>
+
+        <node ID="Dervish">
+            <text>
+                Yes, a Dervish.
+
+                A Dervish Seeker is taught to wield a weapon with the grace of swirling winds. Swordsmanship,
+                polemastery, Axemanship--weapon-forms performed beyond the limitations of the mortal body, instead aided
+                by the mind.
+
+                A dervish serves as a personal agent led by the Elder, oft sent on suicide missions or assassinations.
+                The more one forgoes the lesser sight of the flesh and masters the Sightless Way, the more deadly the
+                Dervish becomes.
+            </text>
+            <choice GotoID="Elder">The Elder?</choice>
+            <choice GotoID="DervishAdvice">What should I do if I encounter one?</choice>
+            <choice GotoID="End">I ... see. Live and drink.</choice>
+        </node>
+
+        <node ID="DervishAdvice">
+            <text>
+                The initiates and intermediates are well-trained, but their thoughtstuff lacks mastery and curation, and
+                so the weapons they bind are blunt and weak. Having even a bit of skill with your arms should pull you
+                through.
+
+                But the ones who hold the title arch-dervish? Their minds’ edge cuts the very fabric of the void. Less
+                you have mastered many lives worth of fighting prowess, to fight one on its own terms would be suicide.
+                To keep a dervish away is to leave them incapable of harm--they relish solely in melee. Put something
+                between you and this dervish and gun them down.
+            </text>
+            <choice GotoID="HubNodeArshira">Well, I have other questions.</choice>
+            <choice GotoID="End">I shall remember this, thank you. Live and drink.</choice>
+        </node>
+
+        <node ID="Sightless">
+            <text>
+                Mm, in a past life. I was forsaken, a lone egg in the deeps of the Moghra’yi. Whilst pilgriming
+                south-east to Qud, Sightless pilgrims discovered me. Their mind’s eyes saw the glimmer I hold and so
+                they convened with the Elder. They chose to let me follow--for a toll.
+            </text>
+            <choice GotoID="Abandonment">You were abandoned?</choice>
+            <choice GotoID="HubNodeArshira">I have other questions.</choice>
+            <choice GotoID="Elder">The Elder?</choice>
+            <choice GotoID="End">I ... see. Live and drink.</choice>
+        </node>
+
+        <node ID="SightlessAttitude">
+            <text>
+                Let me affirm something to you, your worth to the Seekers amounts to nothing more than feed--a meal. If
+                your thoughtstuff is enough to engorge their gluttonous mass mind that is the Elder, then they’ll be
+                attracted to your light like madpoles to the scent of blood.
+
+                Assume most Sightless will kill you on sight--their schemes for power encourages this.
+            </text>
+            <choice GotoID="Elder">The Elder?</choice>
+            <choice GotoID="HubNodeArshira">Well, I have other questions.</choice>
+            <choice GotoID="End">I ... see. Live and drink.</choice>
+        </node>
+
+        <node ID="Abandonment">
+            <text>
+                {{yellow|*Arshira nods*}}
+
+                Another orphan in the waste.
+            </text>
+            <choice GotoID="Elder">You mentioned an Elder?</choice>
+            <choice GotoID="HubNodeArshira">I have other questions.</choice>
+            <choice GotoID="End">I see. Live and drink.</choice>
+        </node>
+
+        <node ID="Elder">
+            <text>
+                {{yellow|*Arshira’s gaze seems unsettled, as if they didn’t want to recall*}}
+
+                Those with the glimmer hear voices in the aether; amongst these a ghastly call, a chant as if voiced by
+                countless minds whose cants echo into the void. To unindicted espers, tis like an obnoxious siren,
+                vagrant zealots singing eerie hymns in the void, singing of a reverence unlike any other. You may turn
+                away, but for those Chosen, resisting the call is far harder. The cant heralds from the Elder, but give
+                them no such honor--I only do out of habit. Call them Ptoh.
+            </text>
+            <choice GotoID="Ptoh">Who is Ptoh?</choice>
+            <choice GotoID="End">I see. Live and drink.</choice>
+        </node>
+
+        <node ID="Ptoh">
+            <text>
+                Few know who they are, what they are. An entity in the endless cosmos that is the mind. I hear rumors
+                here and there, that they were imprisoned here, in Qud. Usually, at the moment I chose to forget such a
+                life, such a thing.
+
+                Makes me anxious, makes me eager. My bloodlust flairs. Revenge is the meal I crave.
+            </text>
+            <choice GotoID="PtohRevenge1">You seem … to harbour some hatred for them.</choice>
+            <choice GotoID="End">I see. Live and drink.</choice>
+        </node>
+
+        <node ID="PtohRevenge1">
+            <text>
+                Some? It's a deeper well than I’d like to admit. This hatred keeps me up at night. Let’s talk about
+                something else.
+            </text>
+            <choice GotoID="HubNodeArshira">Well, I have other questions.</choice>
+            <choice GotoID="End">I see. Live and drink.</choice>
+        </node>
+
+
+    </conversation>
+
+
+    <!-- Barathrumite Changes -->
+
+
+    <conversation ID="IseppaArshiraEdit">
+        <node ID="Start" IfNotFinishedQuest="More Than a Willing Spirit">
+            <text>
+                Oh. Are you lost, =player.formalAddressTerm=?
+
+                I don't mind that you're here, but I was not expecting anyone.
+            </text>
+            <choice GotoID="End">Live and drink.</choice>
+        </node>
+
+        <node ID="Start" IfHaveQuest="A Call to Arms" IfNotFinishedQuest="A Call to Arms">
+            <text>
+                Is this it, I wonder?
+            </text>
+            <choice GotoID="End">Not today.</choice>
+        </node>
+
+        <node ID="Start">
+            <text>
+                Ah, it is our new short-fingered friend. Set a spell, if you like setting.
+
+                &amp;w*Iseppa yawns*.&amp;y
+
+                Or spells. Or Iseppa. If you like Iseppa, this is a very good place to be.
+            </text>
+            <choice ID="IseppaSusa" GotoID="Bethesda" IfHaveQuest="Decoding the Signal"
+                    IfNotFinishedQuest="Decoding the Signal">Do you know anything about Bethesda Susa?
+            </choice>
+            <choice ID="Isepporch" GotoID="Omonporch" IfHaveQuest="The Earl of Omonporch"
+                    IfNotFinishedQuest="The Earl of Omonporch">What do you know about Omonporch and the self-appointed
+                Earl?
+            </choice>
+            <choice ID="Isepquake" GotoID="Rumbling" IfHaveQuest="Grave Thoughts" IfNotFinishedQuest="Grave Thoughts">
+                Did you feel that rumbling, Iseppa?
+            </choice>
+            <choice ID="Isepshroom" GotoID="Klanq" IfHaveQuest="Pax Klanq, I Presume?"
+                    IfNotFinishedQuest="Pax Klanq, I Presume?">Have you ever met Pax Klanq?
+            </choice>
+            <choice ID="Iseproject" GotoID="Project">What are you working on, Iseppa?</choice>
+            <choice ID="Isleepy" GotoID="Tired">Are you tired?</choice>
+            <choice ID="Bioseppa" GotoID="AboutMe">I wish to know more about you.</choice>
+            <choice GotoID="Like">I do like you, Iseppa.</choice>
+            <choice GotoID="End">Live and drink.</choice>
+        </node>
+
+        <node ID="Like">
+            <text>
+                Thank you, =name=. I like you too.
+            </text>
+            <choice UseID="IseppaSusa"></choice>
+            <choice UseID="Isepporch"></choice>
+            <choice UseID="Isepquake"></choice>
+            <choice UseID="Isepshroom"></choice>
+            <choice UseID="Iseproject"></choice>
+            <choice UseID="Isleepy"></choice>
+            <choice ID="Gosseppa" GotoID="Gossip">What can you tell me about the other Barathrumites?</choice>
+            <choice UseID="Bioseppa"></choice>
+            <choice GotoID="End">Live and drink.</choice>
+        </node>
+
+        <node ID="Bethesda">
+            <text>
+                Bethesda Susa is an antipodal place, a gallery of life and death and the stages between. Its depths
+                prolong life and end it early, remove life from the flow of days or return it.
+
+                It will seek to make you late. Take care you come back on time.
+            </text>
+            <choice UseID="Isepporch"></choice>
+            <choice UseID="Isepquake"></choice>
+            <choice UseID="Isepshroom"></choice>
+            <choice UseID="Iseproject"></choice>
+            <choice UseID="Isleepy"></choice>
+            <choice UseID="Gosseppa"></choice>
+            <choice UseID="Bioseppa"></choice>
+            <choice GotoID="ArshseppaI">I was told it's quite dangerous, there's nothing else I should know?</choice>
+            <choice GotoID="End">Live and drink.</choice>
+        </node>
+
+        <node ID="ArshseppaI">
+            <text>
+                Dangerous would be a costly underestimation. Bethesda Susa is truly a duality amongst intrigue and
+                horror, magnificent sights and treacherous evocations.
+
+                Hm. But. Maybe …
+
+                {{yellow|*Iseppa seems to be contemplating something*}}
+
+            </text>
+            <choice GotoID="ArshseppaII">... I’d be grateful for any assistance.</choice>
+            <choice GotoID="End">It is fine. Live and drink.</choice>
+        </node>
+
+        <node ID="ArshseppaII">
+            <text>
+                If you are inclined to, there is one who would bear you company on your venture to Bethesda Susa should
+                you ask them.
+
+            </text>
+            <choice GotoID="ArshseppaIII">Why would I mind?</choice>
+        </node>
+
+        <node ID="ArshseppaIII">
+            <text>
+                They are an oddity this one, a kind of their own.
+
+                A warrior nonetheless and a ventured one. They visit us from time-to-time seeking our artifacts in an
+                attempt to understand themselves. A hurt and addled mind, but with good-intentions.
+
+            </text>
+            <choice GotoID="ArshseppaIV">Who are they?</choice>
+        </node>
+
+        <node ID="ArshseppaIV">
+            <text>
+                Their name is Ashiranandurah. As of now they are a face of the {{blue|Pariahs,}} earning their name as a
+                dervish-hunter--they have slain Seeker thralls since their Second Youth.
+            </text>
+            <choice GotoID="ArshseppaV">... Hm.</choice>
+            <choice GotoID="End">Live and drink.</choice>
+        </node>
+
+        <node ID="ArshseppaV">
+            <text>
+                Arshira relishes the captivations of adventure and exploring these treacherous lands, a drive only
+                countered by the fear of their shadow. They get restless waiting for research results and watching
+                tinkers tinker. Need you someone to aid you in travel, look no farther.
+            </text>
+            <choice GotoID="ArshseppaVI">Where might I find them?</choice>
+            <choice GotoID="End">Live and drink.</choice>
+        </node>
+
+        <node ID="ArshseppaVI">
+            <text>
+                The Stilt, they’ve been brooding lately, the poor thing practically crumbles in
+                most social play. I believe you will need some standing to invoke Arshira’s services, but tis an option.
+            </text>
+            <choice GotoID="End">I see, thank you, Iseppa. Live and drink.</choice>
+        </node>
+
+        <node ID="Omonporch">
+            <text>
+                Though I adore the sights and smells of Omonporch, its bug problem becomes distracting.
+
+                If I'm to travel there, I always bring something they cannot zip away from.
+            </text>
+            <choice UseID="IseppaSusa"></choice>
+            <choice UseID="Isepquake"></choice>
+            <choice UseID="Isepshroom"></choice>
+            <choice UseID="Iseproject"></choice>
+            <choice UseID="Isleepy"></choice>
+            <choice UseID="Gosseppa"></choice>
+            <choice UseID="Bioseppa"></choice>
+            <choice GotoID="End">Live and drink.</choice>
+        </node>
+
+        <node ID="Rumbling">
+            <text>
+                Yes. That was not the voice of the caverns.
+
+                It feels like one of my nightmares come to life at last.
+            </text>
+            <choice UseID="IseppaSusa"></choice>
+            <choice UseID="Isepporch"></choice>
+            <choice UseID="Isepshroom"></choice>
+            <choice UseID="Iseproject"></choice>
+            <choice UseID="Isleepy"></choice>
+            <choice UseID="Gosseppa"></choice>
+            <choice UseID="Bioseppa"></choice>
+            <choice GotoID="End">Live and drink.</choice>
+        </node>
+
+        <node ID="Klanq">
+            <text>
+                I have not.
+
+                I would, however, love to meet him. He seems a fun fungus.
+
+                But I daren't go. I fear the sludges.
+            </text>
+            <choice GotoID="Sludges">You fear sludge?</choice>
+            <choice GotoID="MmHmm">I see.</choice>
+        </node>
+
+        <node ID="Sludges">
+            <text>
+                I fear sludges, the kind you may no longer describe with 'some'. Born of the ancient stuff of existence,
+                possessed of malice and wanting nothing more than to eat whatever they can, and they can eat whatever.
+                It is even worse when they drink.
+
+                Take care with them.
+            </text>
+            <choice UseID="IseppaSusa"></choice>
+            <choice UseID="Isepporch"></choice>
+            <choice UseID="Isepquake"></choice>
+            <choice UseID="Iseproject"></choice>
+            <choice UseID="Isleepy"></choice>
+            <choice UseID="Gosseppa"></choice>
+            <choice UseID="Bioseppa"></choice>
+            <choice GotoID="End">Live and drink.</choice>
+        </node>
+
+        <node ID="Tired">
+            <text>
+                I am always tired, =player.formalAddressTerm=.
+
+                My sleep comes in fits and starts, and always with ghastly visions. Sometimes my rest must be coaxed
+                along with medicine.
+            </text>
+            <choice GotoID="Dreams">You have prophetic visions in your sleep?</choice>
+            <choice GotoID="MmHmm">I see. That seems difficult.</choice>
+        </node>
+
+        <node ID="Dreams">
+            <text>
+                No. My nightmares are a concoction of my disordered mind, nothing more. The fumes from this cauldron
+                have nothing to do with the future, save how they affect it.
+
+                &amp;w*Iseppa sighs.*&amp;y
+
+                I'd rather speak of something else, =player.formalAddressTerm=.
+            </text>
+            <choice GotoID="MmHmm">Oh.</choice>
+        </node>
+
+        <node ID="MmHmm">
+            <text>
+                Mm-hmm.
+
+                &amp;w*Iseppa yawns.*&amp;y
+            </text>
+            <choice UseID="IseppaSusa"></choice>
+            <choice UseID="Isepporch"></choice>
+            <choice UseID="Isepquake"></choice>
+            <choice UseID="Isepshroom"></choice>
+            <choice UseID="Iseproject"></choice>
+            <choice UseID="Isleepy"></choice>
+            <choice UseID="Gosseppa"></choice>
+            <choice UseID="Bioseppa"></choice>
+            <choice GotoID="End">Live and drink.</choice>
+        </node>
+
+        <node ID="Gossip">
+            <text>
+                I would never think to steal from you the delight of forming opinions of my enclave on your own.
+
+                &amp;w*Iseppa yawns.*&amp;y
+
+                Besides, that sounds like rather a lot of talking.
+            </text>
+            <choice UseID="IseppaSusa"></choice>
+            <choice UseID="Isepporch"></choice>
+            <choice UseID="Isepquake"></choice>
+            <choice UseID="Isepshroom"></choice>
+            <choice UseID="Iseproject"></choice>
+            <choice UseID="Isleepy"></choice>
+            <choice UseID="Bioseppa"></choice>
+            <choice GotoID="End">Live and drink.</choice>
+        </node>
+
+        <node ID="AboutMe">
+            <text>
+                I am Iseppa, and she is me.
+
+                I've given thought to being someone else, but never enough to try.
+            </text>
+            <choice UseID="IseppaSusa"></choice>
+            <choice UseID="Isepporch"></choice>
+            <choice UseID="Isepquake"></choice>
+            <choice UseID="Isepshroom"></choice>
+            <choice UseID="Iseproject"></choice>
+            <choice UseID="Isleepy"></choice>
+            <choice UseID="Gosseppa"></choice>
+            <choice GotoID="End">Live and drink.</choice>
+        </node>
+
+
+        <node ID="Project">
+            <text>
+                I am contemplating the distinction between animal and rock. Why are they different? How much like a rock
+                must an animal be when it ceases to be an animal?~
+                I am considering the window of consciousness through which each of us views the universe. What happens
+                to it when we die?~
+                I am taking inventory of my faculties, and looking for any that I might not previously have considered.~
+                I am considering the thought as a discrete object. I wish to determine whether I am able to think a
+                single thought only, and to determine how to distinguish it from another thought in the same vein.~
+                I am considering the determination of goodness and badness in a thing, and how it is determined. The
+                interaction between data and subjective evaluation, and the values that guide us that we cannot put to
+                words.~
+                I am contemplating the Spindle's place in Qud, its position as a conceptual focal point. How much of
+                what we know of the Spindle is the craft of those before us, carried forward?~
+                I am considering narrative inheritances. The stories we were told when our minds were more putty-like,
+                the follies that shaped who we are, that shape the whole of Qud.
+            </text>
+            <choice GotoID="Project2">Oh. It looks like you are sorting screws and fasteners.</choice>
+            <choice GotoID="Project3">Have you come to any conclusions?</choice>
+            <choice GotoID="End">I shall leave you to it. Live and drink, contemplatrix.</choice>
+        </node>
+
+        <node ID="Project2">
+            <text>
+                Yes.
+            </text>
+            <choice GotoID="MmHmm">But you're also doing the other thing.</choice>
+            <choice GotoID="End">I'll leave you to it.</choice>
+        </node>
+
+        <node ID="Project3">
+            <text>
+                Not yet, but that's not the point.
+            </text>
+            <choice GotoID="MmHmm">Oh, I see.</choice>
+            <choice GotoID="End">I'll leave you to it, then.</choice>
+        </node>
+
+    </conversation>
+    
+    
+    
+    
+    
+<!-- Saile Conversation -->
+
+    
+    
+    
+    
+    <conversation ID="SaileConversation">
+        <node ID="Start">
+            <text>
+                Hm. I haven't seen you here before, and anesheym are quite shy when it comes to granting entry to
+                others.
+
+                I'd love to talk, but as you can probably see and just heard, we're having somewhat of a crisis here.
+                The old junk keeping this place alive is anything but maintaining its stability. The others here have no
+                clue how to work with these devices, so it's up to me to fix this.
+            </text>
+            <choice GotoID="barathrum1choice">Wait, you're a barathrumite? Are you not?</choice>
+            <choice GotoID="work1choice">I could hear the explosions on the way down, is everything alright?</choice>
+        </node>
+
+
+        <node ID="barathrum1choice">
+            <text>
+                I am. Though I doubt any of them would remember me. I left a young cub. Searching the world for
+                adventure and trinkets, I couldn't stay cooped up Gritgate--not that it's a bad thing. I miss the subtle
+                life sometimes, beats hunkering down in a stone-pit hoping goat-folk don't sniff you out. But alas, the
+                thing I miss most is the company, cohesion. Something I could look forward to each day and smile for.
+
+
+                Ah, what am I saying, I get that here too, I just ... miss my kin. But the anesheym have treated me like
+                family. Such hospitality is a grace in itself.
+            </text>
+            <choice GotoID="barathrum2achoice">You're definitely not alone here, the anesheym speak very highly of
+                you.
+            </choice>
+            <choice GotoID="barathrum2bchoice">I'm curious how you ended up here amongst the anesheym. What brought you
+                here?
+            </choice>
+        </node>
+
+
+        <node ID="barathrum2achoice">
+            <text>
+                I know, I should be glad it isn't worship or something wild like that, though I still find myself
+                awkward and out of place here at times. Their customs and ideals here aren't too far from the
+                barathrumites. I should call myself lucky for that, considering. But I sometimes wonder if the grand
+                shah Pandamoriaea has met Barathrum. Or at least knows of him. Her kindness most definitely reminds me
+                of him.
+            </text>
+            <choice GotoID="barathrum2bchoice">I'm curious how you ended up here amongst the anesheym. What brought you
+                here?
+            </choice>
+        </node>
+
+
+        <node ID="barathrum2bchoice">
+            <text>
+                Misfortune--which then led to this fortune, one could say. I was travelling with a party when the
+                Disciples of Sightless Way attacked us, I had to flee after being separated from them. I don't know what
+                happened to them, but as I was lost in the jungles, I found myself in a hellscape. My only words for it,
+                it reeked of foul eggs and great machines marched over barren plains of flame and sulfur. I struggled
+                through, my fur practically singed--and then I found it, a beautiful forest made of crystal. A voice
+                called out, I couldn't see where it came from, but it led me through the crystholt.
+
+
+                Then I saw them, a tall slender bug-folk who guided me out the forest. They were reluctant to let me in,
+                but then suddenly, their shah called for me. I was brought before her, strangely, her voice reminded me
+                of the one I heard guiding me through the forest. I sometimes wonder if it was her reaching out to save
+                me. I felt indebted. I saw their scrapamist were struggling with the ancient technology here.
+
+
+                I offered what knowledge I hold and here I am, keeping this place alive. I can't complain, the anesheym
+                are wonderful and sweet people. And, they cultivate a sweet and mind-altering kind of honey. It's become
+                a favorite of mine.
+
+
+            </text>
+            <choice GotoID="work1choice">I heard some explosions coming down, is everything alright?</choice>
+        </node>
+
+
+        <node ID="work1choice">
+            <text>
+                The old tech here is barely keeping itself alive, I've jury-rigged everything I can to make sure it
+                stays running, but it's fallen beneath nominal performance. And that's a big problem. Everything from
+                the brood chambers' climate-control, to the water purification system and hydroponic gardens rely on
+                these systems to maintain everything.
+
+                I can't go out and search for myself, and my recoiler to Gritgate is shot. So I lost the ability to get
+                access to more useful tools and materials needed.
+            </text>
+            <choice GotoID="work2choice">Maybe I can help?</choice>
+        </node>
+
+
+        <node ID="work2choice">
+            <text>
+                Maybe, come back later, and I might cook up a plan to fix all this!
+            </text>
+            <choice GotoID="work1choice">Okay, live and drink!</choice>
+        </node>
+    </conversation>
+    
+    
+    
+    
+    
+<!--    Pandamoriae - Conversation-->
+
+    
+    
+    
+
+    <conversation ID="PandamoriaeConversation">
+        <start ID="Welcome" IfNotHaveProperty="SpokeTo" SetIntProperty="SpokeTo,1" AllowEscape="false">
+            <text>
+                Ah, 'tis you! You are the one who returned my missing childre to me. My heart is
+                warmed beyond belief by your kindness. Such compassion is a rarity in these times.
+
+                Please, allow me to introduce myself. I am Zenithera Pandamoriae, mother of the anesheym, my kindred,
+                and shah of Rhemhex'Qen.
+
+                Such a fascinating creature ... I rarely see those from the outside world in the flesh. May I know the
+                name of our savor and the one who has humbled me so?
+            </text>
+            <choice GotoID="GivenName">I am =name=, it is a pleasure, grand shah.</choice>
+        </start>
+        <!--_________________________________________________________________________________________________________________________-->
+        
+<!--        Start of Phase 2 -->
+        
+<!--        <start ID="Welcome2" IfHaveActiveQuest="The Shah, and the City that Waits Upon the Long Sigh.">-->
+<!--            <text>-->
+<!--            Ah, =Playername=, you return to us safely. Shall we continue our conversation? There is much to speak of, and I fear we may not have much time too.-->
+<!--            </text>-->
+<!--            <choice GotoID="BeginQuest">Yes, shah Pandamoriae, let us continue.</choice>-->
+<!--        </start>-->
+        
+                <start ID="Welcome2" IfHaveActiveQuest="The Shah, and the City that Waits Upon the Long Sigh.">
+                    <text>
+                    Ah, =Playername=, you return to us safely.~
+                        Welcome, =Playername= how has your ventures been.
+                    </text>
+<!--                    <choice GotoID="BeginQuest">Yes, shah Pandamoriae, let us continue.</choice>-->
+                </start>
+        
+        <node ID="BeginQuest">
+            <text>
+                =name=, I know these lands are foreign to you. We honestly owe you so much already, and ... it pains me to say we are still in need of your help. Desperately so, even. 
+                
+                I know, I know. Asking you to come here under the guise of a reward was wrong. But there is a value in being needed. You, more than anyone, should know this. 
+                
+                My scouts report that something sickly has irked its way into the crystal-forest, a vile miasma known to my kin as the Blood-Pits. We know nothing of what this sickness is, but it's overtaking our forest with alarming speed.
+            </text>
+            
+            <choice GotoID="YouHaveSeenThis">
+                <text>
+                    I think I know what you speak of, I saw foul monsters in the Crystholts, and they look like they are spreading. 
+                </text>
+            </choice>
+            <choice GotoID="WhatIsIt">
+                <text>
+                    What do you think they are?
+                </text>
+            </choice>
+            
+            <!--            <choice GotoID="SitandTalk">I would love to, let us speak on the things which we find most fleeting.-->
+            <!--            </choice>-->
+        </node>
+
+        <node ID="BeginQuest">
+            <text>
+                =name=, I know these lands are foreign to you. We honestly owe you so much already, and ... it pains me to say we are still in need of your help. Desperately so, even.
+
+                I know, I know. Asking you to come here under the guise of a reward was wrong. But there is a value in being needed. You, more than anyone, should know this.
+
+                My scouts report that something sickly has irked its way into the crystal-forest, a vile miasma known to my kin as the Blood-Pits. We know nothing of what this sickness is, but it's overtaking our forest with alarming speed.
+            </text>
+
+            <choice GotoID="WhatIsIt">
+                <text>
+                    I think I know what you speak of, I saw foul monsters in the Crystholts, and they look like they are spreading. What are they?
+                </text>
+            </choice>
+            <choice GotoID="WhatIsIt">
+                <text>
+                    What do you think they are?
+                </text>
+            </choice>
+        </node>
+
+        <node ID="WhatIsIt">
+            <text>
+                That's what we want to know, but know of warriors could get close to them without ... being consumed. Whatever it is, it drags corpses ... and even sometimes the living, into it and changes them. It's like flesh untwist, unwinds and undoes itself in abjection to our senses, monstrous amalgamations sculpted from skin and bone.
+            </text>
+
+            <choice GotoID="WhatDoIDO">
+                <text>
+                    What would you have me do?
+                </text>
+            </choice>
+        </node>
+
+        <!--_________________________________________________________________________________________________________________________-->
+        
+        
+        <node ID="GivenName">
+            <text>
+                =name=, you will have to forgive me. It has been some time since I have spoken with another from the outside world. There is so much I would love to ask you, but maybe this is not the time. I first want to properly reward you for what you have done for us. You didn't have to help us, you chose too. And such kindness is rare in these times.
+                
+                To speak of kindness, please take these ...
+            </text>
+            <choice GotoID="End" StartQuest="The Shah, and the City that Waits Upon the Long Sigh.">
+                <text>Thank you. I will return.</text>
+                <part Name="ReceiveItem" Blueprints="Masterworkvoltaictriarc" Pick="false" Identify="All" />
+                <part Name="ReceiveItem" Blueprints="Royal Jelly" Amount="10" Identify="All" />
+                <part Name="ReceiveItem" Table="Gemstones" Pick="false" />
+                <part Name="ReceiveItem" Table="Gemstones" Pick="false" />
+                <part Name="ReceiveItem" Table="Gemstones" Pick="false" />
+                <part Name="ReceiveItem" Table="Gemstones" Pick="false" />
+                <part Name="ReceiveItem" Table="Gemstones" Pick="false" />
+
+            </choice>
+<!--            <choice GotoID="SitandTalk">I would love to, let us speak on the things which we find most fleeting.-->
+<!--            </choice>-->
+        </node>
+
+        <!--Metaphyisical Conversation-->
+
+        <node ID="SitandTalk">
+            <text>
+                =name=, can I share with you something profound, a metaphysical musing, an experience I have?
+
+                I sometimes have dreams, where suddenly, I awaken from a long slumber--and it is like the world is
+                renewed again.
+
+                The same events play out--but a detail here and there will change, and suddenly I find that dream has
+                become reality.
+
+                And here I am waiting once again, when time will renew and another one of 'you' will come before me. And
+                I will share these same words, a commentary on the metalogical. Sharing this conversation, sharing in
+                this moment.
+
+            </text>
+            <choice GotoID="IsThisaDream">Maybe this is a dream. If you have a dream so real you couldn't distinguish
+                reality, and you never woke up. Would you still be dreaming, or are simply living at that point. Reality
+                is a strange gambit.
+            </choice>
+            <choice GotoID="IsThisNotaDream">No I do believe this is the "real." You are simply caught in the moment, my
+                dear shah. Your dreams are a sign that you see beyond the wake, all its many possibilities. But this
+                moment is the real moment. It is experienced.
+            </choice>
+            <choice GotoID="MaybeYouareReliving">Sometimes, I swear I died. The engram that is me was stolen away from a
+                vessel. And then, there's darkness, and all I remember is knowing I died and having to struggle to
+                improve. Maybe it is that you died. And now you are here, reliving a moment.
+            </choice>
+            <choice GotoID="IexperienceStrangeSens">I too experience strange things, dear shah. Sometimes it feels like
+                the world freezes and in that moment I am nothing more than an idea of something--then suddenly I return
+                to my normal state of mind, as if my consciousness was inert.
+            </choice>
+        </node>
+
+
+        <node ID="IsThisaDream">
+            <text>
+                Ah, some of us wish for ephemeral dreams. Others? For eternal ones. Reality is an odd sensation indeed,
+                =name=. And so I ask, if this is a dream. Then are we not obligated to strive for our greatest
+                resolutions? We will never know when 'experiencing' will begin or end. Should we not find a purpose that
+                suits us, to make a dream reality, to make reality our dream?
+            </text>
+            <choice GotoID="PurposeIsaFoolsGoal">Why work towards a purpose? I let the wind take me, the moon's orbit
+                guide me. I need no purpose, I just need change. I need only freedom in this world and purpose is a
+                burden.
+            </choice>
+            <choice GotoID="WeAllNeedaReasonForBeing">We all need a purpose, but what is important is that we make that
+                purpose our own. To look beyond what the world dictates we should be and find a purpose that meets our
+                hearts desires! Purpose can be the light that brings one to burn like a star.
+            </choice>
+            <choice GotoID="BeorReasonNiethermatter">Does it matter? Whether we have purpose or not. I wouldn't care
+                either way--whatever makes this life more interesting, whatever fulfills me like sitting under the sun
+                and admiring a clover or slaying a foe who threatened life with no abandon. Purpose is only when you
+                make it, with or without, I move forward.
+            </choice>
+        </node>
+
+    </conversation>
+</conversations>
+ 
+ 
+ 
+ 
+ 
+ 
+ 

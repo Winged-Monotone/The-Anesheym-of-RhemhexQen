@@ -17,7 +17,7 @@ namespace XRL.World.Skills.Cooking
             Components.Add(new PreparedCookingRecipieComponentBlueprint("Shatter Bread"));
             Effects.Add(new CookingRecipeResultProceduralEffect(ProceduralCookingEffect.CreateSpecific(new List<string>
             {
-                "CookingDomainHP_UnitHP",
+                "CookingDomainRubber_Extra2Jumps",
                 "CookingDomainGreaterHP_UnitHP",
                 "CookingDomainSuperiorHightier_RegenerationUnit"
             })));

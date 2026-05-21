@@ -23,7 +23,7 @@ namespace XRL.World.Parts
 
         public override void Register(GameObject Object, IEventRegistrar eventRegistrar)
         {
-            Object.RegisterPartEvent(this, "ObjectCreated");
+            eventRegistrar.Register("ObjectCreated");
             base.Register(Object, eventRegistrar);
         }
 

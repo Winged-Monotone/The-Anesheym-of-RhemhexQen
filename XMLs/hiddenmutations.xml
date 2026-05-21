@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mutations Hidden="true" ExludeFromPool="true">
+
+
+    <category Name="Physical">
+        <mutation BearerDescription="those who breathe foul breath" Exclusions="" Class="StinkyBreather"
+                  MaxSelected="1" Cost="3" Name="Sulfuric Breath" DisplayName="Sulfuric Breath"></mutation>
+        <mutation BearerDescription="those who spit foul liquid" Exclusions="" Class="wmSpitSulfur"
+                  MaxSelected="1" Cost="1" Name="Spit Sulfur" DisplayName="Spit Sulfur" ></mutation>
+        <mutation BearerDescription="those whose scales glitter like stars" Exclusions="" Class="wmGlareBurst"
+                  MaxSelected="1" Cost="1" Name="Glare Burst" DisplayName="Glitter-Scale Glare Burst" ></mutation>
+    </category>
+
+
+</mutations>

@@ -3,20 +3,35 @@
             Name="The Great Egg-Hunt Begins"
             Level="3"
             Accomplishment="By request of Ditzy-Fly, I am tasked with finding as many of their lost kin as I can and return them to her. My reward will be entry to their city."
-            Hagiograph="=name= scoured the lands, hunting eggs in the name of the anesheym and their great shah."
-            HagiographCategory="VisitsLocation">
+            Hagiograph="=name= scoured the lands, hunting eggs in the name of the anesheym and their great shah.">
+<!--            HagiographCategory="VisitsLocation">-->
 
         <step Name="Find egglings to deliver to the Anesheym."
               ID="EggHunt">
-            <text>Scour the lands of Qud in search of the lost children of the Anesheym, a sacred bug-folk hidden in the
+            <text>
+                Scour the lands of Qud in search of the lost children of the Anesheym, a sacred bug-folk hidden in the
                 region known as Bevidd.
             </text>
         </step>
 
         <step Name="Egg'sellent Hunting Skills!" XP="5000" ID="Egghuntends">
-            <text>You found enough eggs to impress the nobles of Rhemhez'Qen! You have been granted access to the city.
+            <text>
+                You found enough eggs to impress the nobles of Rhemhez'Qen! You have been granted access to the city.
                 Ditzy says you should head down and speak to the Grand Shah.
             </text>
         </step>
     </quest>
+
+    <quest Name="The Shah, and the City that Waits Upon the Long Sigh" Level="30" Accomplishment="You recieved a gift from the shah of Rhemhex'Qen, but also learned there seemed to be more the shah needed. Maybe you should go speak with her?">
+    
+        <step Name="Speak with the Shah."
+              ID="EggHunt">
+            <text>
+                Return to Rhemhex'Qen and speak with the Shah.
+            </text>
+        </step>
+        
+        
+    </quest>
+    
 </quests>

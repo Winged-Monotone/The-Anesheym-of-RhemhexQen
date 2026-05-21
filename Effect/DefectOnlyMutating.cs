@@ -109,7 +109,7 @@ namespace XRL.World.Effects
 
         public override void Register(GameObject Object, IEventRegistrar eventRegistrar)
         {
-            Object.RegisterEffectEvent(this, "EndTurn");
+            eventRegistrar.Register("EndTurn");
             base.Register(Object, eventRegistrar);
         }
 

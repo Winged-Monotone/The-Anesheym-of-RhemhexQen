@@ -4,9 +4,9 @@ using XRL.Rules;
 namespace XRL.World.Parts
 {
     [Serializable]
-    public class RandomEggGenerator : IPart
+    public class RandomVillageFlower : IPart
     {
-        public RandomEggGenerator()
+        public RandomVillageFlower()
         {
         }
 
@@ -26,30 +26,51 @@ namespace XRL.World.Parts
             if (E.ID == "ObjectCreated")
             {
                 Render render = this.ParentObject.GetPart("Render") as Render;
-                render.Tile = "creatures/buggeggsac" + Stat.Random(1, 3) + ".png";
-                int num = Stat.Random(1, 3);
+                render.Tile = "terrain/tile_flowers" + Stat.Random(1, 2) + ".bmp";
+                int num = Stat.Random(1, 7);
                 if (num == 1)
                 {
-                    render.TileColor = "&K";
+                    render.ColorString = "&R";
                 }
                 else if (num == 2)
                 {
-                    render.TileColor = "&b";
+                    render.ColorString = "&M";
                 }
                 else if (num == 3)
                 {
-                    render.TileColor = "&M";
+                    render.ColorString = "&B";
+                }
+                else if (num == 4)
+                {
+                    render.ColorString = "&C";
+                }
+                else if (num == 5)
+                {
+                    render.ColorString = "&Y";
+                }
+                else if (num == 6)
+                {
+                    render.ColorString = "&G";
+                }
+                else if (num == 7)
+                {
+                    render.ColorString = "&W";
                 }
 
-                int num2 = Stat.Random(1, 4);
+                if (Stat.Random(0, 1) == 0)
+                {
+                    render.ColorString = render.ColorString.ToLower();
+                }
+
+                int num2 = Stat.Random(1, 5);
                 if (num2 == 1)
                 {
-                    render.RenderString = "o";
+                    render.RenderString = ",";
                 }
 
                 if (num2 == 2)
                 {
-                    render.RenderString = "O";
+                    render.RenderString = ".";
                 }
 
                 if (num2 == 3)

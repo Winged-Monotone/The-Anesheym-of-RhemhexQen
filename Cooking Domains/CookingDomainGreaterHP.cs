@@ -1,5 +1,3 @@
-// XRL.World.Effects.CookingDomainHP_UnitHP
-
 using System;
 using XRL.Rules;
 using XRL.World;
@@ -21,25 +19,30 @@ namespace XRL.World.Effects
 
         public override string GetTemplatedDescription()
         {
-            return "+30-50% max HP";
+            return "+50-100% max HP"+
+                   "\n-10 to Quickness";
         }
 
         public override void Init(GameObject target)
         {
             Bonus = 0;
-            Tier = Stat.Random(30, 50);
+            Tier = Stat.Random(50, 100);
             base.Init(target);
         }
 
         public override void Apply(GameObject Object, Effect parent)
         {
             Bonus = (int)Math.Ceiling((float)Tier * 0.01f * (float)Object.Statistics["Hitpoints"].BaseValue);
-            Object.Statistics["Hitpoints"].BaseValue += Bonus;
+            
+
+            parent.StatShifter.SetStatShift("Hitpoints", Bonus, true);
+            parent.StatShifter.SetStatShift("Quickness", -10);
+
         }
 
         public override void Remove(GameObject Object, Effect parent)
         {
-            Object.Statistics["Hitpoints"].BaseValue -= Bonus;
+            parent.StatShifter.RemoveStatShifts();
             Bonus = 0;
         }
     }

@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using ConsoleLib.Console;
 using XRL;
+using XRL.Rules;
 using XRL.UI.ObjectFinderClassifiers;
 using XRL.World;
 using XRL.World.Parts;
 using XRL.World.Parts.Mutation;
 
 
-namespace XRL.World.Parts.Mutation
+namespace XRL.World.Parts
 {
     [Serializable]
     
@@ -26,20 +27,47 @@ namespace XRL.World.Parts.Mutation
 
         public override bool HandleEvent(EnteredCellEvent E)
         {
-            if (Spawn == true)
+            // AddPlayerMessage("SEQ 1");
+
+            if (Spawn)
             {
                 return base.HandleEvent(E);
             }
             
+            // AddPlayerMessage("SEQ 2");
+
             Spawn = true;
+            
+            // AddPlayerMessage("SEQ 3");
+
 
             var Cell =  ParentObject.CurrentCell.GetRandomLocalAdjacentCell();
             var Deer = ParentObject.CurrentCell.GetDirectionFromCell(Cell);
+            
+            // AddPlayerMessage("SEQ 4");
 
-            for (int i = 0; i < 8 && Cell != null; i++)
+
+            var previous = ParentObject;
+            
+            // AddPlayerMessage("SEQ 5");
+
+            var snakeLength = Stat.Random(8,18);
+
+            for (int i = 0; i < snakeLength && Cell != null; i++)
             {
-                Cell.AddObject("LeviathanTail");
+                // AddPlayerMessage("SEQ 6");
+                
+               var Objtail =  Cell.AddObject("LeviathanTail");
+               var TailPart = new wmLeviathanTail();
+               
+               TailPart.SetLead(previous);
+               previous = Objtail;
+
+               Objtail.AddPart(TailPart);
+               
                 Cell = Cell.GetCellFromDirection(Deer);
+                
+                // AddPlayerMessage("SEQ 7");
             }
             
             return base.HandleEvent(E);

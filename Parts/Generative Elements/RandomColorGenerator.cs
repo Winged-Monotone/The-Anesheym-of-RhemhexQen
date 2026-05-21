@@ -4,9 +4,9 @@ using XRL.Rules;
 namespace XRL.World.Parts
 {
     [Serializable]
-    public class RandomEggGenerator : IPart
+    public class RandomColorGenerator : IPart
     {
-        public RandomEggGenerator()
+        public RandomColorGenerator()
         {
         }
 
@@ -26,40 +26,46 @@ namespace XRL.World.Parts
             if (E.ID == "ObjectCreated")
             {
                 Render render = this.ParentObject.GetPart("Render") as Render;
-                render.Tile = "creatures/buggeggsac" + Stat.Random(1, 3) + ".png";
-                int num = Stat.Random(1, 3);
+                int num = Stat.Random(1, 10);
                 if (num == 1)
                 {
-                    render.TileColor = "&K";
+                    render.ColorString = "&R";
                 }
                 else if (num == 2)
                 {
-                    render.TileColor = "&b";
+                    render.ColorString = "&O";
                 }
                 else if (num == 3)
                 {
-                    render.TileColor = "&M";
+                    render.ColorString = "&W";
                 }
-
-                int num2 = Stat.Random(1, 4);
-                if (num2 == 1)
+                else if (num == 4)
                 {
-                    render.RenderString = "o";
+                    render.ColorString = "&G";
                 }
-
-                if (num2 == 2)
+                else if (num == 5)
                 {
-                    render.RenderString = "O";
+                    render.ColorString = "&C";
                 }
-
-                if (num2 == 3)
+                else if (num == 6)
                 {
-                    render.RenderString = "ù";
+                    render.ColorString = "&c";
                 }
-
-                if (num2 == 4)
+                else if (num == 7)
                 {
-                    render.RenderString = "ú";
+                    render.ColorString = "&B";
+                }
+                else if (num == 8)
+                {
+                    render.ColorString = "&b";
+                }
+                else if (num == 9)
+                {
+                    render.ColorString = "&M";
+                }
+                else if (num == 10)
+                {
+                    render.ColorString = "&m";
                 }
 
                 this.ParentObject.RemovePart(this);

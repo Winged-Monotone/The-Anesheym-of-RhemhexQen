@@ -4,9 +4,9 @@ using XRL.Rules;
 namespace XRL.World.Parts
 {
     [Serializable]
-    public class RandomEggGenerator : IPart
+    public class RandomMoundGenerator : IPart
     {
-        public RandomEggGenerator()
+        public RandomMoundGenerator()
         {
         }
 
@@ -26,30 +26,35 @@ namespace XRL.World.Parts
             if (E.ID == "ObjectCreated")
             {
                 Render render = this.ParentObject.GetPart("Render") as Render;
-                render.Tile = "creatures/buggeggsac" + Stat.Random(1, 3) + ".png";
+                render.Tile = "DirtMound" + Stat.Random(1, 4) + ".png";
                 int num = Stat.Random(1, 3);
                 if (num == 1)
                 {
-                    render.TileColor = "&K";
+                    render.ColorString = "&K";
                 }
                 else if (num == 2)
                 {
-                    render.TileColor = "&b";
+                    render.ColorString = "&W";
                 }
                 else if (num == 3)
                 {
-                    render.TileColor = "&M";
+                    render.ColorString = "&w";
                 }
 
-                int num2 = Stat.Random(1, 4);
+                if (Stat.Random(0, 1) == 0)
+                {
+                    render.ColorString = render.ColorString.ToLower();
+                }
+
+                int num2 = Stat.Random(1, 5);
                 if (num2 == 1)
                 {
-                    render.RenderString = "o";
+                    render.RenderString = ",";
                 }
 
                 if (num2 == 2)
                 {
-                    render.RenderString = "O";
+                    render.RenderString = ".";
                 }
 
                 if (num2 == 3)

@@ -1,4 +1,4 @@
-﻿namespace XRL.World.Parts.Mutation
+﻿namespace XRL.World.Parts
 {
     public class wmLeviathanTail : IPart
     {
@@ -6,6 +6,8 @@
         
         public override void Register(GameObject Object, IEventRegistrar Registrar)
         {
+            Registrar.Register(BeginTakeActionEvent.ID);
+            
             if (Lead.IsValid())
             {
                 Registrar.Register(Lead, EnteringCellEvent.ID);
@@ -16,6 +18,11 @@
         {
             Lead = obj;
             obj.RegisterEvent(this, EnteringCellEvent.ID);
+        }
+        
+        public override bool HandleEvent(BeginTakeActionEvent E)
+        {
+            return false;
         }
         
         public override bool HandleEvent(EnteringCellEvent E)

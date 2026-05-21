@@ -238,9 +238,9 @@ namespace XRL.World.Effects
 
         public override void Register(GameObject Object, IEventRegistrar eventRegistrar)
         {
-            Object.RegisterEffectEvent(this, "EndTurn");
-            Object.RegisterEffectEvent(this, "ObjectEnteredCell");
-            Object.RegisterEffectEvent(this, "Recuperating");
+            eventRegistrar.Register("EndTurn");
+            eventRegistrar.Register("ObjectEnteredCell");
+            eventRegistrar.Register("Recuperating");
             base.Register(Object, eventRegistrar);
         }
 

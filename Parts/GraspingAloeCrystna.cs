@@ -19,12 +19,12 @@ namespace XRL.World.Parts
             WorksOnCellContents = false;
         }
 
-        public override void Register(GameObject Object, IEventRegistrar registrar)
+        public override void Register(GameObject Object, IEventRegistrar eventRegistrar)
         {
-            Object.RegisterPartEvent(this, "EndTurn");
-            Object.RegisterPartEvent(this, "ObjectEnteredCell");
-            Object.RegisterPartEvent(this, "ObjectCreated");
-            base.Register(Object, registrar);
+            eventRegistrar.Register("EndTurn");
+            eventRegistrar.Register("ObjectEnteredCell");
+            eventRegistrar.Register("ObjectCreated");
+            base.Register(Object, eventRegistrar);
         }
 
         public override bool FireEvent(Event E)
