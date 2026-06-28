@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<conversations>
+<!-- Kaemea Conversation -->
+
+
+
+<conversation ID="LilTwitchyBuggoConvo">
+    <start ID="Chechechechehai">
+        <text>
+            Chi-chit-cheh chir-chet chi-heh he-heh che-hee!
+
+            Hai!
+
+            Like bolts, go twist-twist! Like screws, go screwy-screwy! Like circuits, go ring-ring!
+
+            Do you like bits? Chi-hehehheh!
+
+            Yes!
+        </text>
+        <choice GotoID="End">
+            <text>
+                Hello?
+            </text>
+        </choice>
+    </start>
+</conversation>
+</conversations>

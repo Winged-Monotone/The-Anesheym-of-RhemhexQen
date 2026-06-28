@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<conversations>
+    
+<!--    ascii signs-->
+    <conversation ID="DisplayMonitor1">
+        <start ID ="ShowSignContents">
+            <text>
+{{C|                UVA-TECH - . - - | - . - . - |____________________VRS. 1.14.3 EA65Ue
+                ========================================================================
+                {{c|░=ud_nbsp:1==ud_nbsp:1=░░░░=ud_nbsp:1==ud_nbsp:1=░░=ud_nbsp:1==ud_nbsp:1=░░░░=ud_nbsp:1==ud_nbsp:1=░░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░
+                ▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒
+                ▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓▓=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓▓▓▓
+                █=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=████████=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1=█
+                ██=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=███=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██}}
+                ========================================================================
+                // "UVA-technologies! Be your most productive self!" _
+                
+                // ... _
+                
+                {{B|
+                =ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██=ud_nbsp:1=
+                =ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██=ud_nbsp:1=
+                =ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=███=ud_nbsp:1=████████████=ud_nbsp:1=
+                =ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██=ud_nbsp:1=
+                =ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██=ud_nbsp:1=
+                }}
+                
+                // ... _
+                
+                {{B|=ud_nbsp:1=███████╗██╗=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██████╗=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██████╗=ud_nbsp:1==ud_nbsp:1=██████╗=ud_nbsp:1==ud_nbsp:1=██╗
+                =ud_nbsp:1=██╔════╝██║=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██╔══██╗=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██╔═████╗██╔═████╗███║
+                =ud_nbsp:1=█████╗=ud_nbsp:1==ud_nbsp:1=██║=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██████╔╝█████╗██║██╔██║██║██╔██║╚██║
+                =ud_nbsp:1=██╔══╝=ud_nbsp:1==ud_nbsp:1=██║=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██╔══██╗╚════╝████╔╝██║████╔╝██║=ud_nbsp:1=██║
+                =ud_nbsp:1=██║=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=███████╗██║=ud_nbsp:1==ud_nbsp:1=██║=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=╚██████╔╝╚██████╔╝=ud_nbsp:1=██║
+                =ud_nbsp:1=╚═╝=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=╚══════╝╚═╝=ud_nbsp:1==ud_nbsp:1=╚═╝=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=╚═════╝=ud_nbsp:1==ud_nbsp:1=╚═════╝=ud_nbsp:1==ud_nbsp:1=╚═╝}}
+                
+                // ... _
+                // [CHECK-IN STATION[LV1-SEC]] - [SPECIMEN OBSERVATION[LV2-SEC]] >>
+                // ... _
+                
+                ██████=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██=ud_nbsp:1=███████
+                ██=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██=ud_nbsp:1=██
+                ██=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1=██=ud_nbsp:1=███████
+                ██=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██
+                ██████=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██=ud_nbsp:1=███████
+                
+                // ... _
+
+
+
+
+                ========================================================================
+                TAGS: [Property of UVAcore Genetics] - [X]}} 
+            </text>
+        </start>
+    </conversation>
+
+    <conversation ID="DisplayMonitor2">
+        <start ID ="ShowSignContents">
+            <text>
+                {{C|                UVA-TECH - . - - | - . - . - |____________________VRS. 1.14.3 EA65Ue
+                ========================================================================
+                {{c|░=ud_nbsp:1==ud_nbsp:1=░░░░=ud_nbsp:1==ud_nbsp:1=░░=ud_nbsp:1==ud_nbsp:1=░░░░=ud_nbsp:1==ud_nbsp:1=░░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░
+                ▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒
+                ▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓▓=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓▓▓▓
+                █=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=████████=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1=█
+                ██=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=███=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██}}
+                ========================================================================
+                // "UVA-technologies! Be your most productive self!" _
+                
+                // ... _ 
+                
+            {{B|=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██=ud_nbsp:1=
+                ██=ud_nbsp:1=
+                =ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=████████████=ud_nbsp:1=███
+                =ud_nbsp:1=██=ud_nbsp:1=
+                =ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██=ud_nbsp:1=}}
+                
+                // ... _
+                
+                {{B|=ud_nbsp:1=███████╗██╗=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██████╗=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██████╗=ud_nbsp:1==ud_nbsp:1=██████╗=ud_nbsp:1==ud_nbsp:1=██╗
+                =ud_nbsp:1=██╔════╝██║=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██╔══██╗=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██╔═████╗██╔═████╗███║
+                =ud_nbsp:1=█████╗=ud_nbsp:1==ud_nbsp:1=██║=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██████╔╝█████╗██║██╔██║██║██╔██║╚██║
+                =ud_nbsp:1=██╔══╝=ud_nbsp:1==ud_nbsp:1=██║=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██╔══██╗╚════╝████╔╝██║████╔╝██║=ud_nbsp:1=██║
+                =ud_nbsp:1=██║=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=███████╗██║=ud_nbsp:1==ud_nbsp:1=██║=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=╚██████╔╝╚██████╔╝=ud_nbsp:1=██║
+                =ud_nbsp:1=╚═╝=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=╚══════╝╚═╝=ud_nbsp:1==ud_nbsp:1=╚═╝=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=╚═════╝=ud_nbsp:1==ud_nbsp:1=╚═════╝=ud_nbsp:1==ud_nbsp:1=╚═╝}}
+                
+                // ... _
+                // [CHECK-IN STATION[LV1-SEC]] - [SPECIMEN OBSERVATION[LV2-SEC]] >>
+                // ... _
+                
+                =ud_nbsp:1=███████=ud_nbsp:1=██████=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██████=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██████=ud_nbsp:1==ud_nbsp:1=██████=ud_nbsp:1==ud_nbsp:1=███████
+                =ud_nbsp:1=██=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██=ud_nbsp:1=██=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██=ud_nbsp:1=██=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██=ud_nbsp:1=██
+                =ud_nbsp:1=███████=ud_nbsp:1=██████=ud_nbsp:1==ud_nbsp:1=██=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1=██=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██=ud_nbsp:1=██████=ud_nbsp:1==ud_nbsp:1=███████
+                =ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██=ud_nbsp:1=██=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██=ud_nbsp:1=██=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██
+                =ud_nbsp:1=███████=ud_nbsp:1=██=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██████=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██████=ud_nbsp:1==ud_nbsp:1=██████=ud_nbsp:1==ud_nbsp:1=███████
+                
+                // ... _
+                
+                ========================================================================
+                TAGS: [Property of uvaCORE Genetics] - [X]}}
+            </text>
+        </start>
+    </conversation>
+
+    <conversation ID="DisplayMonitor3">
+        <start ID ="ShowSignContents">
+            <text>
+                {{C|                UVA-TECH - . - - | - . - . - |____________________VRS. 1.14.3 EA65Ue
+                ========================================================================
+                {{C|░=ud_nbsp:1==ud_nbsp:1=░░░░=ud_nbsp:1==ud_nbsp:1=░░=ud_nbsp:1==ud_nbsp:1=░░░░=ud_nbsp:1==ud_nbsp:1=░░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░
+                ▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒}}
+                {{m|▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓▓=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓▓▓▓}}
+                {{M|█=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=████████=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1=█
+                ██=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=███=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██}}
+                ========================================================================
+                // "UVA-technologies! Be your most productive self!" _
+                
+                // ... _ 
+                
+            {{B|=ud_nbsp:1=███████╗██╗=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██████╗=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██████╗=ud_nbsp:1==ud_nbsp:1=██████╗=ud_nbsp:1=██████╗
+                =ud_nbsp:1=██╔════╝██║=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██╔══██╗=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██╔═████╗██╔═████╗╚════██╗
+                =ud_nbsp:1=█████╗=ud_nbsp:1==ud_nbsp:1=██║=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██████╔╝█████╗██║██╔██║██║██╔██║=ud_nbsp:1=█████╔╝
+                =ud_nbsp:1=██╔══╝=ud_nbsp:1==ud_nbsp:1=██║=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██╔══██╗╚════╝████╔╝██║████╔╝██║██╔═══╝
+                =ud_nbsp:1=██║=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=███████╗██║=ud_nbsp:1==ud_nbsp:1=██║=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=╚██████╔╝╚██████╔╝███████╗
+                =ud_nbsp:1=╚═╝=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=╚══════╝╚═╝=ud_nbsp:1==ud_nbsp:1=╚═╝=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=╚═════╝=ud_nbsp:1==ud_nbsp:1=╚═════╝=ud_nbsp:1=╚══════╝}}
+                
+                // [SERENITY COMPLEX[LV2-SEC]] - [RESEARCH HUB [LV3-SEC]] >>
+                
+                
+                ========================================================================
+                TAGS: [Property of uvaCORE Genetics] - [X]}}
+            </text>
+        </start>
+    </conversation>
+
+    <conversation ID="DisplayMonitor4">
+        <start ID ="ShowSignContents">
+            <text>
+                {{C|                UVA-TECH - . - - | - . - . - |____________________VRS. 1.14.3 EA65Ue
+                ========================================================================
+                {{C|░=ud_nbsp:1==ud_nbsp:1=░░░░=ud_nbsp:1==ud_nbsp:1=░░=ud_nbsp:1==ud_nbsp:1=░░░░=ud_nbsp:1==ud_nbsp:1=░░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░
+                ▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒}}
+                {{m|▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓▓=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓▓▓▓}}
+                {{M|█=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=████████=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1=█
+                ██=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=███=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██}}
+                ========================================================================
+                // "UVA-technologies! Be your most productive self!" _
+                
+                // ... _
+                
+                {{B|
+                =ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██=ud_nbsp:1=
+                =ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██
+                =ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=████████████=ud_nbsp:1=███
+                =ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██
+                =ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██=ud_nbsp:1=
+                }}
+
+                // ... _
+                
+                {{B|=ud_nbsp:1=███████╗██╗=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██████╗=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██████╗=ud_nbsp:1==ud_nbsp:1=██████╗=ud_nbsp:1=██████╗
+                =ud_nbsp:1=██╔════╝██║=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██╔══██╗=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██╔═████╗██╔═████╗╚════██╗
+                =ud_nbsp:1=█████╗=ud_nbsp:1==ud_nbsp:1=██║=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██████╔╝█████╗██║██╔██║██║██╔██║=ud_nbsp:1=█████╔╝
+                =ud_nbsp:1=██╔══╝=ud_nbsp:1==ud_nbsp:1=██║=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██╔══██╗╚════╝████╔╝██║████╔╝██║██╔═══╝
+                =ud_nbsp:1=██║=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=███████╗██║=ud_nbsp:1==ud_nbsp:1=██║=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=╚██████╔╝╚██████╔╝███████╗
+                =ud_nbsp:1=╚═╝=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=╚══════╝╚═╝=ud_nbsp:1==ud_nbsp:1=╚═╝=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=╚═════╝=ud_nbsp:1==ud_nbsp:1=╚═════╝=ud_nbsp:1=╚══════╝
+                }}
+                
+                // [SERENITY COMPLEX[LV2-SEC]]  >>
+                
+                ███████=ud_nbsp:1=██████=ud_nbsp:1==ud_nbsp:1=███=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██████=ud_nbsp:1=██=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██
+                ██=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██=ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██=ud_nbsp:1=██
+                ███████=ud_nbsp:1=██████=ud_nbsp:1==ud_nbsp:1=██=ud_nbsp:1=██=ud_nbsp:1==ud_nbsp:1=██=ud_nbsp:1=█████=ud_nbsp:1=██=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=███
+                =ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██=ud_nbsp:1=██=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██=ud_nbsp:1=██=ud_nbsp:1==ud_nbsp:1=██=ud_nbsp:1=██=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██=ud_nbsp:1=██
+                ███████=ud_nbsp:1=██=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██=ud_nbsp:1=██=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██████=ud_nbsp:1=██=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██
+
+                {{Orange|// SERENITY COMPLEX RECREATIONAL ACTIVITIES ARE LIMITED TO 30-MIN INTERVALS. FAILURE TO RETURN TO WORK-DUTIES PROMPTLY CAN RESULT IN REPREMANDS.}}
+
+                ========================================================================
+                TAGS: [Property of uvaCORE Genetics] - [X]}}
+            </text>
+        </start>
+    </conversation>
+
+    <conversation ID="DisplayMonitor5">
+        <start ID ="ShowSignContents">
+            <text>
+                {{C|                UVA-TECH - . - - | - . - . - |____________________VRS. 1.14.3 EA65Ue
+                ========================================================================
+                {{C|░=ud_nbsp:1==ud_nbsp:1=░░░░=ud_nbsp:1==ud_nbsp:1=░░=ud_nbsp:1==ud_nbsp:1=░░░░=ud_nbsp:1==ud_nbsp:1=░░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░
+                ▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒}}
+                {{m|▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓▓=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓▓▓▓}}
+                {{M|█=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=████████=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1=█
+                ██=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=███=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██}}
+                ========================================================================
+                // "UVA-technologies! Be your most productive self!" _
+                
+                // ... _
+                
+                {{B|=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██=ud_nbsp:1=
+                ██=ud_nbsp:1=
+                =ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=████████████=ud_nbsp:1=███
+                =ud_nbsp:1=██=ud_nbsp:1=
+                =ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██=ud_nbsp:1=}}
+
+                // ... _     
+                
+                {{B|=ud_nbsp:1=███████╗██╗=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██████╗=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██████╗=ud_nbsp:1==ud_nbsp:1=██████╗=ud_nbsp:1=██████╗
+                =ud_nbsp:1=██╔════╝██║=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██╔══██╗=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██╔═████╗██╔═████╗╚════██╗
+                =ud_nbsp:1=█████╗=ud_nbsp:1==ud_nbsp:1=██║=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██████╔╝█████╗██║██╔██║██║██╔██║=ud_nbsp:1=█████╔╝
+                =ud_nbsp:1=██╔══╝=ud_nbsp:1==ud_nbsp:1=██║=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██╔══██╗╚════╝████╔╝██║████╔╝██║██╔═══╝
+                =ud_nbsp:1=██║=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=███████╗██║=ud_nbsp:1==ud_nbsp:1=██║=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=╚██████╔╝╚██████╔╝███████╗
+                =ud_nbsp:1=╚═╝=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=╚══════╝╚═╝=ud_nbsp:1==ud_nbsp:1=╚═╝=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=╚═════╝=ud_nbsp:1==ud_nbsp:1=╚═════╝=ud_nbsp:1=╚══════╝}}
+                
+                // [RESEARCH AND DEVELOPMENT HUB [LV3 SEC]]  >>
+                
+                {{B|
+                ██████╗=ud_nbsp:1=██████╗=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██╗=ud_nbsp:1==ud_nbsp:1=██╗██╗=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██╗██████╗
+                ██╔══██╗██╔══██╗=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██║=ud_nbsp:1==ud_nbsp:1=██║██║=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██║██╔══██╗
+                ██████╔╝██║=ud_nbsp:1==ud_nbsp:1=██║█████╗███████║██║=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██║██████╔╝
+                ██╔══██╗██║=ud_nbsp:1==ud_nbsp:1=██║╚════╝██╔══██║██║=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██║██╔══██╗
+                ██║=ud_nbsp:1==ud_nbsp:1=██║██████╔╝=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██║=ud_nbsp:1==ud_nbsp:1=██║╚██████╔╝██████╔╝
+                ╚═╝=ud_nbsp:1==ud_nbsp:1=╚═╝╚═════╝=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=╚═╝=ud_nbsp:1==ud_nbsp:1=╚═╝=ud_nbsp:1=╚═════╝=ud_nbsp:1=╚═════╝
+                }}
+                
+                ========================================================================
+                TAGS: [Property of uvaCORE Genetics] - [X]}}
+            </text>
+        </start>
+    </conversation>
+
+    <conversation ID="DisplayMonitor6">
+        <start ID ="ShowSignContents">
+            <text>
+                {{C|                UVA-TECH - . - - | - . - . - |____________________VRS. 1.14.3 EA65Ue
+                ========================================================================
+                {{C|░=ud_nbsp:1==ud_nbsp:1=░░░░=ud_nbsp:1==ud_nbsp:1=░░=ud_nbsp:1==ud_nbsp:1=░░░░=ud_nbsp:1==ud_nbsp:1=░░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░
+                ▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒}}
+                {{m|▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓▓=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓▓▓▓}}
+                {{M|█=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=████████=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1=█
+                ██=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=███=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██}}
+                ========================================================================
+                // "UVA-technologies! Be your most productive self!" _
+
+                // ... _
+                {{B|
+                =ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██
+                =ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██=ud_nbsp:1=
+                =ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=███=ud_nbsp:1=████████████=ud_nbsp:1=
+                =ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██=ud_nbsp:1=
+                =ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██
+                }}
+                // ... _
+
+                ███████╗██╗=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██████╗=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██████╗=ud_nbsp:1==ud_nbsp:1=██████╗=ud_nbsp:1=██████╗
+                ██╔════╝██║=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██╔══██╗=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██╔═████╗██╔═████╗╚════██╗
+                █████╗=ud_nbsp:1==ud_nbsp:1=██║=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██████╔╝█████╗██║██╔██║██║██╔██║=ud_nbsp:1=█████╔╝
+                ██╔══╝=ud_nbsp:1==ud_nbsp:1=██║=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██╔══██╗╚════╝████╔╝██║████╔╝██║=ud_nbsp:1=╚═══██╗
+                ██║=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=███████╗██║=ud_nbsp:1==ud_nbsp:1=██║=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=╚██████╔╝╚██████╔╝██████╔╝
+                ╚═╝=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=╚══════╝╚═╝=ud_nbsp:1==ud_nbsp:1=╚═╝=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=╚═════╝=ud_nbsp:1==ud_nbsp:1=╚═════╝=ud_nbsp:1=╚═════╝
+
+                // [PRODUCTION AND MANUFACTURING HUB [LV4 SEC]]  >>
+
+                {{B|
+                ██████╗=ud_nbsp:1=███╗=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=███╗=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██╗=ud_nbsp:1==ud_nbsp:1=██╗██╗=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██╗██████╗
+                ██╔══██╗████╗=ud_nbsp:1=████║=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██║=ud_nbsp:1==ud_nbsp:1=██║██║=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██║██╔══██╗
+                ██████╔╝██╔████╔██║█████╗███████║██║=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██║██████╔╝
+                ██╔═══╝=ud_nbsp:1=██║╚██╔╝██║╚════╝██╔══██║██║=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██║██╔══██╗
+                ██║=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██║=ud_nbsp:1=╚═╝=ud_nbsp:1=██║=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██║=ud_nbsp:1==ud_nbsp:1=██║╚██████╔╝██████╔╝
+                ╚═╝=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=╚═╝=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=╚═╝=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=╚═╝=ud_nbsp:1==ud_nbsp:1=╚═╝=ud_nbsp:1=╚═════╝=ud_nbsp:1=╚═════╝
+                }}
+
+                ========================================================================
+                TAGS: [Property of uvaCORE Genetics] - [X]}}
+            </text>
+        </start>
+    </conversation>
+
+
+    <conversation ID="DisplayMonitor7">
+        <start ID ="ShowSignContents">
+            <text>
+                {{C|                UVA-TECH - . - - | - . - . - |____________________VRS. 1.14.3 EA65Ue
+                ========================================================================
+                {{C|░=ud_nbsp:1==ud_nbsp:1=░░░░=ud_nbsp:1==ud_nbsp:1=░░=ud_nbsp:1==ud_nbsp:1=░░░░=ud_nbsp:1==ud_nbsp:1=░░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░
+                ▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒}}
+                {{m|▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓▓=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓▓▓▓}}
+                {{M|█=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=████████=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1=█
+                ██=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=███=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██}}
+                ========================================================================
+                // "UVA-technologies! Be your most productive self!" _
+                
+
+=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=directories=ud_nbsp:1=>>
+=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=//=ud_nbsp:1=NORTH=ud_nbsp:1=-=ud_nbsp:1=03=ud_nbsp:1=-=ud_nbsp:1=SECURITY=ud_nbsp:1=HUB=ud_nbsp:1=AND=ud_nbsp:1=MANUFACTURING=ud_nbsp:1=OVERWATCH.=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=
+=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=>>=ud_nbsp:1=[CONDITION?=ud_nbsp:1=////=ud_nbsp:1={{red|COMPROMISED.}}]
+=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=
+=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=//=ud_nbsp:1=SOUTH=ud_nbsp:1=-=ud_nbsp:1=04=ud_nbsp:1=-=ud_nbsp:1=RECOMING=ud_nbsp:1=NOOK=ud_nbsp:1=AND=ud_nbsp:1=BREAKROOM.=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=
+=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=>>=ud_nbsp:1=[CONDITION?=ud_nbsp:1=////=ud_nbsp:1={{red|COMPROMISED.}}]
+=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=
+=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=//=ud_nbsp:1=WEST=ud_nbsp:1==ud_nbsp:1=-=ud_nbsp:1=05=ud_nbsp:1=-=ud_nbsp:1=MANUFACTURING=ud_nbsp:1=AND=ud_nbsp:1=PROCESSING.=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=
+=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=>>=ud_nbsp:1=[{{yellow|POE-REQUIRED}},{{cyan|SEC-TAG-REQUIRED}}]=ud_nbsp:1=
+=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=>>=ud_nbsp:1=[CONDITION?=ud_nbsp:1=////=ud_nbsp:1={{red|COMPROMISED.}}]
+                
+                // [PRODUCTION AND MANUFACTURING HUB [LV4 SEC]]  >>
+
+                {{B|
+                ██████╗=ud_nbsp:1=███╗=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=███╗=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██╗=ud_nbsp:1==ud_nbsp:1=██╗██╗=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██╗██████╗
+                ██╔══██╗████╗=ud_nbsp:1=████║=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██║=ud_nbsp:1==ud_nbsp:1=██║██║=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██║██╔══██╗
+                ██████╔╝██╔████╔██║█████╗███████║██║=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██║██████╔╝
+                ██╔═══╝=ud_nbsp:1=██║╚██╔╝██║╚════╝██╔══██║██║=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██║██╔══██╗
+                ██║=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██║=ud_nbsp:1=╚═╝=ud_nbsp:1=██║=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██║=ud_nbsp:1==ud_nbsp:1=██║╚██████╔╝██████╔╝
+                ╚═╝=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=╚═╝=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=╚═╝=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=╚═╝=ud_nbsp:1==ud_nbsp:1=╚═╝=ud_nbsp:1=╚═════╝=ud_nbsp:1=╚═════╝
+                }}
+
+                ========================================================================
+                TAGS: [Property of uvaCORE Genetics] - [X]}}
+            </text>
+        </start>
+    </conversation>
+
+    <conversation ID="DisplayMonitor8">
+        <start ID ="ShowSignContents">
+            <text>
+                {{C|                UVA-TECH - . - - | - . - . - |____________________VRS. 1.14.3 EA65Ue
+                ========================================================================
+                {{C|░=ud_nbsp:1==ud_nbsp:1=░░░░=ud_nbsp:1==ud_nbsp:1=░░=ud_nbsp:1==ud_nbsp:1=░░░░=ud_nbsp:1==ud_nbsp:1=░░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░
+                ▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒}}
+                {{m|▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓▓=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓▓▓▓}}
+                {{M|█=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=████████=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1=█
+                ██=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=███=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██}}
+                ========================================================================
+                // "UVA-technologies! Be your most productive self!" _
+
+
+=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=directories=ud_nbsp:1=>>
+=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=//=ud_nbsp:1=EAST=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=-=ud_nbsp:1=06=ud_nbsp:1=-=ud_nbsp:1=HEAT=ud_nbsp:1=DISSIPATION=ud_nbsp:1=CHAMBER.
+=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=>>=ud_nbsp:1=[{{orange|MAINT-TAG-REQUIRED}}]
+=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=>>=ud_nbsp:1=[CONDITION?=ud_nbsp:1=////=ud_nbsp:1={{red|COMPROMISED.=ud_nbsp:1=SHOWING=ud_nbsp:1=SEVERE=ud_nbsp:1=STRUCTURAL=ud_nbsp:1=DAMAGE.}}]
+=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=
+=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=//=ud_nbsp:1=SOUTH-EAST=ud_nbsp:1=-=ud_nbsp:1=07=ud_nbsp:1=-=ud_nbsp:1=POWER=ud_nbsp:1=FUSION=ud_nbsp:1=PILON=ud_nbsp:1=ARRAY.
+=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=>>=ud_nbsp:1=[{{yellow|POE-REQUIRED}}]
+=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=>>=ud_nbsp:1=[{{orange|MAINT-TAG-REQUIRED}}]
+=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=>>=ud_nbsp:1=[CONDITION?=ud_nbsp:1=////=ud_nbsp:1={{red|COMPROMISED.}}]
+=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=
+=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=//=ud_nbsp:1=WEST=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=-=ud_nbsp:1=08=ud_nbsp:1=-=ud_nbsp:1=MAINFRAME=ud_nbsp:1=AND=ud_nbsp:1=ENERGY=ud_nbsp:1=MANAMENT.
+=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=>>=ud_nbsp:1=[{{orange|MAINT-TAG-REQUIRED}}]
+=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=>>=ud_nbsp:1=[CONDITION?=ud_nbsp:1=////=ud_nbsp:1={{red|COMPROMISED.}}]
+
+                // [MAINFRAME &amp; POWER MANAGEMENT] - [LV5 SEC]  >>
+
+                {{B|
+                ███╗=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=███╗███████╗=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██████╗=ud_nbsp:1=███╗=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=███╗
+               =ud_nbsp:1=████╗=ud_nbsp:1=████║██╔════╝=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██╔══██╗████╗=ud_nbsp:1=████║
+                ██╔████╔██║█████╗█████╗██████╔╝██╔████╔██║
+                ██║╚██╔╝██║██╔══╝╚════╝██╔═══╝=ud_nbsp:1=██║╚██╔╝██║
+                ██║=ud_nbsp:1=╚═╝=ud_nbsp:1=██║██║=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██║=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██║=ud_nbsp:1=╚═╝=ud_nbsp:1=██║
+                ╚═╝=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=╚═╝╚═╝=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=╚═╝=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=╚═╝=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=╚═╝
+                }}
+
+                ========================================================================
+                TAGS: [Property of uvaCORE Genetics] - [X]}}
+            </text>
+        </start>
+    </conversation>
+
+</conversations>
+ 
+ 
+ 
+ 
+ 
+ 
+ 

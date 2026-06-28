@@ -26,7 +26,7 @@ namespace XRL.World.Parts
             if (E.ID == "ObjectCreated")
             {
                 Render render = this.ParentObject.GetPart("Render") as Render;
-                render.Tile = "terrain/SulfuricWastland" + Stat.Random(1, 5) + ".png";
+                render.Tile = "WingyTextures/terrain/SulfuricWastland" + Stat.Random(1, 5) + ".png";
                 int num = Stat.Random(1, 2);
                 if (num == 1)
                 {

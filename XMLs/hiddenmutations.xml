@@ -9,6 +9,8 @@
                   MaxSelected="1" Cost="1" Name="Spit Sulfur" DisplayName="Spit Sulfur" ></mutation>
         <mutation BearerDescription="those whose scales glitter like stars" Exclusions="" Class="wmGlareBurst"
                   MaxSelected="1" Cost="1" Name="Glare Burst" DisplayName="Glitter-Scale Glare Burst" ></mutation>
+        <mutation BearerDescription="those who swim beneath your skin" Exclusions="" Class="Amalgamize"
+                  MaxSelected="1" Cost="1" Name="Amalgamate Infection" DisplayName="Amalgamate Infection" ></mutation>
     </category>
 
 

@@ -3,10 +3,10 @@
         <AssemblyName>WM-MutationsProj</AssemblyName>
         <PackageId>MutationProj</PackageId>
         <Authors>Winged Monotone</Authors>
-        <TargetFramework>netstandard2.0</TargetFramework>
-        <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-        <LangVersion>9.0
-        </LangVersion>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+        <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
+        <LangVersion>9</LangVersion>
         <IntermediateOutputPath>../dump</IntermediateOutputPath>
         <OutputPath>../dump</OutputPath>
         <QudLibPath>H:\SteamLibrary\steamapps\common\Caves of Qud\CoQ_Data\Managed</QudLibPath>

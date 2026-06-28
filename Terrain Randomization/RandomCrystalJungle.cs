@@ -60,7 +60,7 @@ namespace XRL.World.Parts
                 text = "c";
             }
 
-            pRender.Tile = "crystholts" + Stat.Random(1, 3) + ".png";
+            pRender.Tile = "WingyTextures/crystholts" + Stat.Random(1, 3) + ".png";
             pRender.DetailColor = "y";
             if (ParentObject.Physics.CurrentCell.X > 0 && ParentObject.Physics.CurrentCell.X < 79 &&
                 ParentObject.Physics.CurrentCell.Y > 0 && ParentObject.Physics.CurrentCell.Y < 24)
@@ -77,11 +77,11 @@ namespace XRL.World.Parts
                     {
                         if (flag)
                         {
-                            pRender.Tile = "crystholtsleft" + Stat.Random(1, 2) + ".png";
+                            pRender.Tile = "WingyTextures/crystholtsleft" + Stat.Random(1, 2) + ".png";
                         }
                         else
                         {
-                            pRender.Tile = "crystholtsright" + Stat.Random(1, 2) + ".png";
+                            pRender.Tile = "WingyTextures/crystholtsright" + Stat.Random(1, 2) + ".png";
                         }
                     }
                 }

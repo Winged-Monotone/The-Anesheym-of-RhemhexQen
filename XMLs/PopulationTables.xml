@@ -523,4 +523,21 @@
         </group>
     </population>
 
+    <population Name="DamascaeaWares">
+        <group Name="Items" Style="pickeach">
+            <object Weight="50" Number="2d4" Blueprint="Keracryst Dja"/>
+            <object Weight="50" Number="1d5" Blueprint="Keracryst Tulwar"/>
+            <object Weight="50" Number="1d5" Blueprint="Keracryst Caveler"/>
+            <object Weight="50" Number="1d2" Blueprint="Keracryst Grandhup"/>
+            <object Weight="50" Number="2d4" Blueprint="Keracite Maille Gauntlet"/>
+            <object Weight="50" Number="1d5" Blueprint="Keracite Coffin-Shield"/>
+            <object Weight="50" Number="1d5" Blueprint="Glittercloth Brassiere"/>
+            <object Weight="50" Number="1d2" Blueprint="Keracite Stilletos"/>
+            <object Weight="50" Number="2d4" Blueprint="Keracite Maille Gauntlet"/>
+            <object Weight="50" Number="1d5" Blueprint="Keracite Lamellar Armor"/>
+            <object Weight="50" Number="1d5" Blueprint="Keracite Greaves"/>
+            <object Weight="50" Number="1d2" Blueprint="Glittercloth Banded Leotard"/>
+        </group>
+    </population>
+
 </populations>

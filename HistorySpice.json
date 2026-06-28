@@ -270,7 +270,7 @@
       "terrain": {
         "Crystholts": {           
           "someIngredients": [ "crystal-flakes", "cryst-tree seed", "insect-jelly", "chitin bits", "gangly antennae", "crytus fruit", "glimmering dust" ],
-          "aIngredients": [ "flake of chitin-husk", "twig of salthopper chitin", "mortar-beetle horn", "glare-wing scale", "mantra-ray polyp", "handful of barnacles", "chunk of tube-worm meat", "$creaturePossessive $creatureBodyPart", "$creaturePossessive $creatureBodyPart" ]}
+          "aIngredients": [ "flake of chitin-husk", "Bing Horton's Potato Wedges","twig of salthopper chitin", "mortar-beetle horn", "glare-wing scale", "mantra-ray polyp", "handful of barnacles", "chunk of tube-worm meat", "$creaturePossessive $creatureBodyPart", "$creaturePossessive $creatureBodyPart" ]}
       }
     }
   }

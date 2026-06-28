@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<books>
+<!--    Mehrashir Content-->
+    <!--    Ingredients for VITAE-->
+    <book ID="IngredientHint-Dynestrogen" Title="{{W|D-01.74.3}}">
+        <page>
+            USERS: Dr. ##########
+            MESSAGE HISTORY - XX-XX-XXXX CO--UROTPIE-D -- [DATE ... UNKNOWN]
+            =====================================================================
+
+            so, it's a bit of an understatement to say that butchering the mixture of this synthesized hormone could result in something truly horrifying.
+            
+            it's a lot of pressure, yeah?
+
+            i've devoted myself to knowing, sure but ...
+
+            but why does it feel like I'm being a bit too risky all of a sudden?
+
+            well, I might as well be accurate if I'm creating something that could either revolutionize us ... or end us.
+
+            of the various hormones, enzymes, dynestrogen relica makes up a majority of the compound:
+
+            {{red|Dynestrogen}} : 74.3
+            
+            remember, this synthetic hormone engages the deoxyribonucleic system, stimulating individual molecular reintegration while incurring only minimal-to-minor losses in cellular stability or rouge-cellar pathogenesis.
+            
+            one tick, one gram out of alignment. And ... well. Let's rather not imagine what will happen if the genetic leash that maintains our individual flesh was ... broken, and given freedom to grow, and consume.
+            
+            ... what the hell am I doing?
+        </page>
+    </book>
+
+    <book ID="IngredientHint-Mychoglobulin" Title="{{W|M-02.56.7}}">
+        <page>
+            USERS: DR. ##########
+            MESSAGE HISTORY - XX-XX-XXXX CO--UROTPIE-D -- [DATE ... UNKNOWN]
+            =====================================================================
+
+            got chewed out ...
+            dragged by our lead professor.
+            
+            i just ... professed my doubts, we take a little more care. 
+            more trials. more technical hypothetical approaches. 
+            
+            but no. 
+            
+            i'm ... being cowardly, apparently. 
+
+            {{orange|Mychoglobulin}} : 56.7
+            
+            i got a bad feeling. and i'm just getting started. what the hell do I do?
+
+            mychoglobulin helps to settle the exciter that stimulates cell growth in the compounds final structure.
+            
+            ... 
+        </page>
+    </book>
+
+    <book ID="IngredientHint-Ultraglycocyn" Title="{{W|U-03.32.0}}">
+        <page>
+            USERS: DR. ##########
+            MESSAGE HISTORY - XX-XX-XXXX CO--UROTPIE-D -- [DATE ... UNKNOWN]
+            =====================================================================
+
+            so, even Dr. Yoltum seems to agree. met with him yesterday, told him my plan. to stall the project out--lose enough funding. let it drop.
+            
+            we both agree, its just not worth it.
+            
+            i have to get the others to see, they're all mil-tec officers, science division.
+
+            {{yellow|Ultraglycocyn}} : 32.0
+            
+            helps to stimulate genetic buffering, allowing for synaptic memory expansion and cell evolution.
+        </page>
+    </book>
+
+    <book ID="IngredientHint-Zetanutriena" Title="{{W|Z-04.25.5}}">
+        <page>
+            USERS: DR. ##########
+            MESSAGE HISTORY - XX-XX-XXXX CO--UROTPIE-D -- [DATE ... UNKNOWN]
+            =====================================================================
+
+            i got a few of the other's to fall along, but Xeveye is ... skeptical.
+            
+            he looks up to the lead. it'll be hard to get him to stop sucking up to that egotistical asshole.
+            
+            oh, speaking of asshole.
+
+            {{green|Zetanutriena}} : 25.5
+            
+            engaging intense spontaneous cellular recombination requires a crap-ton of nutrients. pun intended. in any situation this much cellular reconstruction would require so much energy that you'd need to ingest ... and expel, many tons worth of sustenance to the fuel the process.
+            
+            or use this, zetanutriena. a slow-release super-food for one's cells. typically, you can't just inject it and be fine--instant fatal vitamin toxicity overdose--the dosage makes the poison, you know--but in this case, the zetanutriena can burn away before it toxifies the body through hypervitamitosis.
+        </page>
+    </book>
+
+    <book ID="IngredientHint-Psycholuceum" Title="{{W|P-05.13.1}}">
+        <page>
+            USERS: DR. ##########
+            MESSAGE HISTORY - XX-XX-XXXX CO--UROTPIE-D -- [DATE ... UNKNOWN]
+            =====================================================================
+
+            i managed to convince a few others, we're working together to stall the lead's attempts to slow down our process. if we can get this branch to fail, then we can move on with other projects. put this nightmare behind us. 
+
+            {{cyan|Psycholuceum}} : 13.1
+
+            derived from special fungi, psycholuceum engages the chemical bridge between our mind and our cells-its the communicator--taking one's thoughts and intentions and relaying the intentions to the cells.
+
+        </page>
+    </book>
+
+    <book ID="IngredientHint-Xaldazium" Title="{{W|X-06.7.7}}">
+    <page>
+        USERS: DR. ##########
+        MESSAGE HISTORY - XX-XX-XXXX CO--UROTPIE-D -- [DATE ... UNKNOWN]
+        =====================================================================
+
+        ... Xeveye ...
+
+        he told the lead and the lead brought in the military. i've been separated and put under watch. told to continue my experiments. and to do so promptly.
+
+        I haven't heard ... from Yoltum ...
+
+        {{blue|Xaldazium}} : 7.7
+        
+        prevents intense shock to the dna spectrum and neural structure, causing cerebral-death if unmanaged.
+    </page>
+</book>
+
+    <book ID="IngredientHint-Arsplicium" Title="{{W|A-07.0.1}}">
+        <page>
+            USERS: DR. ##########
+            MESSAGE HISTORY - XX-XX-XXXX CO--UROTPIE-D -- [DATE ... UNKNOWN]
+            =====================================================================
+
+            the fool! i told him he could trust me! i could synthesize the VITAE compound using a gene-distillery!
+            but he doesn't trust me anymore, he thinks i'll betray him.
+            
+            he brought in Xev instead! he's the clumsiest operator i've ever met. i've trained operators with more finesse than him!
+            
+            dear god ... if just one of those metrics is off ...
+            
+            {{magenta|Arsplicium}} : 0.1
+        </page>
+    </book>
+    
+<!--    Dr. Afron Nielst - Lead Professor-->
+
+    <book ID="AfrNieEntry1" Title="PVT-LOG - LEAD PROF - E.01">
+        <page>
+            USERS: DR. AFRON NIELST - LEAD SCIENCE OFFICER
+            MESSAGE HISTORY - XX-XX-XXXX CO--UROTPIE-D -- [DATE ... UNKNOWN]
+            =====================================================================
+            
+            I awoke this morning to a message in my inbox, we've been greenlit to move on with the final stages of Project LIEF.
+            
+            Finally, a moment of true exposure for my recent experiments. A moment to be, vindicated and recognized for the truly revolutionary deeds I've done here.
+            </page>
+            
+            <page>
+            We've, with my guidance of course, synthesized several key compounds that hold the mechanisms neccesary to biological unlockings so incredible, that flesh might finally revere thought.
+            
+            If we can perfect this solution, we can create a tonic that when taken, allows one to sculpt themselves with their very minds.
+            
+            The only thing holding me back, are the nitwits they assigned me. Sure Dr. ######### has some genius when it comes to her chemical synthesis skills. But they're a bit too ... altruistic? Humble? All 'hypothetical trials before clinical trials.'
+        
+            What a child.
+            </page>
+        
+            <page>
+            Science Officer Yoltum's a lazy bum, doing only what they are told and not putting in the effort to explore beyond their ability. Ignorant boy. 
+            
+             Assistant Science Officer Xeveye is ... tolerable. They praise my incredible genius--as they should--and speak with utmost respect while in my presence and presumably outside of it as well. He's a bit naive. But, I'll allow his presence for now.
+            </page>
+
+             <page>
+            The rest of the crew are a bunch of fools. Drabble, empty heads that only follow directions. But I'll make use of this lot. My road to glory was paved with agonies, but it was worth it. It was worth the wait, the time, the sweat, the blood. The humiliation at the hands of this society.
+                 
+                 I will be the herald of a new era.
+                 
+             </page>
+        
+    </book>
+
+    <book ID="AfrNieEntry2" Title="PVT-LOG - LEAD PROF - E.02">
+        <page>
+            USERS: DR. AFRON NIELST - LEAD SCIENCE OFFICER
+            MESSAGE HISTORY - XX-XX-XXXX CO--UROTPIE-D -- [DATE ... UNKNOWN]
+            =====================================================================
+
+    Dr. ########, all dour-eyed, whining like a sheep over the "dangers" of the clinical experiments. We've kept our biosynthization methods within scope. Somewhat. And though yes some of the recent clinical test on the vermin have resulted in, how shall I say this, 'lively tumors.' We've managed to curt the cliffedge with our experiments. Sure, the cells are revolting against the forced reconstitution efforts. But the compound is ... dynamic. DR. ######## says it could be a catastrophe, a "world ending event". 
+            
+            Ha ... what an imagination.
+            
+            The girl thinks this place wouldn't be qaurantined and glassed to high-hell before that even happens. Fret not I say, we are one of the most secure and advanced biogenetics firms in the world, the military in our pockets offers security and personnel unrivalled by our peers. Perks like, administrative freedoms, enhanced emenities, and a security force that could vaporize an armada. Some talking tumors aren't going to stop us, no-- me, from achieving the glory that I deserve. I accused the girl of being a coward, "how did you even become a scientist? too busy sticking hypotheticals to paper and never practicing the practical element!" 
+            
+            Got a good laugh out of me, and Dr. Xeveye.
+            
+            The others were too focused on their work to grasp my humor.
+        </page>
+
+        <page>
+I guess I can't be too hard on the child. They've proven to have the technical ability. All that pencil-pushing made her accurate at least, and she managed to crack the first and second compound thresholds we needed for the serum.
+        </page>
+
+        <page>
+If these idiots can maintain focus for a moment, we might actually finish this project within the projected time scope. 
+        </page>
+    </book>
+
+    <book ID="AfrNieEntry3" Title="PVT-LOG - LEAD PROF - E.03">
+        <page>
+            USERS: DR. AFRON NIELST - LEAD SCIENCE OFFICER
+            MESSAGE HISTORY - XX-XX-XXXX CO--UROTPIE-D -- [DATE ... UNKNOWN]
+            =====================================================================
+
+[this entry is about him stressing his anger about the sudden lack of progress they are having. Though they synthesized the serums next threshold, he worries about the ]
+        </page>
+    </book>
+
+    <book ID="AfrNieEntry4" Title="PVT-LOG - LEAD PROF - E.04">
+        <page>
+            USERS: DR. AFRON NIELST - LEAD SCIENCE OFFICER
+            MESSAGE HISTORY - XX-XX-XXXX CO--UROTPIE-D -- [DATE ... UNKNOWN]
+            =====================================================================
+            
+            [this entry is about him stressing his anger about the sudden lack of progress they are having. Though they synthesized the serums next threshold, he worries about the time its taking.]
+        </page>
+    </book>
+
+    <book ID="AfrNieEntry5" Title="PVT-LOG - LEAD PROF - E.05">
+        <page>
+            USERS: DR. AFRON NIELST - LEAD SCIENCE OFFICER
+            MESSAGE HISTORY - XX-XX-XXXX CO--UROTPIE-D -- [DATE ... UNKNOWN]
+            =====================================================================
+
+            [This entry contains more of him just being upset that nothing is progressing, ]
+        </page>
+    </book>
+
+    <book ID="AfrNieEntry6" Title="PVT-LOG - LEAD PROF - E.06">
+        <page>
+            USERS: DR. AFRON NIELST - LEAD SCIENCE OFFICER
+            MESSAGE HISTORY - XX-XX-XXXX CO--UROTPIE-D -- [DATE ... UNKNOWN]
+            =====================================================================
+
+            [This entry shows a terrified and broken professor who had just left an administrative meeting berating him for his lack of progress and not meeting the time scope, they threaten to close fundage for the entire facility. He laments his decisions. ]
+        </page>
+    </book>
+
+        <book ID="AfrNieEntry7" Title="PVT-LOG - LEAD PROF - E.06">
+            <page>
+                USERS: DR. AFRON NIELST - LEAD SCIENCE OFFICER
+                MESSAGE HISTORY - XX-XX-XXXX CO--UROTPIE-D -- [DATE ... UNKNOWN]
+                =====================================================================
+
+                [This entry shows a triumphant professor as Xeveya comes to him about Meh's headers' betrayal. He gathers the military through corporate pressure and has the scientist placed in solitary confinement where he forces them to work on the project more diligently.]
+            </page>
+        </book>
+
+        <book ID="AfrNieEntry8" Title="PVT-LOG - LEAD PROF - E.015">
+            <page>
+                USERS: DR. AFRON NIELST - LEAD SCIENCE OFFICER
+                MESSAGE HISTORY - XX-XX-XXXX CO--UROTPIE-D -- [DATE ... UNKNOWN]
+                =====================================================================
+
+                [Shows a scary shift in his persona, mentions that he's been speaking to it and that he knows he must make this synthesis possible by any means neccesarry, its hinted that every other scientist except Meh is either dead or in custody somewhere in the facility and that due to Meh's usefulness, they've been locked in the Recumbancy Chambers.]
+            </page>
+        </book>
+    
+<!--    Afron Ascension-->
+
+    <book ID="AfrNieAscension1" Title="FOOTAGE 01 - LEAD PROF - SE.#####">
+        <page>
+            USERS: DR. AFRON NIELST - LEAD SCIENCE OFFICER
+            MESSAGE HISTORY - XX-XX-XXXX CO--UROTPIE-D -- [DATE ... UNKNOWN]
+            =====================================================================
+
+        [AFNI]:// Personal log. [DR AFRON - First log with the talking tumors. in this he explains taking the little tumor away and speaking to it. The tumor only mutters one word, "reason ..." and he can't seem top get it to say anything else.]
+        </page>
+    </book>
+
+    <book ID="AfrNieAscension2" Title="FOOTAGE 02 - LEAD PROF - SE.#####">
+        <page>
+            USERS: DR. AFRON NIELST - LEAD SCIENCE OFFICER
+            MESSAGE HISTORY - XX-XX-XXXX CO--UROTPIE-D -- [DATE ... UNKNOWN]
+            =====================================================================
+
+            [AFNI]:// Personal log. [DR AFRON - In this log, he mentions he took another specimen back to private lab, and conversed with it, this specimen was larger and seemed more lively. This one seemed more lively, it mentions that it needs a direction a reason, a purpose. That it cannot feel its direction, asking the doctor to give it direction. Before the doctor can confirm however, the specimen dies.]
+        </page>
+    </book>
+
+    <book ID="AfrNieAscension3" Title="FOOTAGE 08 - LEAD PROF - SE.#####">
+        <page>
+            USERS: DR. AFRON NIELST - LEAD SCIENCE OFFICER
+            MESSAGE HISTORY - XX-XX-XXXX CO--UROTPIE-D -- [DATE ... UNKNOWN]
+            =====================================================================
+
+            [AFNI]:// Personal log. [In this log, a new specimen is brought in. Make it clear that he's been talking to several specimens at this point, trying to ascertain what they need, wondering if this could be the key to unlocking the serum's full potential. The creature only seems to mention it needs a reason, a purpose. He surmises that the creatures' potential is simply unrealizable in its current state. It needed more biomass. He would consider this an avenue to venture through later. He began feeding the entity flesh and it grew.]
+        </page>
+    </book>
+
+    <book ID="AfrNieAscension4" Title="FOOTAGE 27 - LEAD PROF - SE.#####">
+        <page>
+            USERS: DR. AFRON NIELST - LEAD SCIENCE OFFICER
+            MESSAGE HISTORY - XX-XX-XXXX CO--UROTPIE-D -- [DATE ... UNKNOWN]
+            =====================================================================
+
+            [AFNI]:// Personal log. [The specimen is asking for more and more sustenance, to grow more and more. He has been feeding it to the point the creature has grown large enough to walk about the table. The specimen pushes him to let grow more, that it's following his directive, that all it wants is to grow. He gets a sick pleasure from this, feeling like he is leading it to greatness and that it's his slave. Hint that he had DR MALEN removed and presumably killed. He mentions tomorrow he is going to create the serum.]
+        </page>
+    </book>
+
+    <book ID="AfrNieAscension5" Title="FOOTAGE 27 - LEAD PROF - SE.#####">
+        <page>
+            USERS: DR. AFRON NIELST - LEAD SCIENCE OFFICER
+            MESSAGE HISTORY - XX-XX-XXXX CO--UROTPIE-D -- [DATE ... UNKNOWN]
+            =====================================================================
+
+            [AFNI]:// Personal log. [The specimen is asking for more and more sustenance, to grow more and more. He has been feeding it to the point the creature has grown large enough to walk about the table. The specimen pushes him to let grow more, that it's following his directive, that all it wants is to grow. He gets a sick pleasure from this, feeling like he is leading it to greatness and that it's his slave. Hint that he had DR MALEN removed and presumably killed. He mentions tomorrow he is going to create the serum.]
+        </page>
+    </book>
+    
+    <!--    OPERATION FOOTAGE -->
+    
+            <!--    Rat Injection Fluid. -->
+    
+                    [Video footage of a rat being injected]
+
+             <!--    Human Injection Fluid. -->
+    
+                    [Video of a person being strapped to the bed and injected with incomplete vitae. You note, there are hours upon hours worth of content in it.]
+    
+                <!--    The Crimson Incident-->
+    
+                    [The Crimson Incident is when the Lead PROF Nielst and DR Xeveye attempt to create the VITAE SERUM. Xeveye fails, creating the first of the amalgam, which using the serum consumes Xeveye gaining enough biomass to continue spreading. it surrounds ]
+</books>

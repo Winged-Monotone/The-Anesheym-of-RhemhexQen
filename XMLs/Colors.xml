@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <colors>
 
+    <solidcolors>
+        <solidcolor Name="dark crimson" Color="A" LightTone="a" ShowInPicker="true" />
+        <solidcolor Name="crimson" Color="a" LightTone="A" ShowInPicker="true" />
+        <solidcolor Name="pink" Color="I" LightTone="i" ShowInPicker="true" />
+        <solidcolor Name="dark pink" Color="i" LightTone="I" ShowInPicker="true" />
+        <solidcolor Name="text pink" Color="N" LightTone="n" ShowInPicker="true" />
+        <solidcolor Name="text dark pink" Color="n" LightTone="N" ShowInPicker="true" />
+    </solidcolors>
+
     <shaders>
-        <shader Name="fleshy" Type="sequence" Colors="O-o-y-y"/>
+        <shader Name="fleshy" Type="sequence" Colors="crimson-dark crimson-text pink-text dark pink"/>
         <shader Name="poisonous" Type="sequence" Colors="G-g-m-M-g-G-M-m"/>
         <shader Name="buggopanion" Type="sequence" Colors="g-g-Y-Y-M-M-Y-Y"/>
-        <shader Name="sulfuric" Type="sequence" Colors="Y-O-o-y"/>
+        <shader Name="sulfuric" Type="sequence" Colors="crimson-O-o-dark crimson"/>
+        
+        
     </shaders>
 
 </colors>

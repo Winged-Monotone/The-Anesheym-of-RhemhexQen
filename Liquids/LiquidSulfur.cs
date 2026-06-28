@@ -53,7 +53,7 @@ namespace XRL.Liquids
 
         public override string GetColor()
         {
-            return "A";
+            return "y";
         }
 
         public override string GetName(LiquidVolume Liquid)
@@ -77,11 +77,6 @@ namespace XRL.Liquids
         }
 
         public override string GetSmearedName(LiquidVolume Liquid)
-        {
-            return "{{sulfuric|sulfur-smudged}}";
-        }
-
-        public override string GetStainedName(LiquidVolume Liquid)
         {
             return "{{sulfuric|sulfurous}}";
         }

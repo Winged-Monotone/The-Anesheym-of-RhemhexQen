@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<conversations>
+    <!--    Pandamoriaea - Conversation-->
+    
+    <conversation ID="PandamoriaesButtversation">
+        <start ID="WelcomingAss">
+            <text>
+                *Softly exuding*
+            </text>
+            <choice GotoID="End">What a glorious asset, live and drink.</choice>
+            <choice GotoID="End">Wow ...</choice>
+            <choice GotoID="End">As beautiful as the moon, live and drink.</choice>
+            <choice GotoID="End">Ample, shapely, and glutely.</choice>
+            <choice GotoID="End">Live and cheek.</choice>
+            <choice GotoID="End">[You blush]</choice>
+            <choice GotoID="End">[You marvel at its roundness]</choice>
+        </start>
+    </conversation>
+    
+    <!--    Starting Hub-->
+
+    <conversation ID="PandamoriaeConversation">
+        <start ID="Welcome" IfNotHaveProperty="SpokeTo" SetIntProperty="SpokeTo,1" AllowEscape="false">
+            <text>
+                Ah, 'tis you! The kind soul who returned my missing childre to me. My heart is warmed beyond belief by your kindness. Such compassion is a rarity in these times.
+
+                Please, allow me to introduce myself. I am Zenithera Pandamoriae, mother of the anesheym, my kindred, and shah of Rhemhex'Qen.
+
+                Such a fascinating creature ... I rarely see those from the outside world in the flesh. May I know the name of our savor and the one who has humbled me so?
+            </text>
+            <choice GotoID="GivenName">I am =name=, it is a pleasure, grand shah.</choice>
+        </start>
+        <!--_________________________________________________________________________________________________________________________-->
+
+        <!--        Start of Phase 2 -->
+
+        <start ID="StartedGrandZeniQuest" IfHaveActiveQuest="ShahStartLongSigh">
+            <text>
+                Its good to see you, =name= how fares your ventures?~
+                *hums a soft tune*~
+                Please, let me know if you need anything regarding the bloodpits, I'll do what I can to assist.
+            </text>
+            <choice GotoID="End">Live and drink, dear shah.</choice>
+        </start>
+
+        <start ID="Welcome2">
+            <text>
+                Ah, =name=, you return to us safely. 
+                
+                Shall we continue our conversation? There is much to speak of, and I fear we may not have much time too.
+            </text>
+            <choice GotoID="BeginQuest">Yes, shah Pandamoriae, let us continue.</choice>
+        </start>
+
+        <node ID="BeginQuest" AllowEscape="false">
+            <text>
+                =name=, I know these lands are foreign to you. We honestly owe you so much already, and ... it pains me to say we are still in need of your help. Desperately so, even.
+
+                I know, I know. Asking you to come here under the guise of a reward was wrong. But there is a value in being needed. You, more than anyone, should know this.
+
+                My scouts report that something sickly has irked its way into the crystholts, a vile miasma known to my kin as the Blood-Pits. We know nothing of what this sickness is, but it's overtaking our forest with alarming speed.
+            </text>
+
+            <choice IfHavePart="ObservedAmalgam" GotoID="YouHaveSeenThis" >
+                <text>
+                    I think I know what you speak of, I saw foul monsters in the Crystholts, and they look like they are spreading.
+                </text>
+            </choice>
+            <choice GotoID="WhatIsIt">
+                <text>
+                    What do you think they are?
+                </text>
+            </choice>
+        </node>
+
+        <node ID="YouHaveSeenThis">
+            <text>
+                Then you know the face of these monstrosities? Five years ago, the blood-pools began to steep their way into the Crystholts. The monstrosities that rise from it attacking anything onsight. They'd drag our kin into the pit, another of them would rise, and they no longer recognize us. Just a glimmer of our loved-ones lost in their flesh.
+
+                Eventually, we retreated to our hold watching as the disease spread across the forest. Even the Undersea is starting falter.
+            </text>
+
+            <choice GotoID="WhatIsHappening">
+                <text>
+                    What do you think is happening?
+                </text>
+            </choice>
+        </node>
+
+        <node ID="WhatIsHappening">
+            <text>
+                I extended my mind into the aether. Something about these beings unnerved me, their lack of an engram. I traced that strand of thought to something below us. Something deep beneath us, in an abyss. I feel its psyche growing, not unlike an aggregate-mind. But something is foul about this thing.
+
+                I would rather face the egotistical light of that amethyst monstrosity or the expanse of darkness we hide amongst. Than to face this? It is ... nothingness given choice, form and hunger.
+
+                It devours, and the engrams it consumes are fragmented and sorted. Memories, love, trauma ... it feeds its light.
+            </text>
+
+            <choice GotoID="WhatDoIDO">
+                <text>
+                    What would you have me do?
+                </text>
+            </choice>
+        </node>
+
+        <node ID="WhatIsIt">
+            <text>
+                We don't know...
+
+                None of our warriors could get close to them without ... being consumed. 
+                
+                Whatever it is, it drags corpses and even sometimes the living into it and changes them. 
+                
+                It's like flesh untwist, unwinds and undoes itself in abjection to our senses, monstrous amalgamations sculpted from skin and bone.
+
+                Whatever it is, it is a sickness on these lands.
+            </text>
+
+            <choice GotoID="WhatDoIDO">
+                <text>
+                    What would you have me do?
+                </text>
+            </choice>
+        </node>
+
+        <node ID="WhatDoIDO">
+            <text>
+                Speak with Saile, they have been working on tools to analyze and discover the truth behind the source of this scourge. 
+                
+                We've lost too many to this, and to lose Saile would be detrimental to us. 
+                
+                They offered to explore the blood-pools and study them "in the field" as they put it, but I requested they wait for someone with more experience in the outerworld.
+            </text>
+
+            <choice GotoID="End" StartQuest="ShahStartLongSigh">
+                <text>
+                    I'll speak with Saile, Live and Drink, Shah.
+                </text>
+            </choice>
+        </node>
+
+        <!--_________________________________________________________________________________________________________________________-->
+
+
+        <node ID="GivenName">
+            <text>
+                =name=, you will have to forgive me. It has been some time since I have spoken with another from the outside world.
+                
+                There is so much I would love to ask you, but maybe this is not the time.
+                
+                I first want to properly reward your selflessness. You didn't have to help us, you chose too. And such kindness is rare in these times.
+
+                To speak of kindness, please take these ...
+            </text>
+            <choice GotoID="End">
+                <text>Thank you. I will return.</text>
+                <part Name="ReceiveItem" Blueprints="Masterworkvoltaictriarc" Pick="false" Identify="All" />
+                <part Name="ReceiveItem" Blueprints="Royal Jelly" Amount="10" Identify="All" />
+                <part Name="ReceiveItem" Table="Gemstones" Pick="false" />
+                <part Name="ReceiveItem" Table="Gemstones" Pick="false" />
+                <part Name="ReceiveItem" Table="Gemstones" Pick="false" />
+                <part Name="ReceiveItem" Table="Gemstones" Pick="false" />
+                <part Name="ReceiveItem" Table="Gemstones" Pick="false" />
+            </choice>
+        </node>
+
+        <!--Metaphyisical Conversation-->
+
+        <node ID="SitandTalk">
+            <text>
+                =name=, can I share with you something profound, a metaphysical musing, an experience I have?
+
+                I sometimes have dreams, where suddenly, I awaken from a long slumber--and it is like the world is renewed again.
+
+                The same events play out--but a detail here and there will change, and suddenly I find that dream has become reality.
+
+                And here I am waiting once again, when time will renew and another one of 'you' will come before me. And
+                I will share these same words, a commentary on the metalogical. Sharing this conversation, sharing at this moment.
+
+            </text>
+            <choice GotoID="IsThisaDream">Maybe this is a dream. If you have a dream so real you couldn't distinguish reality, and you never woke up. Would you still be dreaming, or are simply living at that point. Reality is a strange gambit.
+            </choice>
+            <choice GotoID="IsThisNotaDream">No I do believe this is the "real." You are simply caught in the moment, my dear shah. Your dreams are a sign that you see beyond the wake, all its many possibilities. But this moment is the real moment. It is experienced.
+            </choice>
+            <choice GotoID="MaybeYouareReliving">Sometimes, I swear I died. The engram that is me was stolen away from a vessel. And then, there's darkness, and all I remember is knowing I died and having to struggle to improve. Maybe it is that you died. And now you are here, reliving a moment.
+            </choice>
+            <choice GotoID="IexperienceStrangeSens">I too experience strange things, dear shah. Sometimes it feels like the world freezes and at that moment I am nothing more than an idea of something--then suddenly I return to my normal state of mind, as if my consciousness was inert.
+            </choice>
+        </node>
+
+
+        <node ID="IsThisaDream">
+            <text>
+                Ah, some of us wish for ephemeral dreams. Others? For eternal ones. Reality is an odd sensation indeed, =name=. And so I ask, if this is a dream. Then are we not obligated to strive for our greatest resolutions? We will never know when 'experiencing' will begin or end. Should we not find a purpose that suits us, to make a dream reality, to make reality our dream?
+            </text>
+            <choice GotoID="PurposeIsaFoolsGoal">Why work towards a purpose? I let the wind take me, the moon's orbit guide me. I need no purpose, I just need change. I need only freedom in this world and purpose is a burden.
+            </choice>
+            <choice GotoID="WeAllNeedaReasonForBeing">We all need a purpose, but what is important is that we make that purpose our own. To look beyond what the world dictates we should be and find a purpose that meets our hearts desires! Purpose can be the light that brings one to burn like a star.
+            </choice>
+            <choice GotoID="BeorReasonNiethermatter">Does it matter? Whether we have purpose or not. I wouldn't care either way--whatever makes this life more interesting, whatever fulfills me like sitting under the sun and admiring a clover or slaying a foe who threatened life with no abandon. Purpose is only when you make it, with or without, I move forward.
+            </choice>
+        </node>
+    </conversation>
+    
+</conversations>
+ 
+ 
+ 
+ 
+ 
+ 
+ 

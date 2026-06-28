@@ -151,7 +151,7 @@ namespace XRL.World.Parts
         public override bool HandleEvent(EnteredCellEvent E)
         {
             if (E.Cell.ParentZone.Z > 10)
-            {
+            { 
                 ParentObject.RegisterPartEvent(this, "ClimbUp");
             }
             bool flag = false;

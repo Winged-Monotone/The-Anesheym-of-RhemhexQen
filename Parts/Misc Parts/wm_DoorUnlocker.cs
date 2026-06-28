@@ -18,12 +18,12 @@ namespace XRL.World.Parts
             if (E.ID == "AttemptDoorUnlock")
             {
                 GameObject gameObjectParameter = E.GetGameObjectParameter("Actor");
-                if (!The.Game.HasQuest("The Great Egg-Hunt Begins"))
+                if (!The.Game.HasQuest("Egghunt"))
                 {
                     return gameObjectParameter.ShowFailure("The gates are sealed.");
                 }
 
-                if (!The.Game.HasFinishedQuest("The Great Egg-Hunt Begins"))
+                if (!The.Game.HasFinishedQuest("Egghunt"))
                 {
                     return gameObjectParameter.ShowFailure(
                         "The gates are secured shut until you fulfill your promise to the Anesheym.");

@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<conversations>
+
+    <!-- Saile Conversation -->
+    
+    <conversation ID="SaileConversation">
+
+        <start ID="RedBearVitaeInvestigation" IfHaveActiveQuest="ShahStartLongSigh" IfSpeakerHaveTagOrProperty="Phase2FinalConvo">
+            <text>
+                Welcome back, =name=, place is running great thanks to your help and Kaemea has plenty to mess with!
+                
+                Maybe a little too much to mess with.
+            </text>
+            <choice GotoID="End">
+                <text>
+                    ...
+                </text>
+            </choice>
+        </start>
+
+        <start ID="RedBearVitaeInvestigation" IfHaveActiveQuest="ShahStartLongSigh" IfSpeakerHaveTagOrProperty="GaveThePhial">
+            <text>
+                Do you have what I requested?
+            </text>
+            <choice GotoID="End">
+                <text>
+                    Not yet.
+                </text>
+            </choice>
+            <choice GotoID="GiveThePusJuice" IfHaveLiquid="putrifiedvitae" UseLiquid="putrifiedvitae">
+                <text>
+                    Yes, here.
+                </text>
+            </choice>
+        </start>
+
+        <node ID="GiveThePusJuice" >
+            <text>
+                Wonderful, let's see what this facility's devices can uncover about this strange substance.
+                
+                {{emote|*Saile steps aside and pours the foul liquid into a specimen examiner*}}
+                
+                Let's see here ... biometrics are showing complex molecular lattices exhibiting malignant cellular conversion.
+                
+                Individual molecules move as a singular entity as they overcome the molecular composition of other biological specimens.
+                
+                Classification - Specimen A-003 ... Redacted?
+                
+                Wait ... This facility has sparse data on the substance already encrypted! As if ... whatever it is came from here?
+            </text>
+            <choice GotoID="GetTotheEvilGoo">
+                <text>
+                    ...
+                </text>
+            </choice>
+        </node>
+
+        <node ID="GetTotheEvilGoo" >
+            <text>
+                Biomata Surveillance Protocols are tracking the faint psychical signals released from the vitae's psycho-neural networking. 
+                
+                The signals are coming from ... Wait, what is that?
+                
+                There's a massive culmination of neural clustering occuring under us. Deep Below. Hundreds of thousands of stratas deep! 
+            </text>
+            <choice GotoID="TheRevealofTheLongSigh">
+                <text>
+                    Wait, are you saying that the source of the blood-pits is below us?
+                </text>
+            </choice>
+        </node>
+
+        <node ID="TheRevealofTheLongSigh" >
+            <text>
+                Precisely, =name=. If these readings are accurate, the source of this scourge is somewhere beneath us.
+                
+                If I check the facility's records ...
+                
+                Ah, yes. So it seems there is more to this place then I originally thought. There is some kind of complex beneath us, far beneath us.
+                
+                There, could lie the secret behind this scourge.
+                
+            </text>
+            <choice GotoID="TheRevealofTheLongSigh1">
+                <text>
+                    How do I get down there?
+                </text>
+            </choice>
+        </node>
+
+        <node ID="TheRevealofTheLongSigh1" >
+            <text>
+                *Saile ponders to themselves for a moment*
+                
+                Ah, let's see. Checking into the records once more, it seems the facility below was placed on QUARANTINE many eras ago. A panel that was typically used to enter the facility has been deactivated for security reasons. But, I can override it and get you in.
+            </text>
+            <choice GotoID="TheRevealofTheLongSigh2">
+                <text>
+                    Let's do it, it's time to find out what's going on here.
+                </text>
+            </choice>
+        </node>
+
+        <node ID="TheRevealofTheLongSigh2">
+            <text>
+                {{emote|*Saile interacts with a mainframe*}}
+
+                Alright, there! There is a panel in the south that will take you to the lower levels. Beware, I don't know what it is you'll find down there. But I doubt its friendly. Keep yourself safe, friend.
+            </text>
+            <choice GotoID="End" FinishQuest="LSSpeakwithSaile" SetSpeakerIntProperty="Phase2FinalConvo,1">
+                <text>
+                    Live and drink, Saile.
+                </text>
+            </choice>
+        </node>
+
+        <node ID="PhaseTwoRedBear">
+            <text>
+            I've been keeping a close eye on the blood-pools after their sudden increase in sitings within the crystholts and the Undersea about a year ago. 
+                
+                At first, I thought they were some kind of viral entity, but then what virus infects land and earth too?
+                
+                No, this stuff must be something else. But at the moment I have nothing to study, as getting close to the blood-pits proves to be difficult.
+                
+                But that's where you can help.
+            </text>
+            <choice GotoID="BringMeThePusJuice">
+                <text>
+                Let me guess, you want me to bring you a sample of the blood-pits?
+                </text>
+            </choice>
+        </node>
+
+        <node ID="BringMeThePusJuice">
+            <text>
+                You're keeping up. Exactly, take this vial and bring me a sample of the blood-pit material. I can use the bioengineering technologies Rhemhex'Qen has to try to determine what it is, or at least where it might be coming from.
+            </text>
+            <choice GotoID="RhemsSecrets">
+                <text>
+                    Wait, this place is capable of such a thing?
+                </text>
+            </choice>
+            <choice GotoID="End" GiveItem="Phial" SetSpeakerIntProperty="GaveThePhial,1">
+                <text>
+                    I'll get to it!
+                </text>
+            </choice>
+        </node>
+
+        <node ID="RhemsSecrets">
+            <text>
+                Yes. You know, after looking over the old devices here. I'm sure this place was once used by our ancestors as some kind of gene-manipulation facility. Some of the old tanks used to house growing bodies are still around. There seemed to be more to the place at one point, but it became this derelict. And the lower levels seem to be lost.
+            </text>
+            <choice GotoID="End" GiveItem="Phial" SetSpeakerIntProperty="GaveThePhial,1">
+                <text>
+                    I see, interesting.
+                </text>
+            </choice>
+        </node>
+
+        <!--        Queens Quest is Active Hub-->
+
+        <start ID="RedBearThanksYou" IfFinishedQuest="GetBitsGetBitsGetBits" IfHaveActiveQuest="ShahStartLongSigh">
+            <text>
+                Thank you for the help with our infrastructure. The systems are running great! I can take a breather and get back to instructing Kaemea on their tinkering logic.
+            </text>
+            <choice GotoID="PhaseTwoRedBear">
+                <text>
+                    The shah had a request that she wanted me to ask you about?
+                </text>
+            </choice>
+            <choice GotoID="End">
+                <text>
+                    Anytime, Saile. Live and drink.
+                </text>
+            </choice>
+        </start>
+        
+<!--        No Quests are Active-->
+        
+        <start ID="RedBearThanksYou" IfFinishedQuest="GetBitsGetBitsGetBits">
+            <text>
+                Thank you for the help with our infrastructure. The systems are running great! I can take a breather and get back to instructing Kaemea on their tinkering logic.
+            </text>
+            <choice GotoID="End">
+                <text>
+                    Anytime, Saile. Live and drink.
+                </text>
+            </choice>
+        </start>
+        
+<!--        Begin Bit Hub -->
+
+        <start ID="RedBearsHubofGiving" IfHaveActiveQuest="GetBitsGetBitsGetBits">
+            <text>
+                Have any scrap?
+            </text>
+            <choice GotoID="End">
+                <text>
+                    Sure, take these.
+                </text>
+                <part Name="BitsCurrency"/>
+            </choice>
+        </start>
+        
+<!--        End Bit Conversations-->
+        
+        <start ID="RedBearIntro">
+            <text>
+                Hm. I haven't seen you here before, and anesheym are quite shy when it comes to granting entry to others.
+
+                I'd love to talk, but as you can probably see and just heard, we're having somewhat of a crisis here.
+                
+                The old junk keeping this place alive is anything but maintaining its stability. The others here have no clue how to work with these devices, so it's up to me to fix this.
+            </text>
+            <choice GotoID="barathrum1choice">Wait, you're a barathrumite? Are you not?</choice>
+            <choice GotoID="work1choice">I could hear the explosions on the way down, is everything alright?</choice>
+        </start>
+        
+        <node ID="barathrum1choice">
+            <text>
+                I am. Though I doubt any of them would remember me. I left as a young cub. Searching the world for adventure and trinkets, I couldn't stay cooped up in Gritgate--not that it's a bad thing. I miss that life sometimes.
+                
+                Beats hunkering down in a stone-pit hoping goat-folk don't sniff you out and make a stew of you. But alas, the thing I miss most is the company--cohesion. Something I could look forward to each day and smile for.
+                
+                Ah, what am I saying, I get that here too. I just ... miss my kin.
+            </text>
+            <choice GotoID="barathrum2achoice">You're definitely not alone here, the anesheym speak very highly of you.
+            </choice>
+            <choice GotoID="barathrum2bchoice">I'm curious how you ended up here amongst the anesheym. What brought you here?
+            </choice>
+        </node>
+
+
+        <node ID="barathrum2achoice">
+            <text>
+                I know, I should be glad it isn't worship or something wild like that, though I still find myself awkward and out of place here at times. Their customs and ideals here aren't too far from the barathrumites. I should call myself lucky for that, considering. But I sometimes wonder if the grand Shah Pandamoriaea has met Barathrum. Or at least knows of him. Her kindness most definitely reminds me of him.
+            </text>
+            <choice GotoID="barathrum2bchoice">I'm curious how you ended up here amongst the anesheym. What brought you here?
+            </choice>
+        </node>
+
+
+        <node ID="barathrum2bchoice">
+            <text>
+                Misfortune--which then led to this fortune, one could say. I was traveling with a party when the Disciples of the Sightless Way attacked us, I had to flee after being separated from them. I don't know what happened to them, but as I was lost in the jungles, I found myself in a hellscape. 
+                
+                My only words for it, it reeked of foul eggs and great machines marched over barren plains of flame and sulfur. I struggled through, my fur practically singed--and then I found it, a beautiful forest made of crystal. 
+                
+                A voice called out, I couldn't see where it came from, but it led me through the crystholt.
+                
+            </text>
+            <choice GotoID="baracontinued1">...</choice>
+        </node>
+
+        <node ID="baracontinued1">
+            <text>
+                Then I saw them, a tall slender bug-folk who guided me out the forest. They were reluctant to let me in, but then suddenly, their shah called for me. I was brought before her, strangely, her voice reminded me of the one I heard guiding me through the forest. I sometimes wonder if it was her reaching out to save me. 
+                
+                At any rate, I felt indebted.
+            </text>
+            <choice GotoID="work1choice">...</choice>
+        </node>
+
+        <node ID="barathrum2bchoice">
+            <text>
+
+                And well ... I saw their scrapamist were struggling with the ancient technology here.
+
+                I offered what knowledge I hold and here I am, keeping this place alive. I can't complain, the anesheym are wonderfully kind people. And, they cultivate a sweet and mind-altering kind of honey. It's become a favorite of mine.
+            </text>
+            <choice GotoID="work1choice">I see, what were the explosions I heard, is everything alright?</choice>
+        </node>
+
+
+        <node ID="work1choice">
+            <text>
+                The old tech here is barely keeping itself alive, I've jury-rigged everything I can to make sure it stays running, but it's fallen beneath nominal performance. And that's a big problem. Everything from the brood chambers' climate-control, to the water purification system and hydroponic gardens rely on these systems to maintain integrity.
+                
+                A true failure could lead to catastrophe. We can't let that happen.
+                
+                I can't go out and search for myself, and my recoiler to Gritgate is shot.
+                So I lost the ability to get access to more useful tools and materials needed.
+            </text>
+            <choice GotoID="work2choice">Maybe I can help?</choice>
+        </node>
+
+
+        <node ID="work2choice">
+            <text>
+               Oh yes, you most definitely can. 
+                
+                I need scrap, bits, or something similar I could use to properly repair and replenish the energy reserves of the facility. Here's a note with everything I need. Do you think you can handle this?
+            </text>
+            <choice GotoID="End" StartQuest="GetBitsGetBitsGetBits">This is nothing! I'll have your bits sooner than you can say "salthoppin"!</choice>
+            <choice GotoID="HaveQueensQuestButHaventFinishedSaileIntroQuest" IfHaveActiveQuest="ShahStartLongSigh">Before I help with this, the queen ask me to speak to you about the issues regarding the blood-pits?</choice>
+        </node>
+
+        <node ID="HaveQueensQuestButHaventFinishedSaileIntroQuest">
+            <text>
+                The blood-pits? So you're going to be looking into that too? I don't envy you in the slightest. That stuff makes my fur stand on end.
+
+                As much as I would love to help you get to the bottom of that, with our mainframe the way it is, we're stuck. You're going to have to help me with this before we can move on with studying the blood-pits.
+            </text>
+            <choice GotoID="End" StartQuest="GetBitsGetBitsGetBits">Then we'll handle that first, live and drink!</choice>
+        </node>
+        
+    </conversation>
+</conversations>
+ 
+ 
+ 
+ 
+ 
+ 
+ 

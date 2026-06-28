@@ -41,7 +41,7 @@ namespace XRL.World.Parts
                 if (Spawn < SpawnLimit)
                 {
                     ParentObject.Splatter("{{red|*}}");
-                    ParentObject.CurrentCell.AddObject("Amalgam" + Stat.Random(1, 3));
+                    ParentObject.CurrentCell.AddObject("Amalgam" + Stat.Random(1, 4));
                     ++Spawn;
                 }
                 else

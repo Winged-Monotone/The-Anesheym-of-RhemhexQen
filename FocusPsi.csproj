@@ -5,7 +5,7 @@
 		<Authors>Winged Monotone</Authors>
 		<TargetFramework>netstandard2.0</TargetFramework>
 		<TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-		<LangVersion>8.0
+		<LangVersion>9.0
 		</LangVersion>
 		<IntermediateOutputPath>../dump</IntermediateOutputPath>
 		<OutputPath>../dump</OutputPath>

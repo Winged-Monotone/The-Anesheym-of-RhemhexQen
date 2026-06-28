@@ -158,7 +158,7 @@ namespace XRL.World.Effects
                     }
                     else if (blueprint.StartsWith("Points:"))
                     {
-                        int num = Stat.Roll(blueprint.Split(':')[1]);
+                        int num = Stat.Roll(blueprint.Split(':')[1]);   
                         if (base.Object.IsPlayer())
                             if (base.Object.IsPlayer())
                             {

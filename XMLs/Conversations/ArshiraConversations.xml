@@ -1,0 +1,368 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<conversations>
+
+    <!-- Arshira Conversations -->
+
+    <conversation ID="ArshiraLogue">
+        <node ID="Start" TradeNote="show" IfNotFinishedQuest="More Than a Willing Spirit">
+            <text>
+                {{yellow|*Arshiranadurah gives you a thin smile*}}
+
+                Desire something of me, vagrant?
+            </text>
+            <choice GotoID="ArshiraQuestionedWhoIX">I’m =name=, Who are you?</choice>
+            <choice CallScript="XRL.World.Parts.ArshiraCompanionActivator.ArshJoin" GotoID="End">Join me? (For
+                Testing)
+            </choice>
+            <choice GotoID="End">I desire nothing. Live and drink.</choice>
+        </node>
+
+        <node ID="ArshiraQuestionedWhoIX">
+            <text>
+                I am Arshiranandurah, a warrior of the Pariahs, you may call me Arshira.
+            </text>
+            <choice GotoID="ArshiraQuestionedWhoX">Where are you from?</choice>
+            <choice GotoID="End">I ... see. Live and drink.</choice>
+        </node>
+
+        <node ID="ArshiraQuestionedWhoX">
+            <text>
+                Not to be rude, but I prefer to be candid with those I know and trust. Return to me when your reputation proves your worth, =player.formalAddressTerm=. Aid the Barathrumites and I might feel inclined to carry this conversation forward.
+            </text>
+            <choice GotoID="End">I understand. Live and drink.</choice>
+        </node>
+
+
+        <!-- Conversation after completing a Willing Spirit -->
+
+
+        <node ID="Start" TradeNote="show" IfFinishedQuest="More Than a Willing Spirit">
+            <text>
+                Ah, it's you. My barathruumite friends send musings of you, =name=. I owe my debts to anyone who liken to keep the tinker-kin safe and hidden.
+
+
+                Might I be able to help you, =player.formalAddressTerm=?
+            </text>
+            <choice GotoID="ArshiraQuestionedWhoI">Tell me more about yourself.</choice>
+            <choice GotoID="JoinMe1">What are your services?</choice>
+            <choice GotoID="End">I desire nothing. Live and drink.</choice>
+        </node>
+
+
+        <!-- JOIN CONVERSATION -->
+
+
+        <node ID="JoinMe1">
+            <text>
+                I’m a sellsword, assassin, hunter--many things, should one wish it. Are you interested?
+            </text>
+            <choice GotoID="PricePayWayA">What’s your price?</choice>
+            <choice GotoID="End">I desire nothing. Live and drink.</choice>
+        </node>
+
+
+        <node ID="IssepaRouteA">
+            <text>
+                Did she? Such a strange thing to ask a stranger.
+            </text>
+            <choice GotoID="IssepaRouteB">She said it’d be good for you.</choice>
+            <choice GotoID="End">I see. Live and drink.</choice>
+        </node>
+
+
+        <node ID="IssepaRouteB">
+            <text>
+                It would, I get restless at the thought of lacking in purpose. I’m only good for so much, you see.
+            </text>
+            <choice GotoID="IssepaRouteC">Well, I can use the company if you so choose?</choice>
+            <choice GotoID="End">I see. Live and drink.</choice>
+        </node>
+
+
+        <node ID="IssepaRouteC">
+            <text>
+                I do, I welcome you in my presence, =name=. May our journeys together bring us great fortune.
+            </text>
+            <choice CallScript="XRL.World.Parts.ArshiraCompanionActivator.ArshJoin" GotoID="End">As to you, journeyfriend.
+            </choice>
+        </node>
+
+
+        <node ID="IssepaRouteClose">
+            <text>
+                Good, is there anything we need before continuing?
+            </text>
+            <choice GotoID="Occupation3">I have some more questions.</choice>
+        </node>
+
+
+        <node ID="PricePayWayA">
+            <text>
+                If I ask for pay, t’will not be in something ... material.
+            </text>
+            <choice GotoID="PricePayWayB">What would you ask for then?</choice>
+        </node>
+        <node ID="PricePayWayB">
+            <text>
+                I have a favor, but ... hm. How about this? I’ll travel with you, for now. If you prove to be capable, then I’ll request of you this favor.
+            </text>
+            <choice GotoID="PricePayWayCa">Well, wait. What is it?</choice>
+            <choice GotoID="PricePayWayCb">Okay, if you are fine with that?</choice>
+            <choice GotoID="PricePayWayCc">You can’t expect me to just accept that favor even if you request it of me later, why?
+            </choice>
+        </node>
+        <node ID="PricePayWayCa">
+            <text>
+                I cannot say now, all I can say is that I need someone capable, someone I can trust. Besides, I’ll be sure to take my share of our plunders.
+            </text>
+            <choice CallScript="XRL.World.Parts.ArshiraCompanionActivator.ArshJoin" GotoID="End">Fine, I hope this doesn’t come to mistake.
+            </choice>
+        </node>
+
+
+        <!-- OCCUPATION CONVERSATION -->
+
+
+        <node ID="Occupation1">
+            <text>
+                Avid? I’m not one to gloat, but understand this--I am a hunter, nothing less, nothing more. The prey I hunt requires that I not only contend with the tools of my foe, but the lands of which that hide them and consume more lives everyday.
+            </text>
+            <choice GotoID="Occupation2">Interesting. What do you hunt exactly?</choice>
+            <choice GotoID="End">I see. Live and drink.</choice>
+        </node>
+        <node ID="Occupation2">
+            <text>
+                Why, thoughtstuff, of course. Something curated in only the minds of ripened espers, my prey are seeker ospreys and entities who cross into this plane seeking easy meals.
+            </text>
+            <choice GotoID="Occupation3">Why hunt espers?</choice>
+            <choice GotoID="Occupation5">Thoughtstuff?</choice>
+            <choice GotoID="End">I see. Live and drink.</choice>
+        </node>
+        <node ID="Occupation3">
+            <text>
+                They hunt us, why not?
+            </text>
+            <choice GotoID="Occupation5">Thoughtstuff?</choice>
+            <choice GotoID="End">I see. Live and drink.</choice>
+        </node>
+        <node ID="Occupation5">
+            <text>
+                Yes, friend. I predate on both the flesh and the mind. My powers must be nourished.
+            </text>
+            <choice GotoID="Occupation6">That’s horrible!?</choice>
+            <choice GotoID="End">I see. Live and drink.</choice>
+        </node>
+        <node ID="Occupation6">
+            <text>
+                Tis probably true. If the creatures I hunt weren’t assuredly monsters, I'd probably feel more guilt.
+            </text>
+            <choice GotoID="HubNodeArshira">I have some other questions.</choice>
+            <choice GotoID="End">I see. Live and drink.</choice>
+        </node>
+
+
+        <!-- Hub Node -->
+
+
+        <node ID="HubNodeArshira">
+            <text>
+
+            </text>
+            <choice GotoID="ArshiraQuestionedAppearanceI">Could you tell me about your kind?</choice>
+            <choice GotoID="Occupation1">You said you are a hunter?</choice>
+            <choice GotoID="ArshiraQuestionedWhoI">And is that all, what else?</choice>
+            <choice GotoID="ArshiraQuestionedWhoII">Where are you from again?</choice>
+            <choice GotoID="SeekerPastFamilyI">*You look Arshira up-and-down* Your habits remind me of Seekers’
+                attire?
+            </choice>
+            <choice GotoID="End">Actually, nothing. Live and drink.</choice>
+        </node>
+
+
+        <!-- PAST CONVERSATION -->
+
+
+        <node ID="ArshiraQuestionedWhoI">
+            <text>
+                I'm just a wandering pariah who falls for the occasional flirtings with wanderlust. Good food, strong drink, and the occasional hunt are enough to ease my cravings for excitement. And a bit of dance and song, if the occasion passes by.
+            </text>
+            <choice GotoID="ArshiraQuestionedWhoII">Where are you from?</choice>
+            <choice GotoID="ArshiraQuestionedAppearanceI">I've never seen kind such as yourself, what are you?</choice>
+            <choice GotoID="Occupation1">So would you call yourself an avid wayfarer?</choice>
+            <choice GotoID="End">I see. Live and drink.</choice>
+        </node>
+
+        <node ID="ArshiraQuestionedWhoII">
+            <text>
+                Uncertain. Though I know it is somewhere far from this wild mesa, it eludes me, as does most of my past, heritage, and ancestors.
+            </text>
+            <choice GotoID="ArshiraQuestionedWhoIII">... you seem know so little of yourself.</choice>
+            <choice GotoID="End">I see. Live and drink.</choice>
+        </node>
+
+        <node ID="ArshiraQuestionedWhoIII">
+            <text>
+                {{yellow|*They break their eyes away, gaze only flickering to you for a short moment, Arshira seems almost annoyed*}}
+
+                I know enough to keep me alive. Enough to hone this monsterish body of mine into a weapon worth its edge. The past is a dark, dirt-path leading to places you’ve already looted and seen. There’s nothing to be got, naught but nostalgia.
+
+                I prefer to look forward.
+            </text>
+            <choice GotoID="ArshiraQuestionedAppearanceI">I've never seen kin such as yourself, what are you?</choice>
+            <choice GotoID="End">I ... see. Live and drink.</choice>
+        </node>
+
+
+        <!-- GENETICS CONVERSATION-->
+
+
+        <node ID="ArshiraQuestionedAppearanceI">
+            <text>
+                {{yellow|*They look away seemingly uncomfortable, thinking for a moment as they consider how to answer*}}
+
+                I can’t say, =name=. I have no guesses. There's but a few of my kind running amuck in these tender-lands, and we despise each other--we see our weaknesses in each other. So we choose to stay apart. Usually from the egg.
+            </text>
+            <choice GotoID="ArshiraQuestionedEggI">From ... the egg?</choice>
+            <choice GotoID="End">I see, I won’t inquire anymore. Live and drink.</choice>
+        </node>
+
+        <node ID="ArshiraQuestionedEggI">
+            <text>
+                Yes, we rise from eggs as younglings, with bottomless stomachs and immense curiosity. Within a few years of consistently decent nutrition, we reach adulthood and shed our young-skin for the final time, till then we are egglings.
+            </text>
+            <choice GotoID="ArshiraQuestionedAgeI">How much is “a few years?”</choice>
+            <choice GotoID="YoushedI">You ... shed?</choice>
+            <choice GotoID="End">I ... see. Live and drink.</choice>
+        </node>
+
+        <node ID="YoushedI">
+            <text>
+                Maybe molt is truer. I renew this shell here and then. Near the end of two-and-a-half months. And before you say anything, no, you cannot watch.
+            </text>
+            <choice GotoID="ArshiraQuestionedWhoII">How much is a few years, regarding your growth?</choice>
+            <choice GotoID="End">I ... see. Live and drink.</choice>
+        </node>
+
+        <node ID="ArshiraQuestionedAgeI">
+            <text>
+                To be honest with you, I have no idea. I only know of what my past-family had told me. Two or three.
+            </text>
+            <choice GotoID="ArshiraQuestionedAgeII">To grow so quickly, did you even experience a childhood?</choice>
+            <choice GotoID="SeekerPastFamilyI">Past-family?</choice>
+            <choice GotoID="End">I see. Live and drink.</choice>
+        </node>
+
+        <node ID="ArshiraQuestionedAgeII">
+            <text>
+                The young die in Qud. There is no room for innocence here, grow and kill.
+            </text>
+            <choice GotoID="SeekerPastFamilyI">You mentioned Past-family?</choice>
+            <choice GotoID="End">I ... see. Live and drink.</choice>
+        </node>
+
+
+        <!-- Arshira questioned about her past fam.. -->
+
+
+        <node ID="SeekerPastFamilyI">
+            <text>
+                Yes. I was once a Disciple of the Sightless Way, a dervish in the grow.
+            </text>
+            <choice GotoID="HubNodeArshira">I see, I have other questions.</choice>
+            <choice GotoID="Dervish">A dervish?</choice>
+            <choice GotoID="SightlessAttitude">My run-ins with the Seekers has been mostly unpleasant, you seem nothing like them.
+            </choice>
+            <choice GotoID="Sightless">You were a follower of the Sightless Way?</choice>
+            <choice GotoID="End">I ... see. Live and drink.</choice>
+        </node>
+
+        <node ID="Dervish">
+            <text>
+                Yes, a Dervish.
+
+                A Dervish Seeker is taught to wield a weapon with the grace of swirling winds. Swordsmanship, polemastery, Axemanship--weapon-forms performed beyond the limitations of the mortal body, instead aided by the mind.
+
+                A dervish serves as a personal agent led by the Elder, oft sent on suicide missions or assassinations.
+
+                The more one forgoes the lesser sight of the flesh and masters the Sightless Way, the more deadly the Dervish becomes.
+            </text>
+            <choice GotoID="Elder">The Elder?</choice>
+            <choice GotoID="DervishAdvice">What should I do if I encounter one?</choice>
+            <choice GotoID="End">I ... see. Live and drink.</choice>
+        </node>
+
+        <node ID="DervishAdvice">
+            <text>
+                The initiates and intermediates are well-trained, but their thoughtstuff lacks mastery and curation, and so the weapons they bind are blunt and weak. Having even a bit of skill with your arms should pull you through.
+
+                But the ones who hold the title arch-dervish? Their minds’ edge cuts the very fabric of the void. Less you have mastered many lives worth of fighting prowess, to fight one on its own terms would be suicide.
+
+                To keep a dervish away is to leave them incapable of harm--they relish solely in melee. Put something between you and this dervish and gun them down.
+            </text>
+            <choice GotoID="HubNodeArshira">Well, I have other questions.</choice>
+            <choice GotoID="End">I shall remember this, thank you. Live and drink.</choice>
+        </node>
+
+        <node ID="Sightless">
+            <text>
+                Mm, in a past life. I was forsaken, a lone egg in the deeps of the Moghra’yi. Whilst pilgriming south-east to Qud, Sightless pilgrims discovered me. Their mind’s eyes saw the glimmer I hold and so they convened with the Elder. They chose to let me follow--for a toll.
+            </text>
+            <choice GotoID="Abandonment">You were abandoned?</choice>
+            <choice GotoID="HubNodeArshira">I have other questions.</choice>
+            <choice GotoID="Elder">The Elder?</choice>
+            <choice GotoID="End">I ... see. Live and drink.</choice>
+        </node>
+
+        <node ID="SightlessAttitude">
+            <text>
+                Let me affirm something to you, your worth to the Seekers amounts to nothing more than feed--a meal. If your thoughtstuff is enough to engorge their gluttonous mass mind that is the Elder, then they’ll be attracted to your light like madpoles to the scent of blood.
+
+                Assume most Sightless will kill you on sight--their schemes for power encourages this.
+            </text>
+            <choice GotoID="Elder">The Elder?</choice>
+            <choice GotoID="HubNodeArshira">Well, I have other questions.</choice>
+            <choice GotoID="End">I ... see. Live and drink.</choice>
+        </node>
+
+        <node ID="Abandonment">
+            <text>
+                {{yellow|*Arshira nods*}}
+
+                Another orphan in the waste.
+            </text>
+            <choice GotoID="Elder">You mentioned an Elder?</choice>
+            <choice GotoID="HubNodeArshira">I have other questions.</choice>
+            <choice GotoID="End">I see. Live and drink.</choice>
+        </node>
+
+        <node ID="Elder">
+            <text>
+                {{yellow|*Arshira’s gaze seems unsettled, as if they didn’t want to recall*}}
+
+                Those with the glimmer hear voices in the aether; amongst these a ghastly call, a chant as if voiced by countless minds whose cants echo into the void. To unindicted espers, tis like an obnoxious siren, vagrant zealots singing eerie hymns in the void, singing of a reverence unlike any other. You may turn away, but for those Chosen, resisting the call is far harder. The cant heralds from the Elder, but give them no such honor--I only do out of habit. Call them Ptoh.
+            </text>
+            <choice GotoID="Ptoh">Who is Ptoh?</choice>
+            <choice GotoID="End">I see. Live and drink.</choice>
+        </node>
+
+        <node ID="Ptoh">
+            <text>
+                Few know who they are, what they are. An entity in the endless cosmos that is the mind. I hear rumors here and there, that they were imprisoned here, in Qud. Usually, at the moment I chose to forget such a life, such a thing.
+
+                Makes me anxious, makes me eager. My bloodlust flairs. Revenge is the meal I crave.
+            </text>
+            <choice GotoID="PtohRevenge1">You seem ... to harbour some hatred for them.</choice>
+            <choice GotoID="End">I see. Live and drink.</choice>
+        </node>
+
+        <node ID="PtohRevenge1">
+            <text>
+                Some? It's a deeper well than I’d like to admit. This hatred keeps me up at night. Let’s talk about something else.
+            </text>
+            <choice GotoID="HubNodeArshira">Well, I have other questions.</choice>
+            <choice GotoID="End">I see. Live and drink.</choice>
+        </node>
+
+
+    </conversation>
+</conversations>

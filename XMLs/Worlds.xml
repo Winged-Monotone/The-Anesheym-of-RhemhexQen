@@ -18,21 +18,24 @@
                 <builder Class="Music" Track="melodyforcity" Chance="100"></builder>
             </zone>
 
-            <zone Level="11" x="1" y="1" Name="Rhemhez'Qen" NameContext="Broodchambers" DisableForcedConnections="Yes"
+            <zone Level="11" x="1" y="1" Name="Rhemhez'Qen" NameContext="City Floor" DisableForcedConnections="Yes"
                   HasWeather="true" WindSpeed="0-10" WindDirections="W,SW,S,SE" WindDuration="50-1000">
                 <map FileName="truebuggovilleflr1.rpm"></map>
+                <builder Class="Music" Track="melodyforcity" Chance="100"></builder>
             </zone>
 
             <zone Level="12" x="1" y="1" Name="Rhemhez'Qen" NameContext="Broodchambers" DisableForcedConnections="Yes"
                   HasWeather="true" WindSpeed="0-10" WindDirections="W,SW,S,SE" WindDuration="50-1000">
                 <map FileName="truebuggovilleflr2.rpm"></map>
+                <builder Class="Music" Track="melodyforcity" Chance="100"></builder>
             </zone>
 
             <zone Level="13" x="1" y="1" Name="Rhemhez'Qen" NameContext="Grand Shah's Throne"
                   DisableForcedConnections="Yes" HasWeather="true" WindSpeed="0-10" WindDirections="W,SW,S,SE"
                   WindDuration="50-1000">
                 <map FileName="truebuggovilleflr3.rpm"></map>
-            </zone>
+                <builder Class="Music" Track="melodyforcity" Chance="100"></builder>
+            </zone> 
 
             <zone Level="10" x="1" y="2" Name="Rhemhez'Qen" NameContext="Southern Rhemhex'Qen"
                   DisableForcedConnections="Yes" HasWeather="true" WindSpeed="0-10" WindDirections="W,SW,S,SE"

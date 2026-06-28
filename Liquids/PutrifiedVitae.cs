@@ -7,6 +7,7 @@ using XRL.Rules;
 using XRL.World;
 using XRL.World.Parts;
 using XRL.World.Effects;
+using static Wingytone.Colors.CustomColors;
 
 namespace XRL.Liquids
 {
@@ -29,11 +30,13 @@ namespace XRL.Liquids
             ConsiderDangerousToDrink = true;
         }
 
-        [NonSerialized] public static List<string> Colors = new List<string>(3)
+        [NonSerialized] public static List<string> Colors = new List<string>(5)
         {
             "a",
             "A",
-            "y"
+            "I",
+            "i",
+            "k"
         };
 
         public override List<string> GetColors()
@@ -43,37 +46,37 @@ namespace XRL.Liquids
 
         public override string GetColor()
         {
-            return "A";
+            return "R";
         }
 
         public override string GetName(LiquidVolume Liquid)
         {
-            return "{{a|putrified vita}}";
+            return "{{fleshy|putrified vita}}";
         }
 
         public override string GetAdjective(LiquidVolume Liquid)
         {
-            return "{{a|fetid}}";
+            return "{{fleshy|fetid}}";
         }
 
         public override string GetWaterRitualName()
         {
-            return "putrified vitae";
+            return "blood of the eaters";
         }
 
         public override string GetSmearedAdjective(LiquidVolume Liquid)
         {
-            return "{{putridvita|fetid}}";
+            return "{{fleshy|fetid}}";
         }
 
         public override string GetSmearedName(LiquidVolume Liquid)
         {
-            return "{{putridvita|fetid}}";
+            return "{{fleshy|fetid}}";
         }
 
         public override string GetStainedName(LiquidVolume Liquid)
         {
-            return "{{putridvita|gore}}-stained";
+            return "{{fleshy|gore}}-stained";
         }
 
         public override float GetValuePerDram()
@@ -106,7 +109,7 @@ namespace XRL.Liquids
 
         public override void RenderBackgroundPrimary(LiquidVolume Liquid, RenderEvent eRender)
         {
-            eRender.ColorString = "^K" + eRender.ColorString;
+            eRender.ColorString = "^k" + eRender.ColorString;
         }
 
         public override void BaseRenderPrimary(LiquidVolume Liquid)
@@ -116,7 +119,7 @@ namespace XRL.Liquids
                 Liquid.ParentObject.Render.RenderString = "~";
             }
 
-            Liquid.ParentObject.Render.ColorString = "&K^a";
+            Liquid.ParentObject.Render.ColorString = "&a^k";
         }
 
         public override void RenderPrimary(LiquidVolume Liquid, RenderEvent eRender)
@@ -129,7 +132,7 @@ namespace XRL.Liquids
             if (Liquid.ParentObject.IsFrozen())
             {
                 eRender.RenderString = "~";
-                eRender.ColorString = "&K^K";
+                eRender.ColorString = "&k^k";
                 return;
             }
 
@@ -147,26 +150,32 @@ namespace XRL.Liquids
                 {
                     Render.RenderString = "÷";
                     Render.ColorString = "&K";
+                    Render.DetailColor = "A";
                 }
                 else if (num < 30)
                 {
                     Render.RenderString = "~";
                     Render.ColorString = "&K";
+                    Render.DetailColor = "a";
                 }
                 else if (num < 45)
                 {
                     Render.RenderString = "\t";
                     Render.ColorString = "&a";
+                    Render.DetailColor = DarkerCrimsonString;
                 }
                 else if (num < 59)
                 {
                     Render.RenderString = "\t";
                     Render.ColorString = "&A";
+                    Render.DetailColor = "K";
+
                 }
                 else
                 {
                     Render.RenderString = "~";
                     Render.ColorString = "&K";
+                    Render.DetailColor = "I";
                 }
             }
         }

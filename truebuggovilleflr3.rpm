@@ -594,10 +594,11 @@
   </cell>
   <cell X="25" Y="2">
     <object Name="Techlight1"></object>
+    <object Name="MarbleFloor"></object>
   </cell>
   <cell X="26" Y="2">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="27" Y="2">
     <object Name="MarbleFloor"></object>
@@ -605,11 +606,11 @@
   </cell>
   <cell X="28" Y="2">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="29" Y="2">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="30" Y="2">
     <object Name="MarbleFloor"></object>
@@ -617,11 +618,11 @@
   </cell>
   <cell X="31" Y="2">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="32" Y="2">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="33" Y="2">
     <object Name="MarbleFloor"></object>
@@ -629,11 +630,11 @@
   </cell>
   <cell X="34" Y="2">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="35" Y="2">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="36" Y="2">
     <object Name="MarbleFloor"></object>
@@ -641,11 +642,11 @@
   </cell>
   <cell X="37" Y="2">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="38" Y="2">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="39" Y="2">
     <object Name="MarbleFloor"></object>
@@ -653,11 +654,11 @@
   </cell>
   <cell X="40" Y="2">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="41" Y="2">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="42" Y="2">
     <object Name="MarbleFloor"></object>
@@ -669,81 +670,81 @@
     <object Name="MarbleFloor"></object>
   </cell>
   <cell X="45" Y="2">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="46" Y="2">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="47" Y="2">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="48" Y="2">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="49" Y="2">
     <object Name="Metal Door"></object>
     <object Name="Metal Door"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="50" Y="2">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="51" Y="2">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="52" Y="2">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="53" Y="2">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="54" Y="2">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="55" Y="2">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="56" Y="2">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="57" Y="2">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="58" Y="2">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="59" Y="2">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="60" Y="2">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="61" Y="2">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="62" Y="2">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="63" Y="2">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="64" Y="2">
     <object Name="Metal Door"></object>
@@ -851,117 +852,117 @@
     <object Name="MarbleFloor"></object>
   </cell>
   <cell X="18" Y="3">
-    <object Name="MarbleFloor"></object>
     <object Name="GritGateHeavyPowerLine"></object>
-    <object Name="MarbleFloor"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="19" Y="3">
     <object Name="GritGateHeavyPowerLine"></object>
-    <object Name="MarbleFloor"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="20" Y="3">
-    <object Name="MarbleFloor"></object>
     <object Name="GritGateHeavyPowerLine"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="21" Y="3">
-    <object Name="MarbleFloor"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="22" Y="3">
-    <object Name="MarbleFloor"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="23" Y="3">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="24" Y="3">
     <object Name="Double Striped Door N"></object>
   </cell>
   <cell X="25" Y="3">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="26" Y="3">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="27" Y="3">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="28" Y="3">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="29" Y="3">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="30" Y="3">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="31" Y="3">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="32" Y="3">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="33" Y="3">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="34" Y="3">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="35" Y="3">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="36" Y="3">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="37" Y="3">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="38" Y="3">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="39" Y="3">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="40" Y="3">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="41" Y="3">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="42" Y="3">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="43" Y="3">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="44" Y="3">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="45" Y="3">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="46" Y="3">
-    <object Name="MarbleFloor"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="47" Y="3">
     <object Name="MarbleFloor"></object>
@@ -1008,18 +1009,18 @@
     <object Name="Black Marble"></object>
   </cell>
   <cell X="61" Y="3">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="62" Y="3">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="63" Y="3">
-    <object Name="MarbleWalkway"></object>
     <object Name="Black Marble"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="64" Y="3">
     <object Name="Black Marble"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="65" Y="3">
     <object Name="Black Marble"></object>
@@ -1082,176 +1083,179 @@
   </cell>
   <cell X="4" Y="4">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="5" Y="4">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="6" Y="4">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="7" Y="4">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="8" Y="4">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="9" Y="4">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="10" Y="4">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="11" Y="4">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="12" Y="4">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="13" Y="4">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="14" Y="4">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="15" Y="4">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="16" Y="4">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="17" Y="4">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="18" Y="4">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="19" Y="4">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
     <object Name="GritGateHeavyPowerLine"></object>
-    <object Name="MarbleFloor"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="20" Y="4">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
-    <object Name="MarbleFloor"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="21" Y="4">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="22" Y="4">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="23" Y="4">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="24" Y="4">
     <object Name="Double Striped Door S"></object>
   </cell>
-  <cell X="25" Y="4"></cell>
+  <cell X="25" Y="4">
+    <object Name="SterileTile"></object>
+  </cell>
   <cell X="26" Y="4">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="27" Y="4">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="28" Y="4">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="29" Y="4">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="30" Y="4">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="31" Y="4">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="32" Y="4">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="33" Y="4">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="34" Y="4">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="35" Y="4">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="36" Y="4">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="37" Y="4">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="38" Y="4">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="39" Y="4">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="40" Y="4">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="41" Y="4">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="42" Y="4">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="43" Y="4">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="44" Y="4">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="45" Y="4">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="46" Y="4">
-    <object Name="MarbleFloor"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="47" Y="4">
     <object Name="Techlight1"></object>
+    <object Name="MarbleFloor"></object>
   </cell>
   <cell X="48" Y="4">
     <object Name="MarbleFloor"></object>
@@ -1303,16 +1307,16 @@
     <object Name="WombWall"></object>
   </cell>
   <cell X="60" Y="4">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="61" Y="4">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="62" Y="4">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="63" Y="4">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="64" Y="4">
     <object Name="MarbleFloor"></object>
@@ -1358,7 +1362,7 @@
   </cell>
   <cell X="75" Y="4">
     <object Name="MarbleFloor"></object>
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="76" Y="4">
     <object Name="MarbleFloor"></object>
@@ -1388,25 +1392,24 @@
     <object Name="Black Marble"></object>
   </cell>
   <cell X="4" Y="5">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="5" Y="5">
-    <object Name="MarbleFloor"></object>
     <object Name="Black Marble"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="6" Y="5">
-    <object Name="MarbleFloor"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="7" Y="5">
-    <object Name="MarbleFloor"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="8" Y="5">
-    <object Name="MarbleFloor"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="9" Y="5">
-    <object Name="MarbleFloor"></object>
     <object Name="Black Marble"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="10" Y="5">
     <object Name="MarbleFloor"></object>
@@ -1433,14 +1436,14 @@
     <object Name="MarbleFloor"></object>
   </cell>
   <cell X="18" Y="5">
-    <object Name="MarbleFloor"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="19" Y="5">
-    <object Name="MarbleFloor"></object>
     <object Name="GritGateHeavyPowerLine"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="20" Y="5">
-    <object Name="MarbleFloor"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="21" Y="5">
     <object Name="MarbleFloor"></object>
@@ -1450,7 +1453,7 @@
   </cell>
   <cell X="23" Y="5">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="24" Y="5">
     <object Name="MarbleFloor"></object>
@@ -1458,22 +1461,24 @@
   </cell>
   <cell X="25" Y="5">
     <object Name="Techlight1"></object>
+    <object Name="MarbleFloor"></object>
   </cell>
   <cell X="26" Y="5">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="27" Y="5">
     <object Name="MarbleFloor"></object>
     <object Name="Ornate Potted Plant 1"></object>
+    <object Name="MarbleFloor"></object>
   </cell>
   <cell X="28" Y="5">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="29" Y="5">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="30" Y="5">
     <object Name="MarbleFloor"></object>
@@ -1481,11 +1486,11 @@
   </cell>
   <cell X="31" Y="5">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="32" Y="5">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="33" Y="5">
     <object Name="MarbleFloor"></object>
@@ -1493,11 +1498,11 @@
   </cell>
   <cell X="34" Y="5">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="35" Y="5">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="36" Y="5">
     <object Name="MarbleFloor"></object>
@@ -1505,11 +1510,11 @@
   </cell>
   <cell X="37" Y="5">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="38" Y="5">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="39" Y="5">
     <object Name="MarbleFloor"></object>
@@ -1517,11 +1522,11 @@
   </cell>
   <cell X="40" Y="5">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="41" Y="5">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="42" Y="5">
     <object Name="MarbleFloor"></object>
@@ -1583,18 +1588,18 @@
     <object Name="WombWall"></object>
   </cell>
   <cell X="60" Y="5">
-    <object Name="BlackMarbleWalkway"></object>
     <object Name="bugnurse"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="61" Y="5">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="62" Y="5">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="63" Y="5">
-    <object Name="BlackMarbleWalkway"></object>
     <object Name="bugnurse"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="64" Y="5">
     <object Name="WombWall"></object>
@@ -1634,7 +1639,7 @@
   </cell>
   <cell X="75" Y="5">
     <object Name="MarbleFloor"></object>
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="76" Y="5">
     <object Name="MarbleFloor"></object>
@@ -1662,78 +1667,78 @@
     <object Name="MarbleFloor"></object>
   </cell>
   <cell X="4" Y="6">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="5" Y="6">
-    <object Name="MarbleFloor"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="6" Y="6">
     <object Name="CommunicationsInterlock"></object>
   </cell>
   <cell X="7" Y="6">
-    <object Name="MarbleFloor"></object>
     <object Name="GritGatePowerLine"></object>
     <object Name="GritGate Mainframe Tape Drive"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="8" Y="6">
-    <object Name="MarbleFloor"></object>
     <object Name="GritGatePowerLine"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="9" Y="6">
-    <object Name="MarbleFloor"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="10" Y="6">
-    <object Name="MarbleFloor"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="11" Y="6">
-    <object Name="MarbleFloor"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="12" Y="6">
-    <object Name="MarbleFloor"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="13" Y="6">
-    <object Name="MarbleFloor"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="14" Y="6">
-    <object Name="MarbleFloor"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="15" Y="6">
-    <object Name="MarbleFloor"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="16" Y="6">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="17" Y="6">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="18" Y="6">
-    <object Name="MarbleFloor"></object>
     <object Name="GritGateHydraulicIrrigator"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="19" Y="6">
-    <object Name="MarbleFloor"></object>
     <object Name="GritGateHydraulicIrrigator"></object>
     <object Name="GritGateHeavyPowerLine"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="20" Y="6">
-    <object Name="MarbleFloor"></object>
     <object Name="GritGateHydraulicIrrigator"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="21" Y="6">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="22" Y="6">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="23" Y="6">
     <object Name="Techlight3"></object>
+    <object Name="MarbleFloor"></object>
   </cell>
   <cell X="24" Y="6">
     <object Name="MarbleFloor"></object>
@@ -1835,75 +1840,78 @@
   </cell>
   <cell X="50" Y="6">
     <object Name="Techlight1"></object>
+    <object Name="MarbleFloor"></object>
   </cell>
   <cell X="51" Y="6">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="52" Y="6">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="53" Y="6">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="54" Y="6">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="55" Y="6">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="56" Y="6">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="57" Y="6">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="58" Y="6">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="59" Y="6">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="60" Y="6">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="61" Y="6">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="62" Y="6">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="63" Y="6">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="64" Y="6">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="65" Y="6">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="66" Y="6">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="67" Y="6">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="68" Y="6">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="69" Y="6">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="70" Y="6">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="71" Y="6">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="72" Y="6">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="73" Y="6">
     <object Name="Techlight1"></object>
+    <object Name="MarbleFloor"></object>
   </cell>
   <cell X="74" Y="6">
     <object Name="MarbleFloor"></object>
@@ -1911,7 +1919,7 @@
   </cell>
   <cell X="75" Y="6">
     <object Name="MarbleFloor"></object>
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="76" Y="6">
     <object Name="MarbleFloor"></object>
@@ -1942,93 +1950,92 @@
     <object Name="Inner Tomb Techlight5"></object>
   </cell>
   <cell X="4" Y="7">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="5" Y="7">
-    <object Name="MarbleFloor"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="6" Y="7">
-    <object Name="MarbleFloor"></object>
     <object Name="GritGatePowerLine"></object>
     <object Name="GritGateMainframeRoomCommPanel"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="7" Y="7">
-    <object Name="MarbleFloor"></object>
     <object Name="GritGatePowerLine"></object>
     <object Name="GritGateChromeBeacon"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="8" Y="7">
-    <object Name="MarbleFloor"></object>
     <object Name="GritGatePowerLine"></object>
     <object Name="GritGateFusionPowerStation"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="9" Y="7">
-    <object Name="MarbleFloor"></object>
     <object Name="GritGatePowerLine"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="10" Y="7">
-    <object Name="MarbleFloor"></object>
     <object Name="GritGatePowerLine"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="11" Y="7">
-    <object Name="MarbleFloor"></object>
     <object Name="GritGatePowerLine"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="12" Y="7">
-    <object Name="MarbleFloor"></object>
     <object Name="GritGatePowerLine"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="13" Y="7">
-    <object Name="MarbleFloor"></object>
     <object Name="GritGatePowerLine"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="14" Y="7">
-    <object Name="MarbleFloor"></object>
     <object Name="GritGatePowerLine"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="15" Y="7">
-    <object Name="MarbleFloor"></object>
     <object Name="GritGatePowerLine"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="16" Y="7">
-    <object Name="MarbleFloor"></object>
     <object Name="GritGatePowerLine"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="17" Y="7">
-    <object Name="MarbleFloor"></object>
     <object Name="GritGateFusionPowerStation"></object>
     <object Name="GritGatePowerLine"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="18" Y="7">
-    <object Name="MarbleFloor"></object>
     <object Name="GritGate Mainframe Monitor 2"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="19" Y="7">
-    <object Name="MarbleFloor"></object>
     <object Name="GritGateBroadcastPowerStation"></object>
     <object Name="GritGateHeavyPowerLine"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="20" Y="7">
-    <object Name="MarbleFloor"></object>
     <object Name="GritGate Mainframe Monitor 1"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="21" Y="7">
-    <object Name="MarbleFloor"></object>
     <object Name="GritGateFusionPowerStation"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="22" Y="7">
     <object Name="MarbleFloor"></object>
     <object Name="GritGateGlassHydraulicPipe"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="23" Y="7">
     <object Name="MarbleFloor"></object>
     <object Name="GritGateGlassHydraulicPipe"></object>
-    <object Name="MarbleWalkway"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="24" Y="7">
     <object Name="Black Marble"></object>
@@ -2110,76 +2117,77 @@
     <object Name="FlowerPatches"></object>
   </cell>
   <cell X="50" Y="7">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="51" Y="7">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="52" Y="7">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="53" Y="7">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="54" Y="7">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="55" Y="7">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="56" Y="7">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="57" Y="7">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="58" Y="7">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="59" Y="7">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="60" Y="7">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="61" Y="7">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="62" Y="7">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="63" Y="7">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="64" Y="7">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="65" Y="7">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="66" Y="7">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="67" Y="7">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="68" Y="7">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="69" Y="7">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="70" Y="7">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="71" Y="7">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="72" Y="7">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="73" Y="7">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="74" Y="7">
     <object Name="MarbleFloor"></object>
@@ -2187,20 +2195,20 @@
   </cell>
   <cell X="75" Y="7">
     <object Name="MarbleFloor"></object>
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="76" Y="7">
     <object Name="MarbleFloor"></object>
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="77" Y="7">
     <object Name="MarbleFloor"></object>
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="78" Y="7">
     <object Name="MarbleFloor"></object>
     <object Name="Low Table"></object>
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="79" Y="7">
     <object Name="Black Marble"></object>
@@ -2220,111 +2228,110 @@
     <object Name="MarbleFloor"></object>
   </cell>
   <cell X="4" Y="8">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="5" Y="8">
-    <object Name="MarbleFloor"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="6" Y="8">
-    <object Name="MarbleFloor"></object>
     <object Name="GritGatePowerLine"></object>
     <object Name="Unicomputer"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="7" Y="8">
-    <object Name="MarbleFloor"></object>
     <object Name="GritGatePowerLine"></object>
     <object Name="GritGateCanvasFoldingChair"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="8" Y="8">
-    <object Name="MarbleFloor"></object>
     <object Name="GritGatePowerLine"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="9" Y="8">
-    <object Name="MarbleFloor"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="10" Y="8">
-    <object Name="MarbleFloor"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="11" Y="8">
-    <object Name="MarbleFloor"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="12" Y="8">
-    <object Name="MarbleFloor"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="13" Y="8">
-    <object Name="MarbleFloor"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="14" Y="8">
-    <object Name="MarbleFloor"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="15" Y="8">
-    <object Name="MarbleFloor"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="16" Y="8">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="17" Y="8">
-    <object Name="MarbleFloor"></object>
     <object Name="GritGateWorkChair"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="18" Y="8">
-    <object Name="MarbleFloor"></object>
     <object Name="GritGateHydraulicIrrigator"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="19" Y="8">
     <object Name="GritGateFusionPowerStation"></object>
   </cell>
   <cell X="20" Y="8">
-    <object Name="MarbleFloor"></object>
     <object Name="GritGateHydraulicIrrigator"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="21" Y="8">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="22" Y="8">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="23" Y="8">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="24" Y="8">
     <object Name="MarbleFloor"></object>
     <object Name="BlackMarbleWalkway"></object>
     <object Name="Oil Vase"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="25" Y="8">
     <object Name="MarbleFloor"></object>
     <object Name="BlackMarbleWalkway"></object>
     <object Name="Oil Vase"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="26" Y="8">
     <object Name="MarbleFloor"></object>
     <object Name="BlackMarbleWalkway"></object>
     <object Name="Oil Vase"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="27" Y="8">
     <object Name="BlackMarbleWalkway"></object>
     <object Name="Oil Vase"></object>
     <object Name="Oil Vase"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="28" Y="8">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="29" Y="8">
     <object Name="Double Striped Door N"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="30" Y="8">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="31" Y="8">
     <object Name="MarbleFloor"></object>
@@ -2384,16 +2391,17 @@
     <object Name="FlowerPatches"></object>
   </cell>
   <cell X="50" Y="8">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="51" Y="8">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="52" Y="8">
     <object Name="FlowerPatches"></object>
   </cell>
   <cell X="53" Y="8">
     <object Name="FlowerPatches"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="54" Y="8">
     <object Name="WombWall"></object>
@@ -2450,10 +2458,10 @@
     <object Name="FlowerPatches"></object>
   </cell>
   <cell X="72" Y="8">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="73" Y="8">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="74" Y="8">
     <object Name="MarbleFloor"></object>
@@ -2461,7 +2469,7 @@
   </cell>
   <cell X="75" Y="8">
     <object Name="MarbleFloor"></object>
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="76" Y="8">
     <object Name="MarbleFloor"></object>
@@ -2492,120 +2500,119 @@
     <object Name="Black Marble"></object>
   </cell>
   <cell X="4" Y="9">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="5" Y="9">
-    <object Name="MarbleFloor"></object>
     <object Name="Black Marble"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="6" Y="9">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="7" Y="9">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="8" Y="9">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="9" Y="9">
-    <object Name="MarbleFloor"></object>
+    <object Name="SterileTile"></object>
     <object Name="Black Marble"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="10" Y="9">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="11" Y="9">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="12" Y="9">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="13" Y="9">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="14" Y="9">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="15" Y="9">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="16" Y="9">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="17" Y="9">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="18" Y="9">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="19" Y="9">
     <object Name="MarbleFloor"></object>
     <object Name="GritGateWorkChair"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="20" Y="9">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="21" Y="9">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="22" Y="9">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="23" Y="9">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="24" Y="9">
     <object Name="MarbleFloor"></object>
     <object Name="BlackMarbleWalkway"></object>
     <object Name="Oil Vase"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="25" Y="9">
     <object Name="MarbleFloor"></object>
     <object Name="BlackMarbleWalkway"></object>
     <object Name="Oil Vase"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="26" Y="9">
     <object Name="MarbleFloor"></object>
     <object Name="BlackMarbleWalkway"></object>
     <object Name="Oil Vase"></object>
     <object Name="Oil Vase"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="27" Y="9">
     <object Name="BlackMarbleWalkway"></object>
     <object Name="Oil Vase"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="28" Y="9">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="29" Y="9">
     <object Name="Double Striped Door S"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="30" Y="9">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="31" Y="9">
     <object Name="MarbleFloor"></object>
@@ -2666,10 +2673,10 @@
     <object Name="FlowerPatches"></object>
   </cell>
   <cell X="50" Y="9">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="51" Y="9">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="52" Y="9">
     <object Name="FlowerPatches"></object>
@@ -2684,6 +2691,7 @@
   </cell>
   <cell X="55" Y="9">
     <object Name="FlowerPatches"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="56" Y="9">
     <object Name="FlowerPatches"></object>
@@ -2743,10 +2751,10 @@
     <object Name="FlowerPatches"></object>
   </cell>
   <cell X="72" Y="9">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="73" Y="9">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="74" Y="9">
     <object Name="MarbleFloor"></object>
@@ -2754,19 +2762,19 @@
   </cell>
   <cell X="75" Y="9">
     <object Name="MarbleFloor"></object>
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="76" Y="9">
     <object Name="MarbleFloor"></object>
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="77" Y="9">
     <object Name="MarbleFloor"></object>
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="78" Y="9">
     <object Name="MarbleFloor"></object>
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="79" Y="9">
     <object Name="Black Marble"></object>
@@ -2785,8 +2793,7 @@
     <object Name="MarbleFloor"></object>
   </cell>
   <cell X="4" Y="10">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="5" Y="10">
     <object Name="MarbleFloor"></object>
@@ -2908,6 +2915,7 @@
   </cell>
   <cell X="40" Y="10">
     <object Name="Techlight3"></object>
+    <object Name="MarbleFloor"></object>
   </cell>
   <cell X="41" Y="10">
     <object Name="WombWall"></object>
@@ -2929,6 +2937,7 @@
   </cell>
   <cell X="46" Y="10">
     <object Name="Techlight3"></object>
+    <object Name="MarbleFloor"></object>
   </cell>
   <cell X="47" Y="10">
     <object Name="WombWall"></object>
@@ -2941,10 +2950,10 @@
     <object Name="FlowerPatches"></object>
   </cell>
   <cell X="50" Y="10">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="51" Y="10">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="52" Y="10">
     <object Name="FlowerPatches"></object>
@@ -3013,10 +3022,10 @@
     <object Name="FlowerPatches"></object>
   </cell>
   <cell X="72" Y="10">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="73" Y="10">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="74" Y="10">
     <object Name="MarbleFloor"></object>
@@ -3024,7 +3033,7 @@
   </cell>
   <cell X="75" Y="10">
     <object Name="MarbleFloor"></object>
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="76" Y="10">
     <object Name="MarbleFloor"></object>
@@ -3054,8 +3063,7 @@
     <object Name="MarbleFloor"></object>
   </cell>
   <cell X="4" Y="11">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="5" Y="11">
     <object Name="MarbleFloor"></object>
@@ -3084,20 +3092,20 @@
   </cell>
   <cell X="13" Y="11">
     <object Name="MarbleFloor"></object>
-    <object Name="BlackMarbleWalkway"></object>
     <object Name="BaseBed"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="14" Y="11">
     <object Name="MarbleFloor"></object>
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="15" Y="11">
     <object Name="MarbleFloor"></object>
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="16" Y="11">
     <object Name="MarbleFloor"></object>
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="17" Y="11">
     <object Name="Black Marble"></object>
@@ -3105,16 +3113,16 @@
   </cell>
   <cell X="18" Y="11">
     <object Name="MarbleFloor"></object>
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="19" Y="11">
     <object Name="MarbleFloor"></object>
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="20" Y="11">
     <object Name="MarbleFloor"></object>
-    <object Name="BlackMarbleWalkway"></object>
     <object Name="BaseBed"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="21" Y="11">
     <object Name="Black Marble"></object>
@@ -3128,6 +3136,7 @@
   </cell>
   <cell X="24" Y="11">
     <object Name="bugsentinel"></object>
+    <object Name="MarbleFloor"></object>
   </cell>
   <cell X="25" Y="11">
     <object Name="MarbleFloor"></object>
@@ -3137,6 +3146,7 @@
   </cell>
   <cell X="27" Y="11">
     <object Name="bugsentinel"></object>
+    <object Name="MarbleFloor"></object>
   </cell>
   <cell X="28" Y="11">
     <object Name="WombWall"></object>
@@ -3161,6 +3171,7 @@
   </cell>
   <cell X="35" Y="11">
     <object Name="Black Marble"></object>
+    <object Name="MarbleFloor"></object>
   </cell>
   <cell X="36" Y="11">
     <object Name="Black Marble"></object>
@@ -3206,10 +3217,10 @@
     <object Name="FlowerPatches"></object>
   </cell>
   <cell X="50" Y="11">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="51" Y="11">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="52" Y="11">
     <object Name="FlowerPatches"></object>
@@ -3231,6 +3242,7 @@
   </cell>
   <cell X="57" Y="11">
     <object Name="BrickWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="58" Y="11">
     <object Name="SaltyWaterDeepPool"></object>
@@ -3277,10 +3289,10 @@
     <object Name="FlowerPatches"></object>
   </cell>
   <cell X="72" Y="11">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="73" Y="11">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="74" Y="11">
     <object Name="MarbleFloor"></object>
@@ -3288,20 +3300,20 @@
   </cell>
   <cell X="75" Y="11">
     <object Name="MarbleFloor"></object>
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="76" Y="11">
     <object Name="MarbleFloor"></object>
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="77" Y="11">
     <object Name="MarbleFloor"></object>
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="78" Y="11">
     <object Name="MarbleFloor"></object>
     <object Name="Low Table"></object>
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="79" Y="11">
     <object Name="Black Marble"></object>
@@ -3321,8 +3333,7 @@
     <object Name="GritGate Mainframe Monitor 2"></object>
   </cell>
   <cell X="4" Y="12">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="5" Y="12">
     <object Name="MarbleFloor"></object>
@@ -3363,14 +3374,16 @@
   </cell>
   <cell X="16" Y="12">
     <object Name="MarbleFloor"></object>
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="BirthCryptDoor"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="17" Y="12">
     <object Name="Black Marble"></object>
   </cell>
   <cell X="18" Y="12">
     <object Name="MarbleFloor"></object>
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="BirthCryptDoor"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="19" Y="12">
     <object Name="Black Marble"></object>
@@ -3388,6 +3401,7 @@
   </cell>
   <cell X="23" Y="12">
     <object Name="buganimancersavant"></object>
+    <object Name="MarbleFloor"></object>
   </cell>
   <cell X="24" Y="12">
     <object Name="MarbleFloor"></object>
@@ -3412,18 +3426,21 @@
   </cell>
   <cell X="31" Y="12">
     <object Name="Techlight3"></object>
+    <object Name="MarbleFloor"></object>
   </cell>
   <cell X="32" Y="12">
     <object Name="Black Marble"></object>
   </cell>
   <cell X="33" Y="12">
     <object Name="Techlight3"></object>
+    <object Name="MarbleFloor"></object>
   </cell>
   <cell X="34" Y="12">
     <object Name="Black Marble"></object>
   </cell>
   <cell X="35" Y="12">
     <object Name="Techlight3"></object>
+    <object Name="MarbleFloor"></object>
   </cell>
   <cell X="36" Y="12">
     <object Name="Black Marble"></object>
@@ -3469,10 +3486,10 @@
     <object Name="FlowerPatches"></object>
   </cell>
   <cell X="50" Y="12">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="51" Y="12">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="52" Y="12">
     <object Name="WombWall"></object>
@@ -3496,6 +3513,7 @@
   </cell>
   <cell X="58" Y="12">
     <object Name="SaltyWaterDeepPool"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="59" Y="12">
     <object Name="SaltyWaterDeepPool"></object>
@@ -3539,10 +3557,10 @@
     <object Name="WombWall"></object>
   </cell>
   <cell X="72" Y="12">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="73" Y="12">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="74" Y="12">
     <object Name="MarbleFloor"></object>
@@ -3550,7 +3568,7 @@
   </cell>
   <cell X="75" Y="12">
     <object Name="MarbleFloor"></object>
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="76" Y="12">
     <object Name="MarbleFloor"></object>
@@ -3652,77 +3670,77 @@
     <object Name="MarbleFloor"></object>
   </cell>
   <cell X="24" Y="13">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="25" Y="13">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="26" Y="13">
     <object Name="StairsUp"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="27" Y="13">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="28" Y="13">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="29" Y="13">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="30" Y="13">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="31" Y="13">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="32" Y="13">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="33" Y="13">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="34" Y="13">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="35" Y="13">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="36" Y="13">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="37" Y="13">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="38" Y="13">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="39" Y="13">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="40" Y="13">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="41" Y="13">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="42" Y="13">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="43" Y="13">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="44" Y="13">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="45" Y="13">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="46" Y="13">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="47" Y="13">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="48" Y="13">
     <object Name="MarbleFloor"></object>
@@ -3732,10 +3750,10 @@
     <object Name="FlowerPatches"></object>
   </cell>
   <cell X="50" Y="13">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="51" Y="13">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="52" Y="13">
     <object Name="WombWall"></object>
@@ -3769,16 +3787,16 @@
     <object Name="StiltTile"></object>
   </cell>
   <cell X="61" Y="13">
-    <object Name="StiltTile"></object>
     <object Name="bugqueenmain"></object>
+    <object Name="StiltTile"></object>
   </cell>
   <cell X="62" Y="13">
-    <object Name="StiltTile"></object>
     <object Name="bugqueenovi"></object>
+    <object Name="StiltTile"></object>
   </cell>
   <cell X="63" Y="13">
-    <object Name="StiltTile"></object>
     <object Name="Torchpost"></object>
+    <object Name="StiltTile"></object>
   </cell>
   <cell X="64" Y="13">
     <object Name="SaltyWaterDeepPool"></object>
@@ -3807,10 +3825,10 @@
     <object Name="WombWall"></object>
   </cell>
   <cell X="72" Y="13">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="73" Y="13">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="74" Y="13">
     <object Name="MarbleFloor"></object>
@@ -3818,19 +3836,19 @@
   </cell>
   <cell X="75" Y="13">
     <object Name="MarbleFloor"></object>
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="76" Y="13">
     <object Name="MarbleFloor"></object>
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="77" Y="13">
     <object Name="MarbleFloor"></object>
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="78" Y="13">
     <object Name="MarbleFloor"></object>
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="79" Y="13">
     <object Name="Black Marble"></object>
@@ -3849,40 +3867,40 @@
     <object Name="MarbleFloor"></object>
   </cell>
   <cell X="4" Y="14">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="5" Y="14">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="6" Y="14">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="7" Y="14">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="8" Y="14">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="9" Y="14">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="10" Y="14">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="11" Y="14">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="12" Y="14">
-    <object Name="MarbleFloor"></object>
     <object Name="Double Metal Door N"></object>
+    <object Name="MarbleFloor"></object>
   </cell>
   <cell X="13" Y="14">
     <object Name="MarbleFloor"></object>
@@ -3925,84 +3943,84 @@
     <object Name="Techlight3"></object>
   </cell>
   <cell X="24" Y="14">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="25" Y="14">
     <object Name="StairsUp"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="26" Y="14">
-    <object Name="MarbleWalkway"></object>
     <object Name="StairsUp"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="27" Y="14">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="28" Y="14">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="29" Y="14">
-    <object Name="MarbleWalkway"></object>
     <object Name="Black Marble"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="30" Y="14">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="31" Y="14">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="32" Y="14">
-    <object Name="MarbleWalkway"></object>
     <object Name="Black Marble"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="33" Y="14">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="34" Y="14">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="35" Y="14">
-    <object Name="MarbleWalkway"></object>
     <object Name="Black Marble"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="36" Y="14">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="37" Y="14">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="38" Y="14">
-    <object Name="MarbleWalkway"></object>
     <object Name="Black Marble"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="39" Y="14">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="40" Y="14">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="41" Y="14">
-    <object Name="MarbleWalkway"></object>
     <object Name="Black Marble"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="42" Y="14">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="43" Y="14">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="44" Y="14">
-    <object Name="MarbleWalkway"></object>
     <object Name="Black Marble"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="45" Y="14">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="46" Y="14">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="47" Y="14">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="48" Y="14">
     <object Name="MarbleFloor"></object>
@@ -4012,10 +4030,10 @@
     <object Name="FlowerPatches"></object>
   </cell>
   <cell X="50" Y="14">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="51" Y="14">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="52" Y="14">
     <object Name="FlowerPatches"></object>
@@ -4043,6 +4061,7 @@
   </cell>
   <cell X="59" Y="14">
     <object Name="SaltyWaterDeepPool"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="60" Y="14">
     <object Name="SaltyWaterDeepPool"></object>
@@ -4083,10 +4102,10 @@
     <object Name="FlowerPatches"></object>
   </cell>
   <cell X="72" Y="14">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="73" Y="14">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="74" Y="14">
     <object Name="MarbleFloor"></object>
@@ -4094,7 +4113,7 @@
   </cell>
   <cell X="75" Y="14">
     <object Name="MarbleFloor"></object>
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="76" Y="14">
     <object Name="MarbleFloor"></object>
@@ -4118,44 +4137,46 @@
   </cell>
   <cell X="2" Y="15">
     <object Name="ArtificialWombShattered2"></object>
+    <object Name="MarbleFloor"></object>
   </cell>
   <cell X="3" Y="15">
     <object Name="MarbleFloor"></object>
   </cell>
   <cell X="4" Y="15">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="5" Y="15">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="6" Y="15">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="7" Y="15">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="8" Y="15">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="9" Y="15">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="10" Y="15">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="11" Y="15">
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="12" Y="15">
     <object Name="Double Metal Door S"></object>
+    <object Name="MarbleFloor"></object>
   </cell>
   <cell X="13" Y="15">
     <object Name="MarbleFloor"></object>
@@ -4193,76 +4214,76 @@
     <object Name="MarbleFloor"></object>
   </cell>
   <cell X="24" Y="15">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="25" Y="15">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="26" Y="15">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="27" Y="15">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="28" Y="15">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="29" Y="15">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="30" Y="15">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="31" Y="15">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="32" Y="15">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="33" Y="15">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="34" Y="15">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="35" Y="15">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="36" Y="15">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="37" Y="15">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="38" Y="15">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="39" Y="15">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="40" Y="15">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="41" Y="15">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="42" Y="15">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="43" Y="15">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="44" Y="15">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="45" Y="15">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="46" Y="15">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="47" Y="15">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="48" Y="15">
     <object Name="MarbleFloor"></object>
@@ -4272,10 +4293,10 @@
     <object Name="FlowerPatches"></object>
   </cell>
   <cell X="50" Y="15">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="51" Y="15">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="52" Y="15">
     <object Name="FlowerPatches"></object>
@@ -4309,6 +4330,7 @@
   </cell>
   <cell X="61" Y="15">
     <object Name="SaltyWaterDeepPool"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="62" Y="15">
     <object Name="SaltyWaterDeepPool"></object>
@@ -4342,10 +4364,10 @@
     <object Name="FlowerPatches"></object>
   </cell>
   <cell X="72" Y="15">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="73" Y="15">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="74" Y="15">
     <object Name="MarbleFloor"></object>
@@ -4353,20 +4375,20 @@
   </cell>
   <cell X="75" Y="15">
     <object Name="MarbleFloor"></object>
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="76" Y="15">
     <object Name="MarbleFloor"></object>
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="77" Y="15">
     <object Name="MarbleFloor"></object>
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="78" Y="15">
     <object Name="MarbleFloor"></object>
     <object Name="Low Table"></object>
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="79" Y="15">
     <object Name="Black Marble"></object>
@@ -4386,27 +4408,27 @@
     <object Name="MarbleFloor"></object>
   </cell>
   <cell X="4" Y="16">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="5" Y="16">
-    <object Name="MarbleFloor"></object>
     <object Name="Black Marble"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="6" Y="16">
-    <object Name="MarbleFloor"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="7" Y="16">
-    <object Name="MarbleFloor"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="8" Y="16">
-    <object Name="MarbleFloor"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="9" Y="16">
-    <object Name="MarbleFloor"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="10" Y="16">
-    <object Name="MarbleFloor"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="11" Y="16">
     <object Name="MarbleFloor"></object>
@@ -4425,14 +4447,16 @@
   </cell>
   <cell X="16" Y="16">
     <object Name="MarbleFloor"></object>
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="BirthCryptDoor"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="17" Y="16">
     <object Name="Black Marble"></object>
   </cell>
   <cell X="18" Y="16">
     <object Name="MarbleFloor"></object>
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="BirthCryptDoor"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="19" Y="16">
     <object Name="Black Marble"></object>
@@ -4449,6 +4473,7 @@
   </cell>
   <cell X="23" Y="16">
     <object Name="buganimancersavant"></object>
+    <object Name="MarbleFloor"></object>
   </cell>
   <cell X="24" Y="16">
     <object Name="MarbleFloor"></object>
@@ -4473,18 +4498,21 @@
   </cell>
   <cell X="31" Y="16">
     <object Name="Techlight3"></object>
+    <object Name="MarbleFloor"></object>
   </cell>
   <cell X="32" Y="16">
     <object Name="Black Marble"></object>
   </cell>
   <cell X="33" Y="16">
     <object Name="Techlight3"></object>
+    <object Name="MarbleFloor"></object>
   </cell>
   <cell X="34" Y="16">
     <object Name="Black Marble"></object>
   </cell>
   <cell X="35" Y="16">
     <object Name="Techlight3"></object>
+    <object Name="MarbleFloor"></object>
   </cell>
   <cell X="36" Y="16">
     <object Name="Black Marble"></object>
@@ -4500,6 +4528,7 @@
   </cell>
   <cell X="40" Y="16">
     <object Name="Techlight3"></object>
+    <object Name="MarbleFloor"></object>
   </cell>
   <cell X="41" Y="16">
     <object Name="WombWall"></object>
@@ -4511,16 +4540,16 @@
     <object Name="MarbleFloor"></object>
   </cell>
   <cell X="44" Y="16">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="45" Y="16">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="46" Y="16">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="47" Y="16">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="48" Y="16">
     <object Name="MarbleFloor"></object>
@@ -4530,10 +4559,10 @@
     <object Name="FlowerPatches"></object>
   </cell>
   <cell X="50" Y="16">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="51" Y="16">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="52" Y="16">
     <object Name="FlowerPatches"></object>
@@ -4571,6 +4600,7 @@
   </cell>
   <cell X="62" Y="16">
     <object Name="SaltyWaterDeepPool"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="63" Y="16">
     <object Name="BrickWalkway"></object>
@@ -4604,10 +4634,10 @@
     <object Name="FlowerPatches"></object>
   </cell>
   <cell X="72" Y="16">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="73" Y="16">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="74" Y="16">
     <object Name="MarbleFloor"></object>
@@ -4615,7 +4645,7 @@
   </cell>
   <cell X="75" Y="16">
     <object Name="MarbleFloor"></object>
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="76" Y="16">
     <object Name="MarbleFloor"></object>
@@ -4639,34 +4669,35 @@
   </cell>
   <cell X="2" Y="17">
     <object Name="ArtificialWomb"></object>
+    <object Name="MarbleFloor"></object>
   </cell>
   <cell X="3" Y="17">
     <object Name="MarbleFloor"></object>
   </cell>
   <cell X="4" Y="17">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="5" Y="17">
-    <object Name="MarbleFloor"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="6" Y="17">
-    <object Name="MarbleFloor"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="7" Y="17">
     <object Name="GritGateMainframeWall"></object>
   </cell>
   <cell X="8" Y="17">
-    <object Name="MarbleFloor"></object>
     <object Name="Unicomputer"></object>
     <object Name="GritGateHeavyPowerLine"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="9" Y="17">
-    <object Name="MarbleFloor"></object>
     <object Name="GritGateChromeBeacon"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="10" Y="17">
-    <object Name="MarbleFloor"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="11" Y="17">
     <object Name="Techlight3"></object>
@@ -4678,36 +4709,36 @@
   </cell>
   <cell X="13" Y="17">
     <object Name="MarbleFloor"></object>
-    <object Name="BlackMarbleWalkway"></object>
     <object Name="BaseBed"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="14" Y="17">
     <object Name="MarbleFloor"></object>
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="15" Y="17">
     <object Name="MarbleFloor"></object>
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="16" Y="17">
     <object Name="MarbleFloor"></object>
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="17" Y="17">
     <object Name="Black Marble"></object>
   </cell>
   <cell X="18" Y="17">
     <object Name="MarbleFloor"></object>
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="19" Y="17">
     <object Name="MarbleFloor"></object>
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="20" Y="17">
     <object Name="MarbleFloor"></object>
-    <object Name="BlackMarbleWalkway"></object>
     <object Name="BaseBed"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="21" Y="17">
     <object Name="Black Marble"></object>
@@ -4720,6 +4751,7 @@
   </cell>
   <cell X="24" Y="17">
     <object Name="bugsentinel"></object>
+    <object Name="MarbleFloor"></object>
   </cell>
   <cell X="25" Y="17">
     <object Name="MarbleFloor"></object>
@@ -4729,6 +4761,7 @@
   </cell>
   <cell X="27" Y="17">
     <object Name="bugsentinel"></object>
+    <object Name="MarbleFloor"></object>
   </cell>
   <cell X="28" Y="17">
     <object Name="WombWall"></object>
@@ -4779,17 +4812,17 @@
     <object Name="MarbleFloor"></object>
   </cell>
   <cell X="44" Y="17">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="45" Y="17">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="46" Y="17">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="47" Y="17">
-    <object Name="MarbleWalkway"></object>
     <object Name="MarbleFloor"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="48" Y="17">
     <object Name="MarbleFloor"></object>
@@ -4799,10 +4832,10 @@
     <object Name="FlowerPatches"></object>
   </cell>
   <cell X="50" Y="17">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="51" Y="17">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="52" Y="17">
     <object Name="FlowerPatches"></object>
@@ -4835,13 +4868,14 @@
     <object Name="Flowers"></object>
   </cell>
   <cell X="61" Y="17">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="62" Y="17">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="63" Y="17">
     <object Name="Flowers"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="64" Y="17">
     <object Name="FlowerPatches"></object>
@@ -4856,6 +4890,7 @@
   </cell>
   <cell X="67" Y="17">
     <object Name="FlowerPatches"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="68" Y="17">
     <object Name="FlowerPatches"></object>
@@ -4870,10 +4905,10 @@
     <object Name="FlowerPatches"></object>
   </cell>
   <cell X="72" Y="17">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="73" Y="17">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="74" Y="17">
     <object Name="MarbleFloor"></object>
@@ -4882,19 +4917,19 @@
   </cell>
   <cell X="75" Y="17">
     <object Name="MarbleFloor"></object>
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="76" Y="17">
     <object Name="MarbleFloor"></object>
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="77" Y="17">
     <object Name="MarbleFloor"></object>
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="78" Y="17">
     <object Name="MarbleFloor"></object>
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="79" Y="17">
     <object Name="Black Marble"></object>
@@ -4913,29 +4948,29 @@
     <object Name="MarbleFloor"></object>
   </cell>
   <cell X="4" Y="18">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="5" Y="18">
-    <object Name="MarbleFloor"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="6" Y="18">
-    <object Name="MarbleFloor"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="7" Y="18">
-    <object Name="MarbleFloor"></object>
     <object Name="Metal Table"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="8" Y="18">
-    <object Name="MarbleFloor"></object>
     <object Name="GritGateWorkChair"></object>
     <object Name="GritGateHeavyPowerLine"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="9" Y="18">
     <object Name="Desk"></object>
   </cell>
   <cell X="10" Y="18">
-    <object Name="MarbleFloor"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="11" Y="18">
     <object Name="MarbleFloor"></object>
@@ -4948,15 +4983,15 @@
   </cell>
   <cell X="14" Y="18">
     <object Name="Black Marble"></object>
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="15" Y="18">
     <object Name="Black Marble"></object>
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="16" Y="18">
     <object Name="Black Marble"></object>
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="17" Y="18">
     <object Name="Black Marble"></object>
@@ -5047,13 +5082,13 @@
     <object Name="MarbleFloor"></object>
   </cell>
   <cell X="44" Y="18">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="45" Y="18">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="46" Y="18">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="47" Y="18">
     <object Name="MarbleFloor"></object>
@@ -5066,78 +5101,81 @@
     <object Name="FlowerPatches"></object>
   </cell>
   <cell X="50" Y="18">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="51" Y="18">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="52" Y="18">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="53" Y="18">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="54" Y="18">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="55" Y="18">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="56" Y="18">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="57" Y="18">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="58" Y="18">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="59" Y="18">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="60" Y="18">
-    <object Name="BlackMarbleWalkway"></object>
     <object Name="bughonorguard1"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="61" Y="18">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="62" Y="18">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="63" Y="18">
-    <object Name="BlackMarbleWalkway"></object>
     <object Name="bughonorguard2"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="64" Y="18">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="65" Y="18">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="66" Y="18">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="67" Y="18">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="68" Y="18">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="69" Y="18">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="70" Y="18">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="71" Y="18">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="72" Y="18">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="73" Y="18">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="74" Y="18">
     <object Name="MarbleFloor"></object>
@@ -5145,7 +5183,7 @@
   </cell>
   <cell X="75" Y="18">
     <object Name="MarbleFloor"></object>
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="76" Y="18">
     <object Name="MarbleFloor"></object>
@@ -5169,33 +5207,36 @@
   </cell>
   <cell X="2" Y="19">
     <object Name="ArtificialWombShattered1"></object>
+    <object Name="MarbleFloor"></object>
   </cell>
   <cell X="3" Y="19">
     <object Name="MarbleFloor"></object>
   </cell>
   <cell X="4" Y="19">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="5" Y="19">
-    <object Name="MarbleFloor"></object>
     <object Name="Black Marble"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="6" Y="19">
-    <object Name="MarbleFloor"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="7" Y="19">
     <object Name="Saile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="8" Y="19">
-    <object Name="MarbleFloor"></object>
     <object Name="GritGateHeavyPowerLine"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="9" Y="19">
-    <object Name="MarbleFloor"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="10" Y="19">
-    <object Name="MarbleFloor"></object>
+    <object Name="Kaemea"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="11" Y="19">
     <object Name="MarbleFloor"></object>
@@ -5237,17 +5278,18 @@
   </cell>
   <cell X="23" Y="19">
     <object Name="MarbleFloor"></object>
+    <object Name="DisplacementPanel0"></object>
   </cell>
   <cell X="24" Y="19">
     <object Name="MarbleFloor"></object>
   </cell>
   <cell X="25" Y="19">
     <object Name="MarbleFloor"></object>
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="26" Y="19">
     <object Name="MarbleFloor"></object>
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="27" Y="19">
     <object Name="MarbleFloor"></object>
@@ -5301,13 +5343,13 @@
     <object Name="MarbleFloor"></object>
   </cell>
   <cell X="44" Y="19">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="45" Y="19">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="46" Y="19">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="47" Y="19">
     <object Name="MarbleFloor"></object>
@@ -5322,75 +5364,79 @@
   </cell>
   <cell X="50" Y="19">
     <object Name="Techlight1"></object>
+    <object Name="MarbleFloor"></object>
   </cell>
   <cell X="51" Y="19">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="52" Y="19">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="53" Y="19">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="54" Y="19">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="55" Y="19">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="56" Y="19">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="57" Y="19">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="58" Y="19">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="59" Y="19">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="60" Y="19">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="61" Y="19">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="62" Y="19">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="63" Y="19">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="64" Y="19">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="65" Y="19">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="66" Y="19">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="67" Y="19">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="68" Y="19">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="69" Y="19">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="70" Y="19">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="71" Y="19">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="72" Y="19">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="73" Y="19">
     <object Name="Techlight1"></object>
+    <object Name="MarbleFloor"></object>
   </cell>
   <cell X="74" Y="19">
     <object Name="MarbleFloor"></object>
@@ -5398,14 +5444,15 @@
   </cell>
   <cell X="75" Y="19">
     <object Name="Techlight1"></object>
+    <object Name="MarbleFloor"></object>
   </cell>
   <cell X="76" Y="19">
     <object Name="MarbleFloor"></object>
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="77" Y="19">
     <object Name="MarbleFloor"></object>
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="78" Y="19">
     <object Name="MarbleFloor"></object>
@@ -5429,98 +5476,99 @@
     <object Name="MarbleFloor"></object>
   </cell>
   <cell X="4" Y="20">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="5" Y="20">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="6" Y="20">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="7" Y="20">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="8" Y="20">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
     <object Name="GritGateHeavyPowerLine"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="9" Y="20">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="10" Y="20">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="11" Y="20">
+    <object Name="SterileTile"></object>
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
   </cell>
   <cell X="12" Y="20">
+    <object Name="SterileTile"></object>
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
   </cell>
   <cell X="13" Y="20">
+    <object Name="SterileTile"></object>
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
   </cell>
   <cell X="14" Y="20">
+    <object Name="SterileTile"></object>
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
   </cell>
   <cell X="15" Y="20">
+    <object Name="SterileTile"></object>
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
   </cell>
   <cell X="16" Y="20">
-    <object Name="Crypt Double Door N"></object>
+    <object Name="MarbleFloor"></object>
+    <object Name="MarbleFloor"></object>
+    <object Name="Double Metal Door N"></object>
   </cell>
   <cell X="17" Y="20">
+    <object Name="SterileTile"></object>
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
   </cell>
   <cell X="18" Y="20">
+    <object Name="SterileTile"></object>
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
   </cell>
   <cell X="19" Y="20">
+    <object Name="SterileTile"></object>
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
   </cell>
   <cell X="20" Y="20">
+    <object Name="SterileTile"></object>
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
   </cell>
   <cell X="21" Y="20">
+    <object Name="SterileTile"></object>
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
   </cell>
   <cell X="22" Y="20">
+    <object Name="SterileTile"></object>
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
   </cell>
   <cell X="23" Y="20">
+    <object Name="SterileTile"></object>
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
   </cell>
   <cell X="24" Y="20">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="Sunken Room Stairs NW"></object>
   </cell>
   <cell X="25" Y="20">
-    <object Name="StairsDown"></object>
+    <object Name="Sunken Room Stairs N"></object>
   </cell>
   <cell X="26" Y="20">
-    <object Name="StairsDown"></object>
+    <object Name="Sunken Room Stairs NE"></object>
   </cell>
   <cell X="27" Y="20">
+    <object Name="SterileTile"></object>
     <object Name="MarbleFloor"></object>
-    <object Name="BlackMarbleWalkway"></object>
   </cell>
   <cell X="28" Y="20">
     <object Name="Black Marble"></object>
@@ -5571,13 +5619,13 @@
     <object Name="MarbleFloor"></object>
   </cell>
   <cell X="44" Y="20">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="45" Y="20">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="46" Y="20">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="47" Y="20">
     <object Name="MarbleFloor"></object>
@@ -5628,16 +5676,16 @@
     <object Name="MarbleFloor"></object>
   </cell>
   <cell X="60" Y="20">
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="61" Y="20">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="62" Y="20">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="63" Y="20">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="64" Y="20">
     <object Name="MarbleFloor"></object>
@@ -5684,11 +5732,11 @@
   </cell>
   <cell X="76" Y="20">
     <object Name="Double Metal Door W"></object>
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="77" Y="20">
     <object Name="Double Metal Door E"></object>
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="78" Y="20">
     <object Name="Black Marble"></object>
@@ -5705,103 +5753,103 @@
   <cell X="2" Y="21">
     <object Name="MarbleFloor"></object>
     <object Name="ArtificialWombShattered2"></object>
+    <object Name="MarbleFloor"></object>
   </cell>
   <cell X="3" Y="21">
     <object Name="MarbleFloor"></object>
   </cell>
   <cell X="4" Y="21">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="5" Y="21">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="6" Y="21">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="7" Y="21">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="8" Y="21">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
     <object Name="GritGateHeavyPowerLine"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="9" Y="21">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="10" Y="21">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="11" Y="21">
+    <object Name="SterileTile"></object>
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
   </cell>
   <cell X="12" Y="21">
+    <object Name="SterileTile"></object>
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
   </cell>
   <cell X="13" Y="21">
+    <object Name="SterileTile"></object>
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
   </cell>
   <cell X="14" Y="21">
+    <object Name="SterileTile"></object>
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
   </cell>
   <cell X="15" Y="21">
+    <object Name="SterileTile"></object>
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
   </cell>
   <cell X="16" Y="21">
-    <object Name="Crypt Double Door S"></object>
+    <object Name="Double Metal Door S"></object>
   </cell>
   <cell X="17" Y="21">
+    <object Name="SterileTile"></object>
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
   </cell>
   <cell X="18" Y="21">
+    <object Name="SterileTile"></object>
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
   </cell>
   <cell X="19" Y="21">
+    <object Name="SterileTile"></object>
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
   </cell>
   <cell X="20" Y="21">
+    <object Name="SterileTile"></object>
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
   </cell>
   <cell X="21" Y="21">
+    <object Name="SterileTile"></object>
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
   </cell>
   <cell X="22" Y="21">
+    <object Name="SterileTile"></object>
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
   </cell>
   <cell X="23" Y="21">
+    <object Name="SterileTile"></object>
     <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
   </cell>
   <cell X="24" Y="21">
-    <object Name="MarbleFloor"></object>
-    <object Name="MarbleWalkway"></object>
+    <object Name="Sunken Room Stairs SW"></object>
   </cell>
   <cell X="25" Y="21">
-    <object Name="StairsDown"></object>
+    <object Name="Sunken Room Stairs S"></object>
   </cell>
   <cell X="26" Y="21">
-    <object Name="StairsDown"></object>
+    <object Name="Sunken Room Stairs SE"></object>
   </cell>
   <cell X="27" Y="21">
+    <object Name="SterileTile"></object>
     <object Name="MarbleFloor"></object>
-    <object Name="BlackMarbleWalkway"></object>
   </cell>
   <cell X="28" Y="21">
     <object Name="Black Marble"></object>
@@ -5853,13 +5901,13 @@
     <object Name="MarbleFloor"></object>
   </cell>
   <cell X="44" Y="21">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="45" Y="21">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="46" Y="21">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="47" Y="21">
     <object Name="MarbleFloor"></object>
@@ -5907,14 +5955,14 @@
     <object Name="bugsentinel"></object>
   </cell>
   <cell X="61" Y="21">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="62" Y="21">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="63" Y="21">
-    <object Name="MarbleWalkway"></object>
     <object Name="bugsentinel"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="64" Y="21">
     <object Name="Black Marble"></object>
@@ -5951,19 +5999,17 @@
   </cell>
   <cell X="75" Y="21">
     <object Name="MarbleFloor"></object>
-    <object Name="StairsDown"></object>
   </cell>
   <cell X="76" Y="21">
     <object Name="MarbleFloor"></object>
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="77" Y="21">
     <object Name="MarbleFloor"></object>
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="78" Y="21">
     <object Name="MarbleFloor"></object>
-    <object Name="StairsDown"></object>
   </cell>
   <cell X="79" Y="21">
     <object Name="Black Marble"></object>
@@ -6007,6 +6053,7 @@
   <cell X="9" Y="22">
     <object Name="MarbleFloor"></object>
     <object Name="ArtificialWomb"></object>
+    <object Name="MarbleFloor"></object>
   </cell>
   <cell X="10" Y="22">
     <object Name="MarbleFloor"></object>
@@ -6023,6 +6070,7 @@
   <cell X="13" Y="22">
     <object Name="MarbleFloor"></object>
     <object Name="ArtificialWombShattered2"></object>
+    <object Name="MarbleFloor"></object>
   </cell>
   <cell X="14" Y="22">
     <object Name="MarbleFloor"></object>
@@ -6061,12 +6109,12 @@
   </cell>
   <cell X="25" Y="22">
     <object Name="MarbleFloor"></object>
-    <object Name="BlackMarbleWalkway"></object>
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="26" Y="22">
     <object Name="MarbleFloor"></object>
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="27" Y="22">
     <object Name="Techlight3"></object>
@@ -6122,96 +6170,97 @@
     <object Name="MarbleFloor"></object>
   </cell>
   <cell X="44" Y="22">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="45" Y="22">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="46" Y="22">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="47" Y="22">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="48" Y="22">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="49" Y="22">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="50" Y="22">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="51" Y="22">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="52" Y="22">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="53" Y="22">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="54" Y="22">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="55" Y="22">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="56" Y="22">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="57" Y="22">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="58" Y="22">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="59" Y="22">
-    <object Name="MarbleWalkway"></object>
     <object Name="Techlight3"></object>
+    <object Name="MarbleFloor"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="60" Y="22">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="61" Y="22">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="62" Y="22">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="63" Y="22">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="64" Y="22">
-    <object Name="MarbleWalkway"></object>
     <object Name="Techlight3"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="65" Y="22">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="66" Y="22">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="67" Y="22">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="68" Y="22">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="69" Y="22">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="70" Y="22">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="71" Y="22">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="72" Y="22">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="73" Y="22">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="74" Y="22">
     <object Name="Black Marble"></object>
@@ -6222,11 +6271,11 @@
   </cell>
   <cell X="76" Y="22">
     <object Name="MarbleFloor"></object>
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="77" Y="22">
     <object Name="MarbleFloor"></object>
-    <object Name="BlackMarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="78" Y="22">
     <object Name="MarbleFloor"></object>
@@ -6383,79 +6432,79 @@
     <object Name="MarbleFloor"></object>
   </cell>
   <cell X="49" Y="23">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="50" Y="23">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="51" Y="23">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="52" Y="23">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="53" Y="23">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="54" Y="23">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="55" Y="23">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="56" Y="23">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="57" Y="23">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="58" Y="23">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="59" Y="23">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="60" Y="23">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="61" Y="23">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="62" Y="23">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="63" Y="23">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="64" Y="23">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="65" Y="23">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="66" Y="23">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="67" Y="23">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="68" Y="23">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="69" Y="23">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="70" Y="23">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="71" Y="23">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="72" Y="23">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="73" Y="23">
-    <object Name="MarbleWalkway"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="74" Y="23">
     <object Name="Black Marble"></object>

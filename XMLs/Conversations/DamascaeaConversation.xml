@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<conversations>
+    <conversation ID="DamascaeaConversation">
+            <start ID="DamascaeaIntro">
+                <text>
+                    Mm, v'hat 'ave we here. Another little =player.apparentSpecies= kome to see my v'ares?
+                    
+                    V'e are far from lands v'ith strong metal and good ore. So, v'e kraft arms from krystal made stronger v'ith our sacchar.
+                </text>
+
+                <choice GotoID="SaccharQuestioning" >
+                    <text>
+                        What is sacchar?
+                    </text>
+                </choice>
+                <choice GotoID="End" >
+                    <text>
+                    ...
+                    </text>
+                </choice>
+            </start>
+
+        <node ID="SaccharQuestioning">
+            <text>
+                In your tongue? The shed skin of an insect.
+            </text>
+
+            <choice GotoID="End" >
+                <text>
+                    Ah, I see. Live and drink
+                </text>
+            </choice>
+            <choice GotoID="SaccharQuestioning2" >
+                <text>
+                    ... Does it taste good?
+                </text>
+            </choice>
+        </node>
+        <node ID="SaccharQuestioning2">
+            <text>
+                {{emotes|*she extends one of her massive arms towards you*}}
+                
+                V'ould you like to lick?
+            </text>
+<!--            this is a***'s fault. yes it is-->
+            <choice GotoID="SaccharQuestioning3" >
+                <text>
+                    [Lick her arm.]
+                </text>
+            </choice>
+            <choice GotoID="End" SetIntProperty="Bitten,1">
+                <text>
+                    [Bite her arm.]
+                </text>
+                <part Name="GetWrecked"/>
+            </choice>
+            <choice GotoID="SaccharQuestioning2" >
+                <text>
+                    Does it taste good?
+                </text>
+            </choice>
+        </node>
+
+        <node ID="SaccharQuestioning3">
+            <text>
+                    [It taste like savory butter, smoked over years of smoldering sulfur.]
+                
+                    V'ell?
+            </text>
+            <!--            this is definitely a***'s fault. yes it is-->
+            <choice GotoID="YumIlikeThat" >
+                <text>
+                    Is very tasty, love it!
+                </text>
+            </choice>
+            <choice GotoID="MehOption" >
+                <text>
+                    Meh. Could use some salt.
+                </text>
+            </choice>
+            <choice GotoID="NoOption" >
+                <text>
+                    I'm not a fan, personally. But thank you for letting me try!
+                </text>
+            </choice>
+            <choice GotoID="EwNoWasGross" IfHavePart="SociallyRepugnant" Priority="1">
+                <text>
+                    Mmm, that was tasty, can have your lips next? [licks lips]
+                </text>
+            </choice>
+        </node>
+
+        <node ID="YumIlikeThat">
+            <text>
+            Good! Then visit Chymero! He sells good sacchar snips.
+            </text>
+            <!--            this is definitely a***'s fault. yes it is-->
+            <choice GotoID="End" SetIntProperty="Licked,1">
+                <text>
+                    Lovely! Live and Drink!
+                </text>
+            </choice>
+        </node>
+
+        <node ID="MehOption">
+            <text>
+                *shrug*
+            </text>
+            <!--            this is definitely a***'s fault. yes it is-->
+            <choice GotoID="End" SetIntProperty="Licked,1">
+                <text>
+                    Live and Drink.
+                </text>
+            </choice>
+        </node>
+
+        <node ID="NoOption">
+            <text>
+                Might as v'ell I say, never know v'at meets one's taste.
+            </text>
+            <!--            this is definitely a***'s fault. yes it is-->
+            <choice GotoID="End" SetIntProperty="Licked,1">
+                <text>
+                    Live and Drink.
+                </text>
+            </choice>
+        </node>
+
+        <node ID="EwNoWasGross">
+            <text>
+                [She wrinkles her nose up in disgust.]
+                
+                Go kiss the backside of a salt-back.
+            </text>
+            <!--            this is definitely a***'s fault. yes it is-->
+            <choice GotoID="End" SetIntProperty="SocialRepugLicked,1">
+                <text>
+                    Awww ...
+                </text>
+            </choice>
+        </node>
+        
+<!--   Bit Her Conversation!     -->
+        
+        <start ID="YouBitHerNoConvoForyou" NoTrade="true" IfHaveProperty="Bitten">
+            <text>
+                    ...
+            </text>
+            <!--            this is definitely a***'s fault. yes it is-->
+            <choice GotoID="End">
+                <text>
+                    ...
+                </text>
+            </choice>
+        </start>
+
+        <!--   Licked Her Conversation!     -->
+
+        <start ID="LickedHer" NoTrade="true" IfHaveProperty="licked">
+            <text>
+                V'elcome back, =player.apparentSpecies=? V'hat can I get you.
+            </text>
+            <!--            this is definitely a***'s fault. yes it is-->
+            <choice GotoID="End">
+                <text>
+                    Nothing, friend. Live and Drink!
+                </text>
+            </choice>
+        </start>
+
+        <start ID="LickedHer" NoTrade="true" IfHaveProperty="SocialRepugLicked">
+            <text>
+                Ugh, not you again.
+            </text>
+            <!--            this is definitely a***'s fault. yes it is-->
+            <choice GotoID="End">
+                <text>
+                    Comin' for those lips some day! [lip-smacking]
+                </text>
+            </choice>
+        </start>
+        
+    </conversation>
+</conversations>

@@ -1,17 +1,5 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using ConsoleLib.Console;
-using HistoryKit;
-using XRL;
-using XRL.UI.ObjectFinderClassifiers;
-using XRL.World;
 using XRL.World.Effects;
-using XRL.World.Parts;
-using XRL.World.Parts.Mutation;
-using XRL.World.Anatomy;
-using XRL.Rules;
-
 
 namespace XRL.World.Parts.Mutation
 {

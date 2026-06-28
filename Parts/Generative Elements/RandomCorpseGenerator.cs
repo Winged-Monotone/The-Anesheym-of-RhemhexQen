@@ -26,22 +26,22 @@ namespace XRL.World.Parts
         {
             new string[]
             {
-                "Retextures/sw_crystalcorspe2.png",
-                "Retextures/sw_crystalcorspe1.png",
-                "Retextures/sw_crystalcorspe8.png",
+                "WingyTextures/Retextures/sw_crystalcorspe2.png",
+                "WingyTextures/Retextures/sw_crystalcorspe1.png",
+                "WingyTextures/Retextures/sw_crystalcorspe8.png",
             },
 
             new string[]
             {
-                "Retextures/sw_crystalcorspe7.png",
-                "Retextures/sw_crystalcorspe5.png",
+                "WingyTextures/Retextures/sw_crystalcorspe7.png",
+                "WingyTextures/Retextures/sw_crystalcorspe5.png",
             },
 
             new string[]
             {
-                "Retextures/sw_crystalcorspe9.png",
-                "Retextures/sw_crystalcorspe4.png",
-                "Retextures/sw_crystalcorspe6.png",
+                "WingyTextures/Retextures/sw_crystalcorspe9.png",
+                "WingyTextures/Retextures/sw_crystalcorspe4.png",
+                "WingyTextures/Retextures/sw_crystalcorspe6.png",
             }
         };
 
@@ -55,11 +55,11 @@ namespace XRL.World.Parts
 
                 if (Stat.Random(1, (1000)) == 1)
                 {
-                    render.Tile = "Retextures/sw_crystalcorspe3.png";
+                    render.Tile = "WingyTextures/Retextures/sw_crystalcorspe3.png";
                 }
                 else if (Stat.Random(1, (500)) == 1)
                 {
-                    render.Tile = "Retextures/sw_crystalcorspe10.png";
+                    render.Tile = "WingyTextures/Retextures/sw_crystalcorspe10.png";
                 }
                 else
                 {

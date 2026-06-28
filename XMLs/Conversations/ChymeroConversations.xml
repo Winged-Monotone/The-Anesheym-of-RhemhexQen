@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<conversations>
+
+    <!-- Chymero Conversation -->
+
+    <conversation ID="ChymeroLogueInitial">
+        <node ID="Start">
+            <text>
+                Hoy! Welcome to' the galley, mate! Me name be Chymero! The chief chef o' dis place.
+
+                I hear ye've done a lot t' help us! I be grateful, The loss o' our kin has saddened us, put a hole in our hearts. We've strived t' show kindness 'n warmth t' others, no matter the look or shape.
+
+                Now look where it got us? Strugglin'.
+
+                But forget all dat, aye? Ye've done much fer us, friend. 'Ere, 'ave a look at our stock if ye ever got a hankerin' fer somethin'.
+            </text>
+            <choice Target="End">I desire nothing. Live and drink.</choice>
+        </node>
+    </conversation>
+    
+</conversations>

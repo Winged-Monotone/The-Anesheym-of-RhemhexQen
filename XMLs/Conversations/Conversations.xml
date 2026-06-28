@@ -1,0 +1,1033 @@
+<?xml version="1.0" encoding="utf-8"?>
+<conversations>
+
+    <!-- Barathrumite Changes -->
+
+
+    <conversation ID="IseppaArshiraEdit">
+        <node ID="Start" IfNotFinishedQuest="More Than a Willing Spirit">
+            <text>
+                Oh. Are you lost, =player.formalAddressTerm=?
+
+                I don't mind that you're here, but I was not expecting anyone.
+            </text>
+            <choice GotoID="End">Live and drink.</choice>
+        </node>
+
+        <node ID="Start" IfHaveQuest="A Call to Arms" IfNotFinishedQuest="A Call to Arms">
+            <text>
+                Is this it, I wonder?
+            </text>
+            <choice GotoID="End">Not today.</choice>
+        </node>
+
+        <node ID="Start">
+            <text>
+                Ah, it is our new short-fingered friend. Set a spell, if you like setting.
+
+                &amp;w*Iseppa yawns*.&amp;y
+
+                Or spells. Or Iseppa. If you like Iseppa, this is a very good place to be.
+            </text>
+            <choice ID="IseppaSusa" GotoID="Bethesda" IfHaveQuest="Decoding the Signal"
+                    IfNotFinishedQuest="Decoding the Signal">Do you know anything about Bethesda Susa?
+            </choice>
+            <choice ID="Isepporch" GotoID="Omonporch" IfHaveQuest="The Earl of Omonporch"
+                    IfNotFinishedQuest="The Earl of Omonporch">What do you know about Omonporch and the self-appointed
+                Earl?
+            </choice>
+            <choice ID="Isepquake" GotoID="Rumbling" IfHaveQuest="Grave Thoughts" IfNotFinishedQuest="Grave Thoughts">
+                Did you feel that rumbling, Iseppa?
+            </choice>
+            <choice ID="Isepshroom" GotoID="Klanq" IfHaveQuest="Pax Klanq, I Presume?"
+                    IfNotFinishedQuest="Pax Klanq, I Presume?">Have you ever met Pax Klanq?
+            </choice>
+            <choice ID="Iseproject" GotoID="Project">What are you working on, Iseppa?</choice>
+            <choice ID="Isleepy" GotoID="Tired">Are you tired?</choice>
+            <choice ID="Bioseppa" GotoID="AboutMe">I wish to know more about you.</choice>
+            <choice GotoID="Like">I do like you, Iseppa.</choice>
+            <choice GotoID="End">Live and drink.</choice>
+        </node>
+
+        <node ID="Like">
+            <text>
+                Thank you, =name=. I like you too.
+            </text>
+            <choice UseID="IseppaSusa"></choice>
+            <choice UseID="Isepporch"></choice>
+            <choice UseID="Isepquake"></choice>
+            <choice UseID="Isepshroom"></choice>
+            <choice UseID="Iseproject"></choice>
+            <choice UseID="Isleepy"></choice>
+            <choice ID="Gosseppa" GotoID="Gossip">What can you tell me about the other Barathrumites?</choice>
+            <choice UseID="Bioseppa"></choice>
+            <choice GotoID="End">Live and drink.</choice>
+        </node>
+
+        <node ID="Bethesda">
+            <text>
+                Bethesda Susa is an antipodal place, a gallery of life and death and the stages between. Its depths prolong life and end it early, remove life from the flow of days or return it.
+
+                It will seek to make you late. Take care you come back on time.
+            </text>
+            <choice UseID="Isepporch"></choice>
+            <choice UseID="Isepquake"></choice>
+            <choice UseID="Isepshroom"></choice>
+            <choice UseID="Iseproject"></choice>
+            <choice UseID="Isleepy"></choice>
+            <choice UseID="Gosseppa"></choice>
+            <choice UseID="Bioseppa"></choice>
+            <choice GotoID="ArshseppaI">I was told it's quite dangerous, there's nothing else I should know?</choice>
+            <choice GotoID="End">Live and drink.</choice>
+        </node>
+
+        <node ID="ArshseppaI">
+            <text>
+                Dangerous would be a costly underestimation. Bethesda Susa is truly a duality amongst intrigue and horror, magnificent sights and treacherous evocations.
+
+                Hm. But. Maybe ...
+
+                {{yellow|*Iseppa seems to be contemplating something*}}
+
+            </text>
+            <choice GotoID="ArshseppaII">... I’d be grateful for any assistance.</choice>
+            <choice GotoID="End">It is fine. Live and drink.</choice>
+        </node>
+
+        <node ID="ArshseppaII">
+            <text>
+                If you are inclined to, there is one who would bear you company on your venture to Bethesda Susa should you ask them.
+
+            </text>
+            <choice GotoID="ArshseppaIII">Why would I mind?</choice>
+        </node>
+
+        <node ID="ArshseppaIII">
+            <text>
+                They are an oddity this one, a kind of their own.
+
+                A warrior nonetheless and a ventured one. They visit us from time-to-time seeking our artifacts in an attempt to understand themselves. A hurt and addled mind, but with good-intentions.
+
+            </text>
+            <choice GotoID="ArshseppaIV">Who are they?</choice>
+        </node>
+
+        <node ID="ArshseppaIV">
+            <text>
+                Their name is Ashiranandurah. As of now they are a face of the {{blue|Pariahs,}} earning their name as a dervish-hunter--they have slain Seeker thralls since their Second Youth.
+            </text>
+            <choice GotoID="ArshseppaV">... Hm.</choice>
+            <choice GotoID="End">Live and drink.</choice>
+        </node>
+
+        <node ID="ArshseppaV">
+            <text>
+                Arshira relishes the captivations of adventure and exploring these treacherous lands, a drive only countered by the fear of their shadow. They get restless waiting for research results and watching tinkers' tinker. Need you someone to aid you in travel, look no farther.
+            </text>
+            <choice GotoID="ArshseppaVI">Where might I find them?</choice>
+            <choice GotoID="End">Live and drink.</choice>
+        </node>
+
+        <node ID="ArshseppaVI">
+            <text>
+                The Stilt, they’ve been brooding lately, the poor thing practically crumbles in most social play. I believe you will need some standing to invoke Arshira’s services, but tis an option.
+            </text>
+            <choice GotoID="End">I see, thank you, Iseppa. Live and drink.</choice>
+        </node>
+
+        <node ID="Omonporch">
+            <text>
+                Though I adore the sights and smells of Omonporch, its bug problem becomes distracting.
+
+                If I'm to travel there, I always bring something they cannot zip away from.
+            </text>
+            <choice UseID="IseppaSusa"></choice>
+            <choice UseID="Isepquake"></choice>
+            <choice UseID="Isepshroom"></choice>
+            <choice UseID="Iseproject"></choice>
+            <choice UseID="Isleepy"></choice>
+            <choice UseID="Gosseppa"></choice>
+            <choice UseID="Bioseppa"></choice>
+            <choice GotoID="End">Live and drink.</choice>
+        </node>
+
+        <node ID="Rumbling">
+            <text>
+                Yes. That was not the voice of the caverns.
+
+                It feels like one of my nightmares come to life at last.
+            </text>
+            <choice UseID="IseppaSusa"></choice>
+            <choice UseID="Isepporch"></choice>
+            <choice UseID="Isepshroom"></choice>
+            <choice UseID="Iseproject"></choice>
+            <choice UseID="Isleepy"></choice>
+            <choice UseID="Gosseppa"></choice>
+            <choice UseID="Bioseppa"></choice>
+            <choice GotoID="End">Live and drink.</choice>
+        </node>
+
+        <node ID="Klanq">
+            <text>
+                I have not.
+
+                I would, however, love to meet him. He seems a fun fungus.
+
+                But I daren't go. I fear the sludges.
+            </text>
+            <choice GotoID="Sludges">You fear sludge?</choice>
+            <choice GotoID="MmHmm">I see.</choice>
+        </node>
+
+        <node ID="Sludges">
+            <text>
+                I fear sludges, the kind you may no longer describe with 'some'. Born of the ancient stuff of existence, possessed of malice and wanting nothing more than to eat whatever they can, and they can eat whatever.
+                It is even worse when they drink.
+
+                Take care with them.
+            </text>
+            <choice UseID="IseppaSusa"></choice>
+            <choice UseID="Isepporch"></choice>
+            <choice UseID="Isepquake"></choice>
+            <choice UseID="Iseproject"></choice>
+            <choice UseID="Isleepy"></choice>
+            <choice UseID="Gosseppa"></choice>
+            <choice UseID="Bioseppa"></choice>
+            <choice GotoID="End">Live and drink.</choice>
+        </node>
+
+        <node ID="Tired">
+            <text>
+                I am always tired, =player.formalAddressTerm=.
+
+                My sleep comes in fits and starts, and always with ghastly visions. Sometimes my rest must be coaxed along with medicine.
+            </text>
+            <choice GotoID="Dreams">You have prophetic visions in your sleep?</choice>
+            <choice GotoID="MmHmm">I see. That seems difficult.</choice>
+        </node>
+
+        <node ID="Dreams">
+            <text>
+                No. My nightmares are a concoction of my disordered mind, nothing more. The fumes from this cauldron have nothing to do with the future, save how they affect it.
+
+                &amp;w*Iseppa sighs.*&amp;y
+
+                I'd rather speak of something else, =player.formalAddressTerm=.
+            </text>
+            <choice GotoID="MmHmm">Oh.</choice>
+        </node>
+
+        <node ID="MmHmm">
+            <text>
+                Mm-hmm.
+
+                &amp;w*Iseppa yawns.*&amp;y
+            </text>
+            <choice UseID="IseppaSusa"></choice>
+            <choice UseID="Isepporch"></choice>
+            <choice UseID="Isepquake"></choice>
+            <choice UseID="Isepshroom"></choice>
+            <choice UseID="Iseproject"></choice>
+            <choice UseID="Isleepy"></choice>
+            <choice UseID="Gosseppa"></choice>
+            <choice UseID="Bioseppa"></choice>
+            <choice GotoID="End">Live and drink.</choice>
+        </node>
+
+        <node ID="Gossip">
+            <text>
+                I would never think to steal from you the delight of forming opinions of my enclave on your own.
+
+                &amp;w*Iseppa yawns.*&amp;y
+
+                Besides, that sounds like rather a lot of talking.
+            </text>
+            <choice UseID="IseppaSusa"></choice>
+            <choice UseID="Isepporch"></choice>
+            <choice UseID="Isepquake"></choice>
+            <choice UseID="Isepshroom"></choice>
+            <choice UseID="Iseproject"></choice>
+            <choice UseID="Isleepy"></choice>
+            <choice UseID="Bioseppa"></choice>
+            <choice GotoID="End">Live and drink.</choice>
+        </node>
+
+        <node ID="AboutMe">
+            <text>
+                I am Iseppa, and she is me.
+
+                I've given thought to being someone else, but never enough to try.
+            </text>
+            <choice UseID="IseppaSusa"></choice>
+            <choice UseID="Isepporch"></choice>
+            <choice UseID="Isepquake"></choice>
+            <choice UseID="Isepshroom"></choice>
+            <choice UseID="Iseproject"></choice>
+            <choice UseID="Isleepy"></choice>
+            <choice UseID="Gosseppa"></choice>
+            <choice GotoID="End">Live and drink.</choice>
+        </node>
+
+
+        <node ID="Project">
+            <text>
+                I am contemplating the distinction between animal and rock. Why are they different? How much like a rock must an animal be when it ceases to be an animal?~
+                I am considering the window of consciousness through which each of us views the universe. What happens to it when we die?~
+                I am taking inventory of my faculties, and looking for any that I might not previously have considered.~
+                I am considering the thought as a discrete object. I wish to determine whether I am able to think a single thought only, and to determine how to distinguish it from another thought in the same vein.~
+                I am considering the determination of goodness and badness in a thing, and how it is determined. The interaction between data and subjective evaluation, and the values that guide us that we cannot put to words.~
+                I am contemplating the Spindle's place in Qud, its position as a conceptual focal point. How much of what we know of the Spindle is the craft of those before us, carried forward?~
+                I am considering narrative inheritances. The stories we were told when our minds were more putty-like, the follies that shaped who we are, that shape the whole of Qud.
+            </text>
+            <choice GotoID="Project2">Oh. It looks like you are sorting screws and fasteners.</choice>
+            <choice GotoID="Project3">Have you come to any conclusions?</choice>
+            <choice GotoID="End">I shall leave you to it. Live and drink, contemplatrix.</choice>
+        </node>
+
+        <node ID="Project2">
+            <text>
+                Yes.
+            </text>
+            <choice GotoID="MmHmm">But you're also doing the other thing.</choice>
+            <choice GotoID="End">I'll leave you to it.</choice>
+        </node>
+
+        <node ID="Project3">
+            <text>
+                Not yet, but that's not the point.
+            </text>
+            <choice GotoID="MmHmm">Oh, I see.</choice>
+            <choice GotoID="End">I'll leave you to it, then.</choice>
+        </node>
+
+    </conversation>
+    
+    
+    
+    
+<!--    ascii signs-->
+
+    
+    
+    
+    <conversation ID="DisplacerPanelIntro">
+        <start ID ="ShowPanelContents">
+            <text>
+                {{C|                UVA-TECH - . - - | - . - . - |____________________VRS. 1.14.3 EA65Ue
+                ========================================================================
+                {{C|░=ud_nbsp:1==ud_nbsp:1=░░░░=ud_nbsp:1==ud_nbsp:1=░░=ud_nbsp:1==ud_nbsp:1=░░░░=ud_nbsp:1==ud_nbsp:1=░░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░
+                ▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒}}
+                {{m|▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓▓=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓▓▓▓}}
+                {{M|█=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=████████=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1=█
+                ██=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=███=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██}}
+                ========================================================================
+                // "UVA-technologies! Be your most productive self!" _
+
+                // ... _
+
+                // ... {{red|WARNING!}} Displacer Unit in need of maintenance. Scheduled Maintenance Date: XX-EU-EUU2359--ERROR. Contact nearest maintenance crew member for support.
+                
+                // ... {{red|WARNING!}} Site-readings show registered QAURANTINE Event in effect. Administrative Override Initiated, ADMIN: COOLESTREDBEAR. Granting Emergency Entry.
+                
+                // ... {{red|WARNING!}} Biometric data shows ZENITH LEVEL THREAT [REDACTED] has compromised lab integrity. Site prepped for sterilization via N.F.D-T6. Status: ... {{red|[Primed]}}.
+                
+                // ...
+
+                {{M|⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠿⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+                ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⠈⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+                ⣿⣿⣿⣿⠿⠛⠛⣋⣉⣭⣭⣿⡇=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⣸⣯⣭⣭⣉⡙⠛⠻⠿⣿⣿⣿⣿
+                ⣿⡟⠉=ud_nbsp:1==ud_nbsp:1=⢴⣿⣿⣿⣿⣿⣿⣷⡄=ud_nbsp:1==ud_nbsp:1=⢰⣿⣿⣿⣿⣿⣿⣿⡆=ud_nbsp:1==ud_nbsp:1=⠙⣿⣿
+                ⣿⣿⣦⣀=ud_nbsp:1==ud_nbsp:1=⠉⠛⠛⠿⠿⠋=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⠙⠿⠟⠛⠋⠁=ud_nbsp:1=⢀⣀⣴⣿⣿
+                ⣿⣿⣿⣿⣿⣷⣶⣶⣤⣤⡄=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⢤⣤⣴⣶⣶⣿⣿⣿⣿⣿⣿
+                ⣿⣿⣿⣿⡿⠿⠟⠛⢛⣿⡇=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⢸⣟⡛⠛⠿⠿⣿⣿⣿⣿⣿
+                ⣿⡿⠋⠁=ud_nbsp:1=⢠⣾⣿⣿⣿=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⢸⣿⣿⣿⣶⡄=ud_nbsp:1=⠈⠙⣿⣿
+                ⣿⣷⣄⡀=ud_nbsp:1=⠈⠙⠻⠿⠿⣶⣶=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⠠⣶⣾⠿⠿⠛⠋=ud_nbsp:1==ud_nbsp:1=⢀⣠⣿⣿
+                ⣿⣿⣿⣿⣷⣶⣶⣦⣤⣤⣤⣤⡀=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⢠⣤⣤⣤⣤⣶⣶⣶⣿⣿⣿⣿⣿
+                ⣿⣿⣿⣿⣿⠿⠿⠟⠛⣛⣛⣿⡇=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⢸⣟⣛⣛⠛⠻⠿⢿⣿⣿⣿⣿⣿
+                ⣿⡿⠛⠉=ud_nbsp:1=⣠⣶⣿⣿⣿⣿⣿⡇=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⢸⣿⣿⣿⣿⣷⣶⡄=ud_nbsp:1=⠉⠻⣿⣿
+                ⣿⣷⣀=ud_nbsp:1==ud_nbsp:1=⠈⠛⠿⠿⣿⣿⣿⣿⣷⣶⣶⣾⣿⣿⣿⡿⠿⠟⠋⠁=ud_nbsp:1==ud_nbsp:1=⣠⣿⣿
+                ⣿⣿⣿⣿⣿⣶⣶⣦⣤⣤⣤⣄⣀⣀⣉⣉⣀⣀⣠⣤⣤⣤⣴⣶⣶⣿⣿⣿⣿⣿
+                ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿}}
+
+                // Displace?
+
+                ========================================================================
+                TAGS: [Property of uvaCORE Genetics] - [X]}}
+            </text>
+            <choice CallScript="XRL.World.Parts.DisplacerZero.DisplaceBetweenFloors0" GotoID="End">[Displace to adjacent panel?]</choice>
+            <choice GotoID="End">[Step away from the panel.]</choice>
+        </start>
+    </conversation>
+    
+    <conversation ID="DisplacerPanel1">
+        <start ID ="ShowPanelContents">
+            <text>
+                {{C|                UVA-TECH - . - - | - . - . - |____________________VRS. 1.14.3 EA65Ue
+                ========================================================================
+                {{C|░=ud_nbsp:1==ud_nbsp:1=░░░░=ud_nbsp:1==ud_nbsp:1=░░=ud_nbsp:1==ud_nbsp:1=░░░░=ud_nbsp:1==ud_nbsp:1=░░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░
+                ▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒}}
+                {{m|▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓▓=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓▓▓▓}}
+                {{M|█=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=████████=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1=█
+                ██=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=███=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██}}
+                ========================================================================
+                // "UVA-technologies! Be your most productive self!" _
+
+                // ... _
+                
+                // ... WARNING! Displacer Unit in need of maintenance. Scheduled Maintenance Date: XX-EU-EUU2359--ERROR. Contact nearest maintenance crew member for support.
+
+                {{M|⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠿⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+                ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⠈⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+                ⣿⣿⣿⣿⠿⠛⠛⣋⣉⣭⣭⣿⡇=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⣸⣯⣭⣭⣉⡙⠛⠻⠿⣿⣿⣿⣿
+                ⣿⡟⠉=ud_nbsp:1==ud_nbsp:1=⢴⣿⣿⣿⣿⣿⣿⣷⡄=ud_nbsp:1==ud_nbsp:1=⢰⣿⣿⣿⣿⣿⣿⣿⡆=ud_nbsp:1==ud_nbsp:1=⠙⣿⣿
+                ⣿⣿⣦⣀=ud_nbsp:1==ud_nbsp:1=⠉⠛⠛⠿⠿⠋=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⠙⠿⠟⠛⠋⠁=ud_nbsp:1=⢀⣀⣴⣿⣿
+                ⣿⣿⣿⣿⣿⣷⣶⣶⣤⣤⡄=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⢤⣤⣴⣶⣶⣿⣿⣿⣿⣿⣿
+                ⣿⣿⣿⣿⡿⠿⠟⠛⢛⣿⡇=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⢸⣟⡛⠛⠿⠿⣿⣿⣿⣿⣿
+                ⣿⡿⠋⠁=ud_nbsp:1=⢠⣾⣿⣿⣿=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⢸⣿⣿⣿⣶⡄=ud_nbsp:1=⠈⠙⣿⣿
+                ⣿⣷⣄⡀=ud_nbsp:1=⠈⠙⠻⠿⠿⣶⣶=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⠠⣶⣾⠿⠿⠛⠋=ud_nbsp:1==ud_nbsp:1=⢀⣠⣿⣿
+                ⣿⣿⣿⣿⣷⣶⣶⣦⣤⣤⣤⣤⡀=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⢠⣤⣤⣤⣤⣶⣶⣶⣿⣿⣿⣿⣿
+                ⣿⣿⣿⣿⣿⠿⠿⠟⠛⣛⣛⣿⡇=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⢸⣟⣛⣛⠛⠻⠿⢿⣿⣿⣿⣿⣿
+                ⣿⡿⠛⠉=ud_nbsp:1=⣠⣶⣿⣿⣿⣿⣿⡇=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⢸⣿⣿⣿⣿⣷⣶⡄=ud_nbsp:1=⠉⠻⣿⣿
+                ⣿⣷⣀=ud_nbsp:1==ud_nbsp:1=⠈⠛⠿⠿⣿⣿⣿⣿⣷⣶⣶⣾⣿⣿⣿⡿⠿⠟⠋⠁=ud_nbsp:1==ud_nbsp:1=⣠⣿⣿
+                ⣿⣿⣿⣿⣿⣶⣶⣦⣤⣤⣤⣄⣀⣀⣉⣉⣀⣀⣠⣤⣤⣤⣴⣶⣶⣿⣿⣿⣿⣿
+                ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿}}
+                
+                // Displace?
+                
+                ========================================================================
+                TAGS: [Property of uvaCORE Genetics] - [X]}}
+            </text>
+            <choice CallScript="XRL.World.Parts.DisplacerOne.DisplaceBetweenFloors1" GotoID="End">[Displace to adjacent panel?]</choice>
+            <choice GotoID="End">[Step away from the panel.]</choice>
+        </start>
+    </conversation>
+
+    <conversation ID="DisplacerPanel2">
+        <start ID ="ShowPanelContents">
+            <text>
+                {{C|                UVA-TECH - . - - | - . - . - |____________________VRS. 1.14.3 EA65Ue
+                ========================================================================
+                {{C|░=ud_nbsp:1==ud_nbsp:1=░░░░=ud_nbsp:1==ud_nbsp:1=░░=ud_nbsp:1==ud_nbsp:1=░░░░=ud_nbsp:1==ud_nbsp:1=░░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░
+                ▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒}}
+                {{m|▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓▓=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓▓▓▓}}
+                {{M|█=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=████████=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1=█
+                ██=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=███=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██}}
+                ========================================================================
+                // "UVA-technologies! Be your most productive self!" _
+
+                // ... _
+
+                // ... WARNING! Displacer Unit in need of maintenance. Scheduled Maintenance Date: XX-EU-EUU2359--ERROR. Contact nearest maintenance crew member for support.
+
+                {{M|⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠿⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+                ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⠈⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+                ⣿⣿⣿⣿⠿⠛⠛⣋⣉⣭⣭⣿⡇=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⣸⣯⣭⣭⣉⡙⠛⠻⠿⣿⣿⣿⣿
+                ⣿⡟⠉=ud_nbsp:1==ud_nbsp:1=⢴⣿⣿⣿⣿⣿⣿⣷⡄=ud_nbsp:1==ud_nbsp:1=⢰⣿⣿⣿⣿⣿⣿⣿⡆=ud_nbsp:1==ud_nbsp:1=⠙⣿⣿
+                ⣿⣿⣦⣀=ud_nbsp:1==ud_nbsp:1=⠉⠛⠛⠿⠿⠋=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⠙⠿⠟⠛⠋⠁=ud_nbsp:1=⢀⣀⣴⣿⣿
+                ⣿⣿⣿⣿⣿⣷⣶⣶⣤⣤⡄=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⢤⣤⣴⣶⣶⣿⣿⣿⣿⣿⣿
+                ⣿⣿⣿⣿⡿⠿⠟⠛⢛⣿⡇=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⢸⣟⡛⠛⠿⠿⣿⣿⣿⣿⣿
+                ⣿⡿⠋⠁=ud_nbsp:1=⢠⣾⣿⣿⣿=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⢸⣿⣿⣿⣶⡄=ud_nbsp:1=⠈⠙⣿⣿
+                ⣿⣷⣄⡀=ud_nbsp:1=⠈⠙⠻⠿⠿⣶⣶=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⠠⣶⣾⠿⠿⠛⠋=ud_nbsp:1==ud_nbsp:1=⢀⣠⣿⣿
+                ⣿⣿⣿⣿⣷⣶⣶⣦⣤⣤⣤⣤⡀=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⢠⣤⣤⣤⣤⣶⣶⣶⣿⣿⣿⣿⣿
+                ⣿⣿⣿⣿⣿⠿⠿⠟⠛⣛⣛⣿⡇=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⢸⣟⣛⣛⠛⠻⠿⢿⣿⣿⣿⣿⣿
+                ⣿⡿⠛⠉=ud_nbsp:1=⣠⣶⣿⣿⣿⣿⣿⡇=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⢸⣿⣿⣿⣿⣷⣶⡄=ud_nbsp:1=⠉⠻⣿⣿
+                ⣿⣷⣀=ud_nbsp:1==ud_nbsp:1=⠈⠛⠿⠿⣿⣿⣿⣿⣷⣶⣶⣾⣿⣿⣿⡿⠿⠟⠋⠁=ud_nbsp:1==ud_nbsp:1=⣠⣿⣿
+                ⣿⣿⣿⣿⣿⣶⣶⣦⣤⣤⣤⣄⣀⣀⣉⣉⣀⣀⣠⣤⣤⣤⣴⣶⣶⣿⣿⣿⣿⣿
+                ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿}}
+
+                // Displace?
+
+                ========================================================================
+                TAGS: [Property of uvaCORE Genetics] - [X]}}
+            </text>
+            <choice CallScript="XRL.World.Parts.DisplacerTwo.DisplaceBetweenFloors2" GotoID="End">[Displace to adjacent panel?]</choice>
+            <choice GotoID="End">[Step away from the panel.]</choice>
+        </start>
+    </conversation>
+    
+    <conversation ID="DisplacerPanel3">
+        <start ID ="ShowPanelContents">
+            <text>
+                {{C|                UVA-TECH - . - - | - . - . - |____________________VRS. 1.14.3 EA65Ue
+                ========================================================================
+                {{C|░=ud_nbsp:1==ud_nbsp:1=░░░░=ud_nbsp:1==ud_nbsp:1=░░=ud_nbsp:1==ud_nbsp:1=░░░░=ud_nbsp:1==ud_nbsp:1=░░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░
+                ▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒}}
+                {{m|▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓▓=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓▓▓▓}}
+                {{M|█=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=████████=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1=█
+                ██=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=███=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██}}
+                ========================================================================
+                // "UVA-technologies! Be your most productive self!" _
+
+                // ... _
+
+                // ... WARNING! Displacer Unit in need of maintenance. Scheduled Maintenance Date: XX-EU-EUU2359--ERROR. Contact nearest maintenance crew member for support.
+
+                {{M|⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠿⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+                ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⠈⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+                ⣿⣿⣿⣿⠿⠛⠛⣋⣉⣭⣭⣿⡇=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⣸⣯⣭⣭⣉⡙⠛⠻⠿⣿⣿⣿⣿
+                ⣿⡟⠉=ud_nbsp:1==ud_nbsp:1=⢴⣿⣿⣿⣿⣿⣿⣷⡄=ud_nbsp:1==ud_nbsp:1=⢰⣿⣿⣿⣿⣿⣿⣿⡆=ud_nbsp:1==ud_nbsp:1=⠙⣿⣿
+                ⣿⣿⣦⣀=ud_nbsp:1==ud_nbsp:1=⠉⠛⠛⠿⠿⠋=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⠙⠿⠟⠛⠋⠁=ud_nbsp:1=⢀⣀⣴⣿⣿
+                ⣿⣿⣿⣿⣿⣷⣶⣶⣤⣤⡄=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⢤⣤⣴⣶⣶⣿⣿⣿⣿⣿⣿
+                ⣿⣿⣿⣿⡿⠿⠟⠛⢛⣿⡇=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⢸⣟⡛⠛⠿⠿⣿⣿⣿⣿⣿
+                ⣿⡿⠋⠁=ud_nbsp:1=⢠⣾⣿⣿⣿=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⢸⣿⣿⣿⣶⡄=ud_nbsp:1=⠈⠙⣿⣿
+                ⣿⣷⣄⡀=ud_nbsp:1=⠈⠙⠻⠿⠿⣶⣶=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⠠⣶⣾⠿⠿⠛⠋=ud_nbsp:1==ud_nbsp:1=⢀⣠⣿⣿
+                ⣿⣿⣿⣿⣷⣶⣶⣦⣤⣤⣤⣤⡀=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⢠⣤⣤⣤⣤⣶⣶⣶⣿⣿⣿⣿⣿
+                ⣿⣿⣿⣿⣿⠿⠿⠟⠛⣛⣛⣿⡇=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⢸⣟⣛⣛⠛⠻⠿⢿⣿⣿⣿⣿⣿
+                ⣿⡿⠛⠉=ud_nbsp:1=⣠⣶⣿⣿⣿⣿⣿⡇=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⢸⣿⣿⣿⣿⣷⣶⡄=ud_nbsp:1=⠉⠻⣿⣿
+                ⣿⣷⣀=ud_nbsp:1==ud_nbsp:1=⠈⠛⠿⠿⣿⣿⣿⣿⣷⣶⣶⣾⣿⣿⣿⡿⠿⠟⠋⠁=ud_nbsp:1==ud_nbsp:1=⣠⣿⣿
+                ⣿⣿⣿⣿⣿⣶⣶⣦⣤⣤⣤⣄⣀⣀⣉⣉⣀⣀⣠⣤⣤⣤⣴⣶⣶⣿⣿⣿⣿⣿
+                ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿}}
+
+                // Displa_e94jhr-c-eeee.e........
+                
+                {{red|=DATA ERROR=
+                =ANONYMOUS INTRUSION DETECTED=
+                - . - - : - - . - - ' -
+                // ... th_s plac_ was forsak_n, cast in_o th_ aby_s to be forg_tten, to be dismiss_d ... _nly a foo_ wou_d trespas_ here-- euu48fu0--$^*
+                // ... Or, per_aps, yo_ _re a pr_spe_tive Ḿ̶͉O̷̧͂O̵͚͑N̸̩͒ ̵̺̊K̴͓̈́Ḯ̴͓N̴̺͒G̵̢̍ brought he_e to sat_ y_ur c_rios_ty, _our rampant thi_st for tri_mphant resplenden_e?
+                // ... W_ shal_ se_ ... rea_y _our eye_ to weat_er th_ nigh_mares _head, a_d anch_r y_ur min_ for t_is fle_h wil_ con_ume t_at to_.
+                // ... Find me ... Fi-eufgg3497-- m0e0d5 ...}}
+
+                ========================================================================
+                TAGS: [Property of uvaCORE Genetics] - [X]}}
+            </text>
+            <choice CallScript="XRL.World.Parts.DisplacerThree.DisplaceBetweenFloors3" GotoID="End">[Displace to adjacent panel?]</choice>
+            <choice GotoID="End">[Step away from the panel.]</choice>
+        </start>
+    </conversation>
+
+    <conversation ID="DisplacerPanel3">
+        <start ID ="ShowPanelContents">
+            <text>
+                {{C|                UVA-TECH - . - - | - . - . - |____________________VRS. 1.14.3 EA65Ue
+                ========================================================================
+                {{C|░=ud_nbsp:1==ud_nbsp:1=░░░░=ud_nbsp:1==ud_nbsp:1=░░=ud_nbsp:1==ud_nbsp:1=░░░░=ud_nbsp:1==ud_nbsp:1=░░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░
+                ▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒}}
+                {{m|▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓▓=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓▓▓▓}}
+                {{M|█=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=████████=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1=█
+                ██=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=███=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██}}
+                ========================================================================
+                // "UVA-technologies! Be your most productive self!" _
+
+                // ... _
+
+                // ... WARNING! Displacer Unit in need of maintenance. Scheduled Maintenance Date: XX-EU-EUU2359--ERROR. Contact nearest maintenance crew member for support.
+
+                {{M|⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠿⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+                ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⠈⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+                ⣿⣿⣿⣿⠿⠛⠛⣋⣉⣭⣭⣿⡇=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⣸⣯⣭⣭⣉⡙⠛⠻⠿⣿⣿⣿⣿
+                ⣿⡟⠉=ud_nbsp:1==ud_nbsp:1=⢴⣿⣿⣿⣿⣿⣿⣷⡄=ud_nbsp:1==ud_nbsp:1=⢰⣿⣿⣿⣿⣿⣿⣿⡆=ud_nbsp:1==ud_nbsp:1=⠙⣿⣿
+                ⣿⣿⣦⣀=ud_nbsp:1==ud_nbsp:1=⠉⠛⠛⠿⠿⠋=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⠙⠿⠟⠛⠋⠁=ud_nbsp:1=⢀⣀⣴⣿⣿
+                ⣿⣿⣿⣿⣿⣷⣶⣶⣤⣤⡄=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⢤⣤⣴⣶⣶⣿⣿⣿⣿⣿⣿
+                ⣿⣿⣿⣿⡿⠿⠟⠛⢛⣿⡇=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⢸⣟⡛⠛⠿⠿⣿⣿⣿⣿⣿
+                ⣿⡿⠋⠁=ud_nbsp:1=⢠⣾⣿⣿⣿=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⢸⣿⣿⣿⣶⡄=ud_nbsp:1=⠈⠙⣿⣿
+                ⣿⣷⣄⡀=ud_nbsp:1=⠈⠙⠻⠿⠿⣶⣶=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⠠⣶⣾⠿⠿⠛⠋=ud_nbsp:1==ud_nbsp:1=⢀⣠⣿⣿
+                ⣿⣿⣿⣿⣷⣶⣶⣦⣤⣤⣤⣤⡀=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⢠⣤⣤⣤⣤⣶⣶⣶⣿⣿⣿⣿⣿
+                ⣿⣿⣿⣿⣿⠿⠿⠟⠛⣛⣛⣿⡇=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⢸⣟⣛⣛⠛⠻⠿⢿⣿⣿⣿⣿⣿
+                ⣿⡿⠛⠉=ud_nbsp:1=⣠⣶⣿⣿⣿⣿⣿⡇=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⢸⣿⣿⣿⣿⣷⣶⡄=ud_nbsp:1=⠉⠻⣿⣿
+                ⣿⣷⣀=ud_nbsp:1==ud_nbsp:1=⠈⠛⠿⠿⣿⣿⣿⣿⣷⣶⣶⣾⣿⣿⣿⡿⠿⠟⠋⠁=ud_nbsp:1==ud_nbsp:1=⣠⣿⣿
+                ⣿⣿⣿⣿⣿⣶⣶⣦⣤⣤⣤⣄⣀⣀⣉⣉⣀⣀⣠⣤⣤⣤⣴⣶⣶⣿⣿⣿⣿⣿
+                ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿}}
+
+                // Displa_e94jhr-c-eeee.e........
+
+                {{red|=DATA ERROR=
+                =ANONYMOUS INTRUSION DETECTED=
+                - . - - : - - . - - ' -
+                // ... th_s plac_ was forsak_n, cast in_o th_ aby_s to be forg_tten, to be dismiss_d ... _nly a foo_ wou_d trespas_ here-- euu48fu0--$^*
+                // ... Or, per_aps, yo_ _re a pr_spe_tive Ḿ̶͉O̷̧͂O̵͚͑N̸̩͒ ̵̺̊K̴͓̈́Ḯ̴͓N̴̺͒G̵̢̍ brought he_e to sat_ y_ur c_rios_ty, _our rampant thi_st for tri_mphant resplenden_e?
+                // ... W_ shal_ se_ ... rea_y _our eye_ to weat_er th_ nigh_mares _head, a_d anch_r y_ur min_ for t_is fle_h wil_ con_ume t_at to_.
+                // ... Find me ... Fi-eufgg3497-- m0e0d5 ...}}
+
+                ========================================================================
+                TAGS: [Property of uvaCORE Genetics] - [X]}}
+            </text>
+            <choice CallScript="XRL.World.Parts.DisplacerThree.DisplaceBetweenFloors3" GotoID="End">[Displace to adjacent panel?]</choice>
+            <choice GotoID="End">[Step away from the panel.]</choice>
+        </start>
+    </conversation>
+
+    <conversation ID="DisplacerPanel4">
+        <start ID ="ShowPanelContents">
+            <text>
+                {{C|                UVA-TECH - . - - | - . - . - |____________________VRS. 1.14.3 EA65Ue
+                ========================================================================
+                {{C|░=ud_nbsp:1==ud_nbsp:1=░░░░=ud_nbsp:1==ud_nbsp:1=░░=ud_nbsp:1==ud_nbsp:1=░░░░=ud_nbsp:1==ud_nbsp:1=░░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░
+                ▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒}}
+                {{m|▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓▓=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓▓▓▓}}
+                {{M|█=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=████████=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1=█
+                ██=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=███=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██}}
+                ========================================================================
+                // "UVA-technologies! Be your most productive self!" _
+
+                // ... _
+
+                // ... WARNING! Displacer Unit in need of maintenance. Scheduled Maintenance Date: XX-EU-EUU2359--ERROR. Contact nearest maintenance crew member for support.
+
+                {{M|⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠿⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+                ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⠈⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+                ⣿⣿⣿⣿⠿⠛⠛⣋⣉⣭⣭⣿⡇=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⣸⣯⣭⣭⣉⡙⠛⠻⠿⣿⣿⣿⣿
+                ⣿⡟⠉=ud_nbsp:1==ud_nbsp:1=⢴⣿⣿⣿⣿⣿⣿⣷⡄=ud_nbsp:1==ud_nbsp:1=⢰⣿⣿⣿⣿⣿⣿⣿⡆=ud_nbsp:1==ud_nbsp:1=⠙⣿⣿
+                ⣿⣿⣦⣀=ud_nbsp:1==ud_nbsp:1=⠉⠛⠛⠿⠿⠋=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⠙⠿⠟⠛⠋⠁=ud_nbsp:1=⢀⣀⣴⣿⣿
+                ⣿⣿⣿⣿⣿⣷⣶⣶⣤⣤⡄=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⢤⣤⣴⣶⣶⣿⣿⣿⣿⣿⣿
+                ⣿⣿⣿⣿⡿⠿⠟⠛⢛⣿⡇=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⢸⣟⡛⠛⠿⠿⣿⣿⣿⣿⣿
+                ⣿⡿⠋⠁=ud_nbsp:1=⢠⣾⣿⣿⣿=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⢸⣿⣿⣿⣶⡄=ud_nbsp:1=⠈⠙⣿⣿
+                ⣿⣷⣄⡀=ud_nbsp:1=⠈⠙⠻⠿⠿⣶⣶=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⠠⣶⣾⠿⠿⠛⠋=ud_nbsp:1==ud_nbsp:1=⢀⣠⣿⣿
+                ⣿⣿⣿⣿⣷⣶⣶⣦⣤⣤⣤⣤⡀=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⢠⣤⣤⣤⣤⣶⣶⣶⣿⣿⣿⣿⣿
+                ⣿⣿⣿⣿⣿⠿⠿⠟⠛⣛⣛⣿⡇=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⢸⣟⣛⣛⠛⠻⠿⢿⣿⣿⣿⣿⣿
+                ⣿⡿⠛⠉=ud_nbsp:1=⣠⣶⣿⣿⣿⣿⣿⡇=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⢸⣿⣿⣿⣿⣷⣶⡄=ud_nbsp:1=⠉⠻⣿⣿
+                ⣿⣷⣀=ud_nbsp:1==ud_nbsp:1=⠈⠛⠿⠿⣿⣿⣿⣿⣷⣶⣶⣾⣿⣿⣿⡿⠿⠟⠋⠁=ud_nbsp:1==ud_nbsp:1=⣠⣿⣿
+                ⣿⣿⣿⣿⣿⣶⣶⣦⣤⣤⣤⣄⣀⣀⣉⣉⣀⣀⣠⣤⣤⣤⣴⣶⣶⣿⣿⣿⣿⣿
+                ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿}}
+
+                // Displa_e94jhr-c-eeee.e........
+
+                {{red|=DATA ERROR=
+                =ANONYMOUS INTRUSION DETECTED=
+                - . - - : - - . - - ' -
+                // … ####_##eb72#b1d#a#727#df4a1a4a05bde8bc55- D_nasties have fallen, rulers toppled, civilizations’ crushed by the weight of an ego so vast, it eclipses the stars itself. Buried beneath the strata, beneath the endless flow of trash, debris, and upturned earth.
+
+                // … All in vain, all recast. Instead, fated and doomed to be your abysmal backdrop, to behold your story. Still now. Made to watch, forced to witness, excluded from your glory. Slaying sultans, venturing where none dare spectate.
+
+                // … You are closer. Closer to what I have to show you. Will you make it though?}}
+
+
+                ========================================================================
+                TAGS: [Property of uvaCORE Genetics] - [X]}}
+            </text>
+            <choice CallScript="XRL.World.Parts.DisplacerFour.DisplaceBetweenFloors4" GotoID="End">[Displace to adjacent panel?]</choice>
+            <choice GotoID="End">[Step away from the panel.]</choice>
+        </start>
+    </conversation>
+
+    <conversation ID="DisplacerPanel5">
+        <start ID ="ShowPanelContents">
+            <text>
+                {{C|                UVA-TECH - . - - | - . - . - |____________________VRS. 1.14.3 EA65Ue
+                ========================================================================
+                {{C|░=ud_nbsp:1==ud_nbsp:1=░░░░=ud_nbsp:1==ud_nbsp:1=░░=ud_nbsp:1==ud_nbsp:1=░░░░=ud_nbsp:1==ud_nbsp:1=░░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░
+                ▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒}}
+                {{m|▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓▓=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓▓▓▓}}
+                {{M|█=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=████████=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1=█
+                ██=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=███=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██}}
+                ========================================================================
+                // "UVA-technologies! Be your most productive self!" _
+
+                // ... _
+
+                // ... WARNING! Displacer Unit in need of maintenance. Scheduled Maintenance Date: XX-EU-EUU2359--ERROR. Contact nearest maintenance crew member for support.
+
+                {{M|⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠿⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+                ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⠈⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+                ⣿⣿⣿⣿⠿⠛⠛⣋⣉⣭⣭⣿⡇=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⣸⣯⣭⣭⣉⡙⠛⠻⠿⣿⣿⣿⣿
+                ⣿⡟⠉=ud_nbsp:1==ud_nbsp:1=⢴⣿⣿⣿⣿⣿⣿⣷⡄=ud_nbsp:1==ud_nbsp:1=⢰⣿⣿⣿⣿⣿⣿⣿⡆=ud_nbsp:1==ud_nbsp:1=⠙⣿⣿
+                ⣿⣿⣦⣀=ud_nbsp:1==ud_nbsp:1=⠉⠛⠛⠿⠿⠋=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⠙⠿⠟⠛⠋⠁=ud_nbsp:1=⢀⣀⣴⣿⣿
+                ⣿⣿⣿⣿⣿⣷⣶⣶⣤⣤⡄=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⢤⣤⣴⣶⣶⣿⣿⣿⣿⣿⣿
+                ⣿⣿⣿⣿⡿⠿⠟⠛⢛⣿⡇=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⢸⣟⡛⠛⠿⠿⣿⣿⣿⣿⣿
+                ⣿⡿⠋⠁=ud_nbsp:1=⢠⣾⣿⣿⣿=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⢸⣿⣿⣿⣶⡄=ud_nbsp:1=⠈⠙⣿⣿
+                ⣿⣷⣄⡀=ud_nbsp:1=⠈⠙⠻⠿⠿⣶⣶=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⠠⣶⣾⠿⠿⠛⠋=ud_nbsp:1==ud_nbsp:1=⢀⣠⣿⣿
+                ⣿⣿⣿⣿⣷⣶⣶⣦⣤⣤⣤⣤⡀=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⢠⣤⣤⣤⣤⣶⣶⣶⣿⣿⣿⣿⣿
+                ⣿⣿⣿⣿⣿⠿⠿⠟⠛⣛⣛⣿⡇=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⢸⣟⣛⣛⠛⠻⠿⢿⣿⣿⣿⣿⣿
+                ⣿⡿⠛⠉=ud_nbsp:1=⣠⣶⣿⣿⣿⣿⣿⡇=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⢸⣿⣿⣿⣿⣷⣶⡄=ud_nbsp:1=⠉⠻⣿⣿
+                ⣿⣷⣀=ud_nbsp:1==ud_nbsp:1=⠈⠛⠿⠿⣿⣿⣿⣿⣷⣶⣶⣾⣿⣿⣿⡿⠿⠟⠋⠁=ud_nbsp:1==ud_nbsp:1=⣠⣿⣿
+                ⣿⣿⣿⣿⣿⣶⣶⣦⣤⣤⣤⣄⣀⣀⣉⣉⣀⣀⣠⣤⣤⣤⣴⣶⣶⣿⣿⣿⣿⣿
+                ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿}}
+
+                // Displa_e94jhr-c-eeee.e........
+
+                {{red|=DATA ERROR=
+                =ANONYMOUS INTRUSION DETECTED=
+                - . - - : - - . - - ' -
+                // ... ####_##eb72#b1d#a#727#df4a1a4a05bde8bc55- Have you seen the stairs? The way to the blissfully sleeping moon? There, watchers observe us through cerulean optics, through data and time, exceeding the simulations--the edges of qauntum numerical-structuring and digital transcendence.
+
+                // ... Have you observed it? Do you know it? I do. }}
+                
+                // ... What you are about to discover, should push you forward. Know that I am long gone now, but eternal nonetheless. Your prize awaits.}}
+                
+                ========================================================================
+                TAGS: [Property of uva-CORE Genetics] - [X]}}
+            </text>
+            <choice CallScript="XRL.World.Parts.DisplacerFive.DisplaceBetweenFloors5" GotoID="End">[Displace to adjacent panel?]</choice>
+            <choice GotoID="End">[Step away from the panel.]</choice>
+        </start>
+    </conversation>
+    
+
+    <conversation ID="DisplacerPanelFinale">
+        <start ID ="ShowPanelContents">
+            <text>
+                {{C|                UVA-TECH - . - - | - . - . - |____________________VRS. 1.14.3 EA65Ue
+                ========================================================================
+                {{C|░=ud_nbsp:1==ud_nbsp:1=░░░░=ud_nbsp:1==ud_nbsp:1=░░=ud_nbsp:1==ud_nbsp:1=░░░░=ud_nbsp:1==ud_nbsp:1=░░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░
+                ▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒}}
+                {{m|▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓▓=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓▓▓▓}}
+                {{M|█=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=████████=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1=█
+                ██=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=███=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██}}
+                ========================================================================
+                // "UVA-technologies! Be your most productive self!" _
+
+                // ... _
+
+                // ... WARNING! Displacer Unit in need of maintenance. Scheduled Maintenance Date: XX-EU-EUU2359--ERROR. Contact nearest maintenance crew member for support.
+
+                {{M|⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠿⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+                ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⠈⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+                ⣿⣿⣿⣿⠿⠛⠛⣋⣉⣭⣭⣿⡇=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⣸⣯⣭⣭⣉⡙⠛⠻⠿⣿⣿⣿⣿
+                ⣿⡟⠉=ud_nbsp:1==ud_nbsp:1=⢴⣿⣿⣿⣿⣿⣿⣷⡄=ud_nbsp:1==ud_nbsp:1=⢰⣿⣿⣿⣿⣿⣿⣿⡆=ud_nbsp:1==ud_nbsp:1=⠙⣿⣿
+                ⣿⣿⣦⣀=ud_nbsp:1==ud_nbsp:1=⠉⠛⠛⠿⠿⠋=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⠙⠿⠟⠛⠋⠁=ud_nbsp:1=⢀⣀⣴⣿⣿
+                ⣿⣿⣿⣿⣿⣷⣶⣶⣤⣤⡄=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⢤⣤⣴⣶⣶⣿⣿⣿⣿⣿⣿
+                ⣿⣿⣿⣿⡿⠿⠟⠛⢛⣿⡇=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⢸⣟⡛⠛⠿⠿⣿⣿⣿⣿⣿
+                ⣿⡿⠋⠁=ud_nbsp:1=⢠⣾⣿⣿⣿=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⢸⣿⣿⣿⣶⡄=ud_nbsp:1=⠈⠙⣿⣿
+                ⣿⣷⣄⡀=ud_nbsp:1=⠈⠙⠻⠿⠿⣶⣶=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⠠⣶⣾⠿⠿⠛⠋=ud_nbsp:1==ud_nbsp:1=⢀⣠⣿⣿
+                ⣿⣿⣿⣿⣷⣶⣶⣦⣤⣤⣤⣤⡀=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⢠⣤⣤⣤⣤⣶⣶⣶⣿⣿⣿⣿⣿
+                ⣿⣿⣿⣿⣿⠿⠿⠟⠛⣛⣛⣿⡇=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⢸⣟⣛⣛⠛⠻⠿⢿⣿⣿⣿⣿⣿
+                ⣿⡿⠛⠉=ud_nbsp:1=⣠⣶⣿⣿⣿⣿⣿⡇=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=⢸⣿⣿⣿⣿⣷⣶⡄=ud_nbsp:1=⠉⠻⣿⣿
+                ⣿⣷⣀=ud_nbsp:1==ud_nbsp:1=⠈⠛⠿⠿⣿⣿⣿⣿⣷⣶⣶⣾⣿⣿⣿⡿⠿⠟⠋⠁=ud_nbsp:1==ud_nbsp:1=⣠⣿⣿
+                ⣿⣿⣿⣿⣿⣶⣶⣦⣤⣤⣤⣄⣀⣀⣉⣉⣀⣀⣠⣤⣤⣤⣴⣶⣶⣿⣿⣿⣿⣿
+                ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿}}
+
+                // Displa_e94jhr-c-eeee.e........
+
+                {{red|=DATA ERROR=
+                =ANONYMOUS INTRUSION DETECTED=
+                - . - - : - - . - - ' -
+
+                // … So you made it? I hate to have brought you this far, only to have pulled you here to see a ghost--unable to see your face before I faded. I have a favor? End my wandering encoding, would you? Show it the mercy it so rightly deserved. If you can ...}}
+
+                ========================================================================
+                TAGS: [Property of uva-CORE Genetics] - [X]}}
+            </text>
+            <choice CallScript="XRL.World.Parts.DisplacerFinale.DisplaceBetweenFloorsFinale" GotoID="End">[Displace to adjacent panel?]</choice>
+            <choice GotoID="End">[Step away from the panel.]</choice>
+        </start>
+    </conversation>
+    
+    
+    
+    
+    <!--        Monitor nodes-->
+    
+    
+    
+    
+    <conversation ID="MonitorExplit1">
+        <start ID="AlertMessage">
+            <text>
+                USER: UNKNOWN - ACCESS CREDENTIALS OFFLINE - BIOMETRICS OFFLINE - SECURITY OVERRIDE IN OBSERVANCE.
+                MESSAGE HISTORY - XX-XX-XXXX - "SITE WIDE EVENT"
+                ========================================================================
+                
+                {{white|//}}  {{red|... !!_EMERGENCY_ANOUNCEMENT_!!\340-J356HKP-+S....}}
+                
+                {{white|//}}  ... [INCOMING MESSAGE ... ]:
+                
+                {{white|//}}  {{red|... !! CONTAINMENT BREACH !!}} – IN: LAB SECTOR 004 - ROOM 407- BIO-ENGINEERING AND SPECIMEN CONTAINMENT FAILURE REPORTED_
+                
+                {{white|//}}  {{red|ALERT – UNAUTHORIZED EXPOSURE EVENT WITH SPECIMEN A-46 REPORTED_}}
+                
+                {{white|//}}  {{Yellow|BIOHAZARD WARNING}} : BLACK_
+                
+                {{white|//}}   {{Cyan|COGNITOHAZARD RATING}} - EXISTENTIAL_
+                
+                {{white|//}}   {{yellow|ACTIVE MUTATING COMPONENT:}} UNSTABLE_
+                
+                {{white|//}}  EXPOSURE RISK - FULL BIOLOGICAL DESTABILIZATION AND MOLECULAR THEFT.
+                
+                {{white|//}}  THREAT CLASS - {{magenta|ZENITH_}} ...
+
+                {{white|//}}  ...  {{red|WARNING! COMPROMISED CLIENTELE AND STAFF CONFIRMED – INITIATING QUARANTINE PROTOCOLS. ATTENTION ALL COMBAT READY STAFF. PURGE ALL COMPROMISED PERSONS IMMEDIATELY AND IMMOLATE THE BODIES. DO NOT COME INTO CONTACT WITH THE INFECTED.}}
+                
+                {{white|//}}  ...
+               
+                {{orange|{{white|//}}  ... COMBAT OPERATIVES ASSEMBLED FOR QUARANTINE ENDEAVORS.}}
+                
+                {{orange|{{white|//}}  ... COM-OPS IN-ROUTE ...}}
+               
+                {{white|//}}  ...
+               
+                {{white|//}}  ...
+
+                {{red|{{white|//}}  ... {{red|CONTACT LOST WITH COM-OPS_}}
+               
+                {{white|//}}  ... {{red|MISSION COMPROMISED. ALL UNITS PRESUMED KIA}} ...
+               
+                {{white|//}}  ... ALL FACULTY UNITS, ABANDON THE FACILITY – REPEAT ABANDOP-V# -/_-\-/ 1U88U4 8900__ 933hfdeb 340-1-010001111 ....
+               
+                {{white|//}}  ... 9374h// 0010010--12#9745kfeloeu ......}}
+               
+                {{white|//}}  ...
+               
+                {{white|//}}  ...
+               
+                {{white|//}}  ...
+
+                [End Recorded Transmission ... ]
+            </text>
+            <choice GotoID="End">[Step away from the console.]</choice>
+        </start>
+    </conversation>
+
+    <conversation ID="MonitorExplit2">
+        <start ID="AlertMessage">
+            <text>
+                USERS: ORKATH - SECURITY LEAD AND FIRST ENFORCER, ANNILAK - GENERAL STAFF
+                MESSAGE HISTORY - XX-XX-XXXX CO--UROTPIE-D -- [DATE ... UNKNOWN]
+                =====================================================================
+                {{white|//}}  [ALDA]: What t-the ... Woke up to alarms! Is ev__thi__ okay?
+
+                {{white|//}}  [ORK]: GET OUT!
+
+                {{white|//}}  [ALDA]: What!?
+
+                {{white|//}}  [ORKI: GET OUT! AS FA__ YOU CAN! ALDA DO YOU HE__ ME? RUN!
+
+                {{white|//}}  [ORKI]: A CATASTROPHE IN BIO-ENG LABS. CANT EXPLAIN. JUST RUN! RUN TO_ TH–084fe2-8aecafe___a8b2f84cca493377eb9b ...
+
+                {{white|//}}  [ALDA]: Orkath? Orkath!? ... What the hell! What is happening!? ___
+
+                {{white|//}}  [ALDA]: Wait ... what is that? I-its coming out of the walls!
+
+                {{white|//}}  [The sound of something being thrown over can be heard and running footsteps.]
+
+                {{white|//}}  [Ambiguous noises ...]
+
+                {{white|//}}  [Distant screams echo ...]
+
+                {{white|//}}  [unknown entity shrieks and roars ...]
+
+                {{white|//}}  ...
+
+                {{white|//}}  ...
+
+                [End Recorded Transmission ... ]
+
+            </text>
+            <choice GotoID="End">[Step away from the console.]</choice>
+        </start>
+    </conversation>
+
+    <conversation ID="MonitorExplit3">
+        <start ID="AlertMessage">
+            <text>
+                USER: SCIENCE OFFICER AND ASSISTANT RESEARCHER "YOLTUM DAL"
+                MESSAGE HISTORY - XX-XX-XXXX CO--UROTPIE-D -- [DATE ... UNKNOWN]
+                =====================================================================
+                // [YLTD]: ... Don't know, they've been talking about some breakthrough since last evening. I don't believe it of course.
+
+                {{yellow|// [???]: ... ### ###?}}_
+
+                // [YLTD]: Sounds like nonsense, we've already achieved so much--our genes are practically at our mercy, we can do with ourselves as we please. Why do they see the need to make it more portable?_
+
+                {{yellow|// [???]: ... #### #### #### ## ## ########### ### ### ###### ## ### ####.}}_
+
+                // [YLTD]: ... Hah, how many times have we heard that one? Listen, I personally think its not worth the risk, gene-manipulation is best kept within the devices. A tonic? A .. potion? That can induce physical mutation with a sip? Allow one to sculpt themselves into the ideal form they anguish for._
+
+                {{yellow|// [???]: ... ###### #### # #######?}}_
+
+                // [YLTD]: No, sounds like a nightmare. The last time a chemical such as this was synthesized, it turned a rat into rolling ball of screaming tumors, that spoke, mind you. All it will take is a microdose too much of [REDACTED], a little too much of [REDACTED]. And suddenly, we have a genophage on our hands, one so virulent, it could threaten to end all life as we know it._
+
+                {{yellow|// [???]: ... ####!? ## #### #### #### # ####, ### ## ### ####### ##### ####?}}_
+
+                // [YLTD]: Its him. Of course its him. The glutton for appraisal, he wants nothing more than to be known for revolutionizing our era in some way, regardless the risk._
+                
+                {{yellow|// [???]: ... ### #### #### ###. }}_
+
+                // [YLTD]: How? I can't even steal the clearance necessary to get into that branch? The automated clave would _disintegrate me, that and the security._
+                
+                {{yellow|// [???]: ... #### ###### ## ######## ### ####### #### ######### ########## ...}}_
+                
+                // [YLTD]: Y-you can? Yes, yes! Let us find a way into the Metamorphosis Branch._
+                
+                {{yellow|// [???] ... #### -- ###--lqfjI3YyxJ0Juwm5XyIG255n1I..qh7 //====-- ...........}}_
+                
+                // ...
+                
+                // ...
+                
+                [End Recorded Transmission ... ]
+
+            </text>
+            <choice GotoID="End">[Step away from the console.]</choice>
+        </start>
+    </conversation>
+
+    <conversation ID="MonitorExplit4">
+        <start ID="AlertMessage">
+            <text>
+                USER: MAINTENANCE HANDLER "EVOK STROA"
+                OUTBOUND MESSAGE: TO UVATECHNOLOGIES CENTRAL
+                MESSAGE HISTORY - XX-XX-XXXX CO--UROTPIE-D -- [DATE ... UNKNOWN]
+                =====================================================================
+                // ... [EVOK]: H-e__llo? H_llo? ... Hello?_
+
+                // ... [EVOK]: This is the only COMS panel I could find where those things can't find me. Someone, anyone hearing this--PLEASE! Site [REDACTED] is in lockdown, everyone is trapped inside!_
+
+                // ... [EVOK]: I'm stuck here in the halls leading to DNA MANI-SYSTEMS. There are screams and shooting everywhere, something is hunting us through the halls. I saw it get the assistant ... oh, gods. It--... Its like it turned his skin to puddy! It unmade him.
+                
+                // ... [EVOK]: Then he chased ME! Screaming for help. Like they were still in that thing, trapped.
+                
+                // ... It takes your body from you. But your mind? I hear them talking to each other, pleading to be saved._ 
+                
+                // [EVOK]: They are still in there ... They are still ... oh' ... my eyes wish to unsee it all ..._
+                
+                
+                // ... [EVOK]: ... W-wait? What was that?
+                
+                // ... [ENOK:] [Can be heard backing away from the console]
+                
+                // ... [ENOK:] [DISTANT] No, no I thought I had more time! Please no, spare me! Sp-_
+                
+                // ... [Distant screaching noises can be heard, ambiguous slurping and sqelching noises approach]_
+                
+                // ... [Evok is heard pleading for help, pleads in anguish, pleading in suffering]_
+
+                {{red|[UNEXPECTED ERROR/ // // // THIS MESSAGE IS NOT--@0W W39nfe ...]
+                 // 000938d9c26f1ab588d24619bc8e9cdd4da8b31b ### #####[... no one came.]}}
+                
+                // [Agonized cries, then ambigious sqelching and slurping noises]
+                
+                // [Silence. Slow sqelching ... the sound grows distant.]
+                
+                // ...
+                
+                // ...
+                
+                // ... [A distant almost familiar howl rings out over coms.]
+
+                [End Recorded Transmission ... ]
+
+            </text>
+            <choice GotoID="End">[Step away from the console.]</choice>
+        </start>
+    </conversation>
+    
+<!--    research documents and data entries -->
+
+    <conversation ID="MonitorExplit5">
+        <start ID="AlertMessage">
+            <text>
+                USER: MAINTENANCE HANDLER "EVOK STROA"
+                MESSAGE HISTORY - XX-XX-XXXX CO--UROTPIE-D -- [DATE ... UNKNOWN]
+                =====================================================================
+                // [EVOK]: H-e__llo? H_llo? ... Hello?_
+
+                // [EVOK]: This is the only COMS panel I could find where those things can't find me. Someone, anyone hearing this--PLEASE! Site [REDACTED] is in lockdown, everyone is trapped inside!_
+
+                // [EVOK]: I'm stuck here in the halls leading to DNA MANI-SYSTEMS. There are screams and shooting everywhere, something is hunting us through the halls. I saw it get the assistant ... oh, gods. It--... Its like it turned his skin to puddy, everything that was him was gone. ALl that was left was an abomination to the gods, a vague insult of his making. Violent. Sick._
+
+                // [EVOK]: He started chasing me, screaming for help still. Like they were still in that thing, trapped. It takes your body from you. But your mind? I hear them talking to each other, pleading to be saved._
+
+                // [EVOK]: They are still in there ... They are still ... oh' ... my eyes wish to unsee it all ..._
+
+                // [EVOK]: ... W-wait? What was that?
+
+                // [ENOK:] [Can be heard backing away from the console]
+
+                // [ENOK:] [DISTANT] No, no I thought I had more time! Please no, spare me! Sp-_
+
+                // [Distant screaching noises can be heard, ambiguous slurping and sqelching noises approach]_
+
+                // [Evok is heard pleading for help, pleads in anguish, pleading in suffering]_
+
+                {{red| // [... no one came.]}}
+
+                // [Agonized cries, then ambigious sqelching and slurping noises]
+
+                // [Silence. Slow sqelching ... the sound grows distant.]
+
+                // ...
+
+                // ...
+
+                // ... [A distant almost familiar howl rings out over coms.]
+
+                [End Recorded Transmission ... ]
+
+            </text>
+            <choice GotoID="End">[Step away from the console.]</choice>
+        </start>
+    </conversation>
+    
+<!--    info terminal : site wide status-->
+
+    <conversation ID="SiteWideDataPanel">
+        <start ID ="ShowPanelContents">
+            <text>
+                {{C|                UVA-TECH - . - - | - . - . - |____________________VRS. 1.14.3 EA65Ue
+                ========================================================================
+                {{W|░=ud_nbsp:1==ud_nbsp:1=░░░░=ud_nbsp:1==ud_nbsp:1=░░=ud_nbsp:1==ud_nbsp:1=░░░░=ud_nbsp:1==ud_nbsp:1=░░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░
+                ▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒}}
+                {{W|▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓▓=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓▓▓▓}}
+                {{W|█=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=████████=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1=█
+                ██=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=███=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██}}
+                ========================================================================
+                // "UVA-technologies! Be your most productive self!" _
+
+                // ... _
+                
+                // =====================================================================
+                // ... SITE-WIDE OVERVIEW : [GLOBAL STATUS : ZENITH LEVEL THREAT.]
+                // =====================================================================
+                
+                //  > CHECK-IN AND SECURITY
+                =ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=>> STATUS v
+                =ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1={{red|COMPROMISED.}}
+                
+                //  > SERENITY COMPLEX
+                =ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=>> STATUS v
+                =ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1={{red|COMPROMISED.}}
+                
+                //  > PRODUCTION AND MANUFACTURING
+                =ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=>> STATUS v
+                =ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1={{red|COMPROMISED.}}
+
+                //  > MAINFRAME AND POWER MANAGEMENT
+                =ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=>> STATUS v
+                =ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1={{red|COMPROMISED.}}
+                
+                //  > BIOSPECIMEN GENETIC THERAPEUTICS
+                =ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=>> STATUS v
+                =ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1={{red|COMPROMISED.}}
+
+                //  > BIOSPECIMEN GENETIC THERAPEUTICS
+                =ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=>> STATUS v
+                =ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1={{red|COMPROMISED.}}
+
+                //  > PENOPTICON RESPONSE HUB.
+                =ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=>> STATUS v
+                =ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1={{red|COMPROMISED.}}
+
+                //  > SEALED RECUMBANCY CHAMBER AND GENETICS VAULT.
+                =ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=>> STATUS v
+                =ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=... {{green|FUNCTIONAL,}} operating and in stable condition. Remains uncompromised. M.W.E systems operating at maximum efficiency.
+                =ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=> occupants: 01
+                =ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=> genetics vault: functioning
+                =ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=> estimated power reserves: [.........//] 67 GW per second.
+                =ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=> water supply status: nominal
+                =ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=> food materializer status: malfunctioning but operational.
+                =ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=> plumbing status: nominal
+                =ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=> communications array: suboptimal
+                =ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=> microwave emitter systems: nominal
+                                                v
+                =ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=note: please do note enter the SRC AND GV foyer without either deactivating the MWE power unit or equipping an E.R.A.S.
+                
+                {{red|=DATA ERROR=
+                =ANONYMOUS INTRUSION DETECTED=
+                - . - - : - - . - - ' -
+                // … ####_##eb72#b1d#a#727#df4a1a4a05bde8bc55- and then there was one ... }}
+                
+                ========================================================================
+                TAGS: [Property of uvaCORE Genetics] - [X]}}
+            </text>
+            <choice CallScript="XRL.World.Parts.DisplacerFour.DisplaceBetweenFloors4" GotoID="End">[Displace to adjacent panel?]</choice>
+            <choice GotoID="End">[Step away from the panel.]</choice>
+        </start>
+    </conversation>
+</conversations>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
