@@ -5,6 +5,7 @@ using XRL.Names;
 using XRL.World.Parts;
 using XRL.World.ZoneBuilders;
 using Genkit;
+using Wingytone.Systems;
 
 namespace XRL.World.WorldBuilders
 {
@@ -17,14 +18,16 @@ namespace XRL.World.WorldBuilders
 
         public override void OnAfterBuild(JoppaWorldBuilder Builder)
         {
-            for (int i = 0; i < 80000; i++)
-            {
-                var randomZoneId = ZoneID.Assemble("JoppaWorld",
-                    new Location2D(Rules.Stat.Random(0, 239), Rules.Stat.Random(0, 74)));
+            // for (int i = 0; i < 80000; i++)
+            // {
+            //     // var randomZoneId = ZoneID.Assemble("JoppaWorld",
+            //     //     new Location2D(Rules.Stat.Random(0, 239), Rules.Stat.Random(0, 74)));
+            //     //
+            //     // The.ZoneManager.AddZonePostBuilder(randomZoneId, "wmPlaceEggsBuilder");
+            //     // MetricsManager.LogInfo($"Spawning eggs in {randomZoneId}");
+            // }
 
-                The.ZoneManager.AddZonePostBuilder(randomZoneId, "wmPlaceEggsBuilder");
-                // MetricsManager.LogInfo($"Spawning eggs in {randomZoneId}");
-            }
+            The.Game.RequireSystem<EggSpawner>();
         }
     }
 }

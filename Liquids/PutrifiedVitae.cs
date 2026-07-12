@@ -155,14 +155,14 @@ namespace XRL.Liquids
                 else if (num < 30)
                 {
                     Render.RenderString = "~";
-                    Render.ColorString = "&K";
+                    Render.ColorString = "^k";
                     Render.DetailColor = "a";
                 }
                 else if (num < 45)
                 {
                     Render.RenderString = "\t";
-                    Render.ColorString = "&a";
-                    Render.DetailColor = DarkerCrimsonString;
+                    Render.ColorString = "^k";
+                    Render.DetailColor = "a";
                 }
                 else if (num < 59)
                 {

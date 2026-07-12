@@ -13,5 +13,12 @@
                   MaxSelected="1" Cost="1" Name="Amalgamate Infection" DisplayName="Amalgamate Infection" ></mutation>
     </category>
 
+    <category Name="Mental">
+        <mutation BearerDescription="those coldly interject" Exclusions="" Class="EatersInterdiction"
+                  MaxSelected="1" Cost="3" Name="Cryo Ray" DisplayName="Eaters Cryo-Ray"/>
+        <mutation BearerDescription="those kindle great flames" Exclusions="" Class="EatersKindle"
+                  MaxSelected="1" Cost="1" Name="Spit Sulfur" DisplayName="Spit Sulfur"/>
+    </category>
+
 
 </mutations>

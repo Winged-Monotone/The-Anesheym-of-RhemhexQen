@@ -21,7 +21,9 @@
 
             foreach (Cell C in eZone)
             {
-                if (!C.HasObjectWithPart("Floor"))
+                var Floor = C.GetFirstObjectThatInheritsFrom("Floor");
+                
+                if (Floor == null )
                     C.AddObject("Gore Mess");
             }
 

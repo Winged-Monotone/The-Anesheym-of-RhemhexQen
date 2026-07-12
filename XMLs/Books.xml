@@ -310,27 +310,105 @@ If these idiots can maintain focus for a moment, we might actually finish this p
         </page>
     </book>
 
-    <book ID="AfrNieAscension5" Title="FOOTAGE 27 - LEAD PROF - SE.#####">
+    <!--    OPERATION FOOTAGE -->
+
+    <book ID="VideoFootage-RatConversion" Title="FOOTAGE 387 - SERUM TESTING - X32">
         <page>
-            USERS: DR. AFRON NIELST - LEAD SCIENCE OFFICER
+            USERS: UNKNOWN - [IN-CAGE VIDEO RECORDING]]
             MESSAGE HISTORY - XX-XX-XXXX CO--UROTPIE-D -- [DATE ... UNKNOWN]
             =====================================================================
 
-            [AFNI]:// Personal log. [The specimen is asking for more and more sustenance, to grow more and more. He has been feeding it to the point the creature has grown large enough to walk about the table. The specimen pushes him to let grow more, that it's following his directive, that all it wants is to grow. He gets a sick pleasure from this, feeling like he is leading it to greatness and that it's his slave. Hint that he had DR MALEN removed and presumably killed. He mentions tomorrow he is going to create the serum.]
+            [Video footage of a rat being injected]
+        </page>
+    </book>
+
+    <book ID="VideoFootage-HumanConversion" Title="FOOTAGE 1622 - SERUM TESTING - ALPHA">
+        <page>
+            USERS: UNKNOWN - [MEDICAL ROOM VIDEO RECORDING]]
+            MESSAGE HISTORY - XX-XX-XXXX CO--UROTPIE-D -- [DATE ... UNKNOWN]
+            =====================================================================
+
+            [Video of a person being strapped to the bed and injected with incomplete vitae. You note, there are hours upon hours worth of content in it.]
+
+        </page>
+    </book>
+
+    <book ID="VideoFootage-CrimsonIncident" Title="FOOTAGE 7822 - LEAD PROF &amp; SCIENCE OFFICER XEV. - BETA">
+        <page>
+            USERS: UNKNOWN - [IN-CAGE VIDEO RECORDING]]
+            MESSAGE HISTORY - XX-XX-XXXX CO--UROTPIE-D -- [DATE ... UNKNOWN]
+            =====================================================================
+
+            [The Crimson Incident is when the Lead PROF Nielst and DR Xeveye attempt to create the imperfect VITAE SERUM. Xeveye fails, creating the first of the amalgam, which using the serum consumes Xeveye gaining enough biomass to continue spreading. It surrounds]
         </page>
     </book>
     
-    <!--    OPERATION FOOTAGE -->
-    
-            <!--    Rat Injection Fluid. -->
-    
-                    [Video footage of a rat being injected]
+    <!--    DR GRIMSDOTTIR -->
 
-             <!--    Human Injection Fluid. -->
+    <book ID="GRIMSDOTTIRENTRY1" Title="PERSONAL LOG - SCIENCE OFFICER MORHAN GRIMSDOTTIR - OPENING DAY">
+        <page>
+            USERS: MORHAN GRIMSDOTTIR
+            MESSAGE HISTORY - XX-XX-XXXX CO--UROTPIE-D -- [DATE ... UNKNOWN]
+            =====================================================================
+
+            [into her, why is she here, what is trying to accomplish, her opinions about the crew, specifically liking Meh]
+        </page>
+    </book>
+
+    <book ID="GRIMSDOTTIRENTRY2" Title="PERSONAL LOG - SCIENCE OFFICER MORHAN GRIMSDOTTIR - OPENING DAY">
+        <page>
+            USERS: MORHAN GRIMSDOTTIR
+            MESSAGE HISTORY - XX-XX-XXXX CO--UROTPIE-D -- [DATE ... UNKNOWN]
+            =====================================================================
+
+            [daily routine info, no she doesn't like to write logs like everyone else, so she tries to keep it brief. Note that she was there when Doctor Alton got on Meh for not wanting to rush chemical synthesis, Grim at this point hadn't put much thought into the danger. But note that now its on her mind and that she is a little bit worried. ]
+        </page>
+    </book>
+
+    <book ID="GRIMSDOTTIRENTRY3" Title="PERSONAL LOG - SCIENCE OFFICER MORHAN GRIMSDOTTIR - OPENING DAY">
+        <page>
+            USERS: MORHAN GRIMSDOTTIR
+            MESSAGE HISTORY - XX-XX-XXXX CO--UROTPIE-D -- [DATE ... UNKNOWN]
+            =====================================================================
+
+            [Morhan secretly meets with Mehrashir and a few others and talk about the dangers of what was going on and their agreeance to stop the progress on the synthezation. [Consider making an actual chat log of this encounter too.]
+        </page>
+    </book>
+
+    <book ID="GRIMSDOTTIRENTRY4" Title="PERSONAL LOG - SCIENCE OFFICER MORHAN GRIMSDOTTIR - THE MEET">
+        <page>
+            USERS: MORHAN GRIMSDOTTIR
+            MESSAGE HISTORY - XX-XX-XXXX CO--UROTPIE-D -- [DATE ... UNKNOWN]
+            =====================================================================
+
+            [Morhan mentions that they've been found out, she's been separated and forced by the military to work on the serum, she blames Xeveye. The militarya re watching her, she mentions being afraid. Mar]
+        </page>
+    </book>
+
+    <book ID="GRIMSDOTTIRENTRY5" Title="PERSONAL LOG - SCIENCE OFFICER MORHAN GRIMSDOTTIR - THE MEET">
+    <page>
+        USERS: MORHAN GRIMSDOTTIR
+        MESSAGE HISTORY - XX-XX-XXXX CO--UROTPIE-D -- [DATE ... UNKNOWN]
+        =====================================================================
+
+        [Morhan seems jumpy and scared, on edge, something is about to happen. Her eventual death.]
+    </page>
+</book>
+
+<!--Grimsdotter's Death - Camera Footage-->
+
+    <book ID="MehsDiary" Title="PERSONAL FILE > MEHRISHIR > JOURNAL">
+        <page>
+        LOCATION: RECUMBANCY CHAMBER - ARCOLOGY DESIGNATION "007";
+            DATE: XX-XX-UE45 ERROR --- ...
+            =====================================================================
+
+            intro into meh being locked inside the chamber, mention all its accommodations, that Meh feels sick, that she just needs to wait for the QUARANTINE response team 
+        </page>
+    </book>
     
-                    [Video of a person being strapped to the bed and injected with incomplete vitae. You note, there are hours upon hours worth of content in it.]
     
-                <!--    The Crimson Incident-->
     
-                    [The Crimson Incident is when the Lead PROF Nielst and DR Xeveye attempt to create the VITAE SERUM. Xeveye fails, creating the first of the amalgam, which using the serum consumes Xeveye gaining enough biomass to continue spreading. it surrounds ]
+    
+    
 </books>

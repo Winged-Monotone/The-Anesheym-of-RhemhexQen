@@ -1,8 +1,47 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <bodies>
 
+
     <bodyparttypes>
-        <bodyparttype Type="Skin Slink" Description="skin slink" Appendage="true" LimbBlueprintDefault="AmalgamSkinSlink"/>
+        <bodyparttype Type="Skin Slink" Description="skin slink" Appendage="true"
+                      LimbBlueprintDefault="AmalgamSkinSlink"/>
     </bodyparttypes>
     
-    </bodies>
+    <bodyparttypevariants>
+        <bodyparttypevariant VariantOf="Head" Type="Doll-Like Biocybernetic Head" Category="Cybernetic"/>
+        <bodyparttypevariant VariantOf="Face" Type="Fox-Eyed Biocybernetic Face" Category="Plastic"/>
+        <bodyparttypevariant VariantOf="Back" Type="Doll-Like Biocybernetic Spine" Category="Cybernetic"/>
+        <bodyparttypevariant VariantOf="Arm" Type="Doll-Like Biocybernetic Arm" Category="Cybernetic"/>
+        <bodyparttypevariant VariantOf="Hand" Type="Doll-Like Biocybernetic Hand" Category="Plastic"/>
+        <bodyparttypevariant VariantOf="Hands" Type="Doll-Like Biocybernetic Hands" Category="Plastic"/>
+        <bodyparttypevariant VariantOf="Feet" Type="Doll-Like Biocybernetic Legs" Category="Cybernetic"/>
+    </bodyparttypevariants>
+
+    <anatomies>
+        <anatomy Name="Doll-Like Shell">
+            <part Type="Doll-Like Biocybernetic Head">
+                <part Type="Fox-Eyed Biocybernetic Face"/>
+            </part>
+            <part Type="Doll-Like Biocybernetic Spine"/>
+            <part Type="Doll-Like Biocybernetic Arm" Laterality="Right">
+                <part Type="Doll-Like Biocybernetic Hand" Laterality="Right" DefaultBehavior="MetalFist"
+                      SupportsDependent="Doll-Like Biocybernetic Hands"/>
+            </part>
+            <part Type="Doll-Like Biocybernetic Arm" Laterality="Left">
+                <part Type="Doll-Like Biocybernetic Hand" Laterality="Left" DefaultBehavior="MetalFist"
+                      SupportsDependent="Doll-Like Biocybernetic Hands"/>
+            </part>
+            <part Type="Missile Weapon" Laterality="Right"/>
+            <part Type="Missile Weapon" Laterality="Left"/>
+
+            <part Type="Floating Nearby" Laterality="Right"/>
+            <part Type="Floating Nearby" Laterality="Left"/>
+            <part Type="Floating Nearby" Laterality="Right"/>
+            <part Type="Floating Nearby" Laterality="Left"/>
+
+            <part Type="Doll-Like Biocybernetic Hands" DependsOn="Doll-Like Biocybernetic Hands"/>
+            <part Type="Doll-Like Biocybernetic Legs"/>
+        </anatomy>
+    </anatomies>
+
+</bodies>

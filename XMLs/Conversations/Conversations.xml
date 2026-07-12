@@ -122,7 +122,7 @@
 
         <node ID="ArshseppaV">
             <text>
-                Arshira relishes the captivations of adventure and exploring these treacherous lands, a drive only countered by the fear of their shadow. They get restless waiting for research results and watching tinkers' tinker. Need you someone to aid you in travel, look no farther.
+                Arshira relishes the captivation of adventure and exploring these treacherous lands, a drive only countered by the fear of their shadow. They get restless waiting for research results and watching tinkers' tinker. Need you someone to aid you in travel, look no farther.
             </text>
             <choice GotoID="ArshseppaVI">Where might I find them?</choice>
             <choice GotoID="End">Live and drink.</choice>
@@ -860,16 +860,13 @@
                 =====================================================================
                 // ... [EVOK]: H-e__llo? H_llo? ... Hello?_
 
-                // ... [EVOK]: This is the only COMS panel I could find where those things can't find me. Someone, anyone hearing this--PLEASE! Site [REDACTED] is in lockdown, everyone is trapped inside!_
+                // ... [EVOK]: This is the only COMS panel I could find where those things haven't gotten to! Someone, anyone hearing this--PLEASE! Site [REDACTED] is in lockdown, everyone is trapped inside!_
 
-                // ... [EVOK]: I'm stuck here in the halls leading to DNA MANI-SYSTEMS. There are screams and shooting everywhere, something is hunting us through the halls. I saw it get the assistant ... oh, gods. It--... Its like it turned his skin to puddy! It unmade him.
+                // ... [EVOK]: I'm stuck here in the halls leading to DNA MANI-SYSTEMS. The Maintenance Admin vanished! There are screams and shooting everywhere, something is hunting us through the halls. I saw it get an assistant ... oh, gods. It--... Its like it turned his skin to puddy! It unmade him.
                 
                 // ... [EVOK]: Then he chased ME! Screaming for help. Like they were still in that thing, trapped.
                 
-                // ... It takes your body from you. But your mind? I hear them talking to each other, pleading to be saved._ 
-                
-                // [EVOK]: They are still in there ... They are still ... oh' ... my eyes wish to unsee it all ..._
-                
+                // ... [EVOK]: They are still in there ... They are still ... oh' ... my eyes wish to unsee it all ..._
                 
                 // ... [EVOK]: ... W-wait? What was that?
                 
@@ -879,7 +876,7 @@
                 
                 // ... [Distant screaching noises can be heard, ambiguous slurping and sqelching noises approach]_
                 
-                // ... [Evok is heard pleading for help, pleads in anguish, pleading in suffering]_
+                // ... [Evok is heard pleading for help]_
 
                 {{red|[UNEXPECTED ERROR/ // // // THIS MESSAGE IS NOT--@0W W39nfe ...]
                  // 000938d9c26f1ab588d24619bc8e9cdd4da8b31b ### #####[... no one came.]}}
@@ -948,6 +945,114 @@
         </start>
     </conversation>
     
+<!--    info terminal : Staff Directory and Clientele Index-->
+
+    <conversation ID="SiteWideDataPanel">
+        <start ID ="StaffDirectoryClienteleIndex">
+            <text>
+                {{C|                UVA-TECH - . - - | - . - . - |____________________VRS. 1.14.3 EA65Ue
+                ========================================================================
+                {{W|░=ud_nbsp:1==ud_nbsp:1=░░░░=ud_nbsp:1==ud_nbsp:1=░░=ud_nbsp:1==ud_nbsp:1=░░░░=ud_nbsp:1==ud_nbsp:1=░░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░░=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=░░
+                ▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒▒▒▒=ud_nbsp:1==ud_nbsp:1=▒}}
+                {{W|▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓▓=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=▓▓▓▓=ud_nbsp:1==ud_nbsp:1=▓▓▓▓▓▓▓}}
+                {{W|█=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=████████=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1=█
+                ██=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1=█████=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=███=ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=██}}
+                ========================================================================
+                // "UVA-technologies! Be your most productive self!" _
+
+                // ... _
+
+                // =====================================================================
+                // ... CLIENTELE INDEX : [OVERALL STATUS: ... UNDER STAFFED]
+                // =====================================================================
+
+                //  > REGISTERED FACILITY OCCUPANTS IS 713 OUT OF THE MAXIMUM OCCUPANT LIMIT(1500) AS OF XX-XX-XXXX. 
+                //  > ALERT: RFO-BIO-SIGNATURES 711 / 713 CONFIRMED DECEASED, 1 OCCUPANT CONSIDERED [COMPROMISED] BY [REDACTED], FINAL OCCUPANT LOCATION: UNKNOWN, STATUS: [B.E.U PROTOCOL ENABLED].
+                
+                        // > SCIENCE DEPARTMENT : 111/113 CONFIRMED COMPROMISED.
+                        // > SECURITY DEPARTMENT : 300/300 CONFIRMED COMPROMISED.
+                        // > LABOUR DEPARTMENT : 188/300 CONFIRMED COMPROMISED.
+                                                        ((122 MEMBERS UNACCOUNTED FOR.))
+
+                // =====================================================================
+                // ... STAFF DIRECTORY // LAST UPDATED ... ueeebvrEURWO--ERROR.
+                // =====================================================================
+                
+                // _ADMINISTRATORS_
+                
+                DR. ALTON NIELST - LEAD PROFESSOR AND ADMINISTRATOR - AGE: 586, GENDER: MASCULINE
+                                    v STATUS
+                                        [HEART RATE: 22.BPM]
+                                        [BLOOD PRESSURE: 333 ÷ 80]
+                                        [COGNITIVE STATE: 96eb92f1c677ed6af4f30e14fc31ef02-ERROR]
+                                        [GENETIC STABILITY: COMPROMISED]
+                                        [P-DRP: 1000lk/D, INFECTED]
+
+                ORKATH L. BORRICK - LEAD SECURITY ADMINISTRATOR - AGE: 99, GENDER: MASCULINE
+                                    v STATUS
+                                        [HEART RATE: 350.BPM - EXPIRED]
+                                        [BLOOD PRESSURE: 0]
+                                        [COGNITIVE STATE: ABOVE EXPECTED VALUE]
+                                        [GENETIC STABILITY: COMPROMISED]
+                                        [P-DRP: 3256lk/D, HIGHLY INFECTED]
+
+                DEA'MOP D'VILLE - LABOUR DIVISION ADMINISTRATOR - AGE: 266, GENDER: NON-BINARY
+                                    v STATUS
+                                        [HEART RATE: OUT-OF-RANGE]
+                                        [BLOOD PRESSURE: OUT-OF-RANGE]
+                                        [COGNITIVE STATE: OUT-OF-RANGE]
+                                        [GENETIC STABILITY: OUT-OF-RANGE]
+                                        [P-DRP: OUT-OF-RANGE]
+
+                // _SCIENCE OFFICERS_
+
+                ######### ### - LEAD GENETICS OPERATIONS RESEARCHER - AGE: 69, GENDER: FEMININE
+                                    v STATUS
+                                        [HEART RATE: 80.BPM]
+                                        [BLOOD PRESSURE: 113 ÷ 80]
+                                        [COGNITIVE STATE: SHOWING SEVERE NEURAL DEGRADATION -- SEEK S.R.T ASAP]
+                                        [GENETIC STABILITY: ENCODED/NON-APPLICABLE]
+                                        [P-DRP: ENCODED/NON-APPLICABLE]
+                                        NOTE: INDIVIDUAL HAS ENACTED BIOMATA-PRESERVATION SYSTEMS, CURRENT SHELL IS RATED S-SERIES. SHELL-DEGRADATION EXCEEDS WARRANTY DECLARATION, SEEK SAFE NEURAL-EJECTION AND G.H.O.S.T RECONSTRUCTIVE THERAPY IMMEDIATELY.
+
+                YOLTUM DAL - LEAD GENETICS OPERATIONS RESEARCHER - AGE: 123, GENDER: MASCULINE
+                                    v STATUS
+                                        [HEART RATE: 125.BPM -EXPIRED]
+                                        [BLOOD PRESSURE: 368.BPM ]
+                                        [COGNITIVE STATE: ABOVE EXPECTED VALUE]
+                                        [GENETIC STABILITY: COMPROMISED]
+                                        [P-DRP: 3256lk/D, HIGHLY INFECTED]
+
+                XEVEYE DE METREYN - LEAD GENETICS OPERATIONS RESEARCHER - AGE: 77, GENDER: MASCULINE
+                                    v STATUS
+                                        [HEART RATE: 266.BPM -EXPIRED]
+                                        [BLOOD PRESSURE: 877.BPM ]
+                                        [COGNITIVE STATE: ABOVE EXPECTED VALUE]
+                                        [GENETIC STABILITY: COMPROMISED]
+                                        [P-DRP: 4020lk/D, HIGHLY INFECTED]
+
+                MORHAN GRIMSDOTTIR - LEAD GENETICS OPERATIONS RESEARCHER - AGE: 187, GENDER: FEMININE
+                                    v STATUS
+                                        [HEART RATE: 0.BPM - EXPIRED]
+                                        [BLOOD PRESSURE: EXPIRED ]
+                                        [COGNITIVE STATE: ABOVE EXPECTED VALUE]
+                                        [GENETIC STABILITY: COMPROMISED]
+                                        [P-DRP: 1103lk/D, HIGHLY INFECTED]
+                
+                
+                {{red|=DATA ERROR=
+                =ANONYMOUS INTRUSION DETECTED=
+                - . - - : - - . - - ' -
+                // … ####_##eb72#b1d#a#727#df4a1a4a05bde8bc55- and then there was one ... }}
+
+                ========================================================================
+                TAGS: [Property of uvaCORE Genetics] - [X]}}
+            </text>
+            <choice CallScript="XRL.World.Parts.DisplacerFour.DisplaceBetweenFloors4" GotoID="End">[Displace to adjacent panel?]</choice>
+            <choice GotoID="End">[Step away from the panel.]</choice>
+        </start>
+    </conversation>
+    
 <!--    info terminal : site wide status-->
 
     <conversation ID="SiteWideDataPanel">
@@ -993,7 +1098,7 @@
                 =ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=>> STATUS v
                 =ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1={{red|COMPROMISED.}}
 
-                //  > PENOPTICON RESPONSE HUB.
+                //  > GENOPTICON RESPONSE HUB.
                 =ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=>> STATUS v
                 =ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1={{red|COMPROMISED.}}
 
@@ -1004,12 +1109,16 @@
                 =ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=> genetics vault: functioning
                 =ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=> estimated power reserves: [.........//] 67 GW per second.
                 =ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=> water supply status: nominal
-                =ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=> food materializer status: malfunctioning but operational.
+                =ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=> food materializer status: malfunctioning, operational.
                 =ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=> plumbing status: nominal
                 =ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=> communications array: suboptimal
                 =ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=> microwave emitter systems: nominal
                                                 v
-                =ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=note: please do note enter the SRC AND GV foyer without either deactivating the MWE power unit or equipping an E.R.A.S.
+                =ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=note: do note enter the SRC AND GV foyer without either deactivating the MWE power unit or equipping an E.R.A.S. 
+                
+                AS OF EVENT 3030, All E.R.A.S Armories require Genopticon Security Clearance.
+                
+                USER NOTE: CLIN: If you were unaware, Event 3030 was when that one dumbass back in XX.XX.XXXX stole an E.R.A.S just to get into the Recumbancy Chamber. Said they "just wanted some of the good stuff,"--like, the obsession with soft-drinks has gotta be wild to go that far.
                 
                 {{red|=DATA ERROR=
                 =ANONYMOUS INTRUSION DETECTED=
@@ -1023,6 +1132,7 @@
             <choice GotoID="End">[Step away from the panel.]</choice>
         </start>
     </conversation>
+
 </conversations>
  
  

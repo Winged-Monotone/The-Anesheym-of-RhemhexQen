@@ -351,7 +351,7 @@
 
                 Makes me anxious, makes me eager. My bloodlust flairs. Revenge is the meal I crave.
             </text>
-            <choice GotoID="PtohRevenge1">You seem ... to harbour some hatred for them.</choice>
+            <choice GotoID="PtohRevenge1">You seem ... to harbor some hatred for them.</choice>
             <choice GotoID="End">I see. Live and drink.</choice>
         </node>
 

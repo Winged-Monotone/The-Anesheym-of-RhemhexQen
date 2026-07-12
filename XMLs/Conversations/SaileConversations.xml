@@ -46,7 +46,7 @@
                 
                 Classification - Specimen A-003 ... Redacted?
                 
-                Wait ... This facility has sparse data on the substance already encrypted! As if ... whatever it is came from here?
+                Wait ... This facility has sparse data on the substance already encrypted! As if ... whatever it , it came from here!?
             </text>
             <choice GotoID="GetTotheEvilGoo">
                 <text>
@@ -57,11 +57,11 @@
 
         <node ID="GetTotheEvilGoo" >
             <text>
-                Biomata Surveillance Protocols are tracking the faint psychical signals released from the vitae's psycho-neural networking. 
+                Biometric Surveillance Protocols are tracking the faint psychical signals released from the vitae's psycho-neural networking. 
                 
                 The signals are coming from ... Wait, what is that?
                 
-                There's a massive culmination of neural clustering occuring under us. Deep Below. Hundreds of thousands of stratas deep! 
+                There's a massive culmination of neural clustering occuring under us. Deep Below. Millions of strata deep! 
             </text>
             <choice GotoID="TheRevealofTheLongSigh">
                 <text>

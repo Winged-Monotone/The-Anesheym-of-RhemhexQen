@@ -8,6 +8,8 @@
         <solidcolor Name="dark pink" Color="i" LightTone="I" ShowInPicker="true" />
         <solidcolor Name="text pink" Color="N" LightTone="n" ShowInPicker="true" />
         <solidcolor Name="text dark pink" Color="n" LightTone="N" ShowInPicker="true" />
+        <solidcolor Name="royal purple" Color="p" LightTone="P" ShowInPicker="true" />
+        <solidcolor Name="bright royal purple" Color="P" LightTone="p" ShowInPicker="true" />
     </solidcolors>
 
     <shaders>
@@ -15,8 +17,8 @@
         <shader Name="poisonous" Type="sequence" Colors="G-g-m-M-g-G-M-m"/>
         <shader Name="buggopanion" Type="sequence" Colors="g-g-Y-Y-M-M-Y-Y"/>
         <shader Name="sulfuric" Type="sequence" Colors="crimson-O-o-dark crimson"/>
-        
-        
+
+        <shader Name="encoded" Type="sequence" Colors="crimson-bright royal purple-dark crimson-text pink"/>
     </shaders>
 
 </colors>

@@ -1,4 +1,5 @@
-﻿using XRL.World;
+﻿using UnityEngine.UIElements;
+using XRL.World;
 using XRL;
 using XRL.UI.ObjectFinderClassifiers;
 using XRL.Wish;
@@ -21,7 +22,8 @@ namespace XRL.World.Parts
             {
                 The.Core.IDKFA = false;
                 ThePlayer.ApplyEffect(new Shamed(120));
-                ThePlayer.ShowFailure("The encoded being snaps her fingers and revokes your invulnerability.");
+                "The encoded being snaps =subject.possessive= fingers and revokes your invulnerability.".StartReplace()
+                    .AddObject(ParentObject).EmitMessage(UsePopup: true);
             }
             
             return base.HandleEvent(E);

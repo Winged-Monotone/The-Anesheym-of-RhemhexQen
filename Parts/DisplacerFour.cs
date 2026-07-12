@@ -15,7 +15,7 @@ namespace XRL.World.Parts
             GameObject DisplacerPanel = CurrentZone.FindObject("DisplacementPanel3");
 
             if (CurrentZone.ZoneID == "JoppaWorld.33.3.1.1.29845656" &&
-                Popup.ShowYesNo("Interact with the displacer panel?\n Destination: Sixth Floor [A] - Penopticon Response Hub.", 
+                Popup.ShowYesNo("Interact with the displacer panel?\n Destination: Sixth Floor [A] - Genopticon Response Hub.", 
                     defaultResult: DialogResult.Cancel) == DialogResult.Yes)
             {
                 The.Player.ZoneTeleport("JoppaWorld.33.3.1.1.29845657", X: 77, Y: 11, Device: DisplacerPanel,

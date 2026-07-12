@@ -25,42 +25,42 @@
             <choice Target="NewStartRadiantEggQuest" IfHaveItem="strangeeggt1">Here's an egg I found!
                 <part Name="wm_GiveEggT1"/>
                 <part Name="ReceiveItem" Pick="true" Table="wmTier1EggRewards" Identify="All"/>
-                <part Name="Sibs_ModifyReputation" Faction="Anesheym" Value="10" Shown="True"/>
+                <part Name="Sibs_ModifyReputation" Faction="Anesheym" Value="5" Shown="True"/>
             </choice>
             <choice Target="NewStartRadiantEggQuest" IfHaveItem="strangeeggt2">This eggs a lil' bizarre compared to the rest, but I believe its yours!
                 <part Name="wm_GiveEggT2"/>
                 <part Name="ReceiveItem" Pick="true" Table="wmTier2EggRewards" Identify="All"/>
-                <part Name="Sibs_ModifyReputation" Faction="Anesheym" Value="25" Shown="True"/>
+                <part Name="Sibs_ModifyReputation" Faction="Anesheym" Value="10" Shown="True"/>
             </choice>
             <choice Target="NewStartRadiantEggQuest" IfHaveItem="strangeeggt3">I found a vibrant ruby-egg!
                 <part Name="wm_GiveEggT3"/>
                 <part Name="ReceiveItem" Pick="true" Table="wmTier3EggRewards" Identify="All"/>
-                <part Name="Sibs_ModifyReputation" Faction="Anesheym" Value="35" Shown="True"/>
+                <part Name="Sibs_ModifyReputation" Faction="Anesheym" Value="20" Shown="True"/>
             </choice>
             <choice Target="NewStartRadiantEggQuest" IfHaveItem="strangeeggt4">I found a calming sapphire-egg!
                 <part Name="wm_GiveEggT4"/>
                 <part Name="ReceiveItem" Pick="true" Table="wmTier4EggRewards" Identify="All"/>
-                <part Name="Sibs_ModifyReputation" Faction="Anesheym" Value="50" Shown="True"/>
+                <part Name="Sibs_ModifyReputation" Faction="Anesheym" Value="35" Shown="True"/>
             </choice>
             <choice Target="NewStartRadiantEggQuest" IfHaveItem="strangeeggt5">I found a glowing jade-egg!
                 <part Name="wm_GiveEggT5"/>
                 <part Name="ReceiveItem" Pick="true" Table="wmTier5EggRewards" Identify="All"/>
-                <part Name="Sibs_ModifyReputation" Faction="Anesheym" Value="100" Shown="True"/>
+                <part Name="Sibs_ModifyReputation" Faction="Anesheym" Value="55" Shown="True"/>
             </choice>
             <choice Target="NewStartRadiantEggQuest" IfHaveItem="strangeeggt6">This egg is hard, and shines with a wonderful chrome color, here!
                 <part Name="wm_GiveEggT6"/>
                 <part Name="ReceiveItem" Pick="true" Table="wmTier6EggRewards" Identify="All"/>
-                <part Name="Sibs_ModifyReputation" Faction="Anesheym" Value="200" Shown="True"/>
+                <part Name="Sibs_ModifyReputation" Faction="Anesheym" Value="75" Shown="True"/>
             </choice>
             <choice Target="NewStartRadiantEggQuest" IfHaveItem="strangeeggt7">This egg truly beckons the eater's majesty, here!
                 <part Name="wm_GiveEggT7"/>
                 <part Name="ReceiveItem" Pick="true" Table="wmTier7EggRewards" Identify="All"/>
-                <part Name="Sibs_ModifyReputation" Faction="Anesheym" Value="400" Shown="True"/>
+                <part Name="Sibs_ModifyReputation" Faction="Anesheym" Value="100" Shown="True"/>
             </choice>
             <choice Target="NewStartRadiantEggQuest" IfHaveItem="strangeeggt8">This egg has touched other realms, the rarest of its kind!
                 <part Name="wm_GiveEggT8"/>
                 <part Name="ReceiveItem" Pick="true" Table="wmTier8EggRewards" Identify="All"/>
-                <part Name="Sibs_ModifyReputation" Faction="Anesheym" Value="800" Shown="True"/>
+                <part Name="Sibs_ModifyReputation" Faction="Anesheym" Value="200" Shown="True"/>
             </choice>
         </start>
 
@@ -75,7 +75,7 @@
                 Oi, whu'tcha got for us, friend?
             </text>
             <choice Target="ReturnedWithEggsStartLoop">I think I found some eggs to give!</choice>
-            <choice Target="CompleteQuestStep1" IfReputationAtLeast="Loved">So I can enter?</choice>
+            <choice Target="CompleteQuestStep1" IfReputationAtLeast="Liked">So I can enter?</choice>
         </start>
 
         <node ID="ReturnedWithEggsStartLoop" IfHaveActiveQuest="Egghunt">
@@ -85,42 +85,42 @@
             <choice Target="ReturnedWithEggsStart" IfHaveItem="strangeeggt1">Here's an egg I found!
                 <part Name="wm_GiveEggT1"/>
                 <part Name="ReceiveItem" Pick="true" Table="wmTier1EggRewards" Identify="All"/>
-                <part Name="Sibs_ModifyReputation" Faction="Anesheym" Value="10" Shown="True"/>
+                <part Name="Sibs_ModifyReputation" Faction="Anesheym" Value="5" Shown="True"/>
             </choice>
             <choice Target="ReturnedWithEggsStart" IfHaveItem="strangeeggt2">This eggs a lil' bizarre compared to the rest, but I believe its yours!
                 <part Name="wm_GiveEggT2"/>
                 <part Name="ReceiveItem" Pick="true" Table="wmTier2EggRewards" Identify="All"/>
-                <part Name="Sibs_ModifyReputation" Faction="Anesheym" Value="25" Shown="True"/>
+                <part Name="Sibs_ModifyReputation" Faction="Anesheym" Value="10" Shown="True"/>
             </choice>
             <choice Target="ReturnedWithEggsStart" IfHaveItem="strangeeggt3">I found a vibrant ruby-egg!
                 <part Name="wm_GiveEggT3"/>
                 <part Name="ReceiveItem" Pick="true" Table="wmTier3EggRewards" Identify="All"/>
-                <part Name="Sibs_ModifyReputation" Faction="Anesheym" Value="35" Shown="True"/>
+                <part Name="Sibs_ModifyReputation" Faction="Anesheym" Value="20" Shown="True"/>
             </choice>
             <choice Target="ReturnedWithEggsStart" IfHaveItem="strangeeggt4">I found a calming sapphire-egg!
                 <part Name="wm_GiveEggT4"/>
                 <part Name="ReceiveItem" Pick="true" Table="wmTier4EggRewards" Identify="All"/>
-                <part Name="Sibs_ModifyReputation" Faction="Anesheym" Value="50" Shown="True"/>
+                <part Name="Sibs_ModifyReputation" Faction="Anesheym" Value="35" Shown="True"/>
             </choice>
             <choice Target="ReturnedWithEggsStart" IfHaveItem="strangeeggt5">I found a glowing jade-egg!
                 <part Name="wm_GiveEggT5"/>
                 <part Name="ReceiveItem" Pick="true" Table="wmTier5EggRewards" Identify="All"/>
-                <part Name="Sibs_ModifyReputation" Faction="Anesheym" Value="100" Shown="True"/>
+                <part Name="Sibs_ModifyReputation" Faction="Anesheym" Value="55" Shown="True"/>
             </choice>
             <choice Target="ReturnedWithEggsStart" IfHaveItem="strangeeggt6">This egg is hard, and shines with a wonderful chrome color, here!
                 <part Name="wm_GiveEggT6"/>
                 <part Name="ReceiveItem" Pick="true" Table="wmTier6EggRewards" Identify="All"/>
-                <part Name="Sibs_ModifyReputation" Faction="Anesheym" Value="200" Shown="True"/>
+                <part Name="Sibs_ModifyReputation" Faction="Anesheym" Value="75" Shown="True"/>
             </choice>
             <choice Target="ReturnedWithEggsStart" IfHaveItem="strangeeggt7">This egg truly beckons the eater's majesty, here!
                 <part Name="wm_GiveEggT7"/>
                 <part Name="ReceiveItem" Pick="true" Table="wmTier7EggRewards" Identify="All"/>
-                <part Name="Sibs_ModifyReputation" Faction="Anesheym" Value="400" Shown="True"/>
+                <part Name="Sibs_ModifyReputation" Faction="Anesheym" Value="100" Shown="True"/>
             </choice>
             <choice Target="ReturnedWithEggsStart" IfHaveItem="strangeeggt8">This egg has touched other realms, the rarest of its kind, I give it to you!
                 <part Name="wm_GiveEggT8"/>
                 <part Name="ReceiveItem" Pick="true" Table="wmTier8EggRewards" Identify="All"/>
-                <part Name="Sibs_ModifyReputation" Faction="Anesheym" Value="800" Shown="True"/>
+                <part Name="Sibs_ModifyReputation" Faction="Anesheym" Value="200" Shown="True"/>
             </choice>
         </node>
 
