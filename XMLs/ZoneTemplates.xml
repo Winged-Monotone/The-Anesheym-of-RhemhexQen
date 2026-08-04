@@ -1,5 +1,5 @@
 <zonetemplates>
-    <zonetemplate Name="CrystalForest" RegionSize="200">
+    <zonetemplate Name="CrystalForest" RegionSize="300">
         <global>
             <population Table="CrystalForestGlobals"></population>
         </global>
@@ -12,7 +12,7 @@
         </eachregion>
     </zonetemplate>
 
-    <zonetemplate Name="CrystalForestSubterania" RegionSize="1000">
+    <zonetemplate Name="CrystalForestSubterania" RegionSize="1500">
         <global>
             <population Table="CrystalForestSubteraniaGlobals"></population>
         </global>

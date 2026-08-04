@@ -86,9 +86,10 @@ namespace XRL.World.Parts.Mutation
                 var Limb = ListTargetBody.GetRandomElement();
 
                 Limb.AddPart("Skin Slink", 0, "Amalgam Skin Slink");
-                Target.ApplyEffect(new AmalgamConversion());
+                Target.ApplyEffect(new AmalgamConversion(true));
                 
                 DidXToY("slither", "under", Target, "skin", "...", ColorAsBadFor: Target, SubjectPossessedBy: Target);
+                
                 ParentObject.Obliterate();
             }
              

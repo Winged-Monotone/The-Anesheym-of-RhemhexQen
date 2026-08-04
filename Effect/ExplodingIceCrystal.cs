@@ -1,4 +1,8 @@
-﻿using XRL.Rules;
+﻿using System;
+using System.Collections.Generic;
+using ConsoleLib.Console;
+using Genkit;
+using XRL.Rules;
 
 namespace XRL.World.Effects
 {
@@ -9,11 +13,43 @@ namespace XRL.World.Effects
         public int DetonateDuration = Stat.Random(1, 7);
 
         public bool Primed = false;
-
+        
         public ExplodingIceCrystal()
         {
-            DisplayName = "Unstable";
+            DisplayName = "Quivering";
             Duration = 1;
+        }
+        
+        public override bool Render(RenderEvent E)
+        {
+            E.WantsToPaint = true;
+
+            return base.Render(E);
+        }
+
+        public override void OnPaint(ScreenBuffer buffer)
+        {
+            var Z = Object.CurrentZone;
+            if (!Z.IsActive() || !Primed)
+            {
+                return;
+            }
+
+            foreach (var C in Object.CurrentCell.IterateAdjacent())
+            {
+                if (!C.IsVisible() || C == Object.CurrentCell)
+                {
+                    continue;
+                }
+
+                var CHR = buffer[C];
+
+                CHR.TileBackground = CHR.Background = The.Color.DarkRed;
+                CHR.TileForeground = CHR.Detail = The.Color.Red;
+            }
+
+
+            base.OnPaint(buffer);
         }
 
         public override bool WantEvent(int ID, int cascade)

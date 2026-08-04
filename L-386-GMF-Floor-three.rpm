@@ -4,6 +4,8 @@
     <object Name="MarbleFloor"></object>
     <object Name="GrossWall"></object>
     <object Name="AutoSealingWallsWidget"></object>
+    <object Name="GoreFloorSpawnerWidget"></object>
+    <object Name="RevokeRecoilersWidget"></object>
   </cell>
   <cell X="1" Y="0">
     <object Name="MarbleFloor"></object>
@@ -481,7 +483,6 @@
   </cell>
   <cell X="37" Y="1">
     <object Name="MarbleFloor"></object>
-    <object Name="vitaenstalk"></object>
   </cell>
   <cell X="38" Y="1">
     <object Name="MarbleFloor"></object>
@@ -624,7 +625,7 @@
   </cell>
   <cell X="72" Y="1">
     <object Name="WornSterileTile"></object>
-    <object Name="GritGate Mainframe Monitor 1"></object>
+    <object Name="Long Sigh Mainframe Monitor 1"></object>
   </cell>
   <cell X="73" Y="1">
     <object Name="GrossWall2"></object>
@@ -1951,7 +1952,6 @@
   </cell>
   <cell X="18" Y="6">
     <object Name="MarbleFloor"></object>
-    <object Name="vitaenstalk"></object>
   </cell>
   <cell X="19" Y="6">
     <object Name="MarbleFloor"></object>
@@ -2468,7 +2468,7 @@
   </cell>
   <cell X="66" Y="7">
     <object Name="MarbleFloor"></object>
-    <object Name="Yellow Security Door"></object>
+    <object Name="Scarlet Security Hangar Door"></object>
   </cell>
   <cell X="67" Y="7">
     <object Name="MarbleFloor"></object>
@@ -2538,8 +2538,6 @@
   <cell X="3" Y="8">
     <object Name="MarbleFloor"></object>
     <object Name="GrossWall"></object>
-    <object Name="amalgamgrowth"></object>
-    <object Name="amalgamgrowth"></object>
   </cell>
   <cell X="4" Y="8">
     <object Name="MarbleFloor"></object>
@@ -2764,27 +2762,27 @@
   </cell>
   <cell X="59" Y="8">
     <object Name="MarbleFloor"></object>
-    <object Name="Black Marble"></object>
+    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="60" Y="8">
     <object Name="MarbleFloor"></object>
-    <object Name="Black Marble"></object>
+    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="61" Y="8">
     <object Name="MarbleFloor"></object>
-    <object Name="Black Marble"></object>
+    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="62" Y="8">
     <object Name="MarbleFloor"></object>
-    <object Name="Black Marble"></object>
+    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="63" Y="8">
     <object Name="MarbleFloor"></object>
-    <object Name="Black Marble"></object>
+    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="64" Y="8">
     <object Name="MarbleFloor"></object>
-    <object Name="Black Marble"></object>
+    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="65" Y="8">
     <object Name="MarbleFloor"></object>
@@ -2799,51 +2797,51 @@
   </cell>
   <cell X="68" Y="8">
     <object Name="MarbleFloor"></object>
-    <object Name="Black Marble"></object>
+    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="69" Y="8">
     <object Name="MarbleFloor"></object>
-    <object Name="Black Marble"></object>
+    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="70" Y="8">
     <object Name="MarbleFloor"></object>
-    <object Name="Black Marble"></object>
+    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="71" Y="8">
     <object Name="MarbleFloor"></object>
-    <object Name="Black Marble"></object>
+    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="72" Y="8">
     <object Name="MarbleFloor"></object>
-    <object Name="Black Marble"></object>
+    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="73" Y="8">
     <object Name="MarbleFloor"></object>
-    <object Name="Black Marble"></object>
+    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="74" Y="8">
     <object Name="MarbleFloor"></object>
-    <object Name="Black Marble"></object>
+    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="75" Y="8">
     <object Name="MarbleFloor"></object>
-    <object Name="Black Marble"></object>
+    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="76" Y="8">
     <object Name="MarbleFloor"></object>
-    <object Name="Black Marble"></object>
+    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="77" Y="8">
     <object Name="MarbleFloor"></object>
-    <object Name="Black Marble"></object>
+    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="78" Y="8">
     <object Name="MarbleFloor"></object>
-    <object Name="Black Marble"></object>
+    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="79" Y="8">
     <object Name="MarbleFloor"></object>
-    <object Name="Black Marble"></object>
+    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="0" Y="9">
     <object Name="MarbleFloor"></object>
@@ -2861,7 +2859,6 @@
   <cell X="3" Y="9">
     <object Name="MarbleFloor"></object>
     <object Name="GrossWall"></object>
-    <object Name="amalgamgrowth"></object>
   </cell>
   <cell X="4" Y="9">
     <object Name="MarbleFloor"></object>
@@ -3081,15 +3078,15 @@
   </cell>
   <cell X="59" Y="9">
     <object Name="MarbleFloor"></object>
-    <object Name="Black Marble"></object>
+    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="60" Y="9">
     <object Name="MarbleFloor"></object>
-    <object Name="Black Marble"></object>
+    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="61" Y="9">
     <object Name="MarbleFloor"></object>
-    <object Name="Black Marble"></object>
+    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="62" Y="9">
     <object Name="GrossWall"></object>
@@ -3129,39 +3126,39 @@
   </cell>
   <cell X="71" Y="9">
     <object Name="MarbleFloor"></object>
-    <object Name="Black Marble"></object>
+    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="72" Y="9">
     <object Name="MarbleFloor"></object>
-    <object Name="Black Marble"></object>
+    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="73" Y="9">
     <object Name="MarbleFloor"></object>
-    <object Name="Black Marble"></object>
+    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="74" Y="9">
     <object Name="MarbleFloor"></object>
-    <object Name="Black Marble"></object>
+    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="75" Y="9">
     <object Name="MarbleFloor"></object>
-    <object Name="Black Marble"></object>
+    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="76" Y="9">
     <object Name="MarbleFloor"></object>
-    <object Name="Black Marble"></object>
+    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="77" Y="9">
     <object Name="MarbleFloor"></object>
-    <object Name="Black Marble"></object>
+    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="78" Y="9">
     <object Name="MarbleFloor"></object>
-    <object Name="Black Marble"></object>
+    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="79" Y="9">
     <object Name="MarbleFloor"></object>
-    <object Name="Black Marble"></object>
+    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="0" Y="10">
     <object Name="MarbleFloor"></object>
@@ -3178,7 +3175,6 @@
   <cell X="3" Y="10">
     <object Name="MarbleFloor"></object>
     <object Name="GrossWall"></object>
-    <object Name="amalgamgrowth"></object>
   </cell>
   <cell X="4" Y="10">
     <object Name="MarbleFloor"></object>
@@ -3390,11 +3386,11 @@
   </cell>
   <cell X="56" Y="10">
     <object Name="MarbleFloor"></object>
-    <object Name="Black Marble"></object>
+    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="57" Y="10">
     <object Name="MarbleFloor"></object>
-    <object Name="Black Marble"></object>
+    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="58" Y="10">
     <object Name="MarbleFloor"></object>
@@ -3452,7 +3448,7 @@
   </cell>
   <cell X="71" Y="10">
     <object Name="MarbleFloor"></object>
-    <object Name="Black Marble"></object>
+    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="72" Y="10">
     <object Name="GrossWall"></object>
@@ -3482,7 +3478,7 @@
   </cell>
   <cell X="79" Y="10">
     <object Name="MarbleFloor"></object>
-    <object Name="Black Marble"></object>
+    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="0" Y="11">
     <object Name="MarbleFloor"></object>
@@ -3773,7 +3769,7 @@
   </cell>
   <cell X="79" Y="11">
     <object Name="MarbleFloor"></object>
-    <object Name="Black Marble"></object>
+    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="0" Y="12">
     <object Name="MarbleFloor"></object>
@@ -3971,7 +3967,6 @@
   <cell X="55" Y="12">
     <object Name="SterileTile"></object>
     <object Name="Meat Curtains Verti"></object>
-    <object Name="Gaping Door"></object>
   </cell>
   <cell X="56" Y="12">
     <object Name="SterileTile"></object>
@@ -4059,7 +4054,7 @@
   </cell>
   <cell X="79" Y="12">
     <object Name="MarbleFloor"></object>
-    <object Name="Black Marble"></object>
+    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="0" Y="13">
     <object Name="MarbleFloor"></object>
@@ -4377,7 +4372,7 @@
   </cell>
   <cell X="79" Y="13">
     <object Name="MarbleFloor"></object>
-    <object Name="Black Marble"></object>
+    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="0" Y="14">
     <object Name="MarbleFloor"></object>
@@ -4602,11 +4597,11 @@
   </cell>
   <cell X="56" Y="14">
     <object Name="MarbleFloor"></object>
-    <object Name="Black Marble"></object>
+    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="57" Y="14">
     <object Name="MarbleFloor"></object>
-    <object Name="Black Marble"></object>
+    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="58" Y="14">
     <object Name="MarbleFloor"></object>
@@ -4665,7 +4660,7 @@
   </cell>
   <cell X="71" Y="14">
     <object Name="MarbleFloor"></object>
-    <object Name="Black Marble"></object>
+    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="72" Y="14">
     <object Name="GrossWall"></object>
@@ -4696,7 +4691,7 @@
   </cell>
   <cell X="79" Y="14">
     <object Name="MarbleFloor"></object>
-    <object Name="Black Marble"></object>
+    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="0" Y="15">
     <object Name="MarbleFloor"></object>
@@ -4934,15 +4929,15 @@
   </cell>
   <cell X="59" Y="15">
     <object Name="MarbleFloor"></object>
-    <object Name="Black Marble"></object>
+    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="60" Y="15">
     <object Name="MarbleFloor"></object>
-    <object Name="Black Marble"></object>
+    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="61" Y="15">
     <object Name="MarbleFloor"></object>
-    <object Name="Black Marble"></object>
+    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="62" Y="15">
     <object Name="MarbleFloor"></object>
@@ -4981,7 +4976,7 @@
   </cell>
   <cell X="71" Y="15">
     <object Name="MarbleFloor"></object>
-    <object Name="Black Marble"></object>
+    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="72" Y="15">
     <object Name="GrossWall"></object>
@@ -5011,7 +5006,7 @@
   </cell>
   <cell X="79" Y="15">
     <object Name="MarbleFloor"></object>
-    <object Name="Black Marble"></object>
+    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="0" Y="16">
     <object Name="MarbleFloor"></object>
@@ -5249,27 +5244,27 @@
   </cell>
   <cell X="59" Y="16">
     <object Name="MarbleFloor"></object>
-    <object Name="Black Marble"></object>
+    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="60" Y="16">
     <object Name="MarbleFloor"></object>
-    <object Name="Black Marble"></object>
+    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="61" Y="16">
     <object Name="MarbleFloor"></object>
-    <object Name="Black Marble"></object>
+    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="62" Y="16">
     <object Name="MarbleFloor"></object>
-    <object Name="Black Marble"></object>
+    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="63" Y="16">
     <object Name="MarbleFloor"></object>
-    <object Name="Black Marble"></object>
+    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="64" Y="16">
     <object Name="MarbleFloor"></object>
-    <object Name="Black Marble"></object>
+    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="65" Y="16">
     <object Name="MarbleFloor"></object>
@@ -5284,51 +5279,51 @@
   </cell>
   <cell X="68" Y="16">
     <object Name="MarbleFloor"></object>
-    <object Name="Black Marble"></object>
+    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="69" Y="16">
     <object Name="MarbleFloor"></object>
-    <object Name="Black Marble"></object>
+    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="70" Y="16">
     <object Name="MarbleFloor"></object>
-    <object Name="Black Marble"></object>
+    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="71" Y="16">
     <object Name="MarbleFloor"></object>
-    <object Name="Black Marble"></object>
+    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="72" Y="16">
     <object Name="MarbleFloor"></object>
-    <object Name="Black Marble"></object>
+    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="73" Y="16">
     <object Name="MarbleFloor"></object>
-    <object Name="Black Marble"></object>
+    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="74" Y="16">
     <object Name="MarbleFloor"></object>
-    <object Name="Black Marble"></object>
+    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="75" Y="16">
     <object Name="MarbleFloor"></object>
-    <object Name="Black Marble"></object>
+    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="76" Y="16">
     <object Name="MarbleFloor"></object>
-    <object Name="Black Marble"></object>
+    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="77" Y="16">
     <object Name="MarbleFloor"></object>
-    <object Name="Black Marble"></object>
+    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="78" Y="16">
     <object Name="MarbleFloor"></object>
-    <object Name="Black Marble"></object>
+    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="79" Y="16">
     <object Name="MarbleFloor"></object>
-    <object Name="Black Marble"></object>
+    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="0" Y="17">
     <object Name="MarbleFloor"></object>
@@ -5564,15 +5559,15 @@
   </cell>
   <cell X="59" Y="17">
     <object Name="MarbleFloor"></object>
-    <object Name="Black Marble"></object>
+    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="60" Y="17">
     <object Name="MarbleFloor"></object>
-    <object Name="Black Marble"></object>
+    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="61" Y="17">
     <object Name="MarbleFloor"></object>
-    <object Name="Black Marble"></object>
+    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="62" Y="17">
     <object Name="MarbleFloor"></object>
@@ -5926,7 +5921,14 @@
   </cell>
   <cell X="69" Y="18">
     <object Name="MarbleFloor"></object>
-    <object Name="amalgamgrowth"></object>
+    <object Name="FossilizedRemains"></object>
+    <object Name="Elastyne Skin Suit"></object>
+    <object Name="Elastyne Gloves"></object>
+    <object Name="Elastyne Skull Cap"></object>
+    <object Name="Elastyne Slippers"></object>
+    <object Name="Strength Exo"></object>
+    <object Name="Eigenrifle"></object>
+    <object Name="Eigenpistol"></object>
   </cell>
   <cell X="70" Y="18">
     <object Name="MarbleFloor"></object>
@@ -6260,8 +6262,7 @@
     <object Name="LS Reshaping Pad"></object>
   </cell>
   <cell X="73" Y="19">
-    <object Name="Yellow Security Card"></object>
-    <object Name="SterileTile"></object>
+    <object Name="Scarlet Security Credentials"></object>
   </cell>
   <cell X="74" Y="19">
     <object Name="MarbleFloor"></object>
@@ -6273,7 +6274,14 @@
   </cell>
   <cell X="76" Y="19">
     <object Name="MarbleFloor"></object>
-    <object Name="amalgamgrowth"></object>
+    <object Name="FossilizedRemains"></object>
+    <object Name="Elastyne Skin Suit"></object>
+    <object Name="Elastyne Gloves"></object>
+    <object Name="Elastyne Skull Cap"></object>
+    <object Name="Elastyne Slippers"></object>
+    <object Name="Strength Exo"></object>
+    <object Name="Eigenrifle"></object>
+    <object Name="Eigenpistol"></object>
   </cell>
   <cell X="77" Y="19">
     <object Name="MarbleFloor"></object>
@@ -6570,7 +6578,14 @@
   </cell>
   <cell X="70" Y="20">
     <object Name="MarbleFloor"></object>
-    <object Name="Rubble Black"></object>
+    <object Name="FossilizedRemains"></object>
+    <object Name="Elastyne Skin Suit"></object>
+    <object Name="Elastyne Gloves"></object>
+    <object Name="Elastyne Skull Cap"></object>
+    <object Name="Elastyne Slippers"></object>
+    <object Name="Strength Exo"></object>
+    <object Name="Eigenrifle"></object>
+    <object Name="Eigenpistol"></object>
   </cell>
   <cell X="71" Y="20">
     <object Name="MarbleFloor"></object>
@@ -6867,7 +6882,14 @@
   </cell>
   <cell X="64" Y="21">
     <object Name="MarbleFloor"></object>
-    <object Name="amalgamgrowth"></object>
+    <object Name="FossilizedRemains"></object>
+    <object Name="Elastyne Skin Suit"></object>
+    <object Name="Elastyne Gloves"></object>
+    <object Name="Elastyne Skull Cap"></object>
+    <object Name="Elastyne Slippers"></object>
+    <object Name="Strength Exo"></object>
+    <object Name="Eigenrifle"></object>
+    <object Name="Eigenpistol"></object>
   </cell>
   <cell X="65" Y="21">
     <object Name="MarbleFloor"></object>
@@ -7147,8 +7169,14 @@
     <object Name="amalgamgrowth"></object>
   </cell>
   <cell X="67" Y="22">
-    <object Name="MarbleFloor"></object>
-    <object Name="amalgamgrowth"></object>
+    <object Name="FossilizedRemains"></object>
+    <object Name="Elastyne Skin Suit"></object>
+    <object Name="Elastyne Gloves"></object>
+    <object Name="Elastyne Skull Cap"></object>
+    <object Name="Elastyne Slippers"></object>
+    <object Name="Strength Exo"></object>
+    <object Name="Eigenrifle"></object>
+    <object Name="Eigenpistol"></object>
   </cell>
   <cell X="68" Y="22">
     <object Name="MarbleFloor"></object>
@@ -7185,7 +7213,14 @@
   </cell>
   <cell X="76" Y="22">
     <object Name="MarbleFloor"></object>
-    <object Name="amalgamgrowth"></object>
+    <object Name="FossilizedRemains"></object>
+    <object Name="Elastyne Skin Suit"></object>
+    <object Name="Elastyne Gloves"></object>
+    <object Name="Elastyne Skull Cap"></object>
+    <object Name="Elastyne Slippers"></object>
+    <object Name="Strength Exo"></object>
+    <object Name="Eigenrifle"></object>
+    <object Name="Eigenpistol"></object>
   </cell>
   <cell X="77" Y="22">
     <object Name="MarbleFloor"></object>

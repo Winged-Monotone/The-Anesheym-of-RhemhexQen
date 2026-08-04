@@ -1,6 +1,8 @@
 ﻿using XRL;
+using XRL.Rules;
 using XRL.UI.ObjectFinderClassifiers;
 using XRL.Wish;
+using XRL.World.Effects;
 using XRL.World.Parts;
 using XRL.World.Parts.Mutation;
 using XRL.World.Parts.Skill;
@@ -85,6 +87,14 @@ namespace Wingytone.Wishes
             mehHP.Penalty += 777;
         }
         
+        [WishCommand("meheffect")]
+        public static void MehCame()
+        {
+            var meh = The.ActiveZone.FindObject("EncodedEater");
+
+            meh.ApplyEffect(new ChargingSuperAttack(){Duration = 10, radius = Stat.Random(1,7)});
+        }
+        
         [WishCommand("wingyarmup")]
         public static void GimmeStuff()
         {
@@ -106,6 +116,7 @@ namespace Wingytone.Wishes
             
             The.Player.ReceiveObject("High-Energy Thermo Cask");
             The.Player.ReceiveObject("Point-Defense Drone");
+            The.Player.ReceiveObject("Light-Obfuscating Lens");
 
             The.Player.ReceiveObject("Spaser Rifle");
             The.Player.ReceiveObject("V77 Channel Rifle");

@@ -4,6 +4,8 @@
     <object Name="RadiantHeatFullMap"></object>
     <object Name="GoreFloorSpawnerWidget"></object>
     <object Name="AutoSealingWallsWidget"></object>
+    <object Name="RevokeRecoilersWidget"></object>
+    <object Name="GrossWall"></object>
   </cell>
   <cell X="1" Y="0">
     <object Name="GrossWall"></object>
@@ -3584,8 +3586,8 @@
     <object Name="Gore Mess"></object>
   </cell>
   <cell X="50" Y="12">
-    <object Name="MarbleFloor"></object>
     <object Name="Mechanical Hanger Door Vertical N"></object>
+    <object Name="Double Striped Door N"></object>
   </cell>
   <cell X="51" Y="12">
     <object Name="SterileTile"></object>
@@ -3872,7 +3874,7 @@
   </cell>
   <cell X="50" Y="13">
     <object Name="MarbleFloor"></object>
-    <object Name="Mechanical Hanger Door Vertical S"></object>
+    <object Name="Double Striped Door S"></object>
   </cell>
   <cell X="51" Y="13">
     <object Name="SterileTile"></object>

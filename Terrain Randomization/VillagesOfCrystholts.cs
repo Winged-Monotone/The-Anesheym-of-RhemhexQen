@@ -109,7 +109,7 @@ namespace XRL.World.ZoneBuilders
         public string region;
         public List<Rect2D> maskingAreas;
         private List<PopulationLayout> buildings = new List<PopulationLayout>();
-        public const string wallType = "Black Marble";
+        public const string wallType = "Rhem Black Marble";
         public const string floorType = "BlackMarbleWalkway";
         public string villagerBaseFaction = "Anesheym";
 
@@ -199,9 +199,9 @@ namespace XRL.World.ZoneBuilders
             // }
             // zone.GetCell(1, 1).AddObject("Crystallands", null, null, null, null);
             // // InfluenceMap influenceMap = ZoneBuilderSandbox.GenerateInfluenceMap(zone, new List<Point>(), InfluenceMapSeedStrategy.RandomPointFurtherThan4, 100, null, Options.GetOption("OptionDrawInfluenceMaps", "No") == "Yes", null);
-            // // if (ZoneTemplateManager.HasTemplates("Black Marble"))
+            // // if (ZoneTemplateManager.HasTemplates("Rhem Black Marble"))
             // // {
-            // //     ZoneTemplateManager.Templates["Black Marble"].Execute(zone, influenceMap);
+            // //     ZoneTemplateManager.Templates["Rhem Black Marble"].Execute(zone, influenceMap);
             // // }
             return true;
         }

@@ -203,17 +203,18 @@ namespace XRL.World.Parts
                         if (objects.Count > 0)
                         {
                             GameObject randomElement = objects.GetRandomElement();
-                            GameObject getBlueprint = GameObjectFactory.create("CrysteningGas500");
                             List<Cell> adjacentCells1 = ParentObject.CurrentCell.GetAdjacentCells();
                             CooldownLeft = Stat.Roll(Cooldown);
                             randomElement.GetPart<AloeCrystna>().CooldownLeft =
                                 Stat.Roll(randomElement.GetPart<AloeCrystna>().Cooldown);
+                            
                             activePartSubject.CurrentCell.AddObject("CrysteningGas500", Stat.Random(1, 4));
+                            
                             foreach (Cell cell in adjacentCells1)
                             {
                                 if (Stat.Random(1, 100) <= 95)
                                 {
-                                    cell.AddObject(getBlueprint, true, false, true);
+                                    cell.AddObject("CrysteningGas500");
                                 }
                             }
 

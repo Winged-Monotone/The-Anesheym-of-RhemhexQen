@@ -2,95 +2,94 @@
 <worlds>
 
     <world Name="JoppaWorld">
-        <builder Class="wmPlaceEggsBuilder"></builder>
-
+        
         <cell Name="BuggovilleZone" ApplyTo="Buggoville" Mutable="false">
-            <builder Class="Music" Track="deathfrontier1" Chance="100"></builder>
+            <builder Class="Music" Track="deathfrontier1" Chance="100"/>
 
             <zone Level="5-9" x="0-2" y="0-2" Name="sky above Rhemhez'Qen.">
-                <builder Class="Sky"></builder>
+                <builder Class="Sky"/>
 
             </zone>
 
             <zone Level="10" x="1" y="1" Name="Rhemhez'Qen" NameContext="Rhemhex'Qen" DisableForcedConnections="Yes"
                   HasWeather="true" WindSpeed="0-10" WindDirections="W,SW,S,SE" WindDuration="50-3000">
-                <map FileName="truebuggoville.rpm"></map>
-                <builder Class="Music" Track="melodyforcity" Chance="100"></builder>
+                <map FileName="truebuggoville.rpm"/>
+                <builder Class="Music" Track="melodyforcity" Chance="100"/>
             </zone>
 
             <zone Level="11" x="1" y="1" Name="Rhemhez'Qen" NameContext="City Floor" DisableForcedConnections="Yes"
                   HasWeather="true" WindSpeed="0-10" WindDirections="W,SW,S,SE" WindDuration="50-1000">
-                <map FileName="truebuggovilleflr1.rpm"></map>
-                <builder Class="Music" Track="melodyforcity" Chance="100"></builder>
+                <map FileName="truebuggovilleflr1.rpm"/>
+                <builder Class="Music" Track="melodyforcity" Chance="100"/>
             </zone>
 
             <zone Level="12" x="1" y="1" Name="Rhemhez'Qen" NameContext="Broodchambers" DisableForcedConnections="Yes"
                   HasWeather="true" WindSpeed="0-10" WindDirections="W,SW,S,SE" WindDuration="50-1000">
-                <map FileName="truebuggovilleflr2.rpm"></map>
-                <builder Class="Music" Track="melodyforcity" Chance="100"></builder>
+                <map FileName="truebuggovilleflr2.rpm"/>
+                <builder Class="Music" Track="melodyforcity" Chance="100"/>
             </zone>
 
             <zone Level="13" x="1" y="1" Name="Rhemhez'Qen" NameContext="Grand Shah's Throne"
                   DisableForcedConnections="Yes" HasWeather="true" WindSpeed="0-10" WindDirections="W,SW,S,SE"
                   WindDuration="50-1000">
-                <map FileName="truebuggovilleflr3.rpm"></map>
-                <builder Class="Music" Track="melodyforcity" Chance="100"></builder>
-            </zone> 
+                <map FileName="truebuggovilleflr3.rpm"/>
+                <builder Class="Music" Track="melodyforcity" Chance="100"/>
+            </zone>
 
             <zone Level="10" x="1" y="2" Name="Rhemhez'Qen" NameContext="Southern Rhemhex'Qen"
                   DisableForcedConnections="Yes" HasWeather="true" WindSpeed="0-10" WindDirections="W,SW,S,SE"
                   WindDuration="50-3000">
-                <map FileName="truebuggovilleS.rpm"></map>
-                <builder Class="Music" Track="melodyforcity" Chance="100"></builder>
+                <map FileName="truebuggovilleS.rpm"/>
+                <builder Class="Music" Track="melodyforcity" Chance="100"/>
             </zone>
 
             <zone Level="10" x="1" y="0" Name="Rhemhez'Qen" NameContext="Northern Rhemhex'Qen"
                   DisableForcedConnections="Yes" HasWeather="true" WindSpeed="0-10" WindDirections="W,SW,S,SE"
                   WindDuration="50-3000">
-                <map FileName="truebuggovilleN.rpm"></map>
-                <builder Class="Music" Track="melodyforcity" Chance="100"></builder>
+                <map FileName="truebuggovilleN.rpm"/>
+                <builder Class="Music" Track="melodyforcity" Chance="100"/>
             </zone>
 
             <zone Level="10" x="0" y="0" Name="Rhemhez'Qen" NameContext="North-Western Rhemhex'Qen"
                   DisableForcedConnections="Yes" HasWeather="true" WindSpeed="0-10" WindDirections="W,SW,S,SE"
                   WindDuration="50-3000">
-                <map FileName="truebuggovilleNW.rpm"></map>
-                <builder Class="Music" Track="melodyforcity" Chance="100"></builder>
+                <map FileName="truebuggovilleNW.rpm"/>
+                <builder Class="Music" Track="melodyforcity" Chance="100"/>
             </zone>
 
             <zone Level="10" x="0" y="1" Name="Rhemhez'Qen" NameContext="Western Rhemhex'Qen"
                   DisableForcedConnections="Yes" HasWeather="true" WindSpeed="0-10" WindDirections="W,SW,S,SE"
                   WindDuration="50-3000">
-                <map FileName="truebuggovilleW.rpm"></map>
-                <builder Class="Music" Track="melodyforcity" Chance="100"></builder>
+                <map FileName="truebuggovilleW.rpm"/>
+                <builder Class="Music" Track="melodyforcity" Chance="100"/>
             </zone>
 
             <zone Level="10" x="0" y="2" Name="Rhemhez'Qen" NameContext="South-Western Rhemhex'Qen"
                   DisableForcedConnections="Yes" HasWeather="true" WindSpeed="0-10" WindDirections="W,SW,S,SE"
                   WindDuration="50-3000">
-                <map FileName="truebuggovilleSW.rpm"></map>
-                <builder Class="Music" Track="melodyforcity" Chance="100"></builder>
+                <map FileName="truebuggovilleSW.rpm"/>
+                <builder Class="Music" Track="melodyforcity" Chance="100"/>
             </zone>
 
             <zone Level="10" x="2" y="0" Name="Rhemhez'Qen" NameContext="North-Eastern Rhemhex'Qen"
                   DisableForcedConnections="Yes" HasWeather="true" WindSpeed="0-10" WindDirections="W,SW,S,SE"
                   WindDuration="50-3000">
-                <map FileName="truebuggovilleNE.rpm"></map>
-                <builder Class="Music" Track="melodyforcity" Chance="100"></builder>
+                <map FileName="truebuggovilleNE.rpm"/>
+                <builder Class="Music" Track="melodyforcity" Chance="100"/>
             </zone>
 
             <zone Level="10" x="2" y="1" Name="Rhemhez'Qen" NameContext="Eastern Rhemhex'Qen"
                   DisableForcedConnections="Yes" HasWeather="true" WindSpeed="0-10" WindDirections="W,SW,S,SE"
                   WindDuration="50-3000">
-                <map FileName="truebuggovilleE.rpm"></map>
-                <builder Class="Music" Track="melodyforcity" Chance="100"></builder>
+                <map FileName="truebuggovilleE.rpm"/>
+                <builder Class="Music" Track="melodyforcity" Chance="100"/>
             </zone>
 
             <zone Level="10" x="2" y="2" Name="Rhemhez'Qen" NameContext="South-Eastern Rhemhex'Qen"
                   DisableForcedConnections="Yes" HasWeather="true" WindSpeed="0-10" WindDirections="W,SW,S,SE"
                   WindDuration="50-3000">
-                <map FileName="truebuggovilleSE.rpm"></map>
-                <builder Class="Music" Track="melodyforcity" Chance="100"></builder>
+                <map FileName="truebuggovilleSE.rpm"/>
+                <builder Class="Music" Track="melodyforcity" Chance="100"/>
             </zone>
         </cell>
 
@@ -100,19 +99,19 @@
 
         <cell Name="crystholts" ApplyTo="Crystholts">
             <zone Level="5-9" x="0-2" y="0-2" Name="sky above jungle" IndefiniteArticle="the">
-                <builder Class="Sky"></builder>
+                <builder Class="Sky"/>
             </zone>
             <zone Level="10" x="0-2" y="0-2" Name="crystholts" HasWeather="true" WindSpeed="0-60"
                   WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="50-3000"
                   AmbientBed="Sounds/Ambiences/amb_bed_jungle">
-                <postbuilder Class="ZoneTemplate:CrystalForest"></postbuilder>
+                <postbuilder Class="ZoneTemplate:CrystalForest"/>
                 <music Track="Realms of Awakening [full-m]"/>
             </zone>
             <zone Level="11-49" x="0-2" y="0-2" Name="subterranean sea">
-                <builder Class="ZoneTemplate:CrystalForestSubterania"></builder>
-                <builder Class="PossibleCryotube"></builder>
-                <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
-                <postbuilder Class="Subterranean"></postbuilder>
+                <builder Class="ZoneTemplate:CrystalForestSubterania"/>
+                <builder Class="PossibleCryotube"/>
+                <builder Class="FactionEncounters" Population="GenericFactionPopulation"/>
+                <postbuilder Class="Subterranean"/>
 
                 <music Track="Realms of Awakening [full-m]"/>
             </zone>
@@ -124,21 +123,21 @@
 
         <cell Name="BrimstoneZone" ApplyTo="BrimstoneWaste">
             <zone Level="5-9" x="0-2" y="0-2" Name="sky above jungle" IndefiniteArticle="the">
-                <builder Class="Sky"></builder>
+                <builder Class="Sky"/>
             </zone>
 
             <zone Level="10" x="0-2" y="0-2" Name="brimdire wastelands" HasWeather="false" WindSpeed="0-60"
                   WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="50-3000"
                   AmbientBed="Sounds/Ambiences/amb_bed_jungle">
-                <postbuilder Class="ZoneTemplate:SulfuricWastelands"></postbuilder>
+                <postbuilder Class="ZoneTemplate:SulfuricWastelands"/>
                 <music Track="Realms of Awakening [full-m]"/>
             </zone>
 
             <zone Level="11-15" x="0-2" y="0-2" Name="subterranean SulfuricWastelands">
-                <builder Class="Strata"></builder>
-                <builder Class="ZoneTemplate:SulfuricWastelands"></builder>
-                <builder Class="PossibleCryotube"></builder>
-                <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+                <builder Class="Strata"/>
+                <builder Class="ZoneTemplate:SulfuricWastelands"/>
+                <builder Class="PossibleCryotube"/>
+                <builder Class="FactionEncounters" Population="GenericFactionPopulation"/>
                 <music Track="Realms of Awakening [full-m]"/>
             </zone>
         </cell>

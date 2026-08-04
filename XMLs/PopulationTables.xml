@@ -48,16 +48,16 @@
                 <object Number="50" Blueprint="CrystalFloor"/>
                 <object Number="3-5" Blueprint="CrystalReal1"/>
                 <object Number="2" Blueprint="Aloe Crystna" Hint="Aquatic"/>
-                <object Number="5" Blueprint="Aloe Crystna" Hint="AdjacentToStartsWith:FreshWater"/>
+                <object Number="5" Blueprint="Aloe Crystna" Hint="AdjacentToStartsWith:LiquidCrystniumDeepPool"/>
                 <object Number="3-8" Blueprint="crystallizedcorpse"/>
-                <object Number="5" Blueprint="shardgrass" Hint="AdjacentToStartsWith:FreshWater"/>
+                <object Number="5" Blueprint="shardgrass" Hint="AdjacentToStartsWith:LiquidCrystniumDeepPool"/>
                 <object Number="15-20" Blueprint="shardgrass" Hint="AdjacentToStartsWith:shardgrass"/>
-                <object Number="1" Blueprint="Glowing Glimmerwood Tree" Hint="AdjacentToStartsWith:FreshWater"/>
+                <object Number="1" Blueprint="Glowing Glimmerwood Tree" Hint="AdjacentToStartsWith:LiquidCrystniumDeepPool"/>
                 <object Number="1" Blueprint="Glowing Shardgrove Tree" Hint="AdjacentToEndsWith:Tree"/>
                 <object Number="1" Blueprint="Glowing Crystalbirch Tree" Hint="AdjacentToEndsWith:Tree"/>
             </group>
             <group Name="CrystTreeGenDOceania" style="pickeach" Weight="35">
-                <object Number="80-100" Blueprint="OceanicWater" Hint="Adjacent"/>
+                <object Number="80" Blueprint="OceanicWater" Hint="Adjacent"/>
                 <object Number="10" Blueprint="CrystalFloor" Hint="AdjacentToStartsWith:SaltyWater"/>
                 <object Number="4-8" Blueprint="CrystalReal1"/>
                 <object Number="5" Blueprint="crytus" Hint="Aquatic"/>
@@ -71,24 +71,34 @@
                 <object Number="15" Blueprint="Crystalbirch Tree" Hint="AdjacentToEndsWith:Tree"/>
             </group>
             <group Name="VitaenCorruptionI" Style="pickeach" Weight="5">
-                <object Number="30-40" Blueprint="PutrifiedVitaeDeepPool" Hint="Adjacent"/>
+                <object Number="30-40" Blueprint="PutrifiedVitaeDeepPool" Hint="Center"/>
+                <object Number="8" Blueprint="PutrifiedVitaeDeepPool" Hint="RadialFromCenter:1"/>
+                <object Number="16" Blueprint="PutrifiedVitaeDeepPool" Hint="RadialFromCenter:2"/>
+                <object Number="32" Blueprint="PutrifiedVitaeDeepPool" Hint="RadialFromCenter:3"/>
+                <object Number="32" Blueprint="PutrifiedVitaeDeepPool" Hint="RadialFromCenter:4"/>
+                <object Number="32" Blueprint="PutrifiedVitaeDeepPool" Hint="RadialFromCenter:5"/>
+                <object Number="1-5" Blueprint="Amalgam Skin Slink"/>
+
                 <object Number="10" Blueprint="CrystalFloor"
                         Hint="AdjacentToStartsWith:PutrifiedVitaeDeepPool"/>
-                <object Number="4-8" Blueprint="GrossWall"/>
-                <object Number="5" Blueprint="vitaenstalk" Hint="Aquatic"/>
-                <object Number="2" Blueprint="vitaenstalk" Hint="AdjacentToStartsWith:PutrifiedVitaeDeepPool"/>
-                <object Number="1-3" Blueprint="BloodPool"/>
-                <object Number="5" Blueprint="putridshardgrass"
-                        Hint="AdjacentToStartsWith:SaltyPutrifiedVitaeDeepPoolWater"/>
-                <object Number="10" Blueprint="putridshardgrass"
+                <object Number="4-8" Blueprint="GrossWall"
                         Hint="AdjacentToStartsWith:PutrifiedVitaeDeepPool"/>
-                <object Number="3-10" Blueprint="BloodCryst Formation"
+                <object Number="4-8" Blueprint="GrossWall2"
+                        Hint="AdjacentToStartsWith:PutrifiedVitaeDeepPool"/>
+                <object Number="5" Blueprint="Meat Curtains Verti"
+                        Hint="AdjacentToStartsWith:PutrifiedVitaeDeepPool"/>
+                <object Number="2-10" Blueprint="amalgamgrowth" 
+                        Hint="AdjacentToStartsWith:PutrifiedVitaeDeepPool"/>
+                <object Number="1-3" Blueprint="Meat Curtains N"/>
+                <object Number="5" Blueprint="Meat Curtains S"
+                        Hint="AdjacentToStartsWith:PutrifiedVitaeDeepPool"/>
+                <object Number="1" Blueprint="Glowing Ball Sack"
+                        Hint="AdjacentToStartsWith:PutrifiedVitaeDeepPool"/>
+                <object Number="1" Blueprint="Orifical Biomass N"
+                        Hint="AdjacentToStartsWith:PutrifiedVitaeDeepPool"/>
+                <object Number="1" Blueprint="Orifical Biomass S"
                         Hint="AdjacentToStartsWith:PutrifiedVitaeDeepPool"/>
             </group>
-        </group>
-
-        <group Name="SeaCrittersA" Style="pickeach" Weight="1">
-            <object Number="1-7" Blueprint="Mantra Ray" Chance="15"/>
         </group>
     </population>
     
@@ -96,7 +106,7 @@
     
     
 <!--  Subterranean Ocean -->
-
+    
     
     
     
@@ -104,8 +114,6 @@
         <object Name="Crystallands" Number="1" Blueprint="Crystallands"/>
     </population>
     
-    
-
     <population Name="BeviddCrystalForestSubteraniaEachRegion">
         
         <group Name="VitaenCorruptionI" Style="pickeach" Weight="5">
@@ -113,11 +121,9 @@
             <object Number="10" Blueprint="CrystalFloor"
                     Hint="AdjacentToStartsWith:PutrifiedVitaeDeepPool"/>
             <object Number="4-8" Blueprint="GrossWall"/>
-            <object Number="5" Blueprint="vitaenstalk" Hint="Aquatic"/>
-            <object Number="2" Blueprint="vitaenstalk" Hint="AdjacentToStartsWith:PutrifiedVitaeDeepPool"/>
             <object Number="1-3" Blueprint="BloodPool"/>
             <object Number="5" Blueprint="putridshardgrass"
-                    Hint="AdjacentToStartsWith:SaltyPutrifiedVitaeDeepPoolWater"/>
+                    Hint="AdjacentToStartsWith:PutrifiedVitaeDeepPool"/>
             <object Number="10" Blueprint="putridshardgrass"
                     Hint="AdjacentToStartsWith:PutrifiedVitaeDeepPool"/>
             <object Number="3-10" Blueprint="BloodCryst Formation"
@@ -131,9 +137,9 @@
             <object Number="32" Blueprint="Air" Hint="RadialFromCenter:3"/>
         </group>
 
-        <group Name="Ocean" Style="pickeach" Weight="80">
-            <object Number="80-100" Blueprint="OceanicWater" Hint="Adjacent"/>
-        </group>
+<!--        <group Name="Ocean" Style="pickeach" Weight="80">-->
+<!--            <object Number="80-100" Blueprint="OceanicWater" Hint="Adjacent"/>-->
+<!--        </group>-->
 
         <group Name="CoralRagColored" Style="pickeach" Weight="150">
             <object Number="50-80" Blueprint="Coral Rag" Hint="Adjacent"/>

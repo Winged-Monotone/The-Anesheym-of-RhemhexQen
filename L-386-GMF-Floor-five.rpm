@@ -5,6 +5,7 @@
     <object Name="GrossWall"></object>
     <object Name="AutoSealingWallsWidget"></object>
     <object Name="GoreFloorSpawnerWidget"></object>
+    <object Name="RevokeRecoilersWidget"></object>
   </cell>
   <cell X="1" Y="0">
     <object Name="MarbleFloor"></object>
@@ -4723,6 +4724,7 @@
   <cell X="27" Y="15">
     <object Name="MarbleFloor"></object>
     <object Name="Gore Mess"></object>
+    <object Name="Cerulean Security Credentials"></object>
   </cell>
   <cell X="28" Y="15">
     <object Name="MarbleFloor"></object>

@@ -69,11 +69,6 @@ namespace XRL.Liquids
                 return "{{Y|crystening}}";
             }
 
-            if (Liquid.ComponentLiquids["water"] > 0)
-            {
-                return "{{Y|crystening}}";
-            }
-
             return null;
         }
 

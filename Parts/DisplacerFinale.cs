@@ -18,10 +18,9 @@ namespace XRL.World.Parts
                 Popup.ShowYesNo("Interact with the displacer panel?\n Destination: Clientele and Staffing Department.", 
                     defaultResult: DialogResult.Cancel) == DialogResult.Yes)
             {
-                The.Player.ZoneTeleport("JoppaWorld.33.3.1.1.13", X: 77, Y: 11, Device: DisplacerPanel,
+                The.Player.ZoneTeleport("JoppaWorld.33.3.1.1.13", X: 25, Y: 20, Device: DisplacerPanel,
                     SuccessMessage: "You arrive at Rhemhex'Qen.");
                 The.Player.DilationSplat();
-                The.Player.PlayWorldSound("facilitysiren.mp3");
             }
 
             if (CurrentZone.ZoneID == "JoppaWorld.33.3.1.1.13" &&

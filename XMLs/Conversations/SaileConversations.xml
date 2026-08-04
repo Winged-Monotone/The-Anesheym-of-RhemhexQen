@@ -46,7 +46,7 @@
                 
                 Classification - Specimen A-003 ... Redacted?
                 
-                Wait ... This facility has sparse data on the substance already encrypted! As if ... whatever it , it came from here!?
+                Wait ... This facility has sparse data on the substance already encrypted! As if ... whatever it is, it came from here!?
             </text>
             <choice GotoID="GetTotheEvilGoo">
                 <text>
@@ -76,7 +76,7 @@
                 
                 If I check the facility's records ...
                 
-                Ah, yes. So it seems there is more to this place then I originally thought. There is some kind of complex beneath us, far beneath us.
+                Ah, yes. So it seems there is more to this place than I originally thought. There is some kind of complex beneath us, far beneath us.
                 
                 There, could lie the secret behind this scourge.
                 
@@ -92,7 +92,7 @@
             <text>
                 *Saile ponders to themselves for a moment*
                 
-                Ah, let's see. Checking into the records once more, it seems the facility below was placed on QUARANTINE many eras ago. A panel that was typically used to enter the facility has been deactivated for security reasons. But, I can override it and get you in.
+                Ah, let's see. Checking into the records once more, it seems the facility below was placed on quarantine many eras ago. A panel that was typically used to enter the facility has been deactivated for security reasons. But, I can override it and get you in.
             </text>
             <choice GotoID="TheRevealofTheLongSigh2">
                 <text>
@@ -107,7 +107,7 @@
 
                 Alright, there! There is a panel in the south that will take you to the lower levels. Beware, I don't know what it is you'll find down there. But I doubt its friendly. Keep yourself safe, friend.
             </text>
-            <choice GotoID="End" FinishQuest="LSSpeakwithSaile" SetSpeakerIntProperty="Phase2FinalConvo,1">
+            <choice GotoID="End" CompleteQuestStep="ShahStartLongSigh~LSSpeakwithSaile" SetSpeakerIntProperty="Phase2FinalConvo,1">
                 <text>
                     Live and drink, Saile.
                 </text>

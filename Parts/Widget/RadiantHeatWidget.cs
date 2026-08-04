@@ -20,7 +20,7 @@ namespace XRL.World.Parts
 
         public override bool HandleEvent(EndTurnEvent E)
         {
-            var Rando = Stat.Random(1, 25);
+            var Rando = Stat.Random(1, 100);
             
             if (Steam && !currentCell.HasObject("Steam") && Rando == 24)
             {

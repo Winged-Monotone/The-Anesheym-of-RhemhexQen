@@ -4,7 +4,7 @@
 
     <bodyparttypes>
         <bodyparttype Type="Skin Slink" Description="skin slink" Appendage="true"
-                      LimbBlueprintDefault="AmalgamSkinSlink"/>
+                      LimbBlueprintDefault="Amalgam Skin Slink"/>
     </bodyparttypes>
     
     <bodyparttypevariants>

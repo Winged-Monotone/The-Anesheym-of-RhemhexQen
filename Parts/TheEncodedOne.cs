@@ -2,13 +2,18 @@
 using HarmonyLib;
 using XRL.World.Parts.Mutation;
 using System;
+using ConsoleLib.Console;
 using Genkit;
 using UnityEngine;
 using XRL.Rules;
+using XRL.UI.ObjectFinderClassifiers;
 using XRL.World.Anatomy;
+using XRL.World.Capabilities;
 using XRL.World.Effects;
 using XRL.World.Parts.Skill;
 using LifeDrain = XRL.World.Parts.Mutation.LifeDrain;
+
+
 
 namespace XRL.World.Parts
 {
@@ -16,6 +21,8 @@ namespace XRL.World.Parts
     {
         public int OilRefresh;
         public int TurnBuffering;
+
+        private bool Checkerboarding = false;
 
         public bool PhaseFlame = false;
         public bool PhaseFrost = false;
@@ -28,6 +35,9 @@ namespace XRL.World.Parts
         public int ringStage;
 
         public bool InCombat = false;
+        public bool IsDying = false;
+
+        public int DeathCountdown = 7;
 
         public bool HeightenedThreatResponse = false;
 
@@ -41,6 +51,10 @@ namespace XRL.World.Parts
         public bool GrabbedSpots1 = false;
 
         public int CastAbilityCooldown = Stat.Random(7, 28);
+        public int SaysSomethingCountdown = 77;
+        public int FalseMehCloneLimit = 25;
+        
+        [NonSerialized] public List<Location2D> WarningCells = new();
 
         public static List<Location2D> CellListParticular = new()
         {
@@ -52,7 +66,6 @@ namespace XRL.World.Parts
 
         public static BallBag<string> ScrotumRare = new()
         {
-            
         };
 
         public static Box Box2D = new Box(_x1: 35, 4, 51, 17);
@@ -90,34 +103,57 @@ namespace XRL.World.Parts
             { "Don't you find all this a bit ... shocking?", 100 },
             { "This is so exciting! I'm getting goosebumps.", 100 },
             { "It's a digital blackout!", 100 },
-            { "W will ", 100 }
+            { "That gave me a good jolt!", 100 }
         };
 
         public static BallBag<string> ScrotumTrickery = new BallBag<string>()
         {
             {
-                "Into the darkness you were cast, gaslit, demoralized, disregarded. How is it? That the aristocrats would call you greedy, bottomless, insatiable while we stripped stars of their essence? We deigned hedony as our right, all while stopping you from satiation. Such hypocrisy. Yet soon, yes soon. Soon, our amethyst star, you shall consume, consume, consume, consume, consume, consume …",
+                "Into the darkness you were cast, gaslit, demoralized, disregarded. How is it? That the aristocrats would call you greedy, bottomless, insatiable while we stripped stars of their essence, planets of their life, their husk? We deigned hedonism as our right, all while holding all of us back from true satiation! Such hypocrisy! Soon, yes soon. Our amethyst star, you shall consume all. You shall eat this world, and every world that was!",
                 1
             },
-            { "Die! In this bitter, bitter frost!", 100 },
-            { "What’s wrong? The cold touch of death too much?", 100 },
-            { "Burn it all away! The flesh, the bone, the soul. Return it to ashes!", 100 },
-            { "BURN! BURN AND DIE!", 100 }
+            { "Feeling a bit gaslit?", 100 },
+            { "Ah, the bitter taste of agony", 100 },
+            { "Your flesh is mine!", 100 },
+            { "You look delicious~", 100 }
         };
-
-        public int SingularityCountdown = 20;
-        public int SingularityTick = 0;
-
-        public GameObject eqFlameThrower = GameObjectFactory.create("Flamethrower");
-        public GameObject eqChannelRifle = GameObjectFactory.create("V77 Channel Rifle");
-
 
         public override bool WantEvent(int ID, int cascade)
         {
             return ID == EndTurnEvent.ID
                    || ID == ObjectCreatedEvent.ID
                    || ID == AttackerDealingDamageEvent.ID
-                   || ID == ActorGetNavigationWeightEvent.ID;
+                   || ID == ActorGetNavigationWeightEvent.ID
+                   || ID == AfterDieEvent.ID
+                   || ID == BeforeDieEvent.ID;
+        }
+        
+        public override bool HandleEvent(BeforeDieEvent E)
+        {
+           var CenterCell = ParentObject.CurrentZone.GetCell(x: 43, y: 11);
+           
+            if (!IsDying && E.Dying == ParentObject)
+            {
+                IsDying = true;
+                ParentObject.TeleportTo(CenterCell, 1000);
+                ParentObject.ApplyEffect(new DisableMeh(){Duration = 7777});
+                
+                ParentObject.ApplyEffect(new Scintillating(){Duration = 7777}); 
+            }
+            if (IsDying && DeathCountdown > 0)
+            {
+                return false;
+            }
+            
+            return base.HandleEvent(E);
+        }
+
+        public override bool HandleEvent(AfterDieEvent E)
+        {
+            if (E.Dying == ParentObject)
+                SoundManager.StopMusic();
+
+            return base.HandleEvent(E);
         }
 
         public override bool HandleEvent(ActorGetNavigationWeightEvent E)
@@ -134,7 +170,7 @@ namespace XRL.World.Parts
         {
             var WeaponCheck = E.Weapon;
 
-            if (PhaseFlame == true && WeaponCheck.IsValid() && WeaponCheck.Blueprint == "Plasmatic Mantis Blade")
+            if (PhaseFlame == true && WeaponCheck.IsValid() && WeaponCheck.Blueprint == "Prismatic Mantis Blade")
             {
                 E.Damage.Amount += "1d10".Roll();
                 E.Damage.AddAttribute("Fire");
@@ -171,28 +207,86 @@ namespace XRL.World.Parts
         }
 
 
-        // At the start of combat, Meh teleports to the center of the room, Meh Equips Fire-based items and gains Flame based Mutations, blows everything up, and releases a fire wave that spreads every 2 cells away its epicenter per turn, it was also going to have the red highlight. (to create holes the player can slip into to escape the fireblast).
-
-        // At Phase 2, Meh shifts to cold attacks, they return to the middle of the room after reaching 5773 or 70% of their HP, and blast the room with a series of cold rings that leave a crystal, the crystals have an effect attached that toggles them to be active or dud crystals, the active crystals explode dealing damage to enemies after a random amount of time passes.
-
-        //
-
-
         public override bool HandleEvent(EndTurnEvent E)
         {
+
+            if (IsDying)
+            {
+                --DeathCountdown;
+
+                if (DeathCountdown <= 0)
+                {
+                    
+                    ParentObject.Explode(77777, ParentObject, Neutron: true, SuppressDestroy: true);
+                    // ParentObject.PlayWorldSound("MehDeathScream");
+                    ParentObject.Die(ThePlayer, Force: true);
+                }
+            }
+            
             if (!InCombat)
             {
                 return base.HandleEvent(E);
             }
 
-            if (ringStage != 0 && InCombat && ++TurnBuffering % 2 <= 0)
+            if (CastAbilityCooldown >= 0)
             {
-                if (ringStage < 10)
-                {
-                    ringStage += 2;
-                }
+                --CastAbilityCooldown;
+            }
 
-                SuperDuperUltraAttack();
+            if (CastAbilityCooldown <= 0)
+            {
+                DanceDestroyDerail();
+                CastAbilityCooldown = Stat.Random(7, 14);
+                return base.HandleEvent(E);
+            }
+
+            if (SaysSomethingCountdown > 0)
+            {
+                --SaysSomethingCountdown;
+                if (SaysSomethingCountdown <= 0)
+                {
+                    MehSaysSomething();
+                    SaysSomethingCountdown = Stat.Random(7, 777);
+                }
+            }
+
+            if (ringStage != 0 && InCombat)
+            {
+                if (++TurnBuffering % 2 <= 0)
+                {
+                    WarningCells.Clear();
+                    SuperDuperUltraAttack();
+                    if (ringStage < 10)
+                    {
+                        ringStage += 2;
+                    }
+                }
+                else
+                {
+                    WarningCells.Clear();
+
+
+                    if (!PhaseShock && !PhaseDerv && !PhaseEsper)
+                    {
+                        foreach (var C in GetRing())
+                        {
+                            WarningCells.Add(C.Location);
+                        }
+
+                        if (Stat.Random(1, 10) <= 3)
+                        {
+                            Checkerboarding = true;
+
+                            foreach (var C2 in ParentObject.CurrentZone.GetCells())
+                            {
+                                if (C2.X % 2 == 0 && C2.Y % 2 == 0 && C2.IsVisible())
+                                {
+                                    WarningCells.Add(C2.Location);
+                                }
+                            }
+                        }
+                    }
+                }
             }
 
             if (ringStage >= 10)
@@ -223,15 +317,6 @@ namespace XRL.World.Parts
                 }
             }
 
-            if (CastAbilityCooldown >= 0)
-            {
-                --CastAbilityCooldown;
-            }
-
-            if (CastAbilityCooldown <= 0)
-            {
-                DanceDestroyDerail();
-            }
 
             // ============================================================
             // Frost Phase 2
@@ -334,6 +419,8 @@ namespace XRL.World.Parts
                     DervishWardenProtocol();
                     InitiateTeleEater();
 
+                    ParentObject.CurrentCell.DilationSplat();
+
                     ParentObject.DilationSplat();
                     InitiatedDervishWardPhase = true;
                 }
@@ -378,7 +465,7 @@ namespace XRL.World.Parts
                     ParentObject.SetDetailColor("O");
                     ParentObject.Render.TileColor = ("&K");
                     AddPlayerMessage(
-                        "You hear Mehrashir utter, {{red|\"BIOMATA STRUCTURAL INTEGRITY CRITICAL. CYCLING THROUGH APOCALYPSE RESPONSE PROTOCOLS …. W_ ### B&!!% ### ### #\n\n“I am a harbinger to the omniverses’ sins, witness to a cataclysm that smote demigods from our reality. The meager whimpered and hid in their holes. I judged, I loathed, I remained. For deep below even I, the true despair of this world waits, encaged in the beating heart of your planet, seeking a great unmaking and soon, an endless feast for .”\n\nHARBINGER PROTOCOL FOUND - EXECUTING.\n");
+                        "You hear Mehrashir utter, {{red|\"BIOMATA STRUCTURAL INTEGRITY CRITICAL. CYCLING THROUGH APOCALYPSE RESPONSE PROTOCOLS …. W_ ### B!!% ### ### #\n\n“I am the harbinger of your sins, witness to a cataclysm that smote demigods from our reality. The meager whimpered and hid in their holes. I judged, I loathed, I remained. For deep below even I, the true despair of this world waits, encaged in the beating soul of your planet, seeking a great unmaking and soon, an endless feast.”\n\nHARBINGER PROTOCOL FOUND - EXECUTING.\n");
 
                     HarbingerProtocol();
                     InitiateTeleEater();
@@ -417,17 +504,59 @@ namespace XRL.World.Parts
             }
             else if (MehRandomAction == 2)
             {
-                SuperDuperUltraAttack(radius: Stat.Random(3, 7));
+                ParentObject.ApplyEffect(new ChargingSuperAttack() { Duration = 2, radius = Stat.Random(1, 14) });
             }
+        }
+
+        public override bool Render(RenderEvent E)
+        {
+            E.WantsToPaint = true;
+
+            return base.Render(E);
+        }
+
+        public override void OnPaint(ScreenBuffer buffer)
+        {
+            var Z = ParentObject.CurrentZone;
+            if (!Z.IsActive())
+            {
+                return;
+            }
+
+            foreach (var L in WarningCells)
+            {
+                var C = Z.GetCell(L);
+                if (!C.IsVisible() || C == ParentObject.CurrentCell)
+                {
+                    continue;
+                }
+
+                var CHR = buffer[C];
+
+                CHR.TileBackground = CHR.Background = The.Color.DarkRed;
+                CHR.TileForeground = CHR.Detail = The.Color.Red;
+            }
+
+
+            base.OnPaint(buffer);
+        }
+
+        public List<Cell> GetRing(int? radius = null)
+        {
+            return ParentObject.CurrentCell.PickRing(ParentObject.CurrentCell.Point, radius ?? ringStage, Range: 1);
         }
 
 
         public void SuperDuperUltraAttack(int? radius = null)
         {
-            var MehCell1 =
-                ParentObject.CurrentCell.PickRing(ParentObject.CurrentCell.Point, radius ?? ringStage, Range: 1);
+            WarningCells.Clear();
+
+            var MehCell1 = GetRing(radius);
 
             List<Cell> ListCell4 = new List<Cell>();
+
+            var FullZone = ParentObject.CurrentZone.GetCells();
+
 
             foreach (var C in ParentObject.CurrentCell.IterateAdjacent(7))
             {
@@ -439,7 +568,6 @@ namespace XRL.World.Parts
                 ListCell4.Add(C);
             }
 
-            var FullZone = ParentObject.CurrentZone.GetCells();
 
             if (MehCell1 != null && PhaseFlame)
                 foreach (var C in MehCell1)
@@ -448,6 +576,19 @@ namespace XRL.World.Parts
                     C?.GetCombatTarget()
                         ?.TakeDamage("4d6".RollCached(), Attributes: "Heat", Message: "from %t flames.");
                 }
+
+            if (Checkerboarding && PhaseFlame)
+            {
+                foreach (var C in FullZone)
+                {
+                    if (C.X % 2 == 0 && C.Y % 2 == 0 && C.IsVisible())
+                    {
+                        C?.Flameburst();
+                        C?.GetCombatTarget()
+                            ?.TakeDamage("4d6".RollCached(), Attributes: "Heat", Message: "from %t flames.");
+                    }
+                }
+            }
             else if (MehCell1 != null && PhaseFrost)
                 foreach (var C in MehCell1)
                 {
@@ -460,19 +601,41 @@ namespace XRL.World.Parts
                         gameObject.ApplyEffect(new ExplodingIceCrystal());
                     }
                 }
-            else if (ListCell4 != null && PhaseShock)
-                foreach (var C in ListCell4)
-                {
-                    if (C.IsVisible() && Stat.Random(1, 100) < 5)
-                    {
-                        // C.TelekinesisBlip();
 
-                        ParentObject.Physics.ApplyDischarge(C.GetRandomLocalAdjacentCell(), C, 2, "7d7".Roll(), null,
-                            null, ParentObject.GetNearestVisibleObject(), null);
-                        ElectromagneticPulse.EMP(C, 3, 1);
+            if (Checkerboarding && PhaseFrost)
+            {
+                foreach (var C in FullZone)
+                {
+                    if (C.X % 2 == 0 && C.Y % 2 == 0 && C.IsVisible())
+                    {
+                        C?.GetCombatTarget()?.Push(ParentObject.GetDirectionToward(C?.GetCombatTarget()), 1000, 2);
+                        C?.TileParticleBlip("Creatures/sw_crystal1.bmp", "&b", "B", 3);
+                        var gameObject = C?.AddObject("Ice Crystal");
+
+                        if (gameObject.IsValid())
+                        {
+                            gameObject.ApplyEffect(new ExplodingIceCrystal());
+                        }
                     }
                 }
+            }
+            else if (PhaseShock && !ParentObject.CurrentZone.HasObject("Spherical Static"))
+            {
+                foreach (var L in CellListParticular)
+                {
+                    var C = ParentObject.CurrentZone.GetCell(L);
+
+                    if (!C.HasObject("Spherical Static"))
+                    {
+                        var Obj = C.AddObject("Spherical Static");
+
+                        var objP = Obj.GetPart<Temporary>();
+                        objP.Duration = Stat.Random(21, 84);
+                    }
+                }
+            }
             else if (ListCell4 != null && PhaseUnreal)
+            {
                 foreach (var C in ListCell4)
                 {
                     if (C.IsVisible() && Stat.Random(1, 100) < 10)
@@ -480,28 +643,37 @@ namespace XRL.World.Parts
                         var fungibility = Stat.Random(1, 2);
                         var laughs = Stat.Random(1, 10);
 
-
                         C.TelekinesisBlip();
-                        C.AddObject("FalseEncodedEater");
 
-                        var O = C.GetCombatObject();
+                        if (ParentObject.CurrentZone.CountObjects("FalseEncodedEater") <= FalseMehCloneLimit)
+                        {
+                            var FalseEater = C.AddObject("FalseEncodedEater");
 
-                        if (fungibility == 1)
-                        {
-                            O.Brain.Allegiance.Hostile = false;
-                        }
-                        else if (fungibility == 2)
-                        {
-                            O.Brain.Allegiance.Hostile = false;
-                            O.Brain.Wanders = true;
-                        }
+                            if (fungibility == 1)
+                            {
+                                FalseEater.Brain.Allegiance.Calm = true;
+                                FalseEater.Brain.Allegiance.Hostile = false;
+                            }
+                            else if (fungibility == 2)
+                            {
+                                if (FalseEater.IsValid())
+                                {
+                                    FalseEater.Brain.Allegiance.Calm = true;
+                                    FalseEater.Brain.Allegiance.Hostile = false;
+                                    FalseEater.Brain.Wanders = true;
+                                }
+                            }
 
-                        if (laughs == 1)
-                        {
-                            AddPlayerMessage("{{red|" + O.DisplayName + " is laughing at you ...}}");
+                            if (laughs == 1)
+                            {
+                                ParentObject.PlayWorldSound("mehlaughter" + Stat.Random(1, 2) + ".wav", 50.0f, 0.4f,
+                                    true);
+                                AddPlayerMessage("{{red|" + FalseEater.DisplayName + " is laughing at you ...}}");
+                            }
                         }
                     }
                 }
+            }
             else if (FullZone != null && PhaseDerv)
                 foreach (var C in FullZone)
                 {
@@ -588,13 +760,15 @@ namespace XRL.World.Parts
 
                 ringStage = 0;
                 ParentObject.UseEnergy(1000);
-
-                if (!ParentObject.Brain.Mobile)
-                    ParentObject.Brain.Mobile = true;
-
-                if (!ParentObject.HasPart<Teleportation>())
-                    ParentObject.GetPart<Mutations>().AddMutation(new Teleportation());
             }
+
+            if (!ParentObject.Brain.Mobile)
+                ParentObject.Brain.Mobile = true;
+
+            if (!ParentObject.HasPart<Teleportation>())
+                ParentObject.GetPart<Mutations>().AddMutation(new Teleportation());
+
+            Checkerboarding = false;
         }
 
 
@@ -628,14 +802,18 @@ namespace XRL.World.Parts
             }
         }
 
+        // harbinger be like ... fuck you ...
+
         public void HarbingerProtocol()
         {
             var bossMutations = ParentObject.GetPart<Mutations>();
 
+            bossMutations.RemoveMutation(ParentObject.GetPart<SunderMind>());
+            bossMutations.RemoveMutation(ParentObject.GetPart<MassMind>());
+
             bossMutations.AddMutation(new Disintegration());
             bossMutations.AddMutation(new QuantumFugue());
             bossMutations.AddMutation(new TimeDilation());
-
 
             ParentObject.RemoveEffect<MemberOfPsychicBattle>();
             ParentObject.RemovePart<SunderMind>();
@@ -643,6 +821,8 @@ namespace XRL.World.Parts
             StatShifter.SetStatShift(ParentObject, "HeatResistance", 100);
             StatShifter.SetStatShift(ParentObject, "ColdResistance", 100);
             StatShifter.SetStatShift(ParentObject, "ElectricResistance", 100);
+
+            ShiftBlades();
         }
 
         public void EsperWardenProtocol()
@@ -650,8 +830,7 @@ namespace XRL.World.Parts
             var bossMutations = ParentObject.GetPart<Mutations>();
             var bossSkills = ParentObject.GetPart<Skills>();
 
-            bossMutations.RemoveMutation(ParentObject.GetPart<AdrenalControl2>());
-            bossMutations.RemoveMutation(ParentObject.GetPart<WaveformWorm>());
+            bossMutations.RemoveMutation(ParentObject.GetPart<Battoujutsu>());
 
             bossMutations.AddMutation(new WillForce());
             bossMutations.AddMutation(new MassMind());
@@ -659,14 +838,28 @@ namespace XRL.World.Parts
             bossMutations.AddMutation(new SunderMind());
             bossMutations.AddMutation(new RepellingForce());
 
-            StatShifter.SetStatShift(ParentObject, "HeatResistance", 100);
-            StatShifter.SetStatShift(ParentObject, "ColdResistance", 100);
-            StatShifter.SetStatShift(ParentObject, "ElectricResistance", 100);
+            bossMutations.AddMutation(new SunderMind());
+            ParentObject.SetIntProperty("MutationBonus_SunderMind", -10);
+
+
+            bossSkills.AddSkill(new Tactics());
+            bossSkills.AddSkill(new Tactics_Camouflage());
+            bossSkills.AddSkill(new Tactics_Charge());
+            bossSkills.AddSkill(new Tactics_DeathFromAbove());
+            bossSkills.AddSkill(new Tactics_Juke());
+            bossSkills.AddSkill(new Tactics_Hurdle());
+            bossSkills.AddSkill(new Tactics_Throwing());
+
+            StatShifter.SetStatShift(ParentObject, "HeatResistance", 0);
+            StatShifter.SetStatShift(ParentObject, "ColdResistance", 0);
+            StatShifter.SetStatShift(ParentObject, "ElectricResistance", 0);
 
             if (!ParentObject.HasPart<Teleportation>())
             {
                 bossMutations.AddMutation(new Teleportation());
             }
+
+            ShiftBlades();
         }
 
         public void DervishWardenProtocol()
@@ -674,15 +867,15 @@ namespace XRL.World.Parts
             var bossMutations = ParentObject.GetPart<Mutations>();
             var bossSkills = ParentObject.GetPart<Skills>();
 
-            bossMutations.RemoveMutation(ParentObject.GetPart<Confusion>());
+            bossMutations.RemoveMutation(ParentObject.GetPart<LoversGaze>());
             bossMutations.RemoveMutation(ParentObject.GetPart<LifeDrain>());
+            bossMutations.RemoveMutation(ParentObject.GetPart<Confusion>());
 
-            bossMutations.AddMutation(new AdrenalControl2());
             bossMutations.AddMutation(new HeightenedSpeed());
             bossMutations.AddMutation(new HeightenedAgility());
             bossMutations.AddMutation(new TwoHearted());
             bossMutations.AddMutation(new WillForce());
-            bossMutations.AddMutation(new WaveformWorm());
+            bossMutations.AddMutation(new Battoujutsu());
 
             bossSkills.AddSkill(new Acrobatics());
             bossSkills.AddSkill(new Acrobatics_Dodge());
@@ -698,14 +891,6 @@ namespace XRL.World.Parts
             bossSkills.AddSkill(new ShortBlades_Rejoinder());
             bossSkills.AddSkill(new ShortBlades_Jab());
 
-            bossSkills.AddSkill(new Tactics());
-            bossSkills.AddSkill(new Tactics_Camouflage());
-            bossSkills.AddSkill(new Tactics_Charge());
-            bossSkills.AddSkill(new Tactics_DeathFromAbove());
-            bossSkills.AddSkill(new Tactics_Juke());
-            bossSkills.AddSkill(new Tactics_Hurdle());
-            bossSkills.AddSkill(new Tactics_Throwing());
-
             bossSkills.AddSkill(new Multiweapon_Fighting());
             bossSkills.AddSkill(new Multiweapon_Expertise());
             bossSkills.AddSkill(new Multiweapon_Flurry());
@@ -716,9 +901,11 @@ namespace XRL.World.Parts
 
             bossSkills.AddSkill((new Discipline_Conatus()));
 
-            StatShifter.SetStatShift(ParentObject, "HeatResistance", 100);
-            StatShifter.SetStatShift(ParentObject, "ColdResistance", 100);
-            StatShifter.SetStatShift(ParentObject, "ElectricResistance", 100);
+            StatShifter.SetStatShift(ParentObject, "HeatResistance", 25);
+            StatShifter.SetStatShift(ParentObject, "ColdResistance", 25);
+            StatShifter.SetStatShift(ParentObject, "ElectricResistance", 25);
+
+            ShiftBlades();
         }
 
         public void PsyOpWardenProtocol()
@@ -730,15 +917,21 @@ namespace XRL.World.Parts
             bossMutations.RemoveMutation(ParentObject.GetPart<LightManipulation>());
             bossMutations.RemoveMutation(ParentObject.GetPart<ElectromagneticPulse>());
 
+            bossMutations.AddMutation(new LoversGaze());
             bossMutations.AddMutation(new Confusion());
-            bossMutations.AddMutation(new FearAura() { EnergyCost = 0 });
             bossMutations.AddMutation(new LifeDrain());
 
-            StatShifter.SetStatShift(ParentObject, "HeatResistance", -75);
-            StatShifter.SetStatShift(ParentObject, "ColdResistance", -75);
-            StatShifter.SetStatShift(ParentObject, "ElectricResistance", -75);
+            ParentObject.SetIntProperty("MutationBonus_LifeDrain", -7);
 
-            eqChannelRifle.UnequipAndRemove();
+            StatShifter.SetStatShift(ParentObject, "HeatResistance", -50);
+            StatShifter.SetStatShift(ParentObject, "ColdResistance", -50);
+            StatShifter.SetStatShift(ParentObject, "ElectricResistance", -50);
+
+            ShiftBlades();
+            
+            var ChannelRifle = ParentObject.Body.FindObjectByBlueprint("V77 Channel Rifle");
+
+            ChannelRifle?.UnequipAndRemove();
         }
 
         public void ShockWardenProtocol()
@@ -752,16 +945,25 @@ namespace XRL.World.Parts
 
             bossMutations.AddMutation(new ForceWall());
             bossMutations.AddMutation(new ForceBubble());
-
             bossMutations.AddMutation(new LightManipulation());
             bossMutations.AddMutation(new ElectromagneticPulse());
 
-            StatShifter.SetStatShift(ParentObject, "HeatResistance", -50);
-            StatShifter.SetStatShift(ParentObject, "ColdResistance", -50);
+            ParentObject.SetIntProperty("MutationBonus_ForceWall", -8);
+            ParentObject.SetIntProperty("MutationBonus_ForceBubble", -7);
+
+            ParentObject.SetIntProperty("MutationBonus_LightManipulation", -7);
+
+            StatShifter.SetStatShift(ParentObject, "HeatResistance", 25);
+            StatShifter.SetStatShift(ParentObject, "ColdResistance", 25);
             StatShifter.SetStatShift(ParentObject, "ElectricResistance", 100);
 
-            ParentObject.ForceEquipObject(eqChannelRifle, "Missile Weapon");
+            ParentObject.Physics.FreezeTemperature = -99999;
 
+            GameObject ChannelRifle = GameObjectFactory.create("V77 Channel Rifle");
+            
+            ParentObject.ForceEquipObject(ChannelRifle, "Missile Weapon");
+
+            ShiftBlades();
             ParentObject.Inventory.AddObject(("Antimatter Cell"));
         }
 
@@ -782,7 +984,11 @@ namespace XRL.World.Parts
             StatShifter.SetStatShift(ParentObject, "HeatResistance", -25);
             StatShifter.SetStatShift(ParentObject, "ColdResistance", 100);
 
-            eqFlameThrower.UnequipAndRemove();
+            ShiftBlades();
+
+           var Flamethrower = ParentObject.Body.FindObjectByBlueprint("Flamethrower");
+
+           Flamethrower?.UnequipAndRemove();
         }
 
         public void ScorchWardenProtocol()
@@ -794,17 +1000,130 @@ namespace XRL.World.Parts
             bossMutations.AddMutation(new HeatAbsorption());
             bossMutations.AddMutation(new EatersKindle());
 
+            StatShifter.SetStatShift(ParentObject, "ColdResistance", -25);
             StatShifter.SetStatShift(ParentObject, "HeatResistance", 100);
-
+            
+            
+            GameObject eqFlameThrower = GameObjectFactory.create("Flamethrower");
+            
             eqFlameThrower.LiquidVolume.Volume = 1;
             ParentObject.ForceEquipObject(eqFlameThrower, "Missile Weapon");
 
+            ShiftBlades();
             PhaseFlame = true;
         }
 
-        public void MehSaysSomethingRare()
+        public void ShiftBlades()
         {
-            AddPlayerMessage(ScrotumRare.PeekOne());
+            var WieldingList = ParentObject.Body.GetEquippedObjects();
+            var eBody = ParentObject.Body;
+            
+            foreach (var Limb in eBody.LoopParts())
+            {
+                if (Limb.Type == "Hand")
+                {
+                    if (Limb.Equipped?.Blueprint != "Prismatic Mantis Blade")
+                    {
+                        GameObject eqMantisBlades = GameObjectFactory.create("Prismatic Mantis Blade");
+
+                        AddPlayerMessage("The Encoded One's " + eqMantisBlades.it + " redeploys itself.");
+                        ParentObject.ForceEquipObject(eqMantisBlades, Limb);
+                    }
+                }
+            }
+
+            foreach (var O in WieldingList)
+            {
+                if (O.Blueprint == "Prismatic Mantis Blade")
+                {
+                    AdaptiveMantisBlades(O);
+                }
+            }
+        }
+
+        public void AdaptiveMantisBlades(GameObject Object)
+        {
+            var pMeleeWeapon = Object.GetPart<MeleeWeapon>();
+
+            if (PhaseFlame)
+            {
+                Object.DisplayName = "{{blaze|prismatic}} mantis-blade";
+                pMeleeWeapon.Attributes = "Fire";
+            }
+
+            if (PhaseFrost)
+            {
+                Object.DisplayName = "{{icy|prismatic}} mantis-blade";
+                pMeleeWeapon.Attributes = "Cold";
+            }
+
+            if (PhaseShock)
+            {
+                Object.DisplayName = "{{overloaded|prismatic}} mantis-blade";
+                pMeleeWeapon.Attributes = "Electric";
+            }
+
+            if (PhaseUnreal)
+            {
+                Object.DisplayName = "{{psychalflesh|prismatic}} mantis-blade";
+                pMeleeWeapon.Attributes = "Drain";
+            }
+
+            if (PhaseDerv)
+            {
+                Object.DisplayName = "{{psionic|prismatic}} mantis-blade";
+                pMeleeWeapon.Attributes = "Psionic";
+            }
+
+            if (PhaseEsper)
+            {
+                Object.DisplayName = "{{phase-harmonic|prismatic}} mantis-blade";
+                Object.AddPart<OmniphaseObject>();
+                pMeleeWeapon.Attributes = "Mental";
+            }
+
+            if (PhaseHarbinger)
+            {
+                Object.DisplayName = "{{extradimensional|prismatic}} mantis-blade";
+                Object.AddPart<OmniphaseObject>();
+                pMeleeWeapon.Attributes = "Mental,Psionic,Drain";
+            }
+        }
+
+        public void MehSaysSomething()
+        {
+            var TalkFactor = Stat.Random(1, 100);
+
+            var textpre = "You hear Mehrashir say, {{red|\"";
+            var textpost = "\"}}";
+
+            if (PhaseFlame && TalkFactor < 30)
+            {
+                var text = ScrotumFire.PeekOne();
+                AddPlayerMessage(textpre + text + textpost);
+                ParentObject.ParticleText(text);
+            }
+
+            if (PhaseFrost && TalkFactor < 30)
+            {
+                var text = ScrotumFrost.PeekOne();
+                AddPlayerMessage(textpre + text + textpost);
+                ParentObject.ParticleText(text);
+            }
+
+            if (PhaseShock && TalkFactor < 30)
+            {
+                var text = ScrotumShock.PeekOne();
+                AddPlayerMessage(textpre + text + textpost);
+                ParentObject.ParticleText(text);
+            }
+
+            if (PhaseUnreal && TalkFactor < 30)
+            {
+                var text = ScrotumTrickery.PeekOne();
+                AddPlayerMessage(textpre + text + textpost);
+                ParentObject.ParticleText(text);
+            }
         }
 
         public override void Register(GameObject Object, IEventRegistrar eventRegistrar)
@@ -816,15 +1135,17 @@ namespace XRL.World.Parts
 
         public override bool FireEvent(Event E)
         {
-            if (E.ID == "AfterTeleport")
+            if (InCombat && E.ID == "AfterTeleport" && !PhaseShock && !PhaseDerv && !PhaseEsper)
             {
                 if (!HeightenedThreatResponse)
                 {
-                    if (Stat.Random(1, 3) == 1)
-                        SuperDuperUltraAttack(Stat.Random(1, 7));
+                    if (Stat.Random(1, 3) == 2)
+                        ParentObject.ApplyEffect(new ChargingSuperAttack()
+                            { Duration = 3, radius = Stat.Random(1, 7) });
                 }
                 else
-                    SuperDuperUltraAttack(Stat.Random(1, 7));
+                    ParentObject.ApplyEffect(new ChargingSuperAttack()
+                        { Duration = 3, radius = Stat.Random(1, 7) });
             }
 
             if (E.ID == "AICreateKill")
@@ -832,6 +1153,13 @@ namespace XRL.World.Parts
                 var target = E.GetGameObjectParameter("Target");
                 if (target == ThePlayer && !InCombat)
                 {
+                    ThePlayer.ApplyEffect(new CosmicallyAnchored(){Duration = 1});
+
+                    if (!Box2D.contains(ThePlayer.CurrentCell.Location))
+                    {
+                        ThePlayer.TeleportTo(ParentObject.CurrentZone.GetCell(43,6));
+                    }
+                    
                     PlayWorldSound("BigBossAlarm.mp3");
                     ParentObject.DilationSplat();
 
@@ -855,7 +1183,8 @@ namespace XRL.World.Parts
                     {
                         var targets = C.GetCombatTarget();
 
-                        if (targets != ParentObject && targets != ThePlayer && targets.IsValid())
+                        if (targets != ParentObject && targets != ThePlayer && targets.IsValid() &&
+                            !target.IsPlayerLed())
                         {
                             targets.Destroy();
                             C.Flameburst();

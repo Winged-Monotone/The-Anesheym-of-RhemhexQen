@@ -8,7 +8,9 @@
 using ConsoleLib.Console;
 using System;
 using System.Collections.Generic;
+using UnityEngine;
 using XRL.World.Effects;
+using ColorUtility = ConsoleLib.Console.ColorUtility;
 
 #nullable disable
 namespace XRL.World.Parts.Mutation
@@ -45,9 +47,11 @@ namespace XRL.World.Parts.Mutation
             if (this.ParentObject.IsEMPed() || !target.PhaseMatches(3) || !this.ParentObject.HasLOSTo(target))
                 return;
             target.ApplyEffect((Effect)new Interdicted(this.ParentObject.ID, this.SpeedPenalty));
-            var targetinter = target.GetEffect<Interdicted>();
 
-            targetinter.DisplayName = "cryoburned";
+            if (target.TryGetEffect(out Interdicted FX))
+            {
+                FX.DisplayName = "{{cryogenic|cryo}}-{{blue|burning}}";
+            }            
             
             this.interdictTarget = target;
             this.DidXToY("lock", "onto", target, ColorAsBadFor: target);
@@ -77,7 +81,7 @@ namespace XRL.World.Parts.Mutation
                                                                  FX.interdictorId == this.ParentObject.ID))))
                     this.BeginEatersInterdiction(this.ParentObject.Target);
                 if (ParentObject.Target != null && !ParentObject.Target.MakeSave("Toughness",12, ParentObject, null, null))
-                    ParentObject.Target.TakeDamage("1d5".Roll(), "takes %t from cryogenic dissipation.", "Cold");
+                    ParentObject.Target.TakeDamage("1d5".Roll(), "%t cryogenic dissipation.", "Cold");
             }
             return true;
         }
@@ -104,9 +108,9 @@ namespace XRL.World.Parts.Mutation
                 this.glowstep = 0L;
             for (int index = 0; index < lineTo.Count; ++index)
             {
-                char ch = 'c';
+                char ch = 'b';
                 if ((long)index == this.glowstep)
-                    ch = 'C';
+                    ch = 'B';
                 Tuple<Cell, char> tuple = lineTo[index];
                 buffer.Goto(tuple.Item1.X, tuple.Item1.Y);
                 buffer.Buffer[tuple.Item1.X, tuple.Item1.Y].SetBackground(ch);

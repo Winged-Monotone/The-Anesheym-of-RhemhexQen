@@ -13,6 +13,7 @@ using XRL.World.Effects;
 using XRL.Language;
 using XRL.World.Capabilities;
 using UnityEngine;
+using XRL.UI;
 
 
 namespace XRL.World.Effects
@@ -155,9 +156,14 @@ namespace XRL.World.Effects
         {
             if (E.Dying.IsPlayer())
             {
+                The.ParticleManager.TileParticles.Clear();
+                The.ParticleManager.Particles.Clear();
+                The.ParticleManager.RadialParticles.Clear();
+                The.ParticleManager.SinusoidalParticles.Clear();
+                
                 TextConsole _TextConsole = UI.Look._TextConsole;
                 ScreenBuffer Buffer = TextConsole.ScrapBuffer;
-                Core.XRLCore.Core.RenderMapToBuffer(Buffer);
+                XRLCore.Core.RenderMapToBuffer(Buffer);
                 GameObject Player = E.Dying;
                 Cell PlayerCell = Player.CurrentCell;
 
@@ -210,7 +216,7 @@ namespace XRL.World.Effects
                 Thread.Sleep(25);
 
                 Buffer.Goto(PlayerCell.X, PlayerCell.Y);
-                Player.Render.Tile = ("creatures/CrystalPlayer1");
+                Player.Render.TileColor = "&c";
                 Buffer.Write(Player.Render);
                 _TextConsole.DrawBuffer(Buffer);
                 Thread.Sleep(75);
@@ -330,7 +336,7 @@ namespace XRL.World.Effects
 
         public override bool FireEvent(Event E)
         {
-            if (E.ID == "EndTurn")
+            if (E.ID == "EndTurn" && Object.IsValid())
             {
                 if (isCrystened == false && Severity >= 50 && !Object.HasEffect("CrystenedFleshEffect"))
                 {
@@ -338,7 +344,7 @@ namespace XRL.World.Effects
                     isCrystened = true;
                 }
 
-                if (Duration > 0 && base.Object.CurrentCell.HasObjectWithPart("CrystniumGas"))
+                if (Duration > 0  && Object.CurrentCell.HasObjectWithPart("CrystniumGas"))
                 {
                     // AddPlayerMessage("[In Smoke]");
                     Severity += 1 + carrySeverityScaling;
@@ -346,7 +352,8 @@ namespace XRL.World.Effects
                     // HandleDisplayNameUpdate();
                     Crystallize();
                 }
-                else if (Duration > 0 && !base.Object.CurrentCell.HasObjectWithPart("CrystniumGas"))
+                
+                else if (Duration > 0 && !Object.CurrentCell.HasObjectWithPart("CrystniumGas"))
                 {
                     // AddPlayerMessage("[Not in Smoke]");
                     Severity += 1 + carrySeverityScaling;

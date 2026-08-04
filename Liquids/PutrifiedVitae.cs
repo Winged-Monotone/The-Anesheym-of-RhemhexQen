@@ -15,6 +15,9 @@ namespace XRL.Liquids
     [IsLiquid]
     public class PutrifiedVitae : BaseLiquid
     {
+        
+        // todo; becoming infected by the amalgam can only be cured by having the player switch bodies with a shell or something. Yeah, this is what doll body shells are gonna come from.
+        
         public new const string ID = "putrifiedvitae";
 
         public PutrifiedVitae() : base("putrifiedvitae")
@@ -30,13 +33,10 @@ namespace XRL.Liquids
             ConsiderDangerousToDrink = true;
         }
 
-        [NonSerialized] public static List<string> Colors = new List<string>(5)
+        [NonSerialized] public static List<string> Colors = new List<string>(2)
         {
             "a",
-            "A",
-            "I",
-            "i",
-            "k"
+            "A"
         };
 
         public override List<string> GetColors()
@@ -46,7 +46,7 @@ namespace XRL.Liquids
 
         public override string GetColor()
         {
-            return "R";
+            return "crimson";
         }
 
         public override string GetName(LiquidVolume Liquid)
@@ -92,7 +92,7 @@ namespace XRL.Liquids
             ref bool ExitInterface)
         {
             Message.Compound(
-                "{{red|You feel the repugnant liquid cloy to your throat, your stomach wrenches horribly as rancid vitae ravenously binds with your flesh.}}");
+                "{{red|You feel the repugnant liquid cloy to your throat, your stomach wrenches horribly, rancid vitae ravenously binds with your flesh.}}");
             Damage value = new Damage((Liquid.Proportion("PutrifiedVitae") / 25 + 1 + "d100").Roll());
             Event @event = Event.New("TakeDamage");
             @event.SetParameter("Damage", value);
@@ -102,7 +102,7 @@ namespace XRL.Liquids
             @event.SetParameter("Phase", Target.GetPhase());
             Target.FireEvent(@event);
             Target.Bloodsplatter(true);
-            Target.ApplyEffect(new DefectOnlyMutating());
+            Target.ApplyEffect(new AmalgamConversion());
             ExitInterface = true;
             return true;
         }
@@ -119,7 +119,8 @@ namespace XRL.Liquids
                 Liquid.ParentObject.Render.RenderString = "~";
             }
 
-            Liquid.ParentObject.Render.ColorString = "&a^k";
+            Liquid.ParentObject.Render.ColorString = "&a";
+            Liquid.ParentObject.Render.DetailColor = "A";
         }
 
         public override void RenderPrimary(LiquidVolume Liquid, RenderEvent eRender)
@@ -132,7 +133,7 @@ namespace XRL.Liquids
             if (Liquid.ParentObject.IsFrozen())
             {
                 eRender.RenderString = "~";
-                eRender.ColorString = "&k^k";
+                eRender.ColorString = "&a^k";
                 return;
             }
 
@@ -143,39 +144,43 @@ namespace XRL.Liquids
                 eRender.RenderString = "\u000f";
                 eRender.ColorString = "&K";
             }
-
             if (Stat.RandomCosmetic(1, 60) == 1)
             {
                 if (num < 15)
                 {
                     Render.RenderString = "÷";
-                    Render.ColorString = "&K";
+                    Render.ColorString = "&k^K";
+                    Render.TileColor = "&a";
                     Render.DetailColor = "A";
                 }
                 else if (num < 30)
                 {
                     Render.RenderString = "~";
-                    Render.ColorString = "^k";
+                    Render.ColorString = "&k^K";
+                    Render.TileColor = "&A";
                     Render.DetailColor = "a";
                 }
                 else if (num < 45)
                 {
                     Render.RenderString = "\t";
-                    Render.ColorString = "^k";
-                    Render.DetailColor = "a";
+                    Render.ColorString = "&k^K";
+                    Render.TileColor = "&a";
+                    Render.DetailColor = "k";
                 }
                 else if (num < 59)
                 {
                     Render.RenderString = "\t";
-                    Render.ColorString = "&A";
+                    Render.ColorString = "&k^K";
+                    Render.TileColor = "&A";
                     Render.DetailColor = "K";
 
                 }
                 else
                 {
                     Render.RenderString = "~";
-                    Render.ColorString = "&K";
-                    Render.DetailColor = "I";
+                    Render.ColorString = "&k^K";
+                    Render.TileColor = "&A";
+                    Render.DetailColor = "a";
                 }
             }
         }
@@ -203,7 +208,7 @@ namespace XRL.Liquids
                 GO.Splatter("&w.");
                 if (!GO.MakeSave("Toughness", 30, null, null, "Putrified Vitae"))
                 {
-                    GO.ApplyEffect(new DefectOnlyMutating(30));
+                    GO.ApplyEffect(new AmalgamConversion());
                 }
             }
         }

@@ -311,6 +311,13 @@
     
     
     <conversation ID="DisplacerPanelIntro">
+        <start ID ="ShowPanelContentsNoQuest" IfNotFinishedQuestStep="ShahStartLongSigh~LSSpeakwithSaile">
+            <text>
+                {{emote|*It is unresponsive.*}}
+            </text>
+            <choice GotoID="End">[Step away from the panel.]</choice>
+        </start>
+        
         <start ID ="ShowPanelContents">
             <text>
                 {{C|                UVA-TECH - . - - | - . - . - |____________________VRS. 1.14.3 EA65Ue
@@ -963,7 +970,7 @@
                 // ... _
 
                 // =====================================================================
-                // ... CLIENTELE INDEX : [OVERALL STATUS: ... UNDER STAFFED]
+                {{white|// ... CLIENTELE INDEX : [OVERALL STATUS: ... UNDER STAFFED]}}
                 // =====================================================================
 
                 //  > REGISTERED FACILITY OCCUPANTS IS 713 OUT OF THE MAXIMUM OCCUPANT LIMIT(1500) AS OF XX-XX-XXXX. 
@@ -975,12 +982,12 @@
                                                         ((122 MEMBERS UNACCOUNTED FOR.))
 
                 // =====================================================================
-                // ... STAFF DIRECTORY // LAST UPDATED ... ueeebvrEURWO--ERROR.
+                {{white|// ... STAFF DIRECTORY // LAST UPDATED ... ueeebvrEURWO--ERROR.}}
                 // =====================================================================
                 
                 // _ADMINISTRATORS_
-                
-                DR. ALTON NIELST - LEAD PROFESSOR AND ADMINISTRATOR - AGE: 586, GENDER: MASCULINE
+
+                {{white|DR. ALTON NIELST - LEAD PROFESSOR AND ADMINISTRATOR - AGE: 586, GENDER: MASCULINE}}
                                     v STATUS
                                         [HEART RATE: 22.BPM]
                                         [BLOOD PRESSURE: 333 ÷ 80]
@@ -988,7 +995,7 @@
                                         [GENETIC STABILITY: COMPROMISED]
                                         [P-DRP: 1000lk/D, INFECTED]
 
-                ORKATH L. BORRICK - LEAD SECURITY ADMINISTRATOR - AGE: 99, GENDER: MASCULINE
+                {{white|ORKATH L. BORRICK - LEAD SECURITY ADMINISTRATOR - AGE: 99, GENDER: MASCULINE}}
                                     v STATUS
                                         [HEART RATE: 350.BPM - EXPIRED]
                                         [BLOOD PRESSURE: 0]
@@ -996,7 +1003,7 @@
                                         [GENETIC STABILITY: COMPROMISED]
                                         [P-DRP: 3256lk/D, HIGHLY INFECTED]
 
-                DEA'MOP D'VILLE - LABOUR DIVISION ADMINISTRATOR - AGE: 266, GENDER: NON-BINARY
+                {{white|DEA'MOP D'VILLE - LABOUR DIVISION ADMINISTRATOR - AGE: 266, GENDER: NON-BINARY}}
                                     v STATUS
                                         [HEART RATE: OUT-OF-RANGE]
                                         [BLOOD PRESSURE: OUT-OF-RANGE]
@@ -1006,35 +1013,35 @@
 
                 // _SCIENCE OFFICERS_
 
-                ######### ### - LEAD GENETICS OPERATIONS RESEARCHER - AGE: 69, GENDER: FEMININE
+                {{white|######### ### - LEAD GENETICS OPERATIONS RESEARCHER - AGE: 69, GENDER: FEMININE}}
                                     v STATUS
                                         [HEART RATE: 80.BPM]
                                         [BLOOD PRESSURE: 113 ÷ 80]
-                                        [COGNITIVE STATE: SHOWING SEVERE NEURAL DEGRADATION -- SEEK S.R.T ASAP]
+                                        [COGNITIVE STATE: SHOWING SEVERE NEURAL DEGRADATION -- SEEK N.R.T ASAP]
                                         [GENETIC STABILITY: ENCODED/NON-APPLICABLE]
                                         [P-DRP: ENCODED/NON-APPLICABLE]
-                                        NOTE: INDIVIDUAL HAS ENACTED BIOMATA-PRESERVATION SYSTEMS, CURRENT SHELL IS RATED S-SERIES. SHELL-DEGRADATION EXCEEDS WARRANTY DECLARATION, SEEK SAFE NEURAL-EJECTION AND G.H.O.S.T RECONSTRUCTIVE THERAPY IMMEDIATELY.
+                                        NOTE: INDIVIDUAL HAS ENACTED BIOMATA-PRESERVATION SYSTEMS, CURRENT SHELL IS RATED S-SERIES. SHELL-DEGRADATION EXCEEDS WARRANTY DECLARATION, SEEK SAFE NEURAL-EJECTION AND NEUROPLASTIC RECONSTRUCTIVE THERAPY IMMEDIATELY.
 
-                YOLTUM DAL - LEAD GENETICS OPERATIONS RESEARCHER - AGE: 123, GENDER: MASCULINE
+                {{white|YOLTUM DAL - LEAD GENETICS OPERATIONS RESEARCHER - AGE: 123, GENDER: MASCULINE}}
                                     v STATUS
-                                        [HEART RATE: 125.BPM -EXPIRED]
+                                        [HEART RATE: 125.BPM - {{dark grey|EXPIRED}}]
                                         [BLOOD PRESSURE: 368.BPM ]
                                         [COGNITIVE STATE: ABOVE EXPECTED VALUE]
                                         [GENETIC STABILITY: COMPROMISED]
                                         [P-DRP: 3256lk/D, HIGHLY INFECTED]
 
-                XEVEYE DE METREYN - LEAD GENETICS OPERATIONS RESEARCHER - AGE: 77, GENDER: MASCULINE
+                {{white|XEVEYE DE METREYN - LEAD GENETICS OPERATIONS RESEARCHER - AGE: 77, GENDER: MASCULINE}}
                                     v STATUS
-                                        [HEART RATE: 266.BPM -EXPIRED]
+                                        [HEART RATE: 266.BPM - {{dark grey|EXPIRED}}]
                                         [BLOOD PRESSURE: 877.BPM ]
                                         [COGNITIVE STATE: ABOVE EXPECTED VALUE]
                                         [GENETIC STABILITY: COMPROMISED]
                                         [P-DRP: 4020lk/D, HIGHLY INFECTED]
 
-                MORHAN GRIMSDOTTIR - LEAD GENETICS OPERATIONS RESEARCHER - AGE: 187, GENDER: FEMININE
+                {{white|MORHAN GRIMSDOTTIR - LEAD GENETICS OPERATIONS RESEARCHER - AGE: 187, GENDER: FEMININE}}
                                     v STATUS
-                                        [HEART RATE: 0.BPM - EXPIRED]
-                                        [BLOOD PRESSURE: EXPIRED ]
+                                        [HEART RATE: 0.BPM - {{dark grey|EXPIRED}}]
+                                        [BLOOD PRESSURE: {{dark grey|EXPIRED}} ]
                                         [COGNITIVE STATE: ABOVE EXPECTED VALUE]
                                         [GENETIC STABILITY: COMPROMISED]
                                         [P-DRP: 1103lk/D, HIGHLY INFECTED]
@@ -1055,8 +1062,8 @@
     
 <!--    info terminal : site wide status-->
 
-    <conversation ID="SiteWideDataPanel">
-        <start ID ="ShowPanelContents">
+    <conversation ID="SiteWideDataPanel2">
+        <start ID ="FacilityDiagnosticsIndex">
             <text>
                 {{C|                UVA-TECH - . - - | - . - . - |____________________VRS. 1.14.3 EA65Ue
                 ========================================================================
@@ -1114,11 +1121,15 @@
                 =ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=> communications array: suboptimal
                 =ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=> microwave emitter systems: nominal
                                                 v
-                =ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=note: do note enter the SRC AND GV foyer without either deactivating the MWE power unit or equipping an E.R.A.S. 
+                =ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1==ud_nbsp:1=note: do note enter the SRC &amp;&amp; GV foyer without either deactivating the MWE power unit or equipping an E.R.A.S. 
                 
-                AS OF EVENT 3030, All E.R.A.S Armories require Genopticon Security Clearance.
+                * Addendum: AS OF EVENT 3030, All E.R.A.S Armories require Genopticon Security Clearance.
+
+                ========================================================================
+
+                USER NOTE: 
                 
-                USER NOTE: CLIN: If you were unaware, Event 3030 was when that one dumbass back in XX.XX.XXXX stole an E.R.A.S just to get into the Recumbancy Chamber. Said they "just wanted some of the good stuff,"--like, the obsession with soft-drinks has gotta be wild to go that far.
+                [CLIN]: If you were unaware, Event 3030 was when that one dumbass back in XX.XX.XXXX stole an E.R.A.S just to get into the Recumbancy Chamber. Said they "just wanted some of the good stuff,"--like, your obsession with soft-drinks has gotta be wild to go that far. Anyways, now the microwaves are up and if you step even a foot in that hall, you're getting cooked faster than a frozen-dinner getting chucked into the sun.
                 
                 {{red|=DATA ERROR=
                 =ANONYMOUS INTRUSION DETECTED=

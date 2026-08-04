@@ -2,6 +2,9 @@
 <Map Width="80" Height="25">
   <cell X="0" Y="0">
     <object Name="GrossWall"></object>
+    <object Name="RevokeRecoilersWidget"></object>
+    <object Name="AutoSealingWallsWidget"></object>
+    <object Name="GoreFloorSpawnerWidget"></object>
   </cell>
   <cell X="1" Y="0">
     <object Name="GrossWall"></object>
@@ -1296,7 +1299,7 @@
   </cell>
   <cell X="23" Y="5">
     <object Name="SterileTile"></object>
-    <object Name="GritGate Mainframe Monitor 1"></object>
+    <object Name="Long Sigh Mainframe Monitor 1"></object>
   </cell>
   <cell X="24" Y="5">
     <object Name="Gore Mess"></object>
@@ -1543,11 +1546,11 @@
   </cell>
   <cell X="16" Y="6">
     <object Name="MarbleFloor"></object>
-    <object Name="GritGate Mainframe Tape Drive"></object>
+    <object Name="Long Sigh Mainframe Tape Drive"></object>
   </cell>
   <cell X="17" Y="6">
     <object Name="MarbleFloor"></object>
-    <object Name="GritGate Mainframe Status Panel"></object>
+    <object Name="Long Sigh Mainframe Status Panel"></object>
   </cell>
   <cell X="18" Y="6">
     <object Name="MarbleFloor"></object>
@@ -1563,12 +1566,12 @@
   </cell>
   <cell X="21" Y="6">
     <object Name="MarbleFloor"></object>
-    <object Name="GritGate Mainframe Monitor 1"></object>
+    <object Name="Long Sigh Mainframe Monitor 1"></object>
     <object Name="Crematory Mainframe Monitor 1"></object>
   </cell>
   <cell X="22" Y="6">
     <object Name="MarbleFloor"></object>
-    <object Name="GritGate Mainframe Status Panel"></object>
+    <object Name="Long Sigh Mainframe Status Panel"></object>
   </cell>
   <cell X="23" Y="6">
     <object Name="Gore Mess"></object>
@@ -1590,11 +1593,11 @@
   </cell>
   <cell X="27" Y="6">
     <object Name="MarbleFloor"></object>
-    <object Name="GritGate Mainframe Monitor 1"></object>
+    <object Name="Long Sigh Mainframe Monitor 1"></object>
   </cell>
   <cell X="28" Y="6">
     <object Name="MarbleFloor"></object>
-    <object Name="GritGate Mainframe Monitor 2"></object>
+    <object Name="Long Sigh Mainframe Monitor 2"></object>
   </cell>
   <cell X="29" Y="6">
     <object Name="MarbleFloor"></object>
@@ -1602,7 +1605,7 @@
   </cell>
   <cell X="30" Y="6">
     <object Name="MarbleFloor"></object>
-    <object Name="GritGate Mainframe Monitor 2"></object>
+    <object Name="Long Sigh Mainframe Monitor 2"></object>
     <object Name="Shattered Glass"></object>
   </cell>
   <cell X="31" Y="6">
@@ -4526,7 +4529,7 @@
   </cell>
   <cell X="19" Y="17">
     <object Name="SterileTile"></object>
-    <object Name="GritGate Mainframe Monitor 2"></object>
+    <object Name="Long Sigh Mainframe Monitor 2"></object>
   </cell>
   <cell X="20" Y="17">
     <object Name="SterileTile"></object>
@@ -4535,7 +4538,7 @@
   </cell>
   <cell X="21" Y="17">
     <object Name="SterileTile"></object>
-    <object Name="GritGate Mainframe Monitor 1"></object>
+    <object Name="Long Sigh Mainframe Monitor 1"></object>
   </cell>
   <cell X="22" Y="17">
     <object Name="SterileTile"></object>

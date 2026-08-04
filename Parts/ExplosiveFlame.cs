@@ -18,7 +18,7 @@ namespace XRL.World.Parts
 
         public override bool HandleEvent(OnDestroyObjectEvent E)
         {
-            E.Object.Explode(50000, Owner, SuppressDestroy: true);
+            E.Object.Explode(21000, Owner, SuppressDestroy: true);
             return base.HandleEvent(E);
         }
     }

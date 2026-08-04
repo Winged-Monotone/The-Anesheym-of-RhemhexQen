@@ -18,6 +18,7 @@ namespace XRL.World.Parts
     {
         public FleshVent()
         {
+            
         }
 
         public override bool SameAs(IPart p)
@@ -40,15 +41,12 @@ namespace XRL.World.Parts
                 var GasChance2 = Stat.Random(1, 100);
 
 
-                if (GasChance > 95)
+                if (GasChance > 90)
                 {
-                    var Chance = ParentObject.CurrentCell.GetAdjacentCells();
-                    foreach (var C in Chance)
+                    var adjCells = ParentObject.CurrentCell.GetAdjacentCells();
+                    foreach (var C in adjCells)
                     {
-                        if (GasChance2 > 97)
-                        {
                             C.AddObject("PinkMiasma500");
-                        }
                     }
                 }
             }

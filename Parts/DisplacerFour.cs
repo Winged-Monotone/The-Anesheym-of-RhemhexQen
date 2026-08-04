@@ -27,7 +27,7 @@ namespace XRL.World.Parts
                 Popup.ShowYesNo("Interact with the displacer panel?\n Destination: Fifth Floor - Biospecimen Genetic Therapeutics.",
                     defaultResult: DialogResult.Cancel) == DialogResult.Yes)
             {
-                The.Player.ZoneTeleport("JoppaWorld.33.3.1.1.29845656", X:79, Y: 6, Device: DisplacerPanel,
+                The.Player.ZoneTeleport("JoppaWorld.33.3.1.1.29845656", X:74, Y: 3, Device: DisplacerPanel,
                     SuccessMessage: "You arrive at floor five.");
                 The.Player.DilationSplat();
             }

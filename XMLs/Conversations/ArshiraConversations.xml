@@ -11,11 +11,12 @@
                 Desire something of me, vagrant?
             </text>
             <choice GotoID="ArshiraQuestionedWhoIX">I’m =name=, Who are you?</choice>
-            <choice CallScript="XRL.World.Parts.ArshiraCompanionActivator.ArshJoin" GotoID="End">Join me? (For
-                Testing)
-            </choice>
             <choice GotoID="End">I desire nothing. Live and drink.</choice>
         </node>
+
+        <!--            <choice CallScript="XRL.World.Parts.ArshiraCompanionActivator.ArshJoin" GotoID="End">Join me? (For-->
+        <!--                Testing)-->
+        <!--            </choice>-->w
 
         <node ID="ArshiraQuestionedWhoIX">
             <text>

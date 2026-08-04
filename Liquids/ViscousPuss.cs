@@ -90,7 +90,7 @@ namespace XRL.Liquids
             ref bool ExitInterface)
         {
             Message.Compound(
-                "{{red|Bitty, foaming and coarse with a bit of chunk, your throat swells immediately and you feel the bacterium of the ancients assault your molecules.}}");
+                "{{red|Bitty, foaming and coarse with a bit of chunk, your throat swells immediately and you feel the bacterium of the ancients take over your molecules.}}");
             Target.Bloodsplatter(true);
             Target.ApplyEffect(new Witkrunk());
             
@@ -100,7 +100,7 @@ namespace XRL.Liquids
 
         public override void RenderBackgroundPrimary(LiquidVolume Liquid, RenderEvent eRender)
         {
-            eRender.ColorString = "^Y" + eRender.ColorString;
+            eRender.ColorString = "^k" + eRender.ColorString;
         }
 
         public override void BaseRenderPrimary(LiquidVolume Liquid)
@@ -110,7 +110,8 @@ namespace XRL.Liquids
                 Liquid.ParentObject.Render.RenderString = "~";
             }
 
-            Liquid.ParentObject.Render.ColorString = "&Y^k";
+            Liquid.ParentObject.Render.ColorString = "&K^k";
+            Liquid.ParentObject.Render.DetailColor = "Y";
         }
 
         public override void RenderPrimary(LiquidVolume Liquid, RenderEvent eRender)
@@ -123,7 +124,7 @@ namespace XRL.Liquids
             if (Liquid.ParentObject.IsFrozen())
             {
                 eRender.RenderString = "~";
-                eRender.ColorString = "&Y^w";
+                eRender.ColorString = "&k^w";
                 return;
             }
 

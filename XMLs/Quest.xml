@@ -40,7 +40,21 @@
         <step Name="Enter the Long Sigh"
               ID="LSEnterTheLongSigh">
             <text>
-                A displacer, south, on the third floor of Rhemhex'Qen. Will bring you to the Long Sigh, there
+                A displacer, south, on the third floor of Rhemhex'Qen. Will bring you to the Long Sigh, there you can figure out what is happening this region.
+            </text>
+        </step>
+
+        <step Name="Find and destroy the source of the Crimson Tide"
+              ID="LSDefeatNielst">
+            <text>
+                You have entered the Long Sigh, and it's truly nightmarish. Find the source of this calamity, and put an end to it.
+            </text>
+        </step>
+
+        <step Name="Return to the Shah, and let her know of your exploits"
+              ID="ReturntoTheShah">
+            <text>
+                You've defeated Nielst and culled the heart of the Crimson Tide, return to the Shah of Rhemhex'Qen and tell her of your venture.
             </text>
         </step>
     </quest>

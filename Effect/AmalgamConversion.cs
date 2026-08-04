@@ -6,19 +6,32 @@ namespace XRL.World.Effects
     {
         public int CycleDuration = 1500;
         public int InfectionPhases = 4;
-        
-        
+
+        public bool SkinSlink = false;
+
         public AmalgamConversion()
         {
-            base.DisplayName = "{{Red|Vitamosis}}";
+            base.DisplayName = "{{Red|vitamosis}}";
+            Duration = 1;
         }
         
+        public AmalgamConversion(bool skinSlink) : this()
+        {
+            this.SkinSlink = skinSlink;
+        }
+
         public override string GetDetails()
         {
+            if (SkinSlink)
+            {
+                return
+                    "A skin slinker has slithered under your skin and is releasing enzymes, slowly transforming you into an amalgam.";
+            }
+
             return
-                "A skin slinker has slithered under your skin and is releasing enzymes, slowly transforming you into an amalgam.";
+                "Putrified vitae has compromised your molecular structure, you are slowly transforming you into an amalgam.";
         }
-        
+
         public override bool WantEvent(int ID, int cascade)
         {
             return base.WantEvent(ID, cascade)
@@ -27,12 +40,13 @@ namespace XRL.World.Effects
 
         public override bool HandleEvent(EndTurnEvent E)
         {
-            if( Object == The.Player)
+            if (Object == The.Player)
                 --CycleDuration;
             else
             {
                 CycleDuration -= 150;
             }
+
             if (CycleDuration == 0)
             {
                 CycleDuration = 1500;
@@ -42,7 +56,7 @@ namespace XRL.World.Effects
                     Object.ReplaceWith("Amalgam" + Stat.Random(1, 4));
                     if (Object == The.Player)
                     {
-                        The.Player.Die(Reason: "You succumb to the amalgam surge.");
+                        The.Player.Die(Reason: "You succumb to the Crimson Tide.");
                     }
                     else
                     {
@@ -51,9 +65,8 @@ namespace XRL.World.Effects
                     }
                 }
             }
+
             return base.HandleEvent(E);
         }
-        
-        
     }
 }

@@ -25,6 +25,11 @@ namespace Wingytone.Systems
 
         public void PlaceEggs(Zone zone)
         {
+            if (25.in100())
+            {
+                return;
+            }
+            
            var PopEggs = PopulationManager.RollOneFrom("DynamicInheritsTable:BaseStrangeEgg:Tier" + zone.NewTier);
            var PopEggsBluePrint = PopEggs.Blueprint;           
            int placeStyle = Stat.Random(1, 3);

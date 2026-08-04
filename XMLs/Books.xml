@@ -20,7 +20,7 @@
 
             of the various hormones, enzymes, dynestrogen relica makes up a majority of the compound:
 
-            {{red|Dynestrogen}} : 74.3
+            {{red|Dynestrogen}} : 74.3.md
             
             remember, this synthetic hormone engages the deoxyribonucleic system, stimulating individual molecular reintegration while incurring only minimal-to-minor losses in cellular stability or rouge-cellar pathogenesis.
             
@@ -46,7 +46,7 @@
             
             i'm ... being cowardly, apparently. 
 
-            {{orange|Mychoglobulin}} : 56.7
+            {{orange|Mychoglobulin}} : 69.3
             
             i got a bad feeling. and i'm just getting started. what the hell do I do?
 
@@ -154,7 +154,7 @@
             
             I awoke this morning to a message in my inbox, we've been greenlit to move on with the final stages of Project LIEF.
             
-            Finally, a moment of true exposure for my recent experiments. A moment to be, vindicated and recognized for the truly revolutionary deeds I've done here.
+            Finally, a moment of true exposure for my recent experiments. A moment to be vindicated and recognized for the truly revolutionary deeds I've done here.
             </page>
             
             <page>
@@ -162,7 +162,7 @@
             
             If we can perfect this solution, we can create a tonic that when taken, allows one to sculpt themselves with their very minds.
             
-            The only thing holding me back, are the nitwits they assigned me. Sure Dr. ######### has some genius when it comes to her chemical synthesis skills. But they're a bit too ... altruistic? Humble? All 'hypothetical trials before clinical trials.'
+            The only thing holding me back, are the nitwits they assigned me. Sure Dr. ######### has some genius when it comes to her ... its ... however that thing refers to themselves, chemical synthesis skills. But they're a bit too ... altruistic? Humble? All 'hypothetical trials before clinical trials.'
         
             What a child.
             </page>
@@ -174,10 +174,9 @@
             </page>
 
              <page>
-            The rest of the crew are a bunch of fools. Drabble, empty heads that only follow directions. But I'll make use of this lot. My road to glory was paved with agonies, but it was worth it. It was worth the wait, the time, the sweat, the blood. The humiliation at the hands of this society.
+            The rest of the crew are a bunch of fools. Drabble, empty heads that only follow directions. But I'll make use of this lot. My road to glory was paved with agonies, but it was worth it. It was worth the wait, the time, the sweat, the blood. The humiliation at the hands of this society. 
                  
                  I will be the herald of a new era.
-                 
              </page>
         
     </book>
@@ -188,11 +187,11 @@
             MESSAGE HISTORY - XX-XX-XXXX CO--UROTPIE-D -- [DATE ... UNKNOWN]
             =====================================================================
 
-    Dr. ########, all dour-eyed, whining like a sheep over the "dangers" of the clinical experiments. We've kept our biosynthization methods within scope. Somewhat. And though yes some of the recent clinical test on the vermin have resulted in, how shall I say this, 'lively tumors.' We've managed to curt the cliffedge with our experiments. Sure, the cells are revolting against the forced reconstitution efforts. But the compound is ... dynamic. DR. ######## says it could be a catastrophe, a "world ending event". 
+    Dr. ########, all dour-eyed, whining like a sheep over the "dangers" of the clinical experiments. We've kept our biosynthization methods within scope. Somewhat. And though yes some of the recent clinical test on the vermin have resulted in, how shall I say this, 'lively tumors.' We've managed to curt the cliffedge with our experiments. Sure, the cells are revolting against the forced reconstitution efforts. But the compound is ... dynamic. Dr. ######## says it could be a catastrophe, a "world ending event". 
             
             Ha ... what an imagination.
             
-            The girl thinks this place wouldn't be qaurantined and glassed to high-hell before that even happens. Fret not I say, we are one of the most secure and advanced biogenetics firms in the world, the military in our pockets offers security and personnel unrivalled by our peers. Perks like, administrative freedoms, enhanced emenities, and a security force that could vaporize an armada. Some talking tumors aren't going to stop us, no-- me, from achieving the glory that I deserve. I accused the girl of being a coward, "how did you even become a scientist? too busy sticking hypotheticals to paper and never practicing the practical element!" 
+            The girl thinks this place wouldn't be qaurantined and pyro-glassed to high-hell before that even happens. Fret not I say, we are one of the most secure and advanced biogenetics firms in the known galaxy, the military in our pockets offers security and personnel unrivalled by our peers. Perks like administrative freedoms, enhanced emenities, and a security force that could vaporize an armada. Some talking tumors aren't going to stop us, no-- me, from achieving the glory that I deserve. I accused the girl of being a coward, "how did you even become a scientist? too busy sticking hypotheticals to paper and never practicing the practical element!" 
             
             Got a good laugh out of me, and Dr. Xeveye.
             
@@ -248,7 +247,7 @@ If these idiots can maintain focus for a moment, we might actually finish this p
         </page>
     </book>
 
-        <book ID="AfrNieEntry7" Title="PVT-LOG - LEAD PROF - E.06">
+        <book ID="AfrNieEntry7" Title="PVT-LOG - LEAD PROF - E.07">
             <page>
                 USERS: DR. AFRON NIELST - LEAD SCIENCE OFFICER
                 MESSAGE HISTORY - XX-XX-XXXX CO--UROTPIE-D -- [DATE ... UNKNOWN]
@@ -259,7 +258,7 @@ If these idiots can maintain focus for a moment, we might actually finish this p
         </book>
 
         <book ID="AfrNieEntry8" Title="PVT-LOG - LEAD PROF - E.015">
-            <page>
+            <page>ssd
                 USERS: DR. AFRON NIELST - LEAD SCIENCE OFFICER
                 MESSAGE HISTORY - XX-XX-XXXX CO--UROTPIE-D -- [DATE ... UNKNOWN]
                 =====================================================================
@@ -395,7 +394,26 @@ If these idiots can maintain focus for a moment, we might actually finish this p
     </page>
 </book>
 
+    
+    
+    
 <!--Grimsdotter's Death - Camera Footage-->
+
+    
+    
+    <book ID="GRIMSDOTTIRDEATH" Title="FOOTAGE - 'THIRD EXECUTION">
+        <page>
+            USERS: MORHAN GRIMSDOTTIR
+            MESSAGE HISTORY - XX-XX-XXXX CO--UROTPIE-D -- [DATE ... UNKNOWN]
+            =====================================================================
+
+            [video of morhan being executed]
+        </page>
+    </book>
+    
+
+    <!--Meh Long Personal File - Camera Footage-->
+
 
     <book ID="MehsDiary" Title="PERSONAL FILE > MEHRISHIR > JOURNAL">
         <page>
@@ -406,9 +424,112 @@ If these idiots can maintain focus for a moment, we might actually finish this p
             intro into meh being locked inside the chamber, mention all its accommodations, that Meh feels sick, that she just needs to wait for the QUARANTINE response team 
         </page>
     </book>
+
     
     
+
+    <!--Grimsdotter's Death - Camera Footage-->
+
+
+    <!--Brochure-->
+
+
+    <book ID="Codec Shell Brochure Read" Title="K-Gen Shell User-Manual &amp;&amp; Combat Review">
+        <page>
+===========================================================
+
+╻┏ ┏━┓┏━┓╻ ╻╻┏┓╻   ┏━╸┏━╸┏┓╻
+┣┻┓┃ ┃┗━┓┣━┫┃┃┗┫╺━╸┃╺┓┣╸ ┃┗┫
+╹ ╹┗━┛┗━┛╹ ╹╹╹ ╹   ┗━┛┗━╸╹ ╹
+"Flesh is ephemeral, biomata is eternal."
+===========================================================
+
+Koshinryu Genetics S-Class BIOMATA “IDOL” Series
+
+Koshin-Gen presents the latest innovation in biocybernetic technology offered to only the finest aristocrats.
+
+Tired of your biological body constantly expelling waste? Are you tired of the constant threat of disease, illness and famine? Or the worst, are you tired of your physical frame never meeting your taste of the day?
+
+We would like to present to you the new “IDOL”  Series Modular S Shell, the complete suite. This is a top of the line, fully modded, fully kitted, Full Neural Integration Biocybernetic Doll.
+
+It's award-winning design comes from the renowned clone-geneX of ICON Series creator, Dr. Seo Min.
+            
+===========================================================
+            
+NEURAL INTEGRATION INSTRUCTIONS:
+
+WARNING! FAILURE TO FOLLOW NEURAL INTEGRATION PROCEDURES PROPERLY CAN RESULT IN THE FOLLOWING:
+
+            > Death or serious injury.
+            > Half-GHOST disorder.
+            > Cybrocerebral Derealization Syndrome (CODS).
+            > Loss of self-awareness and self-identification.
+            > Phantom-form syndrome.
+
+It is always recommended that you perform neural integration procedures with a trained professional or an individual who has performed a DIY integration successfully. If doing this on your own, do not skip any of the instructions, read them carefully and follow instructions to the letter.
+
+Step 1: Approach your nearest VAGA, you will be stationed at this VAGA and prepped for neural integration.
+
+Step 2: Tap and activate your neural integration plug, these are usually located on the back of one's neck, lower sacrum, or belly button. Be sure these regions are cleaned and sterilized, biomass or debris can tarnish adapters, which can cause issues with the transfer process.
+
+Step 3: Attach neural interlinks' linking-plug with the socket on the dolls’ rear neck port. Ensure the neck-port is cleaned thoroughly and is sterilized (it is recommended to use a personal autoclave). Debris can cause issues with the transfer process.
+
+Step 4: Approve authorization procedures, this will be displayed on your integrated digital peripherals. It is advised to use a VISAGE if necessary, or any form of advanced augmented reality perceptions device.
+
+Step 5: Press Confirm.
+
+Step 6: If your integration has been properly completed, the subject should feel their engrams be separated from their bioorganic form and transfered into the shell. Individuals report this sensation ranging from exhilirating to being very upsetting, as all of their internal programs initiate and connect with their uploaded consciousness, one can sometimes feel incomplete or insubstantial to their original state. It is important to give these individuals tranquility, rest, and peace of mind in these moments. If a serenity complex is available, utilize its recreational activities to help you ground yourself.
+
+Step 7: Enjoy and customize your new Shell. Each shell has several customizable options off the get-go, regarding its shape and/or form. Shifting ionizing diodes built into the shell's epidermal systems allow it to shift its color at a mere thought. And biomata gel technology allows for expansive and easy customization options! This is your new form, free of bioorganic burdens.
+
+===========================================================
+
+BINEURAL GEIST MAINTENANCE &amp;&amp; BINEURAL GEIST DEGRADATION
+
+Though bineural GEIST separation makes the user funtionally immortal, this does not mean that your GEIST can persist without proper maintenance. Longterm neglect of your GEIST's bineural pathways can lead to dangerous and sometimes irreprable damage to your digitized GEIST. If you are experiencing memory loss, disconnected thoughts and mental fatigue, changes in personality or social traits, or sudden bouts of intense emotion and/or rage; you may be experiencing symptoms related to Neural GEIST Degredation or BGD. BGD is the byproduct of longterm Digineural neglect and the lack of ontime maintenance.
+
+Keys for avoiding permanent Bineural GEIST Degredation or BGD:
+
+        •   Go to the nearest GEIST Therapeutics Facility for bineuroplastic rejuvenation therapy (BRT) once per every 358 years. Or, use the BRT-Treatement Implant at your nearest VAGA. This is the minimum time, though doing this earlier is fine. Ensure that laspes in BRT treatments do not exceed 1000 years. Doing so can lead to BGD.
     
-    
-    
+        •   Avoid exposure to anomolous radiation, digitized cognitohazards or extended, repeated physical and mental stimuli. This can cause accelerations in the degredation of digineural pathways.
+
+NOTE: As of Addendum §§ A-286, subjects who enter dangerous mental states while experiencing any form of excessive BGD will be held accountable for their actions, regardless the users' intent.
+            
+            * VAGA - Virtual Armature and GHEIST Atlas
+===========================================================
+
+
+As of Addendum: §§ 0A-46 of the Self-Defense and Automated Protection clause under the UECC Declaration of Transindividualism, Operational Safety and Responsibility Act. All deployable shells are to include a combat manual and a combat tactics overview per the military stratagem edition in the case of CODS-induced rampancy and/or subsequent violent behavior.
+
+WARNING! Due to QUARANTINE Protocols, this doll has been equipped with a RAVEN: (Remote Attack and Vulnerability Exploitation Network) combat suite capable of overriding the user's control parameters briefly when active. Control is given to an Onboard Artificial Self-defense Initiative System or OASIS. This implant’s intended use is for increasing the survival chances for individuals with no combat or survival experience in life-threatening situations.
+
+Be aware that certain scenarios, actions and interactions from others around you could cause your automatic defense protocols to engage spontaneously, arresting control from you and possibly committing harm to innocent bystanders around you. Note that as of this addendum, you will be prosecuted and held liable if your automated defense responds to a false-flag. False-Target Rampant Biomata behavior will still hold you accountable if your doll permits hostile and life-threatening actions towards others.
+
+It is never advisable to loiter, interact, socialize, exercise or perform any social action that you typically perform throughout the day with this protocol security system active. Only activate these systems in high stress situations when safety has been compromised and you need assistance with your current survival situation.
+
+Flame Warden Protocol
+Utilizes thermocasting heat-cascades to vaporize targets. Sheds heat and activates an interior venting system that keeps the unit from overheating and providing thermal regulation. This however in turn makes the shell more susceptible to cryogenic armaments.
+
+Frost Warden Protocol
+Deploys cryogenic armaments to slow and disrupt opposing forces, cryoactive gear is recommended if suppressing this unit. Cryoshards are sometimes amped to burst, the shards can cause immense damage. Stay clear.
+
+Shock Warden Protocol
+Electromagnetic Diodic Capacitors release high voltage sphericals that trigger EMPs and Leaping Lightning to catch targets off guard. Bring EMP resistant gear. This protocol also introduces the Y-086 Sentinel - Personal shield Core. And can utilize hardlight tactics to control spacing while deploying a V77 Channel Rifle.
+
+Psy-Op Warden Protocol
+Tactics shift to aggressive psychological operations. Utilizes specialized high-capacity false-fugue technology to disorientate opposition. Observe clones carefully as the true unit may have a subtle difference from the others. Can fire an Infatuator X7 using LOS-technologies that can pacify and drive targets to limerent behavior. Protocol restructures its synthetic biomass through blood-gradient technologies.
+
+Dervish Warden Protocol
+Modulated components, deploying multiple-limbs and a zetachrome armory, its heightened speed, ability to leap great distances and apply dangerous melee pressure make it particularly difficult for OP-FOR to disengage. Armaments engage psionic activators, bypassing armor.
+
+Esperic Warden Protocol
+Coven-Bound Esper Amplifying Technology or C-BEAT integration allows for psycho-intelligent disruption of targets. Psychal invasion and disruption can lead to
+
+###? ##########? Protocol unknown, proceed with caution–integrat-&amp;#*$.... _
+01001000 01100001 01110010 01100010 01101001 01101110 01100111 01100101 01110010
+
+
+        </page>
+    </book>
 </books>
