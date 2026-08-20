@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Map Width="80" Height="25">
+<Map Width="80" Height="25" ID="LongSigh1">
   <cell X="0" Y="0">
     <object Name="GrossWall"></object>
     <object Name="Trashy"></object>
@@ -3638,7 +3638,7 @@
     <object Name="Work Chair"></object>
   </cell>
   <cell X="43" Y="13">
-    <object Name="LS Metal Table"></object>
+    <object Name="LS Metal Table Blue"></object>
   </cell>
   <cell X="44" Y="13">
     <object Name="GrossWall2"></object>

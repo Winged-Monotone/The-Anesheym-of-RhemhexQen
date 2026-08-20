@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Map Width="80" Height="25">
+<Map Width="80" Height="25" ID="LongSigh2">
   <cell X="0" Y="0">
     <object Name="GrossWall"></object>
     <object Name="RevokeRecoilersWidget"></object>
@@ -746,13 +746,12 @@
     <object Name="MarbleFloor"></object>
   </cell>
   <cell X="75" Y="2">
-    <object Name="Metal Table"></object>
-    <object Name="Purple Security Card"></object>
     <object Name="MarbleFloor"></object>
+    <object Name="LS Metal Table Purple"></object>
   </cell>
   <cell X="76" Y="2">
-    <object Name="Arms Locker"></object>
     <object Name="MarbleFloor"></object>
+    <object Name="Nielst Arms Locker"></object>
   </cell>
   <cell X="77" Y="2">
     <object Name="Rubble Black"></object>
@@ -760,7 +759,6 @@
   </cell>
   <cell X="78" Y="2">
     <object Name="MarbleFloor"></object>
-    <object Name="Holographic Camera 1"></object>
   </cell>
   <cell X="79" Y="2">
     <object Name="GrossWall"></object>
@@ -989,7 +987,6 @@
   </cell>
   <cell X="72" Y="3">
     <object Name="MarbleFloor"></object>
-    <object Name="Orifical Biomass NW"></object>
   </cell>
   <cell X="73" Y="3">
     <object Name="BlackMarbleWalkway"></object>
@@ -1009,7 +1006,6 @@
   </cell>
   <cell X="78" Y="3">
     <object Name="MarbleFloor"></object>
-    <object Name="Orifical Biomass NW"></object>
   </cell>
   <cell X="79" Y="3">
     <object Name="GrossWall"></object>
@@ -3282,6 +3278,7 @@
   </cell>
   <cell X="76" Y="11">
     <object Name="MarbleFloor"></object>
+    <object Name="Holographic Camera Grimsdot"></object>
   </cell>
   <cell X="77" Y="11">
     <object Name="MarbleFloor"></object>
@@ -4337,8 +4334,8 @@
     <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="47" Y="15">
-    <object Name="Holographic Camera 1"></object>
     <object Name="MarbleFloor"></object>
+    <object Name="Holographic Camera Clone"></object>
   </cell>
   <cell X="48" Y="15">
     <object Name="MarbleFloor"></object>

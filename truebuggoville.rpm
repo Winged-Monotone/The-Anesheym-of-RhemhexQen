@@ -2,6 +2,7 @@
 <Map Width="80" Height="25">
   <cell X="0" Y="0">
     <object Name="Glowing Glimmerwood Tree"></object>
+    <object Name="CrystalGrassy"></object>
   </cell>
   <cell X="1" Y="0">
     <object Name="Shardgrove Tree"></object>

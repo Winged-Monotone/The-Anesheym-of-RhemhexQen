@@ -2,6 +2,7 @@
 <Map Width="80" Height="25">
   <cell X="0" Y="0">
     <object Name="CryptWall Period 1"></object>
+    <object Name="CrystalDirty"></object>
   </cell>
   <cell X="1" Y="0">
     <object Name="CryptWall Period 1"></object>

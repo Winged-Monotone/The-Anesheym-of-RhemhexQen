@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<conversations>
+
+    <!-- Barathrumite Changes -->
+
+
+    <conversation ID="NuurimirConversation">
+        <start ID="IntroductionNuurimirFoodPlz">
+            <text>
+                {{emote|*she regards you wearily*}}
+                
+                    ... food?
+            </text>
+            <choice gotoID="GiveFood"> Sure? Here. {{emote|*you give her a random food item.*}} </choice>
+            <choice GotoID="End">I have none to give. Live and drink.</choice>
+        </start>
+        
+        <node ID="GiveFood">
+            <text>
+                {{emote|*she eats the item without pause, completely disregarding you, and then walks away ... *}}
+            </text>
+            <choice gotoID="End"> ... </choice>
+            <choice GotoID="End">... Uh, Live and drink, I guess?</choice>
+        </node>
+    </conversation>
+    
+</conversations>
+ 
+ 
+ 
+ 
+ 
+ 
+ 

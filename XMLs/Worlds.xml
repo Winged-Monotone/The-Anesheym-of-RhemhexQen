@@ -93,9 +93,10 @@
             </zone>
         </cell>
 
-        <cell Name="CrystholtsZone" ApplyTo="Crystholts" Mutable="false">
-            <builder Class="ZoneTemplate:CrystalForest"/>
-        </cell>
+<!--        <cell Name="CrystholtsZone" ApplyTo="Crystholts" Mutable="false">-->
+<!--            <builder Class="ZoneTemplate:CrystalForest"/>-->
+<!--        </cell>-->
+        
 
         <cell Name="crystholts" ApplyTo="Crystholts">
             <zone Level="5-9" x="0-2" y="0-2" Name="sky above jungle" IndefiniteArticle="the">
@@ -114,6 +115,15 @@
                 <postbuilder Class="Subterranean"/>
 
                 <music Track="Realms of Awakening [full-m]"/>
+            </zone>
+        </cell>
+
+        <cell Name="CrystholtsGroveGladeceae" ApplyTo="CrystholtsGrove1" Mutable="false" Inherits="crystholts">
+            <zone Level="10" x="1" y="1" Name="Gladeceae's grove"
+                  DisableForcedConnections="Yes" HasWeather="true" WindSpeed="0-10" WindDirections="W,SW,S,SE"
+                  WindDuration="50-3000">
+                <map FileName="GroveTest.rpm"/>
+                <builder Class="Music" Track="melodyforcity" Chance="100"/>
             </zone>
         </cell>
 

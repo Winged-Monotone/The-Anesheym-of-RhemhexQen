@@ -3,7 +3,7 @@
 
     <!-- Chymero Conversation -->
 
-    <conversation ID="ChymeroLogueInitial">
+    <conversation ID="ChymeroLogueInitial" >
         <node ID="Start">
             <text>
                 Hoy! Welcome to' the galley, mate! Me name be Chymero! The chief chef o' dis place.

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Map Width="80" Height="25">
+<Map Width="80" Height="25" ID="LongSigh5">
   <cell X="0" Y="0">
     <object Name="MarbleFloor"></object>
     <object Name="GrossWall"></object>
@@ -548,6 +548,7 @@
   </cell>
   <cell X="48" Y="1">
     <object Name="SterileTile"></object>
+    <object Name="Holographic Camera Vermin"></object>
   </cell>
   <cell X="49" Y="1">
     <object Name="MarbleFloor"></object>
@@ -1188,6 +1189,7 @@
   </cell>
   <cell X="44" Y="3">
     <object Name="Gore Mess"></object>
+    <object Name="RatCage"></object>
   </cell>
   <cell X="45" Y="3">
     <object Name="SterileTile"></object>
@@ -1945,7 +1947,7 @@
   </cell>
   <cell X="8" Y="6">
     <object Name="MarbleFloor"></object>
-    <object Name="Metal Table"></object>
+    <object Name="RatCage"></object>
   </cell>
   <cell X="9" Y="6">
     <object Name="MarbleFloor"></object>
@@ -1953,7 +1955,7 @@
   </cell>
   <cell X="10" Y="6">
     <object Name="MarbleFloor"></object>
-    <object Name="Metal Table"></object>
+    <object Name="RatCage"></object>
   </cell>
   <cell X="11" Y="6">
     <object Name="MarbleFloor"></object>
@@ -1979,7 +1981,7 @@
   </cell>
   <cell X="16" Y="6">
     <object Name="MarbleFloor"></object>
-    <object Name="Metal Table"></object>
+    <object Name="RatCage"></object>
   </cell>
   <cell X="17" Y="6">
     <object Name="MarbleFloor"></object>
@@ -2028,7 +2030,7 @@
   </cell>
   <cell X="28" Y="6">
     <object Name="MarbleFloor"></object>
-    <object Name="Metal Table"></object>
+    <object Name="RatCage"></object>
   </cell>
   <cell X="29" Y="6">
     <object Name="MarbleFloor"></object>
@@ -2313,7 +2315,7 @@
   </cell>
   <cell X="22" Y="7">
     <object Name="MarbleFloor"></object>
-    <object Name="Metal Table"></object>
+    <object Name="RatCage"></object>
   </cell>
   <cell X="23" Y="7">
     <object Name="MarbleFloor"></object>
@@ -3786,6 +3788,7 @@
   <cell X="16" Y="12">
     <object Name="MarbleFloor"></object>
     <object Name="PutrifiedVitaeDeepPool"></object>
+    <object Name="RatCage"></object>
   </cell>
   <cell X="17" Y="12">
     <object Name="Gore Mess"></object>
@@ -5291,7 +5294,7 @@
   </cell>
   <cell X="8" Y="17">
     <object Name="MarbleFloor"></object>
-    <object Name="Metal Table"></object>
+    <object Name="RatCage"></object>
   </cell>
   <cell X="9" Y="17">
     <object Name="MarbleFloor"></object>
@@ -5317,14 +5320,14 @@
   </cell>
   <cell X="14" Y="17">
     <object Name="MarbleFloor"></object>
-    <object Name="Metal Table"></object>
+    <object Name="RatCage"></object>
   </cell>
   <cell X="15" Y="17">
     <object Name="MarbleFloor"></object>
   </cell>
   <cell X="16" Y="17">
     <object Name="MarbleFloor"></object>
-    <object Name="Metal Table"></object>
+    <object Name="RatCage"></object>
   </cell>
   <cell X="17" Y="17">
     <object Name="MarbleFloor"></object>

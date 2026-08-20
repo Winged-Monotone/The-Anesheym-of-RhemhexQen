@@ -14,7 +14,6 @@ using XRL.World.Parts.Skill;
 using LifeDrain = XRL.World.Parts.Mutation.LifeDrain;
 
 
-
 namespace XRL.World.Parts
 {
     public class TheEncodedOne : IScribedPart
@@ -50,10 +49,10 @@ namespace XRL.World.Parts
 
         public bool GrabbedSpots1 = false;
 
-        public int CastAbilityCooldown = Stat.Random(7, 28);
+        public int CastAbilityCooldown = Stat.Random(7, 14);
         public int SaysSomethingCountdown = 77;
         public int FalseMehCloneLimit = 25;
-        
+
         [NonSerialized] public List<Location2D> WarningCells = new();
 
         public static List<Location2D> CellListParticular = new()
@@ -127,31 +126,35 @@ namespace XRL.World.Parts
                    || ID == AfterDieEvent.ID
                    || ID == BeforeDieEvent.ID;
         }
-        
+
         public override bool HandleEvent(BeforeDieEvent E)
         {
-           var CenterCell = ParentObject.CurrentZone.GetCell(x: 43, y: 11);
-           
+            var CenterCell = ParentObject.CurrentZone.GetCell(x: 43, y: 11);
+
             if (!IsDying && E.Dying == ParentObject)
             {
                 IsDying = true;
                 ParentObject.TeleportTo(CenterCell, 1000);
-                ParentObject.ApplyEffect(new DisableMeh(){Duration = 7777});
-                
-                ParentObject.ApplyEffect(new Scintillating(){Duration = 7777}); 
+                ParentObject.ApplyEffect(new DisableMeh() { Duration = 7777 });
+
+                ParentObject.ApplyEffect(new Scintillating() { Duration = 7777 });
             }
+
             if (IsDying && DeathCountdown > 0)
             {
                 return false;
             }
-            
+
             return base.HandleEvent(E);
         }
 
         public override bool HandleEvent(AfterDieEvent E)
         {
             if (E.Dying == ParentObject)
+            {
                 SoundManager.StopMusic();
+                SoundManager.PlayUISound("mehdies", 1);
+            }
 
             return base.HandleEvent(E);
         }
@@ -181,48 +184,24 @@ namespace XRL.World.Parts
 
         public override bool HandleEvent(ObjectCreatedEvent E)
         {
-            var GenerationEnabler = Gender.EnableGeneration;
-
-            if (E.Object == ParentObject)
-            {
-                Gender.EnableGeneration = true;
-                var tries = 0;
-                do
-                {
-                    try
-                    {
-                        ParentObject.SetGender(Gender.Generate().Register());
-                        ParentObject.GetGender(true);
-                        break;
-                    }
-                    catch
-                    {
-                    }
-                } while (tries++ < 100);
-
-                Gender.EnableGeneration = GenerationEnabler;
-            }
-
             return base.HandleEvent(E);
         }
 
 
         public override bool HandleEvent(EndTurnEvent E)
         {
-
             if (IsDying)
             {
                 --DeathCountdown;
 
                 if (DeathCountdown <= 0)
                 {
-                    
                     ParentObject.Explode(77777, ParentObject, Neutron: true, SuppressDestroy: true);
                     // ParentObject.PlayWorldSound("MehDeathScream");
                     ParentObject.Die(ThePlayer, Force: true);
                 }
             }
-            
+
             if (!InCombat)
             {
                 return base.HandleEvent(E);
@@ -666,8 +645,7 @@ namespace XRL.World.Parts
 
                             if (laughs == 1)
                             {
-                                ParentObject.PlayWorldSound("mehlaughter" + Stat.Random(1, 2) + ".wav", 50.0f, 0.4f,
-                                    true);
+                                SoundManager.PlaySound("mehlaughter" + Stat.Random(1, 2), 10.0f, 10.0f);
                                 AddPlayerMessage("{{red|" + FalseEater.DisplayName + " is laughing at you ...}}");
                             }
                         }
@@ -928,7 +906,7 @@ namespace XRL.World.Parts
             StatShifter.SetStatShift(ParentObject, "ElectricResistance", -50);
 
             ShiftBlades();
-            
+
             var ChannelRifle = ParentObject.Body.FindObjectByBlueprint("V77 Channel Rifle");
 
             ChannelRifle?.UnequipAndRemove();
@@ -960,7 +938,7 @@ namespace XRL.World.Parts
             ParentObject.Physics.FreezeTemperature = -99999;
 
             GameObject ChannelRifle = GameObjectFactory.create("V77 Channel Rifle");
-            
+
             ParentObject.ForceEquipObject(ChannelRifle, "Missile Weapon");
 
             ShiftBlades();
@@ -986,9 +964,9 @@ namespace XRL.World.Parts
 
             ShiftBlades();
 
-           var Flamethrower = ParentObject.Body.FindObjectByBlueprint("Flamethrower");
+            var Flamethrower = ParentObject.Body.FindObjectByBlueprint("Flamethrower");
 
-           Flamethrower?.UnequipAndRemove();
+            Flamethrower?.UnequipAndRemove();
         }
 
         public void ScorchWardenProtocol()
@@ -1002,10 +980,10 @@ namespace XRL.World.Parts
 
             StatShifter.SetStatShift(ParentObject, "ColdResistance", -25);
             StatShifter.SetStatShift(ParentObject, "HeatResistance", 100);
-            
-            
+
+
             GameObject eqFlameThrower = GameObjectFactory.create("Flamethrower");
-            
+
             eqFlameThrower.LiquidVolume.Volume = 1;
             ParentObject.ForceEquipObject(eqFlameThrower, "Missile Weapon");
 
@@ -1017,7 +995,7 @@ namespace XRL.World.Parts
         {
             var WieldingList = ParentObject.Body.GetEquippedObjects();
             var eBody = ParentObject.Body;
-            
+
             foreach (var Limb in eBody.LoopParts())
             {
                 if (Limb.Type == "Hand")
@@ -1153,13 +1131,13 @@ namespace XRL.World.Parts
                 var target = E.GetGameObjectParameter("Target");
                 if (target == ThePlayer && !InCombat)
                 {
-                    ThePlayer.ApplyEffect(new CosmicallyAnchored(){Duration = 1});
+                    ThePlayer.ApplyEffect(new CosmicallyAnchored() { Duration = 1 });
 
                     if (!Box2D.contains(ThePlayer.CurrentCell.Location))
                     {
-                        ThePlayer.TeleportTo(ParentObject.CurrentZone.GetCell(43,6));
+                        ThePlayer.TeleportTo(ParentObject.CurrentZone.GetCell(43, 6));
                     }
-                    
+
                     PlayWorldSound("BigBossAlarm.mp3");
                     ParentObject.DilationSplat();
 

@@ -2878,7 +2878,9 @@
   <cell X="61" Y="14"></cell>
   <cell X="62" Y="14"></cell>
   <cell X="63" Y="14"></cell>
-  <cell X="64" Y="14"></cell>
+  <cell X="64" Y="14">
+    <object Name="nuurimir"></object>
+  </cell>
   <cell X="65" Y="14"></cell>
   <cell X="66" Y="14"></cell>
   <cell X="67" Y="14"></cell>

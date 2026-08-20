@@ -38,7 +38,7 @@ namespace XRL.World.Effects
             {
                 if (Stat.Random(1, 100) <= 5)
                 {
-                    Object.PlayWorldSound("mehlaughter" + Stat.Random(1, 2) + ".wav", 50.0f, 0.4f, true);
+                    SoundManager.PlaySound("mehlaughter" + Stat.Random(1, 2), 10.0f, 10.0f);
                 }
                 AddPlayerMessage("{{red|" + Object.DisplayName + " is laughing at you ...}}");
             }
@@ -55,7 +55,7 @@ namespace XRL.World.Effects
         {
             var EncoPart = Object.GetPart<TheEncodedOne>();
 
-            EncoPart.CastAbilityCooldown = Stat.Random(14, 28);
+            EncoPart.CastAbilityCooldown = Stat.Random(3, 7);
 
             base.Remove(Object);
         }

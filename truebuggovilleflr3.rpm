@@ -2,6 +2,7 @@
 <Map Width="80" Height="25">
   <cell X="0" Y="0">
     <object Name="Rhem Black Marble"></object>
+    <object Name="CrystalDirty"></object>
   </cell>
   <cell X="1" Y="0">
     <object Name="Rhem Black Marble"></object>
@@ -489,18 +490,14 @@
   <cell X="2" Y="2">
     <object Name="MarbleFloor"></object>
     <object Name="Fusion Power Station"></object>
-    <object Name="PowerLine"></object>
-    <object Name="Inner Tomb Techlight5"></object>
   </cell>
   <cell X="3" Y="2">
     <object Name="MarbleFloor"></object>
     <object Name="Long Sigh Mainframe Monitor 2"></object>
-    <object Name="PowerLine"></object>
   </cell>
   <cell X="4" Y="2">
     <object Name="MarbleFloor"></object>
     <object Name="Fusion Power Station"></object>
-    <object Name="PowerLine"></object>
   </cell>
   <cell X="5" Y="2">
     <object Name="Rhem Black Marble"></object>
@@ -508,17 +505,14 @@
   <cell X="6" Y="2">
     <object Name="MarbleFloor"></object>
     <object Name="Fusion Power Station"></object>
-    <object Name="PowerLine"></object>
   </cell>
   <cell X="7" Y="2">
     <object Name="MarbleFloor"></object>
     <object Name="Long Sigh Mainframe Monitor 2"></object>
-    <object Name="PowerLine"></object>
   </cell>
   <cell X="8" Y="2">
     <object Name="MarbleFloor"></object>
     <object Name="Fusion Power Station"></object>
-    <object Name="PowerLine"></object>
   </cell>
   <cell X="9" Y="2">
     <object Name="Rhem Black Marble"></object>
@@ -526,17 +520,14 @@
   <cell X="10" Y="2">
     <object Name="MarbleFloor"></object>
     <object Name="Fusion Power Station"></object>
-    <object Name="PowerLine"></object>
   </cell>
   <cell X="11" Y="2">
     <object Name="MarbleFloor"></object>
     <object Name="Long Sigh Mainframe Monitor 2"></object>
-    <object Name="PowerLine"></object>
   </cell>
   <cell X="12" Y="2">
     <object Name="MarbleFloor"></object>
     <object Name="Fusion Power Station"></object>
-    <object Name="PowerLine"></object>
   </cell>
   <cell X="13" Y="2">
     <object Name="Rhem Black Marble"></object>
@@ -544,17 +535,14 @@
   <cell X="14" Y="2">
     <object Name="MarbleFloor"></object>
     <object Name="Fusion Power Station"></object>
-    <object Name="PowerLine"></object>
   </cell>
   <cell X="15" Y="2">
     <object Name="MarbleFloor"></object>
     <object Name="Long Sigh Mainframe Monitor 2"></object>
-    <object Name="PowerLine"></object>
   </cell>
   <cell X="16" Y="2">
     <object Name="MarbleFloor"></object>
     <object Name="Fusion Power Station"></object>
-    <object Name="PowerLine"></object>
   </cell>
   <cell X="17" Y="2">
     <object Name="Rhem Black Marble"></object>
@@ -562,18 +550,14 @@
   <cell X="18" Y="2">
     <object Name="MarbleFloor"></object>
     <object Name="Fusion Power Station"></object>
-    <object Name="PowerLine"></object>
   </cell>
   <cell X="19" Y="2">
     <object Name="MarbleFloor"></object>
     <object Name="Long Sigh Mainframe Monitor 2"></object>
-    <object Name="PowerLine"></object>
-    <object Name="HeavyPowerLine"></object>
   </cell>
   <cell X="20" Y="2">
     <object Name="MarbleFloor"></object>
     <object Name="Fusion Power Station"></object>
-    <object Name="PowerLine"></object>
   </cell>
   <cell X="21" Y="2">
     <object Name="Rhem Black Marble"></object>
@@ -581,12 +565,9 @@
   <cell X="22" Y="2">
     <object Name="MarbleFloor"></object>
     <object Name="Fusion Power Station"></object>
-    <object Name="PowerLine"></object>
-    <object Name="Inner Tomb Techlight5"></object>
   </cell>
   <cell X="23" Y="2">
     <object Name="Long Sigh Mainframe Monitor 1"></object>
-    <object Name="PowerLine"></object>
   </cell>
   <cell X="24" Y="2">
     <object Name="MarbleFloor"></object>
@@ -1674,6 +1655,7 @@
   </cell>
   <cell X="6" Y="6">
     <object Name="CommunicationsInterlock"></object>
+    <object Name="SterileTile"></object>
   </cell>
   <cell X="7" Y="6">
     <object Name="PowerLine"></object>
@@ -5293,6 +5275,7 @@
   </cell>
   <cell X="27" Y="19">
     <object Name="MarbleFloor"></object>
+    <object Name="amalgamgrowth"></object>
   </cell>
   <cell X="28" Y="19">
     <object Name="Rhem Black Marble"></object>
@@ -5948,7 +5931,6 @@
   </cell>
   <cell X="59" Y="21">
     <object Name="Rhem Black Marble"></object>
-    <object Name="Techlight3"></object>
   </cell>
   <cell X="60" Y="21">
     <object Name="BlackMarbleWalkway"></object>
@@ -6216,8 +6198,8 @@
   </cell>
   <cell X="59" Y="22">
     <object Name="Techlight3"></object>
-    <object Name="MarbleFloor"></object>
     <object Name="SterileTile"></object>
+    <object Name="CrystalDirty"></object>
   </cell>
   <cell X="60" Y="22">
     <object Name="SterileTile"></object>

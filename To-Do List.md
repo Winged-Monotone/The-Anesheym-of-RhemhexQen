@@ -27,6 +27,38 @@ I decided that I also want to let people know about changes associated with feed
 DISCLAIMER
 This mod contains content that some might find disturbing. Please execute your own discretion whether to play the mod. This mod contains the following themes: Body horror, genetic transformation, genetic corruption, self-harm, self-mutilation, claustrophobia, nyctophobia, severe psychological trauma, loss of self or athazagoraphobia, annihilation and existential anxiety, and adult sexual humor. Be safe and please take care of yourself, and keep these themes in mind when playing the mod.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 COMPLETED FIXES
 [f] -
 [a] - 

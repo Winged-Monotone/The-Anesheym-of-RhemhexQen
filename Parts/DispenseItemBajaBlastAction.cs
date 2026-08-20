@@ -7,6 +7,7 @@ namespace XRL.World.Parts
 {
     public class DispenseItemBajaBlastAction : IPart
     {
+        public bool Dispensed = false;
         public override bool WantEvent(int ID, int cascade)
         {
                 return base.WantEvent(ID, cascade)
@@ -25,11 +26,16 @@ namespace XRL.World.Parts
         
         public override bool HandleEvent(InventoryActionEvent E)
         {
-
-                if (E.Command == "DispenseBaja")
+            
+                if (!Dispensed && E.Command == "DispenseBaja")
                 {
                     E.Actor.GiveDrams(10, "bajablast");
                     ThePlayer.ShowSuccess("You receive ten drams of baja-blast.");
+                    Dispensed = true;
+                }
+                else
+                {
+                    ThePlayer.ShowFailure("The machine dryly sputters to a stop.");
                 }
             
                 return base.HandleEvent(E);

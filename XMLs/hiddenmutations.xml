@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <mutations Hidden="true" ExludeFromPool="true">
-
-
     <category Name="Physical">
         <mutation BearerDescription="those who breathe foul breath" Exclusions="" Class="StinkyBreather"
                   MaxSelected="1" Cost="3" Name="Sulfuric Breath" DisplayName="Sulfuric Breath"/>
@@ -13,7 +11,7 @@
                   MaxSelected="1" Cost="1" Name="Amalgamate Infection" DisplayName="Amalgamate Infection"/>
         <mutation BearerDescription="those who seduce with their gaze" Exclusions="" Class="LoversGaze"
                   MaxSelected="1" Cost="3" Name="Limerent Gaze" DisplayName="Limerent Gaze"/>
-        <mutation BearerDescription="those who draw the blade with deadly speed and percision" Exclusions=""
+        <mutation BearerDescription="those who draw the blade with deadly speed and precision" Exclusions=""
                   Class="Battoujutsu" MaxSelected="1" Cost="3" Name="Battoujutsu" DisplayName="Battoujutsu"/>
     </category>
 

@@ -2,14 +2,16 @@
 using Wingytone.MonoBehaviours;
 using Wintellect.PowerCollections;
 using XRL.UI;
+using XRL.Wish;
 using XRL.World.Parts;
 
 namespace XRL.World.Parts
 {
+    [HasWishCommand]
     public class NeutronFluxDetonation : IPart
     {
         // Sets a timer based on the amount of turns the player enters. After the countdown, the device explodes, ending the game for the player if they are in the zone. If outside of it, it deactivates the displacers and makes returning to the Long Sigh Impossible. 
-        // Prolly needs a options.pick
+        // Prolly needs an options.pick
         // Explosion is prolly cosmetic only
         // Static Bool that applies to the Displacers that's like Have you completed long sigh? Have you activated beeg bomb? Then you can't go here anymore.
         // Put a warning on this that uh, messing with will fucking end you 
@@ -70,8 +72,7 @@ namespace XRL.World.Parts
                        if (SetTimer != null && SetTimer > 0)
                        {
                            DetonationCountdown = SetTimer.Value;
-                           // StartStrobing();
-                           // RedAlarmStrobe.Enabled = true;
+                           StartStrobing();
                        }
                    }
                    else
@@ -120,7 +121,10 @@ namespace XRL.World.Parts
                     {
                         if (ThePlayer.CurrentZone.ZoneID == "JoppaWorld.33.3.1.1.29845658")
                         {
-                            ParentObject.Explode(70000000, Neutron: true);
+                            var BoomCell = ThePlayer.CurrentZone.GetCell(x: 40, 12);
+                            ParentObject.Explode(77777777, Neutron: true);
+                            Physics.ApplyExplosion(BoomCell, 777777777, Neutron: true);
+                            ThePlayer.Die(Reason: "Vaporised by neutron detonation.");
                         }
                         else
                         {
@@ -134,22 +138,29 @@ namespace XRL.World.Parts
                         CombatJuice.cameraShake(7);
                         Popup.Show("As the bomb detonates, you feel the world around you tremble.");
                         NFDGoesBoom = true;
+                        
                     }
+                    
+                    RedAlarmStrobe.Enabled = false;
+
                 }
             }
             
             return base.HandleEvent(E);
         }
-
-        public void StrobeAction()
+        
+        public static void StrobeAction()
         {
             var mainCamera = GameManager.MainCamera;
             if (!mainCamera.GetComponent<RedAlarmStrobe>())
                 GameManager.MainCamera.AddComponent<RedAlarmStrobe>();
         }
-
-        public void StartStrobing()
+        
+        [WishCommand("StrobeStartTest")]
+        
+        public static void StartStrobing()
         {
+            RedAlarmStrobe.Enabled = true;
             GameManager.Instance.uiQueue.queueTask(StrobeAction);
         }
     }

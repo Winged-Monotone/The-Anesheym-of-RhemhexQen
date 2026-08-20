@@ -24,7 +24,13 @@
             </text>
         </step>
     </quest>
-
+    
+    
+    
+<!--    LONG SIGH QUEST -->
+    
+    
+    
     <quest Name="The Shah, and the City that Waits Upon the Long Sigh" 
            Level="30" 
            ID="ShahStartLongSigh"
@@ -58,7 +64,13 @@
             </text>
         </step>
     </quest>
+    
+    
+    
+<!--    RED BEARS QUEST -->
 
+    
+    
     <quest Name="The Red-Bear's Request" 
            Level="30"
            ID="GetBitsGetBitsGetBits"

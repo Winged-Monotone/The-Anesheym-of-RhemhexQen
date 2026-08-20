@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<conversations>
+<!--    ascii signs-->
+    <!--        Monitor nodes-->
+    
+    <conversation ID="EncodedEaterConversation">
+        <start ID="BaseConversation">
+            <text>
+                Plink, plonk, ping, plink-roll, drop.~
+                Drop, drop, ping, ping, ping-drop, roll.~
+                Bzzt, plink, pong, roll-drop-roll-drop.~
+                Plink, plink, plink, plonk! Plonk! Plink! Drop.~
+                Drop, roll ... roll ... roll ... Bi-dingdinging!~
+                Roll, plonk. Roll, plink. Roll? Roll? ROLL!~
+            </text>
+            
+            <text>
+                I'm not a god. I'm not a person. I'm not a mind. I'm not a soul. I'm not human. I'm not nothing. I'm not something.~
+                Can I play my flute for thee?~
+                Oh ... what an ugly little thing.~
+                Can I drink you?~
+                Someone spoke from me within the glossy silver ball. It said, "poor thing."
+                Where is death?
+                So many moons and planets stolen. And for what? 
+            </text>
+
+            <choice GotoID="End" >[... Live and drink?]</choice>
+        </start>
+    </conversation>
+</conversations>
+ 
+ 
+ 
+ 
+ 
+ 
+ 

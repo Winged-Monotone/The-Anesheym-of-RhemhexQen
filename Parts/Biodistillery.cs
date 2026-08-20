@@ -1,10 +1,13 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
+using Wingytone.MonoBehaviours;
 using XRL.UI;
+using XRL.Wish;
 
 namespace XRL.World.Parts
 {
+    [HasWishCommand]
     public class Biodistillery : IPart
     {
         // Interact with this, and it brings up options to synthezise purified vitae
@@ -183,7 +186,23 @@ namespace XRL.World.Parts
                 }
             }
         }
+        
+        
+        public static void FadeInAction()
+        {
+            var mainCamera = GameManager.MainCamera;
+            if (!mainCamera.GetComponent<CrimsonTide>())
+                GameManager.MainCamera.AddComponent<CrimsonTide>();
+        }
 
+        [WishCommand("StartCrimsonTide")]
+        public static void StartCrimsonTide()
+        {
+            CrimsonTide.Enabled = true;
+            GameManager.Instance.uiQueue.queueTask(FadeInAction);  
+        }
+        
+        
         public void SuperDuperFinishSynthesis()
         {
             var YouFuckedUp = false;
@@ -201,13 +220,17 @@ namespace XRL.World.Parts
             if (YouFuckedUp)
             {
                 //     Consider some kind of animation or something that visually represents the Crimson Tide being unleashed on the world
+
+                StartCrimsonTide();
+                The.Core.RenderDelay(7000, Interruptible: false);
                 ThePlayer.Die(
                     Message: "You've caused a second Crimson Tide, devastating Qud with an eighth plague of the Gyre.");
+                CrimsonTide.Enabled = false;
             }
             else
             {
                 ThePlayer.ShowSuccess(
-                    "The distiller hums as it dispenses a glittering substance into a sterilzed injector.");
+                    "The distiller hums as it dispenses a glittering substance into a sterilized injector.");
                 ThePlayer.ReceiveObject("Purified Vitae Injector");
                 ParentObject.RemovePart(this);
             }

@@ -87,6 +87,13 @@ namespace Wingytone.Wishes
             mehHP.Penalty += 777;
         }
         
+        [WishCommand("mehdie")]
+        public static void MehDies()
+        {
+            var meh = The.ActiveZone.FindObject("EncodedEater");
+            meh.Die();
+        }
+        
         [WishCommand("meheffect")]
         public static void MehCame()
         {

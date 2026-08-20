@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Map Width="80" Height="25">
+<Map Width="80" Height="25" ID="LongSigh6">
   <cell X="0" Y="0">
     <object Name="RadiantHeatFullMap"></object>
     <object Name="GoreFloorSpawnerWidget"></object>
@@ -2342,11 +2342,11 @@
   </cell>
   <cell X="37" Y="8">
     <object Name="SterileTile"></object>
-    <object Name="Rubble Black"></object>
+    <object Name="Biometric Distillery Amal DeviceW"></object>
   </cell>
   <cell X="38" Y="8">
     <object Name="SterileTile"></object>
-    <object Name="Rubble Black"></object>
+    <object Name="Biometric Distillery Amal DeviceE"></object>
   </cell>
   <cell X="39" Y="8">
     <object Name="SterileTile"></object>
@@ -2651,7 +2651,7 @@
   </cell>
   <cell X="45" Y="9">
     <object Name="SterileTile"></object>
-    <object Name="Rubble Black"></object>
+    <object Name="Holographic Camera Crimson"></object>
   </cell>
   <cell X="46" Y="9">
     <object Name="SterileTile"></object>

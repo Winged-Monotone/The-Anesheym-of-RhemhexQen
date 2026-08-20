@@ -40,10 +40,19 @@
                 *hums a soft tune*~
                 Please, let me know if you need anything regarding the bloodpits, I'll do what I can to assist.
             </text>
+            <choice IfHaveActiveQuest="ShahStartLongSigh" IfNotFinishedQuestStep="ShahStartLongSigh~ReturntoTheShah" IfFinishedQuestStep="ShahStartLongSigh~LSDefeatNielst" GotoID="BeginLSQuestEndFinale">I have found the source of the scourge and ended it.</choice>
             <choice GotoID="End">Live and drink, dear shah.</choice>
         </start>
 
-        <start ID="Welcome2">
+        <start ID="Welcome3" IfFinishedQuest="ShahStartLongSigh">
+            <text>
+                Its good to see you, =name= how fares your ventures?~
+                *hums a soft tune*~
+            </text>
+            <choice GotoID="End">Live and drink, dear shah.</choice>
+        </start>
+
+        <start ID="Welcome2" >
             <text>
                 Ah, =name=, you return to us safely. 
                 
@@ -138,10 +147,275 @@
                 </text>
             </choice>
         </node>
+        <!--_________________________________________________________________________________________________-->
+        <!--        Start of Phase 3 -->
 
-        <!--_________________________________________________________________________________________________________________________-->
+        <node ID="BeginLSQuestEndFinale" AllowEscape="false">
+            <text>
+      Is that the shift in the aether I felt? That thing in the darkness below us, it felt like dying throes. I don't sense its looming urge anymore ...
+                
+                It must truly be gone ...
+                
+                What did you find down there?
+            </text>
+            <choice GotoID="BlowitOffTooCoolToExplain">
+                <text>
+                    Nothing, really. Wouldn't worry yourself about it, dear shah.
+                </text>
+            </choice>
+            <choice GotoID="YouReallyDontWantToKnow">
+                <text>
+                    ... You really don't want to know.
+                </text>
+            </choice>
+            <choice GotoID="GiveHerTheDeets">
+                <text>
+                    A fleshen-hellscape with abominable monsters, horrors, aberrations, old-world technologies and the like ...  
+                </text>
+            </choice>
+        </node>
+        
+<!--        =================================================================================================-->
+
+        <node ID="GiveHerTheDeets" AllowEscape="false">
+            <text>
+                {{emote|*her face is painted with concern*}}
+
+                To think such horrors could exist beneath our feet ...
+            </text>
+            <choice GotoID="GiveHerTheDeets2">
+                <text>
+                    Yes, and there were abominations that crawl into skin and transform you from the inside out, lakes of pus, beings trapped in vats full of sickly-brine.
+                </text>
+            </choice>
+            <choice GotoID="QuestReward">
+                <text>
+                    ...
+                </text>
+            </choice>
+        </node>
+
+        <node ID="GiveHerTheDeets2" AllowEscape="false">
+            <text>
+                {{emote|*the Shah's eyes flare with a growing horror*}}
+            </text>
+            <choice GotoID="GiveHerTheDeets3">
+                <text>
+                    ... Then there were remnants of our ancient ones masquerading in dead-flesh, the deeper you dwell, corpses paint the walls like adobe-plaster in the salt-dunes.
+                </text>
+            </choice>
+            <choice GotoID="QuestReward">
+                <text>
+                    ...
+                </text>
+            </choice>
+        </node>
+
+        <node ID="GiveHerTheDeets3" AllowEscape="false">
+            <text>
+                {{emote|*the Shah's eyes grow distant as if she's staring into a deep pit, growing still as if catatonic*}}
+            </text>
+            <choice GotoID="GiveHerTheDeets4">
+                <text>
+                    ... Um, Shah?
+                </text>
+            </choice>
+        </node>
+
+        <node ID="GiveHerTheDeets4" AllowEscape="false">
+            <text>
+                {{emote|*she makes no motion*}}
+            </text>
+            <choice GotoID="GiveHerTheDeets5">
+                <text>
+                    Uh ... {{emote|*you wait*}}
+                </text>
+            </choice>
+        </node>
+
+        <node ID="GiveHerTheDeets5" AllowEscape="false">
+            <text>
+                {{emote|*it takes a moment, but life returns to her eyes in a sudden flicker of conscionable recounting *}}
+                
+                I-... I apologize. My mind went to a dark place--if the things I envision were such a terror, then I can only imagine what scars it marred you with. Of the mind and body.
+                
+                To struggle forth on our behalf, despite all this. I am both amazed and humbled by your bravery.
+                
+                My people have prepared a gift for you, friend. Please, take our meager offerings in thanks for solving our plight.
+                
+            </text>
+            <choice GotoID="QuestReward">
+                <text>
+                    ...
+                </text>
+            </choice>
+            <choice GotoID="SpecialChoiceNoReward">
+                <text>
+                    Actually, I do not need a reward. I did this because needed to be done. So your people can live happily, dear Shah.
+                </text>
+            </choice>
+        </node>
+        
+        <!--        =================================================================================================-->
+
+        <node ID="YouReallyDontWantToKnow" AllowEscape="false">
+            <text>
+                {{emote|*interest paints her face, as her curiosity seems to spark*}}
+                
+                ... Are you sure? I can handle it, promise!
+            </text>
+            <choice GotoID="YouReallyDontWantToKnow2">
+                <text>
+                    {{emote|*shake your head*}} Trust me. You. Don't. Want. To. Know.
+                </text>
+            </choice>
+        </node>
+        
+        <node ID="YouReallyDontWantToKnow2" AllowEscape="false">
+            <text>
+                {{emote|*with her curiosity unfulfilled, she pouts and resigns her interest*}}
+
+                Well, peace of mind is a comfort oft yearned for only in hindsight.
+                
+                =name=, me and my people will be forever grateful for what you've done for us.
+                
+                I humbly wish to present you a gift we prepared for your return.
+            </text>
+            <choice GotoID="QuestReward">
+                <text>
+                    ...
+                </text>
+            </choice>
+            <choice GotoID="SpecialChoiceNoReward">
+                <text>
+                    Actually, dear shah. A reward isn't necessary, I did what needed to be done.
+                </text>
+            </choice>
+        </node>
+        
+<!--        ==================================================================================================-->
+
+        <node ID="BlowitOffTooCoolToExplain" AllowEscape="false">
+            <text>
+                {{emote|*raises an incredulous brow at you*}}
+... R-really? Nothing extraordinary happened down there? Just another walk through the woods, as they say?
+            </text>
+            <choice GotoID="BlowitOffTooCoolToExplain2">
+                <text>
+                    {{emote|*shrug*}} ... Nope. Nothing really.
+                </text>
+            </choice>
+            <choice GotoID="BlowitOffTooCoolToExplain2">
+                <text>
+                    Nope. It was a completely, unexciting, dull event.
+                </text>
+            </choice>
+        </node>
+
+        <node ID="BlowitOffTooCoolToExplain2" AllowEscape="false">
+            <text>
+                {{emote|*squints at you suspiciously*}}
+            </text>
+            <choice GotoID="BlowitOffTooCoolToExplain3">
+                <text>
+                    ...
+                </text>
+            </choice>
+        </node>
+
+        <node ID="BlowitOffTooCoolToExplain3" AllowEscape="false">
+            <text>
+                {{emote|*squints at you even more suspiciously*}}
+            </text>
+            <choice GotoID="BlowitOffTooCoolToExplain4">
+                <text>
+                    ...
+                </text>
+            </choice>
+        </node>
+
+        <node ID="BlowitOffTooCoolToExplain4" AllowEscape="false">
+            <text>
+                {{emote|*squints at you with boundless, unbridled suspicion*}}
+            </text>
+            <choice GotoID="BlowitOffTooCoolToExplain5">
+                <text>
+                    ...
+                </text>
+            </choice>
+        </node>
+
+        <node ID="BlowitOffTooCoolToExplain5" AllowEscape="false">
+            <text>
+                ...
+                
+                {{emote|*she sighs, it's apparent on her face she seems somewhat defeated*}}
+                
+                Well ... I don't believe what I sensed was "nothing" as you put it. But I won't press you if you feel the issue isn't worth ... expounding on. 
+                
+                You've done a great thing for us, friend. And we will forever be in your debt.
+            </text>
+            <choice GotoID="QuestReward">
+                <text>
+                    ...
+                </text>
+            </choice>
+            <choice GotoID="SpecialChoiceNoReward" >
+                <text>
+                    No reward needed. Again, it was completely uneventful. I'm just glad it's all good and done with.
+                </text>
+            </choice>
+        </node>
+        
+<!--        =================================================================================-->
+
+        <node ID="SpecialChoiceNoReward" AllowEscape="false">
+            <text>
+                ...
+
+                {{emote|*she seems completely astonished*}}
+                
+                You ... don't want a thing for what you did for us? Nothing?
+                
+                I'm--I've never seen such altruism. 
+                
+                You will forever be in our hearts, =name=.
+            </text>
+            <choice GotoID="End">
+                <part Name="Sibs_ModifyReputation" Faction="Anesheym" Value="600" Shown="True"/>
+                <part Name="QuestHandler" Action="Complete" QuestID="ShahStartLongSigh" StepID="ReturntoTheShah"/>
+
+                <text>
+                    Live and drink, dear shah.
+                </text>
+            </choice>
+        </node>
+
+        <node ID="QuestReward" AllowEscape="false">
+            <text>
+As the Shah of Rhemhex'Qen, I confer you these gifts to you, =name=. Live, and may the sting of thirst never parch your lips.
+            </text>
+            <choice GotoID="End">
+                <part Name="Sibs_ModifyReputation" Faction="Anesheym" Value="400" Shown="True"/>
+                <text>
+                    Live and drink, dear shah.
+                </text>
+                <part Name="QuestHandler" Action="Complete" QuestID="ShahStartLongSigh" StepID="ReturntoTheShah"/>
+                <part Name="ReceiveItem" Blueprints="Artifact 7R" Pick="false" Identify="All" />
+                <part Name="ReceiveItem" Blueprints="Royal Jelly" Amount="10" Identify="All" />
+                <part Name="ReceiveItem" Table="Gemstones" Pick="false" />
+                <part Name="ReceiveItem" Table="Gemstones" Pick="false" />
+                <part Name="ReceiveItem" Table="Gemstones" Pick="false" />
+                <part Name="ReceiveItem" Table="Gemstones" Pick="false" />
+                <part Name="ReceiveItem" Table="Gemstones" Pick="false" />
+            </choice>
+        </node>
 
 
+        <!--    ==================================================================================================    -->
+
+        
+        
         <node ID="GivenName">
             <text>
                 =name=, you will have to forgive me. It has been some time since I have spoken with another from the outside world.
@@ -178,7 +452,7 @@
                 I will share these same words, a commentary on the metalogical. Sharing this conversation, sharing at this moment.
 
             </text>
-            <choice GotoID="IsThisaDream">Maybe this is a dream. If you have a dream so real you couldn't distinguish reality, and you never woke up. Would you still be dreaming, or are simply living at that point. Reality is a strange gambit.
+            <choice GotoID="IsThisADream">Maybe this is a dream. If you have a dream so real you couldn't distinguish reality, and you never woke up. Would you still be dreaming, or are simply living at that point. Reality is a strange gambit.
             </choice>
             <choice GotoID="IsThisNotaDream">No I do believe this is the "real." You are simply caught in the moment, my dear shah. Your dreams are a sign that you see beyond the wake, all its many possibilities. But this moment is the real moment. It is experienced.
             </choice>

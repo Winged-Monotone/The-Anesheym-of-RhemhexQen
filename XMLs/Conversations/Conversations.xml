@@ -831,7 +831,7 @@
 
                 {{yellow|// [???]: ... ###### #### # #######?}}_
 
-                // [YLTD]: No, sounds like a nightmare. The last time a chemical such as this was synthesized, it turned a rat into rolling ball of screaming tumors, that spoke, mind you. All it will take is a microdose too much of [REDACTED], a little too much of [REDACTED]. And suddenly, we have a genophage on our hands, one so virulent, it could threaten to end all life as we know it._
+                // [YLTD]: No, sounds like a nightmare. The last time a chemical such as this was synthesized, it turned a rat into rolling ball of screaming tumors--that spoke, mind you. All it will take is a microdose too much of [REDACTED], a little too much of [REDACTED]. And suddenly, we have a xenophage on our hands, one so virulent, it could threaten to end all life as we know it._
 
                 {{yellow|// [???]: ... ####!? ## #### #### #### # ####, ### ## ### ####### ##### ####?}}_
 
@@ -862,7 +862,7 @@
         <start ID="AlertMessage">
             <text>
                 USER: MAINTENANCE HANDLER "EVOK STROA"
-                OUTBOUND MESSAGE: TO UVATECHNOLOGIES CENTRAL
+                OUTBOUND MESSAGE: TO UVA-TECHNOLOGIES CENTRAL
                 MESSAGE HISTORY - XX-XX-XXXX CO--UROTPIE-D -- [DATE ... UNKNOWN]
                 =====================================================================
                 // ... [EVOK]: H-e__llo? H_llo? ... Hello?_
@@ -1013,16 +1013,16 @@
 
                 // _SCIENCE OFFICERS_
 
-                {{white|######### ### - LEAD GENETICS OPERATIONS RESEARCHER - AGE: 69, GENDER: FEMININE}}
+                {{white|######### ### - LEAD GENETICS OPERATIONS RESEARCHER - AGE: 369, GENDER: FEMININE}}
                                     v STATUS
                                         [HEART RATE: 80.BPM]
                                         [BLOOD PRESSURE: 113 ÷ 80]
-                                        [COGNITIVE STATE: SHOWING SEVERE NEURAL DEGRADATION -- SEEK N.R.T ASAP]
+                                        [COGNITIVE STATE: SHOWING SEVERE NEURAL DEGRADATION -- SEEK B.R.T ASAP]
                                         [GENETIC STABILITY: ENCODED/NON-APPLICABLE]
                                         [P-DRP: ENCODED/NON-APPLICABLE]
                                         NOTE: INDIVIDUAL HAS ENACTED BIOMATA-PRESERVATION SYSTEMS, CURRENT SHELL IS RATED S-SERIES. SHELL-DEGRADATION EXCEEDS WARRANTY DECLARATION, SEEK SAFE NEURAL-EJECTION AND NEUROPLASTIC RECONSTRUCTIVE THERAPY IMMEDIATELY.
 
-                {{white|YOLTUM DAL - LEAD GENETICS OPERATIONS RESEARCHER - AGE: 123, GENDER: MASCULINE}}
+                {{white|YOLTUM DAL - GENETICS OPERATIONS RESEARCHER - AGE: 123, GENDER: MASCULINE}}
                                     v STATUS
                                         [HEART RATE: 125.BPM - {{dark grey|EXPIRED}}]
                                         [BLOOD PRESSURE: 368.BPM ]

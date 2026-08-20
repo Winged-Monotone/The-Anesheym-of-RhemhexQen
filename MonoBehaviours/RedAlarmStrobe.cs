@@ -20,32 +20,39 @@ namespace Wingytone.MonoBehaviours
         {
             if (!Enabled)
             {
-                return;
-            }
-
-            // deltaTime is the milliseconds passing, and here we're adding it up
-            StrobeTime += Time.deltaTime;
-
-            if (StrobeTime >= StrobeInterval)
-            {
-                Strobing = !Strobing;
-
-                if (Strobing)
-                {
-                    Levels.enabled = true;
-                    Levels.isRGB = true;
-                    Levels.outputMinR = 255;
-                }
-                else
+                if (Levels && Levels.enabled)
                 {
                     Levels.enabled = false;
                 }
+                return;
             }
+
+            // deltaTime is the milliseconds passing between each frame, and here we're adding it up
+            StrobeTime += Time.deltaTime;
+            
+            // Levels is how its explained, think photoshop or CS, lets you modify gradient color scaling, contrast scaling, etc.
+            // Needs to be enabled in order to mess with it
+            // isRGB() switches it to Color Leveling. Otherwise, it would be greyscale?
+
+            Levels.enabled = true;
+            Levels.isRGB = true;
+            
+            if (StrobeTime >= StrobeInterval)
+            {
+                Strobing = !Strobing;
+                StrobeTime = 0;
+            }
+            
+            // Output defines color you are manipulating. R for example is Red.
+            // As much as I hate it, "Lerp" means "linear Interpolation" for some fucking reason.
+            // Ternary Operation or "bool ? (true) : (false)" 
+            
+            Levels.outputMinR = Mathf.Lerp(Strobing ? 0 : 255, Strobing ? 255 : 0, Easing.BounceEaseInOut(StrobeTime/StrobeInterval));
         }
 
         public void Start()
         {
-            // gameObject is like parentobject but for UI elements
+            // in this context or class behavior, gameObject is like ParentObject but for UI elements
             if (!gameObject.TryGetComponent(out Levels))
             {
                 var ushader = Shader.Find("Hidden/CC_Levels");

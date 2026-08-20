@@ -1,0 +1,1551 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objects>
+    
+    <!-- Search:enemies NPCS -->
+
+
+    <object Name="MechaCrab" Inherits="BaseCrab">
+        <property Name="Role" Value="NPC"/>
+        <stat Name="Level" sValue="40"/>
+        <tag Name="Gender" Value="neuter"/>
+        <part Name="Brain" Hostile="true" Factions="Robots-100" MaxKillRadius="5"/>
+        <part Name="Render" DisplayName="colossal mecha-crab" Tile="WingyTextures/WalkerCrab.png" ColorString="&amp;K^y"
+              TileColor="&amp;K" DetailColor="y"/>
+        <part Name="Description"
+              Short="Gargantuan legs of blackened steel support a platform of whirring gizmos and mechanical eyes. Its slow, steady gait sends constant tremors through the earth, bellowing sulfur clouds from its joints as it drains lakes of brimstone with its mandibles. Its claws glow, making a sharp hiss as thermal energy crackles through lattices of thermite."/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+        <stat Name="HeatResistance" sValue="200"/>
+        <part Name="SlowDangerousMovement"/>
+        <part Name="AIWanderingJuggernaut"/>
+        <stat Name="AV" sValue="10"/>
+        <stat Name="DV" Value="-10"/>
+        <stat Name="Hitpoints" sValue="2500"/>
+        <part Name="Physics" Weight="80000"/>
+        <stat Name="Strength" Boost="4"/>
+        <inventoryobject Blueprint="Great Mecha Crab Claw" Number="2"/>
+        <inventoryobject Blueprint="Thermosulfite Missile Launcher"/>
+        <inventoryobject Blueprint="Thermosulfuric Missile" Number="20"/>
+    </object>
+
+    <object Name="Great Mecha Crab Claw" Inherits="NaturalWeapon">
+        <part Name="Render" DisplayName="{{C|great mechanical claw}}" Tile="Creatures/natural-weapon-pincer.bmp"
+              ColorString="&amp;R"/>
+        <part Name="MeleeWeapon" BaseDamage="3d6" Skill="Cudgel" Stat="Strength" Slot="Hand"/>
+    </object>
+    
+    <!--    Amalgam -->
+
+    <object Name="BaseAmalgam" Inherits="NPC">
+        <tag Name="BleedLiquid" Value="viscouspuss-1000" />
+        <tag Name="BleedColor" Value="&amp;Y" />
+        <tag Name="BleedPrefix" Value="{{W|pus-oozing}}" />
+        <tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_plant" />
+        <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_genPlant" />
+        <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_genPlant" />
+    </object>
+
+    <object Name="BaseAmalgamAttributes">
+        <part Name="CannotBeInfluenced"
+              Messages="Beguiling::You reach out to tap this creature's mind, only to be met with distressing symmetry of defragmented engrams who seek only to consume you.;;Persuasion_Proselytize::=subject.T's= cannot hold any commitments =pronouns.possessive= cause is unwavering.;;LoveTonicApplicator::The tonic has no effect on =subject.t=.;;default::=subject.T= =verb:are= insensible to your blandishments."/>
+        <tag Name="ExcludeFromDynamicEncounters"/>
+        <tag Name="BaseObject" Value="*noinherit"/>
+        <part Name="NielstGodIsDead"/>
+    </object>
+    
+    <object Name="BaseOrificalBiomass" Inherits="Plant">
+        <mixin Name="BaseAmalgamAttributes"/>
+        <part Name="Render" DisplayName="orifical biomass" RenderString="005" ColorString="&amp;k"
+              Tile="WingyTextures/amalgamspawnerN.png" TileColor="&amp;&#x1055;" DetailColor="A" Occluding="false"/>
+        <part Name="Description"
+              Short="A deep maw, an orifice which extends into the amalgam wombs. From within, newly-formed atrocities rush forth to prolong the crimson tide."/>
+        <part Name="AmalgamSpawnerVitae"/>
+        <part Name="FleshVent"/>
+        <tag Name="HangingSupport"/>
+        <removepart Name="Graffitied"/>
+    </object>
+    
+<!--    Hostile Amalgam Mobs -->
+
+    <object Name="Amalgam Skin Slink" Inherits="BaseAmalgam">
+        <mixin Name="BaseAmalgamAttributes"/>
+        <property Name="Role" Value="NPC"/>
+        <stat Name="Level" sValue="24"/>
+        <tag Name="Gender" Value="neuter"/>
+        <part Name="Brain" Hostile="true" Factions="Amalgam-100" MaxKillRadius="10" Wanders="true" Aquatic="false"/>
+        <part Name="Render" DisplayName="amalgamate skin-slink" Tile="WingyTextures/skinslink.png" RenderString="z"
+              ColorString="&amp;&#x1055;" DetailColor="a"/>
+        <part Name="Description"
+              Short="Undulating through the pus, a pale slinking worm bares shovel-like fangs. It parts flesh, and then slithers within, making its home beneath your skin."/>
+        <mutation Name="Amalgamize"/>
+
+        <stat Name="Intelligence" sValue="1"/>
+        <stat Name="Ego" sValue="1"/>
+        <stat Name="Willpower" sValue="16"/>
+        <stat Name="Toughness" sValue="9"/>
+        <stat Name="Strength" sValue="10"/>
+        <stat Name="Agility" sValue="24"/>
+
+        <stat Name="Hitpoints" sValue="14"/>
+        <stat Name="Speed" sValue="70"/>
+
+        <stat Name="AV" sValue="2"/>
+    </object>
+
+    <object Name="Bursting Pustulate" Inherits="Plant Turret">
+        <mixin Name="BaseAmalgamAttributes"/>
+        <property Name="Role" Value="NPC"/>
+        <stat Name="Level" sValue="24"/>
+        <tag Name="Gender" Value="neuter"/>
+        <part Name="Brain" Hostile="true" Factions="Amalgam-100" MaxKillRadius="10"/>
+        <part Name="Render" DisplayName="bursting pustulate" Tile="WingyTextures/burstingpustulate.png" RenderString="z"
+              TileColor="&amp;i"
+              DetailColor="&#x1055;"/>
+        <part Name="Description"
+              Short="A fleshy orifice bares shards of bile. As it expands, gas condenses in its gut before releasing a deadly volley of barbs at terrifying speeds."/>
+        <tag Name="Turret"/>
+        <inventoryobject Blueprint="Pustulate Burst-Pod"/>
+        <tag Name="NoDropOnDeath"/>
+        <tag Name="BleedLiquid" Value="pus-1000" />
+        <tag Name="BleedColor" Value="&amp;Y" />
+        <tag Name="BleedPrefix" Value="{{W|pus-encrusted}}" />
+
+        <stat Name="Intelligence" sValue="1"/>
+        <stat Name="Ego" sValue="1"/>
+        <stat Name="Willpower" sValue="7"/>
+        <stat Name="Toughness" sValue="16"/>
+        <stat Name="Strength" sValue="1"/>
+        <stat Name="Agility" sValue="20"/>
+
+        <stat Name="Hitpoints" sValue="40"/>
+        <stat Name="Speed" sValue="100"/>
+
+        <stat Name="AV" sValue="3"/>
+    </object>
+
+    <object Name="Pustulate Burst-Pod" Inherits="BaseRifle">
+        <part Name="Render" DisplayName="{{A|pustulate}} {{Y|burst-pod}}" ColorString="&amp;C" TileColor="&amp;c"
+              DetailColor="C" Tile="Items/sw_chain_laser.bmp"/>
+        <part Name="Physics" Weight="40" UsesTwoSlots="true"/>
+        <part Name="MissileWeapon" Skill="HeavyWeapons" AmmoChar="&amp;W&#196;" ShotsPerAction="3" AmmoPerAction="3"
+              ShotsPerAnimation="1" WeaponAccuracy="5"/>
+        <part Name="Commerce" Value="1000"/>
+        <part Name="Description"
+              Short="A fleshy orifice bares shards of crystallized bile. As it expands, gas condenses in its gut before releasing a deadly volley of barbs at terrifying speeds."/>
+        <part Name="Examiner" Complexity="5"/>
+        <part Name="TinkerItem" Bits="0005" CanDisassemble="true" CanBuild="true"/>
+        <part Name="BioAmmoLoader" MaxCapacity="30" Available="30" TurnsToGenerate="5"
+              ProjectileObject="ProjectileBileBarb"/>
+        <part Name="ItemElements" Elements="stars::3"/>
+        <tag Name="MissileFireSound" Value="Sounds/Missile/Fires/Heavy Weapons/sfx_missile_chainLaser_fire"/>
+        <tag Name="ReloadSound" Value="Sounds/Missile/Reloads/sfx_missile_laser_reload"/>
+        <tag Name="Mods" Value="MissileWeaponMods,FirearmMods,CommonMods,RifleMods,ElectronicsMods,BeamWeaponMods"/>
+        <tag Name="Tier" Value="5"/>
+        <tag Name="DynamicObjectsTable:Guns"/>
+        <stag Name="Historical"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+    </object>
+    <object Name="ProjectileBileBarb" Inherits="TemporaryProjectile">
+        <part Name="Render" DisplayName="{{W|pustulate bile-barb}}" ColorString="&amp;W"/>
+        <part Name="Projectile" BasePenetration="6" BaseDamage="1d8" Attributes="Poison" ColorString="&amp;W"
+              PassByVerb="Woosh"/>
+        <part Name="TreatAsSolid" RealityDistortionBased="true"
+              Message="=subject.T= =verb:collapse= under the pressure of normality."/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+    </object>
+    
+    <object Name="Amalgam Juggernaut" Inherits="BaseAmalgam">
+        <mixin Name="BaseAmalgamAttributes"/>
+        <property Name="Role" Value="NPC"/>
+        <stat Name="Level" sValue="24"/>
+        <tag Name="Gender" Value="neuter"/>
+        <part Name="Brain" Hostile="true" Factions="Amalgam-100" MaxKillRadius="10"/>
+        <part Name="Render" DisplayName="amalgam juggernaut" Tile="WingyTextures/AmalgamJuggernaut.png" RenderString="z"
+              ColorString="&amp;a"
+              DetailColor="A"/>
+        <part Name="Description"
+              Short="Muscle plastered atop muscle, bone mantled within more bone; grotesque and vast. An amalgam clustering of countless victims, their pallid skin sculpting its swollen physiques"/>
+
+        <inventoryobject Blueprint="Amalgam Juggernaut Pulverizer"/>
+
+        <skill Name="Tactics_Charge"/>
+        <skill Name="Cudgel_ChargingStrike"/>
+        <skill Name="Cudgel_Backswing"/>
+        <skill Name="Cudgel_Slam"/>
+        
+        <stat Name="Intelligence" sValue="1"/>
+        <stat Name="Ego" sValue="7"/>
+        <stat Name="Willpower" sValue="7"/>
+        <stat Name="Toughness" sValue="25"/>
+        <stat Name="Strength" sValue="25"/>
+        <stat Name="Agility" sValue="16"/>
+
+        <stat Name="Hitpoints" sValue="121,1d121"/>
+        <stat Name="Speed" sValue="115"/>
+
+        <stat Name="AV" sValue="6"/>
+    </object>
+    <object Name="Amalgam Juggernaut Pulverizer" Inherits="NaturalFist">
+        <part Name="MeleeWeapon" BaseDamage="2d6" Skill="Cudgel"/>
+    </object>
+
+    <object Name="Amalgam Prime" Inherits="BaseAmalgam">
+        <mixin Name="BaseAmalgamAttributes"/>
+        <property Name="Role" Value="NPC"/>
+        <stat Name="Level" sValue="15"/>
+        <tag Name="Gender" Value="neuter"/>
+        <part Name="Brain" Hostile="true" Factions="Amalgam-100" MaxKillRadius="10"/>
+        <part Name="Render" DisplayName="amalgam prime" Tile="WingyTextures/amalgamprime.png" RenderString="z"
+              ColorString="&amp;a"
+              DetailColor="A"/>
+        <part Name="Description"
+              Short="This amalgam lacks eyes, a mouth, and shambles about with vapid, crooked steps. Its grey loose flesh sinks towards its skull with every draw of air, and a malice-born pulse of thoughtstuff sifts out with each ragged sigh."/>
+
+        <part Name="RandomMutations" Mental="1-3" MentalLevel="8-10" Physical="0" PhysicalLevel="0" />
+
+        <stat Name="Intelligence" sValue="1"/>
+        <stat Name="Ego" sValue="20"/>
+        <stat Name="Willpower" sValue="20"/>
+        <stat Name="Toughness" sValue="10"/>
+        <stat Name="Strength" sValue="9"/>
+        <stat Name="Agility" sValue="16"/>
+
+        <stat Name="Hitpoints" sValue="34"/>
+        <stat Name="Speed" sValue="100"/>
+
+        <stat Name="AV" sValue="4"/>
+        <stat Name="MA" sValue="16"/>
+
+        <inventoryobject Blueprint="Amalgam Prime Claws"/>
+    </object>
+    <object Name="Amalgam Prime Claws" Inherits="NaturalFist">
+        <part Name="MeleeWeapon" BaseDamage="1d4" Skill="ShortBlades"/>
+    </object>
+
+    <object Name="Amalgam Super Boss" Inherits="BaseAmalgam">
+        <mixin Name="BaseAmalgamAttributes"/>
+        <property Name="Role" Value="NPC"/>
+        <stat Name="Level" sValue="30"/>
+        <tag Name="Gender" Value="neuter"/>
+        <part Name="Brain" Hostile="true" Factions="Amalgam-100" MaxKillRadius="10"/>
+        <part Name="Render" DisplayName="amalgam zenithar" Tile="WingyTextures/creatures/amalgam5.png" RenderString="z"
+              ColorString="&amp;A"
+              DetailColor="a"/>
+        <part Name="Description"
+              Short="This flesh has become the nectar of deities. Its mind, their cup. The amalgam bears many eyes, many ears, many mouths, many limbs, many engrams. Engrams aged finely and grounded down into submission."/>
+        <stat Name="Intelligence" sValue="2"/>
+        <stat Name="Ego" sValue="18"/>
+        <stat Name="Willpower" sValue="18"/>
+        <stat Name="Toughness" sValue="20"/>
+        <stat Name="Strength" sValue="18"/>
+        <stat Name="Agility" sValue="18"/>
+
+        <stat Name="Hitpoints" sValue="121,2d121"/>
+        <stat Name="Speed" sValue="100"/>
+
+        <stat Name="AV" sValue="6"/>
+
+        <part Name="RandomMutations" Mental="1-2" MentalLevel="5-7" Physical="1-2" PhysicalLevel="5-7" />
+    </object>
+
+    <object Name="Amalgam Super Doubter" Inherits="BaseAmalgam">
+        <mixin Name="BaseAmalgamAttributes"/>
+        <stat Name="Level" sValue="30"/>
+        <tag Name="Gender" Value="neuter"/>
+        <part Name="Brain" Hostile="true" Factions="Amalgam-100" MaxKillRadius="10"/>
+        <part Name="Render" DisplayName="The One Who Doubted" Tile="WingyTextures/creatures/amalgam5.png"
+              RenderString="z" ColorString="&amp;A"
+              DetailColor="a"/>
+        <part Name="Description"
+              Short="This flesh has become the nectar of deities. An engram of distrust, stripped of its purpose and forced into eternal, captious resolve.
+
+                {{red|########r#0#48--#4989#bnrf-34 t_his_ _ne doubted the ascension was possible, now their dubeity is our tool.}}"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+
+        <stat Name="Intelligence" sValue="2"/>
+        <stat Name="Ego" sValue="18"/>
+        <stat Name="Willpower" sValue="18"/>
+        <stat Name="Toughness" sValue="20"/>
+        <stat Name="Strength" sValue="18"/>
+        <stat Name="Agility" sValue="18"/>
+
+        <stat Name="Hitpoints" sValue="121,2d121"/>
+        <stat Name="Speed" sValue="100"/>
+
+        <stat Name="AV" sValue="6"/>
+        
+        <inventoryobject Blueprint="Amalgam Juggernaut Pulverizer"/>
+
+        <part Name="RealityStabilization" ChargeUse="0" Strength="120" Visibility="0" SelfVisibility="0" WorksOnSelf="true" WorksOnCellContents="false" HitpointsAffectPerformance="false" />
+        <part Name="RandomMutations" Mental="0" MentalLevel="0" Physical="2-4" PhysicalLevel="8-10" />
+    </object>
+
+    <object Name="Amalgam Super Critic" Inherits="BaseAmalgam">
+        <mixin Name="BaseAmalgamAttributes"/>
+        <stat Name="Level" sValue="30"/>
+        <tag Name="Gender" Value="neuter"/>
+        <part Name="Brain" Hostile="true" Factions="Amalgam-100" MaxKillRadius="10"/>
+        <part Name="Render" DisplayName="The One Who Criticized" Tile="WingyTextures/creatures/amalgam5.png"
+              RenderString="z" ColorString="&amp;A"
+              DetailColor="a"/>
+        <part Name="Description"
+              Short="This flesh has become the nectar of deities. Its mind, their cup. Another flesh-bound engram, stripped of a persona, left only as a wailing mass that violently critiques the unturned.
+
+{{red|############ eeugh68956h6m reft4 --nf# T-is -on criticized the master, now may their vituperative nature be forever in our service.}}"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+
+        <stat Name="Intelligence" sValue="2"/>
+        <stat Name="Ego" sValue="18"/>
+        <stat Name="Willpower" sValue="18"/>
+        <stat Name="Toughness" sValue="20"/>
+        <stat Name="Strength" sValue="18"/>
+        <stat Name="Agility" sValue="18"/>
+
+        <inventoryobject Blueprint="Amalgam Prime Claws"/>
+
+        <stat Name="Hitpoints" sValue="121,2d121"/>
+        <stat Name="Speed" sValue="100"/>
+
+        <stat Name="AV" sValue="6"/>
+
+        <skill Name="Persuasion_Berate"/>
+        <part Name="RandomMutations" Mental="1-3" MentalLevel="8-10" Physical="0" PhysicalLevel="0" />
+    </object>
+
+    <object Name="Amalgam Super Duper Giga Boss" Inherits="BaseAmalgam">
+        <mixin Name="BaseAmalgamAttributes"/>
+        <stat Name="Level" sValue="50"/>
+        <tag Name="Gender" Value="male"/>
+        <part Name="Brain" Hostile="true" Factions="Amalgam-100" MaxKillRadius="10"/>
+        <part Name="Render" DisplayName="Nielst {{fleshy|Ascended}}"
+              Tile="WingyTextures/AmalgamSuperDuperBoss/amalgamsuperduperboss1.png" RenderString="z"
+              ColorString="&amp;A"
+              DetailColor="a"/>
+        <part Name="Description"
+              Short="As you gaze upon this being, for a moment it flickers with the remnants of humanity, a white lab-coat, slick back blonde-hair, shaved at its sides. But in a moment it flickers into a monstrosity. A gaping maw through its chest and a cloak of sickly flesh hiding pallid tendrils and mutilated graspers. He reeks of hubris and foul intent, and gazes through you hungrily."/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+
+        <inventoryobject Blueprint="Genopticon Security Credentials"/>
+        <inventoryobject Blueprint="Codec AfronAscension 3"/>
+        <inventoryobject Blueprint="Codec AfronNielstNote 7" Number="1"/>
+
+        <part Name="Spawner" SpawnBlueprint="Amalgam Skin Slink"/>
+        <inventoryobject Blueprint="Amalgam Prime Claws" Number="2"/>
+        <inventoryobject Blueprint="Amalgam Juggernaut Pulverizer" Number="2"/>
+        <mutation Name="MultipleArms" Level="8"/>
+        <mutation Name="Regeneration" Level="10"/>
+
+        <part Name="FinishQuestStepWhenSlain" 
+              Quest="ShahStartLongSigh" 
+              Step="LSDefeatNielst" 
+              GameState="wmNielstSlain" />
+        
+        <stat Name="Intelligence" sValue="20"/>
+        <stat Name="Ego" sValue="30"/>
+        <stat Name="Willpower" sValue="31"/>
+        <stat Name="Toughness" sValue="26"/>
+        <stat Name="Strength" sValue="22"/>
+        <stat Name="Agility" sValue="20"/>
+
+        <stat Name="Hitpoints" sValue="242,2d121"/>
+        <stat Name="Speed" sValue="100"/>
+
+        <stat Name="AV" sValue="12"/>
+        <stat Name="MA" sValue="10"/>
+
+        <part Name="AnimatedMaterialGeneric" AnimationLength="320"
+              TileAnimationFrames="0=WingyTextures/AmalgamSuperDuperBoss/amalgamsuperduperboss1.png, 10=WingyTextures/AmalgamSuperDuperBoss/amalgamsuperduperboss2.png, 20=WingyTextures/AmalgamSuperDuperBoss/amalgamsuperduperboss3.png, 30=WingyTextures/AmalgamSuperDuperBoss/amalgamsuperduperboss4.png, 40=WingyTextures/AmalgamSuperDuperBoss/amalgamsuperduperboss5.png, 50=WingyTextures/AmalgamSuperDuperBoss/amalgamsuperduperboss6.png, 60=WingyTextures/AmalgamSuperDuperBoss/amalgamsuperduperboss7.png, 70=WingyTextures/AmalgamSuperDuperBoss/amalgamsuperduperboss8.png, 80=WingyTextures/AmalgamSuperDuperBoss/amalgamsuperduperboss9.png, 90=WingyTextures/AmalgamSuperDuperBoss/amalgamsuperduperboss10.png, 100=WingyTextures/AmalgamSuperDuperBoss/amalgamsuperduperboss11.png, 110=WingyTextures/AmalgamSuperDuperBoss/amalgamsuperduperboss12.png, 120=WingyTextures/AmalgamSuperDuperBoss/amalgamsuperduperboss13.png, 130=WingyTextures/AmalgamSuperDuperBoss/amalgamsuperduperboss14.png,140=WingyTextures/AmalgamSuperDuperBoss/amalgamsuperduperboss15.png,150=WingyTextures/AmalgamSuperDuperBoss/amalgamsuperduperboss15.png,160=WingyTextures/AmalgamSuperDuperBoss/amalgamsuperduperboss16.png,170=WingyTextures/AmalgamSuperDuperBoss/amalgamsuperduperboss17.png,180=WingyTextures/AmalgamSuperDuperBoss/amalgamsuperduperboss18.png,190=WingyTextures/AmalgamSuperDuperBoss/amalgamsuperduperboss19.png,200=WingyTextures/AmalgamSuperDuperBoss/amalgamsuperduperboss20.png,210=WingyTextures/AmalgamSuperDuperBoss/amalgamsuperduperboss21.png,220=WingyTextures/AmalgamSuperDuperBoss/amalgamsuperduperboss22.png,230=WingyTextures/AmalgamSuperDuperBoss/amalgamsuperduperboss23.png,240=WingyTextures/AmalgamSuperDuperBoss/amalgamsuperduperboss24.png,250=WingyTextures/AmalgamSuperDuperBoss/amalgamsuperduperboss25.png,260=WingyTextures/AmalgamSuperDuperBoss/amalgamsuperduperboss26.png,270=WingyTextures/AmalgamSuperDuperBoss/amalgamsuperduperboss27.png,280=WingyTextures/AmalgamSuperDuperBoss/amalgamsuperduperboss28.png,290=WingyTextures/AmalgamSuperDuperBoss/amalgamsuperduperboss29.png,300=WingyTextures/AmalgamSuperDuperBoss/amalgamsuperduperboss30.png"
+        />
+    </object>
+
+    <object Name="Amalgam Super Witness" Inherits="BaseAmalgam">
+        <mixin Name="BaseAmalgamAttributes"/>
+        <stat Name="Level" sValue="24"/>
+        <tag Name="Gender" Value="neuter"/>
+        <part Name="Brain" Hostile="true" Factions="Amalgam-100" MaxKillRadius="10"/>
+        <part Name="Render" DisplayName="{{fleshy|witness}}" Tile="WingyTextures/creatures/amalgam5.png"
+              RenderString="z" ColorString="&amp;I"
+              DetailColor="i"/>
+        <part Name="Description"
+              Short="This flesh has become the nectar of deities. Its mind, their cup. Engrams flood its wake. Serrated cartilage and bone are sculpted into crested-ridges that shimmer with fleshen oils, it is a walking disector, clearly composited from the victims of vitae.
+
+        {{red|#######_#b#4##50#d44#a50b6f0501d0-- _his -ne witn-ssed it's creation.}}"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+
+        <inventoryobject Blueprint="Amalgam Witness Pulverizer"/>
+
+        <skill Name="Axe_Expertise"/>
+        <skill Name="Axe_Cleave"/>
+        <skill Name="Axe_Dismember"/>
+        <skill Name="Axe_HookAndDrag"/>
+
+        <stat Name="Intelligence" sValue="2"/>
+        <stat Name="Ego" sValue="18"/>
+        <stat Name="Willpower" sValue="25"/>
+        <stat Name="Toughness" sValue="26"/>
+        <stat Name="Strength" sValue="20"/>
+        <stat Name="Agility" sValue="20"/>
+
+        <stat Name="Hitpoints" sValue="242"/>
+        <stat Name="Speed" sValue="100"/>
+
+        <stat Name="AV" sValue="10"/>
+        <stat Name="MA" sValue="5"/>
+    </object>
+
+    <object Name="Amalgam Witness Pulverizer" Inherits="Bite">
+        <part Name="MeleeWeapon" BaseDamage="2d12" Skill="Axe"/>
+    </object>
+
+    <object Name="BaseAmalgamSwarmer" Inherits="BaseAmalgam">
+        <mixin Name="BaseAmalgamAttributes"/>
+        <stat Name="Level" sValue="24"/>
+        <tag Name="Gender" Value="neuter"/>
+        <part Name="Brain" Hostile="true" Factions="Amalgam-100" MaxKillRadius="10"/>
+        <part Name="Description"
+              Short="Sickly pink flesh swells and surges against a veiny sinuous husk, its a shambling mess composed of innumerable hairless humanoids, reptiles and mammalians; whose limbs conjoin with tumorous growths at their core. Amongst the clutter of grasping digits and flailing extremities is the countless faces, faces whose eyes bury into your own frantically searching. They twitch with expressions of horror and then euphoria, remembering when their flesh was taken by the vita."/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+
+        <inventoryobject Blueprint="Amalgam Pulverizer" Number="2"/>
+
+        <stat Name="Intelligence" sValue="1"/>
+        <stat Name="Ego" sValue="3"/>
+        <stat Name="Willpower" sValue="3"/>
+        <stat Name="Toughness" sValue="16"/>
+        <stat Name="Strength" sValue="16"/>
+        <stat Name="Agility" sValue="16"/>
+
+        <stat Name="Hitpoints" sValue="52"/>
+        <stat Name="Speed" sValue="100"/>
+
+        <stat Name="AV" sValue="6"/>
+        <stat Name="MA" sValue="2"/>
+    </object>
+
+    <object Name="Amalgam Pulverizer" Inherits="Bite">
+        <part Name="MeleeWeapon" BaseDamage="2d8" Skill="Axe"/>
+    </object>
+
+    <object Name="Amalgam1" Inherits="BaseAmalgamSwarmer">
+        <stat Name="Level" sValue="15"/>
+        <tag Name="Gender" Value="neuter"/>
+        <part Name="Brain" Hostile="true" Factions="Amalgam-100" MaxKillRadius="10"/>
+        <part Name="Render" DisplayName="amalgamate" Tile="WingyTextures/creatures/amalgam1.png" RenderString="z"
+              ColorString="&amp;A"
+              DetailColor="a"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+
+        <stat Name="Intelligence" Boost="0"/>
+        <stat Name="Ego" Boost="0"/>
+        <stat Name="Willpower" Boost="0"/>
+        <stat Name="Toughness" Boost="0"/>
+        <stat Name="Strength" Boost="0"/>
+        <stat Name="Agility" Boost="0"/>
+
+        <stat Name="Hitpoints" Boost="0"/>
+        <stat Name="Speed" Boost="0"/>
+
+        <stat Name="AV" Boost="0"/>
+        <stat Name="MA" Boost="0"/>
+
+        <skill Name="Acrobatics_Jump"/>
+    </object>
+
+    <object Name="Amalgam2" Inherits="BaseAmalgamSwarmer">
+        <property Name="Role" Value="NPC"/>
+        <stat Name="Level" sValue="17"/>
+        <tag Name="Gender" Value="neuter"/>
+        <part Name="Brain" Hostile="true" Factions="Amalgam-100" MaxKillRadius="10"/>
+        <part Name="Render" DisplayName="amalgamate" Tile="WingyTextures/creatures/amalgam2.png" RenderString="z"
+              ColorString="&amp;A"
+              DetailColor="a"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+
+        <stat Name="Intelligence" Boost="0"/>
+        <stat Name="Ego" Boost="0"/>
+        <stat Name="Willpower" Boost="0"/>
+        <stat Name="Toughness" Boost="0"/>
+        <stat Name="Strength" Boost="1"/>
+        <stat Name="Agility" Boost="0"/>
+
+        <stat Name="Hitpoints" Boost="0"/>
+
+        <stat Name="AV" Boost="0"/>
+        <stat Name="MA" Boost="0"/>
+
+        <skill Name="Acrobatics_Jump"/>
+        <part Name="RandomMutations" Mental="0" MentalLevel="0" Physical="1" PhysicalLevel="3-4" />
+    </object>
+
+    <object Name="Amalgam3" Inherits="BaseAmalgamSwarmer">
+        <property Name="Role" Value="NPC"/>
+        <stat Name="Level" sValue="20"/>
+        <tag Name="Gender" Value="neuter"/>
+        <part Name="Brain" Hostile="true" Factions="Amalgam-100" MaxKillRadius="10"/>
+        <part Name="Render" DisplayName="amalgamate" Tile="WingyTextures/creatures/amalgam3.png" RenderString="z"
+              ColorString="&amp;A"
+              DetailColor="a"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+
+        <stat Name="Intelligence" Boost="0"/>
+        <stat Name="Ego" Boost="0"/>
+        <stat Name="Willpower" Boost="0"/>
+        <stat Name="Toughness" Boost="1"/>
+        <stat Name="Strength" Boost="1"/>
+        <stat Name="Agility" Boost="1"/>
+
+        <stat Name="Hitpoints" Boost="0"/>
+
+        <stat Name="AV" Boost="0"/>
+        <stat Name="MA" Boost="0"/>
+
+        <skill Name="Acrobatics_Jump"/>
+        <part Name="RandomMutations" Mental="0" MentalLevel="0" Physical="2" PhysicalLevel="4-3" />
+    </object>
+
+    <object Name="Amalgam4" Inherits="BaseAmalgamSwarmer">
+        <property Name="Role" Value="NPC"/>
+        <stat Name="Level" sValue="22"/>
+        <tag Name="Gender" Value="neuter"/>
+        <part Name="Brain" Hostile="true" Factions="Amalgam-100" MaxKillRadius="10"/>
+        <part Name="Render" DisplayName="amalgamate" Tile="WingyTextures/creatures/amalgam4.png" RenderString="z"
+              ColorString="&amp;A"
+              DetailColor="a"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+
+        <stat Name="Intelligence" Boost="0"/>
+        <stat Name="Ego" Boost="0"/>
+        <stat Name="Willpower" Boost="0"/>
+        <stat Name="Toughness" Boost="1"/>
+        <stat Name="Strength" Boost="2"/>
+        <stat Name="Agility" Boost="1"/>
+
+        <stat Name="Hitpoints" Boost="1"/>
+
+        <stat Name="AV" Boost="0"/>
+        <stat Name="MA" Boost="0"/>
+
+        <skill Name="Acrobatics_Jump"/>
+        <part Name="RandomMutations" Mental="0" MentalLevel="0" Physical="3" PhysicalLevel="5-6" />
+    </object>
+
+    <object Name="Amalgam5" Inherits="BaseAmalgamSwarmer">
+        <property Name="Role" Value="NPC"/>
+        <stat Name="Level" sValue="25"/>
+        <tag Name="Gender" Value="neuter"/>
+        <part Name="Brain" Hostile="true" Factions="Amalgam-100" MaxKillRadius="10"/>
+        <part Name="Render" DisplayName="amalgamate" Tile="WingyTextures/creatures/amalgam5.png" RenderString="z"
+              ColorString="&amp;A"
+              DetailColor="a"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+
+        <stat Name="Intelligence" Boost="0"/>
+        <stat Name="Ego" Boost="0"/>
+        <stat Name="Willpower" Boost="1"/>
+        <stat Name="Toughness" Boost="2"/>
+        <stat Name="Strength" Boost="2"/>
+        <stat Name="Agility" Boost="1"/>
+
+        <stat Name="Hitpoints" Boost="1"/>
+
+        <stat Name="AV" Boost="0"/>
+        <stat Name="MA" Boost="0"/>
+
+        <skill Name="Acrobatics_Jump"/>
+        <part Name="RandomMutations" Mental="0" MentalLevel="0" Physical="4" PhysicalLevel="5-6" />
+    </object>
+    
+    <!--  End Amalgam Hostiles  -->
+
+    <object Name="RhemHexChainLaserEmplacement" Inherits="ChainLaserEmplacement">
+        <part Name="Brain" Factions="Anesheym-100"/>
+    </object>
+
+    <!--    MOBS CONTINUED -->
+
+    <object Name="StinkBreather" Inherits="BaseBreather">
+        <part Name="Render" DisplayName="stinkbeard" ColorString="&amp;a"/>
+        <part Name="Description"
+              Short="Rolling scales tessellate =pronouns.possessive= husky, slouching form, and motes of still condensate stipple =pronouns.possessive= swollen chin."/>
+        <part Name="wmSulfuricExplosiveDeath"/>
+        <part Name="Corpse" CorpseBlueprint="stinkBreatherCorpse"/>
+        <part Name="EffectResistance" Values="Poison,PoisonGasPoison"/>
+        <mutation Name="StinkyBreather" Level="1"/>
+        <stat Name="HeatResistance" sValue="200"/>
+        <stat Name=""/>
+    </object>
+
+    <object Name="StinkBreatherCorpse" Inherits="BaseBreatherCorpse">
+        <part Name="Render" DisplayName="stinkbeard corpse"/>
+        <!-- <part Name="Butcherable" OnSuccess="StunBreatherGland" /> -->
+    </object>
+
+    <object Name="Crimson Jell" Inherits="BaseOoze">
+        <part Name="Corpse" CorpseChance="50"/>
+        <part Name="Render" DisplayName="{{a|crimson jell}}" RenderString="j" ColorString="&amp;A"/>
+        <stat Name="Level" sValue="33"/>
+        <stat Name="AV" sValue="6"/>
+        <stat Name="Hitpoints" sValue="140"/>
+        <stat Name="HeatResistance" sValue="200"/>
+        <stat Name="ColdResistance" Value="-50"/>
+        <inventoryobject Blueprint="Magmatic Pseudopod" Number="2"/>
+        <part Name="Description"
+              Short="Behind the glass membrane, inside a microcosmic globe, sulfur shifts like globulous masses, bounding in debase clumps of sticky amber."/>
+        <part Name="wmSulfurBurst"/>
+        <skill Name="Cudgel"/>
+        <skill Name="Cudgel_Bludgeon"/>
+        <tag Name="Role" Value="Brute"/>
+        <part Name="LightSource" Lit="true" Radius="6"/>
+        <tag Name="BleedLiquid" Value="liquidsulfur-1000"/>
+        <tag Name="BleedColor" Value="&amp;O"/>
+        <tag Name="BleedPrefix" Value="{{Sulfuric|sulfuric}}"/>
+    </object>
+
+    <object Name="Grand Mortar Beetle" Inherits="BaseInsect">
+        <part Name="Render" DisplayName="grand mortar beetle" Tile="WingyTextures/grandbeetle.png" RenderString="i"
+              ColorString="&amp;K" DetailColor="a"/>
+        <part Name="Corpse" CorpseChance="25" CorpseBlueprint="Grand Mortar Beetle Corpse"/>
+        <part Name="Brain" Hostile="false"/>
+        <stat Name="AV" sValue="6"/>
+        <stat Name="DV" sValue="2"/>
+        <stat Name="Hitpoints" sValue="55"/>
+        <stat Name="Level" sValue="10"/>
+        <stat Name="HeatResistance" sValue="200"/>
+        <stat Name="ColdResistance" Value="-50"/>
+        <inventoryobject Blueprint="GiantBeetle_Bite" Number="1"/>
+        <part Name="Description"
+              Short="Shining black elytra flitter on the back of a goat-sized bug, its rear is armed with a fleshy catapult that lobs molten sulfur at its prey."/>
+        <skill Name="Cudgel"/>
+        <tag Name="Role" Value="Minion"/>
+        <part Name="Swarmer"/>
+        <tag Name="Species" Value="beetle"/>
+        <tag Name="DynamicObjectsTable:Jungle_Creatures"/>
+        <tag Name="DynamicObjectsTable:Ruins_Creatures"/>
+        <mutation Name="wmSpitSulfur" Level="1"/>
+    </object>
+    <object Name="GiantMortarBeetle_Bite" Inherits="Bite">
+        <part Name="MeleeWeapon" BaseDamage="2d4" Skill="Cudgel" Slot="Head"/>
+    </object>
+    <object Name="Grand Mortar Beetle Corpse" Inherits="Arthropod Corpse">
+        <part Name="Render" DisplayName="grand mortar beetle corpse"/>
+        <part Name="Commerce" Value="1"/>
+        <part Name="Butcherable" OnSuccess="Raw Beetle Meat"/>
+        <tag Name="Tier" Value="1"/>
+    </object>
+
+    <object Name="Crystwyk" Inherits="BaseReptile">
+        <part Name="Render" DisplayName="crystwyk" RenderString="r" DetailColor="C" ColorString="&amp;c"
+              Tile="WingyTextures/creatures/crystwyk.png"/>
+        <stat Name="Level" sValue="22"/>
+        <stat Name="AV" sValue="6"/>
+        <stat Name="DV" sValue="6"/>
+        <stat Name="ElectricResistance" sValue="15"/>
+        <stat Name="AcidResistance" sValue="15"/>
+        <stat Name="ColdResistance" sValue="100"/>
+        <stat Name="Hitpoints" sValue="100"/>
+        <part Name="Brain" Hostile="true"/>
+        <part Name="Description"
+              Short="Granules of dust crystallized for stony eons marble the dewlap of a giant magenta iguana."/>
+        <skill Name="ShortBlades"/>
+        <part Name="AIShootAndScoot" Duration="1d20+5"/>
+        <tag Name="Role" Value="Artillery"/>
+        <mutation Name="LightManipulation" Level="5"/>
+        <inventoryobject Blueprint="Crystwyk_Bite"/>
+        <tag Name="Species" Value="iguana"/>
+    </object>
+    <object Name="Crystwyk_Bite" Inherits="Bite">
+        <part Name="Render" DisplayName="{{C|crystalline jaws}}"/>
+        <part Name="MeleeWeapon" BaseDamage="2d4"/>
+        <tag Name="Gender" Value="plural"/>
+    </object>
+
+    <object Name="GlarewingRaptor" Inherits="BaseReptile">
+        <part Name="Render" DisplayName="glarewing raptor" RenderString="r"
+              Tile="WingyTextures/creatures/glarewingraptor.png"
+              DetailColor="y" ColorString="&amp;K"/>
+        <part Name="Body" Anatomy="Snake"/>
+        <part Name="Brain" Hostile="True" Factions="Birds-100,Unshelled Reptiles-100"/>
+        <part Name="Corpse" CorpseChance="50" CorpseBlueprint="Glarewing Raptor Corpse" CorpseRequiresBodyPart="Tail"/>
+        <stat Name="AV" sValue="4"/>
+        <stat Name="DV" sValue="4"/>
+        <stat Name="Level" sValue="15"/>
+        <stat Name="Hitpoints" sValue="30"/>
+        <mutation Name="FreezingRay" Level="4" BodyPartType="Face"/>
+        <mutation Name="wmGlareBurst"/>
+        <mutation Name="Wings" Level="10"/>
+        <inventoryobject Blueprint="Dawnglider_Bite" Number="1"/>
+        <stat Name="HeatResistance" sValue="0"/>
+        <part Name="Description"
+              Short="Leathery wings bat shimmering dust off =pronouns.possessive= ray-like aura, and =pronouns.possessive= S-shape bod ripples across their waves of air. =pronouns.Possessive= plumage is blinding with the glint of crystalline shear."/>
+        <tag Name="Species" Value="dawnglider"/>
+        <tag Name="SeveredTailBlueprint" Value="Dawnglider Tail"/>
+        <tag Name="Role" Value="Artillery"/>
+        <tag Name="DynamicObjectsTable:Saltdunes_Creatures"/>
+    </object>
+    <object Name="Dawnglider_Bite" Inherits="Bite">
+        <part Name="MeleeWeapon" BaseDamage="1d4"/>
+        <part Name="TemperatureOnHit" Amount="2d20" Max="true" MaxTemp="-200" OnWielderHit="false"/>
+    </object>
+    <object Name="Glarewing Raptor Corpse" Inherits="Scaled Reptile Corpse">
+        <part Name="Render" DisplayName="dawnglider corpse"/>
+        <part Name="Commerce" Value="8"/>
+        <part Name="Description" Short="Broken scales and burnt feathers lay in flat tessellation."/>
+        <part Name="Butcherable" OnSuccess="Dawnglider Tail"/>
+        <tag Name="Tier" Value="3"/>
+    </object>
+
+    <object Name="Scythetoothed Leviathan" Inherits="BaseFish">
+        <part Name="Render" DisplayName="scythe-toothed leviathan" Tile="WingyTextures/Scythetooth_Leviathian.png"
+              RenderString="224"
+              ColorString="&amp;M"/>
+        <part Name="Corpse" CorpseChance="100" CorpseBlueprint="Madpole Corpse"/>
+        <stat Name="Hitpoints" sValue="150"/>
+        <stat Name="Strength" sValue="66"/>
+        <stat Name="Agility" sValue="32"/>
+        <stat Name="Level" sValue="32"/>
+        <part Name="Brain" WandersRandomly="true" Wanders="false" Hostile="True" Aquatic="true"/>
+        <mutation Name="Gills" Level="10"/>
+        <skill Name="Axe_Expertise"/>
+        <skill Name="Axe_Dismember"/>
+        <part Name="LiquidProximityFrenzies" Range="0" Duration="10" BerserkImmediately="true"
+              PreferBleedingTarget="true"/>
+        <part Name="Description"
+              Short="The distended jaw of this leviathian bears many hooked teeth, shaped unlike the vinereavers a farmer might bare."/>
+        <inventoryobject Blueprint="Scythetoothed_Jaws" Number="1"/>
+        <property Name="NoLoot" Value="true"/>
+        <tag Name="Role" Value="Minion"/>
+        <tag Name="Species" Value="fish"/>
+        <tag Name="DynamicObjectsTable:Water_Creatures"/>
+        <tag Name="PlacementHint" Value="Aquatic"/>
+    </object>
+    <object Name="Scythetoothed_Jaws" Inherits="NaturalWeapon">
+        <part Name="Render" DisplayName="gargantuan jaws" Tile="Creatures/natural-weapon-bite.bmp"
+              ColorString="&amp;w"/>
+        <part Name="MeleeWeapon" Slot="Face" MaxStrengthBonus="9999" BaseDamage="4d6" Skill="Axe"/>
+        <part Name="LatchesOn" InitialSaveTarget="15" InitialSaveStat="Agility" InitialSaveDifficultyStat="Agility"
+              MoveSaveTarget="15" MoveSaveStat="Strength" MoveSaveDifficultyStat="Strength" BreakSaveTarget="15"
+              BreakSaveStat="Strength" BreakSaveDifficultyStat="Strength" Duration="3d4" AutoAttackOnMove="false"
+              AutoAttackOnMoveAway="false" AutoAttackPerTurn="true" BloodSpatterOnLatch="true"/>
+        <tag Name="Gender" Value="plural"/>
+    </object>
+
+    <object Name="Deathmaw Leviathan" Inherits="BaseFish">
+        <part Name="Render" DisplayName="deathmaw leviathan" Tile="WingyTextures/Deathmaw_Leviathian.png"
+              RenderString="224"
+              ColorString="&amp;B"/>
+        <part Name="Corpse" CorpseChance="100" CorpseBlueprint="Madpole Corpse"/>
+        <stat Name="Hitpoints" sValue="85"/>
+        <stat Name="Strength" sValue="66"/>
+        <stat Name="Agility" sValue="32"/>
+        <stat Name="Level" sValue="32"/>
+        <part Name="Brain" WandersRandomly="true" Wanders="false" Hostile="True" Aquatic="true"/>
+        <mutation Name="Gills" Level="10"/>
+        <skill Name="Axe_Expertise"/>
+        <skill Name="Axe_Dismember"/>
+        <part Name="LiquidProximityFrenzies" Range="0" Duration="10" BerserkImmediately="true"
+              PreferBleedingTarget="true"/>
+        <part Name="Description"
+              Short="Maybe this is what a madpole is to become, a vicious beast of gargantuan size, jaws lined with thousands of teeth shimmering as it hones in on any sign of life around it."/>
+        <inventoryobject Blueprint="Scythetoothed_Jaws" Number="1"/>
+        <property Name="NoLoot" Value="true"/>
+        <tag Name="Role" Value="Minion"/>
+        <tag Name="Species" Value="fish"/>
+        <tag Name="DynamicObjectsTable:Water_Creatures"/>
+        <tag Name="PlacementHint" Value="Aquatic"/>
+    </object>
+    <object Name="Deathmaw Jaws" Inherits="NaturalWeapon">
+        <part Name="Render" DisplayName="gargantuan jaws" Tile="WingyTextures/Creatures/natural-weapon-bite.bmp"
+              ColorString="&amp;w"/>
+        <part Name="MeleeWeapon" Slot="Face" MaxStrengthBonus="9999" BaseDamage="6d6" Skill="Axe"/>
+        <part Name="LatchesOn" InitialSaveTarget="15" InitialSaveStat="Agility" InitialSaveDifficultyStat="Agility"
+              MoveSaveTarget="15" MoveSaveStat="Strength" MoveSaveDifficultyStat="Strength" BreakSaveTarget="15"
+              BreakSaveStat="Strength" BreakSaveDifficultyStat="Strength" Duration="3d4" AutoAttackOnMove="false"
+              AutoAttackOnMoveAway="false" AutoAttackPerTurn="true" BloodSpatterOnLatch="true"/>
+        <tag Name="Gender" Value="plural"/>
+    </object>
+
+    <object Name="Darkwell Leviathan" Inherits="BaseFish">
+        <part Name="Render" DisplayName="darkwell leviathan" Tile="WingyTextures/Darkwell_Leviathian.png"
+              RenderString="224"
+              ColorString="&amp;y"/>
+        <part Name="Corpse" CorpseChance="100" CorpseBlueprint="Madpole Corpse"/>
+        <stat Name="Hitpoints" sValue="85"/>
+        <stat Name="Strength" sValue="66"/>
+        <stat Name="Agility" sValue="32"/>
+        <stat Name="Level" sValue="32"/>
+        <part Name="Brain" WandersRandomly="true" Wanders="false" Hostile="True" Aquatic="true"/>
+        <mutation Name="Gills" Level="10"/>
+        <skill Name="Axe_Expertise"/>
+        <skill Name="Axe_Dismember"/>
+        <part Name="LiquidProximityFrenzies" Range="0" Duration="10" BerserkImmediately="true"
+              PreferBleedingTarget="true"/>
+        <part Name="Description"
+              Short="A dark shadow envelopes this massive serpent, an eerie silence moves with it as you catch its faint appearance here and there, diving between planes of water and void."/>
+        <inventoryobject Blueprint="Darkwell_Jaws" Number="1"/>
+        <property Name="NoLoot" Value="true"/>
+        <tag Name="Role" Value="Minion"/>
+        <tag Name="Species" Value="fish"/>
+        <tag Name="DynamicObjectsTable:Water_Creatures"/>
+        <tag Name="PlacementHint" Value="Aquatic"/>
+    </object>
+    <object Name="Darkwell_Jaws" Inherits="NaturalWeapon">
+        <part Name="Render" DisplayName="gargantuan jaws" Tile="Creatures/natural-weapon-bite.bmp"
+              ColorString="&amp;w"/>
+        <part Name="MeleeWeapon" Slot="Face" MaxStrengthBonus="9999" BaseDamage="2d6" Skill="Axe"/>
+        <part Name="LatchesOn" InitialSaveTarget="15" InitialSaveStat="Agility" InitialSaveDifficultyStat="Agility"
+              MoveSaveTarget="15" MoveSaveStat="Strength" MoveSaveDifficultyStat="Strength" BreakSaveTarget="15"
+              BreakSaveStat="Strength" BreakSaveDifficultyStat="Strength" Duration="3d4" AutoAttackOnMove="false"
+              AutoAttackOnMoveAway="false" AutoAttackPerTurn="true" BloodSpatterOnLatch="true"/>
+        <tag Name="Gender" Value="plural"/>
+    </object>
+
+    <object Name="Mantra Ray" Inherits="BaseFish">
+        <part Name="Render" DisplayName="mantra ray" RenderString="224" ColorString="&amp;r"
+              Tile="WingyTextures/mantrarays.png"/>
+        <part Name="Corpse" CorpseChance="0" CorpseBlueprint="Madpole Corpse"/>
+        <stat Name="Hitpoints" sValue="12"/>
+        <stat Name="Strength" sValue="18"/>
+        <stat Name="Agility" sValue="17"/>
+        <stat Name="Level" sValue="13"/>
+        <part Name="Brain" WandersRandomly="true" Hostile="false" Wanders="false" Aquatic="true" Calm="true"
+              Factions="Fish-100"/>
+        <mutation Name="Gills" Level="10"/>
+        <mutation Name="LightManipulation" Level="10"/>
+        <mutation Name="ForceWall" Level="10"/>
+        <part Name="Description"
+              Short="Great wings of cartilage flit on the ocean current in slow methodical motions, its edges glow with luminescence."/>
+        <inventoryobject Blueprint="Mantra_Bite" Number="1"/>
+        <property Name="NoLoot" Value="true"/>
+        <tag Name="PlacementHint" Value="Aquatic"/>
+    </object>
+    <object Name="Mantra_Bite" Inherits="Bite">
+        <part Name="MeleeWeapon" MaxStrengthBonus="9999" BaseDamage="4d4" Skill="Axe"/>
+    </object>
+
+    <!-- Leviathans -->
+
+    <object Name="LeviathanHead" Inherits="BaseFish">
+        <part Name="Render" DisplayName="godhead leviathan" RenderString="224" ColorString="&amp;r"
+              Tile="WingyTextures/levihead.png"/>
+        <part Name="Corpse" CorpseChance="0" CorpseBlueprint="Madpole Corpse"/>
+        <stat Name="Hitpoints" sValue="5000"/>
+        <stat Name="Strength" sValue="50"/>
+        <stat Name="Agility" sValue="20"/>
+        <stat Name="Level" sValue="50"/>
+        <part Name="Brain" WandersRandomly="true" Hostile="true" Wanders="false" Aquatic="true"
+              Factions="Fish-100"/>
+        <part Name="wmLeviathanHead"/>
+        <mutation Name="Gills" Level="10"/>
+        <part Name="Description"
+              Short="A gargantuan maw is forever agape, as the monolith drifts through the open ocean, food filters through its countless baleen hairs, while fluids are ejected from siphons on the creature's pectoral main-line."/>
+        <inventoryobject Blueprint="Leviathan_Bite" Number="1"/>
+        <property Name="NoLoot" Value="true"/>
+        <tag Name="PlacementHint" Value="Aquatic"/>
+    </object>
+    <object Name="Leviathan_Bite" Inherits="Bite">
+        <part Name="MeleeWeapon" MaxStrengthBonus="9999" BaseDamage="4d12" Skill="Axe"/>
+    </object>
+
+    <object Name="LeviathanTail" Inherits="BaseFish">
+        <part Name="Render" DisplayName="godhead leviathan" RenderString="224" ColorString="&amp;r"
+              Tile="WingyTextures/levitail.png"/>
+        <part Name="Corpse" CorpseChance="0" CorpseBlueprint="Madpole Corpse"/>
+        <stat Name="Hitpoints" sValue="5000"/>
+        <stat Name="Strength" sValue="50"/>
+        <stat Name="Agility" sValue="20"/>
+        <stat Name="Level" sValue="50"/>
+        <part Name="Brain" WandersRandomly="true" Hostile="false" Wanders="false" Aquatic="true" Calm="true"
+              Factions="Fish-100"/>
+        <mutation Name="Gills" Level="10"/>
+        <part Name="Description"
+              Short="Following the leviathan's maw are undulating, bioluminescent shafts of ribbed-muscles and dorsal fins."/>
+        <property Name="NoLoot" Value="true"/>
+        <tag Name="PlacementHint" Value="Aquatic"/>
+    </object>
+
+    <!-- Search:bugvillage/IMPORTANT NPCS -->
+
+    <!-- barathrumites -->
+
+    <object Name="Saile" Inherits="Barathrumite">
+        <part Name="Render" DisplayName="Saile" ColorString="&amp;W" Tile="WingyTextures/sailebearperson.png"
+              DetailColor="r" TileColor="&amp;Y"/>
+        <part Name="Brain" Wanders="false"/>
+        <part Name="FactionRank" Ranks="Barathrumites::meyvn"/>
+        <stat Name="Strength" sValue="19"/>
+        <stat Name="Intelligence" sValue="39"/>
+        <stat Name="Willpower" sValue="26"/>
+        <stat Name="Toughness" sValue="16"/>
+        <stat Name="Agility" sValue="31"/>
+        <stat Name="Ego" sValue="26"/>
+        <stat Name="Hitpoints" sValue="85"/>
+        <part Name="Description"
+              Short="Quills tipped in red-tint gleam with the lab-lights, a weary gaze of golden eyes barely visible behind oval lenses. Their face carries scars of burnt flesh from their various technical exploits gone horribly wrong. The uurshib seems content though, as they tinker, performing diagnostics to the most minute detail. Every once in a while, they pull from their pocket a memento to which they hold a cold, solemn gaze to a photo of times long gone."/>
+        <stat Name="Level" sValue="28"/>
+        <skill Name="Customs_Tactful"/>
+        <skill Name="Tinkering"/>
+        <skill Name="Tinkering_Disassemble"/>
+        <skill Name="Tinkering_Repair"/>
+        <skill Name="Tinkering_ReverseEngineer"/>
+        <skill Name="Tinkering_Tinker1"/>
+        <skill Name="Tinkering_Tinker2"/>
+        <skill Name="Pistol"/>
+        <skill Name="Pistol_Akimbo"/>
+        <part Name="GivesRep"/>
+        <part Name="AISelfPreservation" Threshold="30"/>
+        <tag Name="staticFaction3" Value=",friend,developing a quantum mechanical model"/>
+        <tag Name="staticFaction2" Value=",dislike,=pronouns.possessive= queer appearance"/>
+        <tag Name="staticFaction1" Value=",hate,questioning the legitimacy of their hierarchies"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+        <tag Name="Gender" Value="plural"/>
+        <tag Name="PronounSet" Value="they/them"/>
+        <xtagGrammar Proper="true"/>
+        <property Name="WontSell" Value="Overloaded Laser Pistol"/>
+        <inventoryobject Blueprint="Ulnar Stimulators" Number="1" CellChance="100" CellFullChance="100"
+                         CellType="Chem Cell"/>
+        <inventoryobject Blueprint="Strength Exo" Number="1" CellChance="100" CellFullChance="100"
+                         CellType="Chem Cell"/>
+        <inventoryobject Blueprint="Plastifer Sneakers" Number="1"/>
+        <inventoryobject Blueprint="Polyhedral Rings" Number="1"/>
+        <inventoryobject Blueprint="Spiral Iron" Number="1"/>
+        <inventoryobject Blueprint="Rough Agate" Number="0-1"/>
+        <inventoryobject Blueprint="Rough Jasper" Number="0-1"/>
+        <inventoryobject Blueprint="Rough Amethyst" Number="0-1"/>
+        <inventoryobject Blueprint="Rough Sapphire" Number="0-1"/>
+        <inventoryobject Blueprint="Rough Emerald" Number="0-1"/>
+        <inventoryobject Blueprint="Overloaded Laser Pistol" Number="2" CellChance="100" CellFullChance="100"
+                         CellType="Chem Cell"/>
+        <inventoryobject Blueprint="CyberneticsCreditWedge_Cheap" Number="1"/>
+        <xtagWaterRitual NoJoin="true" numRecipes="3"/>
+        <part Name="ConversationScript" ConversationID="SaileConversation"/>
+    </object>
+
+    <object Name="Kaemea" Inherits="NPC">
+        <property Name="Role" Value="NPC"/>
+        <stat Name="Level" sValue="20"/>
+        <part Name="Brain" Wanders="true" Hostile="False" Factions="Anesheym-100"/>
+        <part Name="Render" DisplayName="Denoso 'Fidget' Kaemea" Tile="WingyTextures/bigkidwithwrench.png"
+              RenderString="z"
+              ColorString="&amp;R" DetailColor="c"/>
+        <part Name="Description"
+              Short="Tiny hands, tiny framed, and extremely fidgety. What this little bugling lacks in size, they make up for in tinkering genius."/>
+        <part Name="AISelfPreservation" Threshold="80"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+        <skill Name="Customs_Tactful"/>
+        <skill Name="Tinkering"/>
+        <skill Name="Tinkering_Disassemble"/>
+        <skill Name="Tinkering_Repair"/>
+        <skill Name="Tinkering_ReverseEngineer"/>
+        <skill Name="Tinkering_Tinker1"/>
+        <tag Name="Gender" Value="plural"/>
+        <tag Name="PronounSet" Value="they/them"/>
+        <part Name="ConversationScript" ConversationID="LilTwitchyBuggoConvo"/>
+    </object>
+
+    <object Name="bugvillager" Inherits="NPC">
+        <property Name="Role" Value="NPC"/>
+        <stat Name="Level" sValue="20"/>
+        <tag Name="Gender" Value="neuter"/>
+        <part Name="Brain" Wanders="true" Hostile="False" Factions="Anesheym-100"/>
+        <part Name="Render" DisplayName="anesheym villager" Tile="WingyTextures/creatures/bugvillager.png"
+              RenderString="z"
+              ColorString="&amp;Y" DetailColor="c"/>
+        <part Name="Description"
+              Short="An insectoid whose genes were warped with human lineages, they show high levels of intelligence and to some, an unnerving tendency toward compassion and benevolence."/>
+        <part Name="AISelfPreservation" Threshold="80"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+        <mutation Name="Spinnerets" Level="2"/>
+        <mutation Name="MultipleArms" Level="1"/>
+    </object>
+
+    <object Name="bugkid" Inherits="NPC">
+        <property Name="Role" Value="NPC"/>
+        <stat Name="Level" sValue="20"/>
+        <tag Name="Gender" Value="neuter"/>
+        <part Name="Brain" Wanders="true" Hostile="False" Factions="Anesheym-100"/>
+        <part Name="Render" DisplayName="anesheym child" Tile="WingyTextures/creatures/bugkid.png" RenderString="z"
+              ColorString="&amp;Y" DetailColor="c"/>
+        <part Name="Description"
+              Short="To be ogled by the beady eyes of this small insectoid invokes feelings of wonder: why did the precursors see it fit to blend our kinds?"/>
+        <part Name="AISelfPreservation" Threshold="80"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+    </object>
+
+    <object Name="bugelder" Inherits="NPC">
+        <property Name="Role" Value="NPC"/>
+        <stat Name="Level" sValue="20"/>
+        <tag Name="Gender" Value="neuter"/>
+        <part Name="Brain" Wanders="true" Hostile="False" Factions="Anesheym-100"/>
+        <part Name="Render" DisplayName="anesheym elder" Tile="WingyTextures/creatures/bugelder.png" RenderString="z"
+              ColorString="&amp;Y" DetailColor="c"/>
+        <part Name="Description"
+              Short="For insectomamilians and our anesheym, old age accompanies starvation, a fate exhibited in this one with its loose hanging shell and stiff movements. Their greatest strength is to grow without limit, yet exemplified here it reveals its greatest weakness--if one cannot acquire the sustenance to sustain such a form, then they will wither away to inanition. To the anesheym, hunger is age."/>
+        <part Name="AISelfPreservation" Threshold="80"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+    </object>
+
+    <object Name="bugnurse" Inherits="NPC">
+        <property Name="Role" Value="NPC"/>
+        <stat Name="Level" sValue="20"/>
+        <tag Name="Gender" Value="neuter"/>
+        <part Name="Brain" Wanders="true" Hostile="False" Factions="Anesheym-100"/>
+        <part Name="Render" DisplayName="anesheym brood-nurse" Tile="WingyTextures/creatures/bugnurse.png"
+              RenderString="z"
+              ColorString="&amp;Y" DetailColor="c"/>
+        <part Name="Description"
+              Short="This feminine insectoid huddles clutches of eggs and young-brood in its many arms; not one of these are this creature's direct offspring--but instead the young of their progenitor. Nevertheless, they show a maternal care that is surely love towards their grublings."/>
+        <part Name="AISelfPreservation" Threshold="80"/>
+        <part Name="RandomNurseName"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+    </object>
+
+    <object Name="bugsolder" Inherits="NPC">
+        <property Name="Role" Value="NPC"/>
+        <stat Name="Level" sValue="20"/>
+        <tag Name="Gender" Value="neuter"/>
+        <part Name="Brain" Wanders="false" Hostile="False" Factions="Anesheym-100"/>
+        <part Name="Render" DisplayName="anesheym guardsfolk" Tile="WingyTextures/creatures/bugsolder.png"
+              RenderString="z"
+              ColorString="&amp;Y" DetailColor="c"/>
+        <part Name="Description"
+              Short="The warrior lineage of the aneshym is the result of a miracle in genoclinic reproduction and careful combat conditioning. They stand tall, most adorned in armor latticed from nanites and chitin glaze."/>
+        <part Name="AISelfPreservation" Threshold="80"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+    </object>
+
+    <object Name="bugsentinel" Inherits="NPC">
+        <property Name="Role" Value="NPC"/>
+        <stat Name="Level" sValue="35"/>
+        <tag Name="Gender" Value="neuter"/>
+        <part Name="Brain" Wanders="false" Hostile="False" Factions="Anesheym-100"/>
+        <part Name="Render" DisplayName="anesheym sentinel" Tile="WingyTextures/creatures/bugsentinel.png"
+              RenderString="z"
+              ColorString="&amp;Y" DetailColor="c"/>
+        <part Name="Description"
+              Short="The warrior lineage of the aneshym is the result of a miracle in genoclinic reproduction and careful combat conditioning. They stand tall, most adorned in armor latticed from nanites and chitin glaze. Toughened through war-hardened times, the sentinels are the first and foremost to stand before the enemy and the grand progenitor."/>
+        <part Name="AISelfPreservation" Threshold="80"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+    </object>
+
+    <object Name="bugexalted" Inherits="NPC">
+        <property Name="Role" Value="NPC"/>
+        <stat Name="Level" sValue="20"/>
+        <tag Name="Gender" Value="neuter"/>
+        <part Name="Brain" Wanders="true" Hostile="true" Factions="insect"/>
+        <part Name="Render" DisplayName="corrupt savant" Tile="WingyTextures/creatures/bugexalted.png" RenderString="w"
+              ColorString="&amp;W" DetailColor="w"/>
+        <part Name="Description"
+              Short="Once a devout moon-seer who stumbled foolishly into the darkest places of the anima. They've succumbed to their shadow, and with eyes blackened and crazed; they lurk like feral beetles."/>
+        <part Name="AISelfPreservation" Threshold="80"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+    </object>
+
+    <object Name="buganimancernovice" Inherits="NPC">
+        <property Name="Role" Value="NPC"/>
+        <stat Name="Level" sValue="20"/>
+        <tag Name="Gender" Value="neuter"/>
+        <part Name="Brain" Wanders="true" Hostile="False" Factions="Anesheym-100"/>
+        <part Name="Render" DisplayName="newlight sage" Tile="WingyTextures/creatures/buganimancernovice.png"
+              RenderString="z"
+              ColorString="&amp;M" DetailColor="r"/>
+        <part Name="Description"
+              Short="The Yel-Deya-Yerah are an order who disciplines themselves in mastering and studying the secrets of the anima. Both in dream and through meditation, these monadic individuals derive great knowledge and power through the dream-plane. This in particular is a novice, denoted by their new-moon robe and their grey apparel."/>
+        <part Name="AISelfPreservation" Threshold="80"/>
+        <part Name="RandomNameSavantMonk"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+    </object>
+
+    <object Name="buganimancerhigh" Inherits="NPC">
+        <property Name="Role" Value="NPC"/>
+        <stat Name="Level" sValue="20"/>
+        <tag Name="Gender" Value="neuter"/>
+        <part Name="Brain" Wanders="true" Hostile="False" Factions="Anesheym-100"/>
+        <part Name="Render" DisplayName="waining sage" Tile="WingyTextures/creatures/buganimancerhigh.png"
+              RenderString="z"
+              ColorString="&amp;M" DetailColor="r"/>
+        <part Name="Description"
+              Short="The Yel-Deya-Yerah are an order who disciplines themselves in mastering and studying the secrets of the anima. Both in dream and through meditation, these monadic individuals derive great knowledge and power through the dream-plane. This individual has reached the status 'waxing,' they have delved into the depths of the unconscious and faced the horrors within mostly unscathed."/>
+        <part Name="AISelfPreservation" Threshold="80"/>
+        <part Name="RandomNameHighMonk"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+    </object>
+
+    <object Name="buganimancersavant" Inherits="NPC">
+        <property Name="Role" Value="NPC"/>
+        <stat Name="Level" sValue="20"/>
+        <tag Name="Gender" Value="neuter"/>
+        <part Name="Brain" Wanders="true" Hostile="False" Factions="Anesheym-100"/>
+        <part Name="Render" DisplayName="screeching sage" Tile="WingyTextures/creatures/buganimancersavant.png"
+              RenderString="z"
+              ColorString="&amp;M" DetailColor="r"/>
+        <part Name="Description"
+              Short="The Yel-Deya-Yerah are an order who disciplines themselves in mastering and studying the secrets of the anima. Both in dream and through meditation, these monadic individuals derive great knowledge and power through the dream-plane. This savant bears the quartered-moon crest of the 'waning,' they are familiar with the anima and ripened by her eidolithic fruits."/>
+        <part Name="AISelfPreservation" Threshold="80"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+    </object>
+
+
+    <!-- Search:Unique NPC's -->
+
+
+    <object Name="bughonorguard1" Inherits="NPC">
+        <property Name="Role" Value="NPC"/>
+        <stat Name="Level" sValue="20"/>
+        <tag Name="Gender" Value="neuter"/>
+        <part Name="Brain" Hostile="False" Factions="Anesheym-150"/>
+        <part Name="Render" DisplayName="BloodShell Jar'karunox, Sentinel to the Grand Progenitor"
+              Tile="WingyTextures/creatures/bughonorguard1.png" ColorString="&amp;R" DetailColor="Y" RenderString="z"/>
+        <part Name="Description"
+              Short="Rippling intramuscular tissue swells against a brutish-frame of shale-scratched exoskeleton, their spinnerets lick the air from the cusp of their cheeks in a star-like pattern as their globus eyes scan the courtroom eagerly."/>
+        <part Name="AISelfPreservation" Threshold="80"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+    </object>
+
+    <object Name="bughonorguard2" Inherits="NPC">
+        <property Name="Role" Value="NPC"/>
+        <stat Name="Level" sValue="20"/>
+        <tag Name="Gender" Value="neuter"/>
+        <part Name="Brain" Hostile="False" Factions="Anesheym-150"/>
+        <part Name="Render" DisplayName="Ikna-kanti the Windstrafer, Sentinel to the Grand Progenitor"
+              Tile="WingyTextures/creatures/bughonorguard2.png" ColorString="&amp;B" DetailColor="Y" RenderString="z"/>
+        <part Name="Description"
+              Short="What could almost be mistaken for a child is instead a petite warrior from a lost proto-cline. Their chitin ripples like disturbed water frozen in the moment, a deep-blue as pristine as sapphire hides hints of glittering green beneath its surface, the sheen breaks the slender silhouette of the creature in a way that makes them difficult to parse with your eyes."/>
+        <part Name="AISelfPreservation" Threshold="80"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+    </object>
+
+    <object Name="bugqueenmain" Inherits="NPC">
+        <property Name="Role" Value="NPC"/>
+        <part Name="Physics" Weight="10000" Takeable="false" Solid="true"/>
+        <stat Name="Level" sValue="100"/>
+        <tag Name="Gender" Value="female"/>
+        <part Name="Brain" Hostile="False" Factions="Anesheym-100"/>
+        <part Name="DoubleContainer" Direction="E" Master="true"/>
+        <part Name="Render"
+              DisplayName="{{extradimensional|Grand Progenitor and Wombbearer,}} Shah Zenithera Pandamoriae"
+              Tile="WingyTextures/creatures/bugqueenmain.png" ColorString="&amp;O" DetailColor="c" RenderString="z"/>
+        <part Name="Description"
+              Short="Silver sheets of filmy elytra flare out in the matriarch's arrangement, erecting from the spine of a humanoid vast enough to gaze down at those in her court. A tangerine glow bathes you in sharp cascading patterns as the sun-gold shell of this avatar shimmers against the flame in the cane wield in one of their many arms. Their dozen-or-so glowing lavender eyes gaze with weariness, undermined by a content smile. The growth of flora and rust about her hips and lower extremities hint this being has nestled here decem millenia."/>
+        <part Name="AISelfPreservation" Threshold="80"/>
+        <mutation Name="SunderMind" Level="9999"/>
+        <part Name="GivesRep" repValue="800"/>
+        <xtagWaterRitual NoJoin="true"/>
+        <tag Name="staticFaction1"
+             Value="Anesheym,friend,offering her genestock to the Broodpusher and upholding their sovereignty"/>
+        <tag Name="staticFaction2" Value="Templar,hate,threatening the cohesion of their orthodoxy"/>
+        <tag Name="staticFaction3" Value="Seekers,dislike,being an enigma and withholding secrets of the anima"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+        <part Name="ConversationScript" ConversationID="PandamoriaeConversation"/>
+        <part Name="PandamoraeConversator"/>
+        <part Name="wmAnchored"/>
+    </object>
+
+    <object Name="bugqueenovi" Inherits="NPC">
+        <property Name="Role" Value="NPC"/>
+        <part Name="Physics" Weight="10000" Takeable="false" Solid="true"/>
+        <stat Name="Level" sValue="100"/>
+        <tag Name="Gender" Value="neuter"/>
+        <part Name="DoubleContainer" Direction="W"/>
+        <part Name="Brain" Hostile="False" Factions="Anesheym-100"/>
+        <part Name="Render" DisplayName="Grand Progenitor's Broodpusher"
+              Tile="WingyTextures/creatures/bugqueenovibody.png"
+              ColorString="&amp;O" DetailColor="c" RenderString="z"/>
+        <part Name="Description"
+              Short="A writhing, pulsating mass of insect flesh and sinuous muscle, it fuses into the spine of the great Shah, drawing in their infinite gene-stock to be molded into egglings. Future progeny are to be birthed at every fifth hour. Such biomechanical workings is not but one of nature's most elusive enigmas and one would find it hard not to ogle such an incredible specimen ..."/>
+        <part Name="AISelfPreservation" Threshold="80"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+        <xtagWaterRitual NoJoin="true"/>
+        <part Name="GivesRep" repValue="800"/>
+        <tag Name="staticFaction1" Value="Anesheym,friend,laying the first egg and birthing the colony"/>
+        <tag Name="staticFaction2" Value="Templar,hate,threatening the cohesion of their orthodoxy"/>
+        <tag Name="staticFaction3" Value="Seekers,dislike,being an enigma, and withholding secrets of the anima"/>
+        <xtagGrammar Proper="true"/>
+        <part Name="wmAnchored"/>
+        <part Name="ConversationScript" ConversationID="PandamoriaesButtversation"/>
+    </object>
+
+    <object Name="buganimancersage" Inherits="NPC">
+        <property Name="Role" Value="NPC"/>
+        <stat Name="Level" sValue="20"/>
+        <tag Name="Gender" Value="neuter"/>
+        <part Name="Brain" Wanders="true" Hostile="False" Factions="Anesheym-100"/>
+        <part Name="Render" DisplayName="Elder-Moonseer, Vanti" Tile="WingyTextures/creatures/buganimancersage.png"
+              ColorString="&amp;m" DetailColor="C" RenderString="z"/>
+        <part Name="Description" Short="A herald to the ways of the Anima. They wear a large mask carved from crystal-birch wood, their gown a deep royal purple."/>
+        <part Name="AISelfPreservation" Threshold="80"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+    </object>
+
+    <object Name="nuurimir" Inherits="NPC">
+        <property Name="Role" Value="NPC"/>
+        <stat Name="Level" sValue="77"/>
+        <tag Name="Gender" Value="neuter"/>
+        <part Name="Brain" Hostile="False" WandersRandomly="true" Factions="Anesheym-100"/>
+        <part Name="Render" DisplayName="Dies-In-Rust, Nuurimir" Tile="WingyTextures/creatures/nuurimir.png"
+              ColorString="&amp;K"
+              DetailColor="O" RenderString="z"/>
+        <part Name="Description"
+              Short="An anesheym stands before you, her amber-shell smothered in rust and iron-shavings. She lurches forward almost hungrily, an old predator who slays with unearthly experience, undermined only by her unassuming appearance."/>
+        <part Name="AISelfPreservation" Threshold="80"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+        <inventoryobject Blueprint="Nuurimir's Ravager" Number="1"/>
+        <inventoryobject Blueprint="Chrome Mantle" Number="1"/>
+
+        <part Name="ConversationScript" ConversationID="NuurimirConversation"/>
+        
+        <mutation Name="Spinnerets" Level="10"/>
+        <mutation Name="MultipleArms" Level="10"/>
+
+        <skill Name="HeavyWeapons_Tank"/>
+        <skill Name="HeavyWeapons_StrappingShoulders"/>
+
+        <skill Name="SingleWeaponFighting"/>
+        <skill Name="SingleWeaponFighting_OpportuneAttacks"/>
+
+        <skill Name="Tactics_Charge"/>
+        <skill Name="Acrobatics_Jump"/>
+        <skill Name="Acrobatics_Dodge"/>
+        <skill Name="Acrobatics_SwiftReflexes"/>
+        
+        <skill Name="Axe_Expertise"/>
+        <skill Name="Axe_Dismember"/>
+        <skill Name="Cudgel_ChargingStrike"/>
+        <skill Name="Axe_Decapitate"/>
+        <skill Name="Axe_Berserk"/>
+        
+        <stat Name="Intelligence" sValue="24"/>
+        <stat Name="Ego" sValue="12"/>
+        <stat Name="Willpower" sValue="30"/>
+        <stat Name="Toughness" sValue="30"/>
+        <stat Name="Strength" sValue="35"/>
+        <stat Name="Agility" sValue="30"/>
+
+        <stat Name="Hitpoints" sValue="1400"/>
+        <stat Name="Speed" sValue="110"/>
+
+        <stat Name="AV" sValue="16"/>
+
+        
+    </object>
+
+    <object Name="bugtinker" Inherits="NPC">
+        <property Name="Role" Value="NPC"/>
+        <stat Name="Level" sValue="20"/>
+        <tag Name="Gender" Value="neuter"/>
+        <part Name="Brain" Hostile="False" Factions="Anesheym-100"/>
+        <part Name="Render" DisplayName="Erdestvel, The Anesheym Scrapamist"
+              Tile="WingyTextures/creatures/bugtinker.png"
+              RenderString="z" ColorString="b" DetailColor="B"/>
+        <part Name="Description"
+              Short="This anesheym scrapamist looms above a mechanical workbench, its various arms working carefully between several projects with ease. Their chitin-skin is speckled with soot and heat-warped from work, yet it continues unhindered. Ceaselessly, with what even seems like a slight grin on their face."/>
+        <part Name="AISelfPreservation" Threshold="80"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+    </object>
+
+    <object Name="DitzyFly" Inherits="NPC">
+        <property Name="Role" Value="NPC"/>
+        <stat Name="Level" sValue="20"/>
+        <tag Name="Gender" Value="neuter"/>
+        <part Name="Brain" Hostile="False" Factions="Anesheym-100"/>
+        <part Name="ConversationScript" ConversationID="DitzyLogueInitial"/>
+        <part Name="DitzyFlyConversator"/>
+        <part Name="Render" DisplayName="Eradae 'Ditzy-Fly' Eracoca" Tile="WingyTextures/creatures/ditzyfly.png"
+              RenderString="z"
+              ColorString="&amp;C" DetailColor="G"/>
+        <part Name="Description"
+              Short="Joy could not be contained in this shell, breaking through cerulean as emerald heart-like motifs across their petite form. Bubbling energy radiates through their many eyes as their feather-like antennae search eagerly for souls to assist and brood to nurture."/>
+        <part Name="AISelfPreservation" Threshold="80"/>
+        <part Name="wmDitzySinging"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+        <mutation Name="Spinnerets" Level="1"/>
+        <mutation Name="MultipleArms" Level="1"/>
+    </object>
+
+    <object Name="Chymero" Inherits="NPC">
+        <property Name="Role" Value="NPC"/>
+        <stat Name="Level" sValue="20"/>
+        <tag Name="Gender" Value="male"/>
+        <part Name="Brain" Hostile="False" Factions="Anesheym-100"/>
+        <part Name="ConversationScript" ConversationID="ChymeroLogueInitial"/>
+        <part Name="Render" DisplayName="Chymerodae 'Chymero' Doa" Tile="WingyTextures/creatures/Chymero.png"
+              RenderString="z"
+              ColorString="&amp;y" DetailColor="B"/>
+        <part Name="Description"
+              Short="Fire-licked chitin bears a glossy, warped, obsidian-like look and this anesheym wears it proudly. He dons a toque and messy apron, stirring and sorting rations as he works around his kitchen."/>
+        <part Name="AISelfPreservation" Threshold="80"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+        <mutation Name="Spinnerets" Level="1"/>
+        <mutation Name="MultipleArms" Level="1"/>
+        <tag Name="Merchant"/>
+        <tag Name="Unenslavable"/>
+        <part Name="GenericInventoryRestocker" Table="ChymeroWares"/>
+    </object>
+
+    <object Name="Damasceae" Inherits="NPC">
+        <property Name="Role" Value="NPC"/>
+        <stat Name="Level" sValue="20"/>
+        <tag Name="Gender" Value="female"/>
+        <part Name="Brain" Hostile="False" Factions="Anesheym-100"/>
+        <part Name="ConversationScript" ConversationID="DamascaeaConversation"/>
+        <part Name="Render" DisplayName="Hammer-Hand Damasceae" Tile="WingyTextures/creatures/Damasceae.png"
+              RenderString="z"
+              ColorString="&amp;y" DetailColor="B"/>
+        <part Name="Description"
+              Short="Swelling interior musculature bulges from the crevices of her chitin, the shaping-hammer dwarfed in huge hands as she delicately shapes chitin into art."/>
+        <part Name="AISelfPreservation" Threshold="80"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+        <mutation Name="Spinnerets" Level="1"/>
+        <mutation Name="MultipleArms" Level="1"/>
+        <tag Name="Merchant"/>
+        <tag Name="Unenslavable"/>
+        <part Name="GenericInventoryRestocker" Table="DamascaeaWares"/>
+    </object>
+
+
+    <!-- Search:MISC NPC's -->
+
+
+    <object Name="EncodedEater" Inherits="NPC">
+        <property Name="Role" Value="NPC"/>
+        <part Name="Render" DisplayName="{{eater|M#E#H#R#A#S#H#I#R#}} [{{W|Encoded}}]"
+              Tile="WingyTextures/EncodedEater/EncodedEaterAnimation1.png"
+              ColorString="&amp;P" DetailColor="W"/>
+        <part Name="Description"
+              Short="==================================================================
+{{yellow||Simulati_n E#ror : eu3840f.obj
+#nbou-ng Entity Encountered.
+                  
+##### !*WARNING*!*WARNING*!*WARNING*!*WARNING*!*WARNING*!*WARNING*! #####
+::# UW0-374=2=033 ...
+::E#M$OI)#(*$It _s p_rfection, it is indiminishable, it is all-seeing, it is all-being, it is the devourer.
+eater, hedonist, thirst--
+                  
+{{red|#################.PROSTRATE YOURSELF TO YOUR MAKERS.#################}}}}"/>
+
+        <part Name="Body" Anatomy="Doll-Like Shell"/>
+
+        <part Name="Physics" VaporTemperature="99999999"/>
+
+
+        <part Name="Brain" Wanders="true" Calm="true" Factions="Playerneutral-100"/>
+
+        <tag Name="BleedLiquid" Value="convalessence-1000"/>
+        <tag Name="BleedColor" Value="&amp;B"/>
+        <tag Name="BleedPrefix" Value="{{dreamy|azure}}"/>
+
+        <stat Name="Hitpoints" sValue="7777" Boost="0"/>
+        <stat Name="Strength" sValue="80" Boost="0"/>
+        <stat Name="Intelligence" sValue="60" Boost="0"/>
+        <stat Name="Willpower" sValue="40" Boost="0"/>
+        <stat Name="Toughness" sValue="75" Boost="0"/>
+        <stat Name="Agility" sValue="25" Boost="0"/>
+        <stat Name="Ego" sValue="50" Boost="0"/>
+
+        <stat Name="Level" sValue="777"/>
+
+        <tag Name="Gender" Value="neuterperson"/>
+
+        <part Name="ConversationScript" ConversationID="EncodedEaterConversation"/>
+
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+
+        <removepart Name="RandomLoot"/>
+        <part Name="NoGodModeForU"/>
+
+        <part Name="TheEncodedOne"/>
+        <part Name="TimeCubeProtection" Message="=subject.T= =verb:deploy= a mass-relativity reconstitutor!"/>
+        <tag Name="IgnoreSpaceTimeVortex"/>
+        <part Name="BlowAwayGas"
+              Message="=subject.T= =verb:vent= =subject.possessive= auxiliary compressors and blows the =gas= away!"/>
+        <part Name="DamageThreshold"/>
+        <part Name="FreezeThreshold"/>
+        <part Name="StunThreshold"/>
+
+        <xtagGrammar Proper="true"/>
+
+        <inventoryobject Blueprint="Lead Slug" Number="77777"/>
+
+        <inventoryobject Blueprint="Prismatic Mantis Blade" Number="1"/>
+        <inventoryobject Blueprint="Prismatic Mantis Blade" Number="1"/>
+        <inventoryobject Blueprint="D45 Battle Pistol" Number="1"/>
+
+        <inventoryobject Blueprint="Mehrahshir's Flute" Number="1"/>
+
+        <inventoryobject Blueprint="Zetachrome Lune" Number="1"/>
+        <inventoryobject Blueprint="Zetachrome Apex" Number="1"/>
+        <inventoryobject Blueprint="Zetachrome Pumps" Number="1"/>
+        <inventoryobject Blueprint="Palladium Mesh Tabard" Number="1"/>
+        <inventoryobject Blueprint="Mask of The Encoded Eater" Number="1"/>
+
+        <inventoryobject Blueprint="Entropic Transducer" Number="1"/>
+        <inventoryobject Blueprint="Antimatter Cell" Number="5"/>
+        <inventoryobject Blueprint="EmptyCanteen" Number="1"/>
+        <property Name="WontSell"/>
+
+        <stat Name="AcidResistance" Value="-50"/>
+
+        <part Name="Corpse" CorpseChance="0"/>
+
+        <mutation Name="Telepathy"/>
+        <mutation Name="SensePsychic"/>
+        <mutation Name="Teleportation" Level="10"/>
+        <mutation Name="Regeneration" Level="10"/>
+
+        <part Name="CyberneticsHasImplants"
+              Implants="PenetratingRadar@head,NavigationSystem@head,TechnologicalIndexer@face"/>
+
+        <tag Name="staticFaction1"
+             Value="SultanCult5,hate,for ordaining their removal from the communal discourse device."/>
+        <tag Name="staticFaction2" Value="Templar,love,for being a glorious remnant of the golden era."/>
+        <tag Name="staticFaction3" Value="Entropic,disliked,for their mischievous pranks in the psychal-omniverse."/>
+
+        <part Name="AnimatedMaterialGeneric" AnimationLength="320"
+              TileAnimationFrames="0=WingyTextures/EncodedEater/EncodedEaterAnimation1.png, 10=WingyTextures/EncodedEater/EncodedEaterAnimation2.png, 20=WingyTextures/EncodedEater/EncodedEaterAnimation3.png, 30=WingyTextures/EncodedEater/EncodedEaterAnimation4.png, 40=WingyTextures/EncodedEater/EncodedEaterAnimation5.png, 50=WingyTextures/EncodedEater/EncodedEaterAnimation6.png, 60=WingyTextures/EncodedEater/EncodedEaterAnimation7.png, 70=WingyTextures/EncodedEater/EncodedEaterAnimation8.png, 80=WingyTextures/EncodedEater/EncodedEaterAnimation9.png, 90=WingyTextures/EncodedEater/EncodedEaterAnimation10.png, 100=WingyTextures/EncodedEater/EncodedEaterAnimation11.png, 110=WingyTextures/EncodedEater/EncodedEaterAnimation12.png, 120=WingyTextures/EncodedEater/EncodedEaterAnimation13.png, 130=WingyTextures/EncodedEater/EncodedEaterAnimation14.png,140=WingyTextures/EncodedEater/EncodedEaterAnimation15.png,150=WingyTextures/EncodedEater/EncodedEaterAnimation15.png,160=WingyTextures/EncodedEater/EncodedEaterAnimation16.png,170=WingyTextures/EncodedEater/EncodedEaterAnimation17.png,180=WingyTextures/EncodedEater/EncodedEaterAnimation18.png,190=WingyTextures/EncodedEater/EncodedEaterAnimation19.png,200=WingyTextures/EncodedEater/EncodedEaterAnimation20.png,210=WingyTextures/EncodedEater/EncodedEaterAnimation21.png,220=WingyTextures/EncodedEater/EncodedEaterAnimation22.png,230=WingyTextures/EncodedEater/EncodedEaterAnimation23.png,240=WingyTextures/EncodedEater/EncodedEaterAnimation24.png,250=WingyTextures/EncodedEater/EncodedEaterAnimation25.png,260=WingyTextures/EncodedEater/EncodedEaterAnimation26.png,270=WingyTextures/EncodedEater/EncodedEaterAnimation27.png,280=WingyTextures/EncodedEater/EncodedEaterAnimation28.png,290=WingyTextures/EncodedEater/EncodedEaterAnimation29.png,300=WingyTextures/EncodedEater/EncodedEaterAnimation30.png,310=WingyTextures/EncodedEater/EncodedEaterAnimation31.png"
+        />
+    </object>
+
+    <object Name="FalseEncodedEater" Inherits="NPC">
+        <property Name="Role" Value="NPC"/>
+        <part Name="Render" DisplayName="{{eater|M#E#H#R#A#S#H#I#R#}} [{{W|Encoded}}]"
+              Tile="WingyTextures/EncodedEater/EncodedEaterAnimation1.png"
+              ColorString="&amp;P" DetailColor="g"/>
+
+        <part Name="Brain" Wanders="false" Calm="false" Hostile="true" Factions="Playerneutral-100"/>
+
+        <mutation Name="Confusion" Level="10"/>
+
+        <part Name="Corpse" CorpseChance="0" CorpseBlueprint="Singularity"/>
+
+        <stat Name="Hitpoints" sValue="1" Boost="0"/>
+        <stat Name="Strength" sValue="1" Boost="0"/>
+        <stat Name="Intelligence" sValue="1" Boost="0"/>
+        <stat Name="Willpower" sValue="1" Boost="0"/>
+        <stat Name="Toughness" sValue="1" Boost="0"/>
+        <stat Name="Agility" sValue="1" Boost="0"/>
+        <stat Name="Ego" sValue="1" Boost="0"/>
+        <stat Name="Level" sValue="1"/>
+
+        <removepart Name="RandomLoot"/>
+
+        <part Name="AnimatedMaterialGeneric" AnimationLength="320"
+              TileAnimationFrames="0=WingyTextures/EncodedEater/EncodedEaterAnimation1.png, 10=WingyTextures/EncodedEater/EncodedEaterAnimation2.png, 20=WingyTextures/EncodedEater/EncodedEaterAnimation3.png, 30=WingyTextures/EncodedEater/EncodedEaterAnimation4.png, 40=WingyTextures/EncodedEater/EncodedEaterAnimation5.png, 50=WingyTextures/EncodedEater/EncodedEaterAnimation6.png, 60=WingyTextures/EncodedEater/EncodedEaterAnimation7.png, 70=WingyTextures/EncodedEater/EncodedEaterAnimation8.png, 80=WingyTextures/EncodedEater/EncodedEaterAnimation9.png, 90=WingyTextures/EncodedEater/EncodedEaterAnimation10.png, 100=WingyTextures/EncodedEater/EncodedEaterAnimation11.png, 110=WingyTextures/EncodedEater/EncodedEaterAnimation12.png, 120=WingyTextures/EncodedEater/EncodedEaterAnimation13.png, 130=WingyTextures/EncodedEater/EncodedEaterAnimation14.png,140=WingyTextures/EncodedEater/EncodedEaterAnimation15.png,150=WingyTextures/EncodedEater/EncodedEaterAnimation15.png,160=WingyTextures/EncodedEater/EncodedEaterAnimation16.png,170=WingyTextures/EncodedEater/EncodedEaterAnimation17.png,180=WingyTextures/EncodedEater/EncodedEaterAnimation18.png,190=WingyTextures/EncodedEater/EncodedEaterAnimation19.png,200=WingyTextures/EncodedEater/EncodedEaterAnimation20.png,210=WingyTextures/EncodedEater/EncodedEaterAnimation21.png,220=WingyTextures/EncodedEater/EncodedEaterAnimation22.png,230=WingyTextures/EncodedEater/EncodedEaterAnimation23.png,240=WingyTextures/EncodedEater/EncodedEaterAnimation24.png,250=WingyTextures/EncodedEater/EncodedEaterAnimation25.png,260=WingyTextures/EncodedEater/EncodedEaterAnimation26.png,270=WingyTextures/EncodedEater/EncodedEaterAnimation27.png,280=WingyTextures/EncodedEater/EncodedEaterAnimation28.png,290=WingyTextures/EncodedEater/EncodedEaterAnimation29.png,300=WingyTextures/EncodedEater/EncodedEaterAnimation30.png,310=WingyTextures/EncodedEater/EncodedEaterAnimation31.png"
+        />
+    </object>
+
+    <!-- Search:Companion NPC's -->
+
+
+    <object Name="Arshiranandurah" Inherits="NPC">
+        <property Name="Role" Value="NPC"/>
+        <part Name="Render" DisplayName="{{buggopanion|Arshiranandurah}}"
+              Tile="WingyTextures/creatures/ArshiraCompa.png"
+              ColorString="&amp;K" DetailColor="M"/>
+        <part Name="Description"
+              Short="Partially habilimented in familiar grey-matter robes, an insectoid being stands with thin; stilt-like legs. A five-eyed gaze meets your own on a familiar human-like face; aether glowing strongly within their pupiless gaze. Adorned with silver-hued hair which rolls to their back and the plump, sacral-abdomen which juts from their lower spine; their feminine form remains only somewhat lost under tribal overalls and a shawl-n'cloak of the Seeker lineage."/>
+        <part Name="ConversationScript" ConversationID="ArshiraLogue"/>
+        <part Name="Brain" Wanders="false" Hostile="false" Factions="Pariahs-100,Barathrumites-25"/>
+        
+        <stat Name="Hitpoints" sValue="169" Boost="0"/>
+
+        <stat Name="Strength" sValue="27"/>
+        <stat Name="Intelligence" sValue="16"/>
+        <stat Name="Willpower" sValue="25"/>
+        <stat Name="Toughness" sValue="20"/>
+        <stat Name="Agility" sValue="26"/>
+        <stat Name="Ego" sValue="22"/>
+        <stat Name="Level" sValue="25"/>
+        <tag Name="Gender" Value="female"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+        <part Name="GivesRep"/>
+        <part Name="ArshiraPreserver"/>
+        <xtagWaterRitual NoJoin="true"/>
+        <tag Name="staticFaction2" Value="Templar,hate,defacing their holy relics"/>
+        <tag Name="staticFaction1" Value="Seekers,hate,denying the Elder Cant, and disenvowing Ptoh"/>
+        <xtagGrammar Proper="true"/>
+        <inventoryobject Blueprint="Masterworkvoltaictriarc" Number="1" CellChance="100" CellFullChance="100"
+                         CellType="Antimatter Cell"/>
+        <inventoryobject Blueprint="Elastyne Skin Suit" Number="1"/>
+        <inventoryobject Blueprint="Weeping Moon Mask" Number="1"/>
+        <inventoryobject Blueprint="RemembranceShawl" Number="1"/>
+        <inventoryobject Blueprint="Elastyne Gloves"/>
+        <inventoryobject Blueprint="Elastyne Slippers" Number="1"/>
+        <inventoryobject Blueprint="Elastyne Skull Cap" Number="1"/>
+        <property Name="WontSell" Value="Masterworkvoltaictriarc"/>
+        <skill Name="WM_MMA_PathDawnGlider"/>
+        <skill Name="Tactics_Charge"/>
+        <skill Name="Acrobatics_Jump"/>
+        <skill Name="WM_MMA_MartialStances"/>
+        <skill Name="WM_MMA_MartialConII"/>
+        <skill Name="WM_MMA_MartialConIII"/>
+        <skill Name="WM_MMA_MartialConI"/>
+        <skill Name="WM_MMA_FlurryOfBlows"/>
+        <skill Name="WM_MMA_CombinationStrikesIII"/>
+        <skill Name="WM_MMA_CombinationStrikesII"/>
+        <skill Name="WM_MMA_CombinationStrikesI"/>
+        <mutation Name="SunderMind" Level="1"/>
+        <mutation Name="MentalMirror" Level="1"/>
+        <mutation Name="Spinnerets" Level="2"/>
+        <mutation Name="WillForce" Level="1"/>
+        <mutation Name="MultipleArms" Level="10"/>
+
+    </object>
+    
+    <!-- Search: Organic Fauna -->
+
+    <object Name="SmallTubeFish" Inherits="Plant">
+        <part Name="Render" DisplayName="tube fish" RenderString="005" ColorString="&amp;K"
+              Tile="WingyTextures/Smalltubefish.png"
+              TileColor="&amp;y" DetailColor="M" Occluding="true"/>
+        <part Name="Description"
+              Short="Hidden in calcium shafts, a multitude of flesh-like lips protrude catching earthly miasma in their maws."/>
+    </object>
+
+    <object Name="GargantuanTubeFish" Inherits="Plant">
+        <part Name="Render" DisplayName="gargantuan tube fish" RenderString="005" ColorString="&amp;K"
+              Tile="WingyTextures/tubefish.png" TileColor="&amp;y" DetailColor="M" Occluding="true"/>
+        <part Name="Description"
+              Short="Hidden in calcium shafts, a massive fleshen tuber protrudes catching earthly miasma in their maw."/>
+    </object>
+
+    <object Name="SeaAnemone" Inherits="Plant">
+        <part Name="Render" DisplayName="spiky anemone" RenderString="005" ColorString="&amp;K"
+              Tile="WingyTextures/seaanemone.png"
+              TileColor="&amp;K" DetailColor="m" Occluding="true"/>
+        <part Name="Description"
+              Short="A rose of twirling spikes, congregated around a mouthy mass of roe and cartilage."/>
+    </object>
+
+    <object Name="GiantConchShell" Inherits="InorganicObject">
+        <part Name="Render" DisplayName="giant conch shell" RenderString="005" ColorString="&amp;K"
+              Tile="WingyTextures/GiganticConchShell.png" TileColor="&amp;w" DetailColor="M" Occluding="true"/>
+        <removepart Name="Graffitied"/>
+    </object>
+
+    <object Name="Oceanic Coral Polyp" Inherits="Coral">
+        <part Name="Render" DisplayName="sea coral" RenderString="231" ColorString="&amp;c"
+              Tile="terrain/sw_reef_organic_even_1.bmp" DetailColor="c" Occluding="false"/>
+        <part Name="Description"
+              Short="Feelers sway in a circlet on a skeletal vase-column. The aboral side is yoked to other polyps, forming a fossilized arcology."/>
+        <tag Name="HangingSupport"/>
+        <part Name="RandomRenderString" Strings="15,42,9,248"/>
+        <builder Name="RandomTile"
+                 Tiles="Terrain/sw_reef_organic_even_1.bmp,Terrain/sw_reef_organic_even_2.bmp,Terrain/sw_reef_organic_even_3.bmp,Terrain/sw_reef_organic_even_4.bmp,Terrain/sw_reef_organic_odd_1.bmp,Terrain/sw_reef_organic_odd_2.bmp,Terrain/sw_reef_organic_odd_3.bmp,Terrain/sw_reef_organic_odd_4.bmp"/>
+        <tag Name="NavigationPolyp"/>
+        <tag Name="TerrainMovementEnergyCostMultiplier" Value="0.5"/>
+        <tag Name="Reef"/>
+        <tag Name="CoralReef"/>
+        <tag Name="NoRuinsRemove"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+        <part Name="RandomColorGenerator"/>
+        <removepart Name="Graffitied"/>
+    </object>
+
+    
+    
+    <!-- Search: NPC Edits -->
+
+
+    <object Name="Iseppa" Inherits="Barathrumite" Load="Merge">
+        <part Name="ConversationScript" ConversationID="IseppaArshiraEdit"/>
+    </object>
+
+</objects>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<conversations>
+<!--    ascii signs-->
+    <!--        Monitor nodes-->
+    
+    <conversation ID="CameraVerminObservation">
+        <start ID="UnhackedCameraNode">
+            <text>
+                {{emote|*The holographic camera oscillates its watchful eye.*}}
+            </text>
+            <choice IfHavePart="Tinkering" GotoID="UnhackedCameraNode-VerminStyle" >[Hack into the camera's video feed.]</choice>
+            <choice IfHavePart="Tinkering" GotoID="End" >[Step away from the camera.]</choice>
+        </start>
+
+        <node ID="UnhackedCameraNode-VerminStyle">
+            <text>
+                {{white|FOOTAGE 387 - SERUM TESTING - X32
+                USERS: UNKNOWN - [IN-CAGE VIDEO RECORDING]]
+                MESSAGE HISTORY - XX-XX-XXXX CO--UROTPIE-D -- [DATE ... UNKNOWN]}}
+                =====================================================================
+                
+                {{yellow|*The display breathes images into your eyes, you see an encaged vermin, constrained and grounded by thick bands of plastic. It squirms as a needle-tipped injector reaches forward and delivers a solution in the mice's calf. It convulses, its trembling becoming erratic and crazed before its flesh begins to swell. Its fur sheds rapidly as its size doubles, orifices gaping like yawning mouths open across the postulate growths on the creature's body. It's utterly unrecognizable by the end of the process.
+
+                The growths shriek and wail. The footage ends.*}}
+
+            </text>
+            <choice GotoID="End" >[Step away from the camera.]</choice>
+        </node>
+    </conversation>
+
+<conversation ID="CameraCloneObservation">
+<start ID="UnhackedCameraNode">
+    <text>
+        {{emote|*The holographic camera oscillates its watchful eye.*}}
+    </text>
+    <choice IfHavePart="Tinkering" GotoID="UnhackedCameraNode-CloneStyle" >[Hack into the camera's video feed.]</choice>
+    <choice IfHavePart="Tinkering" GotoID="End" >[Step away from the camera.]</choice>
+</start>
+
+<node ID="UnhackedCameraNode-CloneStyle">
+    <text>
+        FOOTAGE 1622 - SERUM TESTING - ALPHA
+        USERS: UNKNOWN - [MEDICAL ROOM VIDEO RECORDING]]
+        MESSAGE HISTORY - XX-XX-XXXX CO--UROTPIE-D -- [DATE ... UNKNOWN]
+        =====================================================================
+
+        {{yellow|*Images are breathed into your eyes. A man standing in a long white-coat asks if “clone-099” is ready for the test. Another in similar attire nods to confirm. An unconscious figure in the medical bed squirms against steel-constraints. The injector leans forward, delivering a bright serum. For a moment the clone is still, but then there is a sudden jerking of motion, convulsions as its flesh erupts into neoplasmic growths. The ones in the white coats back out the room calling out its failure before it was engulfed in fire from the vents.*}}
+    </text>
+    <choice GotoID="End" >[Step away from the camera.]</choice>
+</node>
+</conversation>
+
+    <conversation ID="CameraCrimsonObservation">
+        <start ID="UnhackedCameraNode">
+            <text>
+                {{emote|*The holographic camera oscillates its watchful eye.*}}
+            </text>
+            <choice IfHavePart="Tinkering" GotoID="UnhackedCameraNode-CrimsonStyle" >[Hack into the camera's video feed.]</choice>
+            <choice IfHavePart="Tinkering" GotoID="End" >[Step away from the camera.]</choice>
+        </start>
+
+        <node ID="UnhackedCameraNode-CrimsonStyle">
+            <text>
+                {{white|FOOTAGE 7822 - LEAD PROF &amp;&amp; SCIENCE OFFICER XEV. - BETA
+                USERS: UNKNOWN - [GENOPTICON VIDEO RECORDING]]
+                MESSAGE HISTORY - XX-XX-XXXX CO--UROTPIE-D -- [DATE ... UNKNOWN]}}
+                =====================================================================
+
+                {{yellow|*The feed breathes images into your eyes. A man with slick blonde hair stands before another operating the biodistillery you see in this very room–the second is clad in a plastic suit you can only surmise is used to protect one as they use it. They mix various components into a vat, before combining them. There’s a sudden almost explosive reaction as living-flesh begins to creep from the distillery, the operator panics as they try to remove their harness–but before they can escape, the flesh consumes them and grows even more out of control, in seconds its spreading around the lab, the other man fleeing to a corner as they are trapped inside and sirens begin to blare.*}}
+
+            </text>
+            <choice GotoID="End" >[Step away from the camera.]</choice>
+        </node>
+    </conversation>
+
+    <conversation ID="CameraGrimsdottirObservation">
+        <start ID="UnhackedCameraNode">
+            <text>
+                *The holographic camera oscillates its watchful eye.*
+            </text>
+            <choice IfHavePart="Tinkering" GotoID="UnhackedCameraNode-GrimsdotterExecutionStyle" >[Hack into the camera's video feed.]</choice>
+            <choice IfHavePart="Tinkering" GotoID="End" >[Step away from the camera.]</choice>
+        </start>
+
+        <node ID="UnhackedCameraNode-GrimsdotterExecutionStyle">
+            <text>
+                {{white|FOOTAGE 7822 - PROF &amp;&amp; ###########
+                CONTAINS: MORHAN GRIMSDOTTIR / COMM-OPERATIVES}}
+                =====================================================================
+
+                {{yellow|*The feed breathes into your eyes. A woman with black-hair and dark purple eyes donning  a sterile, lab-coat sits with her back to a large hatch. The room is claustrophobically tight, and about as empty as her hope. The hatch suddenly opens, and three individuals march inside, emblazoned with militarized codes, and the word COMM-OPS emboldened on their backs. One raises a holographic display, which pips, and begins reading something that scrawls automatically with each word–by now the woman is looking back with weariness, before her face contorts with sorrow and defeat. She leans into her hands weeping, before another approaches from behind the first soldier holding a handgun. Without even a moments’ grace, he raises the handgun to her head and a flash. Falling out of the chair, the woman's coat is stained red with fresh blood, and they lay still as their life leaves them. The Operatives lean over, taking her by the legs and drag her out of the room unceremoniously and then the footage ends.*}}
+
+            </text>
+            <choice GotoID="End" >[Step away from the camera.]</choice>
+        </node>
+    </conversation>
+</conversations>
+ 
+ 
+ 
+ 
+ 
+ 
+ 

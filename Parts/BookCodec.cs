@@ -61,18 +61,6 @@ namespace XRL.World.Parts
             {
                 BookUI.ShowBookByID(ID, DEFAULT_OPEN_SOUND);
                 AfterReadBookEvent.Send(E.Actor, ParentObject, this, E);
-                if (!GetHasBeenRead())
-                {
-                    SetHasBeenRead(flag: true);
-                    string referenceDisplayName = ParentObject.GetReferenceDisplayName();
-                    JournalAPI.AddAccomplishment("You read " + referenceDisplayName + ".",
-                        "In the month of " + Calendar.GetMonth() + " of " + Calendar.GetYear() +
-                        ", =name= penned the influential book, " + referenceDisplayName + ".",
-                        "At a remote library near " + JournalAPI.GetLandmarkNearestPlayer().Text +
-                        ", =name= met with a group of blind scribes and together they penned the beloved codex " +
-                        referenceDisplayName + ".", null, "general", MuralCategory.CreatesSomething,
-                        MuralWeight.VeryLow, null, -1L);
-                }
             }
 
             return base.HandleEvent(E);
