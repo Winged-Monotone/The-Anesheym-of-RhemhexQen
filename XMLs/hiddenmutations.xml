@@ -2,24 +2,24 @@
 <mutations Hidden="true" ExludeFromPool="true">
     <category Name="Physical">
         <mutation BearerDescription="those who breathe foul breath" Exclusions="" Class="StinkyBreather"
-                  MaxSelected="1" Cost="3" Name="Sulfuric Breath" DisplayName="Sulfuric Breath"/>
+                  MaxSelected="1" Cost="3" Name="Sulfuric Breath" DisplayName="Sulfuric Breath" ExludeFromPool="true"/>
         <mutation BearerDescription="those who spit foul liquid" Exclusions="" Class="wmSpitSulfur"
-                  MaxSelected="1" Cost="1" Name="Spit Sulfur" DisplayName="Spit Sulfur"/>
+                  MaxSelected="1" Cost="1" Name="Spit Sulfur" DisplayName="Spit Sulfur" ExludeFromPool="true"/>
         <mutation BearerDescription="those whose scales glitter like stars" Exclusions="" Class="wmGlareBurst"
-                  MaxSelected="1" Cost="1" Name="Glare Burst" DisplayName="Glitter-Scale Glare Burst"/>
+                  MaxSelected="1" Cost="1" Name="Glare Burst" DisplayName="Glitter-Scale Glare Burst" ExludeFromPool="true"/>
         <mutation BearerDescription="those who swim beneath your skin" Exclusions="" Class="Amalgamize"
-                  MaxSelected="1" Cost="1" Name="Amalgamate Infection" DisplayName="Amalgamate Infection"/>
-        <mutation BearerDescription="those who seduce with their gaze" Exclusions="" Class="LoversGaze"
-                  MaxSelected="1" Cost="3" Name="Limerent Gaze" DisplayName="Limerent Gaze"/>
+                  MaxSelected="1" Cost="1" Name="Amalgamate Infection" DisplayName="Amalgamate Infection" ExludeFromPool="true"/>
         <mutation BearerDescription="those who draw the blade with deadly speed and precision" Exclusions=""
-                  Class="Battoujutsu" MaxSelected="1" Cost="3" Name="Battoujutsu" DisplayName="Battoujutsu"/>
+                  Class="Battoujutsu" MaxSelected="1" Cost="3" Name="Battoujutsu" DisplayName="Battoujutsu" ExludeFromPool="true"/>
     </category>
 
     <category Name="Mental">
+        <mutation BearerDescription="those who seduce with their gaze" Exclusions="" Class="LoversGaze"
+                  MaxSelected="1" Cost="3" Name="Limerent Gaze" DisplayName="Limerent Gaze" ExludeFromPool="true"/>
         <mutation BearerDescription="those who coldly interject" Exclusions="" Class="EatersInterdiction"
-                  MaxSelected="1" Cost="3" Name="Cryo Ray" DisplayName="Eaters Cryo-Ray"/>
+                  MaxSelected="1" Cost="3" Name="Cryo Ray" DisplayName="Eaters Cryo-Ray" ExludeFromPool="true"/>
         <mutation BearerDescription="those who kindle great flames" Exclusions="" Class="EatersKindle"
-                  MaxSelected="1" Cost="1" Name="Kindle" DisplayName="Kindle"/>
+                  MaxSelected="1" Cost="1" Name="Kindle" DisplayName="Kindle" ExludeFromPool="true"/>
     </category>
 
 

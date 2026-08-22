@@ -27,7 +27,9 @@ namespace XRL.Liquids
             FlameTemperature = 800;
             VaporTemperature = 1600;
             Temperature = 360;
-            Fluidity = 15;
+            Cleansing = 10;
+            Fluidity = 100;
+            Evaporativity = 100;
             Weight = 0.3;
             Combustibility = 25;
             ThermalConductivity = 1000;

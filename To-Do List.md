@@ -60,11 +60,14 @@ This mod contains content that some might find disturbing. Please execute your o
 
 
 COMPLETED FIXES
-[f] -
+[f] - Sulfiric liquids stick less to the bodies of creatures, allow it to be put out more easily and also stopping it from constantly catching you on fire. [Increased Evaporativity and Cleansing via cs.]
 [a] - 
 [a] - You can talk to [redacted]'s butt now.
 [c] - The Reputation Goal for the Anesheym now requires only 250 Reputation to grant entry into the city.
 [c] - Strange egg reputation rewards have been lowered in response to the reputation change.
-[c] - Strange egg spawns now use a Game System to build eggs, lowering their overall spawnrate and placing eggs more carefully around the zone.
+[c] - Strange egg spawns now use a Game System to build eggs, lowering their overall spawn-rate and placing eggs more carefully around the zone.
 [c] - Amalgam have been rebalanced and revamped to be more difficult for players levels around 20-24
+        - Random mutation generations selected.
+        - Specific Amalgam based abilities were added.
+        - given core skills.
 [r] - 
