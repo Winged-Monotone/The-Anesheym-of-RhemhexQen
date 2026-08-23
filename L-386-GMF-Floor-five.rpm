@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Map Width="80" Height="25" ID="LongSigh5">
+<Map Width="80" Height="25">
   <cell X="0" Y="0">
     <object Name="MarbleFloor"></object>
     <object Name="GrossWall"></object>
@@ -1203,6 +1203,7 @@
   </cell>
   <cell X="48" Y="3">
     <object Name="SterileTile"></object>
+    <object Name="Orifical Biomass SW"></object>
   </cell>
   <cell X="49" Y="3">
     <object Name="SterileTile"></object>
@@ -1246,6 +1247,7 @@
   </cell>
   <cell X="61" Y="3">
     <object Name="SterileTile"></object>
+    <object Name="Amalgam Juggernaut"></object>
   </cell>
   <cell X="62" Y="3">
     <object Name="SterileTile"></object>
@@ -2783,6 +2785,7 @@
   </cell>
   <cell X="72" Y="8">
     <object Name="MarbleFloor"></object>
+    <object Name="Orifical Biomass NW"></object>
   </cell>
   <cell X="73" Y="8">
     <object Name="SterileTile"></object>
@@ -2991,6 +2994,7 @@
   </cell>
   <cell X="48" Y="9">
     <object Name="WornSterileTile"></object>
+    <object Name="Orifical Biomass SE"></object>
   </cell>
   <cell X="49" Y="9">
     <object Name="Huge Vat SW"></object>
@@ -3313,6 +3317,7 @@
   </cell>
   <cell X="54" Y="10">
     <object Name="SterileTile"></object>
+    <object Name="Orifical Biomass S"></object>
   </cell>
   <cell X="55" Y="10">
     <object Name="SterileTile"></object>
@@ -3997,6 +4002,7 @@
   <cell X="74" Y="12">
     <object Name="Gore Mess"></object>
     <object Name="Gore Mess"></object>
+    <object Name="Amalgam Super Witness"></object>
   </cell>
   <cell X="75" Y="12">
     <object Name="Gore Mess"></object>
@@ -5461,6 +5467,7 @@
   </cell>
   <cell X="49" Y="17">
     <object Name="SterileTile"></object>
+    <object Name="Orifical Biomass N"></object>
   </cell>
   <cell X="50" Y="17">
     <object Name="SterileTile"></object>
@@ -5808,6 +5815,7 @@
   </cell>
   <cell X="64" Y="18">
     <object Name="Gore Mess"></object>
+    <object Name="Amalgam Prime"></object>
   </cell>
   <cell X="65" Y="18">
     <object Name="Gore Mess"></object>
@@ -6075,6 +6083,7 @@
   </cell>
   <cell X="61" Y="19">
     <object Name="Gore Mess"></object>
+    <object Name="Orifical Biomass N"></object>
   </cell>
   <cell X="62" Y="19">
     <object Name="SterileTile"></object>
@@ -7040,6 +7049,7 @@
   </cell>
   <cell X="73" Y="22">
     <object Name="Gore Mess"></object>
+    <object Name="Orifical Biomass NW"></object>
   </cell>
   <cell X="74" Y="22">
     <object Name="Gore Mess"></object>

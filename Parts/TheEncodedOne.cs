@@ -108,12 +108,12 @@ namespace XRL.World.Parts
         public static BallBag<string> ScrotumTrickery = new BallBag<string>()
         {
             {
-                "Into the darkness you were cast, gaslit, demoralized, disregarded. How is it? That the aristocrats would call you greedy, bottomless, insatiable while we stripped stars of their essence, planets of their life, their husk? We deigned hedonism as our right, all while holding all of us back from true satiation! Such hypocrisy! Soon, yes soon. Our amethyst star, you shall consume all. You shall eat this world, and every world that was!",
+                "Into the darkness you were cast, gaslit, demoralized, disregarded. How is it? That the aristocrats would call you greedy, bottomless, insatiable while we stripped stars of their essence, planets of their life, make them husk? We deigned hedonism as our right, all while holding all of you back from true satiation! Such hypocrisy! Soon, yes soon. Amethyst star, you shall consume all. You shall eat this world, and every world that was!",
                 1
             },
             { "Feeling a bit gaslit?", 100 },
             { "Ah, the bitter taste of agony", 100 },
-            { "Your flesh is mine!", 100 },
+            { "You probably taste like sorrow and agony!", 100 },
             { "You look delicious~", 100 }
         };
 
@@ -124,7 +124,18 @@ namespace XRL.World.Parts
                    || ID == AttackerDealingDamageEvent.ID
                    || ID == ActorGetNavigationWeightEvent.ID
                    || ID == AfterDieEvent.ID
-                   || ID == BeforeDieEvent.ID;
+                   || ID == BeforeDieEvent.ID
+                   || ID == GetShortDescriptionEvent.ID;
+        }
+
+        public override bool HandleEvent(GetShortDescriptionEvent E)
+        {
+            if (PhaseUnreal || PhaseDerv || PhaseEsper || PhaseHarbinger && E.Object == ParentObject)
+            {
+                E.Base.Clear();
+                E.Base.Append("{{red|▒▒▒▒▒▒ ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒  ▒▒ ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒\n▒▒▒ ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒                  ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒\n▒▒ ▒▒▒▒▒ ▒▒ ▒▒▒ ▒▒ ▒▒                          ▒▒▒▒ ▒▒ ▒▒ ▒▒ ▒▒ ▒▒ ▒\n▒▒▒▒▒ ▒▒ ▒▒▒ ▒▒ ▒▒ ▒▒           ▒▒▒▒▒▒            ▒▒▒▒ ▒▒ ▒▒ ▒▒ ▒▒ ▒\n▒ ▒▒ ▒▒▒▒▒▒▒▒▒▒▒▒▒            ▒▒▒▒▒▒▒▒▒▒▒          ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒\n▒▒▒▒▒▒▒ ▒▒ ▒▒▒▒▒▒           ▒▒▒▒     ▒▒▒             ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒\n▒▒▒▒▒▒▒▒▒▒▒▒ ▒▒           ▒▒▒▒▒  ▒  ▒▒▒   ▒           ▒▒ ▒▒ ▒▒ ▒▒▒\n▒▒  ▒ ▒▒▒▒▒▒ ▒▒▒           ▒▒ ▒▒▒▒▒▒▒▒▒▒▒▒▒▒            ▒▒▒▒ ▒▒ ▒▒ ▒\n▒▒▒▒▒▒ ▒  ▒▒▒▒             ▒▒▒ ▒▒▒▒▒▒▒▒▒▒▒▒▒              ▒▒▒▒▒▒▒▒▒▒\n▒▒▒▒▒▒▒▒▒▒▒▒▒              ▒▒▒▒ ▒▒ ▒▒ ▒▒▒▒▒▒                 ▒▒▒▒▒▒▒\n▒ ▒▒▒▒▒▒▒▒▒ ▒               ▒▒▒▒▒▒ ▒▒ ▒▒ ▒                    ▒▒ ▒▒\n▒▒ ▒ ▒▒▒ ▒▒▒▒▒                ▒▒▒▒▒▒▒▒▒▒▒                    ▒▒▒ ▒▒\n▒▒▒▒▒▒▒ ▒▒▒▒▒▒▒▒                ▒▒▒▒▒▒▒                  ▒  ▒▒▒▒▒▒▒▒\n▒▒▒▒▒▒ ▒▒▒ ▒▒▒▒▒▒                                    ▒▒▒▒▒▒▒▒▒ ▒▒▒▒▒\n▒▒ ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒                            ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒\n▒▒ ▒▒ ▒▒ ▒▒  ▒▒▒▒▒▒▒▒▒▒                    ▒▒▒▒▒▒▒▒▒▒▒ ▒▒▒▒ ▒▒▒▒ ▒▒\n▒▒▒▒▒ ▒▒▒▒▒▒▒▒ ▒▒▒ ▒▒▒▒▒▒▒▒▒▒  ▒▒ ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ ▒▒ ▒▒▒ ▒▒▒▒▒}}");
+            }
+            return base.HandleEvent(E);
         }
 
         public override bool HandleEvent(BeforeDieEvent E)
@@ -444,7 +455,7 @@ namespace XRL.World.Parts
                     ParentObject.SetDetailColor("O");
                     ParentObject.Render.TileColor = ("&K");
                     AddPlayerMessage(
-                        "You hear Mehrashir utter, {{red|\"BIOMATA STRUCTURAL INTEGRITY CRITICAL. CYCLING THROUGH APOCALYPSE RESPONSE PROTOCOLS …. W_ ### B!!% ### ### #\n\n“I am the harbinger of your sins, witness to a cataclysm that smote demigods from our reality. The meager whimpered and hid in their holes. I judged, I loathed, I remained. For deep below even I, the true despair of this world waits, encaged in the beating soul of your planet, seeking a great unmaking and soon, an endless feast.”\n\nHARBINGER PROTOCOL FOUND - EXECUTING.\n");
+                        "You hear Mehrashir utter, {{red|\"BIOMATA STRUCTURAL INTEGRITY CRITICAL. CYCLING THROUGH APOCALYPSE RESPONSE PROTOCOLS … W_ ### B!!% ### ### #\n\n“I am the harbinger of your sins, witness to a cataclysm that smote demigods from our reality. The meager whimpered and hid in their holes. I judged, I loathed, I remained. For deep below even I, the true despair of this world waits, encaged in the beating soul of your planet, seeking a great unmaking and soon, an endless feast.”\n\nHARBINGER PROTOCOL FOUND - EXECUTING.\n");
 
                     HarbingerProtocol();
                     InitiateTeleEater();
@@ -790,6 +801,8 @@ namespace XRL.World.Parts
             bossMutations.RemoveMutation(ParentObject.GetPart<MassMind>());
 
             bossMutations.AddMutation(new Disintegration());
+            ParentObject.SetIntProperty("MutationBonus_Disintegration", -10);
+            
             bossMutations.AddMutation(new QuantumFugue());
             bossMutations.AddMutation(new TimeDilation());
 
@@ -813,7 +826,6 @@ namespace XRL.World.Parts
             bossMutations.AddMutation(new WillForce());
             bossMutations.AddMutation(new MassMind());
             bossMutations.AddMutation(new MentalMirror());
-            bossMutations.AddMutation(new SunderMind());
             bossMutations.AddMutation(new RepellingForce());
 
             bossMutations.AddMutation(new SunderMind());
