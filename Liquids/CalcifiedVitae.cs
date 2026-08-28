@@ -28,9 +28,9 @@ namespace XRL.Liquids
             Fluidity = 10;
             Cleansing = 0;
             Weight = 0.1;
-            InterruptAutowalk = true;
-            ConsiderDangerousToContact = true;
-            ConsiderDangerousToDrink = true;
+            // InterruptAutowalk = true;
+            // ConsiderDangerousToContact = true;
+            // ConsiderDangerousToDrink = true;
         }
 
         [NonSerialized] public static List<string> Colors = new List<string>(2)
