@@ -19,12 +19,12 @@
                 Can I play my flute for thee?~
                 Oh ... what an ugly little thing.~
                 Can I drink you?~
-                Someone spoke from me within the glossy silver ball. It said, "poor thing."
-                Where is death?
-                So many moons and planets stolen. And for what? 
+                Someone spoke from me within the glossy silver ball. It said, "poor thing."~
+                Where is death?~
+                So many moons and planets stolen. And for what?~
             </text>
 
-            <choice GotoID="End" >[... Live and drink?]</choice>
+            <choice GotoID="End" >... Live and drink?</choice>
         </start>
     </conversation>
 </conversations>

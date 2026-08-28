@@ -60,7 +60,7 @@
                 <object Number="80" Blueprint="OceanicWater" Hint="Adjacent"/>
                 <object Number="10" Blueprint="CrystalFloor" Hint="AdjacentToStartsWith:SaltyWater"/>
                 <object Number="4-8" Blueprint="CrystalReal1"/>
-                <object Number="5" Blueprint="crytus" Hint="Aquatic"/>
+                <object Number="5" Blueprint="Crytus" Hint="Aquatic"/>
                 <object Number="2" Blueprint="Aloe Crystna" Hint="AdjacentToStartsWith:SaltyWater"/>
                 <object Number="1-3" Blueprint="crystallizedcorpse"/>
                 <object Number="5" Blueprint="shardgrass" Hint="AdjacentToStartsWith:SaltyWater"/>

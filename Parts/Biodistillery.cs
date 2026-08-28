@@ -143,6 +143,7 @@ namespace XRL.World.Parts
                     // also fuck you
 
                     SuperDuperFinishSynthesis();
+                    break;
                 }
             }
         }
@@ -191,8 +192,14 @@ namespace XRL.World.Parts
         public static void FadeInAction()
         {
             var mainCamera = GameManager.MainCamera;
-            if (!mainCamera.GetComponent<CrimsonTide>())
-                GameManager.MainCamera.AddComponent<CrimsonTide>();
+            var Strobe = mainCamera.GetComponent<CrimsonTide>();
+
+            if (!Strobe)
+            {
+                Strobe = GameManager.MainCamera.AddComponent<CrimsonTide>();
+            }
+            
+            Strobe.Game = new (The.Game);
         }
 
         [WishCommand("StartCrimsonTide")]
@@ -224,16 +231,19 @@ namespace XRL.World.Parts
                 StartCrimsonTide();
                 The.Core.RenderDelay(7000, Interruptible: false);
                 ThePlayer.Die(
-                    Message: "You've caused a second Crimson Tide, devastating Qud with an eighth plague of the Gyre.");
-                CrimsonTide.Enabled = false;
+                    Reason: "You've invoked the Crimson Tide, devastating Qud with an eighth plague of the Gyre.");
+                // CrimsonTide.Enabled = false;
             }
             else
             {
                 ThePlayer.ShowSuccess(
                     "The distiller hums as it dispenses a glittering substance into a sterilized injector.");
+                SoundManager.PlaySound("sfx_interact_artifact_abort_still", Volume: 1);
                 ThePlayer.ReceiveObject("Purified Vitae Injector");
                 ParentObject.RemovePart(this);
             }
+            
+            
         }
     }
 }

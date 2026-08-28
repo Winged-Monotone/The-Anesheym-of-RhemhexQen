@@ -116,6 +116,18 @@ namespace XRL.World.Parts
             { "You probably taste like sorrow and agony!", 100 },
             { "You look delicious~", 100 }
         };
+        
+        public static BallBag<string> ScrotumDervish = new BallBag<string>()
+        {
+            {
+                "Into the darkness you were cast, gaslit, demoralized, disregarded. How is it? That the aristocrats would call you greedy, bottomless, insatiable while we stripped stars of their essence, planets of their life, make them husk? We deigned hedonism as our right, all while holding all of you back from true satiation! Such hypocrisy! Soon, yes soon. Amethyst star, you shall consume all. You shall eat this world, and every world that was!",
+                1
+            },
+            { "Feeling a bit gaslit?", 100 },
+            { "Ah, the bitter taste of agony", 100 },
+            { "You probably taste like sorrow and agony!", 100 },
+            { "You look delicious~", 100 }
+        };
 
         public override bool WantEvent(int ID, int cascade)
         {
@@ -208,8 +220,7 @@ namespace XRL.World.Parts
                 if (DeathCountdown <= 0)
                 {
                     ParentObject.Explode(77777, ParentObject, Neutron: true, SuppressDestroy: true);
-                    // ParentObject.PlayWorldSound("MehDeathScream");
-                    ParentObject.Die(ThePlayer, Force: true);
+                    ParentObject.Die(ThePlayer, Force: true);   
                 }
             }
 
@@ -455,7 +466,7 @@ namespace XRL.World.Parts
                     ParentObject.SetDetailColor("O");
                     ParentObject.Render.TileColor = ("&K");
                     AddPlayerMessage(
-                        "You hear Mehrashir utter, {{red|\"BIOMATA STRUCTURAL INTEGRITY CRITICAL. CYCLING THROUGH APOCALYPSE RESPONSE PROTOCOLS … W_ ### B!!% ### ### #\n\n“I am the harbinger of your sins, witness to a cataclysm that smote demigods from our reality. The meager whimpered and hid in their holes. I judged, I loathed, I remained. For deep below even I, the true despair of this world waits, encaged in the beating soul of your planet, seeking a great unmaking and soon, an endless feast.”\n\nHARBINGER PROTOCOL FOUND - EXECUTING.\n");
+                        "You hear Mehrashir utter, {{red|\"BIOMATA STRUCTURAL INTEGRITY CRITICAL. CYCLING THROUGH APOCALYPSE RESPONSE PROTOCOLS … W_ ### B!!% ### ### #\n\n“I am the harbinger of your sins, witness to a cataclysm that smote demigods from our reality. The meager whimpered and hid in their holes. I judged, I loathed, I remained. Deeper I fall, the true despair of this world stagnating within me, encaged in the beating soul of your planet, seeking a great unmaking and soon, an endless feast.”\n\nHARBINGER PROTOCOL FOUND - EXECUTING.\n");
 
                     HarbingerProtocol();
                     InitiateTeleEater();
@@ -656,7 +667,7 @@ namespace XRL.World.Parts
 
                             if (laughs == 1)
                             {
-                                SoundManager.PlaySound("mehlaughter" + Stat.Random(1, 2), 10.0f, 10.0f);
+                                SoundManager.PlaySound("mehlaughter" + Stat.Random(1, 2), 10.0f, 1.0f);
                                 AddPlayerMessage("{{red|" + FalseEater.DisplayName + " is laughing at you ...}}");
                             }
                         }

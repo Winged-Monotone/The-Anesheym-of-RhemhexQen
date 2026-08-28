@@ -1,4 +1,8 @@
 
+
+
+
+
 The Anesheym of Rhemhex'Qen:
 
                 "The signals are coming from ... wait--what is that!? There's a massive culmination of neural-clustering right under us! ... Deep Below. Millions of strata deep."
@@ -21,47 +25,22 @@ Expansions have been made across the board regarding elements previously added, 
             A Secret Super Boss ...
             If you can make it through the nightmarish hell that is the Long Sigh. You will come face to face with an absolutely dreadful, but totally optional foe. Test your game knowledge and skills against this 'super boss' and earn something cool for your troubles!
 
-Feedback Changes: 
+            New Music
+            Several scores created by myself and the always amazing @soupdilemma
+
+FEEDBACK CHANGES
 I decided that I also want to let people know about changes associated with feedback that the mod has gotten to show I'm listening! One of the things brought up was that the Egg Hunt not only feels a bit too easy, but it was wierd having to reached "Loved" or "Admired" by the Anesheym before being granted entry to the city. Definitely didn't consider this when I made it, but it is a lil wierd you have to reach that level of relationship before they accepted you, so I changed some things. For one, I changed the requirement to "Liked" and lowered the reputation value of eggs. I also lowered the global egg spawn rate, you should now only see one egg per map, which does mean fewer eggs overall, however the new formula also makes finding the rarer eggs a little bit easier as well. So it evens out.
 
 DISCLAIMER
 This mod contains content that some might find disturbing. Please execute your own discretion whether to play the mod. This mod contains the following themes: Body horror, genetic transformation, genetic corruption, self-harm, self-mutilation, claustrophobia, nyctophobia, severe psychological trauma, loss of self or athazagoraphobia, annihilation and existential anxiety, and adult sexual humor. Be safe and please take care of yourself, and keep these themes in mind when playing the mod.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+CREDITS
+Big thanks to the Caves of Qud modding community for the technical help in achieving this mods current state. 
+@tsunderebird for her playtesting of certain elements of mod.
+@soupdilemma for her musical additions and quality checks! 
 
 COMPLETED FIXES
 [f] - Sulfuric liquids stick less to the bodies of creatures, allow it to be put out more easily and also stopping it from constantly catching you on fire. [Increased Evaporativity and Cleansing via cs.]
-[a] - 
 [a] - You can talk to [redacted]'s butt now.
 [c] - The Reputation Goal for the Anesheym now requires only 250 Reputation to grant entry into the city.
 [c] - Strange Egg reputation rewards have been lowered in response to the reputation change.
@@ -70,4 +49,3 @@ COMPLETED FIXES
         - Random mutation generations selected.
         - Specific Amalgam based abilities were added.
         - given core skills.
-[r] - 

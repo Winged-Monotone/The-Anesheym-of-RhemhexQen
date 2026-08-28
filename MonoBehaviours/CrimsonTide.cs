@@ -13,6 +13,8 @@ namespace Wingytone.MonoBehaviours
         public bool FadingIn;
         public CC_Levels Levels;
         public CC_Frost Frost;
+        
+        public WeakReference<XRLGame> Game;
 
         public float Interval = 7;
         public float FadeInTime;
@@ -28,6 +30,14 @@ namespace Wingytone.MonoBehaviours
                     Frost.enabled = false;
                 }
                 
+                return;
+            }
+            
+            if (Game == null || !Game.TryGetTarget(out var game) || game != The.Game || !game.Running)
+            {
+                Levels.enabled = false;
+                Frost.enabled = false;
+                Enabled = false;
                 return;
             }
             

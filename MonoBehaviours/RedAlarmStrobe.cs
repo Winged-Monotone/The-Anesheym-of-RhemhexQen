@@ -1,5 +1,7 @@
 ﻿using System;
 using UnityEngine;
+using XRL;
+using XRL.World;
 
 namespace Wingytone.MonoBehaviours
 {
@@ -12,6 +14,8 @@ namespace Wingytone.MonoBehaviours
         public bool Strobing;
         public CC_Levels Levels;
 
+        public WeakReference<XRLGame> Game;
+        
         public float StrobeInterval = 1;
         public float StrobeTime;
 
@@ -27,6 +31,14 @@ namespace Wingytone.MonoBehaviours
                 return;
             }
 
+            
+            if (Game == null || !Game.TryGetTarget(out var game) || game != The.Game || !game.Running)
+            {
+                Levels.enabled = false;
+                Enabled = false;
+                return;
+            }
+    
             // deltaTime is the milliseconds passing between each frame, and here we're adding it up
             StrobeTime += Time.deltaTime;
             

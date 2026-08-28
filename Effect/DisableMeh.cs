@@ -38,7 +38,7 @@ namespace XRL.World.Effects
             {
                 if (Stat.Random(1, 100) <= 5)
                 {
-                    SoundManager.PlaySound("mehlaughter" + Stat.Random(1, 2), 10.0f, 10.0f);
+                    SoundManager.PlaySound("mehlaughter" + Stat.Random(1, 2), 10.0f, 1.0f);
                 }
                 AddPlayerMessage("{{red|" + Object.DisplayName + " is laughing at you ...}}");
             }

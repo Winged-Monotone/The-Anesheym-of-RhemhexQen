@@ -5,5 +5,3 @@ bin
 *.csproj.user
 *.DotSettings
 *.DotSettings.user
-*.mp3
-*.wav

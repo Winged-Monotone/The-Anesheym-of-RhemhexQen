@@ -72,6 +72,8 @@ namespace XRL.World.Parts
                        if (SetTimer != null && SetTimer > 0)
                        {
                            DetonationCountdown = SetTimer.Value;
+                           SoundManager.PlayUISound("nfd-alarmsequence", Volume: 1);
+                           AddPlayerMessage("{{red|WARNING!!! Z-007 NEUTRON FLUX DETONATOR PRIMED. ALL PERSONNEL, EVACUATE THE FACILITY IMMEDIATELY.}}");
                            StartStrobing();
                        }
                    }
@@ -114,7 +116,10 @@ namespace XRL.World.Parts
         {
             if (DetonationCountdown > 0)
             {
+                The.ActiveZone.MarkActive();
+                
                 --DetonationCountdown;
+                
                 if (DetonationCountdown <= 0)
                 {
                     if (Floors.Contains(ThePlayer.CurrentZone.ZoneID))
@@ -135,6 +140,7 @@ namespace XRL.World.Parts
                     }
                     else
                     {
+                        
                         CombatJuice.cameraShake(7);
                         Popup.Show("As the bomb detonates, you feel the world around you tremble.");
                         NFDGoesBoom = true;
@@ -152,8 +158,15 @@ namespace XRL.World.Parts
         public static void StrobeAction()
         {
             var mainCamera = GameManager.MainCamera;
-            if (!mainCamera.GetComponent<RedAlarmStrobe>())
-                GameManager.MainCamera.AddComponent<RedAlarmStrobe>();
+            var Strobe = mainCamera.GetComponent<RedAlarmStrobe>();
+
+            if (!Strobe)
+            {
+                Strobe = GameManager.MainCamera.AddComponent<RedAlarmStrobe>();
+            }
+            
+            Strobe.Game = new (The.Game);
+            
         }
         
         [WishCommand("StrobeStartTest")]

@@ -1310,7 +1310,8 @@
               Tile="WingyTextures/EncodedEater/EncodedEaterAnimation1.png"
               ColorString="&amp;P" DetailColor="W"/>
         <part Name="Description"
-              Short="==================================================================
+              Short="
+              
 {{yellow||Simulati_n E#ror : eu3840f.obj
 #nbou-ng Entity Encountered.
                   
@@ -1319,7 +1320,9 @@
 ::E#M$OI)#(*$It _s p_rfection, it is indiminishable, it is all-seeing, it is all-being, it is the devourer.
 eater, hedonist, thirst--
                   
-{{red|#################.PROSTRATE YOURSELF TO YOUR MAKERS.#################}}}}"/>
+{{red|#################.PROSTRATE YOURSELF TO YOUR MAKERS.#################}}}}"
+        
+        />
 
         <part Name="Body" Anatomy="Doll-Like Shell"/>
 
@@ -1342,7 +1345,7 @@ eater, hedonist, thirst--
 
         <stat Name="Level" sValue="777"/>
 
-        <tag Name="Gender" Value="neuterperson"/>
+        <tag Name="Gender" Value="female"/>
 
         <part Name="ConversationScript" ConversationID="EncodedEaterConversation"/>
 

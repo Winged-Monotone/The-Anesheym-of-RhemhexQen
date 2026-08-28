@@ -10,7 +10,7 @@
               TileColor="&amp;c"
               RenderString="030" ColorString="&amp;M"/>
         <part Name="Description"
-              Short="The chrome-womb, primordial vita spills into these defiled lands from these sacred caverns. Birthed in glass, monstrosities and sentients alike climb from its depths. An eternal catalyst pumping life into this treacherous plateau."/>
+              Short="The chrome-womb, primordial vita spills into these defiled lands from sacred caverns. Birthed in glass, monstrosities and sentiments alike climb from its depths. An eternal catalyst pumping life into this treacherous plateau."/>
         <tag Name="NoBiomes" Value="1"/>
         <xtagGrammar Proper="true" massNoun="false"/>
         <tag Name="RegionTier" Value="4"/>
@@ -46,7 +46,7 @@
               DetailColor="o"
               TileColor="&amp;K" RenderString="030" ColorString="&amp;Y"/>
         <part Name="Description"
-              Short="A land hidden in coarse-clouds of brimstone, the smell reeking of nits whose innards spoiled long ago. Sharp castings of flame erupt into air as vents deep beneath the earth gasp with vile flatulence."/>
+              Short="A land hidden in coarse-clouds of brimstone, the air reeking of nits whose innards spoiled long ago. Sharp castings of flame erupt into plumes as geomorphic vents deep beneath the earth gasp like vile flatulence."/>
         <tag Name="NoBiomes" Value="1"/>
         <xtagGrammar Proper="true"/>
         <tag Name="Terrain" Value="SulfuricDeserts"/>
@@ -74,7 +74,7 @@
         <part Name="Render" RenderLayer="10" DisplayName="arachite" Tile="Creatures/sw_crystal1.bmp" RenderIfDark="true"
               RenderString="231" ColorString="&amp;M" DetailColor="c"/>
         <part Name="Description"
-              Short="a chattering clump of crystalline material, it hums softly along with a sudden clamor of static energy."/>
+              Short="A chattering clump of crystalline material, it hums softly along with a sudden clamor of static energy."/>
         <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
         <part Name="RandomCrystalGenerator"/>
         <part Name="Physics" Weight="3000" FlameTemperature="99999" VaporTemperature="1500" Takeable="false"
@@ -86,7 +86,7 @@
         <part Name="Render" DisplayName="arachite" Tile="Creatures/sw_crystal2.bmp" RenderIfDark="true"
               RenderString="231" ColorString="&amp;M" DetailColor="c"/>
         <part Name="Description"
-              Short="a chattering formation of crystalline material, it hums softly along with a sudden clamor of static energy."/>
+              Short="A chattering formation of crystalline material, it hums softly along with a sudden clamor of static energy."/>
         <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
         <part Name="RandomCrystalGenerator"/>
         <part Name="Physics" Weight="3000" FlameTemperature="99999" VaporTemperature="1500" Takeable="false"
@@ -98,7 +98,7 @@
         <part Name="Render" DisplayName="arachite" Tile="Creatures/sw_crystal3.bmp" RenderIfDark="true"
               RenderString="231" ColorString="&amp;M" DetailColor="c"/>
         <part Name="Description"
-              Short="a chattering formation of crystalline material, it hums softly along with a sudden clamor of static energy."/>
+              Short="A chattering formation of crystalline material, it hums softly along with a sudden clamor of static energy."/>
         <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
         <part Name="RandomCrystalGenerator"/>
         <part Name="Physics" Weight="3000" FlameTemperature="99999" VaporTemperature="1500" Takeable="false"
@@ -110,7 +110,7 @@
         <part Name="Render" DisplayName="arachite" Tile="Creatures/sw_crystal4.bmp" RenderIfDark="true"
               RenderString="231" ColorString="&amp;M" DetailColor="c"/>
         <part Name="Description"
-              Short="a chattering clump of crystalline material, it hums softly along with a sudden clamor of static energy."/>
+              Short="A chattering clump of crystalline material, it hums softly along with a sudden clamor of static energy."/>
         <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
         <part Name="RandomCrystalGenerator"/>
         <part Name="Physics" Weight="3000" FlameTemperature="99999" VaporTemperature="1500" Takeable="false"
@@ -187,7 +187,7 @@
         <part Name="Render" DisplayName="aloe crystna" Tile="Creatures/sw_aloe_solo.bmp" RenderString="."
               RenderLayer="10" ColorString="&amp;m" DetailColor="B" Occluding="false"/>
         <part Name="Description"
-              Short="Mottled leaf-chutes are splayed out in a rosette now fractal and sharp like steel-tooth sheers. Dust appears and disappears in swirls, glittering in the light like diamond fascets."/>
+              Short="Mottled leaf-chutes are splayed out in a rosette, now fractal and sharp like steel-tooth sheers. Dust appears and disappears in swirls, glittering in the light like diamond fascets."/>
         <stat Name="Level" sValue="8"/>
         <property Name="Role" Value="Controller"/>
         <part Name="AloeCrystna"/>
@@ -197,8 +197,8 @@
         <part Name="EngulfingBleeding" Damage="1-2"/>
     </object>
 
-    <object Name="crytus" Inherits="Plant">
-        <part Name="Render" DisplayName="beviddian crytus" Tile="WingyTextures/creatures/crytus.png" RenderString="."
+    <object Name="Crytus" PreviousName="crytus" Inherits="Plant">
+        <part Name="Render" DisplayName="beviddian crytus" Tile="WingyTextures/creatures/beviddiancrytus.png" RenderString="."
               ColorString="&amp;c" DetailColor="C" Occluding="false"/>
         <part Name="Description"
               Short="Crystalline leaves cuddle a pearl of silver, offering it towards the firmament, all while balancing elegantly on a thin mote."/>
@@ -208,7 +208,7 @@
     <!--    Floor -->
 
     <object Name="FlowerPatches" Inherits="Floor">
-        <part Name="Render" DisplayName="flower patch" RenderString="'" ColorString="&amp;C^k" DetailColor="g"
+        <part Name="Render" DisplayName="cryst-flower patch" RenderString="'" ColorString="&amp;C^k" DetailColor="g"
               Tile="Terrain/tile_flowers2.bmp"/>
         <tag Name="NoSparkingQuest"/>
         <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
@@ -236,7 +236,7 @@
 
 
     <object Name="BloodCryst Formation" Inherits="Plant">
-        <part Name="Render" DisplayName="bloodcryst formation" RenderString="005" ColorString="&amp;b"
+        <part Name="Render" DisplayName="{{crimson|blood}}-{{cyan|cryst}} formation" RenderString="005" ColorString="&amp;b"
               Tile="WingyTextures/creatures/crystaltrees1.png" TileColor="&amp;a" DetailColor="A" Occluding="false"/>
         <part Name="Description"
               Short="A sickly coil of flesh and gore clings to a humming blood-cryst. As the cryst pulsates with energy, the warmth sends the flesh into a frenzy. The flesh grows, splitting from its roots until it parts, forming a new amalgamation."/>
@@ -282,7 +282,7 @@
         <part Name="Render" DisplayName="{{yellow|luminous}} crystalbirch tree" RenderString="005" ColorString="&amp;b"
               Tile="WingyTextures/creatures/crystaltrees1.png" TileColor="&amp;y" DetailColor="Y" Occluding="true"/>
         <part Name="Description"
-              Short="A ghostly white birch tree with razor-sharp leaves that shimmer like amethyst before a waking-sun."/>
+              Short="A ghostly, white birch-tree with razor-sharp leaves shimmers like amethyst before a waking-sun."/>
         <tag Name="HangingSupport"/>
         <tag Name="Wall"/>
         <part Name="LightSource" Lit="true" Radius="5"/>
@@ -1146,7 +1146,7 @@
               ColorString="&amp;k" TileColor="&amp;c" DetailColor="y" Occluding="true"
               Tile="WingyTextures/NFD-W.png"/>
         <part Name="Description"
-              Short="A blackened-glass container hides a bespoke cylinder canister, it hums with the sun's fury only barely hidden beneath. A panel with titillating groves beckons the fingers to flirt with ones encroaching demise."/>
+              Short="A blackened-glass wardrobe hides a bespoke onyx cylinder, it hums with the sun's fury only barely hidden beneath. A panel with titillating grooves beckons the fingers to flirt with ones' encroaching demise."/>
         <part Name="Physics" Weight="5000"/>
         <stat Name="Hitpoints" sValue="10000"/>
         <part Name="Circuitry" StartCharge="10000"/>
@@ -1161,7 +1161,7 @@
               ColorString="&amp;k" TileColor="&amp;c" DetailColor="y" Occluding="true"
               Tile="WingyTextures/NFD-E.png"/>
         <part Name="Description"
-              Short="A blackened-glass container hides a bespoke cylinder canister, it hums with the sun's fury only barely hidden beneath. A panel with titillating groves beckons the fingers to flirt with ones encroaching demise."/>
+              Short="A blackened-glass wardrobe hides a bespoke onyx cylinder, it hums with the sun's fury only barely hidden beneath. A panel with titillating grooves beckons the fingers to flirt with ones' encroaching demise."/>
         <part Name="Physics" Weight="5000"/>
         <stat Name="Hitpoints" sValue="10000"/>
         <part Name="Circuitry" StartCharge="10000"/>
@@ -1521,7 +1521,7 @@
         <part Name="Render" DisplayName="large refrigeration unit" RenderString="005" ColorString="&amp;K"
               Tile="WingyTextures/largerefridgeE.png" TileColor="&amp;W" DetailColor="K"
               Occluding="true"/>
-        <part Name="Description" Short="Humming a D-chord in constant pianissimo, a cooling machine with wide-birthing doors reveals catalogues of an edible history. This end in particular bears countless switches, each marked with unanswerable sigils of the old-eras. A groove holding cups yawns in its center, as if awaiting a command."/>
+        <part Name="Description" Short="Humming a D-chord in constant pianissimo, a cooling machine with wide-birthing doors reveals catalogues of an edible history. This end in particular bears countless switches, each marked with unanswerable sigils of the old-eras. A groove yielding cups yawns in its center, as if awaiting a command."/>
         <part Name="Physics" Weight="3000" FlameTemperature="99999" VaporTemperature="1500" Takeable="false"
               Solid="true"/>
         <stat Name="Hitpoints" sValue="900"/>
@@ -1585,7 +1585,7 @@
 
     <object Name="Purified Vitae Injector" Inherits="Item">
         <part Name="Examiner" Complexity="5" Alternate="UnknownBottle"/>
-        <part Name="Render" DisplayName="{{metamorphic|metamorphic polygel}}" Tile="Items/sw_injector.bmp"
+        <part Name="Render" DisplayName="{{rainbow|purified-vitae}} injector" Tile="Items/sw_injector.bmp"
               ColorString="&amp;y" DetailColor="P" RenderString="012" RenderLayer="5"/>
         <part Name="Physics" Category="Applicators"/>
         <part Name="Description"
@@ -1655,7 +1655,7 @@
     <!--  Big Holographic Display   -->
 
     <object Name="BaseMassiveHalographicDisplay" Inherits="InorganicObject">
-        <part Name="Render" DisplayName="massive holographic display" RenderString="005" ColorString="&amp;K"
+        <part Name="Render" DisplayName="massive {{holographic display" RenderString="005" ColorString="&amp;K"
               TileColor="&amp;y" DetailColor="a"
               Occluding="false"/>
         <part Name="Description" Short="A grand monolithic slab of light-bent arrays, dance across a vector of plastics and steel. The words G-007 march across its zenith, below are gauges, numerics, and runes for which none who live now will ever decipher the meaning of."/>
@@ -2000,6 +2000,7 @@
         <tag Name="ExcludeFromDynamicEncounters"/>
         <tag Name="NoTrade"/>
         <removepart Name="Graffitied"/>
+        <part Name="Physics" Weight="150"/>
     </object>
 
     <object Name="Analysis Display 1" Inherits="Analysis Display">
@@ -2024,7 +2025,7 @@
 
     <!--    HolographicCamera -->
 
-    <object Name="Base Holographic Camera" Inherits="InorganicObject">
+    <object Name="Base Holographic Camera" Inherits="Furniture">
         <part Name="Render" DisplayName="holographic surveyor" ColorString="&amp;y^y" TileColor="&amp;y" DetailColor="c"
               Tile="WingyTextures/holographiccamera.png"/>
         <tag Name="ExcludeFromDynamicEncounters"/>
