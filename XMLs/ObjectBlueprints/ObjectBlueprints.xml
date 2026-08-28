@@ -1993,7 +1993,7 @@
     <!--    Analysis Display -->
 
 
-    <object Name="Analysis Display" Inherits="InorganicObject">
+    <object Name="Analysis Display" Inherits="Furniture">
         <part Name="Render" DisplayName="analysis display" ColorString="&amp;y^y" TileColor="&amp;y" DetailColor="c"
               Tile="WingyTextures/analysisdisplay1.png"/>
         <part Name="Description" Short="Unknown to all but its creators, a pane of bioreactive glass displays light-rifting columns of old-world runes and strange hieroglyphics."/>
