@@ -2210,7 +2210,7 @@
     <!--    Displacement Panel-->
 
 
-    <object Name="BaseDisplacementPanel" Inherits="InorganicObject">
+    <object Name="BaseDisplacementPanel" Inherits="MountedFurniture">
         <part Name="Render" ColorString="&amp;y^y" TileColor="&amp;y" DetailColor="y"
               Tile="WingyTextures/displacerpanel.png"/>
         <tag Name="ExcludeFromDynamicEncounters"/>
