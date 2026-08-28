@@ -17,7 +17,7 @@ namespace XRL.Liquids
     {
         public new const string ID = "viscouspuss";
 
-        public ViscousPuss() : base("viscouspuss")
+        public ViscousPuss() : base(ID)
         {
             FlameTemperature = 500;
             VaporTemperature = 1000;
@@ -25,8 +25,8 @@ namespace XRL.Liquids
             Fluidity = 10;
             Cleansing = 0;
             Weight = 0.1;
-            InterruptAutowalk = true;
-            ConsiderDangerousToContact = true;
+            // InterruptAutowalk = true;
+            // ConsiderDangerousToContact = true;
             ConsiderDangerousToDrink = true;
         }
 
@@ -39,7 +39,7 @@ namespace XRL.Liquids
 
         public override List<string> GetColors()
         {
-            return PutrifiedVitae.Colors;
+            return Colors;
         }
 
         public override string GetColor()
@@ -80,6 +80,11 @@ namespace XRL.Liquids
         public override float GetValuePerDram()
         {
             return 10f;
+        }
+
+        public override int GetNavigationWeight(LiquidVolume Liquid, GameObject GO, bool Smart, bool Slimewalking, bool FilthAffinity, ref bool Uncacheable)
+        {
+            return Smart ? 10 : 2;
         }
 
         // public override bool Vaporized(LiquidVolume Liquid)
