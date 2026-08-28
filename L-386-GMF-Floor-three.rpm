@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Map Width="80" Height="25">
+<Map Width="80" Height="25" ID="LongSigh3">
   <cell X="0" Y="0">
     <object Name="MarbleFloor"></object>
     <object Name="GrossWall"></object>
@@ -2533,7 +2533,6 @@
   <cell X="2" Y="8">
     <object Name="MarbleFloor"></object>
     <object Name="Meat Curtains Verti"></object>
-    <object Name="BloodCryst Formation"></object>
   </cell>
   <cell X="3" Y="8">
     <object Name="MarbleFloor"></object>
@@ -4079,7 +4078,6 @@
   </cell>
   <cell X="5" Y="13">
     <object Name="MarbleFloor"></object>
-    <object Name="BloodCryst Formation"></object>
   </cell>
   <cell X="6" Y="13">
     <object Name="MarbleFloor"></object>
@@ -7261,7 +7259,6 @@
   <cell X="6" Y="23">
     <object Name="MarbleFloor"></object>
     <object Name="GrossWall2"></object>
-    <object Name="BloodCryst Formation"></object>
   </cell>
   <cell X="7" Y="23">
     <object Name="MarbleFloor"></object>

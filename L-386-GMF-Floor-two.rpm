@@ -1590,8 +1590,8 @@
     <object Name="MarbleFloor"></object>
   </cell>
   <cell X="5" Y="6">
-    <object Name="BloodCryst Formation"></object>
     <object Name="MarbleFloor"></object>
+    <object Name="Orifical Biomass NE"></object>
   </cell>
   <cell X="6" Y="6">
     <object Name="GrossWall"></object>
@@ -3770,8 +3770,8 @@
     <object Name="SterileTile"></object>
   </cell>
   <cell X="57" Y="13">
-    <object Name="BloodCryst Formation"></object>
     <object Name="MarbleFloor"></object>
+    <object Name="Orifical Biomass S"></object>
   </cell>
   <cell X="58" Y="13">
     <object Name="MarbleFloor"></object>
@@ -4323,8 +4323,8 @@
     <object Name="GrossWall"></object>
   </cell>
   <cell X="44" Y="15">
-    <object Name="BloodCryst Formation"></object>
     <object Name="MarbleFloor"></object>
+    <object Name="Orifical Biomass SW"></object>
   </cell>
   <cell X="45" Y="15">
     <object Name="SterileTile"></object>
@@ -4926,7 +4926,6 @@
     <object Name="Analysis Display 1"></object>
   </cell>
   <cell X="52" Y="17">
-    <object Name="BloodCryst Formation"></object>
     <object Name="MarbleFloor"></object>
   </cell>
   <cell X="53" Y="17">
@@ -5789,7 +5788,7 @@
     <object Name="MarbleFloor"></object>
   </cell>
   <cell X="47" Y="20">
-    <object Name="BloodCryst Formation"></object>
+    <object Name="Orifical Biomass NE"></object>
   </cell>
   <cell X="48" Y="20">
     <object Name="amalgamgrowth"></object>
@@ -6409,12 +6408,9 @@
   </cell>
   <cell X="59" Y="22">
     <object Name="amalgamgrowth"></object>
-    <object Name="BloodCryst Formation"></object>
     <object Name="MarbleFloor"></object>
   </cell>
-  <cell X="60" Y="22">
-    <object Name="BloodCryst Formation"></object>
-  </cell>
+  <cell X="60" Y="22"></cell>
   <cell X="61" Y="22">
     <object Name="amalgamgrowth"></object>
     <object Name="MarbleFloor"></object>
@@ -6445,9 +6441,7 @@
     <object Name="amalgamgrowth"></object>
     <object Name="MarbleFloor"></object>
   </cell>
-  <cell X="68" Y="22">
-    <object Name="BloodCryst Formation"></object>
-  </cell>
+  <cell X="68" Y="22"></cell>
   <cell X="69" Y="22">
     <object Name="amalgamgrowth"></object>
     <object Name="MarbleFloor"></object>
@@ -6476,9 +6470,7 @@
     <object Name="amalgamgrowth"></object>
     <object Name="MarbleFloor"></object>
   </cell>
-  <cell X="76" Y="22">
-    <object Name="BloodCryst Formation"></object>
-  </cell>
+  <cell X="76" Y="22"></cell>
   <cell X="77" Y="22">
     <object Name="Gore Mess"></object>
     <object Name="amalgamgrowth"></object>
@@ -6700,14 +6692,14 @@
     <object Name="MarbleFloor"></object>
   </cell>
   <cell X="61" Y="23">
-    <object Name="BloodCryst Formation"></object>
+    <object Name="Orifical Biomass NE"></object>
   </cell>
   <cell X="62" Y="23">
     <object Name="amalgamgrowth"></object>
     <object Name="MarbleFloor"></object>
   </cell>
   <cell X="63" Y="23">
-    <object Name="BloodCryst Formation"></object>
+    <object Name="Orifical Biomass SE"></object>
   </cell>
   <cell X="64" Y="23">
     <object Name="amalgamgrowth"></object>
@@ -6723,25 +6715,21 @@
   </cell>
   <cell X="67" Y="23">
     <object Name="amalgamgrowth"></object>
-    <object Name="BloodCryst Formation"></object>
     <object Name="MarbleFloor"></object>
     <object Name="MarbleFloor"></object>
   </cell>
   <cell X="68" Y="23">
-    <object Name="BloodCryst Formation"></object>
+    <object Name="BaseOrificalBiomass"></object>
   </cell>
   <cell X="69" Y="23">
     <object Name="amalgamgrowth"></object>
     <object Name="MarbleFloor"></object>
   </cell>
   <cell X="70" Y="23">
-    <object Name="amalgamgrowth"></object>
-    <object Name="BloodCryst Formation"></object>
     <object Name="MarbleFloor"></object>
+    <object Name="amalgamgrowth"></object>
   </cell>
-  <cell X="71" Y="23">
-    <object Name="BloodCryst Formation"></object>
-  </cell>
+  <cell X="71" Y="23"></cell>
   <cell X="72" Y="23">
     <object Name="amalgamgrowth"></object>
     <object Name="MarbleFloor"></object>
@@ -6755,7 +6743,7 @@
     <object Name="MarbleFloor"></object>
   </cell>
   <cell X="75" Y="23">
-    <object Name="BloodCryst Formation"></object>
+    <object Name="Orifical Biomass NE"></object>
   </cell>
   <cell X="76" Y="23">
     <object Name="Meat Curtains 2West"></object>

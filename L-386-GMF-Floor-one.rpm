@@ -2946,7 +2946,6 @@
   </cell>
   <cell X="78" Y="10">
     <object Name="MarbleFloor"></object>
-    <object Name="BloodCryst Formation"></object>
   </cell>
   <cell X="79" Y="10">
     <object Name="GrossWall"></object>
