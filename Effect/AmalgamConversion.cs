@@ -53,14 +53,13 @@ namespace XRL.World.Effects
                 --InfectionPhases;
                 if (InfectionPhases <= 0)
                 {
-                    Object.ReplaceWith("Amalgam" + Stat.Random(1, 4));
                     if (Object == The.Player)
                     {
                         The.Player.Die(Reason: "You succumb to the Crimson Tide.");
                     }
                     else
                     {
-                        Object.ReplaceWith("Amalgam1");
+                        Object.ReplaceWith("Amalgam" + Stat.Random(1, 4));
                         XDidY(Object, "flesh unravels as it transforms", "into an amalgam", SubjectPossessedBy: Object);
                     }
                 }
