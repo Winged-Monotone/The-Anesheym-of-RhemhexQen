@@ -29,7 +29,7 @@ namespace XRL.World.Effects
             }
 
             return
-                "Putrified vitae has compromised your molecular structure, you are slowly transforming you into an amalgam.";
+                "Putrified vitae has compromised your molecular structure, slowly transforming you into an amalgam.";
         }
 
         public override bool WantEvent(int ID, int cascade)
