@@ -3,7 +3,7 @@
 
 
     <bodyparttypes>
-        <bodyparttype Type="Skin Slink" Description="skin slink" Appendage="true"
+        <bodyparttype Type="Skin Slink" Description="skin slink" Appendage="true" Extrinsic="true"
                       LimbBlueprintDefault="Amalgam Skin Slink"/>
     </bodyparttypes>
     
