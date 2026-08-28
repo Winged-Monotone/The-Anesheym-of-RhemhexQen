@@ -180,8 +180,8 @@
 
             </text>
 
-            <choice Target="TookItemEnd" GiveItem="Insect Pheromones Phial"
-                    SetBooleanState="GotThroughDitzyInitialConvo,true">Um. Thanks? Live and Drink."
+            <choice Target="End" GiveItem="Insect Pheromones Phial" SetBooleanState="GotThroughDitzyInitialConvo,true">
+                Um. Thanks? Live and Drink.
             </choice>
             <choice Target="DitzyContinue1" GiveItem="Insect Pheromones Phial"
                     SetBooleanState="GotThroughDitzyInitialConvo,true">Um. Thanks? What is this place, anyway.
