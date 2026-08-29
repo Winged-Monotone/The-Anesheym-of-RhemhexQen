@@ -382,12 +382,11 @@
                 You will forever be in our hearts, =name=.
             </text>
             <choice GotoID="End">
-                <part Name="Sibs_ModifyReputation" Faction="Anesheym" Value="600" Shown="True"/>
-                <part Name="QuestHandler" Action="Complete" QuestID="ShahStartLongSigh" StepID="ReturntoTheShah"/>
-
                 <text>
                     Live and drink, dear shah.
                 </text>
+                <part Name="Sibs_ModifyReputation" Faction="Anesheym" Value="600" Shown="True"/>
+                <part Name="QuestHandler" Action="Complete" QuestID="ShahStartLongSigh" StepID="ReturntoTheShah"/>
             </choice>
         </node>
 
@@ -396,13 +395,13 @@
 As the Shah of Rhemhex'Qen, I confer you these gifts to you, =name=. Live, and may the sting of thirst never parch your lips.
             </text>
             <choice GotoID="End">
-                <part Name="Sibs_ModifyReputation" Faction="Anesheym" Value="400" Shown="True"/>
                 <text>
                     Live and drink, dear shah.
                 </text>
+                <part Name="Sibs_ModifyReputation" Faction="Anesheym" Value="400" Shown="True"/>
                 <part Name="QuestHandler" Action="Complete" QuestID="ShahStartLongSigh" StepID="ReturntoTheShah"/>
-                <part Name="ReceiveItem" Blueprints="Artifact 7R" Pick="false" Identify="All" />
                 <part Name="ReceiveItem" Blueprints="Royal Jelly" Amount="10" Identify="All" />
+                <part Name="ReceiveItem" Table="Artifact 7R" Pick="false" Identify="All" />
                 <part Name="ReceiveItem" Table="Gemstones" Pick="false" />
                 <part Name="ReceiveItem" Table="Gemstones" Pick="false" />
                 <part Name="ReceiveItem" Table="Gemstones" Pick="false" />
