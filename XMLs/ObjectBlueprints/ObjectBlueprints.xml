@@ -3751,7 +3751,7 @@
     
 <!--    Nuurimirs Stuff-->
 
-    <object Name="nuurimirssword.png" Inherits="Long Sword8th">
+    <object Name="Nuurimir's Ravager" Inherits="Long Sword8th">
         <part Name="Render" DisplayName="Nuurimir's Ravager" Tile="nuurimirssword.png" ColorString="&amp;p" DetailColor="M" />
         <part Name="MeleeWeapon" PenBonus="1" MaxStrengthBonus="15" BaseDamage="3d15" Skill="Axe" />
         <part Name="Commerce" Value="9999" />
