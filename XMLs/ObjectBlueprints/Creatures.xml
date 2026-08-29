@@ -1115,7 +1115,8 @@
 
     <object Name="bugqueenmain" Inherits="NPC">
         <property Name="Role" Value="NPC"/>
-        <part Name="Physics" Weight="10000" Takeable="false" Solid="true"/>
+        <tag Name="PreventIdleBehavior"/>
+        <part Name="Physics" Weight="10000" Takeable="false" Solid="false"/>
         <stat Name="Level" sValue="100"/>
         <tag Name="Gender" Value="female"/>
         <part Name="Brain" Hostile="False" Factions="Anesheym-100"/>
@@ -1137,11 +1138,22 @@
         <part Name="ConversationScript" ConversationID="PandamoriaeConversation"/>
         <part Name="PandamoraeConversator"/>
         <part Name="wmAnchored"/>
+
+        <stat Name="Intelligence" sValue="24"/>
+        <stat Name="Ego" sValue="12"/>
+        <stat Name="Willpower" sValue="30"/>
+        <stat Name="Toughness" sValue="30"/>
+        <stat Name="Strength" sValue="35"/>
+        <stat Name="Agility" sValue="30"/>
+
+        <stat Name="Hitpoints" sValue="5000"/>
+        <stat Name="Speed" sValue="20"/>
     </object>
 
     <object Name="bugqueenovi" Inherits="NPC">
         <property Name="Role" Value="NPC"/>
-        <part Name="Physics" Weight="10000" Takeable="false" Solid="true"/>
+        <tag Name="PreventIdleBehavior"/>
+        <part Name="Physics" Weight="10000" Takeable="false" Solid="false"/>
         <stat Name="Level" sValue="100"/>
         <tag Name="Gender" Value="neuter"/>
         <part Name="DoubleContainer" Direction="W"/>
@@ -1161,6 +1173,16 @@
         <xtagGrammar Proper="true"/>
         <part Name="wmAnchored"/>
         <part Name="ConversationScript" ConversationID="PandamoriaesButtversation"/>
+
+        <stat Name="Intelligence" sValue="24"/>
+        <stat Name="Ego" sValue="12"/>
+        <stat Name="Willpower" sValue="30"/>
+        <stat Name="Toughness" sValue="30"/>
+        <stat Name="Strength" sValue="35"/>
+        <stat Name="Agility" sValue="30"/>
+
+        <stat Name="Hitpoints" sValue="5000"/>
+        <stat Name="Speed" sValue="20"/>
     </object>
 
     <object Name="buganimancersage" Inherits="NPC">
@@ -1316,9 +1338,12 @@
 #nbou-ng Entity Encountered.
                   
 ##### !*WARNING*!*WARNING*!*WARNING*!*WARNING*!*WARNING*!*WARNING*! #####
-::# UW0-374=2=033 ...
+
+::# UW0-eat43742033 ...
 ::E#M$OI)#(*$It _s p_rfection, it is indiminishable, it is all-seeing, it is all-being, it is the devourer.
 eater, hedonist, thirst--
+
+##### !*WARNING*!*WARNING*!*WARNING*!*WARNING*!*WARNING*!*WARNING*! #####
                   
 {{red|#################.PROSTRATE YOURSELF TO YOUR MAKERS.#################}}}}"
         
@@ -1382,7 +1407,7 @@ eater, hedonist, thirst--
         <inventoryobject Blueprint="Entropic Transducer" Number="1"/>
         <inventoryobject Blueprint="Antimatter Cell" Number="5"/>
         <inventoryobject Blueprint="EmptyCanteen" Number="1"/>
-        <property Name="WontSell"/>
+        <tag Name="NoTrade"/>
 
         <stat Name="AcidResistance" Value="-50"/>
 
@@ -1415,6 +1440,34 @@ eater, hedonist, thirst--
         <part Name="Brain" Wanders="false" Calm="false" Hostile="true" Factions="Playerneutral-100"/>
 
         <mutation Name="Confusion" Level="10"/>
+
+        <part Name="Corpse" CorpseChance="0" CorpseBlueprint="Singularity"/>
+
+        <stat Name="Hitpoints" sValue="1" Boost="0"/>
+        <stat Name="Strength" sValue="1" Boost="0"/>
+        <stat Name="Intelligence" sValue="1" Boost="0"/>
+        <stat Name="Willpower" sValue="1" Boost="0"/>
+        <stat Name="Toughness" sValue="1" Boost="0"/>
+        <stat Name="Agility" sValue="1" Boost="0"/>
+        <stat Name="Ego" sValue="1" Boost="0"/>
+        <stat Name="Level" sValue="1"/>
+
+        <removepart Name="RandomLoot"/>
+
+        <part Name="AnimatedMaterialGeneric" AnimationLength="320"
+              TileAnimationFrames="0=WingyTextures/EncodedEater/EncodedEaterAnimation1.png, 10=WingyTextures/EncodedEater/EncodedEaterAnimation2.png, 20=WingyTextures/EncodedEater/EncodedEaterAnimation3.png, 30=WingyTextures/EncodedEater/EncodedEaterAnimation4.png, 40=WingyTextures/EncodedEater/EncodedEaterAnimation5.png, 50=WingyTextures/EncodedEater/EncodedEaterAnimation6.png, 60=WingyTextures/EncodedEater/EncodedEaterAnimation7.png, 70=WingyTextures/EncodedEater/EncodedEaterAnimation8.png, 80=WingyTextures/EncodedEater/EncodedEaterAnimation9.png, 90=WingyTextures/EncodedEater/EncodedEaterAnimation10.png, 100=WingyTextures/EncodedEater/EncodedEaterAnimation11.png, 110=WingyTextures/EncodedEater/EncodedEaterAnimation12.png, 120=WingyTextures/EncodedEater/EncodedEaterAnimation13.png, 130=WingyTextures/EncodedEater/EncodedEaterAnimation14.png,140=WingyTextures/EncodedEater/EncodedEaterAnimation15.png,150=WingyTextures/EncodedEater/EncodedEaterAnimation15.png,160=WingyTextures/EncodedEater/EncodedEaterAnimation16.png,170=WingyTextures/EncodedEater/EncodedEaterAnimation17.png,180=WingyTextures/EncodedEater/EncodedEaterAnimation18.png,190=WingyTextures/EncodedEater/EncodedEaterAnimation19.png,200=WingyTextures/EncodedEater/EncodedEaterAnimation20.png,210=WingyTextures/EncodedEater/EncodedEaterAnimation21.png,220=WingyTextures/EncodedEater/EncodedEaterAnimation22.png,230=WingyTextures/EncodedEater/EncodedEaterAnimation23.png,240=WingyTextures/EncodedEater/EncodedEaterAnimation24.png,250=WingyTextures/EncodedEater/EncodedEaterAnimation25.png,260=WingyTextures/EncodedEater/EncodedEaterAnimation26.png,270=WingyTextures/EncodedEater/EncodedEaterAnimation27.png,280=WingyTextures/EncodedEater/EncodedEaterAnimation28.png,290=WingyTextures/EncodedEater/EncodedEaterAnimation29.png,300=WingyTextures/EncodedEater/EncodedEaterAnimation30.png,310=WingyTextures/EncodedEater/EncodedEaterAnimation31.png"
+        />
+    </object>
+
+    <object Name="NonHostileFalseEncodedEater" Inherits="NPC">
+        <property Name="Role" Value="NPC"/>
+        <part Name="Render" DisplayName="{{eater|M#E#H#R#A#S#H#I#R#}} [{{W|Encoded}}]"
+              Tile="WingyTextures/EncodedEater/EncodedEaterAnimation1.png"
+              ColorString="&amp;P" DetailColor="g"/>
+
+        <part Name="Brain" Wanders="true" Calm="false" Hostile="true" Factions="Playerneutral-100"/>
+
+        <part Name="NoHostility" />
 
         <part Name="Corpse" CorpseChance="0" CorpseBlueprint="Singularity"/>
 

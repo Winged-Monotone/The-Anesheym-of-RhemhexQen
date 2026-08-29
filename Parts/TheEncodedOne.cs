@@ -116,7 +116,6 @@ namespace XRL.World.Parts
             { "You probably taste like sorrow and agony!", 100 },
             { "You look delicious~", 100 }
         };
-        
         public static BallBag<string> ScrotumDervish = new BallBag<string>()
         {
             {
@@ -397,8 +396,7 @@ namespace XRL.World.Parts
                     PhaseFrost = false;
                     PhaseShock = false;
                     PhaseUnreal = true;
-
-
+                    
                     PsyOpWardenProtocol();
                     InitiateTeleEater();
 
@@ -663,21 +661,22 @@ namespace XRL.World.Parts
                             {
                                 FalseEater.Brain.Allegiance.Calm = true;
                                 FalseEater.Brain.Allegiance.Hostile = false;
+                                
+                                if (laughs == 1)
+                                {
+                                    SoundManager.PlaySound("mehlaughter" + Stat.Random(1, 2), 10.0f, 1.0f);
+                                    AddPlayerMessage("{{red|" + FalseEater.DisplayName + " is laughing at you ...}}");
+                                }
                             }
                             else if (fungibility == 2)
                             {
                                 if (FalseEater.IsValid())
                                 {
+                                    FalseEater.AddPart<NoHostility>();
                                     FalseEater.Brain.Allegiance.Calm = true;
                                     FalseEater.Brain.Allegiance.Hostile = false;
                                     FalseEater.Brain.Wanders = true;
                                 }
-                            }
-
-                            if (laughs == 1)
-                            {
-                                SoundManager.PlaySound("mehlaughter" + Stat.Random(1, 2), 10.0f, 1.0f);
-                                AddPlayerMessage("{{red|" + FalseEater.DisplayName + " is laughing at you ...}}");
                             }
                         }
                     }
