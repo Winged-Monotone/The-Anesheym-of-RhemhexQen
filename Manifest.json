@@ -1,10 +1,10 @@
 {
   "id": "WMAnesheymOfRhemHexQen",
   "loadorder": 1,
-  "title": "{{M|The Anesheym of Rhemhex'Qen [Beta-Edition]}}",
+  "title": "{{M|The Anesheym of Rhemhex'Qen}}",
   "description": "Adds bug-people to Qud and various quest!",
   "tags": "bug people,bug village,new region",
-  "version": "0.1",
+  "version": "1.0.0",
   "author": "WingyTone",
   "previewImage": "Sprite-0002.png",
   "dependencies": {
