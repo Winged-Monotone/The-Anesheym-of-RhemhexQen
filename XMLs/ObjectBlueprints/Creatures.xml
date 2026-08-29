@@ -1551,8 +1551,4 @@ eater, hedonist, thirst--
         <part Name="Calming" Feeling="25" />
     </object>
 
-    <object Name="Iseppa" Inherits="Barathrumite" Load="Merge">
-        <part Name="ConversationScript" ConversationID="IseppaArshiraEdit"/>
-    </object>
-
 </objects>

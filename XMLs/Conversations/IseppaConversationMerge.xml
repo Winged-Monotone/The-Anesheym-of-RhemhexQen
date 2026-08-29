@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<conversations>
+    <conversation ID="Iseppa" Load="Merge">
+
+        <!-- Start Merge -->
+        <node ID="Bethesda">
+            <choice Target="ArshseppaI">I was told it's quite dangerous, there's nothing else I should know?</choice>
+        </node>
+        <!-- End Merge-->
+        
+        <!-- Start New -->
+        <node ID="ArshseppaI">
+            <text>
+                Dangerous would be a costly underestimation. Bethesda Susa is truly a duality amongst intrigue and horror, magnificent sights and treacherous evocations.
+
+                Hm. But. Maybe ...
+
+                {{yellow|*Iseppa seems to be contemplating something*}}
+            </text>
+            <choice Target="ArshseppaII">... I’d be grateful for any assistance.</choice>
+            <choice Target="End">It is fine. Live and drink.</choice>
+        </node>
+
+        <node ID="ArshseppaII">
+            <text>
+                If you are inclined to, there is one who would bear you company on your venture to Bethesda Susa should you ask them.
+            </text>
+            <choice Target="ArshseppaIII">Why would I mind?</choice>
+        </node>
+
+        <node ID="ArshseppaIII">
+            <text>
+                They are an oddity this one, a kind of their own.
+
+                A warrior nonetheless and a ventured one. They visit us from time-to-time seeking our artifacts in an attempt to understand themselves. A hurt and addled mind, but with good-intentions.
+            </text>
+            <choice Target="ArshseppaIV">Who are they?</choice>
+        </node>
+
+        <node ID="ArshseppaIV">
+            <text>
+                Their name is Ashiranandurah. As of now they are a face of the {{blue|Pariahs,}} earning their name as a dervish-hunter--they have slain Seeker thralls since their Second Youth.
+            </text>
+            <choice Target="ArshseppaV">... Hm.</choice>
+            <choice Target="End">Live and drink.</choice>
+        </node>
+
+        <node ID="ArshseppaV">
+            <text>
+                Arshira relishes the captivation of adventure and exploring these treacherous lands, a drive only countered by the fear of their shadow. They get restless waiting for research results and watching tinkers' tinker. Need you someone to aid you in travel, look no farther.
+            </text>
+            <choice Target="ArshseppaVI">Where might I find them?</choice>
+            <choice Target="End">Live and drink.</choice>
+        </node>
+
+        <node ID="ArshseppaVI">
+            <text>
+                The Stilt, they’ve been brooding lately, the poor thing practically crumbles in most social play. I believe you will need some standing to invoke Arshira’s services, but tis an option.
+            </text>
+            <choice Target="End">I see, thank you, Iseppa. Live and drink.</choice>
+        </node>
+        <!-- End New -->
+        
+    </conversation>
+    
+    <!-- Backwards compat for old saves with overridden ConversationScript ID -->
+    <conversation ID="IseppaArshiraEdit" Inherits="Iseppa" />
+</conversations>
