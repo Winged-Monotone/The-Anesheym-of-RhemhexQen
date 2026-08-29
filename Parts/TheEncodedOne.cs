@@ -152,7 +152,16 @@ namespace XRL.World.Parts
 
         public override bool HandleEvent(BeforeDieEvent E)
         {
-            var CenterCell = ParentObject.CurrentZone.GetCell(x: 43, y: 11);
+            if (!ParentObject.IsValid())
+            {
+                return base.HandleEvent(E);
+            }
+            
+            var CenterCell = ParentObject.CurrentZone?.GetCell(x: 43, y: 11);
+            if (CenterCell == null)
+            {
+                return base.HandleEvent(E);
+            }
 
             if (!IsDying && E.Dying == ParentObject)
             {
