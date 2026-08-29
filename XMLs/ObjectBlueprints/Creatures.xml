@@ -1545,7 +1545,11 @@ eater, hedonist, thirst--
     
     
     <!-- Search: NPC Edits -->
-
+    
+    <object Name="RhemhezTreeCherub" Inherits="Mechanical Trees Cherub">
+        <part Name="Brain" Hostile="false" Calm="true" />
+        <part Name="Calming" Feeling="25" />
+    </object>
 
     <object Name="Iseppa" Inherits="Barathrumite" Load="Merge">
         <part Name="ConversationScript" ConversationID="IseppaArshiraEdit"/>
