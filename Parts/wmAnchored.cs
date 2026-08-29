@@ -35,15 +35,7 @@ namespace XRL.World.Parts
         public override bool WantEvent(int ID, int cascade)
         {
             return base.WantEvent(ID, cascade)
-                   || ID == ModifyDefendingSaveEvent.ID
-                   || ID == EffectRemovedEvent.ID
-                   || ID == BeginTakeActionEvent.ID
-                   || ID == CanChangeMovementModeEvent.ID
-                   || ID == EffectAppliedEvent.ID
-                   || ID == EndTurnEvent.ID
-                   || ID == GetCompanionStatusEvent.ID
-                   || ID == GetKineticResistanceEvent.ID
-                   || ID == GetNavigationWeightEvent.ID;
+                   || ID == BeginTakeActionEvent.ID;
         }
 
         public override bool HandleEvent(CanChangeMovementModeEvent E)

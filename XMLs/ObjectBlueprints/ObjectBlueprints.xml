@@ -70,7 +70,7 @@
     <!--    </object>-->
 
 
-    <object Name="CrystalReal1" Inherits="InorganicObject">
+    <object Name="CrystalReal1" Inherits="MountedFurniture">
         <part Name="Render" RenderLayer="10" DisplayName="arachite" Tile="Creatures/sw_crystal1.bmp" RenderIfDark="true"
               RenderString="231" ColorString="&amp;M" DetailColor="c"/>
         <part Name="Description"
@@ -82,7 +82,7 @@
         <stat Name="Hitpoints" sValue="900"/>
     </object>
 
-    <object Name="CrystalReal2" Inherits="InorganicObject">
+    <object Name="CrystalReal2" Inherits="MountedFurniture">
         <part Name="Render" DisplayName="arachite" Tile="Creatures/sw_crystal2.bmp" RenderIfDark="true"
               RenderString="231" ColorString="&amp;M" DetailColor="c"/>
         <part Name="Description"
@@ -94,7 +94,7 @@
         <stat Name="Hitpoints" sValue="900"/>
     </object>
 
-    <object Name="CrystalReal3" Inherits="InorganicObject">
+    <object Name="CrystalReal3" Inherits="MountedFurniture">
         <part Name="Render" DisplayName="arachite" Tile="Creatures/sw_crystal3.bmp" RenderIfDark="true"
               RenderString="231" ColorString="&amp;M" DetailColor="c"/>
         <part Name="Description"
@@ -106,7 +106,7 @@
         <stat Name="Hitpoints" sValue="900"/>
     </object>
 
-    <object Name="CrystalReal4" Inherits="InorganicObject">
+    <object Name="CrystalReal4" Inherits="MountedFurniture">
         <part Name="Render" DisplayName="arachite" Tile="Creatures/sw_crystal4.bmp" RenderIfDark="true"
               RenderString="231" ColorString="&amp;M" DetailColor="c"/>
         <part Name="Description"
@@ -118,7 +118,7 @@
         <stat Name="Hitpoints" sValue="900"/>
     </object>
 
-    <object Name="SulfurMound1" Inherits="InorganicObject">
+    <object Name="SulfurMound1" Inherits="MountedFurniture">
         <part Name="Render" DisplayName="sulfite mound" Tile="WingyTextures/DirtMound1.png" RenderIfDark="true"
               RenderString="231"
               ColorString="&amp;O" DetailColor="o"/>
@@ -131,7 +131,7 @@
         <removepart Name="Graffitied"/>
     </object>
 
-    <object Name="SulfurMound1" Inherits="InorganicObject">
+    <object Name="SulfurMound1" Inherits="MountedFurniture">
         <part Name="Render" DisplayName="sulfite mound" Tile="WingyTextures/DirtMound1.png" RenderIfDark="true"
               RenderString="231"
               ColorString="&amp;O" DetailColor="o"/>
@@ -144,7 +144,7 @@
         <removepart Name="Graffitied"/>
     </object>
 
-    <object Name="SulfurMound2" Inherits="InorganicObject">
+    <object Name="SulfurMound2" Inherits="MountedFurniture">
         <part Name="Render" DisplayName="sulfite mound" Tile="WingyTextures/DirtMound2.png" RenderIfDark="true"
               RenderString="231"
               ColorString="&amp;O" DetailColor="o"/>
@@ -157,7 +157,7 @@
         <removepart Name="Graffitied"/>
     </object>
 
-    <object Name="SulfurMound3" Inherits="InorganicObject">
+    <object Name="SulfurMound3" Inherits="MountedFurniture">
         <part Name="Render" DisplayName="sulfite mound" Tile="WingyTextures/DirtMound3.png" RenderIfDark="true"
               RenderString="231"
               ColorString="&amp;O" DetailColor="o"/>
@@ -170,7 +170,7 @@
         <removepart Name="Graffitied"/>
     </object>
 
-    <object Name="SulfurMound4" Inherits="InorganicObject">
+    <object Name="SulfurMound4" Inherits="MountedFurniture">
         <part Name="Render" DisplayName="sulfite mound" Tile="WingyTextures/DirtMound4.png" RenderIfDark="true"
               RenderString="231"
               ColorString="&amp;O" DetailColor="o"/>
@@ -1283,7 +1283,7 @@
     </object>
 
 
-    <object Name="ArtificialWomb" Inherits="InorganicObject">
+    <object Name="ArtificialWomb" Inherits="MountedFurniture">
         <part Name="Render" DisplayName="artificial womb" RenderString="005" ColorString="&amp;K"
               Tile="WingyTextures/QenFurniture/artificialwomb_tank.png" TileColor="&amp;Y" DetailColor="R"
               Occluding="true"/>
@@ -1295,7 +1295,7 @@
         <removepart Name="Graffitied"/>
     </object>
 
-    <object Name="ArtificialWombShattered1" Inherits="InorganicObject">
+    <object Name="ArtificialWombShattered1" Inherits="MountedFurniture">
         <part Name="Render" DisplayName="shattered artificial womb" RenderString="005" ColorString="&amp;K"
               Tile="WingyTextures/QenFurniture/artificialwomb_tank_broken1.png" TileColor="&amp;Y" DetailColor="R"
               Occluding="true"/>
@@ -1307,7 +1307,7 @@
         <removepart Name="Graffitied"/>
     </object>
 
-    <object Name="ArtificialWombShattered2" Inherits="InorganicObject">
+    <object Name="ArtificialWombShattered2" Inherits="MountedFurniture">
         <part Name="Render" DisplayName="shattered artificial womb" RenderString="005" ColorString="&amp;K"
               Tile="WingyTextures/QenFurniture/artificialwomb_tank_broken2.png" TileColor="&amp;Y" DetailColor="R"
               Occluding="true"/>
@@ -1319,7 +1319,7 @@
         <removepart Name="Graffitied"/>
     </object>
 
-    <object Name="TransientCradle" Inherits="InorganicObject">
+    <object Name="TransientCradle" Inherits="MountedFurniture">
         <part Name="Render" DisplayName="transient cradle" RenderString="005" ColorString="&amp;K"
               Tile="WingyTextures/transientcradle.png" TileColor="&amp;y" DetailColor="c"
               Occluding="true"/>
@@ -1357,7 +1357,7 @@
 
     <!--  Adorable Cetrifuge  -->
 
-    <object Name="AdorableCetrifuge" Inherits="InorganicObject">
+    <object Name="AdorableCetrifuge" Inherits="MountedFurniture">
         <part Name="Render" DisplayName="UNI-TEC centrifuge with holographic displays" RenderString="005"
               ColorString="&amp;K"
               Tile="WingyTextures/adorablecetrifuge.png" TileColor="&amp;y" DetailColor="c"
@@ -1374,7 +1374,7 @@
         <removepart Name="Graffitied"/>
     </object>
 
-    <object Name="BeakerThingies" Inherits="InorganicObject">
+    <object Name="BeakerThingies" Inherits="MountedFurniture">
         <part Name="Render" DisplayName="organized vials" RenderString="005" ColorString="&amp;K"
               Tile="WingyTextures/beakerthingies.png" TileColor="&amp;y" DetailColor="c"
               Occluding="true"/>
@@ -1391,6 +1391,37 @@
               Tile="WingyTextures/injectorbed.png" TileColor="&amp;y" DetailColor="c"
               Occluding="true"/>
         <part Name="Description" Short="Comforting silk adorns a synthetic mattress, an armed syringette stimmies from its side. Ready and prompted to give its serums to unfortunate."/>
+        <part Name="Physics" Weight="3000" FlameTemperature="99999" VaporTemperature="1500" Takeable="false"
+              Solid="false"/>
+        <stat Name="Hitpoints" sValue="900"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+        <removepart Name="Graffitied"/>
+    </object>
+
+    <object Name="BaseShahsBed" Inherits="MountedFurniture">
+        <part Name="Render" Tile="WingyTextures/bigshahbedW.png" Occluding="false" TileColor="&amp;K" DetailColor="O"/>
+        <part Name="Description" Short="A grandiose, bed-mat adorned with jewels, gifts, and anesheym molts. "/>
+        <part Name="Physics" Weight="3000" FlameTemperature="99999" VaporTemperature="1500" Takeable="false"
+              Solid="false"/>
+        <stat Name="Hitpoints" sValue="900"/>
+        <part Name="DropOnDeath" Blueprints="Ribbed Piston"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+        <removepart Name="Graffitied"/>
+    </object>
+
+    <object Name="Shahs Bed W" Inherits="BaseShahsBed">
+        <part Name="Render" Tile="WingyTextures/bigshahbedW.png"/>
+        <part Name="Description" Short="A grandiose, league-wide bed-mat adorned with jewels, gifts, and anesheym molts. "/>
+        <part Name="Physics" Weight="3000" FlameTemperature="99999" VaporTemperature="1500" Takeable="false"
+              Solid="false"/>
+        <stat Name="Hitpoints" sValue="900"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+        <removepart Name="Graffitied"/>
+    </object>
+
+    <object Name="Shahs Bed E" Inherits="BaseShahsBed">
+        <part Name="Render" Tile="WingyTextures/bigshahbedE.png"/>
+        <part Name="Description" Short="A grandiose, league-wide bed-mat adorned with jewels, gifts, and anesheym molts. "/>
         <part Name="Physics" Weight="3000" FlameTemperature="99999" VaporTemperature="1500" Takeable="false"
               Solid="false"/>
         <stat Name="Hitpoints" sValue="900"/>
@@ -1525,14 +1556,14 @@
         <part Name="Physics" Weight="3000" FlameTemperature="99999" VaporTemperature="1500" Takeable="false"
               Solid="true"/>
         <stat Name="Hitpoints" sValue="900"/>
-        <inventoryobject Blueprint="Drinkable Taco Suprema" Amount="5"/>
+        <inventoryobject Blueprint="Drinkable Taco Suprema" Amount="5-100"/>
         <part Name="DispenseItemBajaBlastAction"/>
         <part Name="DispenseItemIceAction"/>
         <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
         <removepart Name="Graffitied"/>
     </object>
 
-    <object Name="Biometric Distillery DeviceW" Inherits="Chest">
+    <object Name="Biometric Distillery DeviceW" Inherits="MountedFurniture">
         <part Name="Render" DisplayName="biometric distillery device" RenderString="005" ColorString="&amp;K"
               Tile="WingyTextures/biometricdistilleryW.png" TileColor="&amp;Y" DetailColor="M"
               Occluding="true"/>
@@ -1545,7 +1576,7 @@
         <removepart Name="Graffitied"/>
     </object>
 
-    <object Name="Biometric Distillery DeviceE" Inherits="Chest">
+    <object Name="Biometric Distillery DeviceE" Inherits="MountedFurniture">
         <part Name="Render" DisplayName="biometric distillery device" RenderString="005" ColorString="&amp;K"
               Tile="WingyTextures/biometricdistilleryE.png" TileColor="&amp;Y" DetailColor="M"
               Occluding="true"/>
@@ -1557,7 +1588,7 @@
         <removepart Name="Graffitied"/>
     </object>
 
-    <object Name="Biometric Distillery Amal DeviceW" Inherits="Chest">
+    <object Name="Biometric Distillery Amal DeviceW" Inherits="MountedFurniture">
         <part Name="Render" DisplayName="dessicated distillery device" RenderString="005" ColorString="&amp;K"
               Tile="WingyTextures/Retextures/biometricdistilleryAmalW.png" TileColor="&amp;i" DetailColor="A"
               Occluding="true"/>
@@ -1569,7 +1600,7 @@
         <removepart Name="Graffitied"/>
     </object>
 
-    <object Name="Biometric Distillery Amal DeviceE" Inherits="Chest">
+    <object Name="Biometric Distillery Amal DeviceE" Inherits="MountedFurniture">
         <part Name="Render" DisplayName="dessicated distillery device" RenderString="005" ColorString="&amp;K"
               Tile="WingyTextures/Retextures/biometricdistilleryAmalE.png" TileColor="&amp;i" DetailColor="A"
               Occluding="true"/>
@@ -1605,7 +1636,7 @@
     <!--  ================== Purified Vitae End ====================  -->
 
 
-    <object Name="PachinkoMachine" Inherits="InorganicObject">
+    <object Name="PachinkoMachine" Inherits="MountedFurniture">
         <part Name="Render" DisplayName="pachinko machine" RenderString="005" ColorString="&amp;K"
               Tile="WingyTextures/pachinkomachine.png" TileColor="&amp;y" DetailColor="c"
               Occluding="true"/>
@@ -1616,7 +1647,7 @@
         <removepart Name="Graffitied"/>
     </object>
 
-    <object Name="RatCage" Inherits="InorganicObject">
+    <object Name="RatCage" Inherits="MountedFurniture">
         <part Name="Render" DisplayName="caged mice" RenderString="005" ColorString="&amp;K"
               Tile="WingyTextures/ratcage.png" TileColor="&amp;y" DetailColor="c"
               Occluding="true"/>
@@ -1627,7 +1658,7 @@
         <removepart Name="Graffitied"/>
     </object>
 
-    <object Name="SyringeArmFactory" Inherits="InorganicObject">
+    <object Name="SyringeArmFactory" Inherits="MountedFurniture">
         <part Name="Render" DisplayName="injector-arm machine" RenderString="005" ColorString="&amp;K"
               Tile="WingyTextures/SyringeArmFactory.png" TileColor="&amp;y" DetailColor="c"
               Occluding="true"/>
@@ -1654,7 +1685,7 @@
 
     <!--  Big Holographic Display   -->
 
-    <object Name="BaseMassiveHalographicDisplay" Inherits="InorganicObject">
+    <object Name="BaseMassiveHalographicDisplay" Inherits="MountedFurniture">
         <part Name="Render" DisplayName="massive {{holographic display" RenderString="005" ColorString="&amp;K"
               TileColor="&amp;y" DetailColor="a"
               Occluding="false"/>
@@ -1732,7 +1763,7 @@
 
     <!--    Big Art Womb-->
 
-    <object Name="BaseGreaterArtificialWomb" Inherits="InorganicObject">
+    <object Name="BaseGreaterArtificialWomb" Inherits="MountedFurniture">
         <part Name="Render" DisplayName="habitation vat" RenderString="005" ColorString="&amp;K" TileColor="&amp;y" DetailColor="Y"
               Occluding="false"/>
         <part Name="Description" Short="Birthing-brine surrounds individual beings who rest suspended in chemical-prisms."/>
@@ -1798,7 +1829,7 @@
 
     <!--  Big Vats   -->
 
-    <object Name="BaseHugeVat" Inherits="InorganicObject">
+    <object Name="BaseHugeVat" Inherits="MountedFurniture">
         <part Name="Render" DisplayName="gigantic vat" RenderString="005" ColorString="&amp;K"
               Tile="WingyTextures/bigtubeNE.png" TileColor="&amp;y" DetailColor="a"
               Occluding="false"/>
@@ -1889,7 +1920,7 @@
 
     <!--  MAIN FRAMES   -->
 
-    <object Name="BaseHugeMainFrame" Inherits="InorganicObject">
+    <object Name="BaseHugeMainFrame" Inherits="MountedFurniture">
         <part Name="Render" DisplayName="colossal mainframe" RenderString="005" ColorString="&amp;K" TileColor="&amp;y" DetailColor="c" Occluding="false"/>
         <part Name="Description" Short="Prodigious architecture mingles and flirts with ancient technologies, circuits bind and flow beneath monitors and neo-plastic panes."/>
         <part Name="Physics" Weight="3000" FlameTemperature="99999" VaporTemperature="1500" Takeable="false"
@@ -1954,7 +1985,7 @@
 
     <!--    Main frames 2x2 -->
 
-    <object Name="BaseHugeMainFrame2x2" Inherits="InorganicObject">
+    <object Name="BaseHugeMainFrame2x2" Inherits="MountedFurniture">
         <part Name="Render" DisplayName="colossal mainframe" RenderString="005" ColorString="&amp;K"
               Tile="WingyTextures/hugemainframe2x2NW.png" TileColor="&amp;y" DetailColor="c"
               Occluding="false"/>
@@ -2848,7 +2879,7 @@
 
     <object Name="Prismatic Mantis Blade" Inherits="BaseDagger">
         <part Name="Render" DisplayName="X-99 {{prismatic|prismatic}} mantis-blade"
-              Tile="Creatures/natural-weapon-bite.bmp"
+              Tile="WingyTextures/mantisblade.png"
               ColorString="&amp;w"/>
         <part Name="Description"
               Short="The blade erupts from the fore-arm like a mantis' arm curling forward toward its prey, it extends over the fist and and hisses as nanites ready to evolve its current structure."/>
@@ -2865,7 +2896,7 @@
         <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_blade_short_quantum"/>
     </object>
 
-    <object Name="Ice Crystal" Inherits="InorganicObject">
+    <object Name="Ice Crystal" Inherits="MountedFurniture">
         <part Name="Render" RenderLayer="10" DisplayName="icy crystal" Tile="Creatures/sw_crystal1.bmp"
               RenderIfDark="true"
               RenderString="231" ColorString="&amp;C" DetailColor="c"/>
@@ -3068,7 +3099,7 @@
     
     <!-- Search: Organic Fauna -->
     
-    <object Name="GasVent" Inherits="InorganicObject">
+    <object Name="GasVent" Inherits="MountedFurniture">
         <part Name="Render" DisplayName="gas vent" RenderString="005" ColorString="&amp;K"
               Tile="WingyTextures/gasvent/gasvent1.png"
               TileColor="&amp;K" DetailColor="O" Occluding="true"/>
@@ -3290,7 +3321,7 @@
         <xtagGrammar massNoun="true"/>
     </object>
 
-    <object Name="Shattered Glass" Inherits="InorganicObject">
+    <object Name="Shattered Glass" Inherits="MountedFurniture">
         <part Name="Render" DisplayName="shattered glass" Tile="Items/sw_shattered_mirror.bmp" ColorString="&amp;y"
               TileColor="&amp;y" DetailColor="K"/>
         <part Name="Description" Short="A thousand echo-worlds are scattered across the ground."/>

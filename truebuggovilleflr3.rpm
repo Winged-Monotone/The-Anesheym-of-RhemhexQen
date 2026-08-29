@@ -3771,10 +3771,12 @@
   <cell X="61" Y="13">
     <object Name="bugqueenmain"></object>
     <object Name="StiltTile"></object>
+    <object Name="Shahs Bed W"></object>
   </cell>
   <cell X="62" Y="13">
     <object Name="bugqueenovi"></object>
     <object Name="StiltTile"></object>
+    <object Name="Shahs Bed E"></object>
   </cell>
   <cell X="63" Y="13">
     <object Name="Torchpost"></object>
