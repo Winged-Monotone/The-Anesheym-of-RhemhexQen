@@ -3,10 +3,10 @@
   "loadorder": 1,
   "title": "{{M|The Anesheym of Rhemhex'Qen}}",
   "description": "Adds bug-people to Qud and various quest!",
-  "tags": "bug people,bug village,new region",
+  "tags": "bug,people,city,new,region,story,quest,biomes",
   "version": "1.0.0",
   "author": "WingyTone",
-  "previewImage": "Sprite-0002.png",
+  "previewImage": "preview.png",
   "dependencies": {
     "QudFuMMABeta": "*",
     "Sibs_Library": "*"

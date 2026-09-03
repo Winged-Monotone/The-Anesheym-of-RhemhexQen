@@ -2574,7 +2574,7 @@
         <stat Name="Hitpoints" sValue="140"/>
         <stat Name="HeatResistance" sValue="200"/>
         <stat Name="ColdResistance" Value="-50"/>
-        <inventoryobject Blueprint="Magmatic Pseudopod" Number="2"/>
+        <inventoryobject Blueprint="Sulphuric Pseudopod" Number="2"/>
         <part Name="Description"
               Short="Behind the glass membrane, inside a microcosmic globe, sulfur shifts like globulous masses, bounding in debase clumps of sticky amber."/>
         <part Name="wmSulfurBurst"/>
@@ -2585,6 +2585,13 @@
         <tag Name="BleedLiquid" Value="liquidsulfur-1000"/>
         <tag Name="BleedColor" Value="&amp;O"/>
         <tag Name="BleedPrefix" Value="{{Sulfuric|sulfuric}}"/>
+    </object>
+
+    <object Name="Sulphuric Pseudopod" Inherits="Base Pseudopod">
+        <part Name="Render" DisplayName="{{sulfuric|sulphuric pseudopod}}" Tile="Creatures/natural-weapon-pseudopod.bmp" ColorString="&amp;R" />
+        <part Name="TemperatureOnHit" Amount="250-300" Max="false" OnWielderHit="true" />
+        <part Name="MeleeWeapon" HitBonus="6" MaxStrengthBonus="99" BaseDamage="3d4" Skill="Cudgel" Stat="Strength" />
+        <part Name="ElementalDamage" Damage="15-25" Attributes="Heat" />
     </object>
 
     <object Name="Grand Mortar Beetle" Inherits="BaseInsect">
@@ -2863,7 +2870,9 @@
         <part Name="Metal"/>
         <tag Name="Mods" Value="CommonMods,HeadwearMods,EyewearMods,ElectronicsMods"/>
         <tag Name="Tier" Value="6"/>
+        <tag Name="ExcludeFromDynamicEncounters"/>
         <part Name="DegradeMeMorePlz"/>
+        <tag Name="EquipmentFrameColors" Value="kANk" />
     </object>
 
     <object Name="Mehrahshir's Flute" Inherits="Item">
@@ -2889,11 +2898,13 @@
         <part Name="Metal"/>
         <tag Name="NoAIEquipAsThrownWeapon"/>
         <tag Name="HideThrownWeaponPerformance"/>
-        <tag Name="Tier" Value="0"/>
+        <tag Name="Tier" Value="8"/>
         <part Name="Zetachrome"/>
         <part Name="Physics" Weight="2" FlameTemperature="99999" VaporTemperature="9999"/>
         <tag Name="SwingSound" Value="Sounds/Melee/shortBlades/sfx_melee_dagger_zetachrome_swing"/>
         <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_blade_short_quantum"/>
+        <tag Name="ExcludeFromDynamicEncounters"/>
+        <tag Name="EquipmentFrameColors" Value="RWGB" />
     </object>
 
     <object Name="Ice Crystal" Inherits="MountedFurniture">
@@ -2925,6 +2936,7 @@
         <part Name="MissileWeapon" AnimationDelay="0" Skill="Pistol" ShotsPerAction="3" AmmoPerAction="3"
               ShotsPerAnimation="3" WeaponAccuracy="18" RangeIncrement="8"/>
         <part Name="MagazineAmmoLoader" ProjectileObject="ProjectileBattlePistol" AmmoPart="AmmoSlug" MaxAmmo="36"/>
+        <tag Name="ExcludeFromDynamicEncounters"/>
     </object>
     <object Name="ProjectileBattlePistol" Inherits="BaseLeadSlugProjectile">
         <part Name="Projectile" BasePenetration="5" BaseDamage="2d7"/>
@@ -3052,6 +3064,7 @@
               UnchargedPenetrationBonus="0" ChargedDamage="3d4+1" UnchargedDamage="1d2"
               ChargedName="{{fleshy|vibrating}} ribbed piston" UnchargedName="{{c|ribbed piston}}"/>
         <part Name="RibbedPiston"/>
+        <tag Name="EquipmentFrameColors" Value="AanN" />
     </object>
     
     <!--    this ruined me-->
@@ -3066,7 +3079,7 @@
         <part Name="Commerce" Value="125"/>
         <tag Name="Gift" Value="*noinherit"/>
         <tag Name="Tier" Value="8"/>
-        <tag Name="DynamicObjectsTable:EnergyCells"/>
+        <tag Name="ExcludeFromDynamicEncounters"/>
         <tag Name="TinkerCategory" Value="ammo and energy cells"/>
         <part Name="ZeroPointEnergyCollector" ChargeRate="20"/>
     </object>
@@ -3084,6 +3097,7 @@
         <part Name="Metal"/>
         <tag Name="Mods" Value="CommonMods,HeadwearMods,EyewearMods,ElectronicsMods"/>
         <tag Name="Tier" Value="6"/>
+        <tag Name="ExcludeFromDynamicEncounters"/>
     </object>
 
     <object Name="RemembranceShawl" Inherits="BaseCloak">
@@ -3095,6 +3109,7 @@
         <part Name="Physics" Weight="1" Category="Clothes"/>
         <tag Name="Tier" Value="3"/>
         <intproperty Name="Inorganic" Value="0"/>
+        <tag Name="ExcludeFromDynamicEncounters"/>
     </object>
     
     <!-- Search: Organic Fauna -->

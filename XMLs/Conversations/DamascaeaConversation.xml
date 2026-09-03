@@ -1,6 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <conversations>
     <conversation ID="DamascaeaConversation">
+        <start ID="Welcome0" IfNotFinishedQuest="Egghunt" >
+            <text>
+                {{emote|*hammers away at work stoically, disregarding you completely*}}
+            </text>
+            <choice GotoID="End"> ... </choice>
+            <choice ID="Trade" Load="Remove"/>
+        </start>
+        
             <start ID="DamascaeaIntro">
                 <text>
                     Mm, v'hat 'ave we here. Another little =player.apparentSpecies= kome to see my v'ares?

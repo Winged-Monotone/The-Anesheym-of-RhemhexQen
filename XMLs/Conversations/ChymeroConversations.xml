@@ -4,6 +4,16 @@
     <!-- Chymero Conversation -->
 
     <conversation ID="ChymeroLogueInitial" >
+        <start ID="Welcome0" IfNotFinishedQuest="Egghunt">
+            <text>
+                How'd yah get down 'ere, ai?
+                
+                Oi, lis'sen. We're a freindly folk at heart, but we lock our gates for a reason. Har'ship was done to us. I can't abide yah sneakin in here, yeah? Talk with Ditzy-Ditz, and she'll set you straighy on gettin' in proper. yeah?
+            </text>
+            <choice ID="Trade" Load="Remove"/>
+            <choice GotoID="End"> ... </choice>
+        </start>
+        
         <node ID="Start">
             <text>
                 Hoy! Welcome to' the galley, mate! Me name be Chymero! The chief chef o' dis place.

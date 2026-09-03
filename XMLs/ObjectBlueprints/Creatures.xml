@@ -599,6 +599,8 @@
         <tag Name="BleedColor" Value="&amp;O"/>
         <tag Name="BleedPrefix" Value="{{Sulfuric|sulfuric}}"/>
     </object>
+    
+    
 
     <object Name="Grand Mortar Beetle" Inherits="BaseInsect">
         <part Name="Render" DisplayName="grand mortar beetle" Tile="WingyTextures/grandbeetle.png" RenderString="i"
@@ -1197,12 +1199,12 @@
         <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
     </object>
 
-    <object Name="nuurimir" Inherits="NPC">
+    <object Name="Nuurimir" PreviousName="nuurimir" Inherits="NPC">
         <property Name="Role" Value="NPC"/>
         <stat Name="Level" sValue="77"/>
         <tag Name="Gender" Value="neuter"/>
         <part Name="Brain" Hostile="False" WandersRandomly="true" Factions="Anesheym-100"/>
-        <part Name="Render" DisplayName="Dies-In-Rust, Nuurimir" Tile="WingyTextures/creatures/nuurimir.png"
+        <part Name="Render" DisplayName="{{extradimensional|Dies-In-Rust}}, {{orange|Nuurimir}}" Tile="WingyTextures/creatures/nuurimir.png"
               ColorString="&amp;K"
               DetailColor="O" RenderString="z"/>
         <part Name="Description"

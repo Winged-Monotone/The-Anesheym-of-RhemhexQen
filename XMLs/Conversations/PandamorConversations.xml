@@ -18,9 +18,19 @@
     </conversation>
     
     <!--    Starting Hub-->
-
+    
     <conversation ID="PandamoriaeConversation">
-        <start ID="Welcome" IfNotHaveProperty="SpokeTo" SetIntProperty="SpokeTo,1" AllowEscape="false">
+
+        <start ID="Welcome0" IfNotFinishedQuest="Egghunt">
+            <text>
+                Oh, how did you get down here little one?
+            </text>
+            <choice GotoID="End"> ... </choice>
+            <choice ID="WaterRitualChoice" Load="Remove"/>
+            <choice ID="Trade" Load="Remove"/>
+        </start>
+        
+        <start ID="Welcome1" IfNotHaveProperty="SpokeTo" SetIntProperty="SpokeTo,1" AllowEscape="false">
             <text>
                 Ah, 'tis you! The kind soul who returned my missing childre to me. My heart is warmed beyond belief by your kindness. Such compassion is a rarity in these times.
 

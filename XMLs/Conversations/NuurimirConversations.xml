@@ -2,28 +2,73 @@
 <conversations>
 
     <!-- Barathrumite Changes -->
-
+    
 
     <conversation ID="NuurimirConversation">
-        <start ID="IntroductionNuurimirFoodPlz">
+        <start ID="IntroductionNuurimirFoodPlz" IfHaveProperty="NuurimirLearnedThankYou">
+            <text>
+                {{emote|*she regards you wearily, yet with a tired smile*}}
+
+                ... thank you, again.
+            </text>
+            <choice GotoID="End">Live and eat well, friend.</choice>
+        </start>
+        
+        <start ID="IntroductionNuurimirFoodPlz1" IfNotHaveProperty="NuurimirSpokeTo">
             <text>
                 {{emote|*she regards you wearily*}}
                 
                     ... food?
             </text>
-            <choice gotoID="GiveFood"> Sure? Here. {{emote|*you give her a random food item.*}} </choice>
+            <choice GotoID="GiveFood"> Sure? Here. {{emote|*you give her a random food item.*}} </choice>
+            <choice GotoID="End">I have none to give. Live and drink.</choice>
+        </start>
+
+        <start ID="IntroductionNuurimirFoodPlz2">
+            <text>
+                {{emote|*she regards you wearily*}}
+
+                ... more food?
+            </text>
+            <choice GotoID="GiveFood2"> Of course. Here. {{emote|*you give her a random food item.*}} </choice>
             <choice GotoID="End">I have none to give. Live and drink.</choice>
         </start>
         
-        <node ID="GiveFood">
+        <node ID="GiveFood" IfNotHaveProperty="NuurimirSpokeTo">
             <text>
                 {{emote|*she eats the item without pause, completely disregarding you, and then walks away ... *}}
             </text>
-            <choice gotoID="End"> ... </choice>
-            <choice GotoID="End">... Uh, Live and drink, I guess?</choice>
+            <choice GotoID="End" SetIntProperty="NuurimirSpokeTo,1"> ... </choice>
+            <choice GotoID="End" SetIntProperty="NuurimirSpokeTo,1"> ... Uh, Live and drink, I guess?</choice>
+        </node>
+
+        <node ID="GiveFood2">
+            <text>
+                {{emote|*she scarfs down the item without pause, gives you a long uncomfortable stare, and then walks away ... *}}
+            </text>
+            <choice GotoID="NuurimirContinues"> ... You could at least say "thank you?"</choice>
+            <choice GotoID="End">... Live and ... find proper sustenance?</choice>
+        </node>
+
+        <node ID="NuurimirContinues">
+            <text>
+                {{emote|*she stops in her tracks, looking back at you with a genuinely confused grimace.*}}
+                
+                Thank ... you?
+            </text>
+            <choice GotoID="NuurimirLearnsThankYou" SetIntProperty="NuurimirLearnedThankYou,1"> Yes, you know? A show of gratitude when someone does something nice for you?"</choice>
+            <choice GotoID="End">... Live and ... find proper sustenance?</choice>
+        </node>
+
+        <node ID="NuurimirLearnsThankYou">
+            <text>
+                Yes ...
+                
+                Thank you.
+            </text>
+            <choice GotoID="End">... There you go! And you're welcome. Live and eat well, friend.</choice>
         </node>
     </conversation>
-    
 </conversations>
  
  

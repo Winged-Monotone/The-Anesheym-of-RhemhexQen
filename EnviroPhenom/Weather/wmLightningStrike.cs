@@ -5,6 +5,8 @@ using XRL.Rules;
 using XRL.UI;
 using ConsoleLib.Console;
 using XRL.Core;
+using XRL.World.Capabilities;
+using XRL.World.Effects;
 using EMPMutationPart = XRL.World.Parts.Mutation.ElectromagneticPulse;
 
 namespace XRL.World.Parts
@@ -17,7 +19,7 @@ namespace XRL.World.Parts
         {
             var lightningChance = Stat.Random(1, 100);
 
-            if (lightningChance <= 7)
+            if (lightningChance <= 7 && !ThePlayer.HasEffect<Meditating>() && !ThePlayer.HasEffect<Asleep>() && !AutoAct.IsActive())
             {
                 LightningAnimation();
             }
@@ -255,9 +257,12 @@ namespace XRL.World.Parts
                         Buffer.Write("&B^A" + DisplayBeam);
                     }
 
-                    var SparkyBeam = cell.GetRandomLocalAdjacentCell();
-                    Buffer.Goto(SparkyBeam.X, SparkyBeam.Y);
-                    Buffer.Write("&A" + SparkySparkyChars.GetRandomElement());
+                    if (cell != null)
+                    {
+                        var SparkyBeam = cell.GetRandomLocalAdjacentCell();
+                        Buffer.Goto(SparkyBeam.X, SparkyBeam.Y);
+                        Buffer.Write("&A" + SparkySparkyChars.GetRandomElement());
+                    }
                 }
 
                 _TextConsole.DrawBuffer(Buffer);
