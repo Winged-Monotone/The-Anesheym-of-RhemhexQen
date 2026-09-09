@@ -240,8 +240,7 @@
 
                 Give em' a good knockin' for me if yah see them, yeah?
             </text>
-            <choice Target="DitzyContinue3">Of course, I'll give em worse than that. Do you need help finding your eggs?
-                Maybe I can assist?
+            <choice Target="DitzyContinue3">Of course, I'll give em worse than that. Do you need help finding your eggs? Maybe I can assist?
             </choice>
         </node>
 

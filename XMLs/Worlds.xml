@@ -15,18 +15,21 @@
                   HasWeather="true" WindSpeed="0-10" WindDirections="W,SW,S,SE" WindDuration="50-3000">
                 <map FileName="truebuggoville.rpm"/>
                 <builder Class="Music" Track="melodyforcity" Chance="100"/>
+                <prebuilder Class="IsCheckpoint" Key="Rhem'hex Qen"></prebuilder>
             </zone>
 
             <zone Level="11" x="1" y="1" Name="Rhemhez'Qen" NameContext="City Floor" DisableForcedConnections="Yes"
                   HasWeather="true" WindSpeed="0-10" WindDirections="W,SW,S,SE" WindDuration="50-1000">
                 <map FileName="truebuggovilleflr1.rpm"/>
                 <builder Class="Music" Track="melodyforcity" Chance="100"/>
+                <prebuilder Class="IsCheckpoint" Key="Rhem'hex Qen"></prebuilder>
             </zone>
 
             <zone Level="12" x="1" y="1" Name="Rhemhez'Qen" NameContext="Broodchambers" DisableForcedConnections="Yes"
                   HasWeather="true" WindSpeed="0-10" WindDirections="W,SW,S,SE" WindDuration="50-1000">
                 <map FileName="truebuggovilleflr2.rpm"/>
                 <builder Class="Music" Track="melodyforcity" Chance="100"/>
+                <prebuilder Class="IsCheckpoint" Key="Rhem'hex Qen"></prebuilder>
             </zone>
 
             <zone Level="13" x="1" y="1" Name="Rhemhez'Qen" NameContext="Grand Shah's Throne"
@@ -34,6 +37,7 @@
                   WindDuration="50-1000">
                 <map FileName="truebuggovilleflr3.rpm"/>
                 <builder Class="Music" Track="melodyforcity" Chance="100"/>
+                <prebuilder Class="IsCheckpoint" Key="Rhem'hex Qen"></prebuilder>
             </zone>
 
             <zone Level="10" x="1" y="2" Name="Rhemhez'Qen" NameContext="Southern Rhemhex'Qen"

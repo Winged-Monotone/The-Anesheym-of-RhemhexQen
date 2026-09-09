@@ -18,7 +18,7 @@
     </bodyparttypevariants>
 
     <anatomies>
-        <anatomy Name="Doll-Like Shell">
+        <anatomy Name="WM-Doll-Like Shell">
             <part Type="Doll-Like Biocybernetic Head">
                 <part Type="Fox-Eyed Biocybernetic Face"/>
             </part>

@@ -132,7 +132,7 @@
         <part Name="Description"
               Short="A fleshy orifice bares shards of crystallized bile. As it expands, gas condenses in its gut before releasing a deadly volley of barbs at terrifying speeds."/>
         <part Name="Examiner" Complexity="5"/>
-        <part Name="TinkerItem" Bits="0005" CanDisassemble="true" CanBuild="true"/>
+        <part Name="TinkerItem" Bits="0005" CanDisassemble="false" CanBuild="false"/>
         <part Name="BioAmmoLoader" MaxCapacity="30" Available="30" TurnsToGenerate="5"
               ProjectileObject="ProjectileBileBarb"/>
         <part Name="ItemElements" Elements="stars::3"/>
@@ -890,35 +890,30 @@
         <skill Name="Tinkering_ReverseEngineer"/>
         <skill Name="Tinkering_Tinker1"/>
         <skill Name="Tinkering_Tinker2"/>
-        <skill Name="Pistol"/>
-        <skill Name="Pistol_Akimbo"/>
+        <skill Name="Rifles"/>
         <part Name="GivesRep"/>
         <part Name="AISelfPreservation" Threshold="30"/>
-        <tag Name="staticFaction3" Value=",friend,developing a quantum mechanical model"/>
-        <tag Name="staticFaction2" Value=",dislike,=pronouns.possessive= queer appearance"/>
-        <tag Name="staticFaction1" Value=",hate,questioning the legitimacy of their hierarchies"/>
+        <part Name="Interesting" />
+        <tag Name="staticFaction3" Value="Anesheym,friend,for maintaining the structural-integrity of Rhemhex'Qen and its mainframe"/>
+        <tag Name="staticFaction2" Value=",dislike,=pronouns.possessive= confusingly androgynous appearance"/>
+        <tag Name="staticFaction1" Value="Templar,hate,denying them entry into an eater's gene-manipulation facility."/>
         <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
-        <tag Name="Gender" Value="plural"/>
-        <tag Name="PronounSet" Value="they/them"/>
+        <tag Name="Gender" Value="nonspecific"/>
+<!--        <tag Name="PronounSet" Value="they/them"/>-->
         <xtagGrammar Proper="true"/>
-        <property Name="WontSell" Value="Overloaded Laser Pistol"/>
+        <property Name="WontSell" Value="Phase Cannon"/>
         <inventoryobject Blueprint="Ulnar Stimulators" Number="1" CellChance="100" CellFullChance="100"
                          CellType="Chem Cell"/>
         <inventoryobject Blueprint="Strength Exo" Number="1" CellChance="100" CellFullChance="100"
                          CellType="Chem Cell"/>
         <inventoryobject Blueprint="Plastifer Sneakers" Number="1"/>
-        <inventoryobject Blueprint="Polyhedral Rings" Number="1"/>
-        <inventoryobject Blueprint="Spiral Iron" Number="1"/>
-        <inventoryobject Blueprint="Rough Agate" Number="0-1"/>
-        <inventoryobject Blueprint="Rough Jasper" Number="0-1"/>
-        <inventoryobject Blueprint="Rough Amethyst" Number="0-1"/>
-        <inventoryobject Blueprint="Rough Sapphire" Number="0-1"/>
-        <inventoryobject Blueprint="Rough Emerald" Number="0-1"/>
-        <inventoryobject Blueprint="Overloaded Laser Pistol" Number="2" CellChance="100" CellFullChance="100"
+        <inventoryobject Blueprint="Crimson Rondure" Number="1"/>
+        <inventoryobject Blueprint="Rough Jasper" Number="0-3"/>
+        <inventoryobject Blueprint="Phase Cannon" Number="2" CellChance="100" CellFullChance="100"
                          CellType="Chem Cell"/>
-        <inventoryobject Blueprint="CyberneticsCreditWedge_Cheap" Number="1"/>
         <xtagWaterRitual NoJoin="true" numRecipes="3"/>
         <part Name="ConversationScript" ConversationID="SaileConversation"/>
+        <part Name="Interesting" />
     </object>
 
     <object Name="Kaemea" Inherits="NPC">
@@ -939,8 +934,9 @@
         <skill Name="Tinkering_ReverseEngineer"/>
         <skill Name="Tinkering_Tinker1"/>
         <tag Name="Gender" Value="plural"/>
-        <tag Name="PronounSet" Value="they/them"/>
+<!--        <tag Name="PronounSet" Value="they/them"/>-->
         <part Name="ConversationScript" ConversationID="LilTwitchyBuggoConvo"/>
+        <part Name="Interesting" />
     </object>
 
     <object Name="bugvillager" Inherits="NPC">
@@ -1100,6 +1096,7 @@
               Short="Rippling intramuscular tissue swells against a brutish-frame of shale-scratched exoskeleton, their spinnerets lick the air from the cusp of their cheeks in a star-like pattern as their globus eyes scan the courtroom eagerly."/>
         <part Name="AISelfPreservation" Threshold="80"/>
         <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+        <part Name="Interesting" />
     </object>
 
     <object Name="bughonorguard2" Inherits="NPC">
@@ -1113,6 +1110,7 @@
               Short="What could almost be mistaken for a child is instead a petite warrior from a lost proto-cline. Their chitin ripples like disturbed water frozen in the moment, a deep-blue as pristine as sapphire hides hints of glittering green beneath its surface, the sheen breaks the slender silhouette of the creature in a way that makes them difficult to parse with your eyes."/>
         <part Name="AISelfPreservation" Threshold="80"/>
         <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+        <part Name="Interesting" />
     </object>
 
     <object Name="bugqueenmain" Inherits="NPC">
@@ -1150,6 +1148,7 @@
 
         <stat Name="Hitpoints" sValue="5000"/>
         <stat Name="Speed" sValue="20"/>
+        <part Name="Interesting" />
     </object>
 
     <object Name="bugqueenovi" Inherits="NPC">
@@ -1167,11 +1166,11 @@
               Short="A writhing, pulsating mass of insect flesh and sinuous muscle, it fuses into the spine of the great Shah, drawing in their infinite gene-stock to be molded into egglings. Future progeny are to be birthed at every fifth hour. Such biomechanical workings is not but one of nature's most elusive enigmas and one would find it hard not to ogle such an incredible specimen ..."/>
         <part Name="AISelfPreservation" Threshold="80"/>
         <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
-        <xtagWaterRitual NoJoin="true"/>
-        <part Name="GivesRep" repValue="800"/>
-        <tag Name="staticFaction1" Value="Anesheym,friend,laying the first egg and birthing the colony"/>
-        <tag Name="staticFaction2" Value="Templar,hate,threatening the cohesion of their orthodoxy"/>
-        <tag Name="staticFaction3" Value="Seekers,dislike,being an enigma, and withholding secrets of the anima"/>
+<!--        <xtagWaterRitual NoJoin="true"/>-->
+<!--        <part Name="GivesRep" repValue="800"/>-->
+<!--        <tag Name="staticFaction1" Value="Anesheym,friend,laying the first egg and birthing the colony"/>-->
+<!--        <tag Name="staticFaction2" Value="Templar,hate,threatening the cohesion of their orthodoxy"/>-->
+<!--        <tag Name="staticFaction3" Value="Seekers,dislike,being an enigma, and withholding secrets of the anima"/>-->
         <xtagGrammar Proper="true"/>
         <part Name="wmAnchored"/>
         <part Name="ConversationScript" ConversationID="PandamoriaesButtversation"/>
@@ -1248,7 +1247,7 @@
 
         <stat Name="AV" sValue="16"/>
 
-        
+        <part Name="Interesting" />
     </object>
 
     <object Name="bugtinker" Inherits="NPC">
@@ -1263,6 +1262,7 @@
               Short="This anesheym scrapamist looms above a mechanical workbench, its various arms working carefully between several projects with ease. Their chitin-skin is speckled with soot and heat-warped from work, yet it continues unhindered. Ceaselessly, with what even seems like a slight grin on their face."/>
         <part Name="AISelfPreservation" Threshold="80"/>
         <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+        <part Name="Interesting" />
     </object>
 
     <object Name="DitzyFly" Inherits="NPC">
@@ -1282,6 +1282,7 @@
         <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
         <mutation Name="Spinnerets" Level="1"/>
         <mutation Name="MultipleArms" Level="1"/>
+        <part Name="Interesting" />
     </object>
 
     <object Name="Chymero" Inherits="NPC">
@@ -1302,6 +1303,7 @@
         <tag Name="Merchant"/>
         <tag Name="Unenslavable"/>
         <part Name="GenericInventoryRestocker" Table="ChymeroWares"/>
+        <part Name="Interesting" />
     </object>
 
     <object Name="Damasceae" Inherits="NPC">
@@ -1322,6 +1324,7 @@
         <tag Name="Merchant"/>
         <tag Name="Unenslavable"/>
         <part Name="GenericInventoryRestocker" Table="DamascaeaWares"/>
+        <part Name="Interesting" />
     </object>
 
 
@@ -1351,10 +1354,10 @@ eater, hedonist, thirst--
         
         />
 
-        <part Name="Body" Anatomy="Doll-Like Shell"/>
+        <part Name="Body" Anatomy="WM-Doll-Like Shell"/>
 
         <part Name="Physics" VaporTemperature="99999999"/>
-
+        <part Name="Interesting" />
 
         <part Name="Brain" Wanders="true" Calm="true" Factions="Playerneutral-100"/>
 
@@ -1544,7 +1547,7 @@ eater, hedonist, thirst--
         <mutation Name="Spinnerets" Level="2"/>
         <mutation Name="WillForce" Level="1"/>
         <mutation Name="MultipleArms" Level="10"/>
-
+        <part Name="Interesting" />
     </object>
     
     <!-- Search: Organic Fauna -->

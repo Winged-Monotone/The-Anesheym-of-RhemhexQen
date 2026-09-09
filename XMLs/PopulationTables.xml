@@ -363,12 +363,8 @@
 
     <population Name="wmTier1EggRewards">
         <group Name="Rewards" Style="pickeach">
-            <table Name="Artifact 1R"/>
-            <table Name="Artifact 1R"/>
-            <table Name="Artifact 1R"/>
-            <table Name="Armor 1R"/>
-            <table Name="Armor 1R"/>
-            <table Name="Armor 1R"/>
+            <table Name="Artifact 1"/>
+            <table Name="Armor 1"/>
             <table Name="Food 1"/>
             <table Name="Food 1"/>
             <table Name="Food 1"/>
@@ -380,12 +376,8 @@
 
     <population Name="wmTier2EggRewards">
         <group Name="Rewards" Style="pickeach">
-            <table Name="Artifact 2R"/>
-            <table Name="Artifact 2R"/>
-            <table Name="Artifact 2R"/>
-            <table Name="Armor 2R"/>
-            <table Name="Armor 2R"/>
-            <table Name="Armor 2R"/>
+            <table Name="Artifact 2"/>
+            <table Name="Armor 2"/>
             <table Name="Food 2"/>
             <table Name="Food 2"/>
             <table Name="Food 2"/>
@@ -404,12 +396,10 @@
             <object Blueprint="Long Sword3"/>
             <object Blueprint="Long Sword3th"/>
             <object Blueprint="Dagger3"/>
-            <table Name="Artifact 3R"/>
-            <table Name="Artifact 3R"/>
-            <table Name="Artifact 3R"/>
-            <table Name="Armor 4R"/>
-            <table Name="Armor 4R"/>
-            <table Name="Armor 4R"/>
+            <table Name="Artifact 3"/>
+            <table Name="Artifact 3"/>
+            <table Name="Armor 4"/>
+            <table Name="Armor 4"/>
         </group>
     </population>
 
@@ -422,12 +412,10 @@
             <object Blueprint="Long Sword4"/>
             <object Blueprint="Long Sword4th"/>
             <object Blueprint="Dagger4"/>
-            <table Name="Artifact 4R"/>
-            <table Name="Artifact 4R"/>
-            <table Name="Artifact 4R"/>
-            <table Name="Armor 4R"/>
-            <table Name="Armor 4R"/>
-            <table Name="Armor 4R"/>
+            <table Name="Artifact 4"/>
+            <table Name="Artifact 4"/>
+            <table Name="Armor 4"/>
+            <table Name="Armor 4"/>
         </group>
     </population>
 
@@ -440,12 +428,10 @@
             <object Blueprint="Long Sword5"/>
             <object Blueprint="Long Sword5th"/>
             <object Blueprint="Dagger5"/>
-            <table Name="Artifact 5R"/>
-            <table Name="Artifact 5R"/>
-            <table Name="Artifact 5R"/>
-            <table Name="Armor 5R"/>
-            <table Name="Armor 5R"/>
-            <table Name="Armor 5R"/>
+            <table Name="Artifact 5"/>
+            <table Name="Artifact 5"/>
+            <table Name="Armor 5"/>
+            <table Name="Armor 5"/>
         </group>
     </population>
 
@@ -458,12 +444,10 @@
             <object Blueprint="Long Sword6"/>
             <object Blueprint="Long Sword6th"/>
             <object Blueprint="Dagger6"/>
-            <table Name="Artifact 6R"/>
-            <table Name="Artifact 6R"/>
-            <table Name="Artifact 6R"/>
-            <table Name="Armor 6R"/>
-            <table Name="Armor 6R"/>
-            <table Name="Armor 6R"/>
+            <table Name="Artifact 6"/>
+            <table Name="Artifact 6"/>
+            <table Name="Armor 6"/>
+            <table Name="Armor 6"/>
         </group>
     </population>
 
@@ -476,12 +460,10 @@
             <object Blueprint="Long Sword7"/>
             <object Blueprint="Long Sword7th"/>
             <object Blueprint="Dagger7"/>
-            <table Name="Artifact 7R"/>
-            <table Name="Artifact 7R"/>
-            <table Name="Artifact 7R"/>
-            <table Name="Armor 7R"/>
-            <table Name="Armor 7R"/>
-            <table Name="Armor 7R"/>
+            <table Name="Artifact 7"/>
+            <table Name="Artifact 7"/>
+            <table Name="Armor 7"/>
+            <table Name="Armor 7"/>
         </group>
     </population>
 
@@ -494,12 +476,10 @@
             <object Blueprint="Long Sword8"/>
             <object Blueprint="Long Sword8th"/>
             <object Blueprint="Dagger8"/>
-            <table Name="Artifact 8R"/>
-            <table Name="Artifact 8R"/>
-            <table Name="Artifact 8R"/>
-            <table Name="Armor 8R"/>
-            <table Name="Armor 8R"/>
-            <table Name="Armor 8R"/>
+            <table Name="Artifact 8"/>
+            <table Name="Artifact 8"/>
+            <table Name="Armor 8"/>
+            <table Name="Armor 8"/>
         </group>
     </population>
 

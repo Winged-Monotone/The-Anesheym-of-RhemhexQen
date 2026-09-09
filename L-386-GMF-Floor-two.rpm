@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Map Width="80" Height="25" ID="LongSigh2">
+<Map Width="80" Height="25">
   <cell X="0" Y="0">
     <object Name="GrossWall"></object>
-    <object Name="RevokeRecoilersWidget"></object>
     <object Name="GoreFloorSpawnerWidget"></object>
+    <object Name="AutoSealingWallsWidget"></object>
   </cell>
   <cell X="1" Y="0">
     <object Name="GrossWall"></object>
@@ -1250,8 +1250,8 @@
     <object Name="GrossWall"></object>
   </cell>
   <cell X="74" Y="4">
-    <object Name="Yellow Security Door"></object>
     <object Name="SterileTile"></object>
+    <object Name="Mechanical Hanger Door"></object>
   </cell>
   <cell X="75" Y="4">
     <object Name="GrossWall"></object>

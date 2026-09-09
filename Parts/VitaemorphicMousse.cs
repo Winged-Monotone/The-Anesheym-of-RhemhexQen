@@ -82,15 +82,15 @@ namespace XRL.World.Parts
                         ThePlayer.GainMP(20);
                         ThePlayer.ShowSuccess(
                             "\n\nThe genetic manifolds of your being awaken to your senses like glancing at a gods' canvas just before the outline has formed. You might critique it, guide it. And maybe more. The brush strokes are yours now, what will you create with it?" 
-                            + "\n\n You gain {{cyan|10}} mutation points."
-                            + "\n You gain {{cyan|7}} attribute points."
+                            + "\n\n You gain {{cyan|20}} mutation points."
+                            + "\n You gain {{cyan|14}} attribute points."
                             + "\n"
-                            + "\n{{green|+1 to Strength"
-                            + "\n+1 to Agility"
-                            + "\n+1 to Toughness"
-                            + "\n+1 to Willpower"
-                            + "\n+1 to Intelligence"
-                            + "\n+1 to Ego}}");
+                            + "\n{{green|+4 to Strength"
+                            + "\n+4 to Agility"
+                            + "\n+4 to Toughness"
+                            + "\n+4 to Willpower"
+                            + "\n+4 to Intelligence"
+                            + "\n+4 to Ego}}");
                         ThePlayer.SetIntProperty("DrankVitaeBefore", 1);
                         ParentObject.Destroy();
                     }

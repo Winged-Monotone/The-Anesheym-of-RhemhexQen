@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Map Width="80" Height="25" ID="LongSigh6">
+<Map Width="80" Height="25">
   <cell X="0" Y="0">
     <object Name="RadiantHeatFullMap"></object>
     <object Name="GoreFloorSpawnerWidget"></object>
@@ -4533,7 +4533,7 @@
   </cell>
   <cell X="54" Y="15">
     <object Name="MarbleFloor"></object>
-    <object Name="Armor Rack"></object>
+    <object Name="ERAS Equipper"></object>
   </cell>
   <cell X="55" Y="15">
     <object Name="MarbleFloor"></object>

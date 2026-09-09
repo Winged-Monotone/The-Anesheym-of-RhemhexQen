@@ -1269,7 +1269,7 @@
         <tag Name="NoSparkingQuest"/>
         <tag Name="DynamicObjectsTable:Chests"/>
         <tag Name="HangingSupport"/>
-        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+        <tag Name="ExcludeFromDynamicEncounters"/>
         <removepart Name="Graffitied"/>
     </object>
 
@@ -1277,9 +1277,12 @@
         <part Name="Render" DisplayName="armory locker" Tile="WingyTextures/armslocker.png" ColorString="&amp;m"
               DetailColor="M"/>
         <part Name="Description" Short="A locker of sorts made from synthetic material, it opens from the bottom-fold like the top-jaw opens to feed, within its nylon straps, arms and tools of the begotten age rest untouched for eons. This one is marked with decals, 'Afron Nielst.'"/>
+        <inventoryobject Blueprint="Codec AfronAscension 1" Number="1"/>
         <inventoryobject Blueprint="Codec AfronAscension 2" Number="1"/>
         <inventoryobject Blueprint="Codec AfronAscension 3" Number="1"/>
         <inventoryobject Blueprint="WornStickyNote" Number="1"/>
+        <tag Name="ExcludeFromDynamicEncounters"/>
+
     </object>
 
 
@@ -3233,6 +3236,7 @@
         <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_metal"/>
         <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_metal"/>
         <removepart Name="Graffitied"/>
+        <tag Name="ExcludeFromDynamicEncounters"/>
     </object>
 
 <!--    <object Name="LunarWall" Inherits="Wall">-->
@@ -3267,6 +3271,7 @@
         <tag Name="ImmutableWhenUnexplored" Value="1"/>
         <tag Name="Tier" Value="6"/>
         <removepart Name="Graffitied"/>
+        <tag Name="ExcludeFromDynamicEncounters"/>
     </object>
 
     <object Name="BaseFleshWall" Inherits="BaseWallRock">
@@ -3286,6 +3291,7 @@
         <tag Name="BaseObject" Value="*noinherit"/>
         <removepart Name="Graffitied"/>
         <part Name="NielstGodIsDead"/>
+        <tag Name="ExcludeFromDynamicEncounters"/>
     </object>
 
     <object Name="BaseFleshWall2" Inherits="BaseWallRock">
@@ -3305,6 +3311,7 @@
         <tag Name="BaseObject" Value="*noinherit"/>
         <removepart Name="Graffitied"/>
         <part Name="NielstGodIsDead"/>
+        <tag Name="ExcludeFromDynamicEncounters"/>
     </object>
 
     <object Name="GrossWall" Inherits="BaseFleshWall">
@@ -3407,6 +3414,7 @@
               Short="Steel cylinders converge at a breach, locking twin-slabs of treated titanium, baring the way."/>
         <part Name="LongSighSecurityDoorUnlock" SecurityCredentialsLevel="0"/>
         <removepart Name="GenopticonDoorUnlock"/>
+        <tag Name="ExcludeFromDynamicEncounters"/>
     </object>
 
     <object Name="Emerald Security Hangar Door" Inherits="BaseLockedMechanicalHangarDoor">
@@ -3688,7 +3696,7 @@
         <part Name="Description"
               Short="Made in the shape of a casket, the shadow of the shield holds sparse clouds of luminent waves."/>
         <part Name="Commerce" Value="450"/>
-        <part Name="Physics" Weight="15"/>
+        <part Name="Physics" Weight="255"/>
         <part Name="Metal"/>
         <tag Name="EquipSound" Value="sfx_equip_material_generic_glass"/>
         <tag Name="Flawless"/>
@@ -3760,7 +3768,7 @@
         <part Name="Render" DisplayName="{{dreamsmoke|keracite}} lamellar armor"
               Tile="WingyTextures/keracitelamellararmor.png" TileColor="&amp;K" DetailColor="P"
               ColorString="&amp;K" RenderString="]"/>
-        <part Name="Commerce" Value="350"/>
+        <part Name="Commerce" Value="4000"/>
         <part Name="Description" Short="Stylish black armor with a silk shoulder-crest."/>
         <tag Name="Mods" Value="None"/>
         <tag Name="BaseObject" Value="*noinherit"/>
@@ -3816,7 +3824,7 @@
     <!--    ERAS -->
 
     <object Name="ERAS Equipper" Inherits="Weapon Rack">
-        <part Name="Render" DisplayName="ERAS Equipper" Tile="WingyTextures/AresEquipter.png" ColorString="&amp;Y"
+        <part Name="Render" DisplayName="E.R.A.S locker" Tile="WingyTextures/AresEquipter.png" ColorString="&amp;Y"
               DetailColor="C"/>
         <part Name="Description" Short="A large vault, a silhouetted figure in black rest inside. Awaiting its time to be released."/>
         <tag Name="InventoryPopulationTable" Value="GunRack"/>
@@ -3829,13 +3837,25 @@
     </object>
 
     <object Name="E.R.A.S Garments" Inherits="BaseTierBody7_AV">
-        <part Name="Armor" AV="-5" DV="-5" Acid="0" Elec="100" Cold="0" Heat="999"/>
+        <part Name="Armor" AV="0" DV="-10" Acid="0" Elec="100" Cold="0" Heat="999"/>
         <part Name="Render" DisplayName="{{dreamy|E.R.A.S}} Garments" Tile="WingyTextures/ERAS-Garments.png"
               TileColor="&amp;K" DetailColor="Y" ColorString="&amp;K" RenderString="]"/>
         <part Name="Commerce" Value="350"/>
         <part Name="Description" Short="A sealed-suit capable of resisting microwaves."/>
         <tag Name="Mods" Value="None"/>
         <tag Name="BaseObject" Value="*noinherit"/>
+    </object>
+
+    <object Name="Crimson Rondure" Inherits="BaseFaceJewelry">
+        <part Name="Render" DisplayName="{{crimson|crimson rondure}}" RenderString="236" Tile="Items/sw_dream_rondure.bmp" ColorString="&amp;y" TileColor="&amp;Y" DetailColor="y" />
+        <part Name="Commerce" Value="50" />
+        <part Name="Description" Short="Blood-cryst was melted and cast to a perfect sphere in isomorphic veneration of the Kasaphescence." />
+        <part Name="Physics" Weight="1" Category="Trade Goods" />
+        <part Name="AddsRep" Faction="Mechanimists" Value="50" />
+        <tag Name="EquipSound" Value="sfx_equip_material_coin" />
+        <tag Name="DynamicObjectsTable:TradeGoods" />
+        <tag Name="Tier" Value="3" />
+        <part Name="ItemElements" Elements="jewels::6" />
     </object>
 
     <!-- Search: Mutation Items -->
@@ -4002,10 +4022,8 @@
               Tile="WingyTextures/creatures/insect_egg_for_inventory.png"
               DetailColor="k" RenderString="*" ColorString="&amp;Y" RenderLayer="5"/>
         <part Name="Description" Short="A strange, pulsating egg."/>
-        <part Name="Physics" Category="Trade Goods"/>
-        <tag Name="EggHuntItemT1"/>
+        <part Name="Physics" Weight="0" Category="Trade Goods"/>
         <part Name="Commerce" Value="25"/>
-        <tag Name="Tier" Value="1"/>
         <tag Name="DynamicObjectsTable:TradeGoods"/>
         <tag Name="Role" Value="Common"/>
         <part Name="NoDamage"/>
@@ -4017,112 +4035,70 @@
 
     <object Name="strangeeggt1" Inherits="BaseStrangeEgg">
         <part Name="Render" DisplayName="{{yellow|strange egg}}"
-              Tile="WingyTextures/creatures/insect_egg_for_inventory.png"
               DetailColor="k" RenderString="*" ColorString="&amp;Y" RenderLayer="5"/>
-        <part Name="Description" Short="A strange, pulsating egg."/>
-        <part Name="Physics" Category="Trade Goods"/>
         <tag Name="EggHuntItemT1"/>
         <part Name="Commerce" Value="25"/>
         <tag Name="Tier" Value="1"/>
-        <tag Name="DynamicObjectsTable:TradeGoods"/>
         <tag Name="Role" Value="Common"/>
         <part Name="NoDamage"/>
-        <tag Name="NoEffects"/>
-        <tag Name="PlayerWontSell"/>
     </object>
 
     <object Name="strangeeggt2" Inherits="BaseStrangeEgg">
         <part Name="Render" DisplayName="{{M|bizarre egg}}" Tile="WingyTextures/creatures/insect_egg_for_inventory.png"
               DetailColor="k" RenderString="*" ColorString="&amp;M" RenderLayer="5"/>
-        <part Name="Description" Short="A strange, pulsating egg."/>
-        <part Name="Physics" Category="Trade Goods"/>
         <tag Name="EggHuntItemT2"/>
         <part Name="Commerce" Value="100"/>
         <tag Name="Tier" Value="2"/>
-        <tag Name="DynamicObjectsTable:TradeGoods"/>
         <tag Name="Role" Value="Minion"/>
-        <part Name="NoDamage"/>
-        <tag Name="NoEffects"/>
-        <tag Name="PlayerWontSell"/>
     </object>
 
     <object Name="strangeeggt3" Inherits="BaseStrangeEgg">
         <part Name="Render" DisplayName="{{red|ruby egg}}" Tile="WingyTextures/creatures/insect_egg_for_inventory.png"
               DetailColor="k"
               RenderString="*" ColorString="&amp;R" RenderLayer="5"/>
-        <part Name="Description" Short="A strange, pulsating egg."/>
-        <part Name="Physics" Category="Trade Goods"/>
         <tag Name="EggHuntItemT3"/>
         <part Name="Commerce" Value="200"/>
         <tag Name="Tier" Value="3"/>
-        <tag Name="DynamicObjectsTable:TradeGoods"/>
         <tag Name="Role" Value="Skirmisher"/>
-        <part Name="NoDamage"/>
-        <tag Name="NoEffects"/>
-        <tag Name="PlayerWontSell"/>
     </object>
 
     <object Name="strangeeggt4" Inherits="BaseStrangeEgg">
         <part Name="Render" DisplayName="{{blue|sapphire egg}}"
               Tile="WingyTextures/creatures/insect_egg_for_inventory.png"
               DetailColor="k" RenderString="*" ColorString="&amp;B" RenderLayer="5"/>
-        <part Name="Description" Short="A strange, pulsating egg."/>
-        <part Name="Physics" Category="Trade Goods"/>
         <tag Name="EggHuntItemT4"/>
         <part Name="Commerce" Value="400"/>
         <tag Name="Tier" Value="4"/>
-        <tag Name="DynamicObjectsTable:TradeGoods"/>
         <tag Name="Role" Value="Skirmisher"/>
-        <part Name="NoDamage"/>
-        <tag Name="NoEffects"/>
-        <tag Name="PlayerWontSell"/>
     </object>
 
     <object Name="strangeeggt5" Inherits="BaseStrangeEgg">
         <part Name="Render" DisplayName="{{jade|jade egg}}" Tile="WingyTextures/creatures/insect_egg_for_inventory.png"
               DetailColor="k" RenderString="*" ColorString="&amp;G" RenderLayer="5"/>
-        <part Name="Description" Short="A strange, pulsating egg."/>
-        <part Name="Physics" Category="Trade Goods"/>
         <tag Name="EggHuntItemT5"/>
         <part Name="Commerce" Value="800"/>
         <tag Name="Tier" Value="5"/>
-        <tag Name="DynamicObjectsTable:TradeGoods"/>
         <tag Name="Role" Value="Uncommon"/>
-        <part Name="NoDamage"/>
-        <tag Name="NoEffects"/>
-        <tag Name="PlayerWontSell"/>
     </object>
 
     <object Name="strangeeggt6" Inherits="BaseStrangeEgg">
         <part Name="Render" DisplayName="{{silvery|chrome egg}}"
               Tile="WingyTextures/creatures/insect_egg_for_inventory.png"
               DetailColor="k" RenderString="*" ColorString="&amp;K" RenderLayer="5"/>
-        <part Name="Description" Short="A strange, pulsating egg."/>
-        <part Name="Physics" Category="Trade Goods"/>
         <tag Name="EggHuntItemT6"/>
         <part Name="Commerce" Value="1000"/>
         <tag Name="Tier" Value="6"/>
-        <tag Name="DynamicObjectsTable:TradeGoods"/>
-        <part Name="NoDamage"/>
-        <tag Name="NoEffects"/>
         <tag Name="Role" Value="Rare"/>
-        <tag Name="PlayerWontSell"/>
     </object>
 
     <object Name="strangeeggt7" Inherits="BaseStrangeEgg">
         <part Name="Render" DisplayName="{{nectar|eater's egg}}"
               Tile="WingyTextures/creatures/insect_egg_for_inventory.png"
               DetailColor="k" RenderString="*" ColorString="&amp;W" RenderLayer="5"/>
-        <part Name="Description" Short="A strange, pulsating egg."/>
-        <part Name="Physics" Category="Trade Goods"/>
         <tag Name="EggHuntItemT7"/>
         <part Name="Commerce" Value="1500"/>
         <tag Name="Tier" Value="7"/>
-        <tag Name="DynamicObjectsTable:TradeGoods"/>
-        <part Name="NoDamage"/>
-        <tag Name="NoEffects"/>
         <tag Name="Role" Value="Rare"/>
-        <tag Name="PlayerWontSell"/>
     </object>
 
     <object Name="strangeeggt8" Inherits="BaseStrangeEgg">
@@ -4130,15 +4106,9 @@
               Tile="WingyTextures/creatures/insect_egg_for_inventory.png" DetailColor="k" RenderString="*"
               ColorString="&amp;O"
               RenderLayer="5"/>
-        <part Name="Description" Short="A strange, pulsating egg."/>
-        <part Name="Physics" Category="Trade Goods"/>
         <tag Name="EggHuntItemT8"/>
         <part Name="Commerce" Value="2000"/>
         <tag Name="Tier" Value="8"/>
-        <tag Name="DynamicObjectsTable:TradeGoods"/>
         <tag Name="Role" Value="Rare"/>
-        <part Name="NoDamage"/>
-        <tag Name="NoEffects"/>
-        <tag Name="PlayerWontSell"/>
     </object>
 </objects>

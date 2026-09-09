@@ -43,10 +43,10 @@ namespace XRL.World.Parts
 
                 if (GasChance > 90)
                 {
-                    var adjCells = ParentObject.CurrentCell.GetAdjacentCells();
-                    foreach (var C in adjCells)
+                    var Cell = ParentObject.CurrentCell;
+                    if (Cell != null)
                     {
-                            C.AddObject("PinkMiasma500");
+                            Cell.AddObject("PinkMiasma500");
                     }
                 }
             }

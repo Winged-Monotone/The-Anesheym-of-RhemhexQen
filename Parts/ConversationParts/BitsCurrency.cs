@@ -38,14 +38,16 @@ namespace XRL.World.Conversations.Parts
             var MainOptions = new List<string>();
             var ListInt = new List<int>();
             var BitValues = new List<int>();
+            var BitKeys = new List<char>();
             
             foreach (var Bit in Locker.BitStorage)
             {
                 if (Bit.Value > 0)
                 {
                     var BitTier = BitType.GetBitTier(Bit.Key);
-                    var BitValue = BitTier * 10;
+                    var BitValue = (1 + BitTier) * 10;
                     
+                    BitKeys.Add(Bit.Key);
                     MainOptions.Add(BitType.BitMap[Bit.Key].Description);
                     ListInt.Add(Bit.Value);
                     BitValues.Add(BitValue);
@@ -65,10 +67,12 @@ namespace XRL.World.Conversations.Parts
 
                 foreach (var Bit in result)
                 {
-                    var Name = MainOptions[Bit.Selected][0];
+                    // var Name = MainOptions[Bit.Selected][0];
                     var Value = BitValues[Bit.Selected];
+                    var Key = BitKeys[Bit.Selected];
+                    
                     SaileBitGoal += Value * Bit.Amount;
-                    Locker.UseBits(Name, Bit.Amount);
+                    Locker.UseBits(Key, Bit.Amount);
                 }
 
                 if (SaileBitGoal >= 100)
