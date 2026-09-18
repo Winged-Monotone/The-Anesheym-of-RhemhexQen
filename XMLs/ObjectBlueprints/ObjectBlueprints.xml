@@ -38,6 +38,7 @@
         <xtagGrammar Proper="true"/>
         <tag Name="Terrain" Value="Crystholts"/>
         <tag Name="RegionTier" Value="4"/>
+        <tag Name="NoBiomes" Value="1"/>
     </object>
 
     <object Name="CrystholtsGrove2" Inherits="Terrain">
@@ -48,6 +49,7 @@
         <xtagGrammar Proper="true"/>
         <tag Name="Terrain" Value="Crystholts"/>
         <tag Name="RegionTier" Value="4"/>
+        <tag Name="NoBiomes" Value="1"/>
     </object>
 
     <object Name="BrimstoneWaste" Inherits="Terrain">
