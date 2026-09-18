@@ -30,9 +30,6 @@
 [//]: # (**Steam Workpage:** https://steamcommunity.com/sharedfiles/filedetails/?id=2198789130)
 
 
-
-
-
 [f] - Nuurimir's conversations have been fixed.
 [f] - Dynamic Exclusions were added for carious items
 [f] - Null exception fixes.
@@ -41,5 +38,8 @@
 [c] - lowered the spawn rate of Miasmic gas from the gas spawners
 [c] - Typo Fixes
 [f] - fixed the reward wording for true kin ... cuz um, yeah it was very very wrong lol
-[f] - Added ERAS Equipper because ... it waws missing :x oops
+[f] - Added ERAS Equipper because ... it was missing :x oops
 [f] - fixed nielst door to be genopticon door and added the "no you aint skippin shit" widget to the second floor.
+[f] - added Map fixes, added auto seal to first floor with Becooming terminals
+[f] - removed secret items from craftable list
+[f] - Screwed grove, added second grove on accident with last push, fixed it ...

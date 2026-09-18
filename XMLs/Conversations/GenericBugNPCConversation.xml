@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<conversations>
+
+    <!-- Chymero Conversation -->
+
+    <conversation ID="BaseVillagerConversations" >
+    <start ID="GenericWelcomeIffriendly" IfFinishedQuest="Egghunt">
+    <text>
+<!--        crystholt crystnium warnings-->
+        Beware the pretty-water, friend.~
+        The crystholt water-holes are clear as crystal, drink them, and you'll go clear too.~
+        Cryst-water may look fresh but slake your thirst on that a crysten-effigy will take your place in no time.~
+        The shiny-baubles near the ponds should warn enough, beware the crystna. Their fumes turn all to glitter.~
+<!--        crystholt crystna warnings-->
+        Crystna vines might reach out and snatch you. Beware the cryst-weed.~
+<!--        Abyssa, The Anima's Wake responses.-->
+        May your dream-realms be calm and serene, friend.~
+        Dream in serenity, friend.~
+        Yes, I dreamt of this conversation, dream-friend.~
+        I dreamt of this meet, friend.~
+        Welcome to the eternal Rhem, dream-friend.~
+<!--        food related responses-->
+        {{emote|*nibbles on crispy shard-leaf*}}~
+        {{emote|*nips at crunchy chitin-chips*}}~
+        Might grab some sacchar-chips from chymero's today.~
+        I'm craving ollah, friend.~
+        Amrita over eggs-benedict, the thought makes my bellies rumble.~
+        Mantra-ray flank steaks, a sprinkle of roe, some cryst-tree sap on the side. The meal-thought is maddening, friend.~
+        Careful with the mad-honey, friend, the mind-journeys aren't always fun.~
+        I'm bringing brimberries for my youngers.~
+        The brimraisin's might reek, but they are divine.~
+<!--        The Blood Pits related responses-->
+        Beware the blood-pits, friend.~
+        Pits of anguish amongst the cryst, their amalgam scour the lands, murdering and capturing mortal-flesh. They drag you in and your flesh melds with theirs.~
+        The blood-pits will take you if you are not careful, friend.~
+        I grieve, one of our own was dragged into the pits, again. We see their faces amongst the Scouer.~
+        We lost another to the blood-pits. Why does this dream's cruelty wrought such illness on our lands?~
+    </text>
+        <choice ID="Trade" Load="Remove"/>
+        <choice GotoID="End"> ... </choice>
+    </start>
+        
+    </conversation>
+</conversations>

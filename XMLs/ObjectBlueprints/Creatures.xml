@@ -42,6 +42,7 @@
         <tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_plant" />
         <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_genPlant" />
         <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_genPlant" />
+        <part Name="NielstGodIsDead"/>
     </object>
 
     <object Name="BaseAmalgamAttributes">
@@ -913,7 +914,6 @@
                          CellType="Chem Cell"/>
         <xtagWaterRitual NoJoin="true" numRecipes="3"/>
         <part Name="ConversationScript" ConversationID="SaileConversation"/>
-        <part Name="Interesting" />
     </object>
 
     <object Name="Kaemea" Inherits="NPC">

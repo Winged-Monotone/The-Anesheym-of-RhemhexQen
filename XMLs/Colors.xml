@@ -19,6 +19,7 @@
         <shader Name="sulfuric" Type="sequence" Colors="crimson-O-o-dark crimson"/>
 
         <shader Name="encoded" Type="sequence" Colors="crimson-bright royal purple-crimson-text dark pink"/>
+        
     </shaders>
 
 </colors>

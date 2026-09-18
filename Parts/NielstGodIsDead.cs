@@ -25,15 +25,20 @@ namespace XRL.World.Parts
                 return true;
             }
 
-            ParentObject.Render.TileColor = "&I";
-            ParentObject.Render.DetailColor = "i";
+            ParentObject.Render.TileColor = "&n";
+            ParentObject.Render.DetailColor = "N";
 
             return base.HandleEvent(E);
         }
 
         public override bool HandleEvent(BeginTakeActionEvent E)
         {
-            return !NielstIsDead();
+            if (!NielstIsDead())
+            {
+                return true;
+            }
+            
+            return false;
         }
         
         public override bool HandleEvent(GetDisplayNameEvent E)

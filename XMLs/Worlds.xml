@@ -123,10 +123,19 @@
         </cell>
 
         <cell Name="CrystholtsGroveGladeceae" ApplyTo="CrystholtsGrove1" Mutable="false" Inherits="crystholts">
-            <zone Level="10" x="1" y="1" Name="Gladeceae's grove"
+            <zone Level="10" x="1" y="1" Name="Gladeceae's Grove"
                   DisableForcedConnections="Yes" HasWeather="true" WindSpeed="0-10" WindDirections="W,SW,S,SE"
                   WindDuration="50-3000">
                 <map FileName="GroveTest.rpm"/>
+                <builder Class="Music" Track="melodyforcity" Chance="100"/>
+            </zone>
+        </cell>
+
+        <cell Name="CrystholtsGroveAmulseetae" ApplyTo="CrystholtsGrove2" Mutable="false" Inherits="crystholts">
+            <zone Level="10" x="1" y="1" Name="Amulseetae's Grove"
+                  DisableForcedConnections="Yes" HasWeather="true" WindSpeed="0-10" WindDirections="W,SW,S,SE"
+                  WindDuration="50-3000">
+                <map FileName="GroveTest2.rpm"/>
                 <builder Class="Music" Track="melodyforcity" Chance="100"/>
             </zone>
         </cell>

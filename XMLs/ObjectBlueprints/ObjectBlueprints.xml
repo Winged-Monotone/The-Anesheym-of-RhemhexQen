@@ -31,9 +31,18 @@
     </object>
 
     <object Name="CrystholtsGrove1" Inherits="Terrain">
-        <part Name="Render" DisplayName="Gladeceae's grove" Tile="WingyTextures/terrain/terrainmap-crystaloasisgroves.png" DetailColor="M"
-              TileColor="&amp;B"
-              RenderString="030" ColorString="&amp;M"/>
+        <part Name="Render" DisplayName="{{glittering|Gladeceae's}} Grove" Tile="WingyTextures/terrain/terrainmap-crystaloasisgroves.png" DetailColor="m"
+              TileColor="&amp;K" RenderString="030" ColorString="&amp;M"/>
+        <part Name="Description"
+              Short="Bladed leaves of shimmering zircon cast hues across the skies in kaleidoscopic rays. Such beauty hides the darkening undergrowth from which birch-cryst feeds off the many who wander here with rash abandonment."/>
+        <xtagGrammar Proper="true"/>
+        <tag Name="Terrain" Value="Crystholts"/>
+        <tag Name="RegionTier" Value="4"/>
+    </object>
+
+    <object Name="CrystholtsGrove2" Inherits="Terrain">
+        <part Name="Render" DisplayName="{{glittering|Amulseetae's}} Grove" Tile="WingyTextures/terrain/terrainmap-crystaloasisgroves2.png" DetailColor="m"
+              TileColor="&amp;K" RenderString="030" ColorString="&amp;M"/>
         <part Name="Description"
               Short="Bladed leaves of shimmering zircon cast hues across the skies in kaleidoscopic rays. Such beauty hides the darkening undergrowth from which birch-cryst feeds off the many who wander here with rash abandonment."/>
         <xtagGrammar Proper="true"/>
@@ -882,6 +891,7 @@
         <tag Name="BleedLiquid" Value="viscouspuss-1000" />
         <tag Name="BleedColor" Value="&amp;Y" />
         <tag Name="BleedPrefix" Value="{{W|pus-oozing}}" />
+        <part Name="NielstGodIsDead"/>
     </object>
 
     <object Name="Gaping Door" Inherits="Door">
@@ -3053,7 +3063,7 @@
         <part Name="Description"
               Short="A tool necessary to retain even an ounce of sanity while trapped in this abyss for millenniums untold. It's slick to the touch and stands boldly despite its wear. Crenulated with countless waves like scintillating ripples on a spectrographic display."/>
         <part Name="RulesDescription" Text="When charged, this tool vibrates."/>
-        <part Name="TinkerItem" Bits="0004" CanDisassemble="true" CanBuild="true"/>
+        <part Name="TinkerItem" Bits="0004" CanDisassemble="false" CanBuild="false"/>
         <part Name="Metal"/>
         <part Name="VibroWeapon" ChargeUse="100"/>
         <tag Name="SwingSound" Value="sfx_melee_fungalInfection_swing"/>
@@ -3078,7 +3088,7 @@
         <part Name="EnergyCell" SlotType="WMTransducer" Charge="7777777" MaxCharge="7777777"/>
         <part Name="Description"
               Short="A small, clear, glass-casket engulfs a singularity, pulses of dark energy feed into a amplifier and then sends power through its surges."/>
-        <part Name="TinkerItem" Bits="008" CanDisassemble="true" CanBuild="true"/>
+        <part Name="TinkerItem" Bits="008" CanDisassemble="false" CanBuild="false"/>
         <part Name="Commerce" Value="125"/>
         <tag Name="Gift" Value="*noinherit"/>
         <tag Name="Tier" Value="8"/>
@@ -3315,8 +3325,8 @@
     </object>
 
     <object Name="GrossWall" Inherits="BaseFleshWall">
-        <part Name="Render" DisplayName="flesh-enveloped obsidian" ColorString="&amp;K^a" TileColor="&amp;a;"
-              DetailColor="A"/>
+        <part Name="Render" DisplayName="flesh-enveloped obsidian" ColorString="&amp;a^a" TileColor="&amp;A"
+              DetailColor="l"/>
         <stat Name="AV" sValue="10"/>
         <stat Name="Hitpoints" sValue="200"/>
         <part Name="Description" Short="Pustules filled with ichorous phlegm pulsate upon mounds of gnarly tissue."/>
@@ -3324,7 +3334,7 @@
     </object>
 
     <object Name="GrossWall2" Inherits="BaseFleshWall2">
-        <part Name="Render" DisplayName="gore-encrusted shale" ColorString="&amp;K^k" TileColor="&amp;l;"
+        <part Name="Render" DisplayName="gore-encrusted shale" ColorString="&amp;K^k" TileColor="&amp;l"
               DetailColor="a"/>
         <stat Name="AV" sValue="10"/>
         <stat Name="Hitpoints" sValue="200"/>
@@ -3994,6 +4004,7 @@
     <object Name="Sulfuric Shroom" Inherits="Preservable">
         <part Name="Render" DisplayName="sulfuric mushroom" RenderString="%" TileColor="&amp;o"
               DetailColor="a" RenderLayer="5" Tile="WingyTextures/sulfuricshroom.png"/>
+        <part Name="Campfire"/>
         <part Name="Commerce" Value="75"/>
         <part Name="Description"
               Short="A yellow umbrella divested with countless ridges, it smells strongly."/>
@@ -4002,15 +4013,28 @@
 
     <!-- Search: OVEN -->
 
+    <object Name="Base Grill" Inherits="Oven">
+        <part Name="Render" DisplayName="modular grill" ColorString="&amp;k" TileColor="&amp;c" DetailColor="R" RenderString="234"
+              Tile="WingyTextures/QenFurniture/grill1.png" Occluding="false" RenderIfDark="true"/>
+        <part Name="Description" Short="Warmth radiates over steel striations. Demir coals glow like a scarlet sunset wafting cryst-wood smoke into the air."/>
+        <tag Name="ExcludeFromDynamicEncounters"/>
+        <removepart Name="Graffitied"/>
+        <part Name="AnimatedMaterialGeneric" AnimationLength="100"
+              TileAnimationFrames="0=WingyTextures/QenFurniture/grill1.png, 30=WingyTextures/QenFurniture/grill2.png, 60=WingyTextures/QenFurniture/grill3.png, 80=WingyTextures/QenFurniture/grill4.png"/>
+    </object>
 
-    <object Name="ChymeroIOven" Inherits="Oven">
-        <part Name="Render" DisplayName="modular oven" ColorString="&amp;K" DetailColor="R" RenderString="234"
-              Tile="Items/sw_oven.bmp" Occluding="false" RenderIfDark="true"/>
+    <object Name="Grove Grill" Inherits="Base Grill">
+        <part Name="Render" DisplayName="open grill" ColorString="&amp;K" DetailColor="R" RenderString="234" Occluding="false" RenderIfDark="true"/>
+        <tag Name="PointOfInterestKey" Value="grill of the groves"/>
+        <removepart Name="Graffitied"/>
+    </object>
+    
+    <object Name="ChymeroIOven" Inherits="Base Grill">
+        <part Name="Render" DisplayName="modular grill" ColorString="&amp;K" DetailColor="R" RenderString="234" Occluding="false" RenderIfDark="true"/>
         <part Name="Campfire" PresetMeals="DecadentEggAndAmritaBenedict"/>
         <tag Name="PresetMealMessage" Value="Try some {{W|Decadent Eggs and Amrita Benedict}}?"/>
-        <tag Name="PointOfInterestKey" Value="ChymeroOven"/>
-        <part Name="Description" Short="Warmth radiates from the inductive panels of the modular oven."/>
-        <tag Name="ExcludeFromDynamicEncounters"/>
+        <tag Name="PointOfInterestKey" Value="Chymero's Grill"/>
+        <part Name="Description" Short="Warmth radiates over steel striations. Demir coals glow like a scarlet sunset wafting cryst-wood smoke into the air. This one bears the mark of Chymero."/>
         <removepart Name="Graffitied"/>
     </object>
 

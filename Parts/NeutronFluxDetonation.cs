@@ -65,7 +65,7 @@ namespace XRL.World.Parts
             {
                 if (mainChoice == PrimeDet)
                 {
-                   var Confirmation = Popup.ShowYesNo("You get the feeling messing with this can end very badly. Continue?");
+                   var Confirmation = Popup.ShowYesNo("{{red|You get the feeling messing with this can end very badly. Continue?}}");
                    if (Confirmation == DialogResult.Yes)
                    {
                        var SetTimer = Popup.AskNumber("Set the countdown-sequence until detonation", Max: 300);

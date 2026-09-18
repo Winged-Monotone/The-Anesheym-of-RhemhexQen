@@ -2345,7 +2345,7 @@
     <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="3" Y="9">
-    <object Name="StairsUp"></object>
+    <object Name="MarbleFloor"></object>
   </cell>
   <cell X="4" Y="9">
     <object Name="MarbleFloor"></object>
@@ -3119,7 +3119,7 @@
     <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="3" Y="12">
-    <object Name="StairsUp"></object>
+    <object Name="MarbleFloor"></object>
   </cell>
   <cell X="4" Y="12">
     <object Name="MarbleFloor"></object>
@@ -4134,10 +4134,10 @@
     <object Name="GlassWall"></object>
   </cell>
   <cell X="62" Y="15">
-    <object Name="GlassWall"></object>
+    <object Name="Glass Door W"></object>
   </cell>
   <cell X="63" Y="15">
-    <object Name="GlassWall"></object>
+    <object Name="Glass Door E"></object>
   </cell>
   <cell X="64" Y="15">
     <object Name="Flowers"></object>
@@ -5145,7 +5145,7 @@
     <object Name="WombWall"></object>
   </cell>
   <cell X="46" Y="19">
-    <object Name="StairsUp"></object>
+    <object Name="MarbleFloor"></object>
   </cell>
   <cell X="47" Y="19">
     <object Name="MarbleFloor"></object>

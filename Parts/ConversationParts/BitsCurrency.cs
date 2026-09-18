@@ -67,7 +67,11 @@ namespace XRL.World.Conversations.Parts
 
                 foreach (var Bit in result)
                 {
+                    // The Name variable was a List<string>() that you are accessing as an array.
+                    // The first index takes a string out of the list at position indicated by your previous selection in PickSeveral()'s Options.
+                    // The second index selects gets the character in the string at the indicated position, which in this case is 0. 
                     // var Name = MainOptions[Bit.Selected][0];
+                    
                     var Value = BitValues[Bit.Selected];
                     var Key = BitKeys[Bit.Selected];
                     
