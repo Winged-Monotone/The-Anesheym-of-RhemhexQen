@@ -1173,7 +1173,7 @@ namespace XRL.World.Parts
                     ParentObject.DilationSplat();
 
                     ParentObject.SetDetailColor("A");
-                    SoundManager.PlayMusic("Destiny");
+                    SoundManager.PlayMusic("Destiny", VolumeAttenuation: 0.30f);
                     AddPlayerMessage(
                         "You hear Mehrashir utter coldly, {{red|\"BIOMATA SELF-PRESERVATION SYSTEMS ENGAGED. INITIATING COMBAT-PROTOCOL \'SCORCH-WARDEN\' - HEAT-PURGE TACTICS EMINENT.\"}}");
 

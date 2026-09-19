@@ -30,16 +30,3 @@
 [//]: # (**Steam Workpage:** https://steamcommunity.com/sharedfiles/filedetails/?id=2198789130)
 
 
-[f] - Nuurimir's conversations have been fixed.
-[f] - Dynamic Exclusions were added for carious items
-[f] - Null exception fixes.
-[f] - Fixed GiveBits() to use char instead of first letter in index of bit list. Was causing problems where the bits were not returning a value. 
-[f] - Added some customizations to Saile to make Saile a bit different from Q'Girl's Base
-[c] - lowered the spawn rate of Miasmic gas from the gas spawners
-[c] - Typo Fixes
-[f] - fixed the reward wording for true kin ... cuz um, yeah it was very very wrong lol
-[f] - Added ERAS Equipper because ... it was missing :x oops
-[f] - fixed nielst door to be genopticon door and added the "no you aint skippin shit" widget to the second floor.
-[f] - added Map fixes, added auto seal to first floor with Becooming terminals
-[f] - removed secret items from craftable list
-[f] - Screwed grove, added second grove on accident with last push, fixed it ...

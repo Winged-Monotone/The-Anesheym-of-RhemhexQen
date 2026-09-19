@@ -25,8 +25,8 @@ namespace XRL.World.Parts
                 return true;
             }
 
-            ParentObject.Render.TileColor = "&n";
-            ParentObject.Render.DetailColor = "N";
+            ParentObject.Render.TileColor = "&K";
+            ParentObject.Render.DetailColor = "y";
 
             return base.HandleEvent(E);
         }

@@ -1372,6 +1372,7 @@
 
     <!--  Adorable Cetrifuge  -->
 
+    
     <object Name="AdorableCetrifuge" Inherits="MountedFurniture">
         <part Name="Render" DisplayName="UNI-TEC centrifuge with holographic displays" RenderString="005"
               ColorString="&amp;K"
@@ -1646,7 +1647,9 @@
         <stag Name="Travel"/>
         <part Name="ItemElements" Elements="chance::2"/>
         <part Name="Unreplicable"/>
+        <tag Name="ExcludeFromDynamicEncounters"/>
     </object>
+    
 
     <!--  ================== Purified Vitae End ====================  -->
 

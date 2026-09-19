@@ -1008,6 +1008,15 @@
               Short="The warrior lineage of the aneshym is the result of a miracle in genoclinic reproduction and careful combat conditioning. They stand tall, most adorned in armor latticed from nanites and chitin glaze."/>
         <part Name="AISelfPreservation" Threshold="80"/>
         <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+
+        <tag Name="NoDropOnDeath" />
+        <inventoryobject Blueprint="Keracryst Tulwar" Number="1" />
+        <inventoryobject Blueprint="Keracite Lamellar Armor" Number="1" />
+        <inventoryobject Blueprint="Keracryst Caveler" Number="1" />
+        <inventoryobject Blueprint="Keracite Greaves" Number="1" />
+        <mutation Name="Spinnerets" Level="10"/>
+        <mutation Name="MultipleArms" Level="10"/>
+        
     </object>
 
     <object Name="bugsentinel" Inherits="NPC">
@@ -1022,6 +1031,15 @@
               Short="The warrior lineage of the aneshym is the result of a miracle in genoclinic reproduction and careful combat conditioning. They stand tall, most adorned in armor latticed from nanites and chitin glaze. Toughened through war-hardened times, the sentinels are the first and foremost to stand before the enemy and the grand progenitor."/>
         <part Name="AISelfPreservation" Threshold="80"/>
         <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+
+        <tag Name="NoDropOnDeath" />
+        <inventoryobject Blueprint="Keracryst Tulwar" Number="1" />
+        <inventoryobject Blueprint="Keracite Lamellar Armor" Number="1" />
+        <inventoryobject Blueprint="Keracite Coffin-Shield" Number="1" />
+        <inventoryobject Blueprint="Keracite Greaves" Number="1" />
+        <mutation Name="Spinnerets" Level="10"/>
+        <mutation Name="MultipleArms" Level="10"/>
+        
     </object>
 
     <object Name="bugexalted" Inherits="NPC">
@@ -1087,7 +1105,7 @@
 
     <object Name="bughonorguard1" Inherits="NPC">
         <property Name="Role" Value="NPC"/>
-        <stat Name="Level" sValue="20"/>
+        <stat Name="Level" Value="20"/>
         <tag Name="Gender" Value="neuter"/>
         <part Name="Brain" Hostile="False" Factions="Anesheym-150"/>
         <part Name="Render" DisplayName="BloodShell Jar'karunox, Sentinel to the Grand Progenitor"
@@ -1097,11 +1115,20 @@
         <part Name="AISelfPreservation" Threshold="80"/>
         <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
         <part Name="Interesting" />
+
+        <tag Name="NoDropOnDeath" />
+        <inventoryobject Blueprint="Keracryst Grandhupa" Number="1" />
+        <inventoryobject Blueprint="Keracite Lamellar Armor" Number="1" />
+        <inventoryobject Blueprint="Rainboweave Cloak" Number="1" />
+        <inventoryobject Blueprint="Keracite Greaves" Number="1" />
+        <mutation Name="Spinnerets" Level="10"/>
+        <mutation Name="MultipleArms" Level="10"/>
+        
     </object>
 
     <object Name="bughonorguard2" Inherits="NPC">
         <property Name="Role" Value="NPC"/>
-        <stat Name="Level" sValue="20"/>
+        <stat Name="Level" Value="20"/>
         <tag Name="Gender" Value="neuter"/>
         <part Name="Brain" Hostile="False" Factions="Anesheym-150"/>
         <part Name="Render" DisplayName="Ikna-kanti the Windstrafer, Sentinel to the Grand Progenitor"
@@ -1111,6 +1138,15 @@
         <part Name="AISelfPreservation" Threshold="80"/>
         <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
         <part Name="Interesting" />
+        
+        <tag Name="NoDropOnDeath" />
+        <inventoryobject Blueprint="Keracryst Dja" Number="4" />
+        <inventoryobject Blueprint="Glittercloth Brassiere" Number="1" />
+        <inventoryobject Blueprint="Rainboweave Cloak" Number="1" />
+        <inventoryobject Blueprint="Keracite Stilletos" Number="1" />
+        <mutation Name="Spinnerets" Level="10"/>
+        <mutation Name="MultipleArms" Level="10"/>
+        
     </object>
 
     <object Name="bugqueenmain" Inherits="NPC">
@@ -1280,9 +1316,13 @@
         <part Name="AISelfPreservation" Threshold="80"/>
         <part Name="wmDitzySinging"/>
         <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
-        <mutation Name="Spinnerets" Level="1"/>
-        <mutation Name="MultipleArms" Level="1"/>
+        <mutation Name="Spinnerets" Level="7"/>
+        <mutation Name="MultipleArms" Level="7"/>
         <part Name="Interesting" />
+        <tag Name="NoDropOnDeath" />
+        <inventoryobject Blueprint="Keracryst Dja" Number="4" />
+        <inventoryobject Blueprint="Glittercloth Brassiere" Number="1" />
+        <inventoryobject Blueprint="Keracite Stilletos" Number="1" />
     </object>
 
     <object Name="Chymero" Inherits="NPC">
@@ -1298,8 +1338,8 @@
               Short="Fire-licked chitin bears a glossy, warped, obsidian-like look and this anesheym wears it proudly. He dons a toque and messy apron, stirring and sorting rations as he works around his kitchen."/>
         <part Name="AISelfPreservation" Threshold="80"/>
         <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
-        <mutation Name="Spinnerets" Level="1"/>
-        <mutation Name="MultipleArms" Level="1"/>
+        <mutation Name="Spinnerets" Level="5"/>
+        <mutation Name="MultipleArms" Level="5"/>
         <tag Name="Merchant"/>
         <tag Name="Unenslavable"/>
         <part Name="GenericInventoryRestocker" Table="ChymeroWares"/>
@@ -1319,8 +1359,8 @@
               Short="Swelling interior musculature bulges from the crevices of her chitin, the shaping-hammer dwarfed in huge hands as she delicately shapes chitin into art."/>
         <part Name="AISelfPreservation" Threshold="80"/>
         <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
-        <mutation Name="Spinnerets" Level="1"/>
-        <mutation Name="MultipleArms" Level="1"/>
+        <mutation Name="Spinnerets" Level="3"/>
+        <mutation Name="MultipleArms" Level="9"/>
         <tag Name="Merchant"/>
         <tag Name="Unenslavable"/>
         <part Name="GenericInventoryRestocker" Table="DamascaeaWares"/>
@@ -1603,6 +1643,8 @@ eater, hedonist, thirst--
     
     
     <!-- Search: NPC Edits -->
+    
+    
     
     <object Name="RhemhezTreeCherub" Inherits="Mechanical Trees Cherub">
         <part Name="Brain" Hostile="false" Calm="true" />
