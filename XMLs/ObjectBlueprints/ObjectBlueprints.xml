@@ -2161,6 +2161,7 @@
         <tag Name="Tier" Value="2"/>
         <part Name="GenopticonDoorUnlock"/>
         <removepart Name="Graffitied"/>
+        <stat Name="Hitpoints" sValue="10000" />
     </object>
 
     <object Name="Pristine Mechanical Hanger Door" Inherits="Door">
@@ -2174,6 +2175,7 @@
         <tag Name="Tier" Value="2"/>
         <part Name="GenopticonDoorUnlock"/>
         <removepart Name="Graffitied"/>
+        <stat Name="Hitpoints" sValue="10000" />
     </object>
 
     <object Name="Mechanical Hanger Door E" Inherits="Double Door">
@@ -2186,6 +2188,7 @@
         <tag Name="Tier" Value="2"/>
         <part Name="GenopticonDoorUnlock"/>
         <removepart Name="Graffitied"/>
+        <stat Name="Hitpoints" sValue="10000" />
     </object>
 
     <object Name="Mechanical Hanger Door W" Inherits="Double Door">
@@ -2198,6 +2201,7 @@
         <tag Name="Tier" Value="2"/>
         <part Name="GenopticonDoorUnlock"/>
         <removepart Name="Graffitied"/>
+        <stat Name="Hitpoints" sValue="10000" />
     </object>
 
     <object Name="Mechanical Hanger Door Vertical N" Inherits="Double Door">
@@ -2211,6 +2215,7 @@
         <tag Name="Tier" Value="2"/>
         <part Name="GenopticonDoorUnlock"/>
         <removepart Name="Graffitied"/>
+        <stat Name="Hitpoints" sValue="10000" />
     </object>
 
     <object Name="Mechanical Hanger Door Vertical S" Inherits="Double Door">
@@ -2224,6 +2229,7 @@
         <tag Name="Tier" Value="2"/>
         <part Name="GenopticonDoorUnlock"/>
         <removepart Name="Graffitied"/>
+        <stat Name="Hitpoints" sValue="10000" />
     </object>
 
     <!-- Pristine Hanger Door -->
@@ -2240,6 +2246,7 @@
         <tag Name="Tier" Value="2"/>
         <part Name="GenopticonDoorUnlock"/>
         <removepart Name="Graffitied"/>
+        <stat Name="Hitpoints" sValue="10000" />
     </object>
 
     <object Name="Pristine Mechanical Hanger Door Vertical S" Inherits="Double Door">
@@ -2254,6 +2261,7 @@
         <tag Name="Tier" Value="2"/>
         <part Name="GenopticonDoorUnlock"/>
         <removepart Name="Graffitied"/>
+        <stat Name="Hitpoints" sValue="10000" />
     </object>
 
     <!--    Displacement Panel-->
@@ -3235,7 +3243,7 @@
     </object>
 
     <object Name="PipeWall" Inherits="Wall">
-        <part Name="Render" ColorString="&amp;k" TileColor="&amp;K^a" DetailColor="k"/>
+        <part DisplayName="{{red|inductive}} wall" Name="Render" ColorString="&amp;k" TileColor="&amp;K^a" DetailColor="k"/>
         <part Name="Description"
               Short="A great snaking neo-plastic pipe follows through these slabs of synthetic plaster."/>
         <part Name="Metal"/>
@@ -3430,6 +3438,7 @@
         <part Name="LongSighSecurityDoorUnlock" SecurityCredentialsLevel="0"/>
         <removepart Name="GenopticonDoorUnlock"/>
         <tag Name="ExcludeFromDynamicEncounters"/>
+        <stat Name="Hitpoints" sValue="10000" />
     </object>
 
     <object Name="Emerald Security Hangar Door" Inherits="BaseLockedMechanicalHangarDoor">
@@ -3655,6 +3664,53 @@
 
     <!-- Search: Bug Gear-->
 
+<!--    <object Name="Keracryst Sovyna" Inherits="BaseDagger">-->
+<!--        <part Name="Render" DisplayName="{{K|flawless {{dreamsmoke|keracryst}} sovyna}}"-->
+<!--              Tile="WingyTextures/keracrystdja.png" TileColor="&amp;K" DetailColor="P" ColorString="&amp;K"/>-->
+<!--        <part Name="MeleeWeapon" MaxStrengthBonus="8" BaseDamage="1d20+1"/>-->
+<!--        <part Name="ThrownWeapon" Penetration="8" Damage="1d10+1" Attributes="Spear"/>-->
+<!--        <part Name="Commerce" Value="450"/>-->
+<!--        <part Name="Description"-->
+<!--              Short="A glittering, oily-black blade, that cast a pale, purple glint as it crosses light."/>-->
+<!--        <part Name="Metal"/>-->
+<!--        <tag Name="Flawless"/>-->
+<!--        <part Name="Physics" Weight="2" FlameTemperature="99999" VaporTemperature="9999"/>-->
+<!--        <tag Name="SwingSound" Value="Sounds/Melee/shortBlades/sfx_melee_dagger_crysteel_swing"/>-->
+<!--        <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_blade_short_glass"/>-->
+<!--        <tag Name="NoAIEquipAsThrownWeapon"/>-->
+<!--        <tag Name="HideThrownWeaponPerformance"/>-->
+<!--        <tag Name="Tier" Value="7"/>-->
+<!--    </object>-->
+
+    <object Name="Keracite Chakram" Inherits="Item">
+        <part Name="Render" DisplayName="{{dreamsmoke|keracite}} chakram" RenderString="*" Tile="WingyTextures/items/chakram.png" TileColor="&amp;K" DetailColor="p" Occluding="false" />
+        <part Name="Physics" Weight="0" Takeable="true" Solid="false" Category="Thrown Weapons" />
+        <part Name="ThrownWeapon" Damage="5d4" Penetration="8" Attributes="ShortBlades" />
+<!--        <part Name="Multithrow"/>-->
+        <tag Name="EquipSound" Value="sfx_equip_weapon_thrown_bladed" />
+        <tag Name="UnequipSound" Value="sfx_unequip_weapon_thrown" />
+        <tag Name="Mods" Value="CommonMods,ThrownWeaponMods" />
+        <part Name="Commerce" Value="5" />
+        <stag Name="Thrown" />
+        <stag Name="Contemporary" />
+        <tag Name="MMAThrowable"/>
+        <part Name="TinkerItem" Bits="C" CanBuild="true" CanDisassemble="true" NumberMade="5" />
+        <xtagThrowVFX
+                Speed="350"
+                Orientation="20"
+                Rotation="180"
+                TrailOrigin="6,0"
+                TrailColor="Detail"
+                TrailStartWidth="1"
+                TrailLife="0.075"
+                Flip="H"
+                Slant="True"
+                Curve="0"
+                Arc="0"
+                Easing="SineInOut"
+        />
+    </object>
+
     <object Name="Keracryst Dja" Inherits="BaseDagger">
         <part Name="Render" DisplayName="{{K|flawless {{dreamsmoke|keracryst}} dja}}"
               Tile="WingyTextures/keracrystdja.png" TileColor="&amp;K" DetailColor="P" ColorString="&amp;K"/>
@@ -3841,7 +3897,7 @@
     <object Name="ERAS Equipper" Inherits="Weapon Rack">
         <part Name="Render" DisplayName="E.R.A.S locker" Tile="WingyTextures/AresEquipter.png" ColorString="&amp;Y"
               DetailColor="C"/>
-        <part Name="Description" Short="A large vault, a silhouetted figure in black rest inside. Awaiting its time to be released."/>
+        <part Name="Description" Short="A large vault, a silhouetted figure rest within a void. Awaiting its time to be released."/>
         <tag Name="InventoryPopulationTable" Value="GunRack"/>
         <tag Name="Tier" Value="3"/>
         <tag Name="NoSparkingQuest"/>
@@ -3852,11 +3908,11 @@
     </object>
 
     <object Name="E.R.A.S Garments" Inherits="BaseTierBody7_AV">
-        <part Name="Armor" AV="0" DV="-10" Acid="0" Elec="100" Cold="0" Heat="999"/>
-        <part Name="Render" DisplayName="{{dreamy|E.R.A.S}} Garments" Tile="WingyTextures/ERAS-Garments.png"
+        <part Name="Armor" AV="0" DV="-20" Acid="0" Elec="100" Cold="0" Heat="999"/>
+        <part Name="Render" DisplayName="{{dreamy|E.R.A.S}} Garment" Tile="WingyTextures/ERAS-Garments.png"
               TileColor="&amp;K" DetailColor="Y" ColorString="&amp;K" RenderString="]"/>
         <part Name="Commerce" Value="350"/>
-        <part Name="Description" Short="A sealed-suit capable of resisting microwaves."/>
+        <part Name="Description" Short="An oily black silhouette of human-proportion, innards lined with chrome-woven fibers in quilted symmetries. Colder than a corpse, its interior beckons one to slip within as if donning new skin."/>
         <tag Name="Mods" Value="None"/>
         <tag Name="BaseObject" Value="*noinherit"/>
     </object>

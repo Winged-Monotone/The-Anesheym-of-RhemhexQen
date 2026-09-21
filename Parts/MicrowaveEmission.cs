@@ -22,7 +22,7 @@ namespace XRL.World.Parts
                 {
 
                     if (Micro.Duration <= 10)
-                        Micro.Duration += 5;
+                        Micro.Duration += 2;
                     
                     Micro.Stacks += 1;
                 }

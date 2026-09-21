@@ -523,6 +523,13 @@
             <object Weight="50" Number="1d5" Blueprint="Keracite Lamellar Armor"/>
             <object Weight="50" Number="1d5" Blueprint="Keracite Greaves"/>
             <object Weight="50" Number="1d2" Blueprint="Glittercloth Banded Leotard"/>
+            <object Weight="50" Number="10-100" Blueprint="Keracite Chakram"/>
+        </group>
+    </population>
+
+    <population Name="Ammo 1" Load="Merge">
+        <group Name="Items" Style="pickone">
+            <object Weight="1" Number="10-50" Blueprint="Keracite Chakram"/>
         </group>
     </population>
 

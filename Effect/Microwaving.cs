@@ -26,16 +26,29 @@
         public override bool HandleEvent(EndTurnEvent E)
         {
 
-            if (!Object.MakeSave("Toughness", 8 + Stacks))
+            if (!Object.MakeSave("Toughness", 10 + Stacks))
             {
                 Stacks += 1;
-                Object.TakeDamage(1 * Stacks, "from %t {{f|fire}}", "Fire", "You were cooked to death.");
+                Object.TakeDamage(1 * Stacks, "from {{f|inductive microwaves}}", "Fire", "You were cooked to death.");
             }
             else
             {
+                var ObjectHeatResistance = Object.GetStat("HeatResistance").Value;
+                var StackDenial = (ObjectHeatResistance / 10);
+                
                 --Stacks;
-                --Duration;
+                if (ObjectHeatResistance > 9)
+                {
+                    Stacks -= StackDenial;
+                    
+                    if (Stacks <= 0)
+                    {
+                        Duration = 0;
+                    }
+                }
             }
+            
+            --Duration;
             return base.HandleEvent(E);
         }
         

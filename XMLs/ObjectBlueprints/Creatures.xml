@@ -1014,6 +1014,8 @@
         <inventoryobject Blueprint="Keracite Lamellar Armor" Number="1" />
         <inventoryobject Blueprint="Keracryst Caveler" Number="1" />
         <inventoryobject Blueprint="Keracite Greaves" Number="1" />
+        <inventoryobject Blueprint="Keracite Chakram" Number="20" />
+
         <mutation Name="Spinnerets" Level="10"/>
         <mutation Name="MultipleArms" Level="10"/>
         
@@ -1037,6 +1039,8 @@
         <inventoryobject Blueprint="Keracite Lamellar Armor" Number="1" />
         <inventoryobject Blueprint="Keracite Coffin-Shield" Number="1" />
         <inventoryobject Blueprint="Keracite Greaves" Number="1" />
+        <inventoryobject Blueprint="Keracite Chakram" Number="40" />
+
         <mutation Name="Spinnerets" Level="10"/>
         <mutation Name="MultipleArms" Level="10"/>
         
