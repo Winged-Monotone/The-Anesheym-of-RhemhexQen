@@ -70,6 +70,7 @@ namespace XRL.World.Parts
                 AllowEscape: true);
 
             return result;
+            
         }
 
         public override bool WantEvent(int ID, int Cascade)
