@@ -4,7 +4,7 @@
   "title": "{{M|The Anesheym of Rhemhex'Qen}}",
   "description": "Adds bug-people to Qud and various quest!",
   "tags": "bug,people,city,new,region,story,quest,biomes",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": "WingyTone",
   "previewImage": "preview.png",
   "dependencies": {
