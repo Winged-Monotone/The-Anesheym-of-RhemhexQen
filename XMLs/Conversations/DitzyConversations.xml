@@ -16,11 +16,11 @@
 
         <start ID="NewStartRadiantEggQuestLooper" IfFinishedQuest="Egghunt">
             <text Priority="1">
-                Another of our newfound kin, ready for a good hatchin'! I remember me' first hatchin.' Nursie' had to stop me from chokin' on me own egg-bits. Said she'd never seen a bugger do that--told me I'd be a special one just from that alone. To be honest, think the eggshells mighta jumbled me brain a bit. Did taste good though, yeah!~
-                Ah, another one, hm? Yah' know, I know you've probably had a hankerin' for tryin' one of these eggs.
-                These ones are fertile, yeah? We abstain from eaten them. But amongst the hundreds our progenitor pushes out, she sometimes gets one or two that go dormant--they won't grow; stifled I guess. We often eat those if ye' wanna try it? Speak to Chymero in the midding living-qaurters! He'll sort you out!~
-                Sometimes, I'll sing to the younguns while they are still in their egglums. You can always tell the one's who's really lovin' it--they start twitchin' and squirmin' in their shell. Sometimes even on rhythm! It's something magical I tell yah.~
-                Did I evah tell yah how some domby dropped me while I was still in my egglin'? I went rollin' down into the very pits of Rhemhex's darkest corridors. Was a lucky fool, even before hatchin', one of the arbiters came down and snatched me up despite the dangers lurkin' in there! Sweetheart gave me a chance I woulda never thought of havin'. I've decided to make the best of it.~
+                Another of our newfound kin, ready for a good hatchin'! I remember me' first hatchin.' Nursie' had to stop me from chokin' on me own nyt-bits. Said she'd never seen a bugger do that--told me I'd be a special one just from that alone. To be honest, think the nytlin's shells mighta jumbled me brain a bit. Did taste good though, yeah!~
+                Ah, another one, hm? Yah' know, I know you've probably had a hankerin' for tryin' one of these nyts.
+                These are fertile, yeah? We abstain from eaten them. But amongst the hundreds our progenitor pushes out, she sometimes gets one or two that go dormant--they won't grow; stifled I guess. We often eat those if ye' wanna try it? Speak to Chymero in the midding living-qaurters! He'll sort you out with some olfah!~
+                Sometimes, I'll sing to the younguns while they are still in their nytlums. You can always tell the one's who's really lovin' it--they start twitchin' and squirmin' in their shell. Sometimes even on rhythm! It's something magical I tell yah.~
+                Did I evah tell yah how some domby dropped me while I was still in my nytlin'? I went rollin' down into the very pits of Rhemhex's darkest corridors. Was a lucky fool, even before hatchin', one of the arbiters came down and snatched me up despite the dangers lurkin' in there! Sweetheart gave me a chance I woulda never thought of havin'. I've decided to make the best of it.~
             </text>
             <choice Target="NewStartRadiantEggQuest" IfHaveItem="strangeeggt1">Here's an egg I found!
                 <part Name="wm_GiveEggT1"/>
@@ -159,7 +159,7 @@
 
                 By my shaky chitin-molts, look at this! Me' first gaze at an outsider in over six decades--a wanderer, nay wanderluster, even?
 
-                Say, you've been about--you've must of met a salthoppah or two, yeah?
+                Say, you've been about--you've must'uh met a salthoppah or two, yeah?
 
                 Tell me, don't you find their coxa quite ... stimulatin'? I just can't help to gander when I catch one struttin' n thrippin' an' hoppin' about.
             </text>
@@ -176,7 +176,7 @@
 
                 Ya know w'at, 'ere. Next time you see a shell that strokes them 'love-chords', of yours, just spritz a little bit of this on'ye self before ya say hello!
 
-                {{yellow|*Ditzy-Fly gives you several winks with their many eyes. Before handing you a vial of strangely flourescent liquid.*}}
+                {{yellow|*Ditzy-Fly gives you several winks with their many eyes. Before handing you a vial of strangely fluorescent liquid.*}}
 
             </text>
 
@@ -226,14 +226,24 @@
             <text>
                 Aye, I'd love to show ye' our wonderful city. But, unfortunately, there's been a bit of a problem, see.
 
-                A thief has broken into our egg chambers, the little piss-face. Stole batches of our great shah's progeny and used some kind of ancient tech' to 'ave it all stripped from us in mass.
+                A thief has broken into our nyt-chambers, the little piss-face. Stole batches of our great shah's progeny and used some kind of ancient tech' to 'ave it all stripped from us in mass.
 
                 We sent out some of our strongest to search for our missin' buglin's, but with them softskinned tin-heads lurking around every corner, we can't empty our reserves. They've been plottin' attacks on the Grand Shah for ages now.
             </text>
             <choice Target="MetalHeadsTemp">Tin-heads? Wait, you mean the Templar?</choice>
-            <choice Target="DitzyContinue3">Maybe I can help? An egg-hunt sounds fun.</choice>
+            <choice Target="WhatsANyt">Excuse me, but what's a nyt?</choice>
         </node>
 
+        <node ID="WhatsANyt">
+            <text>
+                Ah, well yah have to excuse me, I'm louse-y with me explanations'.
+                
+                A nyt is what you folk call an egg, a ripe'un for us, one that can crack a new bugling into our world, yeah?
+            </text>
+            <choice Target="MetalHeadsTemp">Also, you mentioned tin-heads? You mean the Templar, right?</choice>
+                        <choice Target="DitzyContinue3">Ah, so your eggs were stolen! Maybe I can help!</choice>
+        </node>
+        
         <node ID="MetalHeadsTemp">
             <text>
                 Yep, them Templar foolies seem intent on gettin' in. They got bad history with our queen. Assassination attempts, attacks on our people, they aren't the only enemies we 'ave, but we got a sore-spot for 'em that's for sure!
@@ -253,7 +263,7 @@
 
         <node ID="DitzyContinue4">
             <text>
-                Me! Just bring any of our eggs yah find out there to me, and I'll let our nobles know of ye' exploits to help us! They'll of course also have their own lil' ways of payin' yah back--Water, ancient baubles, rare stones--you get the jist, yeah?
+                Me! Just bring any of our nyts yah find out there to me, and I'll let our nobles know of ye' exploits to help us! They'll of course also have their own lil' ways of payin' yah back--Water, ancient baubles, rare stones--you get the jist, yeah?
             </text>
             <choice Target="End" StartQuest="Egghunt">Got it, off to do an egg-hunt, live and drink friend!
             </choice>
