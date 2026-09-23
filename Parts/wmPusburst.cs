@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using XRL;
 using XRL.World;
@@ -11,7 +11,7 @@ using XRL.World.Parts.Skill;
 namespace XRL.World.Parts
 {
     [Serializable]
-    public class wmSulfurBurst : IPart
+    public class wmPusBurst : IPart
     {
         public override bool WantEvent(int ID, int cascade)
         {
@@ -23,7 +23,7 @@ namespace XRL.World.Parts
         {
             if (E.Dying == ParentObject && !E.Dying.IsFrozen())
             {
-                LiquidRelatedMethods.wmLiquidBurst(ParentObject, "liquidsulfur_1000", true, true, 150, 25, "*");
+                LiquidRelatedMethods.wmLiquidBurst(ParentObject, "viscouspuss-1000", true, true, 150, 25, "*");
             }
 
             return base.HandleEvent(E);

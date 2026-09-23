@@ -57,7 +57,7 @@
               DetailColor="o"
               TileColor="&amp;K" RenderString="030" ColorString="&amp;Y"/>
         <part Name="Description"
-              Short="A land hidden in coarse-clouds of brimstone, the air reeking of nits whose innards spoiled long ago. Sharp castings of flame erupt into plumes as geomorphic vents deep beneath the earth gasp like vile flatulence."/>
+              Short="A land hidden in coarse-clouds of brimstone, the air reeking of rotten eggs whose innards spoiled long ago. Sharp castings of flame erupt into plumes as geomorphic vents deep beneath the earth gasp like vile flatulence."/>
         <tag Name="NoBiomes" Value="1"/>
         <xtagGrammar Proper="true"/>
         <tag Name="Terrain" Value="SulfuricDeserts"/>
@@ -890,10 +890,8 @@
         <part Name="Description" Short="Unorganized, veiny pallid flesh clustered and clamped together in a macabre mess."/>
         <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
         <removepart Name="Graffitied"/>
-        <tag Name="BleedLiquid" Value="viscouspuss-1000" />
-        <tag Name="BleedColor" Value="&amp;Y" />
-        <tag Name="BleedPrefix" Value="{{W|pus-oozing}}" />
         <part Name="NielstGodIsDead"/>
+        <part Name="wmPusBurst"/>
     </object>
 
     <object Name="Gaping Door" Inherits="Door">
@@ -915,9 +913,6 @@
         <part Name="Description" Short="Its flesh. Fresh, glistening, suspended."/>
         <tag Name="ExcludeFromDynamicEncounters"/>
         <removepart Name="Graffitied"/>
-        <tag Name="BleedLiquid" Value="viscouspuss-1000" />
-        <tag Name="BleedColor" Value="&amp;Y" />
-        <tag Name="BleedPrefix" Value="{{W|pus-oozing}}" />
         <part Name="NielstGodIsDead"/>
     </object>
 
