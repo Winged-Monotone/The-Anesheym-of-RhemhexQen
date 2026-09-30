@@ -2944,7 +2944,7 @@
         <part Name="Render" DisplayName="D45 battle pistol" Tile="WingyTextures/battlepistol.png" ColorString="&amp;y"
               DetailColor="K"/>
         <part Name="Description"
-              Short="A neo-plastic grip, supports a chrome box-head, the barrel hides inside, ratcheting several rounds before releasing them in a quick burst."/>
+              Short="A neo-plastic grip supports a chrome box-head where the barrel hides within, ratcheting several rounds before releasing them in a quick burst."/>
         <part Name="Commerce" Value="300"/>
         <part Name="Physics" Weight="6"/>
         <part Name="ModScoped"/>

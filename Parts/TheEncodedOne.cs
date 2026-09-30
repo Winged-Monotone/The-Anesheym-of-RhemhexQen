@@ -184,7 +184,7 @@ namespace XRL.World.Parts
             if (E.Dying == ParentObject)
             {
                 SoundManager.StopMusic();
-                SoundManager.PlayUISound("mehdies", 1);
+                SoundManager.PlayUISound("mehdies", 0.30f);
             }
 
             return base.HandleEvent(E);
@@ -1173,7 +1173,7 @@ namespace XRL.World.Parts
                     ParentObject.DilationSplat();
 
                     ParentObject.SetDetailColor("A");
-                    SoundManager.PlayMusic("Destiny", VolumeAttenuation: 0.30f);
+                    SoundManager.PlayMusic("Destiny", VolumeAttenuation: 0.50f);
                     AddPlayerMessage(
                         "You hear Mehrashir utter coldly, {{red|\"BIOMATA SELF-PRESERVATION SYSTEMS ENGAGED. INITIATING COMBAT-PROTOCOL \'SCORCH-WARDEN\' - HEAT-PURGE TACTICS EMINENT.\"}}");
 
