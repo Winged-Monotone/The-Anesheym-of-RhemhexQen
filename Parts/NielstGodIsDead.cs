@@ -1,10 +1,13 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
 using XRL.World;
+using XRL.World.Anatomy;
 
 namespace XRL.World.Parts
 {
     public class NielstGodIsDead :IPart
     {
+        
         public override bool WantEvent(int ID, int Cascade)
         {
             return base.WantEvent(ID, Cascade)
@@ -34,6 +37,11 @@ namespace XRL.World.Parts
         public override bool HandleEvent(BeginTakeActionEvent E)
         {
             if (!NielstIsDead())
+            {
+                return true;
+            }
+
+            if (E.Object.IsPlayer())
             {
                 return true;
             }

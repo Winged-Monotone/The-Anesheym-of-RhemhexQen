@@ -23,7 +23,7 @@ namespace XRL.World.Parts
         {
             if (E.Dying == ParentObject && !E.Dying.IsFrozen())
             {
-                LiquidRelatedMethods.wmLiquidBurst(ParentObject, "viscouspuss-1000", true, true, 150, 25, "*");
+                wmLiquidRelatedMethods.wmLiquidBurst(ParentObject, "viscouspuss-1000", true, true, 150, 25, "*");
             }
 
             return base.HandleEvent(E);

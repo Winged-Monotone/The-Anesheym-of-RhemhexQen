@@ -954,8 +954,6 @@
   </cell>
   <cell X="62" Y="3">
     <object Name="Rhem Black Marble"></object>
-    <object Name="Rhem Black Marble"></object>
-    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="63" Y="3">
     <object Name="Rhem Black Marble"></object>
@@ -1215,7 +1213,6 @@
   </cell>
   <cell X="64" Y="4">
     <object Name="GrossWall"></object>
-    <object Name="GrossWall"></object>
   </cell>
   <cell X="65" Y="4">
     <object Name="GrossWall"></object>
@@ -1321,14 +1318,11 @@
   </cell>
   <cell X="14" Y="5">
     <object Name="Rhem Black Marble"></object>
-    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="15" Y="5">
     <object Name="Rhem Black Marble"></object>
-    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="16" Y="5">
-    <object Name="Rhem Black Marble"></object>
     <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="17" Y="5">
@@ -1407,7 +1401,6 @@
     <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="36" Y="5">
-    <object Name="Rhem Black Marble"></object>
     <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="37" Y="5">
@@ -1514,7 +1507,6 @@
   </cell>
   <cell X="65" Y="5">
     <object Name="GrossWall"></object>
-    <object Name="amalgamgrowth"></object>
   </cell>
   <cell X="66" Y="5">
     <object Name="ViscousPussDeepPool"></object>
@@ -1691,7 +1683,6 @@
     <object Name="GrossWall"></object>
   </cell>
   <cell X="36" Y="6">
-    <object Name="Rhem Black Marble"></object>
     <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="37" Y="6">
@@ -1978,7 +1969,6 @@
   </cell>
   <cell X="36" Y="7">
     <object Name="Rhem Black Marble"></object>
-    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="37" Y="7">
     <object Name="Rhem Black Marble"></object>
@@ -2087,7 +2077,6 @@
   </cell>
   <cell X="65" Y="7">
     <object Name="GrossWall"></object>
-    <object Name="ViscousPussDeepPool"></object>
   </cell>
   <cell X="66" Y="7">
     <object Name="ViscousPussDeepPool"></object>
@@ -2272,7 +2261,6 @@
   </cell>
   <cell X="36" Y="8">
     <object Name="Rhem Black Marble"></object>
-    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="37" Y="8">
     <object Name="Rhem Black Marble"></object>
@@ -2294,7 +2282,6 @@
   </cell>
   <cell X="42" Y="8">
     <object Name="GrossWall"></object>
-    <object Name="GrossWall2"></object>
   </cell>
   <cell X="43" Y="8">
     <object Name="GrossWall2"></object>
@@ -2528,7 +2515,6 @@
   </cell>
   <cell X="29" Y="9">
     <object Name="GrossWall"></object>
-    <object Name="GrossWall"></object>
   </cell>
   <cell X="30" Y="9">
     <object Name="GrossWall"></object>
@@ -2553,10 +2539,8 @@
   </cell>
   <cell X="36" Y="9">
     <object Name="Rhem Black Marble"></object>
-    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="37" Y="9">
-    <object Name="Rhem Black Marble"></object>
     <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="38" Y="9">
@@ -2832,7 +2816,6 @@
   </cell>
   <cell X="36" Y="10">
     <object Name="Rhem Black Marble"></object>
-    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="37" Y="10">
     <object Name="Rhem Black Marble"></object>
@@ -3086,7 +3069,6 @@
   </cell>
   <cell X="23" Y="11">
     <object Name="GrossWall"></object>
-    <object Name="Rubble Black"></object>
   </cell>
   <cell X="24" Y="11">
     <object Name="GrossWall"></object>
@@ -3129,10 +3111,8 @@
   </cell>
   <cell X="36" Y="11">
     <object Name="Rhem Black Marble"></object>
-    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="37" Y="11">
-    <object Name="GrossWall"></object>
     <object Name="GrossWall"></object>
   </cell>
   <cell X="38" Y="11">
@@ -3158,7 +3138,6 @@
   </cell>
   <cell X="44" Y="11">
     <object Name="GrossWall"></object>
-    <object Name="Long Sigh Mainframe Monitor 2"></object>
   </cell>
   <cell X="45" Y="11">
     <object Name="GrossWall"></object>
@@ -3518,7 +3497,6 @@
   </cell>
   <cell X="64" Y="12">
     <object Name="GrossWall"></object>
-    <object Name="GrossWall"></object>
   </cell>
   <cell X="65" Y="12">
     <object Name="GrossWall"></object>
@@ -3700,8 +3678,6 @@
   </cell>
   <cell X="36" Y="13">
     <object Name="Rhem Black Marble"></object>
-    <object Name="Rhem Black Marble"></object>
-    <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="37" Y="13">
     <object Name="GrossWall"></object>
@@ -3775,7 +3751,6 @@
   </cell>
   <cell X="58" Y="13">
     <object Name="MarbleFloor"></object>
-    <object Name="Rhem Black Marble"></object>
     <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="59" Y="13">
@@ -4093,8 +4068,6 @@
   </cell>
   <cell X="60" Y="14">
     <object Name="Rubble Black"></object>
-    <object Name="GrossWall"></object>
-    <object Name="GrossWall"></object>
     <object Name="MarbleFloor"></object>
   </cell>
   <cell X="61" Y="14">
@@ -4360,7 +4333,6 @@
   </cell>
   <cell X="53" Y="15">
     <object Name="GrossWall2"></object>
-    <object Name="TintedGlassWall"></object>
     <object Name="MarbleFloor"></object>
   </cell>
   <cell X="54" Y="15">
@@ -4579,7 +4551,6 @@
     <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="37" Y="16">
-    <object Name="GrossWall"></object>
     <object Name="GrossWall"></object>
   </cell>
   <cell X="38" Y="16">
@@ -5487,8 +5458,6 @@
   </cell>
   <cell X="47" Y="19">
     <object Name="GrossWall2"></object>
-    <object Name="TintedGlassWall"></object>
-    <object Name="TintedGlassWall"></object>
     <object Name="MarbleFloor"></object>
   </cell>
   <cell X="48" Y="19">
@@ -5502,8 +5471,6 @@
   </cell>
   <cell X="50" Y="19">
     <object Name="Rubble Black"></object>
-    <object Name="TintedGlassWall"></object>
-    <object Name="MarbleFloor"></object>
     <object Name="MarbleFloor"></object>
   </cell>
   <cell X="51" Y="19">
@@ -5520,8 +5487,6 @@
   </cell>
   <cell X="53" Y="19">
     <object Name="GrossWall2"></object>
-    <object Name="TintedGlassWall"></object>
-    <object Name="TintedGlassWall"></object>
     <object Name="MarbleFloor"></object>
   </cell>
   <cell X="54" Y="19">

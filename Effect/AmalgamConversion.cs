@@ -11,7 +11,7 @@ namespace XRL.World.Effects
 
         public AmalgamConversion()
         {
-            base.DisplayName = "{{Red|vitamosis}}";
+            base.DisplayName = "{{R|vitamosis}}";
             Duration = 1;
         }
         
@@ -74,6 +74,13 @@ namespace XRL.World.Effects
             if (CheckRemove())
             {
                 return true;
+            }
+            
+            var SlinkSlithersChance = 10.in100();
+
+            if (SlinkSlithersChance && SkinSlink)
+            {
+                Object.TakeDamage(1, Message: "from something slinking beneath %o skin ... ", DeathReason: "You die from a skin-slink rearranging your organs.", ThirdPersonDeathReason: "%O dies as their organs are rearranged by a skin-slink.");
             }
 
             if (Object == The.Player)

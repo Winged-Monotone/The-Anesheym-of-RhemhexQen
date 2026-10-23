@@ -1,8 +1,9 @@
 ﻿using System;
+using XRL.Rules;
 
 namespace XRL.World.Parts
 {
-    public class LiquidRelatedMethods : IPart
+    public class wmLiquidRelatedMethods : IPart
     {
         public static void wmLiquidBurst(GameObject Actor, String LiquidType, bool Explosive, bool ChangesTemperature, int ExplosiveForce, int TemepratureShift, string SplashParticle)
         {
@@ -16,8 +17,13 @@ namespace XRL.World.Parts
                 
             foreach (Cell C in Actor.CurrentCell.GetAdjacentCells())
             {
-                C.AddObject(LiquidType);
-                C.AddObject(LiquidType);
+                var BasePool = GameObject.Create("Water");
+                var LiquidRandomness = Stat.Random(50, 150);
+
+                BasePool.LiquidVolume.Volume = LiquidRandomness;
+                BasePool.LiquidVolume.InitialLiquid = LiquidType;
+                
+                C.AddObject(BasePool);
             }
         }
     }

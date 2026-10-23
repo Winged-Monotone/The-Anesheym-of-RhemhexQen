@@ -52,6 +52,7 @@ namespace XRL.World.Parts
         public int CastAbilityCooldown = Stat.Random(7, 14);
         public int SaysSomethingCountdown = 77;
         public int FalseMehCloneLimit = 25;
+        public int BlazingFireFlyLimit = 2;
 
         [NonSerialized] public List<Location2D> WarningCells = new();
 
@@ -583,8 +584,15 @@ namespace XRL.World.Parts
                     C?.Flameburst();
                     C?.GetCombatTarget()
                         ?.TakeDamage("4d6".RollCached(), Attributes: "Heat", Message: "from %t flames.");
+                    
+                    if (ParentObject.CurrentZone.CountObjects("Blazing Firefly") <= BlazingFireFlyLimit)
+                    {
+                        if (C != null && C.IsVisible() && Stat.Random(1, 100) < 10)
+                        {
+                            var BlazingFireFly = C.AddObject("Blazing Firefly");
+                        }
+                    }
                 }
-
             if (Checkerboarding && PhaseFlame)
             {
                 foreach (var C in FullZone)
@@ -600,6 +608,7 @@ namespace XRL.World.Parts
             else if (MehCell1 != null && PhaseFrost)
                 foreach (var C in MehCell1)
                 {
+                    RemoveAdds(C, "Blazing Firefly");
                     C?.GetCombatTarget()?.Push(ParentObject.GetDirectionToward(C?.GetCombatTarget()), 1000, 2);
                     C?.TileParticleBlip("Creatures/sw_crystal1.bmp", "&b", "B", 3);
                     var gameObject = C?.AddObject("Ice Crystal");
@@ -614,6 +623,7 @@ namespace XRL.World.Parts
             {
                 foreach (var C in FullZone)
                 {
+                    RemoveAdds(C, "Blazing Firefly");
                     if (C.X % 2 == 0 && C.Y % 2 == 0 && C.IsVisible())
                     {
                         C?.GetCombatTarget()?.Push(ParentObject.GetDirectionToward(C?.GetCombatTarget()), 1000, 2);
@@ -685,18 +695,7 @@ namespace XRL.World.Parts
             else if (FullZone != null && PhaseDerv)
                 foreach (var C in FullZone)
                 {
-                    if (C.HasObjectWithBlueprint("FalseEncodedEater"))
-                    {
-                        var Objects = C.GetObjectsInCell();
-                        foreach (var O in Objects)
-                        {
-                            if (O.Blueprint == "FalseEncodedEater")
-                            {
-                                O.TeleportSwirl();
-                                O.Obliterate();
-                            }
-                        }
-                    }
+                    RemoveAdds(C, "FalseEncodedEater");
                 }
             else if (PhaseEsper)
             {
@@ -711,6 +710,12 @@ namespace XRL.World.Parts
             }
             else if (PhaseHarbinger)
             {
+                if (FullZone != null && PhaseDerv)
+                    foreach (var C in FullZone)
+                    {
+                        RemoveAdds(C, "FalseEncodedEater");
+                    }
+                
                 var DeterminePhaseAction = Stat.Random(1, 4);
 
                 if (DeterminePhaseAction == 1)
@@ -1193,7 +1198,7 @@ namespace XRL.World.Parts
                         var targets = C.GetCombatTarget();
 
                         if (targets != ParentObject && targets != ThePlayer && targets.IsValid() &&
-                            !target.IsPlayerLed())
+                            !target.IsPlayerLed() && targets.PartyLeader != ThePlayer && !targets.HasTag("Essential"))
                         {
                             targets.Destroy();
                             C.Flameburst();
@@ -1204,5 +1209,23 @@ namespace XRL.World.Parts
 
             return base.FireEvent(E);
         }
+        
+        public void RemoveAdds(Cell C, string ObjectBluePrint)
+        {
+            if (C.HasObjectWithBlueprint(ObjectBluePrint))
+            {
+                var Objects = C.GetObjectsInCell();
+                foreach (var O in Objects)
+                {
+                    if (O.Blueprint == ObjectBluePrint)
+                    {
+                        O.TeleportSwirl();
+                        O.Obliterate();
+                    }
+                }
+            }
+        }
+        
+        
     }
 }

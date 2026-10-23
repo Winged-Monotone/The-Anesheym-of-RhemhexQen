@@ -52,6 +52,17 @@
         <tag Name="NoBiomes" Value="1"/>
     </object>
 
+    <object Name="CrystholtsGrove3" Inherits="Terrain">
+        <part Name="Render" DisplayName="{{glittering|Dae'Almophotea's}} Grove" Tile="WingyTextures/terrain/terrainmap-crystaloasisgroves3.png" DetailColor="m"
+              TileColor="&amp;K" RenderString="030" ColorString="&amp;M"/>
+        <part Name="Description"
+              Short="Bladed leaves of shimmering zircon cast hues across the skies in kaleidoscopic rays. Such beauty hides the darkening undergrowth from which birch-cryst feeds off the many who wander here with rash abandonment."/>
+        <xtagGrammar Proper="true"/>
+        <tag Name="Terrain" Value="Crystholts"/>
+        <tag Name="RegionTier" Value="4"/>
+        <tag Name="NoBiomes" Value="1"/>
+    </object>
+
     <object Name="BrimstoneWaste" Inherits="Terrain">
         <part Name="Render" DisplayName="brimdire wastelands" Tile="WingyTextures/terrain/sulfuricdesert1.png"
               DetailColor="o"
@@ -733,6 +744,10 @@
 
 
     <!-- Search:widget -->
+
+    <object Name="ButterflySpawnerWidget" Inherits="Widget">
+        <part Name="ButterflySpawner"/>
+    </object>
 
     <object Name="RevokeRecoilersWidget" Inherits="Widget">
         <part Name="RevokeRecoilers"/>
@@ -1546,6 +1561,69 @@
         <removepart Name="Graffitied"/>
     </object>
 
+    <object Name="ShahSarcophagusN Standing" Inherits="Sarcophagus">
+        <part Name="Render" DisplayName="obsidian sarcophagus" RenderString="&#194;" Tile="Items/sw_sultan_sarcophagus_closed_w.bmp" ColorString="&amp;C" TileColor="&amp;K" DetailColor="C" />
+        <part Name="Description" Short="Cirrus clouds of neon stir inside a glass lune and beam light through the prefigured likeness of the sultan. A bleary shape thus hovers supine above the starless and gigantic black rock divan. The artist may have intended this to evoke a lightning storm over a dark plain or a lily on the pitch of a river: something to represent the bright and gaseous mind roaming over the inert body." />
+        <part Name="Enclosing" SizeInsensitive="true" OpenRenderString="&#209;" ClosedRenderString="&#194;" OpenTile="Items/sw_sultan_sarcophagus_open_w.bmp" ClosedTile="Items/sw_sultan_sarcophagus_closed_w.bmp" OpenColor="&amp;K" ClosedColor="&amp;C" />
+        <part Name="DoubleEnclosing" Direction="S" />
+        <part Name="Physics" Weight="2000" />
+        <part Name="NoDamage" />
+        <tag Name="ExcludeFromDynamicEncounters" />
+        <part Name="Container"/>
+        <part Name="DoubleContainer" Direction="S"/>
+        <part Name="Inventory" />
+
+    </object>
+    
+    <object Name="ShahSarcophagusS Standing" Inherits="Sarcophagus">
+        <part Name="Render" DisplayName="obsidian sarcophagus" RenderString="&#194;" Tile="Items/sw_sultan_sarcophagus_closed_e.bmp" ColorString="&amp;C" TileColor="&amp;K" DetailColor="C" />
+        <part Name="Description" Short="Cirrus clouds of neon stir inside a glass lune and beam light through the prefigured likeness of the sultan. A bleary shape thus hovers supine above the starless and gigantic black rock divan. The artist may have intended this to evoke a lightning storm over a dark plain or a lily on the pitch of a river: something to represent the bright and gaseous mind roaming over the inert body." />
+        <part Name="Enclosing" OpenRenderString="&#209;" ClosedRenderString="&#194;" OpenTile="Items/sw_sultan_sarcophagus_open_e.bmp" ClosedTile="Items/sw_sultan_sarcophagus_closed_e.bmp" OpenColor="&amp;K" ClosedColor="&amp;C"/>
+        <part Name="DoubleEnclosing" Direction="N" />
+        <part Name="Physics" Weight="2000" />
+        <part Name="NoDamage" />
+        <tag Name="ExcludeFromDynamicEncounters" />
+        <part Name="Container"/>
+        <part Name="DoubleContainer" Direction="N" Master="true"/>
+        <part Name="Inventory" />
+    </object>
+
+    <object Name="DaeAlmophotea ShahSarcophagusN Standing" Inherits="ShahSarcophagusN Standing">
+        <part Name="Render" DisplayName="obsidian sarcophagus" RenderString="&#194;" Tile="WingyTextures/QenFurniture/DaeAlmophoteaSarcophogusN.png" ColorString="&amp;C" TileColor="&amp;K" DetailColor="C" />
+        <part Name="Description" Short="Cirrus clouds of neon stir inside a glass lune and beam light through the prefigured likeness of the sultan. A bleary shape thus hovers supine above the starless and gigantic black rock divan. The artist may have intended this to evoke a lightning storm over a dark plain or a lily on the pitch of a river: something to represent the bright and gaseous mind roaming over the inert body." />
+        <part Name="Enclosing" SizeInsensitive="true" OpenRenderString="&#209;" ClosedRenderString="&#194;" OpenTile="WingyTextures/QenFurniture/DaeAlmophoteaSarcophogusN.png" ClosedTile="WingyTextures/QenFurniture/DaeAlmophoteaSarcophogusN.png" OpenColor="&amp;K" ClosedColor="&amp;C" />
+    </object>
+    <object Name="DaeAlmophotea ShahSarcophagusS Standing" Inherits="ShahSarcophagusS Standing">
+        <part Name="Render" DisplayName="obsidian sarcophagus" RenderString="&#194;" Tile="WingyTextures/QenFurniture/DaeAlmophoteaSarcophogusS.png" ColorString="&amp;C" TileColor="&amp;K" DetailColor="C" />
+        <part Name="Description" Short="Cirrus clouds of neon stir inside a glass lune and beam light through the prefigured likeness of the sultan. A bleary shape thus hovers supine above the starless and gigantic black rock divan. The artist may have intended this to evoke a lightning storm over a dark plain or a lily on the pitch of a river: something to represent the bright and gaseous mind roaming over the inert body." />
+        <part Name="Enclosing" OpenRenderString="&#209;" ClosedRenderString="&#194;" OpenTile="WingyTextures/QenFurniture/DaeAlmophoteaSarcophogusS.png" ClosedTile="WingyTextures/QenFurniture/DaeAlmophoteaSarcophogusS.png" OpenColor="&amp;K" ClosedColor="&amp;C"/>
+        <inventoryobject Blueprint="Ancient Ashes" Amount="1"/>
+    </object>
+
+    <object Name="Gladaceae ShahSarcophagusN Standing" Inherits="ShahSarcophagusN Standing">
+        <part Name="Render" DisplayName="obsidian sarcophagus" RenderString="&#194;" Tile="WingyTextures/QenFurniture/GladaceaeSarcophogusN.png" ColorString="&amp;C" TileColor="&amp;K" DetailColor="C" />
+        <part Name="Description" Short="Cirrus clouds of neon stir inside a glass lune and beam light through the prefigured likeness of the sultan. A bleary shape thus hovers supine above the starless and gigantic black rock divan. The artist may have intended this to evoke a lightning storm over a dark plain or a lily on the pitch of a river: something to represent the bright and gaseous mind roaming over the inert body." />
+        <part Name="Enclosing" SizeInsensitive="true" OpenRenderString="&#209;" ClosedRenderString="&#194;" OpenTile="WingyTextures/QenFurniture/GladaceaeSarcophogusN.png" ClosedTile="WingyTextures/QenFurniture/GladaceaeSarcophogusN.png" OpenColor="&amp;K" ClosedColor="&amp;C" />
+    </object>
+    <object Name="Gladaceae ShahSarcophagusS Standing" Inherits="ShahSarcophagusS Standing">
+        <part Name="Render" DisplayName="obsidian sarcophagus" RenderString="&#194;" Tile="WingyTextures/QenFurniture/GladaceaeSarcophogusS.png" ColorString="&amp;C" TileColor="&amp;K" DetailColor="C" />
+        <part Name="Description" Short="Cirrus clouds of neon stir inside a glass lune and beam light through the prefigured likeness of the sultan. A bleary shape thus hovers supine above the starless and gigantic black rock divan. The artist may have intended this to evoke a lightning storm over a dark plain or a lily on the pitch of a river: something to represent the bright and gaseous mind roaming over the inert body." />
+        <part Name="Enclosing" OpenRenderString="&#209;" ClosedRenderString="&#194;" OpenTile="WingyTextures/QenFurniture/GladaceaeSarcophogusS.png" ClosedTile="WingyTextures/QenFurniture/GladaceaeSarcophogusS.png" OpenColor="&amp;K" ClosedColor="&amp;C"/>
+    </object>
+
+    <object Name="Amulseetae ShahSarcophagusN Standing" Inherits="ShahSarcophagusN Standing">
+        <part Name="Render" DisplayName="obsidian sarcophagus" RenderString="&#194;" Tile="WingyTextures/QenFurniture/AmulseetaeSarcophogusN.png" ColorString="&amp;C" TileColor="&amp;K" DetailColor="C" />
+        <part Name="Description" Short="Cirrus clouds of neon stir inside a glass lune and beam light through the prefigured likeness of the sultan. A bleary shape thus hovers supine above the starless and gigantic black rock divan. The artist may have intended this to evoke a lightning storm over a dark plain or a lily on the pitch of a river: something to represent the bright and gaseous mind roaming over the inert body." />
+        <part Name="Enclosing" SizeInsensitive="true" OpenRenderString="&#209;" ClosedRenderString="&#194;" OpenTile="WingyTextures/QenFurniture/AmulseetaeSarcophogusN.png" ClosedTile="WingyTextures/QenFurniture/AmulseetaeSarcophogusN.png" OpenColor="&amp;K" ClosedColor="&amp;C" />
+    </object>
+    <object Name="Amulseetae ShahSarcophagusS Standing" Inherits="ShahSarcophagusS Standing">
+        <part Name="Render" DisplayName="obsidian sarcophagus" RenderString="&#194;" Tile="WingyTextures/QenFurniture/AmulseetaeSarcophogusS.png" ColorString="&amp;C" TileColor="&amp;K" DetailColor="C" />
+        <part Name="Description" Short="Cirrus clouds of neon stir inside a glass lune and beam light through the prefigured likeness of the sultan. A bleary shape thus hovers supine above the starless and gigantic black rock divan. The artist may have intended this to evoke a lightning storm over a dark plain or a lily on the pitch of a river: something to represent the bright and gaseous mind roaming over the inert body." />
+        <part Name="Enclosing" OpenRenderString="&#209;" ClosedRenderString="&#194;" OpenTile="WingyTextures/QenFurniture/AmulseetaeSarcophogusS.png" ClosedTile="WingyTextures/QenFurniture/AmulseetaeSarcophogusS.png" OpenColor="&amp;K" ClosedColor="&amp;C"/>
+        <inventoryobject Blueprint="Ancient Ashes" Amount="1"/>
+    </object>
+    
+
     <object Name="Large Refrigeration unitW" Inherits="Chest">
         <part Name="Render" DisplayName="large refrigeration unit" RenderString="005" ColorString="&amp;K"
               Tile="WingyTextures/largerefridgeW.png" TileColor="&amp;W" DetailColor="K"
@@ -1694,6 +1772,21 @@
         <part Name="Commerce" Value="65"/>
         <stag Name="Medical"/>
         <tag Name="Tier" Value="6"/>
+    </object>
+
+    <object Name="Ancient Ashes" Inherits="Item">
+        <part Name="Render" DisplayName="ashes of an ancient" RenderString="," ColorString="&amp;y" IgnoreColorForStack="true" IgnoreTileForStack="true" />
+        <part Name="Physics" Organic="true" Category="Corpses" FlameTemperature="99999" VaporTemperature="1500" />
+        <part Name="Description" Short="Matter was crushed, burned, and granulated into a soft powder." />
+        <tag Name="DynamicObjectsTable:Corpses" />
+        <tag Name="Gender" Value="plural" />
+        <part Name="RandomTileOnMove" Tiles="Items/sw_ash_1.bmp,Items/sw_ash_2.bmp,Items/sw_ash_3.bmp,Items/sw_ash_4.bmp" />
+        <part Name="RandomColorsOnMove" MainColor="y,y,y,y,y,K,Y" />
+        <intproperty Name="Bleeds" Value="0" />
+        <xtagGrammar adjunctNoun="pile" massNoun="true" />
+        <tag Name="Breakable" Value="*delete"/>
+        <stag Name="Death" />
+        <removepart Name="BurnToAshesIfOrganic" />
     </object>
 
     <!--  Big Holographic Display   -->
@@ -2567,320 +2660,12 @@
         <part Name="ConversationScript" ConversationID="SiteWideDataPanel"/>
         <part Name="Reconstitution"/>
     </object>
-
-    <!--    MOBS CONTINUED -->
-
-    <object Name="StinkBreather" Inherits="BaseBreather">
-        <part Name="Render" DisplayName="stinkbeard" ColorString="&amp;a"/>
-        <part Name="Description"
-              Short="Rolling scales tessellate =pronouns.possessive= husky, slouching form, and motes of still condensate stipple =pronouns.possessive= swollen chin."/>
-        <part Name="wmSulfuricExplosiveDeath"/>
-        <part Name="Corpse" CorpseBlueprint="stinkBreatherCorpse"/>
-        <part Name="EffectResistance" Values="Poison,PoisonGasPoison"/>
-        <mutation Name="StinkyBreather" Level="1"/>
-        <stat Name="HeatResistance" sValue="200"/>
-        <stat Name=""/>
-    </object>
-
-    <object Name="StinkBreatherCorpse" Inherits="BaseBreatherCorpse">
-        <part Name="Render" DisplayName="stinkbeard corpse"/>
-        <!-- <part Name="Butcherable" OnSuccess="StunBreatherGland" /> -->
-    </object>
-
-    <object Name="Crimson Jell" Inherits="BaseOoze">
-        <part Name="Corpse" CorpseChance="50"/>
-        <part Name="Render" DisplayName="{{a|crimson jell}}" RenderString="j" ColorString="&amp;A"/>
-        <stat Name="Level" sValue="33"/>
-        <stat Name="AV" sValue="6"/>
-        <stat Name="Hitpoints" sValue="140"/>
-        <stat Name="HeatResistance" sValue="200"/>
-        <stat Name="ColdResistance" Value="-50"/>
-        <inventoryobject Blueprint="Sulphuric Pseudopod" Number="2"/>
-        <part Name="Description"
-              Short="Behind the glass membrane, inside a microcosmic globe, sulfur shifts like globulous masses, bounding in debase clumps of sticky amber."/>
-        <part Name="wmSulfurBurst"/>
-        <skill Name="Cudgel"/>
-        <skill Name="Cudgel_Bludgeon"/>
-        <tag Name="Role" Value="Brute"/>
-        <part Name="LightSource" Lit="true" Radius="6"/>
-        <tag Name="BleedLiquid" Value="liquidsulfur-1000"/>
-        <tag Name="BleedColor" Value="&amp;O"/>
-        <tag Name="BleedPrefix" Value="{{Sulfuric|sulfuric}}"/>
-    </object>
-
-    <object Name="Sulphuric Pseudopod" Inherits="Base Pseudopod">
-        <part Name="Render" DisplayName="{{sulfuric|sulphuric pseudopod}}" Tile="Creatures/natural-weapon-pseudopod.bmp" ColorString="&amp;R" />
-        <part Name="TemperatureOnHit" Amount="250-300" Max="false" OnWielderHit="true" />
-        <part Name="MeleeWeapon" HitBonus="6" MaxStrengthBonus="99" BaseDamage="3d4" Skill="Cudgel" Stat="Strength" />
-        <part Name="ElementalDamage" Damage="15-25" Attributes="Heat" />
-    </object>
-
-    <object Name="Grand Mortar Beetle" Inherits="BaseInsect">
-        <part Name="Render" DisplayName="grand mortar beetle" Tile="WingyTextures/grandbeetle.png" RenderString="i"
-              ColorString="&amp;K" DetailColor="a"/>
-        <part Name="Corpse" CorpseChance="25" CorpseBlueprint="Grand Mortar Beetle Corpse"/>
-        <part Name="Brain" Hostile="false"/>
-        <stat Name="AV" sValue="6"/>
-        <stat Name="DV" sValue="2"/>
-        <stat Name="Hitpoints" sValue="55"/>
-        <stat Name="Level" sValue="10"/>
-        <stat Name="HeatResistance" sValue="200"/>
-        <stat Name="ColdResistance" Value="-50"/>
-        <inventoryobject Blueprint="GiantBeetle_Bite" Number="1"/>
-        <part Name="Description"
-              Short="Shining black elytra flitter on the back of a goat-sized bug, its rear is armed with a fleshy catapult that lobs molten sulfur at its prey."/>
-        <skill Name="Cudgel"/>
-        <tag Name="Role" Value="Minion"/>
-        <part Name="Swarmer"/>
-        <tag Name="Species" Value="beetle"/>
-        <tag Name="DynamicObjectsTable:Jungle_Creatures"/>
-        <tag Name="DynamicObjectsTable:Ruins_Creatures"/>
-        <mutation Name="wmSpitSulfur" Level="1"/>
-    </object>
-    <object Name="GiantMortarBeetle_Bite" Inherits="Bite">
-        <part Name="MeleeWeapon" BaseDamage="2d4" Skill="Cudgel" Slot="Head"/>
-    </object>
-    <object Name="Grand Mortar Beetle Corpse" Inherits="Arthropod Corpse">
-        <part Name="Render" DisplayName="grand mortar beetle corpse"/>
-        <part Name="Commerce" Value="1"/>
-        <part Name="Butcherable" OnSuccess="Raw Beetle Meat"/>
-        <tag Name="Tier" Value="1"/>
-    </object>
-
-    <object Name="Crystwyk" Inherits="BaseReptile">
-        <part Name="Render" DisplayName="crystwyk" RenderString="r" DetailColor="C" ColorString="&amp;c"
-              Tile="WingyTextures/creatures/crystwyk.png"/>
-        <stat Name="Level" sValue="22"/>
-        <stat Name="AV" sValue="6"/>
-        <stat Name="DV" sValue="6"/>
-        <stat Name="ElectricResistance" sValue="15"/>
-        <stat Name="AcidResistance" sValue="15"/>
-        <stat Name="ColdResistance" sValue="100"/>
-        <stat Name="Hitpoints" sValue="100"/>
-        <part Name="Brain" Hostile="true"/>
-        <part Name="Description"
-              Short="Granules of dust crystallized for stony eons marble the dewlap of a giant magenta iguana."/>
-        <skill Name="ShortBlades"/>
-        <part Name="AIShootAndScoot" Duration="1d20+5"/>
-        <tag Name="Role" Value="Artillery"/>
-        <mutation Name="LightManipulation" Level="5"/>
-        <inventoryobject Blueprint="Crystwyk_Bite"/>
-        <tag Name="Species" Value="iguana"/>
-    </object>
-    <object Name="Crystwyk_Bite" Inherits="Bite">
-        <part Name="Render" DisplayName="{{C|crystalline jaws}}"/>
-        <part Name="MeleeWeapon" BaseDamage="2d4"/>
-        <tag Name="Gender" Value="plural"/>
-    </object>
-
-    <object Name="GlarewingRaptor" Inherits="BaseReptile">
-        <part Name="Render" DisplayName="glarewing raptor" RenderString="r"
-              Tile="WingyTextures/creatures/glarewingraptor.png"
-              DetailColor="y" ColorString="&amp;K"/>
-        <part Name="Body" Anatomy="Snake"/>
-        <part Name="Brain" Hostile="True" Factions="Birds-100,Unshelled Reptiles-100"/>
-        <part Name="Corpse" CorpseChance="50" CorpseBlueprint="Glarewing Raptor Corpse" CorpseRequiresBodyPart="Tail"/>
-        <stat Name="AV" sValue="4"/>
-        <stat Name="DV" sValue="4"/>
-        <stat Name="Level" sValue="15"/>
-        <stat Name="Hitpoints" sValue="30"/>
-        <mutation Name="FreezingRay" Level="4" BodyPartType="Face"/>
-        <mutation Name="wmGlareBurst"/>
-        <mutation Name="Wings" Level="10"/>
-        <inventoryobject Blueprint="Dawnglider_Bite" Number="1"/>
-        <stat Name="HeatResistance" sValue="0"/>
-        <part Name="Description"
-              Short="Leathery wings bat shimmering dust off =pronouns.possessive= ray-like aura, and =pronouns.possessive= S-shape bod ripples across their waves of air. =pronouns.Possessive= plumage is blinding with the glint of crystalline shear."/>
-        <tag Name="Species" Value="dawnglider"/>
-        <tag Name="SeveredTailBlueprint" Value="Dawnglider Tail"/>
-        <tag Name="Role" Value="Artillery"/>
-        <tag Name="DynamicObjectsTable:Saltdunes_Creatures"/>
-    </object>
-    <object Name="Dawnglider_Bite" Inherits="Bite">
-        <part Name="MeleeWeapon" BaseDamage="1d4"/>
-        <part Name="TemperatureOnHit" Amount="2d20" Max="true" MaxTemp="-200" OnWielderHit="false"/>
-    </object>
-    <object Name="Glarewing Raptor Corpse" Inherits="Scaled Reptile Corpse">
-        <part Name="Render" DisplayName="dawnglider corpse"/>
-        <part Name="Commerce" Value="8"/>
-        <part Name="Description" Short="Broken scales and burnt feathers lay in flat tessellation."/>
-        <part Name="Butcherable" OnSuccess="Dawnglider Tail"/>
-        <tag Name="Tier" Value="3"/>
-    </object>
-
-    <object Name="Scythetoothed Leviathan" Inherits="BaseFish">
-        <part Name="Render" DisplayName="scythe-toothed leviathan" Tile="WingyTextures/Scythetooth_Leviathian.png"
-              RenderString="224"
-              ColorString="&amp;M"/>
-        <part Name="Corpse" CorpseChance="100" CorpseBlueprint="Madpole Corpse"/>
-        <stat Name="Hitpoints" sValue="150"/>
-        <stat Name="Strength" sValue="66"/>
-        <stat Name="Agility" sValue="32"/>
-        <stat Name="Level" sValue="32"/>
-        <part Name="Brain" WandersRandomly="true" Wanders="false" Hostile="True" Aquatic="true"/>
-        <mutation Name="Gills" Level="10"/>
-        <skill Name="Axe_Expertise"/>
-        <skill Name="Axe_Dismember"/>
-        <part Name="LiquidProximityFrenzies" Range="0" Duration="10" BerserkImmediately="true"
-              PreferBleedingTarget="true"/>
-        <part Name="Description"
-              Short="The distended jaw of this leviathian bears many hooked teeth, shaped unlike the vinereavers a farmer might bare."/>
-        <inventoryobject Blueprint="Scythetoothed_Jaws" Number="1"/>
-        <property Name="NoLoot" Value="true"/>
-        <tag Name="Role" Value="Minion"/>
-        <tag Name="Species" Value="fish"/>
-        <tag Name="DynamicObjectsTable:Water_Creatures"/>
-        <tag Name="PlacementHint" Value="Aquatic"/>
-    </object>
-    <object Name="Scythetoothed_Jaws" Inherits="NaturalWeapon">
-        <part Name="Render" DisplayName="gargantuan jaws" Tile="Creatures/natural-weapon-bite.bmp"
-              ColorString="&amp;w"/>
-        <part Name="MeleeWeapon" Slot="Face" MaxStrengthBonus="9999" BaseDamage="4d6" Skill="Axe"/>
-        <part Name="LatchesOn" InitialSaveTarget="15" InitialSaveStat="Agility" InitialSaveDifficultyStat="Agility"
-              MoveSaveTarget="15" MoveSaveStat="Strength" MoveSaveDifficultyStat="Strength" BreakSaveTarget="15"
-              BreakSaveStat="Strength" BreakSaveDifficultyStat="Strength" Duration="3d4" AutoAttackOnMove="false"
-              AutoAttackOnMoveAway="false" AutoAttackPerTurn="true" BloodSpatterOnLatch="true"/>
-        <tag Name="Gender" Value="plural"/>
-    </object>
-
-    <object Name="Deathmaw Leviathan" Inherits="BaseFish">
-        <part Name="Render" DisplayName="deathmaw leviathan" Tile="WingyTextures/Deathmaw_Leviathian.png"
-              RenderString="224"
-              ColorString="&amp;B"/>
-        <part Name="Corpse" CorpseChance="100" CorpseBlueprint="Madpole Corpse"/>
-        <stat Name="Hitpoints" sValue="85"/>
-        <stat Name="Strength" sValue="66"/>
-        <stat Name="Agility" sValue="32"/>
-        <stat Name="Level" sValue="32"/>
-        <part Name="Brain" WandersRandomly="true" Wanders="false" Hostile="True" Aquatic="true"/>
-        <mutation Name="Gills" Level="10"/>
-        <skill Name="Axe_Expertise"/>
-        <skill Name="Axe_Dismember"/>
-        <part Name="LiquidProximityFrenzies" Range="0" Duration="10" BerserkImmediately="true"
-              PreferBleedingTarget="true"/>
-        <part Name="Description"
-              Short="Maybe this is what a madpole is to become, a vicious beast of gargantuan size, jaws lined with thousands of teeth shimmering as it hones in on any sign of life around it."/>
-        <inventoryobject Blueprint="Scythetoothed_Jaws" Number="1"/>
-        <property Name="NoLoot" Value="true"/>
-        <tag Name="Role" Value="Minion"/>
-        <tag Name="Species" Value="fish"/>
-        <tag Name="DynamicObjectsTable:Water_Creatures"/>
-        <tag Name="PlacementHint" Value="Aquatic"/>
-    </object>
-    <object Name="Deathmaw Jaws" Inherits="NaturalWeapon">
-        <part Name="Render" DisplayName="gargantuan jaws" Tile="WingyTextures/Creatures/natural-weapon-bite.bmp"
-              ColorString="&amp;w"/>
-        <part Name="MeleeWeapon" Slot="Face" MaxStrengthBonus="9999" BaseDamage="6d6" Skill="Axe"/>
-        <part Name="LatchesOn" InitialSaveTarget="15" InitialSaveStat="Agility" InitialSaveDifficultyStat="Agility"
-              MoveSaveTarget="15" MoveSaveStat="Strength" MoveSaveDifficultyStat="Strength" BreakSaveTarget="15"
-              BreakSaveStat="Strength" BreakSaveDifficultyStat="Strength" Duration="3d4" AutoAttackOnMove="false"
-              AutoAttackOnMoveAway="false" AutoAttackPerTurn="true" BloodSpatterOnLatch="true"/>
-        <tag Name="Gender" Value="plural"/>
-    </object>
-
-    <object Name="Darkwell Leviathan" Inherits="BaseFish">
-        <part Name="Render" DisplayName="darkwell leviathan" Tile="WingyTextures/Darkwell_Leviathian.png"
-              RenderString="224"
-              ColorString="&amp;y"/>
-        <part Name="Corpse" CorpseChance="100" CorpseBlueprint="Madpole Corpse"/>
-        <stat Name="Hitpoints" sValue="85"/>
-        <stat Name="Strength" sValue="66"/>
-        <stat Name="Agility" sValue="32"/>
-        <stat Name="Level" sValue="32"/>
-        <part Name="Brain" WandersRandomly="true" Wanders="false" Hostile="True" Aquatic="true"/>
-        <mutation Name="Gills" Level="10"/>
-        <skill Name="Axe_Expertise"/>
-        <skill Name="Axe_Dismember"/>
-        <part Name="LiquidProximityFrenzies" Range="0" Duration="10" BerserkImmediately="true"
-              PreferBleedingTarget="true"/>
-        <part Name="Description"
-              Short="A dark shadow envelopes this massive serpent, an eerie silence moves with it as you catch its faint appearance here and there, diving between planes of water and void."/>
-        <inventoryobject Blueprint="Darkwell_Jaws" Number="1"/>
-        <property Name="NoLoot" Value="true"/>
-        <tag Name="Role" Value="Minion"/>
-        <tag Name="Species" Value="fish"/>
-        <tag Name="DynamicObjectsTable:Water_Creatures"/>
-        <tag Name="PlacementHint" Value="Aquatic"/>
-    </object>
-    <object Name="Darkwell_Jaws" Inherits="NaturalWeapon">
-        <part Name="Render" DisplayName="gargantuan jaws" Tile="Creatures/natural-weapon-bite.bmp"
-              ColorString="&amp;w"/>
-        <part Name="MeleeWeapon" Slot="Face" MaxStrengthBonus="9999" BaseDamage="2d6" Skill="Axe"/>
-        <part Name="LatchesOn" InitialSaveTarget="15" InitialSaveStat="Agility" InitialSaveDifficultyStat="Agility"
-              MoveSaveTarget="15" MoveSaveStat="Strength" MoveSaveDifficultyStat="Strength" BreakSaveTarget="15"
-              BreakSaveStat="Strength" BreakSaveDifficultyStat="Strength" Duration="3d4" AutoAttackOnMove="false"
-              AutoAttackOnMoveAway="false" AutoAttackPerTurn="true" BloodSpatterOnLatch="true"/>
-        <tag Name="Gender" Value="plural"/>
-    </object>
-
-    <object Name="Mantra Ray" Inherits="BaseFish">
-        <part Name="Render" DisplayName="mantra ray" RenderString="224" ColorString="&amp;r"
-              Tile="WingyTextures/mantrarays.png"/>
-        <part Name="Corpse" CorpseChance="0" CorpseBlueprint="Madpole Corpse"/>
-        <stat Name="Hitpoints" sValue="12"/>
-        <stat Name="Strength" sValue="18"/>
-        <stat Name="Agility" sValue="17"/>
-        <stat Name="Level" sValue="13"/>
-        <part Name="Brain" WandersRandomly="true" Hostile="false" Wanders="false" Aquatic="true" Calm="true"
-              Factions="Fish-100"/>
-        <mutation Name="Gills" Level="10"/>
-        <mutation Name="LightManipulation" Level="10"/>
-        <mutation Name="ForceWall" Level="10"/>
-        <part Name="Description"
-              Short="Great wings of cartilage flit on the ocean current in slow methodical motions, its edges glow with luminescence."/>
-        <inventoryobject Blueprint="Mantra_Bite" Number="1"/>
-        <property Name="NoLoot" Value="true"/>
-        <tag Name="PlacementHint" Value="Aquatic"/>
-    </object>
-    <object Name="Mantra_Bite" Inherits="Bite">
-        <part Name="MeleeWeapon" MaxStrengthBonus="9999" BaseDamage="4d4" Skill="Axe"/>
-    </object>
-
-    <!-- Leviathans -->
-
-    <object Name="LeviathanHead" Inherits="BaseFish">
-        <part Name="Render" DisplayName="godhead leviathan" RenderString="224" ColorString="&amp;r"
-              Tile="WingyTextures/levihead.png"/>
-        <part Name="Corpse" CorpseChance="0" CorpseBlueprint="Madpole Corpse"/>
-        <stat Name="Hitpoints" sValue="5000"/>
-        <stat Name="Strength" sValue="50"/>
-        <stat Name="Agility" sValue="20"/>
-        <stat Name="Level" sValue="50"/>
-        <part Name="Brain" WandersRandomly="true" Hostile="true" Wanders="false" Aquatic="true"
-              Factions="Fish-100"/>
-        <part Name="wmLeviathanHead"/>
-        <mutation Name="Gills" Level="10"/>
-        <part Name="Description"
-              Short="A gargantuan maw is forever agape, as the monolith drifts through the open ocean, food filters through its countless baleen hairs, while fluids are ejected from siphons on the creature's pectoral main-line."/>
-        <inventoryobject Blueprint="Leviathan_Bite" Number="1"/>
-        <property Name="NoLoot" Value="true"/>
-        <tag Name="PlacementHint" Value="Aquatic"/>
-    </object>
-    <object Name="Leviathan_Bite" Inherits="Bite">
-        <part Name="MeleeWeapon" MaxStrengthBonus="9999" BaseDamage="4d12" Skill="Axe"/>
-    </object>
-
-    <object Name="LeviathanTail" Inherits="BaseFish">
-        <part Name="Render" DisplayName="godhead leviathan" RenderString="224" ColorString="&amp;r"
-              Tile="WingyTextures/levitail.png"/>
-        <part Name="Corpse" CorpseChance="0" CorpseBlueprint="Madpole Corpse"/>
-        <stat Name="Hitpoints" sValue="5000"/>
-        <stat Name="Strength" sValue="50"/>
-        <stat Name="Agility" sValue="20"/>
-        <stat Name="Level" sValue="50"/>
-        <part Name="Brain" WandersRandomly="true" Hostile="false" Wanders="false" Aquatic="true" Calm="true"
-              Factions="Fish-100"/>
-        <mutation Name="Gills" Level="10"/>
-        <part Name="Description"
-              Short="Following the leviathan's maw are undulating, bioluminescent shafts of ribbed-muscles and dorsal fins."/>
-        <property Name="NoLoot" Value="true"/>
-        <tag Name="PlacementHint" Value="Aquatic"/>
-    </object>
+    
 
     <!-- Search:bugvillage/IMPORTANT NPCS -->
 
     <object Name="Mask of The Encoded Eater" Inherits="Armor">
-        <part Name="Armor" AV="0" DV="1" Ego="1" WornOn="Face"/>
+        <part Name="Armor" AV="3" DV="3" Ego="4" WornOn="Face"/>
         <part Name="Render" DisplayName="The {{encoded|Encoded One's}} {{grey|Mask}}" RenderString="]"
               Tile="WingyTextures/MaskOfTheEncodedEater.png" ColorString="&amp;k" TileColor="&amp;K;" DetailColor="A"/>
         <part Name="Commerce" Value="250"/>
@@ -3048,6 +2833,23 @@
               TileAnimationFrames="0=WingyTextures/ElectroSphere/electrosphere00.png, 10=WingyTextures/ElectroSphere/electrosphere02.png, 20=WingyTextures/ElectroSphere/electrosphere03.png, 30=WingyTextures/ElectroSphere/electrosphere04.png, 40=WingyTextures/ElectroSphere/electrosphere05.png, 50=WingyTextures/ElectroSphere/electrosphere06.png"
         />
         <part Name="SphericalStaticBurst"/>
+    </object>
+
+    <object Name="Blazing Firefly" Inherits="BaseInsect">
+        <part Name="Render" DisplayName="{{blaze|blazing}} fire-fly" RenderString="*" ColorString="&amp;r"
+              DetailColor="O" Tile="WingyTextures/butterfly.png" RenderLayer="5"/>
+        <part Name="Physics" FlameTemperature="2550" Takeable="false" IsReal="true"/>
+        <part Name="Brain" Hostile="true" Factions="Playerneutral-100"/>
+        <stat Name="Hitpoints" Value="25" />
+        <part Name="Commerce" Value="0"/>
+        <part Name="Description"
+              Short="Plasmatic wings beat like airy hearthes against the earth-winds. As it flutters, the world distorts in waveforms against radiant heat-waves."/>
+        <tag Name="IgnoresGravity"/>
+        <part Name="AmbientHeatDeath"/>
+        <mutation Name="FlamingRay" Level="10" Variant="Ghostly Flames Face" BodyPartType="Face" />
+        <mutation Name="Pyrokinesis" Level="10" />
+        <part Name="AIShootAndScoot"/>
+        <stat Name="HeatResistance" Value="250" />
     </object>
 
     <object Name="ProjectileLoversGaze" Inherits="TemporaryProjectile">
@@ -3255,6 +3057,14 @@
         <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_metal"/>
         <removepart Name="Graffitied"/>
         <tag Name="ExcludeFromDynamicEncounters"/>
+    </object>
+
+    <object Name="Crystweave Canvas" Inherits="BrinestalkStakes">
+        <part Name="Render" DisplayName="crystweave canvas" RenderString="215" ColorString="&amp;y" DetailColor="c" Occluding="true" />
+        <part Name="Physics" Weight="250" Takeable="false" Solid="true" Organic="true" />
+        <part Name="Description" Short="Shimmering cryst-leaf is hewn and sewn into serpentine rivets then hung from shimmer-wood logging." />
+        <tag Name="PaintedFence" Value="crystweavecanvas" />
+        <tag Name="PaintedFenceAtlas" Value="WingyTextures/crystweavecanvas/" />
     </object>
 
 <!--    <object Name="LunarWall" Inherits="Wall">-->
@@ -3704,6 +3514,7 @@
                 Arc="0"
                 Easing="SineInOut"
         />
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
     </object>
 
     <object Name="Keracryst Dja" Inherits="BaseDagger">
@@ -3722,6 +3533,7 @@
         <tag Name="NoAIEquipAsThrownWeapon"/>
         <tag Name="HideThrownWeaponPerformance"/>
         <tag Name="Tier" Value="7"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
     </object>
 
     <object Name="Keracryst Tulwar" Inherits="BaseLongBlade">
@@ -3738,6 +3550,7 @@
         <tag Name="SwingSound" Value="Sounds/Melee/longBlades/sfx_melee_longBlade_crysteel_swing"/>
         <tag Name="BlockedSound" Value="Sounds/Melee/multiUseBlock/sfx_melee_crysteel_blocked"/>
         <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_blade_long_glass"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
     </object>
 
     <object Name="Keracryst Caveler" Inherits="BaseShield">
@@ -3752,6 +3565,7 @@
         <tag Name="EquipSound" Value="sfx_equip_material_generic_glass"/>
         <tag Name="Tier" Value="7"/>
         <tag Name="Flawless"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
     </object>
 
     <object Name="Keracite Coffin-Shield" Inherits="BaseShield">
@@ -3767,6 +3581,7 @@
         <tag Name="EquipSound" Value="sfx_equip_material_generic_glass"/>
         <tag Name="Flawless"/>
         <tag Name="Tier" Value="7"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
     </object>
 
     <object Name="Keracite Maille Gauntlet" Inherits="BaseGlove">
@@ -3782,6 +3597,7 @@
         <tag Name="Role" Value="Rare"/>
         <stag Name="Historical"/>
         <part Name="MoveCostMultiplier" Amount="-5"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
     </object>
 
     <object Name="Keracryst Grandhup" Inherits="BaseLongBlade">
@@ -3799,6 +3615,7 @@
         <tag Name="SwingSound" Value="Sounds/Melee/longBlades/sfx_melee_longBlade_crysteel_swing"/>
         <tag Name="BlockedSound" Value="Sounds/Melee/multiUseBlock/sfx_melee_crysteel_blocked"/>
         <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_blade_long_glass"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
     </object>
 
     <object Name="Glittercloth Brassiere" Inherits="BaseArmor">
@@ -3813,10 +3630,12 @@
         <tag Name="Tier" Value="7"/>
         <tag Name="Gender" Value="plural"/>
         <part Name="MoveCostMultiplier" Amount="-30"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
     </object>
 
     <object Name="Keracite Stilletos" Inherits="BaseBoot">
         <part Name="Armor" AV="1" DV="3" Acid="5" Elec="5" Cold="5" Heat="5" WornOn="Feet"/>
+        <part Name="MeleeWeapon" PenBonus="3" MaxStrengthBonus="9" BaseDamage="1d10" Skill="ShortBlades"/>
         <part Name="Render" DisplayName="{{dreamsmoke|keracite}} stilletos" Tile="WingyTextures/KeraciteStilletos.png"
               TileColor="&amp;K" DetailColor="P" ColorString="&amp;K" RenderString="]"/>
         <part Name="Commerce" Value="350"/>
@@ -3827,18 +3646,24 @@
         <part Name="MoveCostMultiplier" Amount="-20"/>
         <tag Name="EquipSound" Value="sfx_equip_armor_leather"/>
         <stag Name="Movement"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
     </object>
 
     <object Name="Keracite Lamellar Armor" Inherits="BaseTierBody7_AV">
-        <part Name="Armor" AV="4" DV="0" Acid="5" Elec="5" Cold="5" Heat="5"/>
+        <part Name="Armor" AV="10" DV="-1" Acid="25" Elec="25" Cold="25" Heat="25"/>
         <part Name="Render" DisplayName="{{dreamsmoke|keracite}} lamellar armor"
               Tile="WingyTextures/keracitelamellararmor.png" TileColor="&amp;K" DetailColor="P"
               ColorString="&amp;K" RenderString="]"/>
-        <part Name="Commerce" Value="4000"/>
+        <part Name="Commerce" Value="8000"/>
         <part Name="Description" Short="Stylish black armor with a silk shoulder-crest."/>
         <tag Name="Mods" Value="None"/>
         <tag Name="BaseObject" Value="*noinherit"/>
         <part Name="MoveCostMultiplier" Amount="-5"/>
+        <part Name="ItemElements" Elements="glass::5" />
+        <part Name="KeraciteChestArmorProperties" />
+        <part Name="NoDamage"/>
+        <tag Name="NoEffects"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
     </object>
 
     <object Name="Keracite Greaves" Inherits="BaseBoot">
@@ -3854,6 +3679,8 @@
         <part Name="MoveCostMultiplier" Amount="-5"/>
         <tag Name="EquipSound" Value="sfx_equip_armor_leather"/>
         <stag Name="Movement"/>
+        <part Name="KeraciteGreavesArmorProperties" />
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
     </object>
 
     <object Name="Glittercloth Banded Leotard" Inherits="BaseTierBody7_AV">
@@ -3867,6 +3694,7 @@
         <tag Name="Mods" Value="None"/>
         <tag Name="BaseObject" Value="*noinherit"/>
         <part Name="MoveCostMultiplier" Amount="-20"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
     </object>
     
 <!--    Nuurimirs Stuff-->
@@ -3875,7 +3703,7 @@
         <part Name="Render" DisplayName="Nuurimir's Ravager" Tile="nuurimirssword.png" ColorString="&amp;p" DetailColor="M" />
         <part Name="MeleeWeapon" PenBonus="1" MaxStrengthBonus="15" BaseDamage="3d15" Skill="Axe" />
         <part Name="Commerce" Value="9999" />
-        <part Name="Description" Short="A great-slab of fulcrete, taller than any mortal and impaled through by an axle of chrome. The many it has decimated leave its edge stained; scales, fur and even fulcrum-nanites embedded into its core. Hardened by blood and chipped bones, the marring-great cleaver slays without mercy, determined to feed on defeated it culls in the moment. Just like its previous master." />
+        <part Name="Description" Short="A great-slab of fulcrete, taller than any mortal and impaled through by an axle of chrome. The many it has decimated leave its edge stained; scales, fur and even fulcrum-nanites embedded into its core. Hardened by blood and chipped bones, the marring-great cleaver slays without mercy, determined to feed on the defeated it culls in the moment. Just like its previous master." />
         <part Name="Metal" />
         <part Name="Zetachrome" />
         <tag Name="Tier" Value="8" />
@@ -3885,6 +3713,7 @@
         <tag Name="BlockedSound" Value="Sounds/Melee/multiUseBlock/sfx_melee_zetachrome_blocked" />
         <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_blade_long_quantum" />
         <stag Name="Historical" />
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
     </object>
 
     <!--    ERAS -->

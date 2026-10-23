@@ -4,6 +4,7 @@
     <object Name="Glowing Shardgrove Tree"></object>
     <object Name="CrystalDirty"></object>
     <object Name="DaylightWidget"></object>
+    <object Name="ButterflySpawnerWidget"></object>
   </cell>
   <cell X="1" Y="0">
     <object Name="Glowing Shardgrove Tree"></object>
@@ -1551,6 +1552,7 @@
   </cell>
   <cell X="40" Y="8">
     <object Name="Crystal Flowers"></object>
+    <object Name="Amulseetae ShahSarcophagusN Standing"></object>
   </cell>
   <cell X="41" Y="8">
     <object Name="Crystal Flowers"></object>
@@ -1757,7 +1759,7 @@
     <object Name="LiquidCrystniumDeepPool"></object>
   </cell>
   <cell X="40" Y="9">
-    <object Name="LiquidCrystniumDeepPool"></object>
+    <object Name="Amulseetae ShahSarcophagusS Standing"></object>
   </cell>
   <cell X="41" Y="9">
     <object Name="LiquidCrystniumDeepPool"></object>
@@ -3016,24 +3018,24 @@
   <cell X="9" Y="16"></cell>
   <cell X="10" Y="16">
     <object Name="FlowerPatches"></object>
-    <object Name="CanvasWall"></object>
+    <object Name="Crystweave Canvas"></object>
   </cell>
   <cell X="11" Y="16">
-    <object Name="CanvasWall"></object>
+    <object Name="Crystweave Canvas"></object>
   </cell>
   <cell X="12" Y="16">
-    <object Name="CanvasWall"></object>
+    <object Name="Crystweave Canvas"></object>
   </cell>
   <cell X="13" Y="16">
-    <object Name="CanvasWall"></object>
+    <object Name="Crystweave Canvas"></object>
   </cell>
   <cell X="14" Y="16">
     <object Name="FlowerPatches"></object>
-    <object Name="CanvasWall"></object>
+    <object Name="Crystweave Canvas"></object>
   </cell>
   <cell X="15" Y="16">
     <object Name="Flowers"></object>
-    <object Name="CanvasWall"></object>
+    <object Name="Crystweave Canvas"></object>
   </cell>
   <cell X="16" Y="16"></cell>
   <cell X="17" Y="16">
@@ -3221,7 +3223,7 @@
   </cell>
   <cell X="15" Y="17">
     <object Name="FlowerPatches"></object>
-    <object Name="CanvasWall"></object>
+    <object Name="Crystweave Canvas"></object>
   </cell>
   <cell X="16" Y="17"></cell>
   <cell X="17" Y="17">
@@ -3388,7 +3390,7 @@
   </cell>
   <cell X="9" Y="18"></cell>
   <cell X="10" Y="18">
-    <object Name="CanvasWall"></object>
+    <object Name="Crystweave Canvas"></object>
   </cell>
   <cell X="11" Y="18">
     <object Name="bugvillager"></object>
@@ -3595,7 +3597,7 @@
     <object Name="FlowerPatches"></object>
   </cell>
   <cell X="15" Y="19">
-    <object Name="CanvasWall"></object>
+    <object Name="Crystweave Canvas"></object>
   </cell>
   <cell X="16" Y="19"></cell>
   <cell X="17" Y="19">
@@ -3765,22 +3767,22 @@
     <object Name="FlowerPatches"></object>
   </cell>
   <cell X="10" Y="20">
-    <object Name="CanvasWall"></object>
+    <object Name="Crystweave Canvas"></object>
   </cell>
   <cell X="11" Y="20">
-    <object Name="CanvasWall"></object>
+    <object Name="Crystweave Canvas"></object>
   </cell>
   <cell X="12" Y="20">
-    <object Name="CanvasWall"></object>
+    <object Name="Crystweave Canvas"></object>
   </cell>
   <cell X="13" Y="20">
-    <object Name="CanvasWall"></object>
+    <object Name="Crystweave Canvas"></object>
   </cell>
   <cell X="14" Y="20">
-    <object Name="CanvasWall"></object>
+    <object Name="Crystweave Canvas"></object>
   </cell>
   <cell X="15" Y="20">
-    <object Name="CanvasWall"></object>
+    <object Name="Crystweave Canvas"></object>
   </cell>
   <cell X="16" Y="20"></cell>
   <cell X="17" Y="20"></cell>

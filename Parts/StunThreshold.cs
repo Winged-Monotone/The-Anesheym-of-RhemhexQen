@@ -28,7 +28,7 @@ namespace XRL.World.Parts
         {
             if (E.Object == ParentObject)
             {
-                if (ParentObject.HasEffect<Stun>())
+                if (ParentObject.HasEffect<Stun>() && ParentObject.HasEffect<Paralyzed>() && ParentObject.HasEffect<Dazed>())
                 {
                     StunCap += 3;
 
@@ -36,8 +36,10 @@ namespace XRL.World.Parts
                     {
                         // trying to stun lock me? fuck you ...
                         AddPlayerMessage(ParentObject.DisplayName + " has absorbed your concussive attacks!");
-                        StunningForce.Concussion(ParentObject.CurrentCell, ParentObject, 10, 4, 1, Stun: false);
+                        StunningForce.Concussion(ParentObject.CurrentCell, ParentObject, 15, 7, 1, Stun: false);
                         ParentObject.RemoveEffect<Stun>();
+                        ParentObject.RemoveEffect<Paralyzed>();
+                        ParentObject.RemoveEffect<Dazed>();
                     }
                 }
             }

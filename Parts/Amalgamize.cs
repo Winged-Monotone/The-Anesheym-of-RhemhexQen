@@ -92,6 +92,10 @@ namespace XRL.World.Parts.Mutation
                 
                 ParentObject.Obliterate();
             }
+            else
+            {
+                DidXToY("fails to slither", "beneath", Target, "skin", "...", ColorAsBadFor: ParentObject, ColorAsGoodFor: Target, PossessiveObject: true, FromDialog: false);
+            }
              
             CooldownMyActivatedAbility(ActivatedAbilityID, 40);
             UseEnergy(1000, "Physical Mutation Amal Infect");

@@ -5,3 +5,6 @@ bin
 *.csproj.user
 *.DotSettings
 *.DotSettings.user
+*.aseprite
+*.flp
+*.clip

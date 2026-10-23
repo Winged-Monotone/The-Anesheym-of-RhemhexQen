@@ -85,10 +85,57 @@ namespace Wingytone.Systems
 
             return base.HandleEvent(E);
         }
+        
+        // Zone Tier calculator that monitors
+        public bool TierChance(int ZoneTier)
+        {
+            if (ZoneTier == 1)
+            {
+                return 40.in100();
+            }
+            else if (ZoneTier == 2)
+            {
+                return 30.in100();
+            }
+            else if (ZoneTier == 3)
+            {
+                return 25.in100();
+            }
+            else if (ZoneTier == 4)
+            {
+                return 20.in100();
+            }
+            else if (ZoneTier == 5)
+            {
+                return 15.in100();
+            }
+            else if (ZoneTier == 6)
+            {
+                return 7.in100();
+            }
+            else if (ZoneTier == 7)
+            {
+                return 3.in100();
+            }
+            else if (ZoneTier == 8)
+            {
+                return 1.in1000();
+            }
+            else
+                return 40.in100();
+        }
+
+        public bool ReconsiderGroundPlacement()
+        {
+            if (3.in100())
+                return true;
+            else
+                return false;
+        }
 
         public void PlaceEggs(Zone zone)
         {
-            if (25.in100())
+            if (TierChance(zone.NewTier))
             {
                 return;
             }
@@ -133,7 +180,9 @@ namespace Wingytone.Systems
             // on flor or if other placement failed
             foreach (Cell C in zone.GetEmptyReachableCells().Shuffle())
             {
-                C.AddObject(PopEggsBluePrint);
+                
+                if (ReconsiderGroundPlacement())
+                    C.AddObject(PopEggsBluePrint);
 
                 return;
             }

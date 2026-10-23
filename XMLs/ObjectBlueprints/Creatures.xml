@@ -6,7 +6,7 @@
 
     <object Name="MechaCrab" Inherits="BaseCrab">
         <property Name="Role" Value="NPC"/>
-        <stat Name="Level" sValue="40"/>
+        <stat Name="Level" Value="40"/>
         <tag Name="Gender" Value="neuter"/>
         <part Name="Brain" Hostile="true" Factions="Robots-100" MaxKillRadius="5"/>
         <part Name="Render" DisplayName="colossal mecha-crab" Tile="WingyTextures/WalkerCrab.png" ColorString="&amp;K^y"
@@ -70,7 +70,7 @@
     <object Name="Amalgam Skin Slink" Inherits="BaseAmalgam">
         <mixin Name="BaseAmalgamAttributes"/>
         <property Name="Role" Value="NPC"/>
-        <stat Name="Level" sValue="24"/>
+        <stat Name="Level" Value="24"/>
         <tag Name="Gender" Value="neuter"/>
         <part Name="Brain" Hostile="true" Factions="Amalgam-100" MaxKillRadius="10" Wanders="true" Aquatic="false"/>
         <part Name="Render" DisplayName="amalgamate skin-slink" Tile="WingyTextures/skinslink.png" RenderString="z"
@@ -95,7 +95,7 @@
     <object Name="Bursting Pustulate" Inherits="Plant Turret">
         <mixin Name="BaseAmalgamAttributes"/>
         <property Name="Role" Value="NPC"/>
-        <stat Name="Level" sValue="24"/>
+        <stat Name="Level" Value="24"/>
         <tag Name="Gender" Value="neuter"/>
         <part Name="Brain" Hostile="true" Factions="Amalgam-100" MaxKillRadius="10"/>
         <part Name="Render" DisplayName="bursting pustulate" Tile="WingyTextures/burstingpustulate.png" RenderString="z"
@@ -157,7 +157,7 @@
     <object Name="Amalgam Juggernaut" Inherits="BaseAmalgam">
         <mixin Name="BaseAmalgamAttributes"/>
         <property Name="Role" Value="NPC"/>
-        <stat Name="Level" sValue="24"/>
+        <stat Name="Level" Value="24"/>
         <tag Name="Gender" Value="neuter"/>
         <part Name="Brain" Hostile="true" Factions="Amalgam-100" MaxKillRadius="10"/>
         <part Name="Render" DisplayName="amalgam juggernaut" Tile="WingyTextures/AmalgamJuggernaut.png" RenderString="z"
@@ -192,7 +192,7 @@
     <object Name="Amalgam Prime" Inherits="BaseAmalgam">
         <mixin Name="BaseAmalgamAttributes"/>
         <property Name="Role" Value="NPC"/>
-        <stat Name="Level" sValue="15"/>
+        <stat Name="Level" Value="15"/>
         <tag Name="Gender" Value="neuter"/>
         <part Name="Brain" Hostile="true" Factions="Amalgam-100" MaxKillRadius="10"/>
         <part Name="Render" DisplayName="amalgam prime" Tile="WingyTextures/amalgamprime.png" RenderString="z"
@@ -225,7 +225,7 @@
     <object Name="Amalgam Super Boss" Inherits="BaseAmalgam">
         <mixin Name="BaseAmalgamAttributes"/>
         <property Name="Role" Value="NPC"/>
-        <stat Name="Level" sValue="30"/>
+        <stat Name="Level" Value="30"/>
         <tag Name="Gender" Value="neuter"/>
         <part Name="Brain" Hostile="true" Factions="Amalgam-100" MaxKillRadius="10"/>
         <part Name="Render" DisplayName="amalgam zenithar" Tile="WingyTextures/creatures/amalgam5.png" RenderString="z"
@@ -250,7 +250,7 @@
 
     <object Name="Amalgam Super Doubter" Inherits="BaseAmalgam">
         <mixin Name="BaseAmalgamAttributes"/>
-        <stat Name="Level" sValue="30"/>
+        <stat Name="Level" Value="30"/>
         <tag Name="Gender" Value="neuter"/>
         <part Name="Brain" Hostile="true" Factions="Amalgam-100" MaxKillRadius="10"/>
         <part Name="Render" DisplayName="The One Who Doubted" Tile="WingyTextures/creatures/amalgam5.png"
@@ -282,7 +282,7 @@
 
     <object Name="Amalgam Super Critic" Inherits="BaseAmalgam">
         <mixin Name="BaseAmalgamAttributes"/>
-        <stat Name="Level" sValue="30"/>
+        <stat Name="Level" Value="30"/>
         <tag Name="Gender" Value="neuter"/>
         <part Name="Brain" Hostile="true" Factions="Amalgam-100" MaxKillRadius="10"/>
         <part Name="Render" DisplayName="The One Who Criticized" Tile="WingyTextures/creatures/amalgam5.png"
@@ -314,7 +314,7 @@
 
     <object Name="Amalgam Super Duper Giga Boss" Inherits="BaseAmalgam">
         <mixin Name="BaseAmalgamAttributes"/>
-        <stat Name="Level" sValue="50"/>
+        <stat Name="Level" Value="50"/>
         <tag Name="Gender" Value="male"/>
         <part Name="Brain" Hostile="true" Factions="Amalgam-100" MaxKillRadius="10"/>
         <part Name="Render" DisplayName="Nielst {{fleshy|Ascended}}"
@@ -360,7 +360,7 @@
 
     <object Name="Amalgam Super Witness" Inherits="BaseAmalgam">
         <mixin Name="BaseAmalgamAttributes"/>
-        <stat Name="Level" sValue="24"/>
+        <stat Name="Level" Value="24"/>
         <tag Name="Gender" Value="neuter"/>
         <part Name="Brain" Hostile="true" Factions="Amalgam-100" MaxKillRadius="10"/>
         <part Name="Render" DisplayName="{{fleshy|witness}}" Tile="WingyTextures/creatures/amalgam5.png"
@@ -399,7 +399,7 @@
 
     <object Name="BaseAmalgamSwarmer" Inherits="BaseAmalgam">
         <mixin Name="BaseAmalgamAttributes"/>
-        <stat Name="Level" sValue="24"/>
+        <stat Name="Level" Value="24"/>
         <tag Name="Gender" Value="neuter"/>
         <part Name="Brain" Hostile="true" Factions="Amalgam-100" MaxKillRadius="10"/>
         <part Name="Description"
@@ -427,7 +427,7 @@
     </object>
 
     <object Name="Amalgam1" Inherits="BaseAmalgamSwarmer">
-        <stat Name="Level" sValue="15"/>
+        <stat Name="Level" Value="15"/>
         <tag Name="Gender" Value="neuter"/>
         <part Name="Brain" Hostile="true" Factions="Amalgam-100" MaxKillRadius="10"/>
         <part Name="Render" DisplayName="amalgamate" Tile="WingyTextures/creatures/amalgam1.png" RenderString="z"
@@ -453,7 +453,7 @@
 
     <object Name="Amalgam2" Inherits="BaseAmalgamSwarmer">
         <property Name="Role" Value="NPC"/>
-        <stat Name="Level" sValue="17"/>
+        <stat Name="Level" Value="17"/>
         <tag Name="Gender" Value="neuter"/>
         <part Name="Brain" Hostile="true" Factions="Amalgam-100" MaxKillRadius="10"/>
         <part Name="Render" DisplayName="amalgamate" Tile="WingyTextures/creatures/amalgam2.png" RenderString="z"
@@ -479,7 +479,7 @@
 
     <object Name="Amalgam3" Inherits="BaseAmalgamSwarmer">
         <property Name="Role" Value="NPC"/>
-        <stat Name="Level" sValue="20"/>
+        <stat Name="Level" Value="20"/>
         <tag Name="Gender" Value="neuter"/>
         <part Name="Brain" Hostile="true" Factions="Amalgam-100" MaxKillRadius="10"/>
         <part Name="Render" DisplayName="amalgamate" Tile="WingyTextures/creatures/amalgam3.png" RenderString="z"
@@ -505,7 +505,7 @@
 
     <object Name="Amalgam4" Inherits="BaseAmalgamSwarmer">
         <property Name="Role" Value="NPC"/>
-        <stat Name="Level" sValue="22"/>
+        <stat Name="Level" Value="22"/>
         <tag Name="Gender" Value="neuter"/>
         <part Name="Brain" Hostile="true" Factions="Amalgam-100" MaxKillRadius="10"/>
         <part Name="Render" DisplayName="amalgamate" Tile="WingyTextures/creatures/amalgam4.png" RenderString="z"
@@ -531,7 +531,7 @@
 
     <object Name="Amalgam5" Inherits="BaseAmalgamSwarmer">
         <property Name="Role" Value="NPC"/>
-        <stat Name="Level" sValue="25"/>
+        <stat Name="Level" Value="25"/>
         <tag Name="Gender" Value="neuter"/>
         <part Name="Brain" Hostile="true" Factions="Amalgam-100" MaxKillRadius="10"/>
         <part Name="Render" DisplayName="amalgamate" Tile="WingyTextures/creatures/amalgam5.png" RenderString="z"
@@ -583,7 +583,7 @@
     <object Name="Crimson Jell" Inherits="BaseOoze">
         <part Name="Corpse" CorpseChance="50"/>
         <part Name="Render" DisplayName="{{a|crimson jell}}" RenderString="j" ColorString="&amp;A"/>
-        <stat Name="Level" sValue="33"/>
+        <stat Name="Level" Value="33"/>
         <stat Name="AV" sValue="6"/>
         <stat Name="Hitpoints" sValue="140"/>
         <stat Name="HeatResistance" sValue="200"/>
@@ -602,7 +602,6 @@
     </object>
     
     
-
     <object Name="Grand Mortar Beetle" Inherits="BaseInsect">
         <part Name="Render" DisplayName="grand mortar beetle" Tile="WingyTextures/grandbeetle.png" RenderString="i"
               ColorString="&amp;K" DetailColor="a"/>
@@ -611,7 +610,7 @@
         <stat Name="AV" sValue="6"/>
         <stat Name="DV" sValue="2"/>
         <stat Name="Hitpoints" sValue="55"/>
-        <stat Name="Level" sValue="10"/>
+        <stat Name="Level" Value="10"/>
         <stat Name="HeatResistance" sValue="200"/>
         <stat Name="ColdResistance" Value="-50"/>
         <inventoryobject Blueprint="GiantBeetle_Bite" Number="1"/>
@@ -638,7 +637,7 @@
     <object Name="Crystwyk" Inherits="BaseReptile">
         <part Name="Render" DisplayName="crystwyk" RenderString="r" DetailColor="C" ColorString="&amp;c"
               Tile="WingyTextures/creatures/crystwyk.png"/>
-        <stat Name="Level" sValue="22"/>
+        <stat Name="Level" Value="22"/>
         <stat Name="AV" sValue="6"/>
         <stat Name="DV" sValue="6"/>
         <stat Name="ElectricResistance" sValue="15"/>
@@ -670,7 +669,7 @@
         <part Name="Corpse" CorpseChance="50" CorpseBlueprint="Glarewing Raptor Corpse" CorpseRequiresBodyPart="Tail"/>
         <stat Name="AV" sValue="4"/>
         <stat Name="DV" sValue="4"/>
-        <stat Name="Level" sValue="15"/>
+        <stat Name="Level" Value="15"/>
         <stat Name="Hitpoints" sValue="30"/>
         <mutation Name="FreezingRay" Level="4" BodyPartType="Face"/>
         <mutation Name="wmGlareBurst"/>
@@ -704,7 +703,7 @@
         <stat Name="Hitpoints" sValue="150"/>
         <stat Name="Strength" sValue="66"/>
         <stat Name="Agility" sValue="32"/>
-        <stat Name="Level" sValue="32"/>
+        <stat Name="Level" Value="32"/>
         <part Name="Brain" WandersRandomly="true" Wanders="false" Hostile="True" Aquatic="true"/>
         <mutation Name="Gills" Level="10"/>
         <skill Name="Axe_Expertise"/>
@@ -739,7 +738,7 @@
         <stat Name="Hitpoints" sValue="85"/>
         <stat Name="Strength" sValue="66"/>
         <stat Name="Agility" sValue="32"/>
-        <stat Name="Level" sValue="32"/>
+        <stat Name="Level" Value="32"/>
         <part Name="Brain" WandersRandomly="true" Wanders="false" Hostile="True" Aquatic="true"/>
         <mutation Name="Gills" Level="10"/>
         <skill Name="Axe_Expertise"/>
@@ -774,7 +773,7 @@
         <stat Name="Hitpoints" sValue="85"/>
         <stat Name="Strength" sValue="66"/>
         <stat Name="Agility" sValue="32"/>
-        <stat Name="Level" sValue="32"/>
+        <stat Name="Level" Value="32"/>
         <part Name="Brain" WandersRandomly="true" Wanders="false" Hostile="True" Aquatic="true"/>
         <mutation Name="Gills" Level="10"/>
         <skill Name="Axe_Expertise"/>
@@ -808,7 +807,7 @@
         <stat Name="Hitpoints" sValue="12"/>
         <stat Name="Strength" sValue="18"/>
         <stat Name="Agility" sValue="17"/>
-        <stat Name="Level" sValue="13"/>
+        <stat Name="Level" Value="13"/>
         <part Name="Brain" WandersRandomly="true" Hostile="false" Wanders="false" Aquatic="true" Calm="true"
               Factions="Fish-100"/>
         <mutation Name="Gills" Level="10"/>
@@ -833,7 +832,7 @@
         <stat Name="Hitpoints" sValue="5000"/>
         <stat Name="Strength" sValue="50"/>
         <stat Name="Agility" sValue="20"/>
-        <stat Name="Level" sValue="50"/>
+        <stat Name="Level" Value="50"/>
         <part Name="Brain" WandersRandomly="true" Hostile="true" Wanders="false" Aquatic="true"
               Factions="Fish-100"/>
         <part Name="wmLeviathanHead"/>
@@ -855,7 +854,7 @@
         <stat Name="Hitpoints" sValue="5000"/>
         <stat Name="Strength" sValue="50"/>
         <stat Name="Agility" sValue="20"/>
-        <stat Name="Level" sValue="50"/>
+        <stat Name="Level" Value="50"/>
         <part Name="Brain" WandersRandomly="true" Hostile="false" Wanders="false" Aquatic="true" Calm="true"
               Factions="Fish-100"/>
         <mutation Name="Gills" Level="10"/>
@@ -883,7 +882,7 @@
         <stat Name="Hitpoints" sValue="85"/>
         <part Name="Description"
               Short="Quills tipped in red-tint gleam with the lab-lights, a weary gaze of golden eyes barely visible behind oval lenses. Their face carries scars of burnt flesh from their various technical exploits gone horribly wrong. The uurshib seems content though, as they tinker, performing diagnostics to the most minute detail. Every once in a while, they pull from their pocket a memento to which they hold a cold, solemn gaze to a photo of times long gone."/>
-        <stat Name="Level" sValue="28"/>
+        <stat Name="Level" Value="28"/>
         <skill Name="Customs_Tactful"/>
         <skill Name="Tinkering"/>
         <skill Name="Tinkering_Disassemble"/>
@@ -915,15 +914,16 @@
         <xtagWaterRitual NoJoin="true" numRecipes="3"/>
         <part Name="ConversationScript" ConversationID="SaileConversation"/>
     </object>
+    
+<!--    unique npcs-->
 
     <object Name="Kaemea" Inherits="NPC">
         <property Name="Role" Value="NPC"/>
-        <stat Name="Level" sValue="20"/>
+        <stat Name="Level" Value="20"/>
         <part Name="Brain" Wanders="true" Hostile="False" Factions="Anesheym-100"/>
-        <part Name="Render" DisplayName="Denoso 'Fidget' Kaemea" Tile="WingyTextures/bigkidwithwrench.png"
-              RenderString="z"
-              ColorString="&amp;R" DetailColor="c"/>
-        <part Name="Description"
+        <part Name="Render" DisplayName="Denoso 'Fidget' Kaemea" Tile="WingyTextures/bigkidwithwrench.png" 
+              ColorString="&amp;W" DetailColor="m"/>
+        <part Name="Description" 
               Short="Tiny hands, tiny framed, and extremely fidgety. What this little bugling lacks in size, they make up for in tinkering genius."/>
         <part Name="AISelfPreservation" Threshold="80"/>
         <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
@@ -939,9 +939,26 @@
         <part Name="Interesting" />
     </object>
 
+    <object Name="Ruh-Roh Yolk-Drinker" Inherits="Snapjaw">
+        <part Name="Render" DisplayName="{{magenta|nyt}}-{{grey|napper}} Ruh'Roh {{yellow|“Yolk-Drinker”}}" />
+        <part Name="Description"
+              Short="Tiny hands, tiny framed, and extremely fidgety. What this little bugling lacks in size, they make up for in tinkering genius."/>
+        <part Name="Brain" Hostile="false" Factions="Snapjaws-400" />
+        <part Name="Swarmer" />
+        <tag Name="Role" Value="Minion" />
+        <tag Name="DynamicObjectsTable:Snapjaws" />
+        <tag Name="DynamicObjectsTable:Snapjaws:Number" Value="1-2" />
+        <tag Name="AggregateWith" Value="Snapjaw Scavanger" />
+        <tag Name="BaseObject" Value="*noinherit" />
+        <part Name="Calming" />
+
+    </object>
+    
+<!--    generic bug villagers-->
+    
     <object Name="bugvillager" Inherits="NPC">
         <property Name="Role" Value="NPC"/>
-        <stat Name="Level" sValue="20"/>
+        <stat Name="Level" Value="20"/>
         <tag Name="Gender" Value="neuter"/>
         <part Name="Brain" Wanders="true" Hostile="False" Factions="Anesheym-100"/>
         <part Name="Render" DisplayName="anesheym villager" Tile="WingyTextures/creatures/bugvillager.png"
@@ -953,11 +970,12 @@
         <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
         <mutation Name="Spinnerets" Level="2"/>
         <mutation Name="MultipleArms" Level="1"/>
+        <part Name="ConversationScript" ConversationID="BaseVillagerConversations"/>
     </object>
 
     <object Name="bugkid" Inherits="NPC">
         <property Name="Role" Value="NPC"/>
-        <stat Name="Level" sValue="20"/>
+        <stat Name="Level" Value="20"/>
         <tag Name="Gender" Value="neuter"/>
         <part Name="Brain" Wanders="true" Hostile="False" Factions="Anesheym-100"/>
         <part Name="Render" DisplayName="anesheym child" Tile="WingyTextures/creatures/bugkid.png" RenderString="z"
@@ -966,11 +984,12 @@
               Short="To be ogled by the beady eyes of this small insectoid invokes feelings of wonder: why did the precursors see it fit to blend our kinds?"/>
         <part Name="AISelfPreservation" Threshold="80"/>
         <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+        <part Name="ConversationScript" ConversationID="BaseVillagerChildConversations"/>
     </object>
 
     <object Name="bugelder" Inherits="NPC">
         <property Name="Role" Value="NPC"/>
-        <stat Name="Level" sValue="20"/>
+        <stat Name="Level" Value="20"/>
         <tag Name="Gender" Value="neuter"/>
         <part Name="Brain" Wanders="true" Hostile="False" Factions="Anesheym-100"/>
         <part Name="Render" DisplayName="anesheym elder" Tile="WingyTextures/creatures/bugelder.png" RenderString="z"
@@ -979,11 +998,12 @@
               Short="For insectomamilians and our anesheym, old age accompanies starvation, a fate exhibited in this one with its loose hanging shell and stiff movements. Their greatest strength is to grow without limit, yet exemplified here it reveals its greatest weakness--if one cannot acquire the sustenance to sustain such a form, then they will wither away to inanition. To the anesheym, hunger is age."/>
         <part Name="AISelfPreservation" Threshold="80"/>
         <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+        <part Name="ConversationScript" ConversationID="BaseVillagerElderConversations"/>
     </object>
 
     <object Name="bugnurse" Inherits="NPC">
         <property Name="Role" Value="NPC"/>
-        <stat Name="Level" sValue="20"/>
+        <stat Name="Level" Value="20"/>
         <tag Name="Gender" Value="neuter"/>
         <part Name="Brain" Wanders="true" Hostile="False" Factions="Anesheym-100"/>
         <part Name="Render" DisplayName="anesheym brood-nurse" Tile="WingyTextures/creatures/bugnurse.png"
@@ -994,11 +1014,12 @@
         <part Name="AISelfPreservation" Threshold="80"/>
         <part Name="RandomNurseName"/>
         <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+        <part Name="ConversationScript" ConversationID="BaseVillagerNurseConversations"/>
     </object>
 
     <object Name="bugsolder" Inherits="NPC">
         <property Name="Role" Value="NPC"/>
-        <stat Name="Level" sValue="20"/>
+        <stat Name="Level" Value="20"/>
         <tag Name="Gender" Value="neuter"/>
         <part Name="Brain" Wanders="false" Hostile="False" Factions="Anesheym-100"/>
         <part Name="Render" DisplayName="anesheym guardsfolk" Tile="WingyTextures/creatures/bugsolder.png"
@@ -1018,12 +1039,14 @@
 
         <mutation Name="Spinnerets" Level="10"/>
         <mutation Name="MultipleArms" Level="10"/>
-        
+
+        <part Name="ConversationScript" ConversationID="BaseVillagerKnightConversations"/>
+
     </object>
 
     <object Name="bugsentinel" Inherits="NPC">
         <property Name="Role" Value="NPC"/>
-        <stat Name="Level" sValue="35"/>
+        <stat Name="Level" Value="35"/>
         <tag Name="Gender" Value="neuter"/>
         <part Name="Brain" Wanders="false" Hostile="False" Factions="Anesheym-100"/>
         <part Name="Render" DisplayName="anesheym sentinel" Tile="WingyTextures/creatures/bugsentinel.png"
@@ -1043,12 +1066,14 @@
 
         <mutation Name="Spinnerets" Level="10"/>
         <mutation Name="MultipleArms" Level="10"/>
+
+        <part Name="ConversationScript" ConversationID="BaseVillagerKnightConversations"/>
         
     </object>
 
     <object Name="bugexalted" Inherits="NPC">
         <property Name="Role" Value="NPC"/>
-        <stat Name="Level" sValue="20"/>
+        <stat Name="Level" Value="20"/>
         <tag Name="Gender" Value="neuter"/>
         <part Name="Brain" Wanders="true" Hostile="true" Factions="insect"/>
         <part Name="Render" DisplayName="corrupt savant" Tile="WingyTextures/creatures/bugexalted.png" RenderString="w"
@@ -1061,7 +1086,7 @@
 
     <object Name="buganimancernovice" Inherits="NPC">
         <property Name="Role" Value="NPC"/>
-        <stat Name="Level" sValue="20"/>
+        <stat Name="Level" Value="20"/>
         <tag Name="Gender" Value="neuter"/>
         <part Name="Brain" Wanders="true" Hostile="False" Factions="Anesheym-100"/>
         <part Name="Render" DisplayName="newlight sage" Tile="WingyTextures/creatures/buganimancernovice.png"
@@ -1076,7 +1101,7 @@
 
     <object Name="buganimancerhigh" Inherits="NPC">
         <property Name="Role" Value="NPC"/>
-        <stat Name="Level" sValue="20"/>
+        <stat Name="Level" Value="20"/>
         <tag Name="Gender" Value="neuter"/>
         <part Name="Brain" Wanders="true" Hostile="False" Factions="Anesheym-100"/>
         <part Name="Render" DisplayName="waining sage" Tile="WingyTextures/creatures/buganimancerhigh.png"
@@ -1091,10 +1116,10 @@
 
     <object Name="buganimancersavant" Inherits="NPC">
         <property Name="Role" Value="NPC"/>
-        <stat Name="Level" sValue="20"/>
+        <stat Name="Level" Value="20"/>
         <tag Name="Gender" Value="neuter"/>
         <part Name="Brain" Wanders="true" Hostile="False" Factions="Anesheym-100"/>
-        <part Name="Render" DisplayName="screeching sage" Tile="WingyTextures/creatures/buganimancersavant.png"
+        <part Name="Render" DisplayName="Rhembearer " Tile="WingyTextures/creatures/buganimancersavant.png"
               RenderString="z"
               ColorString="&amp;M" DetailColor="r"/>
         <part Name="Description"
@@ -1157,7 +1182,7 @@
         <property Name="Role" Value="NPC"/>
         <tag Name="PreventIdleBehavior"/>
         <part Name="Physics" Weight="10000" Takeable="false" Solid="false"/>
-        <stat Name="Level" sValue="100"/>
+        <stat Name="Level" Value="100"/>
         <tag Name="Gender" Value="female"/>
         <part Name="Brain" Hostile="False" Factions="Anesheym-100"/>
         <part Name="DoubleContainer" Direction="E" Master="true"/>
@@ -1195,7 +1220,7 @@
         <property Name="Role" Value="NPC"/>
         <tag Name="PreventIdleBehavior"/>
         <part Name="Physics" Weight="10000" Takeable="false" Solid="false"/>
-        <stat Name="Level" sValue="100"/>
+        <stat Name="Level" Value="100"/>
         <tag Name="Gender" Value="neuter"/>
         <part Name="DoubleContainer" Direction="W"/>
         <part Name="Brain" Hostile="False" Factions="Anesheym-100"/>
@@ -1228,7 +1253,7 @@
 
     <object Name="buganimancersage" Inherits="NPC">
         <property Name="Role" Value="NPC"/>
-        <stat Name="Level" sValue="20"/>
+        <stat Name="Level" Value="20"/>
         <tag Name="Gender" Value="neuter"/>
         <part Name="Brain" Wanders="true" Hostile="False" Factions="Anesheym-100"/>
         <part Name="Render" DisplayName="Elder-Moonseer, Vanti" Tile="WingyTextures/creatures/buganimancersage.png"
@@ -1240,7 +1265,7 @@
 
     <object Name="Nuurimir" PreviousName="nuurimir" Inherits="NPC">
         <property Name="Role" Value="NPC"/>
-        <stat Name="Level" sValue="77"/>
+        <stat Name="Level" Value="77"/>
         <tag Name="Gender" Value="neuter"/>
         <part Name="Brain" Hostile="False" WandersRandomly="true" Factions="Anesheym-100"/>
         <part Name="Render" DisplayName="{{extradimensional|Dies-In-Rust}}, {{orange|Nuurimir}}" Tile="WingyTextures/creatures/nuurimir.png"
@@ -1292,7 +1317,7 @@
 
     <object Name="bugtinker" Inherits="NPC">
         <property Name="Role" Value="NPC"/>
-        <stat Name="Level" sValue="20"/>
+        <stat Name="Level" Value="20"/>
         <tag Name="Gender" Value="neuter"/>
         <part Name="Brain" Hostile="False" Factions="Anesheym-100"/>
         <part Name="Render" DisplayName="Erdestvel, The Anesheym Scrapamist"
@@ -1307,7 +1332,7 @@
 
     <object Name="DitzyFly" Inherits="NPC">
         <property Name="Role" Value="NPC"/>
-        <stat Name="Level" sValue="20"/>
+        <stat Name="Level" Value="20"/>
         <tag Name="Gender" Value="neuter"/>
         <part Name="Brain" Hostile="False" Factions="Anesheym-100"/>
         <part Name="ConversationScript" ConversationID="DitzyLogueInitial"/>
@@ -1331,7 +1356,7 @@
 
     <object Name="Chymero" Inherits="NPC">
         <property Name="Role" Value="NPC"/>
-        <stat Name="Level" sValue="20"/>
+        <stat Name="Level" Value="20"/>
         <tag Name="Gender" Value="male"/>
         <part Name="Brain" Hostile="False" Factions="Anesheym-100"/>
         <part Name="ConversationScript" ConversationID="ChymeroLogueInitial"/>
@@ -1352,7 +1377,7 @@
 
     <object Name="Damasceae" Inherits="NPC">
         <property Name="Role" Value="NPC"/>
-        <stat Name="Level" sValue="20"/>
+        <stat Name="Level" Value="20"/>
         <tag Name="Gender" Value="female"/>
         <part Name="Brain" Hostile="False" Factions="Anesheym-100"/>
         <part Name="ConversationScript" ConversationID="DamascaeaConversation"/>
@@ -1397,6 +1422,8 @@ eater, hedonist, thirst--
 {{red|#################.PROSTRATE YOURSELF TO YOUR MAKERS.#################}}}}"
         
         />
+        
+        <stat Name="XPValue" sValue="54,439"/>
 
         <part Name="Body" Anatomy="WM-Doll-Like Shell"/>
 
@@ -1528,7 +1555,8 @@ eater, hedonist, thirst--
         <stat Name="Agility" sValue="1" Boost="0"/>
         <stat Name="Ego" sValue="1" Boost="0"/>
         <stat Name="Level" sValue="1"/>
-
+        
+        
         <removepart Name="RandomLoot"/>
 
         <part Name="AnimatedMaterialGeneric" AnimationLength="320"
@@ -1557,9 +1585,10 @@ eater, hedonist, thirst--
         <stat Name="Toughness" sValue="20"/>
         <stat Name="Agility" sValue="26"/>
         <stat Name="Ego" sValue="22"/>
-        <stat Name="Level" sValue="25"/>
+        <stat Name="Level" Value="25"/>
         <tag Name="Gender" Value="female"/>
         <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+        <tag Name="Essential"/>
         <part Name="GivesRep"/>
         <part Name="ArshiraPreserver"/>
         <xtagWaterRitual NoJoin="true"/>
@@ -1595,6 +1624,36 @@ eater, hedonist, thirst--
     </object>
     
     <!-- Search: Organic Fauna -->
+
+    <object Name="Glimmerdust Butterfly" Inherits="BaseInsect">
+        <part Name="Render" DisplayName="{{glittering|glimmer}}-dust butterfly" RenderString="*" ColorString="&amp;b"
+              DetailColor="B" Tile="WingyTextures/butterfly.png" RenderLayer="5"/>
+        <part Name="Brain" Calm="True" Hostile="false" Wanders="true" Hibernating="false" />
+        <part Name="Physics" FlameTemperature="2550" Takeable="false" IsReal="true"/>
+        <stat Name="Hitpoints" Value="25" />
+        <part Name="Commerce" Value="0"/>
+        <part Name="Description"
+              Short="Crystalline dust takes the form of diamond-kite wings, stemming from rivets on an opulent worm, =pronouns.possessive= wings beats the sky-field with cryst-locked blades, bounding gracefully as if time stopped to gaze at its wonderous allure."/>
+        <tag Name="IgnoresGravity"/>
+        <tag Name="Role" Value="Leader" />
+        <part Name="ButterflySwarmPack" />
+        <mutation Name="Wings" Level="10"/>
+        <part Name="AnimatedMaterialGeneric" AnimationLength="70" LowFrameOffset="1" HighFrameOffset="1" TileColorAnimationFrames="0=&amp;b,20=&amp;B,22=&amp;b,40=M,42=&amp;b,60=&amp;Y,62=&amp;b,68=&amp;m"  DetailColorAnimationFrames="0=B,20=W,22=B,40=B,42=Y,44=B,62=G,64=B" />
+    </object>
+
+    <object Name="Glimmerling Butterflies" Inherits="BaseInsect">
+        <part Name="Render" DisplayName="{{glittering|Glimmerling}} butterflies" RenderString="*" ColorString="&amp;b"
+              DetailColor="B" Tile="WingyTextures/butterflyswarm.png" RenderLayer="5"/>
+        <part Name="Brain" Calm="True" Hostile="false" Wanders="true" Hibernating="false"/>
+        <part Name="Physics" FlameTemperature="2550" Takeable="false" IsReal="true"/>
+        <stat Name="Hitpoints" Value="25" />
+        <part Name="Commerce" Value="0"/>
+        <part Name="Description"
+              Short="Crystalline dust takes the form of diamond-kite wings, stemming from rivets on an opulent worm, =pronouns.possessive= wings beats the sky-field with cryst-locked blades, bounding gracefully as if time stopped to gaze at its wonderous allure."/>
+        <tag Name="IgnoresGravity"/>
+        <part Name="AnimatedMaterialGeneric" AnimationLength="70" LowFrameOffset="1" HighFrameOffset="1" TileColorAnimationFrames="0=&amp;b,20=&amp;B,22=&amp;b,40=M,42=&amp;b,60=&amp;Y,62=&amp;b,68=&amp;m"  DetailColorAnimationFrames="0=B,20=W,22=B,40=B,42=Y,44=B,62=G,64=B" />
+        <mutation Name="Wings" Level="10"/>
+    </object>
 
     <object Name="SmallTubeFish" Inherits="Plant">
         <part Name="Render" DisplayName="tube fish" RenderString="005" ColorString="&amp;K"
