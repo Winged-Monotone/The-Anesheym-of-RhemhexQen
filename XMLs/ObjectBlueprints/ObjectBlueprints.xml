@@ -6,7 +6,7 @@
 
 
     <object Name="Buggoville" Inherits="Terrain">
-        <part Name="Render" DisplayName="Rhemhez'Qen" Tile="WingyTextures/terrain/Rhemhexqen.png" DetailColor="M"
+        <part Name="Render" DisplayName="Rhemhex'Qen" Tile="WingyTextures/terrain/Rhemhexqen.png" DetailColor="M"
               TileColor="&amp;c"
               RenderString="030" ColorString="&amp;M"/>
         <part Name="Description"
@@ -422,7 +422,7 @@
         <part Name="Render" DisplayName="Western Birth Gate" Tile="WingyTextures/QenFurniture/elderwombdoor_w.png"
               ColorString="&amp;C" TileColor="&amp;y" DetailColor="M" RenderString="234"/>
         <part Name="Description"
-              Short="An ancient portal, slabs veneered with chrome creep-vine bar all who would be harmed by the secrets of Rhemhez'Qen."/>
+              Short="An ancient portal, slabs veneered with chrome creep-vine bar all who would be harmed by the secrets of Rhemhex'Qen."/>
         <part Name="Door" Locked="true" ClosedTile="WingyTextures/QenFurniture/elderwombdoor_w.png"
               OpenTile="Tiles2/sw_tombgate_w_open.bmp"/>
         <stat Name="Hitpoints" sValue="10000"/>
@@ -438,7 +438,7 @@
         <part Name="Render" DisplayName="Eastern Birth Gate" Tile="WingyTextures/QenFurniture/elderwombdoor_e.png"
               ColorString="&amp;C" TileColor="&amp;y" DetailColor="M" RenderString="234"/>
         <part Name="Description"
-              Short="An ancient portal, slabs veneered with chrome creep-vine bar all who would be harmed by the secrets of Rhemhez'Qen."/>
+              Short="An ancient portal, slabs veneered with chrome creep-vine bar all who would be harmed by the secrets of Rhemhex'Qen."/>
         <part Name="Door" Locked="true" ClosedTile="WingyTextures/QenFurniture/elderwombdoor_e.png"
               OpenTile="Tiles2/sw_tombgate_e_open.bmp"/>
         <stat Name="Hitpoints" sValue="10000"/>

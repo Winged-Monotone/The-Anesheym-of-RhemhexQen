@@ -6,33 +6,33 @@
         <cell Name="BuggovilleZone" ApplyTo="Buggoville" Mutable="false">
             <builder Class="Music" Track="deathfrontier1" Chance="100"/>
 
-            <zone Level="5-9" x="0-2" y="0-2" Name="sky above Rhemhez'Qen.">
+            <zone Level="5-9" x="0-2" y="0-2" Name="sky above Rhemhex'Qen.">
                 <builder Class="Sky"/>
 
             </zone>
 
-            <zone Level="10" x="1" y="1" Name="Rhemhez'Qen" NameContext="Rhemhex'Qen" DisableForcedConnections="Yes"
+            <zone Level="10" x="1" y="1" Name="Rhemhex'Qen" NameContext="Rhemhex'Qen" DisableForcedConnections="Yes"
                   HasWeather="true" WindSpeed="0-10" WindDirections="W,SW,S,SE" WindDuration="50-3000">
                 <map FileName="truebuggoville.rpm"/>
                 <builder Class="Music" Track="melodyforcity" Chance="100"/>
                 <prebuilder Class="IsCheckpoint" Key="Rhem'hex Qen"></prebuilder>
             </zone>
 
-            <zone Level="11" x="1" y="1" Name="Rhemhez'Qen" NameContext="City Floor" DisableForcedConnections="Yes"
+            <zone Level="11" x="1" y="1" Name="Rhemhex'Qen" NameContext="City Floor" DisableForcedConnections="Yes"
                   HasWeather="true" WindSpeed="0-10" WindDirections="W,SW,S,SE" WindDuration="50-1000">
                 <map FileName="truebuggovilleflr1.rpm"/>
                 <builder Class="Music" Track="melodyforcity" Chance="100"/>
                 <prebuilder Class="IsCheckpoint" Key="Rhem'hex Qen"></prebuilder>
             </zone>
 
-            <zone Level="12" x="1" y="1" Name="Rhemhez'Qen" NameContext="Broodchambers" DisableForcedConnections="Yes"
+            <zone Level="12" x="1" y="1" Name="Rhemhex'Qen" NameContext="Broodchambers" DisableForcedConnections="Yes"
                   HasWeather="true" WindSpeed="0-10" WindDirections="W,SW,S,SE" WindDuration="50-1000">
                 <map FileName="truebuggovilleflr2.rpm"/>
                 <builder Class="Music" Track="melodyforcity" Chance="100"/>
                 <prebuilder Class="IsCheckpoint" Key="Rhem'hex Qen"></prebuilder>
             </zone>
 
-            <zone Level="13" x="1" y="1" Name="Rhemhez'Qen" NameContext="Grand Shah's Throne"
+            <zone Level="13" x="1" y="1" Name="Rhemhex'Qen" NameContext="Grand Shah's Throne"
                   DisableForcedConnections="Yes" HasWeather="true" WindSpeed="0-10" WindDirections="W,SW,S,SE"
                   WindDuration="50-1000">
                 <map FileName="truebuggovilleflr3.rpm"/>
@@ -40,56 +40,56 @@
                 <prebuilder Class="IsCheckpoint" Key="Rhem'hex Qen"></prebuilder>
             </zone>
 
-            <zone Level="10" x="1" y="2" Name="Rhemhez'Qen" NameContext="Southern Rhemhex'Qen"
+            <zone Level="10" x="1" y="2" Name="Rhemhex'Qen" NameContext="Southern Rhemhex'Qen"
                   DisableForcedConnections="Yes" HasWeather="true" WindSpeed="0-10" WindDirections="W,SW,S,SE"
                   WindDuration="50-3000">
                 <map FileName="truebuggovilleS.rpm"/>
                 <builder Class="Music" Track="melodyforcity" Chance="100"/>
             </zone>
 
-            <zone Level="10" x="1" y="0" Name="Rhemhez'Qen" NameContext="Northern Rhemhex'Qen"
+            <zone Level="10" x="1" y="0" Name="Rhemhex'Qen" NameContext="Northern Rhemhex'Qen"
                   DisableForcedConnections="Yes" HasWeather="true" WindSpeed="0-10" WindDirections="W,SW,S,SE"
                   WindDuration="50-3000">
                 <map FileName="truebuggovilleN.rpm"/>
                 <builder Class="Music" Track="melodyforcity" Chance="100"/>
             </zone>
 
-            <zone Level="10" x="0" y="0" Name="Rhemhez'Qen" NameContext="North-Western Rhemhex'Qen"
+            <zone Level="10" x="0" y="0" Name="Rhemhex'Qen" NameContext="North-Western Rhemhex'Qen"
                   DisableForcedConnections="Yes" HasWeather="true" WindSpeed="0-10" WindDirections="W,SW,S,SE"
                   WindDuration="50-3000">
                 <map FileName="truebuggovilleNW.rpm"/>
                 <builder Class="Music" Track="melodyforcity" Chance="100"/>
             </zone>
 
-            <zone Level="10" x="0" y="1" Name="Rhemhez'Qen" NameContext="Western Rhemhex'Qen"
+            <zone Level="10" x="0" y="1" Name="Rhemhex'Qen" NameContext="Western Rhemhex'Qen"
                   DisableForcedConnections="Yes" HasWeather="true" WindSpeed="0-10" WindDirections="W,SW,S,SE"
                   WindDuration="50-3000">
                 <map FileName="truebuggovilleW.rpm"/>
                 <builder Class="Music" Track="melodyforcity" Chance="100"/>
             </zone>
 
-            <zone Level="10" x="0" y="2" Name="Rhemhez'Qen" NameContext="South-Western Rhemhex'Qen"
+            <zone Level="10" x="0" y="2" Name="Rhemhex'Qen" NameContext="South-Western Rhemhex'Qen"
                   DisableForcedConnections="Yes" HasWeather="true" WindSpeed="0-10" WindDirections="W,SW,S,SE"
                   WindDuration="50-3000">
                 <map FileName="truebuggovilleSW.rpm"/>
                 <builder Class="Music" Track="melodyforcity" Chance="100"/>
             </zone>
 
-            <zone Level="10" x="2" y="0" Name="Rhemhez'Qen" NameContext="North-Eastern Rhemhex'Qen"
+            <zone Level="10" x="2" y="0" Name="Rhemhex'Qen" NameContext="North-Eastern Rhemhex'Qen"
                   DisableForcedConnections="Yes" HasWeather="true" WindSpeed="0-10" WindDirections="W,SW,S,SE"
                   WindDuration="50-3000">
                 <map FileName="truebuggovilleNE.rpm"/>
                 <builder Class="Music" Track="melodyforcity" Chance="100"/>
             </zone>
 
-            <zone Level="10" x="2" y="1" Name="Rhemhez'Qen" NameContext="Eastern Rhemhex'Qen"
+            <zone Level="10" x="2" y="1" Name="Rhemhex'Qen" NameContext="Eastern Rhemhex'Qen"
                   DisableForcedConnections="Yes" HasWeather="true" WindSpeed="0-10" WindDirections="W,SW,S,SE"
                   WindDuration="50-3000">
                 <map FileName="truebuggovilleE.rpm"/>
                 <builder Class="Music" Track="melodyforcity" Chance="100"/>
             </zone>
 
-            <zone Level="10" x="2" y="2" Name="Rhemhez'Qen" NameContext="South-Eastern Rhemhex'Qen"
+            <zone Level="10" x="2" y="2" Name="Rhemhex'Qen" NameContext="South-Eastern Rhemhex'Qen"
                   DisableForcedConnections="Yes" HasWeather="true" WindSpeed="0-10" WindDirections="W,SW,S,SE"
                   WindDuration="50-3000">
                 <map FileName="truebuggovilleSE.rpm"/>

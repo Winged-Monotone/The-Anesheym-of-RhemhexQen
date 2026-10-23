@@ -3537,7 +3537,7 @@
     <object Name="VGlassWall"></object>
   </cell>
   <cell X="49" Y="13">
-    <object Name="RhemhezTreeCherub"></object>
+    <object Name="RhemhexTreeCherub"></object>
   </cell>
   <cell X="50" Y="13">
     <object Name="VGlassWall"></object>

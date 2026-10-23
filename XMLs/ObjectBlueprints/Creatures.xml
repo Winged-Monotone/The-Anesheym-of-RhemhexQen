@@ -1709,7 +1709,7 @@ eater, hedonist, thirst--
     
     
     
-    <object Name="RhemhezTreeCherub" Inherits="Mechanical Trees Cherub">
+    <object Name="RhemhexTreeCherub" Inherits="Mechanical Trees Cherub">
         <part Name="Brain" Hostile="false" Calm="true" />
         <part Name="Calming" Feeling="25" />
     </object>
