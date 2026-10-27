@@ -11,8 +11,6 @@ namespace XRL.World.Parts
         public static void DisplaceBetweenFloors1()
         {
             
-                
-            
                 Zone CurrentZone = XRLCore.Core.Game.ZoneManager.ActiveZone;
                 GameObject DisplacerPanel = CurrentZone.FindObject("DisplacementPanel1");
 

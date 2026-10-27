@@ -14,7 +14,7 @@ namespace XRL.World.Parts
         // Prolly needs an options.pick
         // Explosion is prolly cosmetic only
         // Static Bool that applies to the Displacers that's like Have you completed long sigh? Have you activated beeg bomb? Then you can't go here anymore.
-        // Put a warning on this that uh, messing with will fucking end you 
+        // Put a warning on this that uh, messing with it will fucking end you 
         
         // also, fuck you.
 
@@ -68,10 +68,11 @@ namespace XRL.World.Parts
                    var Confirmation = Popup.ShowYesNo("{{red|You get the feeling messing with this can end very badly. Continue?}}");
                    if (Confirmation == DialogResult.Yes)
                    {
-                       var SetTimer = Popup.AskNumber("Set the countdown-sequence until detonation", Max: 300);
-                       if (SetTimer != null && SetTimer > 0)
+
+                       var PrimeExplosion = Popup.ShowYesNo("Prime the countdown-sequence until detonation?");
+                       if (PrimeExplosion == DialogResult.Yes)
                        {
-                           DetonationCountdown = SetTimer.Value;
+                           DetonationCountdown = 25;
                            SoundManager.PlayUISound("nfd-alarmsequence", Volume: 1);
                            AddPlayerMessage("{{red|WARNING!!! Z-007 NEUTRON FLUX DETONATOR PRIMED. ALL PERSONNEL, EVACUATE THE FACILITY IMMEDIATELY.}}");
                            StartStrobing();
@@ -130,12 +131,14 @@ namespace XRL.World.Parts
                             ParentObject.Explode(77777777, Neutron: true);
                             Physics.ApplyExplosion(BoomCell, 777777777, Neutron: true);
                             ThePlayer.Die(Reason: "Vaporised by neutron detonation.");
+                            NFDGoesBoom = true;
                         }
                         else
                         {
                             var BoomCell = ThePlayer.CurrentZone.GetCell(x: 40, 12);
                             Physics.ApplyExplosion(BoomCell, 70000000, Neutron: true);
                             ThePlayer.Die(Reason: "Vaporised by neutron detonation.");
+                            NFDGoesBoom = true;
                         }
                     }
                     else
@@ -144,12 +147,15 @@ namespace XRL.World.Parts
                         CombatJuice.cameraShake(7);
                         Popup.Show("As the bomb detonates, you feel the world around you tremble.");
                         NFDGoesBoom = true;
-                        
                     }
                     
                     RedAlarmStrobe.Enabled = false;
 
                 }
+            }
+            if (DetonationCountdown <= 10 && !NFDGoesBoom)
+            {
+                AddPlayerMessage("" + DetonationCountdown + "");
             }
             
             return base.HandleEvent(E);

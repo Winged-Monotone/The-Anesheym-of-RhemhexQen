@@ -1642,7 +1642,7 @@ eater, hedonist, thirst--
     </object>
 
     <object Name="Glimmerling Butterflies" Inherits="BaseInsect">
-        <part Name="Render" DisplayName="{{glittering|Glimmerling}} butterflies" RenderString="*" ColorString="&amp;b"
+        <part Name="Render" DisplayName="{{glittering|glimmerling}} butterflies" RenderString="*" ColorString="&amp;b"
               DetailColor="B" Tile="WingyTextures/butterflyswarm.png" RenderLayer="5"/>
         <part Name="Brain" Calm="True" Hostile="false" Wanders="true" Hibernating="false"/>
         <part Name="Physics" FlameTemperature="2550" Takeable="false" IsReal="true"/>

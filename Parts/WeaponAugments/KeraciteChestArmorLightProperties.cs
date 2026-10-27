@@ -3,7 +3,7 @@ using XRL.World.Capabilities;
 
 namespace XRL.World.Parts
 {
-    public class KeraciteChestArmorProperties : IPart
+    public class KeraciteChestArmorLightProperties : IPart
     {
         public override bool WantEvent(int ID, int Cascade)
         {
@@ -28,17 +28,21 @@ namespace XRL.World.Parts
         public override bool HandleEvent(GetShortDescriptionEvent E)
         {
             E.Postfix.Append
-                ("\n\n" +
+                ("{{orange|\n\n" +
                  "{{|bright royal purple|Nanochimeric Polymer}}\n" +
-                 "30% chance to nullify and then convert half of heat, cold or electric damage into health.\n\n" +
-                 "{{|bright royal purple|Acidic Debaser}}\n" +
-                 "All acid damage is reduced by half.\n\n" +
-                 "{{|bright royal purple|Nanoglass Saccharnite}}\n" +
-                 "30% chance to apply the Daze (DC 16 Toughness Saving Throw) effect to adjacent enemies if struck by a light-based weapon, has light-obfuscating properties.\n\n" +
-                 "{{|bright royal purple|Robust Material}}\n" +
-                 "15% chance to disarm a target (DC 15 Strength Saving Throw) attacking you so long as they are using blunt weapons and it's not a natural appendage." +
+                 "there is 30% chance that whenever bleed or poisoned is applied to you, its effects will be reversed and you'll instead gain hit points from these effects.\n\n" +
+                 "{{|bright royal purple|Nanoaccelerated Reflexes}}\n" +
+                 "When being attacked by an enemy, there is a 30% chance that your DV will be calculated as if it is doubled.\n\n" +
+                 "{{|bright royal purple|Nanoglass Quantum-refractions}}\n" +
+                 "Whenever an attack misses you, there is a 30% chance that you create a quantum-fugue of yourself in an adjacent space aroun1d you. (You can only create a maximum of 2 fugues at a time.) \n\n" +
+                 "{{|bright royal purple|Glitterweave Rejuvenation}}\n" +
+                 "Whenever an enemy misses you and your Juke ability is on cooldown, there is a 50% chance that your Juke ability will be instantly refreshed.\n\n" +
+                 "{{|bright royal purple|Glitterweave Impulse Flux}}\n" +
+                 "Whenever you avoid a projectile, there is a 30% chance you will juke for free.\n\n" +
+                 "{{|bright royal purple|Dashing Appearance}}\n" +
+                 "Treat all mercantile trades as if you had +6 Ego.\n\n" +
                  "\nCannot be destroyed via acid, disintegration, or other effects. Cannot be rusted." +
-                 "\n");
+                 "\n}}");
             return base.HandleEvent(E);
         }
         

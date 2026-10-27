@@ -52,11 +52,17 @@
         <start ID="StartedGrandZeniQuest" IfHaveActiveQuest="ShahStartLongSigh">
             <text>
                 Its good to see you, =name= how fares your ventures?~
-                *hums a soft tune*~
-                Please, let me know if you need anything regarding the bloodpits, I'll do what I can to assist.
+                {{emote|*hums a soft tune*}}~
+                Please, let me know if you need anything regarding the bloodpits, I'll do what I can to assist.~
             </text>
             <choice IfHaveActiveQuest="ShahStartLongSigh" IfNotFinishedQuestStep="ShahStartLongSigh~ReturntoTheShah" IfFinishedQuestStep="ShahStartLongSigh~LSDefeatNielst" GotoID="BeginLSQuestEndFinale">I have found the source of the scourge and ended it.</choice>
-            <choice GotoID="End">Live and drink, dear shah.</choice>
+            <choice GotoID="End">
+                Live and drink, dear shah.
+            </choice>
+            <choice GotoID="CulturalBranchSplit">
+                Could you tell me about your people and your culture?
+            </choice>
+
         </start>
 
         <start ID="Welcome3" IfFinishedQuest="ShahStartLongSigh">
@@ -65,6 +71,9 @@
                 *hums a soft tune*~
             </text>
             <choice GotoID="End">Live and drink, dear shah.</choice>
+            <choice GotoID="CulturalBranchSplit">
+                Could you tell me about your people and your culture?
+            </choice>
         </start>
 
         <start ID="Welcome2" >
@@ -200,7 +209,7 @@
             </text>
             <choice GotoID="GiveHerTheDeets2">
                 <text>
-                    Yes, and there were abominations that crawl into skin and transform you from the inside out, lakes of pus, beings trapped in vats full of sickly-brine.
+                    Yes, and there were abominations that crawl into one's skin and transform you from the inside out, lakes of pus, beings trapped in vats full of sickly-brine.
                 </text>
             </choice>
             <choice GotoID="QuestReward">
@@ -452,42 +461,669 @@ As the Shah of Rhemhex'Qen, I confer you these gifts to you, =name=. Live, and m
             </choice>
         </node>
 
-        <!--Metaphyisical Conversation-->
+        <!--Cultural Branching Conversation-->
 
-        <node ID="SitandTalk">
+        <node ID="CulturalBranchSplit">
             <text>
-                =name=, can I share with you something profound, a metaphysical musing, an experience I have?
-
-                I sometimes have dreams, where suddenly, I awaken from a long slumber--and it is like the world is renewed again.
-
-                The same events play out--but a detail here and there will change, and suddenly I find that dream has become reality.
-
-                And here I am waiting once again, when time will renew and another one of 'you' will come before me. And
-                I will share these same words, a commentary on the metalogical. Sharing this conversation, sharing at this moment.
-
+                Of course, =name=. As shah, being beholdent to our history, ways and beliefs is one of my greatest tasks. What would you like to know of us, dear one?~
+                Surely. Is there anything in particular I could enlighten you of, =name=?~
+                Of course, friend, sit down, let me tell a tale!~
+                Ah well, I’ve not anything better to do, ‘cept lay a nyt or two. Ask away, friend.~
             </text>
-            <choice GotoID="IsThisADream">Maybe this is a dream. If you have a dream so real you couldn't distinguish reality, and you never woke up. Would you still be dreaming, or are simply living at that point. Reality is a strange gambit.
+            <choice GotoID="SpiritualBeliefsBranch">
+                <text>
+                    What are your spiritual beliefs?
+                </text>
             </choice>
-            <choice GotoID="IsThisNotaDream">No I do believe this is the "real." You are simply caught in the moment, my dear shah. Your dreams are a sign that you see beyond the wake, all its many possibilities. But this moment is the real moment. It is experienced.
+            <choice GotoID="HierarchyBeliefsBranch">
+                <text>
+                    It doesn't seem like your culture has an established hierarchy, is that true?
+                </text>
             </choice>
-            <choice GotoID="MaybeYouareReliving">Sometimes, I swear I died. The engram that is me was stolen away from a vessel. And then, there's darkness, and all I remember is knowing I died and having to struggle to improve. Maybe it is that you died. And now you are here, reliving a moment.
+            <choice GotoID="KnownShahsBranch">
+                <text>
+                    Are you the first shah?
+                </text>
             </choice>
-            <choice GotoID="IexperienceStrangeSens">I too experience strange things, dear shah. Sometimes it feels like the world freezes and at that moment I am nothing more than an idea of something--then suddenly I return to my normal state of mind, as if my consciousness was inert.
+            <choice GotoID="ShahPowerBranch">
+                <text>
+                    How much power do you hold as the shah of the Anesheym?
+                </text>
+            </choice>
+            <choice GotoID="EggValueBranch">
+                <text>
+                    Why are some eggs valued more than the others?
+                </text>
+            </choice>
+            <choice GotoID="RoyalOvipositorBranch">
+                <text>
+                    It's strange there are no other egg-bearing beings around, shah.
+                </text>
+            </choice>
+            <choice GotoID="End">
+                <text>
+                    Actually, nevermind, shah. Live and Drink.
+                </text>
             </choice>
         </node>
+        
+                        <!--Spiritual Node-->
 
+                <node ID="SpiritualBeliefsBranch">
+                    <text>
+                        Well, we only hold one belief truly, The Abyssa. The Eternal Rhem.
+                    </text>
+                    <choice GotoID="SpiritualBeliefsBranch2">
+                        <text> ... </text>
+                    </choice>
+                </node>
+                
+                        <node ID="SpiritualBeliefsBranch2">
+                            <text>
+                                Yes, our eldest dreamwalkers speak of secret worlds. Rumors say, one was born from that Cerulean One for which he forbade us from so long ago. When we anesheym learned we were denied entry to their dream, unworthy of ascending to the Sheol. We wept, and feared our doomed existence. And in our fear we turned away. We sought instead to create our own dream.
+                            </text>
+                            <choice GotoID="End">
+                                <text> ... </text>
+                            </choice>
+                        </node>
+                
+                        <node ID="SpiritualBeliefsBranch3">
+                            <text>
+                                The first shah “Dae’Almophotea” the exalted shah, the shah of first dreamwalkers–they who birthed the many, the rhembearers, who would come before me. They worried that at the end of it all, when gyres erupted and tainted the land beyond reprieve. That her people would be lost to a horizonless death and find themselves with nowhere to go.
+                            </text>
+                            <choice GotoID="SpiritualBeliefsBranch3">
+                                <text> ... </text>
+                            </choice>
+                        </node>
+                
+                        <node ID="SpiritualBeliefsBranch4">
+                            <text>
+                                So, in deep meditation, she ventured through the isles of the mind, to the ocean void known to us as the Anima. There, she battled animuses as vast as stars. She cut a swath through the psychic aether--the unending unconscious, making it her own. There she manifested a world through sheer willpower and unbridled imaginative power and called it the Suttumkhofe and named herself Darkmother.
+                            </text>
+                            <choice GotoID="SpiritualBeliefsBranch4">
+                                <text> ... </text>
+                            </choice>
+                        </node>
+                
+                        <node ID="SpiritualBeliefsBranch5">
+                            <text>
+                                The Suttumkhofe stands in rebellion and opposition to the Sheol. Where the Great Spindle would only grant the ancient ones entry for their own, for those who ascend–The Suttumkhofe was different. One could reach there through the Rhem. A trained method of focusing one's dreamself into a “way of lucidity.” Taking hold of your dream, you can find gateways to the anima, pilgrimaging through the stygian-mesas until one reaches the lands of the Suttumkhofe itself.
+                            </text>
+                            <choice GotoID="SpiritualBeliefsBranch5">
+                                <text> ... </text>
+                            </choice>
+                        </node>
+                
+                        <node ID="SpiritualBeliefsBranch7">
+                            <text>
+                                There, the ancient rhem-bearers can mark you, the mark of the Eternal Rhem. So that when you perish in this hellish dream you will awaken in another, in the Suttumkhofe.
+                            </text>
+                            <choice GotoID="SpiritualBeliefsBranch7">
+                                <text> ... </text>
+                            </choice>
+                        </node>
+                
+                        <node ID="SpiritualBeliefsBranch8">
+                            <text>
+                                We have many other legends about the Suttumkhofe, but speaking with the Songs would be best to learn such a thing. For it is their duty to recount the many legends we hold. Like Gladaceae, who entered the Rhem in her mortal form or Amulseetae, who led the first pilgrimage to the Suttumkhofe hence a vision before her first death.
+                            </text>
+                            <choice GotoID="DreamBranch">
+                                <text> This Hellish Dream? Do you consider this a dream too? Dear, shah? </text>
+                            </choice>
+                            <choice GotoID="CulturalBranchSplit">
+                                <text> I see, I’d like to speak about more. </text>
+                            </choice>
+                            <choice GotoID="End">
+                                <text> I see. Live and drink. </text>
+                            </choice>
+                        </node>
 
-        <node ID="IsThisaDream">
-            <text>
-                Ah, some of us wish for ephemeral dreams. Others? For eternal ones. Reality is an odd sensation indeed, =name=. And so I ask, if this is a dream. Then are we not obligated to strive for our greatest resolutions? We will never know when 'experiencing' will begin or end. Should we not find a purpose that suits us, to make a dream reality, to make reality our dream?
-            </text>
-            <choice GotoID="PurposeIsaFoolsGoal">Why work towards a purpose? I let the wind take me, the moon's orbit guide me. I need no purpose, I just need change. I need only freedom in this world and purpose is a burden.
-            </choice>
-            <choice GotoID="WeAllNeedaReasonForBeing">We all need a purpose, but what is important is that we make that purpose our own. To look beyond what the world dictates we should be and find a purpose that meets our hearts desires! Purpose can be the light that brings one to burn like a star.
-            </choice>
-            <choice GotoID="BeorReasonNiethermatter">Does it matter? Whether we have purpose or not. I wouldn't care either way--whatever makes this life more interesting, whatever fulfills me like sitting under the sun and admiring a clover or slaying a foe who threatened life with no abandon. Purpose is only when you make it, with or without, I move forward.
-            </choice>
-        </node>
+                                    <node ID="DreamBranch">
+                                        <text>
+                                            {{emote|*The shah’s massive form lilts, her eyes becoming distant as she seems to be looking through her past.*}}
+                            
+                                            ... It must be. A terrible dream at that. One we cannot awaken from. Maybe a dream from stars, of gods and daemons. Yes. It is surely a dream.
+                                        </text>
+                                        <choice GotoID="DreamBranch2">
+                                            <text> ... </text>
+                                        </choice>
+                                    </node>
+
+                                    <node ID="DreamBranch2">
+                                        <text>
+                                            I’ve seen them. Those harmed beyond the ability to wake. Some remain in long or sometimes eternal sleep. They dreamt of strange things, sometimes they dreamt of strange worlds, and sometimes those dreams became their reality. The ones who did wake, they spoke of these dreams and we contemplated them.
+                                        </text>
+                                        <choice GotoID="DreamBranch3">
+                                            <text> ... </text>
+                                        </choice>
+                                    </node>
+
+                                    <node ID="DreamBranch3">
+                                        <text>
+                                            I once too fell into a deep sleep, a battle-wound rendered me unconscious for many years. I dreamt of strange things too. Dreamt of standing at the edge of this reality. Strange beings watched us from angulate apertures. Some, smiling, intense resolve in their eyes, determination–even. Somehow detached from us, yet so involved. Others with empathy, with tenacity, living through us maybe? Casting their image of self upon us and living our lives with the same will to live as do we.
+                                        </text>
+                                        <choice GotoID="DreamBranch4">
+                                            <text> ... </text>
+                                        </choice>
+                                    </node>
+
+                                    <node ID="DreamBranch4">
+                                        <text>
+                                            ... Others ... their eyes. You saw a sadistic pleasure, a hollowness. They saw us as ... sprites. Laughter permeated through suffering–watching values increase, wealth unfold, slaughtering for–a number? For what? I cannot say. But it was heartless and all I could do was watch.
+                                            
+                                            ...
+                                        </text>
+                                        <choice GotoID="DreamBranch5">
+                                            <text> ... Shah? </text>
+                                        </choice>
+                                    </node>
+
+                                    <node ID="DreamBranch5">
+                                        <text>
+                                            {{emote|*Her eyes are like a deep well into an unknown, gazing at the memory in silent horror. You realize she is not here anymore, not in spirit … her mind went elsewhere. She awakens from the stupor with a surprised sigh.*}}
+
+                                            … I’m–sorry. So sorry. =name=, Let us speak of something else.
+
+                                        </text>
+                                        <choice GotoID="CulturalBranchSplit">
+                                            <text> It’s alright, shah, I’d like to speak other things. </text>
+                                        </choice>
+                                        <choice GotoID="End">
+                                            <text> No worries, I'll let you rest dear shah, live and drink. </text>
+                                        </choice>
+                                    </node>
+        
+                        <!--Heiarchy Node-->
+
+                <node ID="HierarchyBeliefsBranch">
+                    <text>
+                        ... Others ... their eyes. You saw a sadistic pleasure, a hollowness. They saw us as ... sprites. Laughter permeated through suffering–watching values increase, wealth unfold, slaughtering for–a number? For what? I cannot say. But it was heartless and all I could do was watch.
+        
+                        ...
+                    </text>
+                    <choice GotoID="HierarchyBeliefsBranch2">
+                        <text> ... </text>
+                    </choice>
+                </node>
+
+                        <node ID="HierarchyBeliefsBranch2">
+                            <text>
+                                The Sultans.
+
+                                Our first shah lived through the monstrosities of the first Sultans. She bore witness to their rule as the madness swallowed Qud in violence and authority.
+                            </text>
+                            <choice GotoID="HierarchyBeliefsBranch3">
+                                <text> ... </text>
+                            </choice>
+                        </node>
+
+                        <node ID="HierarchyBeliefsBranch3">
+                            <text>
+                                She hated them. Hated their ways. Hated the proposed jurisdiction they held over any in this land. Yes. I think this is true. She declared as sole keeper of Bevidd to annul all rights to these lands from them; unofficially mind you, and most likely in opposition to them. She sealed the gates of Rhemhex’Qen from all observers, conquerors, and arbiters. The lands of Rhem’hex Qen were ours and ours alone, and thanks to Bevidd’s treacherous ‘scapes. It would remain that way.
+                            </text>
+                            <choice GotoID="HierarchyBeliefsBranch4">
+                                <text> ... </text>
+                            </choice>
+                        </node>
+
+                        <node ID="HierarchyBeliefsBranch4">
+                            <text>
+                                Most avoided us, outcasted–and yet, exalted. Left to our lonesome selves. To wane into legend and cryptid-tales.
+
+                                Then. The Sultanate. With all their glory, held by the covenant that watched over this realm with eyes that saw through flesh, steel, and soul. Who scoured and devoured the lands with hands that strung its populace like dolls on strings of gold and polished jewels. Who listened into otherworlds ad infinitum and yet found nothing to satiate their cravings for dominion.
+
+                                The sultanate was dissolved.
+                            </text>
+                            <choice GotoID="HierarchyBeliefsBranch5">
+                                <text> ... </text>
+                            </choice>
+                        </node>
+
+                        <node ID="HierarchyBeliefsBranch5">
+                            <text>
+                                By creed of that Cerulean One, the one who empowered and elevated their status. He wrenched it from them and then invited only his mightiest Sultans to rest in a realm of his creation. One, that he refused all others beneath them to join, including my people.
+
+                                Our shah was furious. Disgusted. Hurt. And in those feelings, she disavowed the Cerulean One who in small chidings would declare her ‘jealous and mad,’ Well, disavowed of him with as much power as she held. Very little, to be honest. It didn’t mean much as a fledgling in her times.
+                            </text>
+                            <choice GotoID="HierarchyBeliefsBranch6">
+                                <text> ... </text>
+                            </choice>
+                        </node>
+
+                        <node ID="HierarchyBeliefsBranch6">
+                            <text>
+                                “What pow'r doth one possess, if thou canst not save e'en thy master from the gyre’s rot—as thou hast saved the many ere thee?”
+
+                                She openly chided and denounced the Cerulean One. I like to think that she saw something in him most unworthy, both a flaw to distrust and a hint of future betrayal. Yes. And when she was gifted the first womb-bearer through the mysticisms of her early gene-spice, she sought to ensure her children and the progeny that would come forth would not fall into the same circles of delusion that she saw before.
+                            </text>
+                            <choice GotoID="HierarchyBeliefsBranch7">
+                                <text> ... </text>
+                            </choice>
+                        </node>
+
+                        <node ID="HierarchyBeliefsBranch6">
+                            <text>
+                                “What pow'r doth one possess, if thou canst not save e'en thy master from the gyre’s rot—as thou hast saved the many ere thee?”
+                
+                                She openly chided and denounced the Cerulean One. I like to think that she saw something in him most unworthy, both a flaw to distrust and a hint of future betrayal. Yes. And when she was gifted the first womb-bearer through the mysticisms of her early gene-spice, she sought to ensure her children and the progeny that would come forth would not fall into the same circles of delusion that she saw before.
+                            </text>
+                            <choice GotoID="HierarchyBeliefsBranch7">
+                                <text> ... </text>
+                            </choice>
+                        </node>
+
+                        <node ID="HierarchyBeliefsBranch6">
+                            <text>
+                                And as her first decree, when the first children were wrought into this world. She denounced herself, and all following shah of power. She produced a great tablet, sculpted from thought-stuff, with seven edicts that we follow to this day–which, you can find behind me.
+                                
+                                And with those edicts, she would pass into the next world and the next shahs would uphold them, such as I’ve done.
+                            </text>
+                            <choice GotoID="HereticalWordsBranch">
+                                <text> 
+                                    Are you aware that outside these lands, Resheph is worshipped? Your early shah's ridicule of him would be offensive to many. 
+                                </text>
+                            </choice>
+                            <choice GotoID="HereticalPowerBranch">
+                                <text> 
+                                    So at the end of it all, you hold little power to your family?
+                                </text>
+                            </choice>
+                            <choice GotoID="End">
+                                <text> 
+                                    Wonderful tale, shah. Live and drink. 
+                                </text>
+                            </choice>
+                        </node>
+
+                                        <node ID="HereticalWordsBranch">
+                                            <text>
+                                                I am aware.
+                                                
+                                                Many have come here, spouting nonsense of the bygone eras.
+                                            </text>
+                                            <choice GotoID="HereticalWordsBranch1">
+                                                <text> ... Who? </text>
+                                                
+                                            </choice>
+                                        </node>
+
+                                        <node ID="HereticalWordsBranch">
+                                            <text>
+                                                *her gaze shifts as if beholding a distant horizon. Eyes thinning as darker feelings seems to overcome her.*
+                                                
+                                                Sons and Daughters once came, coated in silver arms bearing banners of blood and malice. They demanded entry into our realm, claiming that it was 'them' who would reclaim this 'ancient sanctum' for their Elders and denounced us. Saying we were “mutant scourges who skittered into a godly place and soiled it.” Insulting, isn’t it? Since our first shah scuttled from one of the glass-wombs here-and was first to even venture this place once the elder-kind abandoned it. Others of us also came from those machine-wombs and were the start of the people you see today.
+
+                                                And so, we denied them.
+                                            </text>
+                                            <choice GotoID="HereticalWordsBranch1">
+                                                <text> ... </text>
+                                            </choice>
+                                        </node>
+
+                                        <node ID="HereticalWordsBranch1">
+                                            <text>
+                                                You should have seen their faces when we declared our creeds. We met their violence was met with our own. Making sure there was none who could tell of what happened when the Sons and Daughters of the elders attempted to enter Rhemhex’Qen.
+                                            </text>
+                                            <choice GotoID="HereticalWordsBranch2">
+                                                <text> ... </text>
+                                            </choice>
+                                        </node>
+
+                                        <node ID="HereticalWordsBranch2">
+                                            <text>
+                                                Then, bearers of Shekhinah’s crest came forth one solemn night–what they touted as The Six, bearing new names as Argent Fathers. Masters of the old-realm. They sought entry, to bear witness to their new gods' old ways. They preached to us the value and divinity of old men, they wallowed and bowed before the pillories and scryings of old men while denying technica.
+
+                                                We denied them.
+
+                                                They left without a word, shamed? Brokenhearted? Dismayed? Who knows? They perished in the crystholts–refusing to heed our warnings of its increasing danger.
+                                            </text>
+                                            <choice GotoID="HereticalWordsBranch3">
+                                                <text> ... </text>
+                                            </choice>
+                                        </node>
+
+                                        <node ID="HereticalWordsBranch3">
+                                            <text>
+                                                Then, another came, shrouded in cloth and cloak, gaze-bound by bandages aimed to hide the glimmer in his eyes. Minds reaved of their engrams bound in living-corpses that shambled behind him. Thralls. The disgusting thing spoke of the Cant, that it searched for the home of its master–its empty star hollowed through, hoping to null our minds into host for its “greater purpose”. I could sense his mind, and I am sure he could sense my own. My thought-stuff is ripe, mature. I have had the misfortune of touching countless ages and otherworlds and so my Selfhood is potent. I am sure I was why he came, he wanted me as his next meal.
+
+                                                We denied him, ad nauseam.
+
+                                                Fitting, he would be dragged into the bloodpits. A fateful end, being deprived of all selfhood and choice. Such as the wastelings he enslaved who toiled after him.
+                                            </text>
+                                            <choice GotoID="HereticalPowerBranch">
+                                                <text> 
+                                                    Hm. I was going to ask but, at the end of it all, do you hold power to your family?
+                                                </text>
+                                            </choice>
+                                            <choice GotoID="CulturalBranchSplit">
+                                                <text> 
+                                                    I see, I have more to ask, dear shah. 
+                                                </text>
+                                            </choice>
+                                            <choice GotoID="End">
+                                                <text>
+                                                    … I see. Live and drink.
+                                                </text>
+                                            </choice>
+                                        </node>
+
+                            <node ID="HereticalPowerBranch">
+                                <text>
+                                    … What is power? I sometimes ask this. Is it truly something I desire? Maybe, if it's for the right reasons. To protect my kin? To protect those I love.
+
+                                    No, =name= I hold little power. What some may see as reverence is the love and respect I earned as a womb-bearer.
+                                </text>
+                                <choice GotoID="CulturalBranchSplit">
+                                    <text>
+                                        Might I ask more of you, shah.
+                                    </text>
+                                </choice>
+                            </node>
+
+                <node ID="KnownShahsBranch">
+                    <text>
+                        {{emote|*The shah smiles at you, a husky chuckle coming from her as she considers what you’re asking.*}}
+        
+                        …Me? The first shah? No-no-no, far from it. As of the first Shah, Dae’Almophotea the Exalted. I am the Seventh Shah.
+                    </text>
+                    <choice GotoID="RoyalOvipositorBranch">
+                        <text> How does one even become shah? </text>
+                    </choice>
+                    <choice GotoID="DeaAlmophoteaBranch">
+                        <text> What was the first shah like? </text>
+                    </choice>
+                    <choice GotoID="End">
+                        <text> Interesting. Live and drink, dear shah. </text>
+                    </choice>
+                </node>
+
+                                        <node ID="RoyalOvipositorBranch">
+                                            <text>
+                                                Well, you must bear the progenitors’ gift. An ovipositor. Some say it can appear randomly, others? They think a bit of royal-jelly a day does the trick. Who knows. This gene-gift is something only some anesheym are born with. You see the mass I am bound to, yes? The Broodpusher. The ovipositor links to it, like a puzzle piece–unlocking both our potential. It doesn’t just birth young, every nyt wrought from its depths produces unique phratries, kinfolk who can make their own young, and so on and so forth. Their genes are somehow very unalike, yet similar.
+                                            </text>
+                                            <choice GotoID="RoyalOvipositorBranch1">
+                                                <text> ... </text>
+                                            </choice>
+                                        </node>
+
+                                        <node ID="RoyalOvipositorBranch1">
+                                            <text>
+                                                But not all are ready to ascend to role progenitor. Some, once discovering their gift … give into fear, fear of the responsibility. They choose the Denothian way. Exile.
+                                            </text>
+                                            <choice GotoID="ExileBranch">
+                                                <text> Why choose exile? </text>
+                                            </choice>
+                                        </node>
+
+                                                        <node ID="ExileBranch">
+                                                            <text>
+                                                                To become the womb-bearer is an obligation that would break the wills of most. Even I have conceded in my many years to the hardship that comes with this endless laboring. Once bonded to the broodpusher--it is forever. Anesheym born with the progenitor’s gift can live for countless eras. Some may sprout their ovipositor only a few years after reaching their second age, others it can take a millennium, and they grow accustomed to the freedom of such cultural burdens.
+                                                            </text>
+                                                            <choice GotoID="ExileBranch1">
+                                                                <text> … When have you lasted seen the world outside, shah? </text>
+                                                            </choice>
+                                                        </node>
+
+                                                        <node ID="ExileBranch1">
+                                                            <text>
+                                                                It can be difficult for some to sacrifice that freedom for the future of our kind. Understandably.
+                                                            </text>
+                                                            <choice GotoID="ExileBranch2">
+                                                                <text> ... </text>
+                                                            </choice>
+                                                        </node>
+
+                                                        <node ID="ExileBranch2">
+                                                            <text>
+                                                                I … cannot remember.
+                                                                Forgive me, =name= I’ve lost time, being down here so long.
+                                                            </text>
+                                                            <choice GotoID="DeaAlmophoteaBranch">
+                                                                <text> Hm, could I ask what the first shah was like? </text>
+                                                            </choice>
+                                                            <choice GotoID="End">
+                                                                <text> ... Live and drink. </text>
+                                                            </choice>
+                                                        </node>
+
+                        <node ID="DeaAlmophoteaBranch">
+                            <text>
+                                Incredible. Strong, yet not overbearing. Intelligent, yet open-minded. Sharp-tongued, barbed with quick-wit and harsh truths. Much to the dismay of others around her. If she had any flaw it was her Selfhood. I think she may have antagonized the ancients a bit too much out of an internal fear of feeling without self-worth or her own identity.
+            
+                                We both know the Six, and they would never tolerate some underling from an abandoned land to speak ill of them. Maybe we would have more of a foothold in Qud if she hadn’t encouraged us to be more self-reliant.
+                            </text>
+                            <choice GotoID="DeaAlmophoteaBranch2">
+                                <text> ... </text>
+                            </choice>
+                            <choice GotoID="End">
+                                <text>  </text>
+                            </choice>
+                        </node>
+
+                                        <node ID="DeaAlmophoteaBranch2">
+                                            <text>
+                                                Maybe things were different in those times, but now. Maybe we wouldn’t be such an isolated folk.
+
+                                                I think she feared us losing our identity.
+                                            </text>
+                                            <choice GotoID="DeaAlmophoteaBranchB">
+                                                <text> 
+                                                    Trust me, if you knew what it was like outside these lands, you’d be thanking her.
+                                                </text>
+                                            </choice>
+                                            <choice GotoID="DeaAlmophoteaBranchC">
+                                                <text>
+                                                    I think she was smart to be wary of the outside world, but things have changed. I think your people and their ways could change these wild lands for the better.
+                                                </text>
+                                            </choice>
+                                        </node>
+
+                                                        <node ID="DeaAlmophoteaBranchB">
+                                                            <text>
+                                                                I’ve heard the rumors. Saile spoke of gyres that spill pestilence and horror onto into the lushlands. Girsh omens and sultan remnants ravage the lands. I thought we were safe, maybe the only safe place in Qud, that is until the bloodpits began to stain the crystholts with horror. 
+                                                                
+                                                                True, you might be right. We avoided dealing with the cursed lands around us. But I fear it was at a cost, the question becomes if we can truly count on ourselves in these dire times.
+                                                            </text>
+                                                            <choice GotoID="DeaAlmophoteaBranchC">
+                                                                <text> 
+                                                                    Being careful isn't a bad thing, the world outside Bevidd is dangerous, true. But I also see some benefits in expanding your people’s ways across Qud. 
+                                                                </text>
+                                                            </choice>
+                                                            <choice GotoID="DeaAlmophoteaBranchD">
+                                                                <text> 
+                                                                    I think she was smart to be wary of the outside world, but things have changed. I think your people and their ways could change these wild lands for the better. 
+                                                                </text>
+                                                            </choice>
+                                                            <choice GotoID="End">
+                                                                <text>  </text>
+                                                            </choice>
+                                                        </node>
+
+                                                        <node ID="DeaAlmophoteaBranchD">
+                                                            <text>
+                                                                Maybe. From what I have heard, these forsaken lands could use some healing. But I worry for the safety of my people. The blood-pools reminded me of how painful it is to feel the aches of loss. And we hadn’t known loss for centuries now, not like this at least.
+                                                            </text>
+                                                            <choice GotoID="End">
+                                                                <text>
+<!--                                                                                    Emmissaries Gamestate Initiator Branch-->
+                                                                    Hm. I think I have an idea that could work wonders. Dear, shah. But not yet, I need to think this out. {{yellow|[To be continue … ]}}
+                                                                </text>
+                                                            </choice>
+                                                            <choice GotoID="DeaAlmophoteaBranchB">
+                                                                <text>
+                                                                    Grief is rife outside these lands, you are right to be weary. Qud is a dangerous place, friend.
+                                                                </text>
+                                                            </choice>
+                                                            <choice GotoID="CulturalBranchSplit">
+                                                                <text>
+                                                                    Well, I have more to ask of you, dear shah.
+                                                                </text>
+                                                            </choice>
+                                                            <choice GotoID="End">
+                                                                <text>I have no more to ask of you. Live and drink.</text>
+                                                            </choice>
+                                                        </node>
+
+                        <node ID="ShahPowerBranch">
+                            <text>
+                                {{emote|*She tilts her head at you curiously.*}}
+                
+                                Power? As in the right of decree? To order those around me like servants? Or spout words of sovereignty?
+                
+                                No. What the people of this land do for me is out of love and respect. Nothing more.
+                            </text>
+                            <choice GotoID="FigureHeadBranch">
+                                <text>
+                                    So, you’re more of a figurehead if anything?
+                                </text>
+                            </choice>
+                            <choice GotoID="DisposedShahBranch">
+                                <text>
+                                    Has a shah ever been deposed?
+                                </text>
+                            </choice>
+                            <choice GotoID="End">
+                                <text>  </text>
+                            </choice>
+                        </node>
+
+                                <node ID="FigureHeadBranch">
+                                    <text>
+                                        … Figure–h-head?
+                                    </text>
+                                    <choice GotoID="FigureHeadBranch1">
+                                        <text>
+                                            Yes. An arbiter of sorts? A proxy, even?
+                                        </text>
+                                    </choice>
+                                </node>
+
+                                        <node ID="FigureHeadBranch1">
+                                            <text>
+                                                I know not what you speak of, =name=. Such things are foreign to us.
+                                            </text>
+                                            <choice GotoID="DisposedShahBranch">
+                                                <text>
+                                                    … I see. Well, has a shah ever been deposed?
+                                                </text>
+                                            </choice>
+                                            <choice GotoID="End">
+                                                <text>
+                                                    ... Um, nevermind, live and drink.
+                                                </text>
+                                            </choice>
+                                        </node>
+
+                                <node ID="DisposedShahBranch">
+                                    <text>
+                                        {{emote|*The shah’s expression quickly muddles, clearly disturbed by your words.*}}
+        
+                                        Deposed? I think you mean 'disposed.'
+        
+                                    </text>
+                                    <choice GotoID="DisposedShahBranch1">
+                                        <text>
+                                            … Disposed? That sounds ominous ...
+                                        </text>
+                                    </choice>
+                                    <choice GotoID="End">
+                                        <text>
+                                            ... Um, nevermind, live and drink.
+                                        </text>
+                                    </choice>
+                                </node>
+
+                                        <node ID="DisposedShahBranch1">
+                                            <text>
+                                                A shah’s duty once sealed to Broodpusher is unseverable … unless you consider death a freedom.
+                                            </text>
+                                            <choice GotoID="DisposedShahBranch2">
+                                                <text>
+                                                    ...
+                                                </text>
+                                            </choice>
+                                        </node>
+
+                                        <node ID="DisposedShahBranch2">
+                                            <text>
+                                                If a shah wishes to renounce her position, or is found lacking or tyrannical by her people’s command. Then death is the only option for her–and them.
+                                            </text>
+                                            <choice GotoID="DisposedShahBranch3">
+                                                <text>
+                                                    ...
+                                                </text>
+                                            </choice>
+                                        </node>
+
+                                        <node ID="DisposedShahBranch3">
+                                            <text>
+                                                And to answer your question, yes, there are only two shahs who were removed from their position.
+
+                                                The 4th shah of Rhemhex’Qen grew tired of her title, the ails of its responsibilities drove her insane, she demanded release and hence was removed. The 6th, the one before I? She was of the latter kind, she demanded that outsiders be hunted through the crystholts and slain at her behest. When the two councils objected to such barbarity, she spouted accusations of heresy and downcast them–seeking to instead order knights behind the councils’ backs to commit to her hunts.
+
+                                                The people did not appreciate her dishonesty once this was unveiled. And, in the face of hundreds she was powerless. She was … "deposed" as you put it. Wings sundered and torn from the Broodpusher, I being one amongst the many who tore her down.
+                                            </text>
+                                            <choice GotoID="DisposedShahBranch4">
+                                                <text>
+                                                    You helped dispose of the last shah? And now you sit in her position? Was no one suspicious?
+                                                </text>
+                                            </choice>
+                                        </node>
+
+                                        <node ID="DisposedShahBranch4">
+                                            <text>
+                                                At the time, I wasn’t even aware I could take this throne. I had not spouted my ovipositor–I was just one of the many faces in a crowd of angered kin.
+                                
+                                                It was by irony’s humor that I’d later find myself sitting in her position.
+                                            </text>
+                                            <choice GotoID="CulturalBranchSplit">
+                                                <text>
+                                                    I appreciate this, dear shah. May I ask more of you?
+                                                </text>
+                                            </choice>
+                                            <choice GotoID="End">
+                                                <text>
+                                                    Wonderfully informative, shah. Live and drink.
+                                                </text>
+                                            </choice>
+                                        </node>
+
+                <node ID="EggValueBranch">
+                    <text>
+                        The taste? Or maybe how the sheen and beauty of their shells appear as gemstones to some? There are many reasons that I might never know.
+
+                        {{emote|*She holds a solemn stare, suffrage wracking her face as grief seems to deepen in her.*}}
+
+                        I’m sorry, I see that was a painful question to ask.
+                    </text>
+                    <choice GotoID="EggValueBranch1">
+                        <text>
+                            I appreciate this, dear shah. May I ask more of you?
+                        </text>
+                    </choice>
+                    <choice GotoID="End">
+                        <text>
+                            I ... apologize, shah. Live and drink.   
+                        </text>
+                    </choice>
+                </node>
+
+                            <node ID="EggValueBranch1">
+                                <text>
+                                    =name=, we anesheym strive to reward those who aid us for their endeavors. I know finding our nyts is difficult. Perilous, even. We do not offer greater rewards because we value a nyt more than its peer. We offer it because we know some nyts take a greater risk to return, your work isn’t cheap–and neither is your life and wellbeing.
+                                </text>
+                                <choice GotoID="CulturalBranchSplit">
+                                    <text>
+                                        I appreciate this, dear shah. May I ask more of you?
+                                    </text>
+                                </choice>
+                                <choice GotoID="End">
+                                    <text>
+                                        Then I should get back to work then. Live and drink.
+                                    </text>
+                                </choice>
+                            </node>
+        
     </conversation>
     
 </conversations>

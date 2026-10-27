@@ -450,12 +450,37 @@
         <removepart Name="Graffitied"/>
     </object>
 
-    <object Name="BirthCryptDoor" Inherits="Door">
-        <part Name="Render" TileColor="&amp;K" DetailColor="y"/>
-        <part Name="wm_DoorUnlocker"/>
+    <object Name="Black Glass Door" Inherits="Door">
+        <part Name="Render" DisplayName="black-glass door" Tile="WingyTextures/QenFurniture/BlackGlassDoor.png"
+              ColorString="&amp;C" TileColor="&amp;K" DetailColor="Y" RenderString="234"/>
         <removepart Name="Graffitied"/>
+        <part Name="Door" Locked="false" ClosedTile="WingyTextures/QenFurniture/BlackGlassDoor.png"/>
     </object>
 
+    
+    <object Name="Stone Edict Tablet W" Inherits="InorganicObject">
+        <part Name="Render" DisplayName="Eastern Birth Gate" Tile="WingyTextures/QenFurniture/stonescrawleddecreesW.png"
+              ColorString="&amp;C" TileColor="&amp;W" DetailColor="C" RenderLayer="8" Occluding="true" RenderIfDark="true" />
+        <part Name="Physics" Weight="10000" FlameTemperature="99999" VaporTemperature="1500" Takeable="false" Solid="true" />
+        <stat Name="AV" Value="20" />
+        <stat Name="Hitpoints" Value="1000" />
+        <tag Name="NoSparkingQuest" />
+        <tag Name="VaporObject" Value="LavaPuddle" />
+        <part Name="ShowDecrees" />
+        <tag Name="Furniture" Value="1" />
+    </object>
+    
+    <object Name="Stone Edict Tablet E" Inherits="InorganicObject">
+        <part Name="Render" DisplayName="Eastern Birth Gate" Tile="WingyTextures/QenFurniture/stonescrawleddecreesE.png"
+              ColorString="&amp;C" TileColor="&amp;W" DetailColor="C" RenderLayer="8" Occluding="true" RenderIfDark="true" />
+        <part Name="Physics" Weight="10000" FlameTemperature="99999" VaporTemperature="1500" Takeable="false" Solid="true" />fglitter
+        <stat Name="AV" Value="20" />
+        <stat Name="Hitpoints" Value="1000" />
+        <tag Name="NoSparkingQuest" />
+        <tag Name="VaporObject" Value="LavaPuddle" />
+        <part Name="ShowDecrees" />
+        <tag Name="Furniture" Value="1" />
+    </object>
 
     <!-- Search:liquids -->
 
@@ -3084,22 +3109,78 @@
 <!--    </object>-->
 
     <object Name="WombWall" Inherits="Wall">
-        <part Name="Render" DisplayName="ornately filigreed marble" RenderString="177" TileColor="&amp;k"
-              DetailColor="m" Occluding="true"/>
+        <part Name="Render" DisplayName="aneshic wall" RenderString="177" TileColor="&amp;K^y"
+              DetailColor="k" Occluding="true"/>
         <part Name="Physics" Weight="10000" FlameTemperature="99999" VaporTemperature="1500" Takeable="false"
               Solid="true"/>
         <stat Name="AV" sValue="25"/>
         <stat Name="Hitpoints" sValue="6000"/>
         <part Name="Description"
               Short="Whole worlds are threaded in three-dimensional filigree, simulacra of the motley lives of ash-dreaming Eaters. Palm leaves lift pyramids into the star-ribboned sky, and the water of life pours over the lip of an oinochoe."/>
-        <tag Name="PaintedWall" Value="wall_filigree"/>
-        <tag Name="PaintedWallAtlas" Value="Assets_Content_Textures_Walls_"/>
+        <tag Name="PaintWith" Value="MarbleWalls"/>
+        <tag Name="PaintedWall" Value="CorridorWallMotif_"/>
+        <tag Name="PaintedWallAtlas" Value="WingyTextures_Walls_CorriWallMotif_"/>
         <tag Name="PaintedWallExtension" Value=".png"/>
         <tag Name="VaporObject" Value="LavaPuddle"/>
         <tag Name="ImmutableWhenUnexplored" Value="1"/>
         <tag Name="Tier" Value="6"/>
         <removepart Name="Graffitied"/>
         <tag Name="ExcludeFromDynamicEncounters"/>
+    </object>
+
+    <object Name="MoonWall" Inherits="Wall">
+        <part Name="Render" DisplayName="aneshic wall with moon motif" RenderString="177" TileColor="&amp;K^y"
+              DetailColor="k" Occluding="true"/>
+        <part Name="Physics" Weight="10000" FlameTemperature="99999" VaporTemperature="1500" Takeable="false"
+              Solid="true"/>
+        <stat Name="AV" sValue="25"/>
+        <stat Name="Hitpoints" sValue="6000"/>
+        <part Name="Description"
+              Short="Whole worlds are threaded in three-dimensional filigree, simulacra of the motley lives of ash-dreaming Eaters. Palm leaves lift pyramids into the star-ribboned sky, and the water of life pours over the lip of an oinochoe."/>
+        <tag Name="PaintWith" Value="MarbleWalls"/>
+        <tag Name="PaintedWall" Value="MoonWallMotif_"/>
+        <tag Name="PaintedWallAtlas" Value="WingyTextures_Walls_MoonWallMotif_"/>
+        <tag Name="PaintedWallExtension" Value=".png"/>
+        <tag Name="VaporObject" Value="LavaPuddle"/>
+        <tag Name="ImmutableWhenUnexplored" Value="1"/>
+        <tag Name="Tier" Value="6"/>
+        <removepart Name="Graffitied"/>
+        <tag Name="ExcludeFromDynamicEncounters"/>
+    </object>
+
+    <object Name="HexWall" Inherits="Wall">
+        <part Name="Render" DisplayName="aneshic marble with hexagonal motif" RenderString="177" TileColor="&amp;K^y"
+              DetailColor="k" Occluding="true"/>
+        <part Name="Physics" Weight="10000" FlameTemperature="99999" VaporTemperature="1500" Takeable="false"
+              Solid="true"/>
+        <stat Name="AV" sValue="25"/>
+        <stat Name="Hitpoints" sValue="6000"/>
+        <part Name="Description"
+              Short="Whole worlds are threaded in three-dimensional filigree, simulacra of the motley lives of ash-dreaming Eaters. Palm leaves lift pyramids into the star-ribboned sky, and the water of life pours over the lip of an oinochoe."/>
+        <tag Name="PaintWith" Value="MarbleWalls"/>
+        <tag Name="PaintedWall" Value="HexWallMotif_"/>
+        <tag Name="PaintedWallAtlas" Value="WingyTextures_Walls_HexWallMotif_"/>
+        <tag Name="PaintedWallExtension" Value=".png"/>
+        <tag Name="VaporObject" Value="LavaPuddle"/>
+        <tag Name="ImmutableWhenUnexplored" Value="1"/>
+        <tag Name="Tier" Value="6"/>
+        <removepart Name="Graffitied"/>
+        <tag Name="ExcludeFromDynamicEncounters"/>
+    </object>
+
+    <object Name="Polished WombWall" Inherits="WombWall">
+        <part Name="Render"  RenderString="177" TileColor="&amp;K^Y"
+              DetailColor="k" Occluding="true"/>
+    </object>
+
+    <object Name="Polished MoonWall" Inherits="MoonWall">
+        <part Name="Render"  RenderString="177" TileColor="&amp;K^Y"
+              DetailColor="k" Occluding="true"/>
+    </object>
+
+    <object Name="Polished HexWall" Inherits="HexWall">
+        <part Name="Render"  RenderString="177" TileColor="&amp;K^Y"
+              DetailColor="k" Occluding="true"/>
     </object>
 
     <object Name="BaseFleshWall" Inherits="BaseWallRock">
@@ -3143,8 +3224,8 @@
     </object>
 
     <object Name="GrossWall" Inherits="BaseFleshWall">
-        <part Name="Render" DisplayName="flesh-enveloped obsidian" ColorString="&amp;a^a" TileColor="&amp;A"
-              DetailColor="l"/>
+        <part Name="Render" DisplayName="flesh-enveloped obsidian" ColorString="&amp;K^k" TileColor="&amp;a^A"
+              DetailColor="k"/>
         <stat Name="AV" sValue="10"/>
         <stat Name="Hitpoints" sValue="200"/>
         <part Name="Description" Short="Pustules filled with ichorous phlegm pulsate upon mounds of gnarly tissue."/>
@@ -3152,8 +3233,8 @@
     </object>
 
     <object Name="GrossWall2" Inherits="BaseFleshWall2">
-        <part Name="Render" DisplayName="gore-encrusted shale" ColorString="&amp;K^k" TileColor="&amp;l"
-              DetailColor="a"/>
+        <part Name="Render" DisplayName="gore-encrusted shale" ColorString="&amp;K^k" TileColor="&amp;l^a"
+              DetailColor="k"/>
         <stat Name="AV" sValue="10"/>
         <stat Name="Hitpoints" sValue="200"/>
         <part Name="Description" Short="Pustules filled with ichorous phlegm pulsate upon mounds of gnarly tissue."/>
@@ -3703,7 +3784,7 @@
         <part Name="Render" DisplayName="Nuurimir's Ravager" Tile="nuurimirssword.png" ColorString="&amp;p" DetailColor="M" />
         <part Name="MeleeWeapon" PenBonus="1" MaxStrengthBonus="15" BaseDamage="3d15" Skill="Axe" />
         <part Name="Commerce" Value="9999" />
-        <part Name="Description" Short="A great-slab of fulcrete, taller than any mortal and impaled through by an axle of chrome. The many it has decimated leave its edge stained; scales, fur and even fulcrum-nanites embedded into its core. Hardened by blood and chipped bones, the marring-great cleaver slays without mercy, determined to feed on the defeated it culls in the moment. Just like its previous master." />
+        <part Name="Description" Short="A great-slab of fulcrete, taller than any mortal and impaled through by an axle of chrome. The many it has decimated leave its edge stained; scales, fur and even fulcrum-nanites embedded into its core. Hardened by blood and chipped bones, the marring-great cleaver slays without mercy. Determined to feed on the defeated it culls in the moment. Just like its previous master." />
         <part Name="Metal" />
         <part Name="Zetachrome" />
         <tag Name="Tier" Value="8" />
