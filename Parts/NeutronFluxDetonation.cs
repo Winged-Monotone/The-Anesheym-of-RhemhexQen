@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using Wingytone.MonoBehaviours;
 using Wintellect.PowerCollections;
+using XRL.Rules;
 using XRL.UI;
 using XRL.Wish;
 using XRL.World.Parts;
@@ -72,7 +73,7 @@ namespace XRL.World.Parts
                        var PrimeExplosion = Popup.ShowYesNo("Prime the countdown-sequence until detonation?");
                        if (PrimeExplosion == DialogResult.Yes)
                        {
-                           DetonationCountdown = 25;
+                           DetonationCountdown = Stat.Random(30,50);
                            SoundManager.PlayUISound("nfd-alarmsequence", Volume: 1);
                            AddPlayerMessage("{{red|WARNING!!! Z-007 NEUTRON FLUX DETONATOR PRIMED. ALL PERSONNEL, EVACUATE THE FACILITY IMMEDIATELY.}}");
                            StartStrobing();
