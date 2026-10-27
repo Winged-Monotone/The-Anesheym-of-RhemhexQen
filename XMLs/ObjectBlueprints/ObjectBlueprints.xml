@@ -3557,7 +3557,7 @@
 <!--        <part Name="ThrownWeapon" Penetration="8" Damage="1d10+1" Attributes="Spear"/>-->
 <!--        <part Name="Commerce" Value="450"/>-->
 <!--        <part Name="Description"-->
-<!--              Short="A glittering, oily-black blade, that cast a pale, purple glint as it crosses light."/>-->
+<!--              Short="A glittering, oily-black blade that cast a pale, purple glint as it crosses light."/>-->
 <!--        <part Name="Metal"/>-->
 <!--        <tag Name="Flawless"/>-->
 <!--        <part Name="Physics" Weight="2" FlameTemperature="99999" VaporTemperature="9999"/>-->
