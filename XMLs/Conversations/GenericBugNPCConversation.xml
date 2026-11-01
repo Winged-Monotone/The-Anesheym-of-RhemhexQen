@@ -4,7 +4,7 @@
             <conversation ID="BaseVillagerKnightConversations" >
                 <start ID="GenericWelcomeIUnwelcome" IfNotFinishedQuest="Egghunt">
                     <text>
-                        <!--       You Don't belong here-->
+
                         Leave, intruder.~
                         We have nothing to speak of, leave this place.~
                         We are a peaceful people, but that could change the more intruders like you show up.~
@@ -19,7 +19,7 @@
         
                 <start ID="GenericWelcomeI" IfFinishedQuest="Egghunt">
                     <text>
-                        <!--   Egg related    -->
+
                         You've done much for us, friend. But that doesn't mean we aren't watching you.~
                         Watch yourself, traveler.~
                         The safety of our kin is tantamount to anything.~
@@ -38,13 +38,13 @@
             <conversation ID="BaseVillagerNurseConversations" >
                 <start ID="GenericWelcomeIUnwelcome" IfNotFinishedQuest="Egghunt">
                     <text>
-                        <!--       You Don't belong here-->
+
                         How did you get in here, you aren't welcome!~
                         You are not wanted in this place, leave!~
                         Please, leave us alone, we've had enough trouble from outsiders.~
                         An outsider? How did you get in here?~
                         Another intruder, are you here to steal our nytlings too?~
-                        Please, leave us be. Our hearts hurt enough.
+                        Please, leave us be. Our hearts hurt enough.~
                     </text>
                     <choice ID="Trade" Load="Remove"/>
                     <choice GotoID="End"> ... </choice>
@@ -52,7 +52,7 @@
                 
                 <start ID="GenericWelcomeI" IfFinishedQuest="Egghunt">
                     <text>
-                        <!--   Egg related    -->
+
                         I have nytlings to dote over, friend.~
                         you can hear them crying in their shells.~
                         Watch your footing in the brood-chambers, every nyt is precious.~
@@ -69,7 +69,7 @@
             <conversation ID="BaseVillagerElderConversations" >
                 <start ID="GenericWelcomeIUnwelcome" IfNotFinishedQuest="Egghunt">
                     <text>
-                        <!--       You Don't belong here-->
+
                             We've closed our gates for a reason, the outside world is no longer welcome. You should leave.~
                             We're pained people right now, we don't want outsiders here.~
                             You've wandered somewhere you are not wanted, wanderer.~
@@ -90,21 +90,21 @@
 
                 <start ID="GenericWelcomeIIfriendly" IfFinishedQuest="ShahStartLongSigh">
                     <text>
-                        <!--        crystholt crystnium warnings-->
+
                         Beware the pretty-water, friend.~
                         The crystholt water-holes are clear as crystal, drink them, and you'll go clear too.~
                         Cryst-water may look fresh but slake your thirst on that a crysten-effigy will take your place in no time.~
                         The shiny-baubles near the ponds should warn enough, beware the crystna. Their fumes turn all to glitter.~
-                        <!--        crystholt crystna warnings-->
+
                         Crystna vines might reach out and snatch you. Beware the cryst-weed.~
-                        <!--        Abyssa, The Anima's Wake responses.-->
+
                         May your dream-realms be calm and serene, friend.~
                         Dream in serenity, friend.~
                         Yes, I dreamt of this conversation, dream-friend.~
                         I dreamt of this meet, friend.~
                         Welcome to the eternal Rhem, dream-friend.~
                         The groves are where we worship the eternal dream-walkers, friend.~
-                        <!--        food related responses-->
+
                         {{emote|*nibbles on crispy shard-leaf*}}~
                         {{emote|*nips at crunchy chitin-chips*}}~
                         Might grab some sacchar-chips from chymero's today.~
@@ -114,7 +114,7 @@
                         Careful with the mad-honey, friend, the mind-journeys aren't always fun.~
                         I'm bringing brimberries for my youngers.~
                         The brimraisin's might reek, but they are divine.~
-                        <!--        The Blood Pits related responses-->
+
                         The Crystholts are pure again. The bloodpools have gone still, thank you, =name=.~
                         The amalgam are still, lifeless. Was this you?~
                         The bloodpits have calcified, how is this possible?~
@@ -133,20 +133,20 @@
                 <!--    Post finishing bug quest.-->
                 <start ID="GenericWelcomeIffriendly" IfFinishedQuest="Egghunt">
                     <text>
-                        <!--        crystholt crystnium warnings-->
+
                         Beware the pretty-water, friend.~
                         The crystholt water-holes are clear as crystal, drink them, and you'll go clear too.~
                         Cryst-water may look fresh but slake your thirst on that a crysten-effigy will take your place in no time.~
                         The shiny-baubles near the ponds should warn enough, beware the crystna. Their fumes turn all to glitter.~
-                        <!--        crystholt crystna warnings-->
+
                         Crystna vines might reach out and snatch you. Beware the cryst-weed.~
-                        <!--        Abyssa, The Anima's Wake responses.-->
+
                         May your dream-realms be calm and serene, friend.~
                         Dream in serenity, friend.~
                         Yes, I dreamt of this conversation, dream-friend.~
                         I dreamt of this meet, friend.~
                         Welcome to the eternal Rhem, dream-friend.~
-                        <!--        food related responses-->
+
                         {{emote|*nibbles on crispy shard-leaf*}}~
                         {{emote|*nips at crunchy chitin-chips*}}~
                         Might grab some sacchar-chips from chymero's today.~
@@ -156,7 +156,7 @@
                         Careful with the mad-honey, friend, the mind-journeys aren't always fun.~
                         I'm bringing brimberries for my youngers.~
                         The brimraisin's might reek, but they are divine.~
-                        <!--        The Blood Pits related responses-->
+
                         Beware the blood-pits, friend.~
                         Pits of anguish amongst the cryst, their amalgam scour the lands, murdering and capturing mortal-flesh. They drag you in and your flesh melds with theirs.~
                         The blood-pits will take you if you are not careful, friend.~
@@ -225,21 +225,21 @@
                             
                         <start ID="GenericWelcomeIIfriendly" IfFinishedQuest="ShahStartLongSigh">
                             <text>
-                                <!--        crystholt crystnium warnings-->
+
                                 Beware the pretty-water, friend.~
                                 The crystholt water-holes are clear as crystal, drink them, and you'll go clear too.~
                                 Cryst-water may look fresh but slake your thirst on that a crysten-effigy will take your place in no time.~
                                 The shiny-baubles near the ponds should warn enough, beware the crystna. Their fumes turn all to glitter.~
-                                <!--        crystholt crystna warnings-->
+
                                 Crystna vines might reach out and snatch you. Beware the cryst-weed.~
-                                <!--        Abyssa, The Anima's Wake responses.-->
+
                                 May your dream-realms be calm and serene, friend.~
                                 Dream in serenity, friend.~
                                 Yes, I dreamt of this conversation, dream-friend.~
                                 I dreamt of this meet, friend.~
                                 Welcome to the eternal Rhem, dream-friend.~
                                 The groves are where we worship the eternal dream-walkers, friend.~
-                                <!--        food related responses-->
+
                                 {{emote|*nibbles on crispy shard-leaf*}}~
                                 {{emote|*nips at crunchy chitin-chips*}}~
                                 Might grab some sacchar-chips from chymero's today.~
@@ -249,7 +249,7 @@
                                 Careful with the mad-honey, friend, the mind-journeys aren't always fun.~
                                 I'm bringing brimberries for my youngers.~
                                 The brimraisin's might reek, but they are divine.~
-                                <!--        The Blood Pits related responses-->
+
                                 The Crystholts are pure again. The bloodpools have gone still, thank you, =name=.~
                                 The amalgam are still, lifeless. Was this you?~
                                 The bloodpits have calcified, how is this possible?~
@@ -268,20 +268,20 @@
                             <!--    Post finishing bug quest.-->
                         <start ID="GenericWelcomeIffriendly" IfFinishedQuest="Egghunt">
                         <text>
-                        <!--        crystholt crystnium warnings-->
+
                             Beware the pretty-water, friend.~
                             The crystholt water-holes are clear as crystal, drink them, and you'll go clear too.~
                             Cryst-water may look fresh but slake your thirst on that a crysten-effigy will take your place in no time.~
                             The shiny-baubles near the ponds should warn enough, beware the crystna. Their fumes turn all to glitter.~
-                        <!--        crystholt crystna warnings-->
+
                             Crystna vines might reach out and snatch you. Beware the cryst-weed.~
-                        <!--        Abyssa, The Anima's Wake responses.-->
+
                             May your dream-realms be calm and serene, friend.~
                             Dream in serenity, friend.~
                             Yes, I dreamt of this conversation, dream-friend.~
                             I dreamt of this meet, friend.~
                             Welcome to the eternal Rhem, dream-friend.~
-                        <!--        food related responses-->
+
                             {{emote|*nibbles on crispy shard-leaf*}}~
                             {{emote|*nips at crunchy chitin-chips*}}~
                             Might grab some sacchar-chips from chymero's today.~
@@ -291,7 +291,7 @@
                             Careful with the mad-honey, friend, the mind-journeys aren't always fun.~
                             I'm bringing brimberries for my youngers.~
                             The brimraisin's might reek, but they are divine.~
-                        <!--        The Blood Pits related responses-->
+
                             Beware the blood-pits, friend.~
                             Pits of anguish amongst the cryst, their amalgam scour the lands, murdering and capturing mortal-flesh. They drag you in and your flesh melds with theirs.~
                             The blood-pits will take you if you are not careful, friend.~

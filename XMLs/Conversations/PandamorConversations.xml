@@ -559,7 +559,7 @@ As the Shah of Rhemhex'Qen, I confer you these gifts to you, =name=. Live, and m
                                 There, the ancient rhem-bearers can mark you, the mark of the Eternal Rhem. So that when you perish in this hellish dream you will awaken in another, in the Suttumkhofe.
                             </text>
                             <choice GotoID="SpiritualBeliefsBranch7">
-                                <text> ... </text>
+                                <text> Where could I learn more about this? </text>
                             </choice>
                         </node>
                 
@@ -585,7 +585,7 @@ As the Shah of Rhemhex'Qen, I confer you these gifts to you, =name=. Live, and m
                                             ... It must be. A terrible dream at that. One we cannot awaken from. Maybe a dream from stars, of gods and daemons. Yes. It is surely a dream.
                                         </text>
                                         <choice GotoID="DreamBranch2">
-                                            <text> ... </text>
+                                            <text> What makes you so sure? </text>
                                         </choice>
                                     </node>
 
