@@ -720,7 +720,7 @@
   </cell>
   <cell X="72" Y="2">
     <object Name="MarbleWalkway"></object>
-    <object Name="Crypt Door"></object>
+    <object Name="Black Glass Door"></object>
   </cell>
   <cell X="73" Y="2">
     <object Name="MarbleWalkway"></object>
@@ -4563,7 +4563,7 @@
     <object Name="MarbleWalkway"></object>
   </cell>
   <cell X="44" Y="17">
-    <object Name="Crypt Double Door S"></object>
+    <object Name="Black Glass Door"></object>
   </cell>
   <cell X="45" Y="17">
     <object Name="MarbleFloor"></object>
@@ -4585,7 +4585,7 @@
     <object Name="MarbleWalkway"></object>
   </cell>
   <cell X="51" Y="17">
-    <object Name="Crypt Double Door S"></object>
+    <object Name="Black Glass Door"></object>
   </cell>
   <cell X="52" Y="17">
     <object Name="MarbleFloor"></object>
@@ -4608,7 +4608,7 @@
     <object Name="MarbleWalkway"></object>
   </cell>
   <cell X="58" Y="17">
-    <object Name="Crypt Double Door S"></object>
+    <object Name="Black Glass Door"></object>
   </cell>
   <cell X="59" Y="17">
     <object Name="MarbleFloor"></object>
@@ -5350,9 +5350,7 @@
     <object Name="Polished Rhem Black Marble"></object>
   </cell>
   <cell X="42" Y="20">
-    <object Name="Metal Door"></object>
-    <object Name="Metal Door"></object>
-    <object Name="Metal Door"></object>
+    <object Name="Black Glass Door"></object>
   </cell>
   <cell X="43" Y="20">
     <object Name="MarbleFloor"></object>

@@ -1962,6 +1962,7 @@
   </cell>
   <cell X="29" Y="11">
     <object Name="HGlassWall"></object>
+    <object Name="Glowing Crystalbirch Tree"></object>
   </cell>
   <cell X="30" Y="11">
     <object Name="HGlassWall"></object>
@@ -2266,12 +2267,20 @@
   <cell X="78" Y="12"></cell>
   <cell X="79" Y="12"></cell>
   <cell X="0" Y="13"></cell>
-  <cell X="1" Y="13"></cell>
-  <cell X="2" Y="13"></cell>
+  <cell X="1" Y="13">
+    <object Name="Glowing Shardgrove Tree"></object>
+  </cell>
+  <cell X="2" Y="13">
+    <object Name="Glowing Crystalbirch Tree"></object>
+    <object Name="Glowing Shardgrove Tree"></object>
+  </cell>
   <cell X="3" Y="13"></cell>
-  <cell X="4" Y="13"></cell>
+  <cell X="4" Y="13">
+    <object Name="Glowing Shardgrove Tree"></object>
+  </cell>
   <cell X="5" Y="13">
     <object Name="Aloe Crystna"></object>
+    <object Name="Glowing Shardgrove Tree"></object>
   </cell>
   <cell X="6" Y="13"></cell>
   <cell X="7" Y="13"></cell>
@@ -2302,12 +2311,21 @@
   <cell X="24" Y="13"></cell>
   <cell X="25" Y="13"></cell>
   <cell X="26" Y="13"></cell>
-  <cell X="27" Y="13"></cell>
+  <cell X="27" Y="13">
+    <object Name="Glowing Crystalbirch Tree"></object>
+  </cell>
   <cell X="28" Y="13"></cell>
-  <cell X="29" Y="13"></cell>
-  <cell X="30" Y="13"></cell>
+  <cell X="29" Y="13">
+    <object Name="Glowing Shardgrove Tree"></object>
+  </cell>
+  <cell X="30" Y="13">
+    <object Name="Glowing Crystalbirch Tree"></object>
+    <object Name="Glowing Shardgrove Tree"></object>
+  </cell>
   <cell X="31" Y="13"></cell>
-  <cell X="32" Y="13"></cell>
+  <cell X="32" Y="13">
+    <object Name="Glowing Shardgrove Tree"></object>
+  </cell>
   <cell X="33" Y="13">
     <object Name="HGlassWall"></object>
   </cell>
@@ -2348,11 +2366,22 @@
     <object Name="HGlassWall"></object>
   </cell>
   <cell X="48" Y="13"></cell>
-  <cell X="49" Y="13"></cell>
-  <cell X="50" Y="13"></cell>
-  <cell X="51" Y="13"></cell>
-  <cell X="52" Y="13"></cell>
-  <cell X="53" Y="13"></cell>
+  <cell X="49" Y="13">
+    <object Name="Glowing Shardgrove Tree"></object>
+  </cell>
+  <cell X="50" Y="13">
+    <object Name="Glowing Shardgrove Tree"></object>
+    <object Name="Glowing Shardgrove Tree"></object>
+  </cell>
+  <cell X="51" Y="13">
+    <object Name="Glowing Shardgrove Tree"></object>
+  </cell>
+  <cell X="52" Y="13">
+    <object Name="Glowing Crystalbirch Tree"></object>
+  </cell>
+  <cell X="53" Y="13">
+    <object Name="Glowing Crystalbirch Tree"></object>
+  </cell>
   <cell X="54" Y="13"></cell>
   <cell X="55" Y="13"></cell>
   <cell X="56" Y="13"></cell>
@@ -2387,16 +2416,30 @@
   <cell X="73" Y="13"></cell>
   <cell X="74" Y="13"></cell>
   <cell X="75" Y="13"></cell>
-  <cell X="76" Y="13"></cell>
+  <cell X="76" Y="13">
+    <object Name="Glowing Shardgrove Tree"></object>
+  </cell>
   <cell X="77" Y="13"></cell>
   <cell X="78" Y="13"></cell>
   <cell X="79" Y="13"></cell>
   <cell X="0" Y="14"></cell>
-  <cell X="1" Y="14"></cell>
-  <cell X="2" Y="14"></cell>
-  <cell X="3" Y="14"></cell>
-  <cell X="4" Y="14"></cell>
-  <cell X="5" Y="14"></cell>
+  <cell X="1" Y="14">
+    <object Name="Glowing Crystalbirch Tree"></object>
+  </cell>
+  <cell X="2" Y="14">
+    <object Name="Glowing Crystalbirch Tree"></object>
+    <object Name="Glowing Shardgrove Tree"></object>
+  </cell>
+  <cell X="3" Y="14">
+    <object Name="Glowing Crystalbirch Tree"></object>
+    <object Name="Glowing Shardgrove Tree"></object>
+  </cell>
+  <cell X="4" Y="14">
+    <object Name="Glowing Shardgrove Tree"></object>
+  </cell>
+  <cell X="5" Y="14">
+    <object Name="Glowing Shardgrove Tree"></object>
+  </cell>
   <cell X="6" Y="14"></cell>
   <cell X="7" Y="14"></cell>
   <cell X="8" Y="14"></cell>
@@ -2424,12 +2467,26 @@
   <cell X="24" Y="14"></cell>
   <cell X="25" Y="14"></cell>
   <cell X="26" Y="14"></cell>
-  <cell X="27" Y="14"></cell>
-  <cell X="28" Y="14"></cell>
-  <cell X="29" Y="14"></cell>
-  <cell X="30" Y="14"></cell>
-  <cell X="31" Y="14"></cell>
-  <cell X="32" Y="14"></cell>
+  <cell X="27" Y="14">
+    <object Name="Glowing Crystalbirch Tree"></object>
+    <object Name="Glowing Shardgrove Tree"></object>
+  </cell>
+  <cell X="28" Y="14">
+    <object Name="Glowing Crystalbirch Tree"></object>
+    <object Name="Glowing Shardgrove Tree"></object>
+  </cell>
+  <cell X="29" Y="14">
+    <object Name="Glowing Crystalbirch Tree"></object>
+  </cell>
+  <cell X="30" Y="14">
+    <object Name="Glowing Crystalbirch Tree"></object>
+  </cell>
+  <cell X="31" Y="14">
+    <object Name="Glowing Crystalbirch Tree"></object>
+  </cell>
+  <cell X="32" Y="14">
+    <object Name="Glowing Shardgrove Tree"></object>
+  </cell>
   <cell X="33" Y="14">
     <object Name="HGlassWall"></object>
   </cell>
@@ -2468,11 +2525,19 @@
     <object Name="HGlassWall"></object>
   </cell>
   <cell X="48" Y="14"></cell>
-  <cell X="49" Y="14"></cell>
+  <cell X="49" Y="14">
+    <object Name="Glowing Crystalbirch Tree"></object>
+  </cell>
   <cell X="50" Y="14"></cell>
-  <cell X="51" Y="14"></cell>
-  <cell X="52" Y="14"></cell>
-  <cell X="53" Y="14"></cell>
+  <cell X="51" Y="14">
+    <object Name="Glowing Shardgrove Tree"></object>
+  </cell>
+  <cell X="52" Y="14">
+    <object Name="Glowing Crystalbirch Tree"></object>
+  </cell>
+  <cell X="53" Y="14">
+    <object Name="Glowing Crystalbirch Tree"></object>
+  </cell>
   <cell X="54" Y="14"></cell>
   <cell X="55" Y="14"></cell>
   <cell X="56" Y="14"></cell>
@@ -2492,8 +2557,12 @@
   <cell X="64" Y="14">
     <object Name="LiquidCrystniumDeepPool"></object>
   </cell>
-  <cell X="65" Y="14"></cell>
-  <cell X="66" Y="14"></cell>
+  <cell X="65" Y="14">
+    <object Name="Glowing Crystalbirch Tree"></object>
+  </cell>
+  <cell X="66" Y="14">
+    <object Name="Glowing Crystalbirch Tree"></object>
+  </cell>
   <cell X="67" Y="14"></cell>
   <cell X="68" Y="14"></cell>
   <cell X="69" Y="14"></cell>
@@ -2502,48 +2571,104 @@
     <object Name="Aloe Crystna"></object>
   </cell>
   <cell X="72" Y="14"></cell>
-  <cell X="73" Y="14"></cell>
-  <cell X="74" Y="14"></cell>
+  <cell X="73" Y="14">
+    <object Name="Glowing Crystalbirch Tree"></object>
+  </cell>
+  <cell X="74" Y="14">
+    <object Name="Glowing Crystalbirch Tree"></object>
+  </cell>
   <cell X="75" Y="14"></cell>
-  <cell X="76" Y="14"></cell>
-  <cell X="77" Y="14"></cell>
+  <cell X="76" Y="14">
+    <object Name="Glowing Crystalbirch Tree"></object>
+    <object Name="Glowing Shardgrove Tree"></object>
+  </cell>
+  <cell X="77" Y="14">
+    <object Name="Glowing Shardgrove Tree"></object>
+  </cell>
   <cell X="78" Y="14"></cell>
   <cell X="79" Y="14"></cell>
   <cell X="0" Y="15"></cell>
-  <cell X="1" Y="15"></cell>
-  <cell X="2" Y="15"></cell>
-  <cell X="3" Y="15"></cell>
-  <cell X="4" Y="15"></cell>
-  <cell X="5" Y="15"></cell>
-  <cell X="6" Y="15"></cell>
-  <cell X="7" Y="15"></cell>
-  <cell X="8" Y="15"></cell>
-  <cell X="9" Y="15"></cell>
-  <cell X="10" Y="15"></cell>
+  <cell X="1" Y="15">
+    <object Name="Glowing Crystalbirch Tree"></object>
+  </cell>
+  <cell X="2" Y="15">
+    <object Name="Glowing Crystalbirch Tree"></object>
+  </cell>
+  <cell X="3" Y="15">
+    <object Name="Glowing Crystalbirch Tree"></object>
+    <object Name="Glowing Shardgrove Tree"></object>
+  </cell>
+  <cell X="4" Y="15">
+    <object Name="Glowing Crystalbirch Tree"></object>
+    <object Name="Glowing Shardgrove Tree"></object>
+  </cell>
+  <cell X="5" Y="15">
+    <object Name="Glowing Shardgrove Tree"></object>
+  </cell>
+  <cell X="6" Y="15">
+    <object Name="Glowing Crystalbirch Tree"></object>
+    <object Name="Glowing Shardgrove Tree"></object>
+  </cell>
+  <cell X="7" Y="15">
+    <object Name="Glowing Crystalbirch Tree"></object>
+  </cell>
+  <cell X="8" Y="15">
+    <object Name="Glowing Crystalbirch Tree"></object>
+  </cell>
+  <cell X="9" Y="15">
+    <object Name="Glowing Crystalbirch Tree"></object>
+  </cell>
+  <cell X="10" Y="15">
+    <object Name="Glowing Crystalbirch Tree"></object>
+  </cell>
   <cell X="11" Y="15"></cell>
   <cell X="12" Y="15"></cell>
   <cell X="13" Y="15"></cell>
   <cell X="14" Y="15"></cell>
   <cell X="15" Y="15"></cell>
-  <cell X="16" Y="15"></cell>
-  <cell X="17" Y="15"></cell>
-  <cell X="18" Y="15"></cell>
+  <cell X="16" Y="15">
+    <object Name="Glowing Crystalbirch Tree"></object>
+  </cell>
+  <cell X="17" Y="15">
+    <object Name="Glowing Crystalbirch Tree"></object>
+  </cell>
+  <cell X="18" Y="15">
+    <object Name="Glowing Crystalbirch Tree"></object>
+  </cell>
   <cell X="19" Y="15"></cell>
   <cell X="20" Y="15"></cell>
   <cell X="21" Y="15"></cell>
-  <cell X="22" Y="15"></cell>
-  <cell X="23" Y="15"></cell>
-  <cell X="24" Y="15"></cell>
+  <cell X="22" Y="15">
+    <object Name="Glowing Crystalbirch Tree"></object>
+  </cell>
+  <cell X="23" Y="15">
+    <object Name="Glowing Crystalbirch Tree"></object>
+  </cell>
+  <cell X="24" Y="15">
+    <object Name="Glowing Crystalbirch Tree"></object>
+  </cell>
   <cell X="25" Y="15"></cell>
-  <cell X="26" Y="15"></cell>
-  <cell X="27" Y="15"></cell>
+  <cell X="26" Y="15">
+    <object Name="Glowing Crystalbirch Tree"></object>
+  </cell>
+  <cell X="27" Y="15">
+    <object Name="Glowing Crystalbirch Tree"></object>
+    <object Name="Glowing Shardgrove Tree"></object>
+  </cell>
   <cell X="28" Y="15"></cell>
-  <cell X="29" Y="15"></cell>
-  <cell X="30" Y="15"></cell>
-  <cell X="31" Y="15"></cell>
+  <cell X="29" Y="15">
+    <object Name="Glowing Crystalbirch Tree"></object>
+  </cell>
+  <cell X="30" Y="15">
+    <object Name="Glowing Crystalbirch Tree"></object>
+  </cell>
+  <cell X="31" Y="15">
+    <object Name="Glowing Shardgrove Tree"></object>
+  </cell>
   <cell X="32" Y="15"></cell>
   <cell X="33" Y="15">
     <object Name="HGlassWall"></object>
+    <object Name="Glowing Shardgrove Tree"></object>
   </cell>
   <cell X="34" Y="15">
     <object Name="Glowing Shardgrove Tree"></object>
@@ -2584,13 +2709,21 @@
     <object Name="HGlassWall"></object>
   </cell>
   <cell X="48" Y="15"></cell>
-  <cell X="49" Y="15"></cell>
-  <cell X="50" Y="15"></cell>
+  <cell X="49" Y="15">
+    <object Name="Glowing Crystalbirch Tree"></object>
+  </cell>
+  <cell X="50" Y="15">
+    <object Name="Glowing Crystalbirch Tree"></object>
+  </cell>
   <cell X="51" Y="15"></cell>
-  <cell X="52" Y="15"></cell>
+  <cell X="52" Y="15">
+    <object Name="Glowing Shardgrove Tree"></object>
+  </cell>
   <cell X="53" Y="15"></cell>
   <cell X="54" Y="15"></cell>
-  <cell X="55" Y="15"></cell>
+  <cell X="55" Y="15">
+    <object Name="Glowing Crystalbirch Tree"></object>
+  </cell>
   <cell X="56" Y="15"></cell>
   <cell X="57" Y="15"></cell>
   <cell X="58" Y="15"></cell>
@@ -2598,8 +2731,12 @@
   <cell X="60" Y="15"></cell>
   <cell X="61" Y="15"></cell>
   <cell X="62" Y="15"></cell>
-  <cell X="63" Y="15"></cell>
-  <cell X="64" Y="15"></cell>
+  <cell X="63" Y="15">
+    <object Name="Glowing Crystalbirch Tree"></object>
+  </cell>
+  <cell X="64" Y="15">
+    <object Name="Glowing Crystalbirch Tree"></object>
+  </cell>
   <cell X="65" Y="15"></cell>
   <cell X="66" Y="15"></cell>
   <cell X="67" Y="15"></cell>
@@ -2609,46 +2746,102 @@
   </cell>
   <cell X="70" Y="15"></cell>
   <cell X="71" Y="15"></cell>
-  <cell X="72" Y="15"></cell>
-  <cell X="73" Y="15"></cell>
+  <cell X="72" Y="15">
+    <object Name="Glowing Shardgrove Tree"></object>
+  </cell>
+  <cell X="73" Y="15">
+    <object Name="Glowing Crystalbirch Tree"></object>
+    <object Name="Glowing Shardgrove Tree"></object>
+  </cell>
   <cell X="74" Y="15"></cell>
   <cell X="75" Y="15"></cell>
-  <cell X="76" Y="15"></cell>
-  <cell X="77" Y="15"></cell>
+  <cell X="76" Y="15">
+    <object Name="Glowing Crystalbirch Tree"></object>
+    <object Name="Glowing Shardgrove Tree"></object>
+  </cell>
+  <cell X="77" Y="15">
+    <object Name="Glowing Crystalbirch Tree"></object>
+  </cell>
   <cell X="78" Y="15"></cell>
   <cell X="79" Y="15"></cell>
   <cell X="0" Y="16"></cell>
   <cell X="1" Y="16"></cell>
-  <cell X="2" Y="16"></cell>
-  <cell X="3" Y="16"></cell>
-  <cell X="4" Y="16"></cell>
-  <cell X="5" Y="16"></cell>
-  <cell X="6" Y="16"></cell>
-  <cell X="7" Y="16"></cell>
-  <cell X="8" Y="16"></cell>
+  <cell X="2" Y="16">
+    <object Name="Glowing Crystalbirch Tree"></object>
+  </cell>
+  <cell X="3" Y="16">
+    <object Name="Glowing Crystalbirch Tree"></object>
+  </cell>
+  <cell X="4" Y="16">
+    <object Name="Glowing Crystalbirch Tree"></object>
+    <object Name="Glowing Shardgrove Tree"></object>
+  </cell>
+  <cell X="5" Y="16">
+    <object Name="Glowing Shardgrove Tree"></object>
+  </cell>
+  <cell X="6" Y="16">
+    <object Name="Glowing Crystalbirch Tree"></object>
+  </cell>
+  <cell X="7" Y="16">
+    <object Name="Glowing Crystalbirch Tree"></object>
+  </cell>
+  <cell X="8" Y="16">
+    <object Name="Glowing Crystalbirch Tree"></object>
+    <object Name="Glowing Shardgrove Tree"></object>
+  </cell>
   <cell X="9" Y="16"></cell>
-  <cell X="10" Y="16"></cell>
+  <cell X="10" Y="16">
+    <object Name="Glowing Crystalbirch Tree"></object>
+  </cell>
   <cell X="11" Y="16"></cell>
-  <cell X="12" Y="16"></cell>
-  <cell X="13" Y="16"></cell>
+  <cell X="12" Y="16">
+    <object Name="Glowing Crystalbirch Tree"></object>
+  </cell>
+  <cell X="13" Y="16">
+    <object Name="Glowing Crystalbirch Tree"></object>
+  </cell>
   <cell X="14" Y="16"></cell>
   <cell X="15" Y="16"></cell>
-  <cell X="16" Y="16"></cell>
-  <cell X="17" Y="16"></cell>
+  <cell X="16" Y="16">
+    <object Name="Glowing Shardgrove Tree"></object>
+  </cell>
+  <cell X="17" Y="16">
+    <object Name="Glowing Shardgrove Tree"></object>
+  </cell>
   <cell X="18" Y="16"></cell>
   <cell X="19" Y="16"></cell>
-  <cell X="20" Y="16"></cell>
-  <cell X="21" Y="16"></cell>
-  <cell X="22" Y="16"></cell>
-  <cell X="23" Y="16"></cell>
-  <cell X="24" Y="16"></cell>
+  <cell X="20" Y="16">
+    <object Name="Glowing Shardgrove Tree"></object>
+  </cell>
+  <cell X="21" Y="16">
+    <object Name="Glowing Crystalbirch Tree"></object>
+  </cell>
+  <cell X="22" Y="16">
+    <object Name="Glowing Shardgrove Tree"></object>
+  </cell>
+  <cell X="23" Y="16">
+    <object Name="Glowing Crystalbirch Tree"></object>
+  </cell>
+  <cell X="24" Y="16">
+    <object Name="Glowing Shardgrove Tree"></object>
+  </cell>
   <cell X="25" Y="16"></cell>
-  <cell X="26" Y="16"></cell>
-  <cell X="27" Y="16"></cell>
-  <cell X="28" Y="16"></cell>
+  <cell X="26" Y="16">
+    <object Name="Glowing Crystalbirch Tree"></object>
+    <object Name="Glowing Shardgrove Tree"></object>
+  </cell>
+  <cell X="27" Y="16">
+    <object Name="Glowing Crystalbirch Tree"></object>
+    <object Name="Glowing Shardgrove Tree"></object>
+  </cell>
+  <cell X="28" Y="16">
+    <object Name="Glowing Shardgrove Tree"></object>
+  </cell>
   <cell X="29" Y="16"></cell>
   <cell X="30" Y="16"></cell>
-  <cell X="31" Y="16"></cell>
+  <cell X="31" Y="16">
+    <object Name="Glowing Crystalbirch Tree"></object>
+  </cell>
   <cell X="32" Y="16"></cell>
   <cell X="33" Y="16">
     <object Name="HGlassWall"></object>
@@ -2694,37 +2887,77 @@
   <cell X="48" Y="16"></cell>
   <cell X="49" Y="16"></cell>
   <cell X="50" Y="16"></cell>
-  <cell X="51" Y="16"></cell>
-  <cell X="52" Y="16"></cell>
-  <cell X="53" Y="16"></cell>
+  <cell X="51" Y="16">
+    <object Name="Glowing Shardgrove Tree"></object>
+  </cell>
+  <cell X="52" Y="16">
+    <object Name="Glowing Crystalbirch Tree"></object>
+    <object Name="Glowing Shardgrove Tree"></object>
+  </cell>
+  <cell X="53" Y="16">
+    <object Name="Glowing Shardgrove Tree"></object>
+  </cell>
   <cell X="54" Y="16"></cell>
-  <cell X="55" Y="16"></cell>
-  <cell X="56" Y="16"></cell>
-  <cell X="57" Y="16"></cell>
-  <cell X="58" Y="16"></cell>
+  <cell X="55" Y="16">
+    <object Name="Glowing Crystalbirch Tree"></object>
+  </cell>
+  <cell X="56" Y="16">
+    <object Name="Glowing Crystalbirch Tree"></object>
+    <object Name="Glowing Shardgrove Tree"></object>
+  </cell>
+  <cell X="57" Y="16">
+    <object Name="Glowing Crystalbirch Tree"></object>
+    <object Name="Glowing Shardgrove Tree"></object>
+  </cell>
+  <cell X="58" Y="16">
+    <object Name="Glowing Shardgrove Tree"></object>
+  </cell>
   <cell X="59" Y="16"></cell>
   <cell X="60" Y="16">
     <object Name="Aloe Crystna"></object>
+    <object Name="Glowing Shardgrove Tree"></object>
   </cell>
   <cell X="61" Y="16"></cell>
-  <cell X="62" Y="16"></cell>
-  <cell X="63" Y="16"></cell>
+  <cell X="62" Y="16">
+    <object Name="Glowing Crystalbirch Tree"></object>
+  </cell>
+  <cell X="63" Y="16">
+    <object Name="Glowing Crystalbirch Tree"></object>
+  </cell>
   <cell X="64" Y="16"></cell>
   <cell X="65" Y="16"></cell>
   <cell X="66" Y="16">
     <object Name="Aloe Crystna"></object>
   </cell>
-  <cell X="67" Y="16"></cell>
-  <cell X="68" Y="16"></cell>
-  <cell X="69" Y="16"></cell>
+  <cell X="67" Y="16">
+    <object Name="Glowing Shardgrove Tree"></object>
+  </cell>
+  <cell X="68" Y="16">
+    <object Name="Glowing Shardgrove Tree"></object>
+  </cell>
+  <cell X="69" Y="16">
+    <object Name="Glowing Shardgrove Tree"></object>
+  </cell>
   <cell X="70" Y="16"></cell>
-  <cell X="71" Y="16"></cell>
+  <cell X="71" Y="16">
+    <object Name="Glowing Crystalbirch Tree"></object>
+    <object Name="Glowing Crystalbirch Tree"></object>
+    <object Name="Glowing Shardgrove Tree"></object>
+  </cell>
   <cell X="72" Y="16"></cell>
   <cell X="73" Y="16"></cell>
   <cell X="74" Y="16"></cell>
-  <cell X="75" Y="16"></cell>
-  <cell X="76" Y="16"></cell>
-  <cell X="77" Y="16"></cell>
+  <cell X="75" Y="16">
+    <object Name="Glowing Crystalbirch Tree"></object>
+    <object Name="Glowing Shardgrove Tree"></object>
+  </cell>
+  <cell X="76" Y="16">
+    <object Name="Glowing Crystalbirch Tree"></object>
+    <object Name="Glowing Shardgrove Tree"></object>
+  </cell>
+  <cell X="77" Y="16">
+    <object Name="Glowing Shardgrove Tree"></object>
+  </cell>
   <cell X="78" Y="16"></cell>
   <cell X="79" Y="16"></cell>
   <cell X="0" Y="17"></cell>
@@ -2734,14 +2967,18 @@
   <cell X="4" Y="17"></cell>
   <cell X="5" Y="17"></cell>
   <cell X="6" Y="17"></cell>
-  <cell X="7" Y="17"></cell>
+  <cell X="7" Y="17">
+    <object Name="Glowing Shardgrove Tree"></object>
+  </cell>
   <cell X="8" Y="17"></cell>
   <cell X="9" Y="17"></cell>
   <cell X="10" Y="17"></cell>
   <cell X="11" Y="17"></cell>
   <cell X="12" Y="17"></cell>
   <cell X="13" Y="17"></cell>
-  <cell X="14" Y="17"></cell>
+  <cell X="14" Y="17">
+    <object Name="Glowing Crystalbirch Tree"></object>
+  </cell>
   <cell X="15" Y="17"></cell>
   <cell X="16" Y="17"></cell>
   <cell X="17" Y="17"></cell>
@@ -2802,7 +3039,9 @@
   <cell X="48" Y="17"></cell>
   <cell X="49" Y="17"></cell>
   <cell X="50" Y="17"></cell>
-  <cell X="51" Y="17"></cell>
+  <cell X="51" Y="17">
+    <object Name="Glowing Shardgrove Tree"></object>
+  </cell>
   <cell X="52" Y="17"></cell>
   <cell X="53" Y="17"></cell>
   <cell X="54" Y="17"></cell>
@@ -2814,11 +3053,15 @@
   <cell X="60" Y="17"></cell>
   <cell X="61" Y="17"></cell>
   <cell X="62" Y="17"></cell>
-  <cell X="63" Y="17"></cell>
+  <cell X="63" Y="17">
+    <object Name="Glowing Crystalbirch Tree"></object>
+  </cell>
   <cell X="64" Y="17"></cell>
   <cell X="65" Y="17"></cell>
   <cell X="66" Y="17"></cell>
-  <cell X="67" Y="17"></cell>
+  <cell X="67" Y="17">
+    <object Name="Glowing Shardgrove Tree"></object>
+  </cell>
   <cell X="68" Y="17"></cell>
   <cell X="69" Y="17"></cell>
   <cell X="70" Y="17"></cell>
@@ -2829,7 +3072,9 @@
   <cell X="75" Y="17"></cell>
   <cell X="76" Y="17"></cell>
   <cell X="77" Y="17"></cell>
-  <cell X="78" Y="17"></cell>
+  <cell X="78" Y="17">
+    <object Name="Glowing Shardgrove Tree"></object>
+  </cell>
   <cell X="79" Y="17"></cell>
   <cell X="0" Y="18">
     <object Name="Rhem Black Marble"></object>

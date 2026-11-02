@@ -3041,7 +3041,65 @@
         <tag Name="Plant"/>
     </object>
 
+    <!-- Search: Crematorium -->
 
+    <object Name="Anesheym Crematorial Urn" Inherits="Vessel">
+        <part Name="Render" DisplayName="anesheym crematorial urn" ColorString="&amp;w" DetailColor="g" Tile="Items/sw_jug.bmp" RenderLayer="6" Occluding="false" />
+        <part Name="Description" Short="" />
+        <part Name="Physics" Weight="15" Takeable="false" Solid="false" Organic="false" Category="Corpses" />
+        <part Name="RandomColors" TileColor="y" DetailColor="all" SetColorStringToDetailColor="true" />
+        <builder Name="RandomTile" 
+                 Tiles="WingyTextures/QenFurniture/Urns/VillageCrematoriumUrn1.png,WingyTextures/QenFurniture/Urns/VillageCrematoriumUrn2.png,WingyTextures/QenFurniture/Urns/VillageCrematoriumUrn3.png,WingyTextures/QenFurniture/Urns/VillageCrematoriumUrn4.png" />
+        <part Name="MissileCover" Percentage="10" />
+        
+        <tag Name="Mods" Value="PotteryMods" />
+        <stag Name="Death" />
+    </object>
+
+    <object Name="Base Shah Crematorial Urn" Inherits="Vessel">
+        <part Name="Render" DisplayName="anesheym crematorial urn" ColorString="&amp;w" DetailColor="g" Tile="Items/sw_jug.bmp" RenderLayer="6" Occluding="false" />
+        <part Name="Description" Short="" />
+        <part Name="Physics" Weight="15" Takeable="false" Solid="false" Organic="false" Category="Corpses" />
+        <part Name="MissileCover" Percentage="10" />
+        <tag Name="Mods" Value="PotteryMods" />
+        <stag Name="Death" />
+    </object>
+
+    <object Name="Shah Crematorial Urn First Era" Inherits="Base Shah Crematorial Urn">
+        <part Name="Render" DisplayName="ornate burial urn" ColorString="&amp;w" DetailColor="R" TileColor="y" Tile="WingyTextures/QenFurniture/Urns/FirstShahBurialUrn.png" RenderLayer="6" Occluding="false" />
+        <part Name="Description" Short="" />
+    </object>
+
+    <object Name="Shah Crematorial Urn Second Era" Inherits="Base Shah Crematorial Urn">
+        <part Name="Render" DisplayName="ornate burial urn" ColorString="&amp;w" DetailColor="O" Tile="WingyTextures/QenFurniture/Urns/SecondShahBurialUrn.png" RenderLayer="6" Occluding="false" />
+        <part Name="Description" Short="" />
+    </object>
+
+    <object Name="Shah Crematorial Urn Third Era" Inherits="Base Shah Crematorial Urn">
+        <part Name="Render" DisplayName="ornate burial urn" ColorString="&amp;w" DetailColor="W" Tile="WingyTextures/QenFurniture/Urns/ThirdShahBurialUrn.png" RenderLayer="6" Occluding="false" />
+        <part Name="Description" Short="" />
+    </object>
+
+    <object Name="Shah Crematorial Urn Fourth Era" Inherits="Base Shah Crematorial Urn">
+        <part Name="Render" DisplayName="ornate burial urn" ColorString="&amp;w" DetailColor="G" Tile="WingyTextures/QenFurniture/Urns/FourthShahBurialUrn.png" RenderLayer="6" Occluding="false" />
+        <part Name="Description" Short="" />
+    </object>
+
+    <object Name="Shah Crematorial Urn Fifth Era" Inherits="Base Shah Crematorial Urn">
+        <part Name="Render" DisplayName="ornate burial urn" ColorString="&amp;w" DetailColor="C" Tile="WingyTextures/QenFurniture/Urns/FiveShahBurialUrn.png" RenderLayer="6" Occluding="false" />
+        <part Name="Description" Short="" />
+    </object>
+
+    <object Name="Shah Crematorial Urn Sixth Era" Inherits="Base Shah Crematorial Urn">
+        <part Name="Render" DisplayName="ornate burial urn" ColorString="&amp;w" DetailColor="B" Tile="WingyTextures/QenFurniture/Urns/SixShahBurialUrn.png" RenderLayer="6" Occluding="false" />
+        <part Name="Description" Short="" />
+    </object>
+
+    <object Name="Shah Crematorial Urn Seven Era" Inherits="Base Shah Crematorial Urn">
+        <part Name="Render" DisplayName="ornate burial urn" ColorString="&amp;w" DetailColor="M" Tile="WingyTextures/QenFurniture/Urns/SevenShahBurialUrn.png" RenderLayer="6" Occluding="false" />
+        <part Name="Description" Short="" />
+    </object>
+    
     <!-- Search: Walls -->
 
     <object Name="Microwave Emitter Wall" Inherits="Wall">
@@ -3148,6 +3206,15 @@
         <tag Name="ExcludeFromDynamicEncounters"/>
     </object>
 
+    <object Name="FlippedMoonWall" Inherits="MoonWall">
+        <part Name="Render" DisplayName="aneshic wall with moon motif" RenderString="177" TileColor="&amp;K^y"
+              DetailColor="k" Occluding="true"/>
+        <tag Name="PaintWith" Value="MarbleWalls"/>
+        <tag Name="PaintedWall" Value="FlippedMoonWallMotif_"/>
+        <tag Name="PaintedWallAtlas" Value="WingyTextures_Walls_FlippedMoonWallMotif_"/>
+        <tag Name="PaintedWallExtension" Value=".png"/>
+    </object>
+
     <object Name="HexWall" Inherits="Wall">
         <part Name="Render" DisplayName="aneshic marble with hexagonal motif" RenderString="177" TileColor="&amp;K^y"
               DetailColor="k" Occluding="true"/>
@@ -3174,6 +3241,11 @@
     </object>
 
     <object Name="Polished MoonWall" Inherits="MoonWall">
+        <part Name="Render"  RenderString="177" TileColor="&amp;K^Y"
+              DetailColor="k" Occluding="true" />
+    </object>
+
+    <object Name="Polished MoonWall Flipped" Inherits="FlippedMoonWall">
         <part Name="Render"  RenderString="177" TileColor="&amp;K^Y"
               DetailColor="k" Occluding="true"/>
     </object>
@@ -3634,6 +3706,24 @@
         <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
     </object>
 
+    <object Name="Keracryst Grandhup" Inherits="BaseLongBlade">
+        <part Name="Render" DisplayName="{{K|flawless {{dreamsmoke|keracryst}} grandhup}}"
+              Tile="WingyTextures/keracrystgrandhup.png" TileColor="&amp;K" DetailColor="P"
+              ColorString="&amp;K"/>
+        <part Name="MeleeWeapon" PenBonus="1" MaxStrengthBonus="8" BaseDamage="2d10" Skill="LongBlades"/>
+        <part Name="Commerce" Value="720"/>
+        <part Name="Description"
+              Short="A large double-edged blade, wielded in two hands. The steel is replaced with keracryst layering, the edge of the blade subtly glows a sheen of amethyst in the right light."/>
+        <part Name="Metal"/>
+        <tag Name="Flawless"/>
+        <tag Name="Tier" Value="7"/>
+        <part Name="Physics" Weight="8" FlameTemperature="99999" VaporTemperature="9999" UsesTwoSlots="true"/>
+        <tag Name="SwingSound" Value="Sounds/Melee/longBlades/sfx_melee_longBlade_crysteel_swing"/>
+        <tag Name="BlockedSound" Value="Sounds/Melee/multiUseBlock/sfx_melee_crysteel_blocked"/>
+        <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_blade_long_glass"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+    </object>
+
     <object Name="Keracryst Caveler" Inherits="BaseShield">
         <part Name="Render" DisplayName="{{K|flawless {{dreamsmoke|keracryst}} caveler}}"
               Tile="WingyTextures/KeracrystCaveler.png" TileColor="&amp;K" DetailColor="P" ColorString="&amp;K"/>
@@ -3665,6 +3755,22 @@
         <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
     </object>
 
+    <object Name="Keracite Burgonet" Inherits="BaseHelmet">
+        <part Name="Render" DisplayName="{{dreamsmoke|keracite}} burgonet" RenderString="]" TileColor="&amp;K"
+              DetailColor="P" ColorString="&amp;K" Tile="WingyTextures/KeraciteMailleGauntlet.png"/>
+        <part Name="Description" Short="Shadowy black graspers kissed with a pearlescent purple sheen."/>
+        <part Name="Armor" AV="4" DV="0" Heat="6" Cold="6" Acid="50" Elec="6" WornOn="Hands"/>
+        <part Name="Physics" Weight="10"/>
+        <part Name="Commerce" Value="1500"/>
+        <part Name="Zetachrome"/>
+        <tag Name="EquipSound" Value="sfx_equip_armor_metal_quantum"/>
+        <tag Name="Tier" Value="8"/>
+        <tag Name="Role" Value="Rare"/>
+        <stag Name="Historical"/>
+        <part Name="MoveCostMultiplier" Amount="-5"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+    </object>
+
     <object Name="Keracite Maille Gauntlet" Inherits="BaseGlove">
         <part Name="Render" DisplayName="{{dreamsmoke|keracite}} lamellar gauntlets" RenderString="]" TileColor="&amp;K"
               DetailColor="P" ColorString="&amp;K" Tile="WingyTextures/KeraciteMailleGauntlet.png"/>
@@ -3681,34 +3787,16 @@
         <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
     </object>
 
-    <object Name="Keracryst Grandhup" Inherits="BaseLongBlade">
-        <part Name="Render" DisplayName="{{K|flawless {{dreamsmoke|keracryst}} grandhup}}"
-              Tile="WingyTextures/keracrystgrandhup.png" TileColor="&amp;K" DetailColor="P"
-              ColorString="&amp;K"/>
-        <part Name="MeleeWeapon" PenBonus="1" MaxStrengthBonus="8" BaseDamage="2d10" Skill="LongBlades"/>
-        <part Name="Commerce" Value="720"/>
-        <part Name="Description"
-              Short="A large double-edged blade, wielded in two hands. The steel is replaced with keracryst layering, the edge of the blade subtly glows a sheen of amethyst in the right light."/>
-        <part Name="Metal"/>
-        <tag Name="Flawless"/>
-        <tag Name="Tier" Value="7"/>
-        <part Name="Physics" Weight="8" FlameTemperature="99999" VaporTemperature="9999" UsesTwoSlots="true"/>
-        <tag Name="SwingSound" Value="Sounds/Melee/longBlades/sfx_melee_longBlade_crysteel_swing"/>
-        <tag Name="BlockedSound" Value="Sounds/Melee/multiUseBlock/sfx_melee_crysteel_blocked"/>
-        <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_blade_long_glass"/>
-        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
-    </object>
-
     <object Name="Glittercloth Brassiere" Inherits="BaseArmor">
-        <part Name="Armor" AV="0" DV="3" WornOn="Body"/>
+        <part Name="Armor" AV="0" DV="6" WornOn="Body"/>
         <part Name="Render" DisplayName="{{dreamy|glittercloth}} brassiere" RenderString="]"
               Tile="WingyTextures/GlitterclothBrassiere.png" TileColor="&amp;K" DetailColor="P"
               ColorString="&amp;K"/>
-        <part Name="Commerce" Value="6"/>
+        <part Name="Commerce" Value="4"/>
         <part Name="Description" Short="Glittering strands of silver dangle like spider-webs from the shoulders."/>
         <part Name="Physics" Weight="1" Organic="true"/>
         <part Name="Springy" Factor="0.9"/>
-        <tag Name="Tier" Value="7"/>
+        <tag Name="Tier" Value="8"/>
         <tag Name="Gender" Value="plural"/>
         <part Name="MoveCostMultiplier" Amount="-30"/>
         <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
@@ -3741,7 +3829,6 @@
         <tag Name="BaseObject" Value="*noinherit"/>
         <part Name="MoveCostMultiplier" Amount="-5"/>
         <part Name="ItemElements" Elements="glass::5" />
-        <part Name="KeraciteChestArmorProperties" />
         <part Name="NoDamage"/>
         <tag Name="NoEffects"/>
         <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
@@ -3761,7 +3848,6 @@
         <tag Name="EquipSound" Value="sfx_equip_armor_leather"/>
         <stag Name="Movement"/>
         <part Name="KeraciteGreavesArmorProperties" />
-        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
     </object>
 
     <object Name="Glittercloth Banded Leotard" Inherits="BaseTierBody7_AV">
@@ -4020,6 +4106,7 @@
         <tag Name="NoEffects"/>
         <tag Name="PlayerWontSell"/>
         <tag Name="BaseObject" Value="*noinherit"/>
+        <tag Name="EgghuntItem"/>
     </object>
 
 

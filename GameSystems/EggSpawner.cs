@@ -122,7 +122,7 @@ namespace Wingytone.Systems
                 return 1.in1000();
             }
             else
-                return 40.in100();
+                return 0.in100();
         }
 
         public bool ReconsiderGroundPlacement()

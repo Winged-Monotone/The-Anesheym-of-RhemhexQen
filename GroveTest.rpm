@@ -985,8 +985,8 @@
     <object Name="FlowerPatches"></object>
   </cell>
   <cell X="40" Y="5">
-    <object Name="FreshWaterPool300"></object>
     <object Name="FlowerPatches"></object>
+    <object Name="LiquidCrystniumDeepPool"></object>
   </cell>
   <cell X="41" Y="5"></cell>
   <cell X="42" Y="5"></cell>
@@ -1179,13 +1179,13 @@
   </cell>
   <cell X="38" Y="6"></cell>
   <cell X="39" Y="6">
-    <object Name="FreshWaterPool300"></object>
+    <object Name="LiquidCrystniumDeepPool"></object>
   </cell>
   <cell X="40" Y="6">
-    <object Name="FreshWaterPool300"></object>
+    <object Name="LiquidCrystniumDeepPool"></object>
   </cell>
   <cell X="41" Y="6">
-    <object Name="FreshWaterPool300"></object>
+    <object Name="LiquidCrystniumDeepPool"></object>
   </cell>
   <cell X="42" Y="6"></cell>
   <cell X="43" Y="6"></cell>
@@ -1383,19 +1383,19 @@
   </cell>
   <cell X="37" Y="7"></cell>
   <cell X="38" Y="7">
-    <object Name="FreshWaterPool300"></object>
+    <object Name="LiquidCrystniumDeepPool"></object>
   </cell>
   <cell X="39" Y="7">
-    <object Name="FreshWaterPool300"></object>
+    <object Name="LiquidCrystniumDeepPool"></object>
   </cell>
   <cell X="40" Y="7">
-    <object Name="FreshWaterPool300"></object>
+    <object Name="LiquidCrystniumDeepPool"></object>
   </cell>
   <cell X="41" Y="7">
-    <object Name="FreshWaterPool300"></object>
+    <object Name="LiquidCrystniumDeepPool"></object>
   </cell>
   <cell X="42" Y="7">
-    <object Name="FreshWaterPool300"></object>
+    <object Name="LiquidCrystniumDeepPool"></object>
   </cell>
   <cell X="43" Y="7"></cell>
   <cell X="44" Y="7"></cell>
@@ -1578,7 +1578,7 @@
   </cell>
   <cell X="36" Y="8"></cell>
   <cell X="37" Y="8">
-    <object Name="FreshWaterPool300"></object>
+    <object Name="LiquidCrystniumDeepPool"></object>
   </cell>
   <cell X="38" Y="8"></cell>
   <cell X="39" Y="8"></cell>
@@ -1588,7 +1588,7 @@
   <cell X="41" Y="8"></cell>
   <cell X="42" Y="8"></cell>
   <cell X="43" Y="8">
-    <object Name="FreshWaterPool300"></object>
+    <object Name="LiquidCrystniumDeepPool"></object>
   </cell>
   <cell X="44" Y="8"></cell>
   <cell X="45" Y="8"></cell>
@@ -1771,10 +1771,10 @@
   </cell>
   <cell X="35" Y="9"></cell>
   <cell X="36" Y="9">
-    <object Name="FreshWaterPool300"></object>
+    <object Name="LiquidCrystniumDeepPool"></object>
   </cell>
   <cell X="37" Y="9">
-    <object Name="FreshWaterPool300"></object>
+    <object Name="LiquidCrystniumDeepPool"></object>
   </cell>
   <cell X="38" Y="9"></cell>
   <cell X="39" Y="9">
@@ -1788,10 +1788,10 @@
   </cell>
   <cell X="42" Y="9"></cell>
   <cell X="43" Y="9">
-    <object Name="FreshWaterPool300"></object>
+    <object Name="LiquidCrystniumDeepPool"></object>
   </cell>
   <cell X="44" Y="9">
-    <object Name="FreshWaterPool300"></object>
+    <object Name="LiquidCrystniumDeepPool"></object>
   </cell>
   <cell X="45" Y="9"></cell>
   <cell X="46" Y="9"></cell>
@@ -1966,13 +1966,13 @@
     <object Name="FlowerPatches"></object>
   </cell>
   <cell X="35" Y="10">
-    <object Name="FreshWaterPool300"></object>
+    <object Name="LiquidCrystniumDeepPool"></object>
   </cell>
   <cell X="36" Y="10">
-    <object Name="FreshWaterPool300"></object>
+    <object Name="LiquidCrystniumDeepPool"></object>
   </cell>
   <cell X="37" Y="10">
-    <object Name="FreshWaterPool300"></object>
+    <object Name="LiquidCrystniumDeepPool"></object>
   </cell>
   <cell X="38" Y="10">
     <object Name="bugsentinel"></object>
@@ -1986,13 +1986,13 @@
     <object Name="bugsentinel"></object>
   </cell>
   <cell X="43" Y="10">
-    <object Name="FreshWaterPool300"></object>
+    <object Name="LiquidCrystniumDeepPool"></object>
   </cell>
   <cell X="44" Y="10">
-    <object Name="FreshWaterPool300"></object>
+    <object Name="LiquidCrystniumDeepPool"></object>
   </cell>
   <cell X="45" Y="10">
-    <object Name="FreshWaterPool300"></object>
+    <object Name="LiquidCrystniumDeepPool"></object>
   </cell>
   <cell X="46" Y="10"></cell>
   <cell X="47" Y="10"></cell>
@@ -2168,10 +2168,10 @@
   <cell X="34" Y="11"></cell>
   <cell X="35" Y="11"></cell>
   <cell X="36" Y="11">
-    <object Name="FreshWaterPool300"></object>
+    <object Name="LiquidCrystniumDeepPool"></object>
   </cell>
   <cell X="37" Y="11">
-    <object Name="FreshWaterPool300"></object>
+    <object Name="LiquidCrystniumDeepPool"></object>
   </cell>
   <cell X="38" Y="11"></cell>
   <cell X="39" Y="11"></cell>
@@ -2181,10 +2181,10 @@
   <cell X="41" Y="11"></cell>
   <cell X="42" Y="11"></cell>
   <cell X="43" Y="11">
-    <object Name="FreshWaterPool300"></object>
+    <object Name="LiquidCrystniumDeepPool"></object>
   </cell>
   <cell X="44" Y="11">
-    <object Name="FreshWaterPool300"></object>
+    <object Name="LiquidCrystniumDeepPool"></object>
   </cell>
   <cell X="45" Y="11"></cell>
   <cell X="46" Y="11"></cell>
@@ -2277,24 +2277,36 @@
   <cell X="3" Y="12"></cell>
   <cell X="4" Y="12">
     <object Name="FlowerPatches"></object>
+    <object Name="Crystweave Canvas"></object>
   </cell>
   <cell X="5" Y="12">
     <object Name="Flowers"></object>
+    <object Name="Crystweave Canvas"></object>
   </cell>
   <cell X="6" Y="12">
     <object Name="FlowerPatches"></object>
+    <object Name="Crystweave Canvas"></object>
   </cell>
   <cell X="7" Y="12">
     <object Name="Flowers"></object>
+    <object Name="Crystweave Canvas"></object>
   </cell>
-  <cell X="8" Y="12"></cell>
-  <cell X="9" Y="12"></cell>
-  <cell X="10" Y="12"></cell>
+  <cell X="8" Y="12">
+    <object Name="Crystweave Canvas"></object>
+  </cell>
+  <cell X="9" Y="12">
+    <object Name="Crystweave Canvas"></object>
+  </cell>
+  <cell X="10" Y="12">
+    <object Name="Crystweave Canvas"></object>
+  </cell>
   <cell X="11" Y="12">
     <object Name="FlowerPatches"></object>
+    <object Name="Crystweave Canvas"></object>
   </cell>
   <cell X="12" Y="12">
     <object Name="FlowerPatches"></object>
+    <object Name="Crystweave Canvas"></object>
   </cell>
   <cell X="13" Y="12">
     <object Name="Flowers"></object>
@@ -2303,10 +2315,18 @@
   <cell X="14" Y="12">
     <object Name="FlowerPatches"></object>
   </cell>
-  <cell X="15" Y="12"></cell>
-  <cell X="16" Y="12"></cell>
-  <cell X="17" Y="12"></cell>
-  <cell X="18" Y="12"></cell>
+  <cell X="15" Y="12">
+    <object Name="Crystweave Canvas"></object>
+  </cell>
+  <cell X="16" Y="12">
+    <object Name="Crystweave Canvas"></object>
+  </cell>
+  <cell X="17" Y="12">
+    <object Name="Crystweave Canvas"></object>
+  </cell>
+  <cell X="18" Y="12">
+    <object Name="Crystweave Canvas"></object>
+  </cell>
   <cell X="19" Y="12"></cell>
   <cell X="20" Y="12"></cell>
   <cell X="21" Y="12"></cell>
@@ -2351,7 +2371,7 @@
   <cell X="35" Y="12"></cell>
   <cell X="36" Y="12"></cell>
   <cell X="37" Y="12">
-    <object Name="FreshWaterPool300"></object>
+    <object Name="LiquidCrystniumDeepPool"></object>
   </cell>
   <cell X="38" Y="12"></cell>
   <cell X="39" Y="12"></cell>
@@ -2359,7 +2379,7 @@
   <cell X="41" Y="12"></cell>
   <cell X="42" Y="12"></cell>
   <cell X="43" Y="12">
-    <object Name="FreshWaterPool300"></object>
+    <object Name="LiquidCrystniumDeepPool"></object>
   </cell>
   <cell X="44" Y="12"></cell>
   <cell X="45" Y="12"></cell>
@@ -2444,6 +2464,7 @@
   <cell X="3" Y="13"></cell>
   <cell X="4" Y="13">
     <object Name="Flowers"></object>
+    <object Name="Crystweave Canvas"></object>
   </cell>
   <cell X="5" Y="13">
     <object Name="FlowerPatches"></object>
@@ -2473,7 +2494,9 @@
   </cell>
   <cell X="16" Y="13"></cell>
   <cell X="17" Y="13"></cell>
-  <cell X="18" Y="13"></cell>
+  <cell X="18" Y="13">
+    <object Name="Crystweave Canvas"></object>
+  </cell>
   <cell X="19" Y="13"></cell>
   <cell X="20" Y="13"></cell>
   <cell X="21" Y="13"></cell>
@@ -2523,19 +2546,19 @@
   <cell X="36" Y="13"></cell>
   <cell X="37" Y="13"></cell>
   <cell X="38" Y="13">
-    <object Name="FreshWaterPool300"></object>
+    <object Name="LiquidCrystniumDeepPool"></object>
   </cell>
   <cell X="39" Y="13">
-    <object Name="FreshWaterPool300"></object>
+    <object Name="LiquidCrystniumDeepPool"></object>
   </cell>
   <cell X="40" Y="13">
-    <object Name="FreshWaterPool300"></object>
+    <object Name="LiquidCrystniumDeepPool"></object>
   </cell>
   <cell X="41" Y="13">
-    <object Name="FreshWaterPool300"></object>
+    <object Name="LiquidCrystniumDeepPool"></object>
   </cell>
   <cell X="42" Y="13">
-    <object Name="FreshWaterPool300"></object>
+    <object Name="LiquidCrystniumDeepPool"></object>
   </cell>
   <cell X="43" Y="13"></cell>
   <cell X="44" Y="13"></cell>
@@ -2628,7 +2651,9 @@
   </cell>
   <cell X="2" Y="14"></cell>
   <cell X="3" Y="14"></cell>
-  <cell X="4" Y="14"></cell>
+  <cell X="4" Y="14">
+    <object Name="Crystweave Canvas"></object>
+  </cell>
   <cell X="5" Y="14">
     <object Name="FlowerPatches"></object>
   </cell>
@@ -2652,7 +2677,9 @@
   <cell X="15" Y="14"></cell>
   <cell X="16" Y="14"></cell>
   <cell X="17" Y="14"></cell>
-  <cell X="18" Y="14"></cell>
+  <cell X="18" Y="14">
+    <object Name="Crystweave Canvas"></object>
+  </cell>
   <cell X="19" Y="14"></cell>
   <cell X="20" Y="14"></cell>
   <cell X="21" Y="14"></cell>
@@ -2699,13 +2726,13 @@
   <cell X="37" Y="14"></cell>
   <cell X="38" Y="14"></cell>
   <cell X="39" Y="14">
-    <object Name="FreshWaterPool300"></object>
+    <object Name="LiquidCrystniumDeepPool"></object>
   </cell>
   <cell X="40" Y="14">
-    <object Name="FreshWaterPool300"></object>
+    <object Name="LiquidCrystniumDeepPool"></object>
   </cell>
   <cell X="41" Y="14">
-    <object Name="FreshWaterPool300"></object>
+    <object Name="LiquidCrystniumDeepPool"></object>
   </cell>
   <cell X="42" Y="14"></cell>
   <cell X="43" Y="14"></cell>
@@ -2802,6 +2829,7 @@
   <cell X="4" Y="15">
     <object Name="Flowers"></object>
     <object Name="FlowerPatches"></object>
+    <object Name="Crystweave Canvas"></object>
   </cell>
   <cell X="5" Y="15">
     <object Name="FlowerPatches"></object>
@@ -2830,7 +2858,9 @@
   </cell>
   <cell X="16" Y="15"></cell>
   <cell X="17" Y="15"></cell>
-  <cell X="18" Y="15"></cell>
+  <cell X="18" Y="15">
+    <object Name="Crystweave Canvas"></object>
+  </cell>
   <cell X="19" Y="15"></cell>
   <cell X="20" Y="15"></cell>
   <cell X="21" Y="15">
@@ -2887,7 +2917,7 @@
     <object Name="FlowerPatches"></object>
   </cell>
   <cell X="40" Y="15">
-    <object Name="FreshWaterPool300"></object>
+    <object Name="LiquidCrystniumDeepPool"></object>
   </cell>
   <cell X="41" Y="15"></cell>
   <cell X="42" Y="15"></cell>
@@ -2978,6 +3008,7 @@
   <cell X="4" Y="16">
     <object Name="Flowers"></object>
     <object Name="FlowerPatches"></object>
+    <object Name="Crystweave Canvas"></object>
   </cell>
   <cell X="5" Y="16">
     <object Name="FlowerPatches"></object>
@@ -3010,7 +3041,9 @@
   <cell X="17" Y="16">
     <object Name="FlowerPatches"></object>
   </cell>
-  <cell X="18" Y="16"></cell>
+  <cell X="18" Y="16">
+    <object Name="Crystweave Canvas"></object>
+  </cell>
   <cell X="19" Y="16"></cell>
   <cell X="20" Y="16"></cell>
   <cell X="21" Y="16"></cell>
@@ -3163,35 +3196,58 @@
   <cell X="3" Y="17">
     <object Name="FlowerPatches"></object>
   </cell>
-  <cell X="4" Y="17"></cell>
-  <cell X="5" Y="17"></cell>
+  <cell X="4" Y="17">
+    <object Name="Crystweave Canvas"></object>
+  </cell>
+  <cell X="5" Y="17">
+    <object Name="Crystweave Canvas"></object>
+  </cell>
   <cell X="6" Y="17">
     <object Name="FlowerPatches"></object>
+    <object Name="Crystweave Canvas"></object>
   </cell>
   <cell X="7" Y="17">
     <object Name="FlowerPatches"></object>
+    <object Name="Crystweave Canvas"></object>
   </cell>
   <cell X="8" Y="17">
     <object Name="FlowerPatches"></object>
+    <object Name="Crystweave Canvas"></object>
   </cell>
   <cell X="9" Y="17">
     <object Name="FlowerPatches"></object>
+    <object Name="Crystweave Canvas"></object>
   </cell>
-  <cell X="10" Y="17"></cell>
+  <cell X="10" Y="17">
+    <object Name="Crystweave Canvas"></object>
+  </cell>
   <cell X="11" Y="17">
     <object Name="FlowerPatches"></object>
+    <object Name="Crystweave Canvas"></object>
   </cell>
-  <cell X="12" Y="17"></cell>
-  <cell X="13" Y="17"></cell>
-  <cell X="14" Y="17"></cell>
+  <cell X="12" Y="17">
+    <object Name="Crystweave Canvas"></object>
+  </cell>
+  <cell X="13" Y="17">
+    <object Name="Crystweave Canvas"></object>
+  </cell>
+  <cell X="14" Y="17">
+    <object Name="Crystweave Canvas"></object>
+  </cell>
   <cell X="15" Y="17">
     <object Name="FlowerPatches"></object>
+    <object Name="Crystweave Canvas"></object>
   </cell>
-  <cell X="16" Y="17"></cell>
+  <cell X="16" Y="17">
+    <object Name="Crystweave Canvas"></object>
+  </cell>
   <cell X="17" Y="17">
     <object Name="Flowers"></object>
+    <object Name="Crystweave Canvas"></object>
   </cell>
-  <cell X="18" Y="17"></cell>
+  <cell X="18" Y="17">
+    <object Name="Crystweave Canvas"></object>
+  </cell>
   <cell X="19" Y="17"></cell>
   <cell X="20" Y="17"></cell>
   <cell X="21" Y="17"></cell>

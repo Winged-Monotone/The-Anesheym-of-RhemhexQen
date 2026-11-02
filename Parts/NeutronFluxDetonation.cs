@@ -81,9 +81,7 @@ namespace XRL.World.Parts
                    }
                    else
                    {
-                       {
-                           
-                       }
+                       
                    }
                 }
             }

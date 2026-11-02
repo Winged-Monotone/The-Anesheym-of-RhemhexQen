@@ -987,7 +987,7 @@
   </cell>
   <cell X="60" Y="3">
     <object Name="BlackMarbleWalkway"></object>
-    <object Name="Rhem Black Marble"></object>
+    <object Name="HexWall"></object>
   </cell>
   <cell X="61" Y="3">
     <object Name="SterileTile"></object>
@@ -996,8 +996,8 @@
     <object Name="SterileTile"></object>
   </cell>
   <cell X="63" Y="3">
-    <object Name="Rhem Black Marble"></object>
     <object Name="SterileTile"></object>
+    <object Name="HexWall"></object>
   </cell>
   <cell X="64" Y="3">
     <object Name="Rhem Black Marble"></object>
@@ -1370,14 +1370,14 @@
   </cell>
   <cell X="3" Y="5">
     <object Name="MarbleFloor"></object>
-    <object Name="Rhem Black Marble"></object>
+    <object Name="Polished WombWall"></object>
   </cell>
   <cell X="4" Y="5">
     <object Name="SterileTile"></object>
   </cell>
   <cell X="5" Y="5">
-    <object Name="Rhem Black Marble"></object>
     <object Name="SterileTile"></object>
+    <object Name="Polished WombWall"></object>
   </cell>
   <cell X="6" Y="5">
     <object Name="SterileTile"></object>
@@ -1389,8 +1389,8 @@
     <object Name="SterileTile"></object>
   </cell>
   <cell X="9" Y="5">
-    <object Name="Rhem Black Marble"></object>
     <object Name="SterileTile"></object>
+    <object Name="Polished WombWall"></object>
   </cell>
   <cell X="10" Y="5">
     <object Name="MarbleFloor"></object>
@@ -2386,13 +2386,13 @@
     <object Name="SterileTile"></object>
   </cell>
   <cell X="54" Y="8">
-    <object Name="WombWall"></object>
+    <object Name="MoonWall"></object>
   </cell>
   <cell X="55" Y="8">
     <object Name="FlowerPatches"></object>
   </cell>
   <cell X="56" Y="8">
-    <object Name="WombWall"></object>
+    <object Name="HexWall"></object>
   </cell>
   <cell X="57" Y="8">
     <object Name="FlowerPatches"></object>
@@ -2425,13 +2425,13 @@
     <object Name="FlowerPatches"></object>
   </cell>
   <cell X="67" Y="8">
-    <object Name="WombWall"></object>
+    <object Name="HexWall"></object>
   </cell>
   <cell X="68" Y="8">
     <object Name="FlowerPatches"></object>
   </cell>
   <cell X="69" Y="8">
-    <object Name="WombWall"></object>
+    <object Name="MoonWall"></object>
   </cell>
   <cell X="70" Y="8">
     <object Name="FlowerPatches"></object>
@@ -2479,14 +2479,14 @@
   </cell>
   <cell X="3" Y="9">
     <object Name="MarbleFloor"></object>
-    <object Name="Rhem Black Marble"></object>
+    <object Name="Polished WombWall"></object>
   </cell>
   <cell X="4" Y="9">
     <object Name="SterileTile"></object>
   </cell>
   <cell X="5" Y="9">
-    <object Name="Rhem Black Marble"></object>
     <object Name="SterileTile"></object>
+    <object Name="Polished WombWall"></object>
   </cell>
   <cell X="6" Y="9">
     <object Name="SterileTile"></object>
@@ -2502,8 +2502,8 @@
   </cell>
   <cell X="9" Y="9">
     <object Name="SterileTile"></object>
-    <object Name="Rhem Black Marble"></object>
     <object Name="SterileTile"></object>
+    <object Name="Polished WombWall"></object>
   </cell>
   <cell X="10" Y="9">
     <object Name="MarbleFloor"></object>
@@ -3073,20 +3073,16 @@
     <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="13" Y="11">
-    <object Name="MarbleFloor"></object>
     <object Name="BaseBed"></object>
     <object Name="SterileTile"></object>
   </cell>
   <cell X="14" Y="11">
-    <object Name="MarbleFloor"></object>
     <object Name="SterileTile"></object>
   </cell>
   <cell X="15" Y="11">
-    <object Name="MarbleFloor"></object>
     <object Name="SterileTile"></object>
   </cell>
   <cell X="16" Y="11">
-    <object Name="MarbleFloor"></object>
     <object Name="SterileTile"></object>
   </cell>
   <cell X="17" Y="11">
@@ -3094,15 +3090,12 @@
     <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="18" Y="11">
-    <object Name="MarbleFloor"></object>
     <object Name="SterileTile"></object>
   </cell>
   <cell X="19" Y="11">
-    <object Name="MarbleFloor"></object>
     <object Name="SterileTile"></object>
   </cell>
   <cell X="20" Y="11">
-    <object Name="MarbleFloor"></object>
     <object Name="BaseBed"></object>
     <object Name="SterileTile"></object>
   </cell>
@@ -3355,16 +3348,12 @@
     <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="16" Y="12">
-    <object Name="MarbleFloor"></object>
-    <object Name="BirthCryptDoor"></object>
     <object Name="SterileTile"></object>
   </cell>
   <cell X="17" Y="12">
     <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="18" Y="12">
-    <object Name="MarbleFloor"></object>
-    <object Name="BirthCryptDoor"></object>
     <object Name="SterileTile"></object>
   </cell>
   <cell X="19" Y="12">
@@ -3944,8 +3933,8 @@
     <object Name="SterileTile"></object>
   </cell>
   <cell X="29" Y="14">
-    <object Name="Rhem Black Marble"></object>
     <object Name="SterileTile"></object>
+    <object Name="Polished WombWall"></object>
   </cell>
   <cell X="30" Y="14">
     <object Name="SterileTile"></object>
@@ -3954,8 +3943,8 @@
     <object Name="SterileTile"></object>
   </cell>
   <cell X="32" Y="14">
-    <object Name="Rhem Black Marble"></object>
     <object Name="SterileTile"></object>
+    <object Name="Polished WombWall"></object>
   </cell>
   <cell X="33" Y="14">
     <object Name="SterileTile"></object>
@@ -3964,8 +3953,8 @@
     <object Name="SterileTile"></object>
   </cell>
   <cell X="35" Y="14">
-    <object Name="Rhem Black Marble"></object>
     <object Name="SterileTile"></object>
+    <object Name="Polished WombWall"></object>
   </cell>
   <cell X="36" Y="14">
     <object Name="SterileTile"></object>
@@ -3974,8 +3963,8 @@
     <object Name="SterileTile"></object>
   </cell>
   <cell X="38" Y="14">
-    <object Name="Rhem Black Marble"></object>
     <object Name="SterileTile"></object>
+    <object Name="Polished WombWall"></object>
   </cell>
   <cell X="39" Y="14">
     <object Name="SterileTile"></object>
@@ -3984,8 +3973,8 @@
     <object Name="SterileTile"></object>
   </cell>
   <cell X="41" Y="14">
-    <object Name="Rhem Black Marble"></object>
     <object Name="SterileTile"></object>
+    <object Name="Polished WombWall"></object>
   </cell>
   <cell X="42" Y="14">
     <object Name="SterileTile"></object>
@@ -3994,8 +3983,8 @@
     <object Name="SterileTile"></object>
   </cell>
   <cell X="44" Y="14">
-    <object Name="Rhem Black Marble"></object>
     <object Name="SterileTile"></object>
+    <object Name="Polished WombWall"></object>
   </cell>
   <cell X="45" Y="14">
     <object Name="SterileTile"></object>
@@ -4430,16 +4419,12 @@
     <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="16" Y="16">
-    <object Name="MarbleFloor"></object>
-    <object Name="BirthCryptDoor"></object>
     <object Name="SterileTile"></object>
   </cell>
   <cell X="17" Y="16">
     <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="18" Y="16">
-    <object Name="MarbleFloor"></object>
-    <object Name="BirthCryptDoor"></object>
     <object Name="SterileTile"></object>
   </cell>
   <cell X="19" Y="16">
@@ -4692,35 +4677,28 @@
     <object Name="BlackMarbleWalkway"></object>
   </cell>
   <cell X="13" Y="17">
-    <object Name="MarbleFloor"></object>
     <object Name="BaseBed"></object>
     <object Name="SterileTile"></object>
   </cell>
   <cell X="14" Y="17">
-    <object Name="MarbleFloor"></object>
     <object Name="SterileTile"></object>
   </cell>
   <cell X="15" Y="17">
-    <object Name="MarbleFloor"></object>
     <object Name="SterileTile"></object>
   </cell>
   <cell X="16" Y="17">
-    <object Name="MarbleFloor"></object>
     <object Name="SterileTile"></object>
   </cell>
   <cell X="17" Y="17">
     <object Name="Rhem Black Marble"></object>
   </cell>
   <cell X="18" Y="17">
-    <object Name="MarbleFloor"></object>
     <object Name="SterileTile"></object>
   </cell>
   <cell X="19" Y="17">
-    <object Name="MarbleFloor"></object>
     <object Name="SterileTile"></object>
   </cell>
   <cell X="20" Y="17">
-    <object Name="MarbleFloor"></object>
     <object Name="BaseBed"></object>
     <object Name="SterileTile"></object>
   </cell>
@@ -4828,7 +4806,7 @@
     <object Name="FlowerPatches"></object>
   </cell>
   <cell X="54" Y="17">
-    <object Name="WombWall"></object>
+    <object Name="MoonWall"></object>
   </cell>
   <cell X="55" Y="17">
     <object Name="FlowerPatches"></object>
@@ -4880,7 +4858,7 @@
     <object Name="FlowerPatches"></object>
   </cell>
   <cell X="69" Y="17">
-    <object Name="WombWall"></object>
+    <object Name="MoonWall"></object>
   </cell>
   <cell X="70" Y="17">
     <object Name="FlowerPatches"></object>

@@ -22,6 +22,7 @@ namespace XRL.World.Parts
             if (Object.Equipped.IsValid())
             {
                 Registrar.Register(Object.Equipped,BeforeTookDamageEvent.ID);
+                Registrar.Register(Object.Equipped,EffectAppliedEvent.ID);
             }
         }
         
@@ -29,16 +30,8 @@ namespace XRL.World.Parts
         {
             E.Postfix.Append
                 ("{{orange|\n\n" +
-                 "{{|bright royal purple|Nanochimeric Polymer}}\n" +
-                 "there is 30% chance that whenever bleed or poisoned is applied to you, its effects will be reversed and you'll instead gain hit points from these effects.\n\n" +
-                 "{{|bright royal purple|Nanoaccelerated Reflexes}}\n" +
-                 "When being attacked by an enemy, there is a 30% chance that your DV will be calculated as if it is doubled.\n\n" +
                  "{{|bright royal purple|Nanoglass Quantum-refractions}}\n" +
-                 "Whenever an attack misses you, there is a 30% chance that you create a quantum-fugue of yourself in an adjacent space aroun1d you. (You can only create a maximum of 2 fugues at a time.) \n\n" +
-                 "{{|bright royal purple|Glitterweave Rejuvenation}}\n" +
-                 "Whenever an enemy misses you and your Juke ability is on cooldown, there is a 50% chance that your Juke ability will be instantly refreshed.\n\n" +
-                 "{{|bright royal purple|Glitterweave Impulse Flux}}\n" +
-                 "Whenever you avoid a projectile, there is a 30% chance you will juke for free.\n\n" +
+                 "Whenever an attack misses you, there is a 30% chance that you create a quantum-fugue of yourself in an adjacent space around you. (You can only create a maximum of 2 fugues at a time.) \n\n" +
                  "{{|bright royal purple|Dashing Appearance}}\n" +
                  "Treat all mercantile trades as if you had +6 Ego.\n\n" +
                  "\nCannot be destroyed via acid, disintegration, or other effects. Cannot be rusted." +
@@ -49,14 +42,18 @@ namespace XRL.World.Parts
         public override bool HandleEvent(EquippedEvent E)
         {
             E.Actor.RegisterEvent(this, BeforeTookDamageEvent.ID);
+            E.Actor.RegisterEvent(this,EffectAppliedEvent.ID);
             return base.HandleEvent(E);
         }
         
         public override bool HandleEvent(UnequippedEvent E)
         {
             E.Actor.UnregisterEvent(this, BeforeTookDamageEvent.ID);
+            E.Actor.UnregisterEvent(this, EffectAppliedEvent.ID);
             return base.HandleEvent(E);
         }
+        
+        
 
         public override bool HandleEvent(BeforeTookDamageEvent E)
         {

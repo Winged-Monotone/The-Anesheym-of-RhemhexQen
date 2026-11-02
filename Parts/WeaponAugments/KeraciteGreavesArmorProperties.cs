@@ -27,8 +27,6 @@
             E.Postfix.Append
                 ("{{Orange|Kinetic Nanomodulation}}" +
                  "\nMovement regenerates energy to all carried cells with exception of liquid-bearing cells.\n\n" +
-                 "{{Orange|Nanite Acceleration}}" +
-                 "\n+30 to quickness.\n\n" +
                  "Cannot be destroyed via acid, disintegration, or other effects. Cannot be rusted.\n");
             return base.HandleEvent(E);
         }

@@ -28,10 +28,7 @@ namespace XRL.World.Parts
         {
             E.Postfix.Append
                 ("{{Orange|Impact Nanomodulation}}" +
-                 "\nStriking enemies with melee weapons while wearing these gauntlets recharges cells in your inventory. If not wielding weapons, dealing attacks with your fist with this item equipped has a 30% chance of adding a random elemental effect to your attacks as well as increasing its damage by 5%.\n\n" +
-                 "{{Orange|Nanite Acceleration}}" +
-                 "\n+20% to offhand strike chance.\n\n" +
-                 "{{Orange|Defensibly Responsible}}" +
+                 "\nIf not wielding weapons, dealing attacks with your fist with this item equipped has a 30% chance of adding a random elemental effect to your attacks as well as increasing its damage by 5%.\n\n" +
                  "\n10% chance to block an attack.\n\n" +
                  "Cannot be destroyed via acid, disintegration, or other effects. Cannot be rusted.\n\n");
             return base.HandleEvent(E);

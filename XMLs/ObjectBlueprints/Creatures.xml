@@ -1146,7 +1146,7 @@
         <part Name="Interesting" />
 
         <tag Name="NoDropOnDeath" />
-        <inventoryobject Blueprint="Keracryst Grandhupa" Number="1" />
+        <inventoryobject Blueprint="Keracryst Grandhup" Number="1" />
         <inventoryobject Blueprint="Keracite Lamellar Armor" Number="1" />
         <inventoryobject Blueprint="Rainboweave Cloak" Number="1" />
         <inventoryobject Blueprint="Keracite Greaves" Number="1" />
