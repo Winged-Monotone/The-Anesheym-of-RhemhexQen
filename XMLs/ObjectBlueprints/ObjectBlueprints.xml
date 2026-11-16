@@ -2828,6 +2828,7 @@
         <part Name="TemperatureOnHit" Amount="3d20" Max="true" MaxTemp="200" OnWielderHit="false"/>
         <part Name="Temporary" Duration="200"/>
         <tag Name="IgnoresGravity"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
     </object>
 
     <object Name="Singularity" Inherits="LightSource">
@@ -2843,6 +2844,7 @@
               TileAnimationFrames="0=WingyTextures/GapingButtholeSingularity/singularity0.png, 30=WingyTextures/GapingButtholeSingularity/singularity2.png, 60=WingyTextures/GapingButtholeSingularity/singularity3.png, 90=WingyTextures/GapingButtholeSingularity/singularity4.png, 120=WingyTextures/GapingButtholeSingularity/singularity5.png, 150=WingyTextures/GapingButtholeSingularity/singularity6.png, 180=WingyTextures/GapingButtholeSingularity/singularity7.png"
         />
         <part Name="SingularityBigSuck"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
     </object>
 
     <object Name="Spherical Static" Inherits="LightSource">
@@ -2858,6 +2860,7 @@
               TileAnimationFrames="0=WingyTextures/ElectroSphere/electrosphere00.png, 10=WingyTextures/ElectroSphere/electrosphere02.png, 20=WingyTextures/ElectroSphere/electrosphere03.png, 30=WingyTextures/ElectroSphere/electrosphere04.png, 40=WingyTextures/ElectroSphere/electrosphere05.png, 50=WingyTextures/ElectroSphere/electrosphere06.png"
         />
         <part Name="SphericalStaticBurst"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
     </object>
 
     <object Name="Blazing Firefly" Inherits="BaseInsect">
@@ -2875,6 +2878,7 @@
         <mutation Name="Pyrokinesis" Level="10" />
         <part Name="AIShootAndScoot"/>
         <stat Name="HeatResistance" Value="250" />
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
     </object>
 
     <object Name="ProjectileLoversGaze" Inherits="TemporaryProjectile">

@@ -1190,7 +1190,7 @@
               DisplayName="{{extradimensional|Grand Progenitor and Wombbearer,}} Shah Zenithera Pandamoriae"
               Tile="WingyTextures/creatures/bugqueenmain.png" ColorString="&amp;O" DetailColor="c" RenderString="z"/>
         <part Name="Description"
-              Short="Silver sheets of filmy elytra flare out in the matriarch's arrangement, erecting from the spine of a humanoid vast enough to gaze down at those in her court. A tangerine glow bathes you in sharp cascading patterns as the sun-gold shell of this avatar shimmers against the flame in the cane wield in one of their many arms. Their dozen-or-so glowing lavender eyes gaze with weariness, undermined by a content smile. The growth of flora and rust about her hips and lower extremities hint this being has nestled here decem millenia."/>
+              Short="Silver sheets of filmy elytra flare out in the matriarch's arrangement, erecting from the spine of a humanoid vast enough to gaze down at those in her court. A tangerine glow bathes you in sharp cascading patterns as the sun-gold shell of this avatar shimmers against the flame in the cane wielded by one of their many arms. Their dozen-or-so glowing lavender eyes gaze with weariness, undermined by a content smile. The growth of flora and rust about her hips and lower extremities hint this being has nestled here decem millenia."/>
         <part Name="AISelfPreservation" Threshold="80"/>
         <mutation Name="SunderMind" Level="9999"/>
         <part Name="GivesRep" repValue="800"/>
@@ -1518,6 +1518,7 @@ eater, hedonist, thirst--
         <mutation Name="Confusion" Level="10"/>
 
         <part Name="Corpse" CorpseChance="0" CorpseBlueprint="Singularity"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
 
         <stat Name="Hitpoints" sValue="1" Boost="0"/>
         <stat Name="Strength" sValue="1" Boost="0"/>
@@ -1542,6 +1543,7 @@ eater, hedonist, thirst--
               ColorString="&amp;P" DetailColor="g"/>
 
         <part Name="Brain" Wanders="true" Calm="false" Hostile="true" Factions="Playerneutral-100"/>
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
 
         <part Name="NoHostility" />
 
@@ -1555,7 +1557,6 @@ eater, hedonist, thirst--
         <stat Name="Agility" sValue="1" Boost="0"/>
         <stat Name="Ego" sValue="1" Boost="0"/>
         <stat Name="Level" sValue="1"/>
-        
         
         <removepart Name="RandomLoot"/>
 
